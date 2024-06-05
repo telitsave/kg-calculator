@@ -1,10 +1,22 @@
 {
-  "name": "@org/source",
-  "version": "0.0.0",
+  "name": "kg-calculator",
+  "version": "0.9.0",
   "license": "MIT",
-  "scripts": {},
   "private": true,
-  "dependencies": {},
+  "scripts": {
+    "start": "nx run-many -t start -p kg-calculator-client kg-calculator-server --parallel --maxParallel=2",
+    "build": "nx run-many -t build -p kg-calculator-client kg-calculator-server --parallel --maxParallel=2",
+    "client:start": "nx run kg-calculator-client:start",
+    "client:build": "nx run kg-calculator-client:build",
+    "server:start": "nx run kg-calculator-server:start",
+    "server:build": "nx run kg-calculator-server:build"
+  },
+  "workspaces": [
+    "apps/client",
+    "apps/server",
+    "libs/*"
+  ],
+  "packageManager": "yarn@4.1.0",
   "devDependencies": {
     "@nx/js": "19.1.2",
     "@nx/workspace": "19.1.2",
