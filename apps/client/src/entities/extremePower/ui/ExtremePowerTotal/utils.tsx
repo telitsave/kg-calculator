@@ -46,6 +46,8 @@ export const getElementsByType = (
       return getElementsForBlacksmith(statisticsData)
     case 'gallery':
       return getElementsForGallery(statisticsData)
+    case 'heroesCards':
+      return getElementsForHeroes(statisticsData)
     default:
       return []
   }
@@ -187,5 +189,28 @@ const getElementsForGallery = (statisticsData?: CalculateExtremePowerResponse) =
     key="galleryShards"
     iconNode={<ResourceIcon resourceType="galleryShards" />}
     value={statisticsData?.gallery.shards}
+  />,
+]
+
+const getElementsForHeroes = (statisticsData?: CalculateExtremePowerResponse) => [
+  <ExtremePowerElement
+    key="heroCardsN"
+    iconNode={<ResourceIcon resourceType="heroGreenCards" />}
+    value={statisticsData?.heroesCards.n}
+  />,
+  <ExtremePowerElement
+    key="heroCardsR"
+    iconNode={<ResourceIcon resourceType="heroBlueCards" />}
+    value={statisticsData?.heroesCards.r}
+  />,
+  <ExtremePowerElement
+    key="heroCardsSR"
+    iconNode={<ResourceIcon resourceType="heroPurpleCards" />}
+    value={statisticsData?.heroesCards.sr}
+  />,
+  <ExtremePowerElement
+    key="heroCardsSSR"
+    iconNode={<ResourceIcon resourceType="heroGoldCards" />}
+    value={statisticsData?.heroesCards.ssr}
   />,
 ]

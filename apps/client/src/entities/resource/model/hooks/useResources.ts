@@ -59,10 +59,10 @@ const useResources = (): ResourcesData => {
     },
     galleryShards: useResource('galleryShards')[0],
     heroesCards: {
-      n: 0,
-      ssr: 0,
-      sr: 0,
-      r: 0,
+      n: useResource('heroGreenCards')[0],
+      ssr: useResource('heroGoldCards')[0],
+      sr: useResource('heroPurpleCards')[0],
+      r: useResource('heroBlueCards')[0],
     },
   }
 }

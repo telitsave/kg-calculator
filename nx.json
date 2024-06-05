@@ -10,5 +10,10 @@
     ],
     "sharedGlobals": []
   },
+  "targetDefaults": {
+    "start": {
+      "cache": false
+    }
+  },
   "nxCloudAccessToken": "ZTEyN2I3Y2MtMjFjOC00NjJmLWJmMGYtZDUzOTVjYTNlMzZlfHJlYWQtd3JpdGU="
 }

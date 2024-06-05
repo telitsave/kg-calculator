@@ -1,6 +1,9 @@
-import { ElementsType } from './BarracksParameters'
-import type { ParametersData, TalentParametersByElement, TalentParametersByElementRank } from 'kg-calculator-typings'
-
+import type {
+  ElementsType,
+  ParametersData,
+  TalentParametersByElement,
+  TalentParametersByElementRank,
+} from 'kg-calculator-typings'
 
 export default class TalentsParameters {
   bow: TalentParametersByElement

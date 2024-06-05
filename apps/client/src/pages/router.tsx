@@ -7,6 +7,7 @@ import {
   DragonCalculatorPage,
   ExtremePowerPage,
   GalleryPage,
+  HeroesCalculatorPage,
   MightiestKingdomPage,
   WitchCalculatorPage,
 } from './calculator'
@@ -60,6 +61,10 @@ const router = createBrowserRouter([
           {
             path: '/calculator/gallery',
             element: <GalleryPage />,
+          },
+          {
+            path: '/calculator/heroes',
+            element: <HeroesCalculatorPage />,
           },
           {
             path: '/calculator/extremePower',

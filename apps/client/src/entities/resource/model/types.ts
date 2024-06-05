@@ -33,3 +33,7 @@ export type ResourceType =
   | 'talentCrown'
   | 'hummer'
   | 'galleryShards'
+  | 'heroGreenCards'
+  | 'heroBlueCards'
+  | 'heroPurpleCards'
+  | 'heroGoldCards'

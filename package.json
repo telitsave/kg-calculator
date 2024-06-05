@@ -8,7 +8,7 @@
     "build": "nx run-many -t build -p kg-calculator-client kg-calculator-server --parallel --maxParallel=2",
     "client:start": "nx run kg-calculator-client:start",
     "client:build": "nx run kg-calculator-client:build",
-    "server:start": "nx run kg-calculator-server:start",
+    "server:start": "nx run kg-calculator-server:server:watch",
     "server:build": "nx run kg-calculator-server:build"
   },
   "workspaces": [

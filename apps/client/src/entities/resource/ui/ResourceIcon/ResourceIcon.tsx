@@ -7,6 +7,10 @@ import {
   GoldIcon,
   GoldRuneIcon,
   GreenRuneIcon,
+  HeroCardBlueIcon,
+  HeroCardGoldIcon,
+  HeroCardGreenIcon,
+  HeroCardPurpleIcon,
   HummerIcon,
   LightReagentIcon,
   LuckPotionIcon,
@@ -231,6 +235,30 @@ const ResourceIcon: FC<Props> = memo(({ className, resourceType }) => {
       return (
         <Tooltip label="Осколок галлереи">
           <GalleryShardIcon className={className} />
+        </Tooltip>
+      )
+    case 'heroGreenCards':
+      return (
+        <Tooltip label="Карты героев N-ранга">
+          <HeroCardGreenIcon className={className} />
+        </Tooltip>
+      )
+    case 'heroBlueCards':
+      return (
+        <Tooltip label="Карты героев R-ранга">
+          <HeroCardBlueIcon className={className} />
+        </Tooltip>
+      )
+    case 'heroPurpleCards':
+      return (
+        <Tooltip label="Карты героев SR-ранга">
+          <HeroCardPurpleIcon className={className} />
+        </Tooltip>
+      )
+    case 'heroGoldCards':
+      return (
+        <Tooltip label="Карты героев SSR-ранга">
+          <HeroCardGoldIcon className={className} />
         </Tooltip>
       )
   }

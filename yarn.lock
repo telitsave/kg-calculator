@@ -9940,6 +9940,7 @@ __metadata:
     kg-calculator-typings: "workspace:*"
     prettier: "npm:^3.2.5"
     ts-node-dev: "npm:^2.0.0"
+    typescript: "npm:5.4.5"
   languageName: unknown
   linkType: soft
 

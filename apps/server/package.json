@@ -12,7 +12,7 @@
   },
   "scripts": {
     "build": "tsc",
-    "start": "node .",
+    "start": "node ./",
     "prestart": "yarn build",
     "server:watch": "ts-node-dev --respawn --transpile-only src/index.ts",
     "lint:fix": "eslint --cache --ext .ts . --fix",
@@ -23,6 +23,7 @@
     "@types/express": "^4.17.21",
     "globals": "^15.0.0",
     "kg-calculator-typings": "workspace:*",
-    "prettier": "^3.2.5"
+    "prettier": "^3.2.5",
+    "typescript": "5.4.5"
   }
 }

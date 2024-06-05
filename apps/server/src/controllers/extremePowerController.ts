@@ -10,6 +10,7 @@ import BarracksCalculatorModel from '../model/calculator/barracks/BarracksCalcul
 import BlacksmithCalculatorModel from '../model/calculator/blacksmith/BlacksmithCalculatorModel'
 import GalleryCalculatorModel from '../model/calculator/gallery/GalleryCalculatorModel'
 import type { CalculateExtremePowerPayload, CalculateTotalExtremePowerPayload } from 'kg-calculator-typings'
+import HeroesCalculatorModel from '../model/calculator/heroes/HeroesCalculatorModel'
 
 export default class ExtremePowerController {
   static calculateScores(request: Request, response: Response) {
@@ -30,6 +31,7 @@ export default class ExtremePowerController {
     const witchCalculatorModel = new WitchCalculatorModel(resources, parameters)
     const blacksmithCalculatorModel = new BlacksmithCalculatorModel(resources, parameters)
     const galleryCalculatorModel = new GalleryCalculatorModel(resources, parameters)
+    const heroesCalculatorModel = new HeroesCalculatorModel(resources)
 
     const castleResult = castleCalculatorModel.getPossibleCastle()
     const dragonResult = dragonEmblemsCalculatorModel.getPossibleDragon()
@@ -38,6 +40,7 @@ export default class ExtremePowerController {
     const barracksResult = barracksCalculatorModel.getData()
     const blacksmithResult = blacksmithCalculatorModel.calculateBlacksmith()
     const galleryResult = galleryCalculatorModel.calculateGallery()
+    const heroesResult = heroesCalculatorModel.calculateHeroes()
 
     const spentResources = new Resources(castleResult.spentResources)
     spentResources.add(new Resources(dragonResult.spentResources))
@@ -45,6 +48,7 @@ export default class ExtremePowerController {
     spentResources.add(new Resources(barracksResult.spentResources))
     spentResources.add(new Resources(blacksmithResult.spentResources))
     spentResources.add(new Resources(galleryResult.spentResources))
+    spentResources.add(new Resources(heroesResult.spentResources))
 
     response.json(ExtremePowerEventCalculator.calculate(spentResources))
   }

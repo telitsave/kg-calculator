@@ -7,6 +7,7 @@ import barracksRouter from './barracksRouter'
 import mightiestKingdomRouter from './mightiestKingdomRouter'
 import blacksmithRouter from './blacksmithRouter'
 import galleryRouter from './galleryRouter'
+import heroesRouter from './heroesRouter'
 
 const calculatorRouter = express.Router()
 
@@ -18,5 +19,6 @@ calculatorRouter.use('/witch', witchRouter)
 calculatorRouter.use('/barracks', barracksRouter)
 calculatorRouter.use('/blacksmith', blacksmithRouter)
 calculatorRouter.use('/gallery', galleryRouter)
+calculatorRouter.use('/heroes', heroesRouter)
 
 export default calculatorRouter

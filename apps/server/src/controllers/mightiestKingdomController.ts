@@ -9,7 +9,7 @@ import MightiestKingdomEventCalculator from '../model/calculator/events/mighties
 import BlacksmithCalculatorModel from '../model/calculator/blacksmith/BlacksmithCalculatorModel'
 import GalleryCalculatorModel from '../model/calculator/gallery/GalleryCalculatorModel'
 import type { CalculateMightiestKingdomPayload, CalculateTotalMightiestKingdomPayload } from 'kg-calculator-typings'
-
+import HeroesCalculatorModel from '../model/calculator/heroes/HeroesCalculatorModel'
 
 export default class MightiestKingdomController {
   static calculateScores(request: Request, response: Response) {
@@ -29,6 +29,7 @@ export default class MightiestKingdomController {
     const witchCalculatorModel = new WitchCalculatorModel(resources, parameters)
     const blacksmithCalculatorModel = new BlacksmithCalculatorModel(resources, parameters)
     const galleryCalculatorModel = new GalleryCalculatorModel(resources, parameters)
+    const heroesCalculatorModel = new HeroesCalculatorModel(resources)
 
     const dragonResult = dragonEmblemsCalculatorModel.getPossibleDragon()
     const witchResult = witchCalculatorModel.calculateWitch()
@@ -36,12 +37,14 @@ export default class MightiestKingdomController {
     const barracksResult = barracksCalculatorModel.getData()
     const blacksmithResult = blacksmithCalculatorModel.calculateBlacksmith()
     const galleryResult = galleryCalculatorModel.calculateGallery()
+    const heroesResult = heroesCalculatorModel.calculateHeroes()
 
     const spentResources = new Resources(dragonResult.spentResources)
     spentResources.add(new Resources(witchResult.spentResources))
     spentResources.add(new Resources(barracksResult.spentResources))
     spentResources.add(new Resources(blacksmithResult.spentResources))
     spentResources.add(new Resources(galleryResult.spentResources))
+    spentResources.add(new Resources(heroesResult.spentResources))
 
     response.json(MightiestKingdomEventCalculator.calculate(spentResources))
   }
