@@ -1,11 +1,12 @@
 import { BaseResources } from './BaseResources'
+import type { ResourcesData } from 'kg-calculator-typings'
 
 export default class WitchResources implements BaseResources<WitchResources> {
   lightReagents: number = 0
   greenWitchPotion: number = 0
   purpleWitchPotion: number = 0
 
-  constructor(initData?: Partial<Pick<WitchResources, 'lightReagents' | 'purpleWitchPotion' | 'greenWitchPotion'>>) {
+  constructor(initData?: Partial<ResourcesData['witch']>) {
     if (initData) {
       this.lightReagents = initData.lightReagents || 0
       this.greenWitchPotion = initData.greenWitchPotion || 0

@@ -1,9 +1,9 @@
 import React, { FC, ReactNode, memo } from 'react'
 import { Divider, Title } from '@mantine/core'
+import type { CalculatePossibleDragonResponse } from 'kg-calculator-typings/api/Dragon'
 import { useSetting } from 'entities/calculationSettings'
-import ParameterInfo from 'entities/parameter/ui/ParameterInfo'
+import { ParameterInfo } from 'entities/parameter'
 import { ResourceCount, ResourcesConverts } from 'entities/resource'
-import { CalculatePossibleDragonResponse } from 'shared/api'
 import Flexbox from 'shared/ui/Flexbox'
 import css from './styles.module.sass'
 

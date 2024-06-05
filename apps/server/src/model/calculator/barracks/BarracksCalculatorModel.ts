@@ -3,9 +3,9 @@ import Parameters from '../../parameters/Parameters'
 import Settings from '../../settings/Settings'
 import barracksInfo from './barracks.json'
 import talentsInfo from './talents.json'
-import { ElementsType } from '../../parameters/BarracksParameters'
-import BarracksBooksResources, { BarracksBooksByElement } from '../../resources/BarracksBooksResources'
+import BarracksBooksResources from '../../resources/BarracksBooksResources'
 import serverSettings from '../../ServerSettings'
+import type { BarracksBooksByElement, CalculateBarracksResponse, ElementsType } from 'kg-calculator-typings'
 
 export default class BarracksCalculatorModel {
   private _sourceParameters: Parameters
@@ -28,17 +28,19 @@ export default class BarracksCalculatorModel {
   }
 
   calculateBarracks() {
-    while (this.tryCalculateBarracksBooks()) {}
-    while (this.tryCalculateTalents()) {}
+    while (this.tryCalculateBarracksBooks()) {
+    }
+    while (this.tryCalculateTalents()) {
+    }
   }
 
-  getData() {
+  getData(): CalculateBarracksResponse {
     return {
-      oldParameters: this._sourceParameters,
-      parameters: this._parameters,
-      sourceResources: this._sourceResources,
-      spentResources: this._spentResources,
-      leftResources: this._leftResources,
+      oldParameters: this._sourceParameters.getData(),
+      parameters: this._parameters.getData(),
+      sourceResources: this._sourceResources.getData(),
+      spentResources: this._spentResources.getData(),
+      leftResources: this._leftResources.getData(),
       randomBooksUsed: this._randomBooksUsed,
       convertBooksForBarracks: this._convertBooksForBarracks,
       convertTalentBooks: this._convertTalentBooks,
@@ -116,7 +118,9 @@ export default class BarracksCalculatorModel {
   private tryCalculateTalents(): boolean {
     const elementsOrder: ElementsType[] = [this._settings.priorityElement]
     if (this._settings.canUseTalentsToNonPriorityElements) {
-      ;(['bow', 'fire', 'ice', 'poison'] as ElementsType[]).forEach((element) => {
+      ;(
+        ['bow', 'fire', 'ice', 'poison'] as ElementsType[]
+      ).forEach((element) => {
         if (element === this._settings.priorityElement) return
         elementsOrder.push(element)
       })
@@ -257,10 +261,14 @@ export default class BarracksCalculatorModel {
   private convertBooksToTalentsBooksByElement(element: ElementsType, targetCount: number) {
     if (!this._settings.canConvertBarracksBooksToTalents) return
 
-    while (this._leftResources.talents.books < targetCount && this._convertBookToTalentBook(element, 4)) {}
-    while (this._leftResources.talents.books < targetCount && this._convertBookToTalentBook(element, 3)) {}
-    while (this._leftResources.talents.books < targetCount && this._convertBookToTalentBook(element, 2)) {}
-    while (this._leftResources.talents.books < targetCount && this._convertBookToTalentBook(element, 1)) {}
+    while (this._leftResources.talents.books < targetCount && this._convertBookToTalentBook(element, 4)) {
+    }
+    while (this._leftResources.talents.books < targetCount && this._convertBookToTalentBook(element, 3)) {
+    }
+    while (this._leftResources.talents.books < targetCount && this._convertBookToTalentBook(element, 2)) {
+    }
+    while (this._leftResources.talents.books < targetCount && this._convertBookToTalentBook(element, 1)) {
+    }
   }
 
   private useRandomBooksAndConvert(targetCount: number) {
@@ -269,7 +277,7 @@ export default class BarracksCalculatorModel {
 
     const elements = this._parameters.barracks.getElementsWithMaxRank()
     const possibleTalentBooks =
-      this._leftResources.barracksBooks.random * serverSettings.talentBooksConversionRate.rank1
+            this._leftResources.barracksBooks.random * serverSettings.talentBooksConversionRate.rank1
 
     if (possibleTalentBooks > targetCount) {
       const needRandomBooks = Math.ceil(targetCount / serverSettings.talentBooksConversionRate.rank1)

@@ -1,13 +1,6 @@
 import { ElementsType } from './BarracksParameters'
+import type { ParametersData, TalentParametersByElement, TalentParametersByElementRank } from 'kg-calculator-typings'
 
-export interface TalentParametersByElementRank {
-  booksCells: number
-  crownsCells: number
-}
-
-export interface TalentParametersByElement {
-  rank: Record<number, TalentParametersByElementRank>
-}
 
 export default class TalentsParameters {
   bow: TalentParametersByElement
@@ -15,7 +8,7 @@ export default class TalentsParameters {
   ice: TalentParametersByElement
   poison: TalentParametersByElement
 
-  constructor(initData?: Partial<TalentsParameters>) {
+  constructor(initData?: ParametersData['talents']) {
     this.bow = this.getFilledTalentsByElement(initData?.bow)
     this.fire = this.getFilledTalentsByElement(initData?.fire)
     this.ice = this.getFilledTalentsByElement(initData?.ice)

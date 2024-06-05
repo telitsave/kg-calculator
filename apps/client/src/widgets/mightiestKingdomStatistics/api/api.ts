@@ -2,7 +2,7 @@ import {
   CalculateMightiestKingdomPayload,
   CalculateMightiestKingdomResponse,
   CalculateTotalMightiestKingdomPayload,
-} from 'shared/api'
+} from 'kg-calculator-typings'
 import AxiosService from 'shared/services/axiosService'
 
 export const calculateMightiestKingdom = (payload: CalculateMightiestKingdomPayload) => {

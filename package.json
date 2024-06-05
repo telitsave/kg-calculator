@@ -20,6 +20,7 @@
   "devDependencies": {
     "@nx/js": "19.1.2",
     "@nx/workspace": "19.1.2",
-    "nx": "19.1.2"
+    "nx": "19.1.2",
+    "typescript": "5.4.5"
   }
 }

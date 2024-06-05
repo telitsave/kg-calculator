@@ -72,7 +72,7 @@ export default class CalculationResults {
     this.gallery.shards = resources.galleryShards * scoresSettings.galleryShard || 0
   }
 
-  toJSON() {
+  getData() {
     const mainData = {
       heroesCards: {
         ...this.heroesCards,

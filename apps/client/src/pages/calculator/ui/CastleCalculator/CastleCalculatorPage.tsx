@@ -1,7 +1,8 @@
 import React, { FC, memo, useCallback } from 'react'
-import { Resources } from 'shared/api'
+import type { ResourcesData } from 'kg-calculator-typings/api/ResourcesData'
 import { CastleCalculator } from 'widgets/castleCalculator'
 import { ExtremePowerStatistics } from 'widgets/extremePowerStatistics'
+
 
 interface Props {
   className?: string
@@ -9,7 +10,7 @@ interface Props {
 
 const CastleCalculatorPage: FC<Props> = memo(({ className }) => {
   const getExtremePowerNode = useCallback(
-    (spentResources: Resources) => <ExtremePowerStatistics spentResources={spentResources} />,
+    (spentResources: ResourcesData) => <ExtremePowerStatistics spentResources={spentResources} />,
     [],
   )
 

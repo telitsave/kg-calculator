@@ -1,10 +1,10 @@
-import { Parameters } from 'shared/api'
+import type { ParametersData } from 'kg-calculator-typings/api/ParametersData'
 import useParameter from './useParameter'
 import useTalentsParameters from './useTalentsParameters'
 import useWitchGemParameters from './useWitchGemParameters'
 
 
-const useParameters = (): Parameters => {
+const useParameters = (): ParametersData => {
   const gems = useWitchGemParameters()
   return {
     dragonEmblems: {

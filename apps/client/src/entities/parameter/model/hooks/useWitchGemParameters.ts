@@ -1,5 +1,6 @@
-import { WitchParameters } from 'shared/api'
+import type { WitchParameters } from 'kg-calculator-typings/api/Witch'
 import useWitchGemParameter from './useWitchGemParameter'
+
 
 const useWitchGemParameters = (): WitchParameters['gems'] => {
   return {

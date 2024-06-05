@@ -1,0 +1,7 @@
+{
+  "name": "kg-calculator-typings",
+  "version": "0.1.0",
+  "private": true,
+  "main": "index.d.ts",
+  "license": "MIT"
+}

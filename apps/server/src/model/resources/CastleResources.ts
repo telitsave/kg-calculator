@@ -1,4 +1,5 @@
 import { BaseResources } from './BaseResources'
+import type { ResourcesData } from 'kg-calculator-typings'
 
 export default class CastleResources implements BaseResources<CastleResources> {
   stone: number = 0
@@ -6,7 +7,7 @@ export default class CastleResources implements BaseResources<CastleResources> {
   steel: number = 0
   boxes: number = 0
 
-  constructor(initData?: Partial<Pick<CastleResources, 'boxes' | 'wood' | 'stone' | 'steel'>>) {
+  constructor(initData?: Partial<ResourcesData['castle']>) {
     this.stone = initData?.stone || 0
     this.wood = initData?.wood || 0
     this.steel = initData?.steel || 0

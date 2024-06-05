@@ -1,4 +1,4 @@
-import { CalculateMightiestKingdomResponse } from 'shared/api'
+import type { CalculateMightiestKingdomResponse } from 'kg-calculator-typings/api/MightiestKingdom'
 
 export default class NamesHelper {
   static getModuleNameByType(type: keyof Omit<CalculateMightiestKingdomResponse, 'total'>) {

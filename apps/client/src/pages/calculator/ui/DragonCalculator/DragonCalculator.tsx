@@ -1,8 +1,9 @@
 import React, { FC, memo, useCallback } from 'react'
-import { Resources } from 'shared/api'
+import type { ResourcesData } from 'kg-calculator-typings/api/ResourcesData'
 import { DragonCalculator } from 'widgets/dragonCalculator'
 import { ExtremePowerStatistics } from 'widgets/extremePowerStatistics'
 import { MightiestKingdomStatistics } from 'widgets/mightiestKingdomStatistics'
+
 
 interface Props {
   className?: string
@@ -10,11 +11,11 @@ interface Props {
 
 const DragonCalculatorPage: FC<Props> = memo(({ className }) => {
   const getExtremePowerNode = useCallback(
-    (spentResources: Partial<Resources>) => <ExtremePowerStatistics spentResources={spentResources} />,
+    (spentResources: ResourcesData) => <ExtremePowerStatistics spentResources={spentResources} />,
     [],
   )
   const getMightiestKingdomNode = useCallback(
-    (spentResources: Partial<Resources>) => <MightiestKingdomStatistics spentResources={spentResources} />,
+    (spentResources: ResourcesData) => <MightiestKingdomStatistics spentResources={spentResources} />,
     [],
   )
 

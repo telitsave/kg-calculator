@@ -1,21 +1,9 @@
 import { Request, Response } from 'express'
 import CastleCalculatorModel from '../model/calculator/castle/CastleCalculatorModel'
-import Resources, { ResourcesData } from '../model/resources/Resources'
-import Parameters, { ParametersData } from '../model/parameters/Parameters'
-import Settings, { SettingsData } from '../model/settings/Settings'
-
-interface CalculatePossibleCastlePayload {
-  resources: ResourcesData
-  parameters: ParametersData
-  settings: SettingsData
-}
-
-interface GetGoalCastleResourcesPayload {
-  resources: ResourcesData
-  parameters: ParametersData
-  settings: SettingsData
-  goalLevel: number
-}
+import Resources from '../model/resources/Resources'
+import Parameters from '../model/parameters/Parameters'
+import Settings from '../model/settings/Settings'
+import type { CalculateGoalCastlePayload, CalculatePossibleCastlePayload } from 'kg-calculator-typings'
 
 export default class CastleController {
   static calculatePossibleCastle(request: Request, response: Response) {
@@ -31,7 +19,7 @@ export default class CastleController {
   }
 
   static getGoalCastleResources(request: Request, response: Response) {
-    const payload: GetGoalCastleResourcesPayload = request.body.data
+    const payload: CalculateGoalCastlePayload = request.body.data
 
     const resources = new Resources(payload.resources)
     const parameters = new Parameters(payload.parameters)

@@ -1,14 +1,9 @@
 import { Request, Response } from 'express'
-import Resources, { ResourcesData } from '../model/resources/Resources'
-import Parameters, { ParametersData } from '../model/parameters/Parameters'
-import Settings, { SettingsData } from '../model/settings/Settings'
+import Resources from '../model/resources/Resources'
+import Parameters from '../model/parameters/Parameters'
+import Settings from '../model/settings/Settings'
 import BarracksCalculatorModel from '../model/calculator/barracks/BarracksCalculatorModel'
-
-interface CalculateBarracksPayload {
-  parameters: ParametersData
-  resources: ResourcesData
-  settings: SettingsData
-}
+import type { CalculateBarracksPayload } from 'kg-calculator-typings'
 
 export default class BarracksController {
   static calculateBarracks(request: Request, response: Response) {
@@ -21,7 +16,7 @@ export default class BarracksController {
     const barracksCalculatorModel = new BarracksCalculatorModel(resources, parameters, settings)
 
     barracksCalculatorModel.calculateBarracks()
-    
+
     response.json(barracksCalculatorModel.getData())
   }
 }

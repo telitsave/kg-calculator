@@ -6,5 +6,3 @@ export type SettingsTypes =
   | 'canConvertBarracksBooksToTalents'
   | 'canUseTalentsToNonPriorityElements'
   | 'priorityElement'
-
-export type ElementsType = 'bow' | 'fire' | 'ice' | 'poison'

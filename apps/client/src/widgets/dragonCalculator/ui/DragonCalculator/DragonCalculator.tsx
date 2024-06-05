@@ -1,10 +1,10 @@
 import React, { FC, ReactNode, memo, useCallback } from 'react'
 import cx from 'classnames'
+import type { ResourcesData } from 'kg-calculator-typings/api/ResourcesData'
 import { useSettings } from 'entities/calculationSettings'
 import { useCalculateDragon } from 'entities/dragonRunes'
 import { useParameters } from 'entities/parameter'
 import { useResources } from 'entities/resource'
-import { Resources } from 'shared/api'
 import Flexbox from 'shared/ui/Flexbox'
 import Inputs from '../Inputs'
 import Results from '../Results'
@@ -13,8 +13,8 @@ import css from './styles.module.sass'
 
 interface Props {
   className?: string
-  getExtremePowerNode: (resources: Partial<Resources>) => ReactNode
-  getMightiestKingdomNode: (resources: Partial<Resources>) => ReactNode
+  getExtremePowerNode: (resources: ResourcesData) => ReactNode
+  getMightiestKingdomNode: (resources: ResourcesData) => ReactNode
 }
 
 const DragonCalculator: FC<Props> = memo(({ className, getExtremePowerNode, getMightiestKingdomNode }) => {

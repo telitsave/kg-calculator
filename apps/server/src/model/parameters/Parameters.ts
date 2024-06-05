@@ -1,50 +1,11 @@
 import DragonEmblemParameters from './DragonEmblemParameters'
 import CastleParameters from './CastleParameters'
-import WitchParameters, { GemsRankParametersData } from './WitchParameters'
-import BarracksParameters, { BarracksParametersData } from './BarracksParameters'
-import TalentsParameters, { TalentParametersByElement } from './TalentsParameters'
+import WitchParameters from './WitchParameters'
+import BarracksParameters from './BarracksParameters'
+import TalentsParameters from './TalentsParameters'
 import BlacksmithParameters from './BlacksmithParameters'
 import GalleryParameters from './GalleryParameters'
-
-export interface ParametersData {
-  dragonEmblems?: {
-    green?: number
-    blue?: number
-    purple?: number
-    gold?: number
-  }
-  castle?: {
-    level?: number
-  }
-  witch?: {
-    lightLevel: number
-    darkLevel: number
-    gems: {
-      rank1: GemsRankParametersData
-      rank2: GemsRankParametersData
-      rank3: GemsRankParametersData
-      rank4: GemsRankParametersData
-      rank5: GemsRankParametersData
-      rank6: GemsRankParametersData
-      rank7: GemsRankParametersData
-      rank8: GemsRankParametersData
-    }
-  }
-  barracks?: BarracksParametersData
-  talents?: {
-    bow: TalentParametersByElement
-    fire: TalentParametersByElement
-    ice: TalentParametersByElement
-    poison: TalentParametersByElement
-  }
-  blacksmith?: {
-    level?: number
-  }
-  gallery?: {
-    level?: number
-    step?: number
-  }
-}
+import type { ParametersData } from 'kg-calculator-typings'
 
 export default class Parameters {
   dragonEmblems: DragonEmblemParameters
@@ -75,5 +36,17 @@ export default class Parameters {
     parameters.blacksmith = new BlacksmithParameters(this.blacksmith)
     parameters.gallery = new GalleryParameters(this.gallery)
     return parameters
+  }
+
+  getData(): ParametersData {
+    return {
+      barracks: this.barracks.getData(),
+      castle: this.castle,
+      witch: this.witch,
+      talents: this.talents,
+      gallery: this.gallery,
+      blacksmith: this.blacksmith,
+      dragonEmblems: this.dragonEmblems,
+    }
   }
 }

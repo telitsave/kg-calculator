@@ -6,6 +6,7 @@ import blueEmblemInfo from './jsonBlue.json'
 import purpleEmblemInfo from './jsonPurple.json'
 import goldEmblemInfo from './jsonGold.json'
 import Settings from '../../settings/Settings'
+import type { CalculatePossibleDragonResponse } from 'kg-calculator-typings'
 
 export default class DragonEmblemsCalculatorModel {
   private readonly _sourceResources: Resources
@@ -26,12 +27,12 @@ export default class DragonEmblemsCalculatorModel {
     this._spentBoxesResources = new DragonRunesResources()
   }
 
-  getPossibleDragon() {
+  getPossibleDragon(): CalculatePossibleDragonResponse {
     while (this.tryLevelUp()) {}
 
     return {
-      oldParameters: this._sourceParameters,
-      newParameters: this._parameters,
+      oldParameters: this._sourceParameters.getData(),
+      newParameters: this._parameters.getData(),
       sourceResources: this._sourceResources,
       spentResources: this._spentResources,
       leftResources: this._leftResources,

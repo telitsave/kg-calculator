@@ -1,6 +1,6 @@
 import React, { FC, memo } from 'react'
 import { Text } from '@mantine/core'
-import Flexbox from '../../../../shared/ui/Flexbox'
+import Flexbox from 'shared/ui/Flexbox'
 import { SettingsTypes } from '../../model/types'
 
 interface Props {

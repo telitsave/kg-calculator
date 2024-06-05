@@ -1,7 +1,8 @@
-import { Resources } from 'shared/api'
+import type { ResourcesData } from 'kg-calculator-typings/api/ResourcesData'
 import useResource from './useResource'
 
-const useResources = (): Resources => {
+
+const useResources = (): ResourcesData => {
   return {
     gold: useResource('gold')[0],
     castle: {

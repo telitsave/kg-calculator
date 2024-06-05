@@ -1,12 +1,5 @@
 import { BaseResources } from './BaseResources'
-import { ElementsType } from '../parameters/BarracksParameters'
-
-export interface BarracksBooksByElement {
-  rank1: number
-  rank2: number
-  rank3: number
-  rank4: number
-}
+import type { BarracksBooksByElement, ElementsType, ResourcesData } from 'kg-calculator-typings'
 
 export default class BarracksBooksResources implements BaseResources<BarracksBooksResources> {
   bow: BarracksBooksByElement
@@ -15,7 +8,7 @@ export default class BarracksBooksResources implements BaseResources<BarracksBoo
   poison: BarracksBooksByElement
   random: number
 
-  constructor(initData?: Partial<BarracksBooksResources>) {
+  constructor(initData?: Partial<ResourcesData['barracksBooks']>) {
     this.bow = this.getFilledBooksByElement(initData?.bow)
     this.fire = this.getFilledBooksByElement(initData?.fire)
     this.ice = this.getFilledBooksByElement(initData?.ice)

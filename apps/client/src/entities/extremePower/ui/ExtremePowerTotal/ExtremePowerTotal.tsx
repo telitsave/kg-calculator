@@ -1,7 +1,7 @@
 import React, { FC, memo } from 'react'
 import cx from 'classnames'
 import { Divider, Text, Tooltip } from '@mantine/core'
-import { CalculateExtremePowerResponse } from 'shared/api'
+import type { CalculateExtremePowerResponse } from 'kg-calculator-typings/api/ExtremePower'
 import { ExtremePowerIcon } from 'shared/assets/icons'
 import TypeHelper from 'shared/helpers/typeHelper'
 import Flexbox from 'shared/ui/Flexbox'

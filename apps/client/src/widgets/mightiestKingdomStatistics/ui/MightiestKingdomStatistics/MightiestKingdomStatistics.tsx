@@ -1,12 +1,13 @@
 import React, { FC, memo } from 'react'
+import type { ResourcesData } from 'kg-calculator-typings/api/ResourcesData'
 import { MightiestKingdomTotal } from 'entities/mightiestKingdom'
-import { Resources } from 'shared/api'
 import Flexbox from 'shared/ui/Flexbox'
 import useCalculateMightiestKingdom from '../../model/hooks/useCalculateMightiestKingdom'
 
+
 interface Props {
   className?: string
-  spentResources: Partial<Resources>
+  spentResources: ResourcesData
 }
 
 const MightiestKingdomStatistics: FC<Props> = memo(({ className, spentResources }) => {

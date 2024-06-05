@@ -1,32 +1,24 @@
 import { Request, Response } from 'express'
-import Resources, { ResourcesData } from '../model/resources/Resources'
-import Parameters, { ParametersData } from '../model/parameters/Parameters'
+import Resources from '../model/resources/Resources'
+import Parameters from '../model/parameters/Parameters'
 import DragonEmblemsCalculatorModel from '../model/calculator/dragonEmblems/DragonEmblemsCalculatorModel'
 import WitchCalculatorModel from '../model/calculator/witch/WitchCalculatorModel'
-import Settings, { SettingsData } from '../model/settings/Settings'
+import Settings from '../model/settings/Settings'
 import BarracksCalculatorModel from '../model/calculator/barracks/BarracksCalculatorModel'
 import MightiestKingdomEventCalculator from '../model/calculator/events/mightiestKingdom/MightiestKingdomEventCalculator'
 import BlacksmithCalculatorModel from '../model/calculator/blacksmith/BlacksmithCalculatorModel'
 import GalleryCalculatorModel from '../model/calculator/gallery/GalleryCalculatorModel'
+import type { CalculateMightiestKingdomPayload, CalculateTotalMightiestKingdomPayload } from 'kg-calculator-typings'
 
-interface calculateScoresPayload {
-  resources: ResourcesData
-}
-
-interface calculateAllScoresPayload {
-  resources: ResourcesData
-  parameters: ParametersData
-  settings: SettingsData
-}
 
 export default class MightiestKingdomController {
   static calculateScores(request: Request, response: Response) {
-    const payload: calculateScoresPayload = request.body.data
+    const payload: CalculateMightiestKingdomPayload = request.body.data
     response.json(MightiestKingdomEventCalculator.calculate(new Resources(payload.resources)))
   }
 
   static calculateAllScores(request: Request, response: Response) {
-    const payload: calculateAllScoresPayload = request.body.data
+    const payload: CalculateTotalMightiestKingdomPayload = request.body.data
 
     const resources = new Resources(payload.resources)
     const parameters = new Parameters(payload.parameters)
@@ -45,11 +37,11 @@ export default class MightiestKingdomController {
     const blacksmithResult = blacksmithCalculatorModel.calculateBlacksmith()
     const galleryResult = galleryCalculatorModel.calculateGallery()
 
-    const spentResources = dragonResult.spentResources.clone()
-    spentResources.add(witchResult.spentResources)
-    spentResources.add(barracksResult.spentResources)
-    spentResources.add(blacksmithResult.spentResources)
-    spentResources.add(galleryResult.spentResources)
+    const spentResources = new Resources(dragonResult.spentResources)
+    spentResources.add(new Resources(witchResult.spentResources))
+    spentResources.add(new Resources(barracksResult.spentResources))
+    spentResources.add(new Resources(blacksmithResult.spentResources))
+    spentResources.add(new Resources(galleryResult.spentResources))
 
     response.json(MightiestKingdomEventCalculator.calculate(spentResources))
   }

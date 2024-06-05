@@ -1,11 +1,9 @@
 import React, { FC, ReactNode, memo } from 'react'
-import cx from 'classnames'
 import { Divider, Text, Title } from '@mantine/core'
+import type { WitchParameters, WitchResources } from 'kg-calculator-typings/api/Witch'
 import { WitchGemsInfo, WitchPowerInfo } from 'entities/parameter'
 import { ResourceCount } from 'entities/resource'
-import { WitchParameters, WitchResources } from 'shared/api'
-import Flexbox from '../../../../shared/ui/Flexbox'
-import css from './styles.module.sass'
+import Flexbox from 'shared/ui/Flexbox'
 
 
 interface Props {
@@ -30,7 +28,7 @@ const Results: FC<Props> = memo(
     extremePowerNode,
     mightiestKingdomNode,
   }) => (
-    <Flexbox className={cx(css.root, className)} flexDirection="column" gap={8}>
+    <Flexbox className={className} flexDirection="column" gap={8}>
       <Title order={4}>
         Новый уровень магии ведьмы {spentResources.lightReagents === 0 ? <Text c="dimmed">Нет изменений</Text> : ''}
       </Title>

@@ -1,7 +1,8 @@
 import { useLocalStorage } from '@mantine/hooks'
-import { BarracksElements } from '../types'
+import type { ElementsType } from 'kg-calculator-typings/api/Elements'
 
-const useTalentParameter = (element: BarracksElements, rank: string, param: 'books' | 'crowns') =>
+
+const useTalentParameter = (element: ElementsType, rank: string, param: 'books' | 'crowns') =>
   useLocalStorage<number>({
     key: `talent-${element}-${rank}-${param}`,
     defaultValue: 0,

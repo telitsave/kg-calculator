@@ -1,10 +1,11 @@
 import React, { FC, memo } from 'react'
 import cx from 'classnames'
 import { Text } from '@mantine/core'
-import Flexbox from '../../../../shared/ui/Flexbox'
+import Flexbox from 'shared/ui/Flexbox'
 import { ParameterTypes } from '../../model/types'
 import ParameterIcon from '../ParameterIcon'
 import css from './styles.module.sass'
+
 
 interface Props {
   className?: string

@@ -1,13 +1,14 @@
 import React, { FC, memo } from 'react'
 import { Text } from '@mantine/core'
-import { TalentsParameters } from 'shared/api'
+import type { ElementsType } from 'kg-calculator-typings/api/Elements'
+import type { TalentsParameters } from 'kg-calculator-typings/api/Talents'
 import Flexbox from 'shared/ui/Flexbox'
-import { BarracksElements } from '../../model/types'
 import BarracksTalentInfo from '../BarracksTalentInfo'
+
 
 interface Props {
   className?: string
-  element: BarracksElements
+  element: ElementsType
   parameters: TalentsParameters
   oldParameters: TalentsParameters
 }

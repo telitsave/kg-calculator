@@ -1,16 +1,13 @@
 import React, { FC, memo } from 'react'
 import { Divider, Text, Title } from '@mantine/core'
-import {
-  BarracksElementalInput,
-  BarracksElements,
-  BarracksTalentsInput,
-  ParameterIcon,
-} from '../../../../entities/parameter'
-import Flexbox from '../../../../shared/ui/Flexbox'
-import HelpButton from '../../../../shared/ui/HelpButton'
+import type { ElementsType } from 'kg-calculator-typings/api/Elements'
+import { BarracksElementalInput, BarracksTalentsInput, ParameterIcon } from 'entities/parameter'
+import Flexbox from 'shared/ui/Flexbox'
+import HelpButton from 'shared/ui/HelpButton'
+
 
 interface Props {
-  element: BarracksElements
+  element: ElementsType
 }
 
 const HelpNode = () => (

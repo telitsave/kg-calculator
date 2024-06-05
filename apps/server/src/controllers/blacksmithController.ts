@@ -1,12 +1,8 @@
 import { Request, Response } from 'express'
-import Resources, { ResourcesData } from '../model/resources/Resources'
-import Parameters, { ParametersData } from '../model/parameters/Parameters'
+import Resources from '../model/resources/Resources'
+import Parameters from '../model/parameters/Parameters'
 import BlacksmithCalculatorModel from '../model/calculator/blacksmith/BlacksmithCalculatorModel'
-
-interface CalculateBlacksmithPayload {
-  resources: ResourcesData
-  parameters: ParametersData
-}
+import type { CalculateBlacksmithPayload } from 'kg-calculator-typings'
 
 export default class BlacksmithController {
   static calculateBlacksmith(request: Request, response: Response) {

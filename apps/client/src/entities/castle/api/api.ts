@@ -1,10 +1,9 @@
-import {
-  CalculateGoalCastlePayload,
-  CalculateGoalCastleResponse,
+import AxiosService from 'shared/services/axiosService'
+import type {
+  CalculateGoalCastlePayload, CalculateGoalCastleResponse,
   CalculatePossibleCastlePayload,
   CalculatePossibleCastleResponse,
-} from 'shared/api'
-import AxiosService from 'shared/services/axiosService'
+} from 'kg-calculator-typings'
 
 export const calculatePossibleCastle = (payload: CalculatePossibleCastlePayload) => {
   return AxiosService.post<CalculatePossibleCastleResponse>('/calculator/castle/possibleCastle', {

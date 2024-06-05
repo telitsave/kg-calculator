@@ -3,6 +3,7 @@ import castleInfo from './castleInfo.json'
 import Resources from '../../resources/Resources'
 import Parameters from '../../parameters/Parameters'
 import Settings from '../../settings/Settings'
+import type { CalculateGoalCastleResponse, CalculatePossibleCastleResponse } from 'kg-calculator-typings'
 
 const MAX_CASTLE_LEVEL = castleInfo.length - 1
 
@@ -29,13 +30,14 @@ export default class CastleCalculatorModel {
     this._spentBoxesResources = new CastleResources()
   }
 
-  getPossibleCastle() {
+  getPossibleCastle(): CalculatePossibleCastleResponse {
     let neededResources = new Resources({
       gold: castleInfo[this._parameters.castle.level].gold,
       castle: {
         wood: castleInfo[this._parameters.castle.level].wood,
         stone: castleInfo[this._parameters.castle.level].stone,
         steel: castleInfo[this._parameters.castle.level].steel,
+        boxes: 0
       },
     })
 
@@ -47,13 +49,14 @@ export default class CastleCalculatorModel {
           wood: castleInfo[this._parameters.castle.level].wood,
           stone: castleInfo[this._parameters.castle.level].stone,
           steel: castleInfo[this._parameters.castle.level].steel,
+          boxes: 0
         },
       })
     }
 
     return {
-      oldParameters: this._sourceParameters,
-      parameters: this._parameters,
+      oldParameters: this._sourceParameters.getData(),
+      parameters: this._parameters.getData(),
       sourceResources: this._sourceResources,
       leftResources: this._leftResources,
       spentResources: this._spentResources,
@@ -87,7 +90,7 @@ export default class CastleCalculatorModel {
     return false
   }
 
-  getGoalCastleResources(goalLevel: number) {
+  getGoalCastleResources(goalLevel: number): CalculateGoalCastleResponse {
     let levelInfoIndex = this._parameters.castle.level
     let requiredResources = new Resources()
 
@@ -103,6 +106,6 @@ export default class CastleCalculatorModel {
     neededResources.castle.substract(this._sourceResources.castle)
     neededResources.gold -= this._sourceResources.gold
 
-    return { requiredResources, neededResources, parameters: this._parameters, goalLevel }
+    return { requiredResources, neededResources, parameters: this._parameters.getData(), goalLevel }
   }
 }

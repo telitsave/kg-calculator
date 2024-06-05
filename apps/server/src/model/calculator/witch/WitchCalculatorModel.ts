@@ -2,6 +2,7 @@ import Resources from '../../resources/Resources'
 import Parameters from '../../parameters/Parameters'
 import witchInfo from './witchInfo.json'
 import gemsInfo from './gemsInfo.json'
+import type { CalculateWitchResponse } from 'kg-calculator-typings'
 
 export default class WitchCalculatorModel {
   private readonly _sourceResources: Resources
@@ -18,13 +19,13 @@ export default class WitchCalculatorModel {
     this._spentResources = new Resources()
   }
 
-  calculateWitch() {
+  calculateWitch(): CalculateWitchResponse {
     while (this.tryLevelUpWitch()) {}
     while (this.tryLevelUpGem()) {}
 
     return {
-      newParameters: this._parameters,
-      oldParameters: this._sourceParameters,
+      newParameters: this._parameters.getData(),
+      oldParameters: this._sourceParameters.getData(),
       sourceResources: this._sourceResources,
       leftResources: this._leftResources,
       spentResources: this._spentResources,

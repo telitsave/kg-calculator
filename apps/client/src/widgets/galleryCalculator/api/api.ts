@@ -1,4 +1,4 @@
-import { CalculateGalleryPayload, CalculateGalleryResponse } from 'shared/api'
+import { CalculateGalleryPayload, CalculateGalleryResponse } from 'kg-calculator-typings'
 import AxiosService from 'shared/services/axiosService'
 
 export const calculateGallery = (payload: CalculateGalleryPayload) => {

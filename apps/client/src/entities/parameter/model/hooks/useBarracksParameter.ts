@@ -1,7 +1,8 @@
-import { BarracksElements } from '../types'
+import type { ElementsType } from 'kg-calculator-typings/api/Elements'
 import useParameter from './useParameter'
 
-const useBarracksParameter = (element: BarracksElements) => {
+
+const useBarracksParameter = (element: ElementsType) => {
   const bowLevel = useParameter('barracksBowLevel')
   const bowRank = useParameter('barracksBowRank')
   const fireLevel = useParameter('barracksFireLevel')

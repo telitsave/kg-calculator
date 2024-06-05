@@ -1,8 +1,10 @@
 import React from 'react'
-import { ExtremePowerElement, ExtremePowerModule, NamesHelper } from 'entities/extremePower/index'
+import type { CalculateExtremePowerResponse } from 'kg-calculator-typings/api/ExtremePower'
 import { ResourceIcon } from 'entities/resource'
-import { CalculateExtremePowerResponse } from 'shared/api'
 import Flexbox from 'shared/ui/Flexbox'
+import NamesHelper from '../../helpers/namesHelper'
+import ExtremePowerElement from '../ExtremePowerElement'
+import ExtremePowerModule from '../ExtremePowerModule'
 
 
 export const getModuleByType = (

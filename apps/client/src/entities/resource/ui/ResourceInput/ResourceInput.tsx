@@ -1,7 +1,7 @@
 import React, { FC, memo, useCallback } from 'react'
 import cx from 'classnames'
 import { NumberInput } from '@mantine/core'
-import Flexbox from '../../../../shared/ui/Flexbox'
+import Flexbox from 'shared/ui/Flexbox'
 import useResource from '../../model/hooks/useResource'
 import { ResourceType } from '../../model/types'
 import ResourceIcon from '../ResourceIcon'

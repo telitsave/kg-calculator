@@ -1,4 +1,5 @@
 import { BaseResources } from './BaseResources'
+import type { ResourcesData } from 'kg-calculator-typings'
 
 export default class HeroesResources implements BaseResources<HeroesResources> {
   n: number = 0
@@ -6,7 +7,7 @@ export default class HeroesResources implements BaseResources<HeroesResources> {
   sr: number = 0
   ssr: number = 0
 
-  constructor(initData?: Partial<Pick<HeroesResources, 'n' | 'r' | 'sr' | 'ssr'>>) {
+  constructor(initData?: Partial<ResourcesData['heroesCards']>) {
     this.n = initData?.n || 0
     this.r = initData?.r || 0
     this.sr = initData?.sr || 0

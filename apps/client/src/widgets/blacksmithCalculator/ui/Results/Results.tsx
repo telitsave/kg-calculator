@@ -1,10 +1,10 @@
 import React, { FC, ReactNode, memo } from 'react'
 import { Divider, Title } from '@mantine/core'
-import ParameterInfo from 'entities/parameter/ui/ParameterInfo'
+import type { BlacksmithParameters, BlacksmithResources } from 'kg-calculator-typings/api/Blacksmith'
+import { ParameterInfo } from 'entities/parameter'
 import { ResourceCount } from 'entities/resource'
-import { BlacksmithResources } from 'shared/api'
-import { BlacksmithParameters } from 'shared/api/types/BlacksmithParameters'
 import Flexbox from 'shared/ui/Flexbox'
+
 
 interface Props {
   className?: string

@@ -2,9 +2,9 @@ import React, { FC, memo } from 'react'
 import { NavLink } from 'react-router-dom'
 import cx from 'classnames'
 import { Alert, Space, Text } from '@mantine/core'
+import { SettingPriorityElement, SettingsSwitch } from 'entities/calculationSettings'
+import Flexbox from 'shared/ui/Flexbox'
 import { ExtremePowerStatisticsTotal } from 'widgets/extremePowerStatistics'
-import { SettingPriorityElement, SettingsSwitch } from '../../../../entities/calculationSettings'
-import Flexbox from '../../../../shared/ui/Flexbox'
 import css from './styles.module.sass'
 
 

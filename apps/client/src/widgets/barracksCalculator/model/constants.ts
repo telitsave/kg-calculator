@@ -1,20 +1,20 @@
-import { BarracksElements } from 'entities/parameter'
+import type { ElementsType } from 'kg-calculator-typings/api/Elements'
 
-export const elements = [
+export const elements: { key: ElementsType; title: string }[] = [
   {
-    key: 'bow' as BarracksElements,
+    key: 'bow',
     title: 'Лучницы',
   },
   {
-    key: 'fire' as BarracksElements,
+    key: 'fire',
     title: 'Огненные маги',
   },
   {
-    key: 'ice' as BarracksElements,
+    key: 'ice',
     title: 'Ледяные колдуньи',
   },
   {
-    key: 'poison' as BarracksElements,
+    key: 'poison',
     title: 'Гоблины',
   },
 ]

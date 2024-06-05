@@ -1,4 +1,4 @@
-import { CalculateExtremePowerResponse } from 'shared/api'
+import type { CalculateExtremePowerResponse } from 'kg-calculator-typings/api/ExtremePower'
 
 export default class NamesHelper {
   static getModuleNameByType(type: keyof Omit<CalculateExtremePowerResponse, 'total'>) {

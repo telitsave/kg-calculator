@@ -4,6 +4,19 @@
     "outDir": "dist",
     "baseUrl": ".",
     "sourceMap": true,
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "paths": {
+      "kg-calculator-typings": [
+        "kg-calculator-typings"
+      ],
+      "kg-calculator-typings/*": [
+        "kg-calculator-typings/*"
+      ]
+    },
+    "typeRoots": [
+      "node_modules/kg-calculator-typings",
+      "node_modules/@types"
+    ]
   }
 }

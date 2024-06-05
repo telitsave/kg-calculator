@@ -1,19 +1,18 @@
 import React, { FC, memo } from 'react'
 import { Divider, Title } from '@mantine/core'
-import { BarracksElementalInfo, BarracksElements, BarracksTalentsInfo } from 'entities/parameter'
-import { KeysHelper, ResourcesConverts } from 'entities/resource'
-import { BarracksBooksResources, Parameters, Resources } from 'shared/api'
+import type { BarracksBooksResources, ElementsType, ParametersData, ResourcesData } from 'kg-calculator-typings'
+import { BarracksElementalInfo, BarracksTalentsInfo } from 'entities/parameter'
+import { KeysHelper, ResourceCount, ResourcesConverts } from 'entities/resource'
 import Flexbox from 'shared/ui/Flexbox'
-import ResourceCount from '../../../../entities/resource/ui/ResourceCount'
 import css from './styles.module.sass'
 
 
 interface Props {
   className?: string
-  element: BarracksElements
-  oldParams: Parameters
-  params: Parameters
-  spentResources: Resources
+  element: ElementsType
+  oldParams: ParametersData
+  params: ParametersData
+  spentResources: ResourcesData
   randomBooksUsed: BarracksBooksResources
   convertBooksForBarracks: BarracksBooksResources
   convertTalentBooks: BarracksBooksResources

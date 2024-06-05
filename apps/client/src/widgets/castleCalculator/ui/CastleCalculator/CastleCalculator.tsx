@@ -1,10 +1,10 @@
 import React, { FC, ReactNode, memo, useCallback, useState } from 'react'
 import cx from 'classnames'
+import type { ResourcesData } from 'kg-calculator-typings/api/ResourcesData'
 import { useSettings } from 'entities/calculationSettings'
 import { useCalculateGoalCastle, useCalculatePossibleCastle } from 'entities/castle'
 import { useParameters } from 'entities/parameter'
 import { useResources } from 'entities/resource'
-import { Resources } from 'shared/api'
 import Flexbox from 'shared/ui/Flexbox'
 import Inputs from '../Inputs'
 import ResultsPossible from '../Results'
@@ -14,7 +14,7 @@ import css from './styles.module.sass'
 
 interface Props {
   className?: string
-  getExtremePowerNode: (resources: Resources) => ReactNode
+  getExtremePowerNode: (resources: ResourcesData) => ReactNode
 }
 
 const CastleCalculator: FC<Props> = memo(({ className, getExtremePowerNode }) => {
@@ -25,16 +25,7 @@ const CastleCalculator: FC<Props> = memo(({ className, getExtremePowerNode }) =>
   const settings = useSettings()
   const {
     mutate: calculatePossibleCastle,
-    data: {
-      oldParameters,
-      parameters: newParameters,
-      leftResources,
-      spentResources,
-      convertedSource,
-      convertedTarget,
-      spentBoxesResources,
-      sourceResources,
-    } = {},
+    data: possibleData,
     isSuccess: isCalculatingPossibleCastle,
   } = useCalculatePossibleCastle()
 
@@ -59,6 +50,7 @@ const CastleCalculator: FC<Props> = memo(({ className, getExtremePowerNode }) =>
       calculateGoalCastle({
         resources,
         parameters,
+        settings,
         goalLevel: goalCastleLevel,
       })
     } else {
@@ -81,17 +73,17 @@ const CastleCalculator: FC<Props> = memo(({ className, getExtremePowerNode }) =>
         setGoalCastleLevel={setGoalCastleLevel}
         onCalculateButtonClick={handleCalculateButtonClick}
       />
-      {isCalculatingPossibleCastle && (
+      {possibleData && (
         <ResultsPossible
-          oldParameters={oldParameters}
-          parameters={newParameters}
-          sourceResources={sourceResources}
-          spentResources={spentResources}
-          leftResources={leftResources}
-          convertedSource={convertedSource}
-          convertedTarget={convertedTarget}
-          spentBoxes={spentBoxesResources}
-          extremePowerPossibleNode={spentResources && getExtremePowerNode(spentResources)}
+          oldParameters={possibleData.oldParameters}
+          parameters={possibleData.parameters}
+          sourceResources={possibleData.sourceResources}
+          spentResources={possibleData.spentResources}
+          leftResources={possibleData.leftResources}
+          convertedSource={possibleData.convertedSource}
+          convertedTarget={possibleData.convertedTarget}
+          spentBoxes={possibleData.spentBoxesResources}
+          extremePowerPossibleNode={getExtremePowerNode(possibleData.spentResources)}
         />
       )}
       {isCalculatingGoalCastle && (

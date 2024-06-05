@@ -1,8 +1,8 @@
 import React, { FC, ReactNode, memo, useCallback } from 'react'
 import { Divider } from '@mantine/core'
+import type { ResourcesData } from 'kg-calculator-typings/api/ResourcesData'
 import { useParameters } from 'entities/parameter'
 import { useResources } from 'entities/resource'
-import { Resources } from 'shared/api'
 import Flexbox from 'shared/ui/Flexbox'
 import useCalculateBlacksmith from '../../model/hooks/useCalculateBlacksmith'
 import Inputs from '../Inputs'
@@ -11,8 +11,8 @@ import Results from '../Results'
 
 interface Props {
   className?: string
-  getExtremePowerNode: (resources: Partial<Resources>) => ReactNode
-  getMightiestKingdomNode: (resources: Partial<Resources>) => ReactNode
+  getExtremePowerNode: (resources: ResourcesData) => ReactNode
+  getMightiestKingdomNode: (resources: ResourcesData) => ReactNode
 }
 
 const BlacksmithCalculator: FC<Props> = memo(({ className, getExtremePowerNode, getMightiestKingdomNode }) => {

@@ -1,8 +1,8 @@
-import { Settings } from 'shared/api'
 import usePriorityElementSetting from './usePriorityElementSetting'
 import useSetting from './useSetting'
+import type { SettingsData } from 'kg-calculator-typings'
 
-const useSettings = (): Settings => {
+const useSettings = (): SettingsData => {
   return {
     canUseCastleBoxes: useSetting('canUseCastleBoxes')[0],
     canConvertBarracksBooksToTalents: useSetting('canConvertBarracksBooksToTalents')[0],

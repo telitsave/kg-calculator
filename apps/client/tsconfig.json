@@ -36,6 +36,9 @@
       ],
       "shared/*": [
         "shared/*"
+      ],
+      "kg-calculator-typings": [
+        "kg-calculator-typings"
       ]
     },
     "lib": [
@@ -46,7 +49,6 @@
     "target": "es6",
     "baseUrl": "./src",
     "allowJs": true,
-    "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
@@ -57,7 +59,11 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "typeRoots": [
+      "node_modules/kg-calculator-typings",
+      "node_modules/@types"
+    ]
   },
   "include": [
     "src"

@@ -1,10 +1,10 @@
 import { useMemo } from 'react'
-import { TalentsParameters } from 'shared/api'
-import { BarracksElements } from '../types'
+import type { ElementsType } from 'kg-calculator-typings/api/Elements'
+import type { TalentsParameters } from 'kg-calculator-typings/api/Talents'
 import useTalentParameter from './useTalentParameter'
 
 
-const useTalentsParametersByRank = (element: BarracksElements, rank: number) => {
+const useTalentsParametersByRank = (element: ElementsType, rank: number) => {
   const booksCells = useTalentParameter(element, `rank${rank}`, 'books')
   const crownsCells = useTalentParameter(element, `rank${rank}`, 'crowns')
 
@@ -27,7 +27,7 @@ const useTalentsParametersByRank = (element: BarracksElements, rank: number) => 
   )
 }
 
-const useTalentsParametersByElement = (element: BarracksElements) => {
+const useTalentsParametersByElement = (element: ElementsType) => {
   const rank1 = useTalentsParametersByRank(element, 1)
   const rank2 = useTalentsParametersByRank(element, 2)
   const rank3 = useTalentsParametersByRank(element, 3)

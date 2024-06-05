@@ -1,4 +1,5 @@
 import { BaseResources } from './BaseResources'
+import type { ResourcesData } from 'kg-calculator-typings'
 
 export type DragonRuneType = 'green' | 'blue' | 'purple' | 'gold'
 
@@ -9,7 +10,7 @@ export default class DragonRunesResources implements BaseResources<DragonRunesRe
   gold: number = 0
   boxes: number = 0
 
-  constructor(initData?: Partial<Pick<DragonRunesResources, 'green' | 'boxes' | 'blue' | 'gold' | 'purple'>>) {
+  constructor(initData?: Partial<ResourcesData['dragonsRunes']>) {
     this.green = initData?.green || 0
     this.blue = initData?.blue || 0
     this.purple = initData?.purple || 0

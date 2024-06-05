@@ -1,5 +1,5 @@
 import { useLocalStorage } from '@mantine/hooks'
-import { ElementsType } from '../types'
+import type { ElementsType } from 'kg-calculator-typings'
 
 const usePriorityElementSetting = () =>
   useLocalStorage<ElementsType>({

@@ -1,12 +1,9 @@
 import { Request, Response } from 'express'
-import Resources, { ResourcesData } from '../model/resources/Resources'
-import Parameters, { ParametersData } from '../model/parameters/Parameters'
+import Resources from '../model/resources/Resources'
+import Parameters  from '../model/parameters/Parameters'
 import GalleryCalculatorModel from '../model/calculator/gallery/GalleryCalculatorModel'
+import type { CalculateGalleryPayload } from 'kg-calculator-typings'
 
-interface CalculateGalleryPayload {
-  resources: ResourcesData
-  parameters: ParametersData
-}
 
 export default class GalleryController {
   static calculateGallery(request: Request, response: Response) {

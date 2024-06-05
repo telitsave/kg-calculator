@@ -1,4 +1,4 @@
-import { WitchParameters } from 'shared/api'
+import type { WitchParameters } from 'kg-calculator-typings/api/Witch'
 
 export type ParameterTypes =
   | 'castleLevel'
@@ -24,5 +24,3 @@ export type ParameterTypes =
   | 'galleryLevel'
 
 export type Ranks = keyof WitchParameters['gems']
-
-export type BarracksElements = 'bow' | 'fire' | 'ice' | 'poison'

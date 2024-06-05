@@ -1,15 +1,4 @@
-export type ElementsType = 'bow' | 'fire' | 'ice' | 'poison'
-
-export interface BarracksParametersData {
-  bowRank?: number
-  bowLevel?: number
-  fireRank?: number
-  fireLevel?: number
-  iceRank?: number
-  iceLevel?: number
-  poisonRank?: number
-  poisonLevel?: number
-}
+import type { ElementsType, ParametersData } from 'kg-calculator-typings'
 
 export interface ParametersByElement {
   rank: number
@@ -22,7 +11,7 @@ export default class BarracksParameters {
   ice: ParametersByElement
   poison: ParametersByElement
 
-  constructor(initData?: Partial<BarracksParametersData>) {
+  constructor(initData?: ParametersData['barracks']) {
     this.bow = {
       rank: initData?.bowRank || 0,
       level: initData?.bowLevel || 0,
@@ -51,7 +40,7 @@ export default class BarracksParameters {
     return elements
   }
 
-  toJSON() {
+  getData(): ParametersData['barracks']{
     return {
       bowRank: this.bow.rank,
       bowLevel: this.bow.level,
@@ -65,6 +54,6 @@ export default class BarracksParameters {
   }
 
   clone() {
-    return new BarracksParameters(this.toJSON())
+    return new BarracksParameters(this.getData())
   }
 }

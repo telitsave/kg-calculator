@@ -2,7 +2,7 @@ import {
   CalculateExtremePowerPayload,
   CalculateExtremePowerResponse,
   CalculateTotalExtremePowerPayload,
-} from 'shared/api'
+} from 'kg-calculator-typings'
 import AxiosService from 'shared/services/axiosService'
 
 export const calculateExtremePower = (payload: CalculateExtremePowerPayload) => {

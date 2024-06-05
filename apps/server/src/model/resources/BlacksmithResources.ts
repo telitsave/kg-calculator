@@ -1,9 +1,10 @@
 import { BaseResources } from './BaseResources'
+import type { ResourcesData } from 'kg-calculator-typings'
 
 export default class BlacksmithResources implements BaseResources<BlacksmithResources> {
   hammers: number = 0
 
-  constructor(initData?: Partial<Pick<BlacksmithResources, 'hammers'>>) {
+  constructor(initData?: Partial<ResourcesData['blacksmith']>) {
     this.hammers = initData?.hammers || 0
   }
 

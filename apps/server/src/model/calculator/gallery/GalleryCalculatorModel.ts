@@ -1,6 +1,7 @@
 import Resources from '../../resources/Resources'
 import Parameters from '../../parameters/Parameters'
 import data from './data.json'
+import type { CalculateGalleryResponse } from 'kg-calculator-typings'
 
 export default class GalleryCalculatorModel {
   private readonly _sourceParameters: Parameters
@@ -16,12 +17,12 @@ export default class GalleryCalculatorModel {
     this._leftResources = resources.clone()
   }
 
-  calculateGallery() {
+  calculateGallery(): CalculateGalleryResponse {
     while (this.tryCalculateGallery()) {}
 
     return {
-      sourceParameters: this._sourceParameters,
-      parameters: this._parameters,
+      sourceParameters: this._sourceParameters.getData(),
+      parameters: this._parameters.getData(),
       sourceResources: this._sourceResources,
       spentResources: this._spentResources,
       leftResources: this._leftResources,

@@ -6,10 +6,10 @@ import {
   CastleCalculatorPage,
   DragonCalculatorPage,
   ExtremePowerPage,
+  GalleryPage,
   MightiestKingdomPage,
   WitchCalculatorPage,
 } from './calculator'
-import GalleryPage from './calculator/ui/GalleryPage'
 import Inventory from './inventory'
 import { ParametersPage } from './parameters'
 

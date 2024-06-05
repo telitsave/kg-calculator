@@ -1,54 +1,12 @@
 import CastleResources from './CastleResources'
 import HeroesResources from './HeroesResources'
-import BarracksBooksResources, { BarracksBooksByElement } from './BarracksBooksResources'
+import BarracksBooksResources from './BarracksBooksResources'
 import DragonRunesResources from './DragonRunesResources'
 import TalentsResources from './TalentsResources'
 import WitchResources from './WitchResources'
 import BlacksmithResources from './BlacksmithResources'
 import { BaseResources } from './BaseResources'
-
-export interface ResourcesData {
-  heroesCards?: {
-    n?: number
-    r?: number
-    sr?: number
-    ssr?: number
-  }
-  barracksBooks?: {
-    bow: BarracksBooksByElement
-    fire: BarracksBooksByElement
-    ice: BarracksBooksByElement
-    poison: BarracksBooksByElement
-    random: number
-  }
-  dragonsRunes?: {
-    green?: number
-    blue?: number
-    purple?: number
-    gold?: number
-    boxes?: number
-  }
-  talents?: {
-    books?: number
-    oraclesCrowns?: number
-  }
-  castle?: {
-    stone?: number
-    wood?: number
-    steel?: number
-    boxes?: number
-  }
-  witch?: {
-    lightReagents?: number
-    greenWitchPotion?: number
-    purpleWitchPotion?: number
-  }
-  blacksmith?: {
-    hammers?: number
-  }
-  galleryShards?: number
-  gold?: number
-}
+import type { ResourcesData } from 'kg-calculator-typings'
 
 export default class Resources implements BaseResources<Resources> {
   heroesCards: HeroesResources
@@ -61,7 +19,7 @@ export default class Resources implements BaseResources<Resources> {
   galleryShards: number
   gold: number
 
-  constructor(initData?: ResourcesData) {
+  constructor(initData?: Partial<ResourcesData>) {
     this.heroesCards = new HeroesResources(initData?.heroesCards)
     this.castle = new CastleResources(initData?.castle)
     this.barracksBooks = new BarracksBooksResources(initData?.barracksBooks)
@@ -103,5 +61,19 @@ export default class Resources implements BaseResources<Resources> {
 
     this.gold -= otherResources.gold
     if (this.gold < 0) this.gold = 0
+  }
+
+  getData(): ResourcesData{
+    return {
+      witch: this.witch,
+      talents: this.talents,
+      castle: this.castle,
+      dragonsRunes: this.dragonsRunes,
+      blacksmith: this.blacksmith,
+      barracksBooks: this.barracksBooks,
+      heroesCards: this.heroesCards,
+      galleryShards: this.galleryShards,
+      gold: this.gold
+    }
   }
 }

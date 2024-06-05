@@ -1,6 +1,7 @@
 import Resources from '../../resources/Resources'
 import Parameters from '../../parameters/Parameters'
 import data from './data.json'
+import {CalculateBlacksmithResponse} from 'kg-calculator-typings'
 
 export default class BlacksmithCalculatorModel {
   private readonly _sourceParameters: Parameters
@@ -16,15 +17,15 @@ export default class BlacksmithCalculatorModel {
     this._leftResources = resources.clone()
   }
 
-  calculateBlacksmith() {
+  calculateBlacksmith(): CalculateBlacksmithResponse {
     while (this.tryCalculateBlacksmith()) {}
 
     return {
-      sourceParameters: this._sourceParameters,
-      parameters: this._parameters,
-      sourceResources: this._sourceResources,
-      spentResources: this._spentResources,
-      leftResources: this._leftResources,
+      sourceParameters: this._sourceParameters.getData(),
+      parameters: this._parameters.getData(),
+      sourceResources: this._sourceResources.getData(),
+      spentResources: this._spentResources.getData(),
+      leftResources: this._leftResources.getData(),
     }
   }
 

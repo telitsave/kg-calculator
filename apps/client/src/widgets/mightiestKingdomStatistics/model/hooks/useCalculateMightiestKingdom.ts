@@ -1,8 +1,9 @@
 import { useQuery } from '@tanstack/react-query'
-import { Resources } from 'shared/api'
+import { ResourcesData } from 'kg-calculator-typings'
 import * as api from '../../api/api'
 
-const useCalculateMightiestKingdom = (resources: Partial<Resources>) => {
+
+const useCalculateMightiestKingdom = (resources: ResourcesData) => {
   return useQuery({
     queryKey: ['mightiestKingdom', resources],
     queryFn: () => api.calculateMightiestKingdom({ resources }),

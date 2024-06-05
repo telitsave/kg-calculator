@@ -1,27 +1,20 @@
-export interface GemsRankParametersData {
-  sapphire: number
-  ruby: number
-  malachite: number
-  amethyst: number
-  amber: number
-  emerald: number
-}
+import type { GemsRankParameters, ParametersData } from 'kg-calculator-typings'
 
 export default class WitchParameters {
   lightLevel: number = 0
   darkLevel: number = 0
   gems: {
-    rank1: GemsRankParametersData
-    rank2: GemsRankParametersData
-    rank3: GemsRankParametersData
-    rank4: GemsRankParametersData
-    rank5: GemsRankParametersData
-    rank6: GemsRankParametersData
-    rank7: GemsRankParametersData
-    rank8: GemsRankParametersData
+    rank1: GemsRankParameters
+    rank2: GemsRankParameters
+    rank3: GemsRankParameters
+    rank4: GemsRankParameters
+    rank5: GemsRankParameters
+    rank6: GemsRankParameters
+    rank7: GemsRankParameters
+    rank8: GemsRankParameters
   }
 
-  constructor(initData?: Partial<Pick<WitchParameters, 'lightLevel' | 'darkLevel' | 'gems'>>) {
+  constructor(initData?: ParametersData['witch']) {
     this.lightLevel = initData?.lightLevel || 0
     this.darkLevel = initData?.darkLevel || 0
     this.gems = {
@@ -36,7 +29,7 @@ export default class WitchParameters {
     }
   }
 
-  private getFilledGemsByRank(rank?: GemsRankParametersData) {
+  private getFilledGemsByRank(rank?: GemsRankParameters) {
     return {
       amber: rank?.amber || 0,
       amethyst: rank?.amethyst || 0,

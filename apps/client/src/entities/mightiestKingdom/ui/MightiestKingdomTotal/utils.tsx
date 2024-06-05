@@ -1,6 +1,6 @@
 import React from 'react'
+import type { CalculateMightiestKingdomResponse } from 'kg-calculator-typings/api/MightiestKingdom'
 import { ResourceIcon } from 'entities/resource'
-import { CalculateMightiestKingdomResponse } from 'shared/api'
 import Flexbox from 'shared/ui/Flexbox'
 import NamesHelper from '../../helpers/namesHelper'
 import MightiestKingdomElement from '../MightiestKingdomElement'

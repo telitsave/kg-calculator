@@ -1,7 +1,7 @@
 import React, { FC, memo, useCallback, useMemo } from 'react'
 import cx from 'classnames'
 import { NumberInput } from '@mantine/core'
-import Flexbox from '../../../../shared/ui/Flexbox'
+import Flexbox from 'shared/ui/Flexbox'
 import useParameter from '../../model/hooks/useParameter'
 import { ParameterTypes } from '../../model/types'
 import ParameterIcon from '../ParameterIcon'

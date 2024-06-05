@@ -1,13 +1,13 @@
 import React, { FC, memo } from 'react'
 import { Progress, Text } from '@mantine/core'
+import type { BarracksParameters } from 'kg-calculator-typings/api/Barracks'
+import type { ElementsType } from 'kg-calculator-typings/api/Elements'
 import { BarracksRankIcon } from 'shared/assets/icons'
 import Flexbox from 'shared/ui/Flexbox'
-import { BarracksParameters } from '../../../../shared/api'
-import { BarracksElements } from '../../model/types'
 
 interface Props {
   className?: string
-  element: BarracksElements
+  element: ElementsType
   oldBarrackParams: BarracksParameters
   barrackParams: BarracksParameters
 }

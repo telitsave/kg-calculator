@@ -1,7 +1,7 @@
 import React, { FC, memo } from 'react'
 import cx from 'classnames'
 import { Divider, Text, Tooltip } from '@mantine/core'
-import { CalculateMightiestKingdomResponse } from 'shared/api'
+import type { CalculateMightiestKingdomResponse } from 'kg-calculator-typings/api/MightiestKingdom'
 import { MightiestKingdomIcon } from 'shared/assets/icons'
 import TypeHelper from 'shared/helpers/typeHelper'
 import Flexbox from 'shared/ui/Flexbox'

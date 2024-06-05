@@ -1,10 +1,11 @@
 import { BaseResources } from './BaseResources'
+import type { ResourcesData } from 'kg-calculator-typings'
 
 export default class TalentsResources implements BaseResources<TalentsResources> {
   books: number = 0
   oraclesCrowns: number = 0
 
-  constructor(initData?: Partial<Pick<TalentsResources, 'books' | 'oraclesCrowns'>>) {
+  constructor(initData?: Partial<ResourcesData['talents']>) {
     this.books = initData?.books || 0
     this.oraclesCrowns = initData?.oraclesCrowns || 0
   }
