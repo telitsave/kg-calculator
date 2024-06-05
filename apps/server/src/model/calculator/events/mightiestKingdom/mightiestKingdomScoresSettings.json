@@ -1,0 +1,21 @@
+{
+  "nHeroCard": 100,
+  "rHeroCard": 700,
+  "srHeroCard": 3500,
+  "ssrHeroCard": 14000,
+  "barrackBook1": 800,
+  "barrackBook2": 4000,
+  "barrackBook3": 20000,
+  "barrackBook4": 100000,
+  "dragonRuneGreen": 70,
+  "dragonRuneBlue": 700,
+  "dragonRunePurple": 7000,
+  "dragonRuneGold": 14000,
+  "talentsBook": 350,
+  "oracleCrown": 3500,
+  "lightReagent": 70,
+  "greenWitchPotion": 350,
+  "purpleWitchPotion": 3500,
+  "blacksmith": 100,
+  "galleryShard": 1000
+}

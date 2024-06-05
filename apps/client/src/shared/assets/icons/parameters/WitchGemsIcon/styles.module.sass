@@ -1,0 +1,28 @@
+@import "shared/assets/icons/baseIcon"
+
+@mixin getGemIcon($rank, $index)
+  background-image: url("./icons/gem-#{$rank}-#{$index}.png")
+
+.background
+  @include baseBackground
+  width: 48px
+  height: 48px
+  position: relative
+
+  @each $rank in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+    &.rank#{$rank}
+      @if $rank == 1
+        @include backgroundGreen
+      @else if $rank == 2
+        @include backgroundBlue
+      @else if $rank == 3
+        @include backgroundPurple
+      @else
+        @include backgroundGold
+
+      @each $index in 1, 2, 3, 4, 5, 6
+        .icon.gem-#{$index}
+          @include getGemIcon($rank, $index)
+
+  .icon
+    @include baseIcon

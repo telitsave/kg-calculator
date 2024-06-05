@@ -1,0 +1,2378 @@
+[
+    {
+        "number": 1,
+        "pieces": 0,
+        "cost": 0,
+        "power": 0
+    },
+    {
+        "number": 1,
+        "pieces": 1,
+        "cost": 1,
+        "power": 10000
+    },
+    {
+        "number": 1,
+        "pieces": 2,
+        "cost": 1,
+        "power": 20000
+    },
+    {
+        "number": 1,
+        "pieces": 3,
+        "cost": 2,
+        "power": 40000
+    },
+    {
+        "number": 2,
+        "pieces": 0,
+        "cost": 3,
+        "power": 70000
+    },
+    {
+        "number": 2,
+        "pieces": 1,
+        "cost": 4,
+        "power": 110000
+    },
+    {
+        "number": 2,
+        "pieces": 2,
+        "cost": 4,
+        "power": 150000
+    },
+    {
+        "number": 2,
+        "pieces": 3,
+        "cost": 6,
+        "power": 210000
+    },
+    {
+        "number": 3,
+        "pieces": 0,
+        "cost": 7,
+        "power": 280000
+    },
+    {
+        "number": 3,
+        "pieces": 1,
+        "cost": 7,
+        "power": 350000
+    },
+    {
+        "number": 3,
+        "pieces": 2,
+        "cost": 9,
+        "power": 440000
+    },
+    {
+        "number": 3,
+        "pieces": 3,
+        "cost": 10,
+        "power": 540000
+    },
+    {
+        "number": 4,
+        "pieces": 0,
+        "cost": 11,
+        "power": 650000
+    },
+    {
+        "number": 4,
+        "pieces": 1,
+        "cost": 13,
+        "power": 780000
+    },
+    {
+        "number": 4,
+        "pieces": 2,
+        "cost": 13,
+        "power": 910000
+    },
+    {
+        "number": 4,
+        "pieces": 3,
+        "cost": 15,
+        "power": 1060000
+    },
+    {
+        "number": 5,
+        "pieces": 0,
+        "cost": 16,
+        "power": 1220000
+    },
+    {
+        "number": 5,
+        "pieces": 1,
+        "cost": 17,
+        "power": 1390000
+    },
+    {
+        "number": 5,
+        "pieces": 2,
+        "cost": 19,
+        "power": 1580000
+    },
+    {
+        "number": 5,
+        "pieces": 3,
+        "cost": 20,
+        "power": 1780000
+    },
+    {
+        "number": 6,
+        "pieces": 0,
+        "cost": 21,
+        "power": 1990000
+    },
+    {
+        "number": 6,
+        "pieces": 1,
+        "cost": 22,
+        "power": 2210000
+    },
+    {
+        "number": 6,
+        "pieces": 2,
+        "cost": 24,
+        "power": 2450000
+    },
+    {
+        "number": 6,
+        "pieces": 3,
+        "cost": 25,
+        "power": 2700000
+    },
+    {
+        "number": 6,
+        "pieces": 4,
+        "cost": 26,
+        "power": 2960000
+    },
+    {
+        "number": 6,
+        "pieces": 5,
+        "cost": 28,
+        "power": 3240000
+    },
+    {
+        "number": 6,
+        "pieces": 6,
+        "cost": 29,
+        "power": 3530000
+    },
+    {
+        "number": 6,
+        "pieces": 7,
+        "cost": 31,
+        "power": 3840000
+    },
+    {
+        "number": 6,
+        "pieces": 8,
+        "cost": 32,
+        "power": 4160000
+    },
+    {
+        "number": 7,
+        "pieces": 0,
+        "cost": 33,
+        "power": 4490000
+    },
+    {
+        "number": 7,
+        "pieces": 1,
+        "cost": 34,
+        "power": 4830000
+    },
+    {
+        "number": 7,
+        "pieces": 2,
+        "cost": 37,
+        "power": 5200000
+    },
+    {
+        "number": 7,
+        "pieces": 3,
+        "cost": 37,
+        "power": 5570000
+    },
+    {
+        "number": 7,
+        "pieces": 4,
+        "cost": 39,
+        "power": 5960000
+    },
+    {
+        "number": 7,
+        "pieces": 5,
+        "cost": 40,
+        "power": 6360000
+    },
+    {
+        "number": 7,
+        "pieces": 6,
+        "cost": 42,
+        "power": 6780000
+    },
+    {
+        "number": 7,
+        "pieces": 7,
+        "cost": 43,
+        "power": 7210000
+    },
+    {
+        "number": 7,
+        "pieces": 8,
+        "cost": 45,
+        "power": 7660000
+    },
+    {
+        "number": 8,
+        "pieces": 0,
+        "cost": 46,
+        "power": 8120000
+    },
+    {
+        "number": 8,
+        "pieces": 1,
+        "cost": 48,
+        "power": 8600000
+    },
+    {
+        "number": 8,
+        "pieces": 2,
+        "cost": 49,
+        "power": 9090000
+    },
+    {
+        "number": 8,
+        "pieces": 3,
+        "cost": 51,
+        "power": 9600000
+    },
+    {
+        "number": 8,
+        "pieces": 4,
+        "cost": 52,
+        "power": 10120000
+    },
+    {
+        "number": 8,
+        "pieces": 5,
+        "cost": 54,
+        "power": 10660000
+    },
+    {
+        "number": 8,
+        "pieces": 6,
+        "cost": 55,
+        "power": 11210000
+    },
+    {
+        "number": 8,
+        "pieces": 7,
+        "cost": 57,
+        "power": 11780000
+    },
+    {
+        "number": 8,
+        "pieces": 8,
+        "cost": 58,
+        "power": 12360000
+    },
+    {
+        "number": 9,
+        "pieces": 0,
+        "cost": 60,
+        "power": 12960000
+    },
+    {
+        "number": 9,
+        "pieces": 1,
+        "cost": 61,
+        "power": 13570000
+    },
+    {
+        "number": 9,
+        "pieces": 2,
+        "cost": 63,
+        "power": 14200000
+    },
+    {
+        "number": 9,
+        "pieces": 3,
+        "cost": 65,
+        "power": 14850000
+    },
+    {
+        "number": 9,
+        "pieces": 4,
+        "cost": 66,
+        "power": 15510000
+    },
+    {
+        "number": 9,
+        "pieces": 5,
+        "cost": 68,
+        "power": 16190000
+    },
+    {
+        "number": 9,
+        "pieces": 6,
+        "cost": 69,
+        "power": 16880000
+    },
+    {
+        "number": 9,
+        "pieces": 7,
+        "cost": 71,
+        "power": 17590000
+    },
+    {
+        "number": 9,
+        "pieces": 8,
+        "cost": 72,
+        "power": 18310000
+    },
+    {
+        "number": 10,
+        "pieces": 0,
+        "cost": 74,
+        "power": 19050000
+    },
+    {
+        "number": 10,
+        "pieces": 1,
+        "cost": 76,
+        "power": 19810000
+    },
+    {
+        "number": 10,
+        "pieces": 2,
+        "cost": 77,
+        "power": 20580000
+    },
+    {
+        "number": 10,
+        "pieces": 3,
+        "cost": 79,
+        "power": 21370000
+    },
+    {
+        "number": 10,
+        "pieces": 4,
+        "cost": 80,
+        "power": 22170000
+    },
+    {
+        "number": 10,
+        "pieces": 5,
+        "cost": 82,
+        "power": 22990000
+    },
+    {
+        "number": 10,
+        "pieces": 6,
+        "cost": 84,
+        "power": 23830000
+    },
+    {
+        "number": 10,
+        "pieces": 7,
+        "cost": 85,
+        "power": 24680000
+    },
+    {
+        "number": 10,
+        "pieces": 8,
+        "cost": 87,
+        "power": 25550000
+    },
+    {
+        "number": 11,
+        "pieces": 0,
+        "cost": 89,
+        "power": 26440000
+    },
+    {
+        "number": 11,
+        "pieces": 1,
+        "cost": 90,
+        "power": 27340000
+    },
+    {
+        "number": 11,
+        "pieces": 2,
+        "cost": 92,
+        "power": 28260000
+    },
+    {
+        "number": 11,
+        "pieces": 3,
+        "cost": 94,
+        "power": 29200000
+    },
+    {
+        "number": 11,
+        "pieces": 4,
+        "cost": 95,
+        "power": 30150000
+    },
+    {
+        "number": 11,
+        "pieces": 5,
+        "cost": 97,
+        "power": 31120000
+    },
+    {
+        "number": 11,
+        "pieces": 6,
+        "cost": 98,
+        "power": 32100000
+    },
+    {
+        "number": 11,
+        "pieces": 7,
+        "cost": 101,
+        "power": 33110000
+    },
+    {
+        "number": 11,
+        "pieces": 8,
+        "cost": 102,
+        "power": 34130000
+    },
+    {
+        "number": 12,
+        "pieces": 0,
+        "cost": 103,
+        "power": 35160000
+    },
+    {
+        "number": 12,
+        "pieces": 1,
+        "cost": 106,
+        "power": 36220000
+    },
+    {
+        "number": 12,
+        "pieces": 2,
+        "cost": 107,
+        "power": 37290000
+    },
+    {
+        "number": 12,
+        "pieces": 3,
+        "cost": 108,
+        "power": 38370000
+    },
+    {
+        "number": 12,
+        "pieces": 4,
+        "cost": 111,
+        "power": 39480000
+    },
+    {
+        "number": 12,
+        "pieces": 5,
+        "cost": 112,
+        "power": 40600000
+    },
+    {
+        "number": 12,
+        "pieces": 6,
+        "cost": 114,
+        "power": 41740000
+    },
+    {
+        "number": 12,
+        "pieces": 7,
+        "cost": 115,
+        "power": 42890000
+    },
+    {
+        "number": 12,
+        "pieces": 8,
+        "cost": 118,
+        "power": 44070000
+    },
+    {
+        "number": 13,
+        "pieces": 0,
+        "cost": 119,
+        "power": 45260000
+    },
+    {
+        "number": 13,
+        "pieces": 1,
+        "cost": 121,
+        "power": 46470000
+    },
+    {
+        "number": 13,
+        "pieces": 2,
+        "cost": 122,
+        "power": 47690000
+    },
+    {
+        "number": 13,
+        "pieces": 3,
+        "cost": 124,
+        "power": 48930000
+    },
+    {
+        "number": 13,
+        "pieces": 4,
+        "cost": 127,
+        "power": 50200000
+    },
+    {
+        "number": 13,
+        "pieces": 5,
+        "cost": 127,
+        "power": 51470000
+    },
+    {
+        "number": 13,
+        "pieces": 6,
+        "cost": 130,
+        "power": 52770000
+    },
+    {
+        "number": 13,
+        "pieces": 7,
+        "cost": 131,
+        "power": 54080000
+    },
+    {
+        "number": 13,
+        "pieces": 8,
+        "cost": 133,
+        "power": 55410000
+    },
+    {
+        "number": 14,
+        "pieces": 0,
+        "cost": 135,
+        "power": 56760000
+    },
+    {
+        "number": 14,
+        "pieces": 1,
+        "cost": 137,
+        "power": 58130000
+    },
+    {
+        "number": 14,
+        "pieces": 2,
+        "cost": 138,
+        "power": 59510000
+    },
+    {
+        "number": 14,
+        "pieces": 3,
+        "cost": 140,
+        "power": 60910000
+    },
+    {
+        "number": 14,
+        "pieces": 4,
+        "cost": 142,
+        "power": 62330000
+    },
+    {
+        "number": 14,
+        "pieces": 5,
+        "cost": 144,
+        "power": 63770000
+    },
+    {
+        "number": 14,
+        "pieces": 6,
+        "cost": 145,
+        "power": 65220000
+    },
+    {
+        "number": 14,
+        "pieces": 7,
+        "cost": 147,
+        "power": 66690000
+    },
+    {
+        "number": 14,
+        "pieces": 8,
+        "cost": 150,
+        "power": 68190000
+    },
+    {
+        "number": 15,
+        "pieces": 0,
+        "cost": 150,
+        "power": 69690000
+    },
+    {
+        "number": 15,
+        "pieces": 1,
+        "cost": 153,
+        "power": 71220000
+    },
+    {
+        "number": 15,
+        "pieces": 2,
+        "cost": 155,
+        "power": 72770000
+    },
+    {
+        "number": 15,
+        "pieces": 3,
+        "cost": 156,
+        "power": 74330000
+    },
+    {
+        "number": 15,
+        "pieces": 4,
+        "cost": 158,
+        "power": 75910000
+    },
+    {
+        "number": 15,
+        "pieces": 5,
+        "cost": 160,
+        "power": 77510000
+    },
+    {
+        "number": 15,
+        "pieces": 6,
+        "cost": 162,
+        "power": 79130000
+    },
+    {
+        "number": 15,
+        "pieces": 7,
+        "cost": 163,
+        "power": 80760000
+    },
+    {
+        "number": 15,
+        "pieces": 8,
+        "cost": 166,
+        "power": 82420000
+    },
+    {
+        "number": 16,
+        "pieces": 0,
+        "cost": 167,
+        "power": 84090000
+    },
+    {
+        "number": 16,
+        "pieces": 1,
+        "cost": 169,
+        "power": 85780000
+    },
+    {
+        "number": 16,
+        "pieces": 2,
+        "cost": 171,
+        "power": 87490000
+    },
+    {
+        "number": 16,
+        "pieces": 3,
+        "cost": 173,
+        "power": 89220000
+    },
+    {
+        "number": 16,
+        "pieces": 4,
+        "cost": 174,
+        "power": 90960000
+    },
+    {
+        "number": 16,
+        "pieces": 5,
+        "cost": 177,
+        "power": 92730000
+    },
+    {
+        "number": 16,
+        "pieces": 6,
+        "cost": 178,
+        "power": 94510000
+    },
+    {
+        "number": 16,
+        "pieces": 7,
+        "cost": 180,
+        "power": 96310000
+    },
+    {
+        "number": 16,
+        "pieces": 8,
+        "cost": 182,
+        "power": 98130000
+    },
+    {
+        "number": 16,
+        "pieces": 9,
+        "cost": 184,
+        "power": 99970000
+    },
+    {
+        "number": 16,
+        "pieces": 10,
+        "cost": 186,
+        "power": 101830000
+    },
+    {
+        "number": 16,
+        "pieces": 11,
+        "cost": 187,
+        "power": 103700000
+    },
+    {
+        "number": 16,
+        "pieces": 12,
+        "cost": 190,
+        "power": 105600000
+    },
+    {
+        "number": 16,
+        "pieces": 13,
+        "cost": 191,
+        "power": 107510000
+    },
+    {
+        "number": 16,
+        "pieces": 14,
+        "cost": 193,
+        "power": 109440000
+    },
+    {
+        "number": 16,
+        "pieces": 15,
+        "cost": 195,
+        "power": 111390000
+    },
+    {
+        "number": 17,
+        "pieces": 0,
+        "cost": 197,
+        "power": 113360000
+    },
+    {
+        "number": 17,
+        "pieces": 1,
+        "cost": 199,
+        "power": 115350000
+    },
+    {
+        "number": 17,
+        "pieces": 2,
+        "cost": 201,
+        "power": 117360000
+    },
+    {
+        "number": 17,
+        "pieces": 3,
+        "cost": 203,
+        "power": 119390000
+    },
+    {
+        "number": 17,
+        "pieces": 4,
+        "cost": 201,
+        "power": 121400000
+    },
+    {
+        "number": 17,
+        "pieces": 5,
+        "cost": 207,
+        "power": 123470000
+    },
+    {
+        "number": 17,
+        "pieces": 6,
+        "cost": 208,
+        "power": 125550000
+    },
+    {
+        "number": 17,
+        "pieces": 7,
+        "cost": 213,
+        "power": 127680000
+    },
+    {
+        "number": 17,
+        "pieces": 8,
+        "cost": 212,
+        "power": 129800000
+    },
+    {
+        "number": 17,
+        "pieces": 9,
+        "cost": 214,
+        "power": 131940000
+    },
+    {
+        "number": 17,
+        "pieces": 10,
+        "cost": 216,
+        "power": 134100000
+    },
+    {
+        "number": 17,
+        "pieces": 11,
+        "cost": 218,
+        "power": 136280000
+    },
+    {
+        "number": 17,
+        "pieces": 12,
+        "cost": 220,
+        "power": 138480000
+    },
+    {
+        "number": 17,
+        "pieces": 13,
+        "cost": 222,
+        "power": 140700000
+    },
+    {
+        "number": 17,
+        "pieces": 14,
+        "cost": 223,
+        "power": 142930000
+    },
+    {
+        "number": 17,
+        "pieces": 15,
+        "cost": 226,
+        "power": 145190000
+    },
+    {
+        "number": 18,
+        "pieces": 0,
+        "cost": 227,
+        "power": 147460000
+    },
+    {
+        "number": 18,
+        "pieces": 1,
+        "cost": 230,
+        "power": 149760000
+    },
+    {
+        "number": 18,
+        "pieces": 2,
+        "cost": 231,
+        "power": 152070000
+    },
+    {
+        "number": 18,
+        "pieces": 3,
+        "cost": 233,
+        "power": 154400000
+    },
+    {
+        "number": 18,
+        "pieces": 4,
+        "cost": 236,
+        "power": 156760000
+    },
+    {
+        "number": 18,
+        "pieces": 5,
+        "cost": 237,
+        "power": 159130000
+    },
+    {
+        "number": 18,
+        "pieces": 6,
+        "cost": 239,
+        "power": 161520000
+    },
+    {
+        "number": 18,
+        "pieces": 7,
+        "cost": 241,
+        "power": 163930000
+    },
+    {
+        "number": 18,
+        "pieces": 8,
+        "cost": 243,
+        "power": 166360000
+    },
+    {
+        "number": 18,
+        "pieces": 9,
+        "cost": 245,
+        "power": 168810000
+    },
+    {
+        "number": 18,
+        "pieces": 10,
+        "cost": 247,
+        "power": 171280000
+    },
+    {
+        "number": 18,
+        "pieces": 11,
+        "cost": 249,
+        "power": 173770000
+    },
+    {
+        "number": 18,
+        "pieces": 12,
+        "cost": 250,
+        "power": 176270000
+    },
+    {
+        "number": 18,
+        "pieces": 13,
+        "cost": 253,
+        "power": 178800000
+    },
+    {
+        "number": 18,
+        "pieces": 14,
+        "cost": 255,
+        "power": 181350000
+    },
+    {
+        "number": 18,
+        "pieces": 15,
+        "cost": 257,
+        "power": 183920000
+    },
+    {
+        "number": 19,
+        "pieces": 0,
+        "cost": 258,
+        "power": 186500000
+    },
+    {
+        "number": 19,
+        "pieces": 1,
+        "cost": 261,
+        "power": 189110000
+    },
+    {
+        "number": 19,
+        "pieces": 2,
+        "cost": 263,
+        "power": 191740000
+    },
+    {
+        "number": 19,
+        "pieces": 3,
+        "cost": 264,
+        "power": 194380000
+    },
+    {
+        "number": 19,
+        "pieces": 4,
+        "cost": 267,
+        "power": 197050000
+    },
+    {
+        "number": 19,
+        "pieces": 5,
+        "cost": 268,
+        "power": 199730000
+    },
+    {
+        "number": 19,
+        "pieces": 6,
+        "cost": 271,
+        "power": 202440000
+    },
+    {
+        "number": 19,
+        "pieces": 7,
+        "cost": 272,
+        "power": 205160000
+    },
+    {
+        "number": 19,
+        "pieces": 8,
+        "cost": 275,
+        "power": 207910000
+    },
+    {
+        "number": 19,
+        "pieces": 9,
+        "cost": 277,
+        "power": 210680000
+    },
+    {
+        "number": 19,
+        "pieces": 10,
+        "cost": 278,
+        "power": 213460000
+    },
+    {
+        "number": 19,
+        "pieces": 11,
+        "cost": 281,
+        "power": 216270000
+    },
+    {
+        "number": 19,
+        "pieces": 12,
+        "cost": 282,
+        "power": 219090000
+    },
+    {
+        "number": 19,
+        "pieces": 13,
+        "cost": 285,
+        "power": 221940000
+    },
+    {
+        "number": 19,
+        "pieces": 14,
+        "cost": 286,
+        "power": 224800000
+    },
+    {
+        "number": 19,
+        "pieces": 15,
+        "cost": 289,
+        "power": 227690000
+    },
+    {
+        "number": 20,
+        "pieces": 0,
+        "cost": 290,
+        "power": 230590000
+    },
+    {
+        "number": 20,
+        "pieces": 1,
+        "cost": 293,
+        "power": 233520000
+    },
+    {
+        "number": 20,
+        "pieces": 2,
+        "cost": 294,
+        "power": 236460000
+    },
+    {
+        "number": 20,
+        "pieces": 3,
+        "cost": 297,
+        "power": 239430000
+    },
+    {
+        "number": 20,
+        "pieces": 4,
+        "cost": 298,
+        "power": 242410000
+    },
+    {
+        "number": 20,
+        "pieces": 5,
+        "cost": 301,
+        "power": 245420000
+    },
+    {
+        "number": 20,
+        "pieces": 6,
+        "cost": 303,
+        "power": 248450000
+    },
+    {
+        "number": 20,
+        "pieces": 7,
+        "cost": 304,
+        "power": 251490000
+    },
+    {
+        "number": 20,
+        "pieces": 8,
+        "cost": 307,
+        "power": 254560000
+    },
+    {
+        "number": 20,
+        "pieces": 9,
+        "cost": 309,
+        "power": 257650000
+    },
+    {
+        "number": 20,
+        "pieces": 10,
+        "cost": 310,
+        "power": 260750000
+    },
+    {
+        "number": 20,
+        "pieces": 11,
+        "cost": 313,
+        "power": 263880000
+    },
+    {
+        "number": 20,
+        "pieces": 12,
+        "cost": 315,
+        "power": 267030000
+    },
+    {
+        "number": 20,
+        "pieces": 13,
+        "cost": 317,
+        "power": 270200000
+    },
+    {
+        "number": 20,
+        "pieces": 14,
+        "cost": 319,
+        "power": 273390000
+    },
+    {
+        "number": 20,
+        "pieces": 15,
+        "cost": 321,
+        "power": 276600000
+    },
+    {
+        "number": 21,
+        "pieces": 0,
+        "cost": 323,
+        "power": 279830000
+    },
+    {
+        "number": 21,
+        "pieces": 1,
+        "cost": 325,
+        "power": 283080000
+    },
+    {
+        "number": 21,
+        "pieces": 2,
+        "cost": 327,
+        "power": 286350000
+    },
+    {
+        "number": 21,
+        "pieces": 3,
+        "cost": 329,
+        "power": 289640000
+    },
+    {
+        "number": 21,
+        "pieces": 4,
+        "cost": 331,
+        "power": 292950000
+    },
+    {
+        "number": 21,
+        "pieces": 5,
+        "cost": 333,
+        "power": 296280000
+    },
+    {
+        "number": 21,
+        "pieces": 6,
+        "cost": 336,
+        "power": 299640000
+    },
+    {
+        "number": 21,
+        "pieces": 7,
+        "cost": 337,
+        "power": 303010000
+    },
+    {
+        "number": 21,
+        "pieces": 8,
+        "cost": 339,
+        "power": 306400000
+    },
+    {
+        "number": 21,
+        "pieces": 9,
+        "cost": 342,
+        "power": 309820000
+    },
+    {
+        "number": 21,
+        "pieces": 10,
+        "cost": 343,
+        "power": 313250000
+    },
+    {
+        "number": 21,
+        "pieces": 11,
+        "cost": 346,
+        "power": 316710000
+    },
+    {
+        "number": 21,
+        "pieces": 12,
+        "cost": 348,
+        "power": 320190000
+    },
+    {
+        "number": 21,
+        "pieces": 13,
+        "cost": 349,
+        "power": 323680000
+    },
+    {
+        "number": 21,
+        "pieces": 14,
+        "cost": 352,
+        "power": 327200000
+    },
+    {
+        "number": 21,
+        "pieces": 15,
+        "cost": 354,
+        "power": 330740000
+    },
+    {
+        "number": 22,
+        "pieces": 0,
+        "cost": 356,
+        "power": 334300000
+    },
+    {
+        "number": 22,
+        "pieces": 1,
+        "cost": 358,
+        "power": 337880000
+    },
+    {
+        "number": 22,
+        "pieces": 2,
+        "cost": 360,
+        "power": 341480000
+    },
+    {
+        "number": 22,
+        "pieces": 3,
+        "cost": 362,
+        "power": 345100000
+    },
+    {
+        "number": 22,
+        "pieces": 4,
+        "cost": 365,
+        "power": 348750000
+    },
+    {
+        "number": 22,
+        "pieces": 5,
+        "cost": 366,
+        "power": 352410000
+    },
+    {
+        "number": 22,
+        "pieces": 6,
+        "cost": 369,
+        "power": 356100000
+    },
+    {
+        "number": 22,
+        "pieces": 7,
+        "cost": 370,
+        "power": 359800000
+    },
+    {
+        "number": 22,
+        "pieces": 8,
+        "cost": 373,
+        "power": 363530000
+    },
+    {
+        "number": 22,
+        "pieces": 9,
+        "cost": 374,
+        "power": 367270000
+    },
+    {
+        "number": 22,
+        "pieces": 10,
+        "cost": 377,
+        "power": 371040000
+    },
+    {
+        "number": 22,
+        "pieces": 11,
+        "cost": 379,
+        "power": 374830000
+    },
+    {
+        "number": 22,
+        "pieces": 12,
+        "cost": 381,
+        "power": 378640000
+    },
+    {
+        "number": 22,
+        "pieces": 13,
+        "cost": 384,
+        "power": 382480000
+    },
+    {
+        "number": 22,
+        "pieces": 14,
+        "cost": 385,
+        "power": 386330000
+    },
+    {
+        "number": 22,
+        "pieces": 15,
+        "cost": 387,
+        "power": 390200000
+    },
+    {
+        "number": 23,
+        "pieces": 0,
+        "cost": 390,
+        "power": 394100000
+    },
+    {
+        "number": 23,
+        "pieces": 1,
+        "cost": 391,
+        "power": 398010000
+    },
+    {
+        "number": 23,
+        "pieces": 2,
+        "cost": 394,
+        "power": 401950000
+    },
+    {
+        "number": 23,
+        "pieces": 3,
+        "cost": 396,
+        "power": 405910000
+    },
+    {
+        "number": 23,
+        "pieces": 4,
+        "cost": 398,
+        "power": 409890000
+    },
+    {
+        "number": 23,
+        "pieces": 5,
+        "cost": 400,
+        "power": 413890000
+    },
+    {
+        "number": 23,
+        "pieces": 6,
+        "cost": 402,
+        "power": 417910000
+    },
+    {
+        "number": 23,
+        "pieces": 7,
+        "cost": 404,
+        "power": 421950000
+    },
+    {
+        "number": 23,
+        "pieces": 8,
+        "cost": 407,
+        "power": 426020000
+    },
+    {
+        "number": 23,
+        "pieces": 9,
+        "cost": 408,
+        "power": 430100000
+    },
+    {
+        "number": 23,
+        "pieces": 10,
+        "cost": 411,
+        "power": 434210000
+    },
+    {
+        "number": 23,
+        "pieces": 11,
+        "cost": 413,
+        "power": 438340000
+    },
+    {
+        "number": 23,
+        "pieces": 12,
+        "cost": 415,
+        "power": 442490000
+    },
+    {
+        "number": 23,
+        "pieces": 13,
+        "cost": 417,
+        "power": 446660000
+    },
+    {
+        "number": 23,
+        "pieces": 14,
+        "cost": 419,
+        "power": 450850000
+    },
+    {
+        "number": 23,
+        "pieces": 15,
+        "cost": 421,
+        "power": 455060000
+    },
+    {
+        "number": 24,
+        "pieces": 0,
+        "cost": 424,
+        "power": 459300000
+    },
+    {
+        "number": 24,
+        "pieces": 1,
+        "cost": 425,
+        "power": 463550000
+    },
+    {
+        "number": 24,
+        "pieces": 2,
+        "cost": 428,
+        "power": 467830000
+    },
+    {
+        "number": 24,
+        "pieces": 3,
+        "cost": 430,
+        "power": 472130000
+    },
+    {
+        "number": 24,
+        "pieces": 4,
+        "cost": 432,
+        "power": 476450000
+    },
+    {
+        "number": 24,
+        "pieces": 5,
+        "cost": 434,
+        "power": 480790000
+    },
+    {
+        "number": 24,
+        "pieces": 6,
+        "cost": 437,
+        "power": 485160000
+    },
+    {
+        "number": 24,
+        "pieces": 7,
+        "cost": 438,
+        "power": 489540000
+    },
+    {
+        "number": 24,
+        "pieces": 8,
+        "cost": 441,
+        "power": 493950000
+    },
+    {
+        "number": 24,
+        "pieces": 9,
+        "cost": 442,
+        "power": 498370000
+    },
+    {
+        "number": 24,
+        "pieces": 10,
+        "cost": 445,
+        "power": 502820000
+    },
+    {
+        "number": 24,
+        "pieces": 11,
+        "cost": 448,
+        "power": 507300000
+    },
+    {
+        "number": 24,
+        "pieces": 12,
+        "cost": 449,
+        "power": 511790000
+    },
+    {
+        "number": 24,
+        "pieces": 13,
+        "cost": 451,
+        "power": 516300000
+    },
+    {
+        "number": 24,
+        "pieces": 14,
+        "cost": 454,
+        "power": 520840000
+    },
+    {
+        "number": 24,
+        "pieces": 15,
+        "cost": 456,
+        "power": 525400000
+    },
+    {
+        "number": 25,
+        "pieces": 0,
+        "cost": 458,
+        "power": 529980000
+    },
+    {
+        "number": 25,
+        "pieces": 1,
+        "cost": 460,
+        "power": 534580000
+    },
+    {
+        "number": 25,
+        "pieces": 2,
+        "cost": 462,
+        "power": 539200000
+    },
+    {
+        "number": 25,
+        "pieces": 3,
+        "cost": 464,
+        "power": 543840000
+    },
+    {
+        "number": 25,
+        "pieces": 4,
+        "cost": 466,
+        "power": 548500000
+    },
+    {
+        "number": 25,
+        "pieces": 5,
+        "cost": 468,
+        "power": 553180000
+    },
+    {
+        "number": 25,
+        "pieces": 6,
+        "cost": 471,
+        "power": 557890000
+    },
+    {
+        "number": 25,
+        "pieces": 7,
+        "cost": 473,
+        "power": 562620000
+    },
+    {
+        "number": 25,
+        "pieces": 8,
+        "cost": 475,
+        "power": 567370000
+    },
+    {
+        "number": 25,
+        "pieces": 9,
+        "cost": 478,
+        "power": 572150000
+    },
+    {
+        "number": 25,
+        "pieces": 10,
+        "cost": 480,
+        "power": 576950000
+    },
+    {
+        "number": 25,
+        "pieces": 11,
+        "cost": 481,
+        "power": 581760000
+    },
+    {
+        "number": 25,
+        "pieces": 12,
+        "cost": 485,
+        "power": 586630000
+    },
+    {
+        "number": 25,
+        "pieces": 13,
+        "cost": 486,
+        "power": 591490000
+    },
+    {
+        "number": 25,
+        "pieces": 14,
+        "cost": 488,
+        "power": 596370000
+    },
+    {
+        "number": 25,
+        "pieces": 15,
+        "cost": 491,
+        "power": 601280000
+    },
+    {
+        "number": 26,
+        "pieces": 0,
+        "cost": 493,
+        "power": 606209984
+    },
+    {
+        "number": 26,
+        "pieces": 1,
+        "cost": 497,
+        "power": 611160000
+    },
+    {
+        "number": 26,
+        "pieces": 2,
+        "cost": 499,
+        "power": 616129984
+    },
+    {
+        "number": 26,
+        "pieces": 3,
+        "cost": 499,
+        "power": 621120000
+    },
+    {
+        "number": 26,
+        "pieces": 4,
+        "cost": 502,
+        "power": 626140032
+    },
+    {
+        "number": 26,
+        "pieces": 5,
+        "cost": 504,
+        "power": 631180032
+    },
+    {
+        "number": 26,
+        "pieces": 6,
+        "cost": 506,
+        "power": 636240032
+    },
+    {
+        "number": 26,
+        "pieces": 7,
+        "cost": 508,
+        "power": 641320032
+    },
+    {
+        "number": 26,
+        "pieces": 8,
+        "cost": 511,
+        "power": 646430032
+    },
+    {
+        "number": 26,
+        "pieces": 9,
+        "cost": 512,
+        "power": 651550032
+    },
+    {
+        "number": 26,
+        "pieces": 10,
+        "cost": 515,
+        "power": 656700032
+    },
+    {
+        "number": 26,
+        "pieces": 11,
+        "cost": 517,
+        "power": 661870032
+    },
+    {
+        "number": 26,
+        "pieces": 12,
+        "cost": 520,
+        "power": 667070032
+    },
+    {
+        "number": 26,
+        "pieces": 13,
+        "cost": 521,
+        "power": 672280032
+    },
+    {
+        "number": 26,
+        "pieces": 14,
+        "cost": 524,
+        "power": 677520032
+    },
+    {
+        "number": 26,
+        "pieces": 15,
+        "cost": 526,
+        "power": 682780032
+    },
+    {
+        "number": 26,
+        "pieces": 16,
+        "cost": 528,
+        "power": 688060032
+    },
+    {
+        "number": 26,
+        "pieces": 17,
+        "cost": 530,
+        "power": 693360032
+    },
+    {
+        "number": 26,
+        "pieces": 18,
+        "cost": 532,
+        "power": 698680032
+    },
+    {
+        "number": 26,
+        "pieces": 19,
+        "cost": 534,
+        "power": 704020032
+    },
+    {
+        "number": 26,
+        "pieces": 20,
+        "cost": 536,
+        "power": 709380032
+    },
+    {
+        "number": 26,
+        "pieces": 21,
+        "cost": 538,
+        "power": 714760032
+    },
+    {
+        "number": 26,
+        "pieces": 22,
+        "cost": 540,
+        "power": 720160032
+    },
+    {
+        "number": 26,
+        "pieces": 23,
+        "cost": 542,
+        "power": 725580032
+    },
+    {
+        "number": 26,
+        "pieces": 24,
+        "cost": 544,
+        "power": 731020032
+    },
+    {
+        "number": 27,
+        "pieces": 0,
+        "cost": 546,
+        "power": 736480032
+    },
+    {
+        "number": 27,
+        "pieces": 1,
+        "cost": 553,
+        "power": 742010032
+    },
+    {
+        "number": 27,
+        "pieces": 2,
+        "cost": 555,
+        "power": 747560032
+    },
+    {
+        "number": 27,
+        "pieces": 3,
+        "cost": 557,
+        "power": 753130032
+    },
+    {
+        "number": 27,
+        "pieces": 4,
+        "cost": 560,
+        "power": 758739968
+    },
+    {
+        "number": 27,
+        "pieces": 5,
+        "cost": 560,
+        "power": 764339968
+    },
+    {
+        "number": 27,
+        "pieces": 6,
+        "cost": 562,
+        "power": 769959968
+    },
+    {
+        "number": 27,
+        "pieces": 7,
+        "cost": 564,
+        "power": 775599968
+    },
+    {
+        "number": 27,
+        "pieces": 8,
+        "cost": 566,
+        "power": 781259968
+    },
+    {
+        "number": 27,
+        "pieces": 9,
+        "cost": 570,
+        "power": 786940032
+    },
+    {
+        "number": 27,
+        "pieces": 10,
+        "cost": 570,
+        "power": 792640032
+    },
+    {
+        "number": 27,
+        "pieces": 11,
+        "cost": 572,
+        "power": 798360032
+    },
+    {
+        "number": 27,
+        "pieces": 12,
+        "cost": 574,
+        "power": 804100032
+    },
+    {
+        "number": 27,
+        "pieces": 13,
+        "cost": 576,
+        "power": 809860032
+    },
+    {
+        "number": 27,
+        "pieces": 14,
+        "cost": 578,
+        "power": 815640032
+    },
+    {
+        "number": 27,
+        "pieces": 15,
+        "cost": 580,
+        "power": 821440032
+    },
+    {
+        "number": 27,
+        "pieces": 16,
+        "cost": 582,
+        "power": 827260032
+    },
+    {
+        "number": 27,
+        "pieces": 17,
+        "cost": 584,
+        "power": 833100032
+    },
+    {
+        "number": 27,
+        "pieces": 18,
+        "cost": 586,
+        "power": 838960032
+    },
+    {
+        "number": 27,
+        "pieces": 19,
+        "cost": 588,
+        "power": 844840032
+    },
+    {
+        "number": 27,
+        "pieces": 20,
+        "cost": 590,
+        "power": 850740032
+    },
+    {
+        "number": 27,
+        "pieces": 21,
+        "cost": 592,
+        "power": 856660032
+    },
+    {
+        "number": 27,
+        "pieces": 22,
+        "cost": 594,
+        "power": 862600032
+    },
+    {
+        "number": 27,
+        "pieces": 23,
+        "cost": 596,
+        "power": 868560032
+    },
+    {
+        "number": 27,
+        "pieces": 24,
+        "cost": 598,
+        "power": 874540032
+    },
+    {
+        "number": 28,
+        "pieces": 0,
+        "cost": 600,
+        "power": 880540032
+    },
+    {
+        "number": 28,
+        "pieces": 1,
+        "cost": 607,
+        "power": 886610032
+    },
+    {
+        "number": 28,
+        "pieces": 2,
+        "cost": 609,
+        "power": 892700032
+    },
+    {
+        "number": 28,
+        "pieces": 3,
+        "cost": 611,
+        "power": 898810032
+    },
+    {
+        "number": 28,
+        "pieces": 4,
+        "cost": 613,
+        "power": 904940032
+    },
+    {
+        "number": 28,
+        "pieces": 5,
+        "cost": 615,
+        "power": 911090032
+    },
+    {
+        "number": 28,
+        "pieces": 6,
+        "cost": 617,
+        "power": 917260032
+    },
+    {
+        "number": 28,
+        "pieces": 7,
+        "cost": 619,
+        "power": 923450032
+    },
+    {
+        "number": 28,
+        "pieces": 8,
+        "cost": 621,
+        "power": 929660032
+    },
+    {
+        "number": 28,
+        "pieces": 9,
+        "cost": 623,
+        "power": 935890032
+    },
+    {
+        "number": 28,
+        "pieces": 10,
+        "cost": 625,
+        "power": 942140032
+    },
+    {
+        "number": 28,
+        "pieces": 11,
+        "cost": 627,
+        "power": 948410032
+    },
+    {
+        "number": 28,
+        "pieces": 12,
+        "cost": 629,
+        "power": 954700032
+    },
+    {
+        "number": 28,
+        "pieces": 13,
+        "cost": 631,
+        "power": 961010032
+    },
+    {
+        "number": 28,
+        "pieces": 14,
+        "cost": 633,
+        "power": 967340032
+    },
+    {
+        "number": 28,
+        "pieces": 15,
+        "cost": 635,
+        "power": 973690032
+    },
+    {
+        "number": 28,
+        "pieces": 16,
+        "cost": 637,
+        "power": 980060032
+    },
+    {
+        "number": 28,
+        "pieces": 17,
+        "cost": 639,
+        "power": 986450032
+    },
+    {
+        "number": 28,
+        "pieces": 18,
+        "cost": 641,
+        "power": 992860032
+    },
+    {
+        "number": 28,
+        "pieces": 19,
+        "cost": 643,
+        "power": 999290032
+    },
+    {
+        "number": 28,
+        "pieces": 20,
+        "cost": 645,
+        "power": 1005740032
+    },
+    {
+        "number": 28,
+        "pieces": 21,
+        "cost": 647,
+        "power": 1012210032
+    },
+    {
+        "number": 28,
+        "pieces": 22,
+        "cost": 649,
+        "power": 1018700032
+    },
+    {
+        "number": 28,
+        "pieces": 23,
+        "cost": 651,
+        "power": 1025210032
+    },
+    {
+        "number": 28,
+        "pieces": 24,
+        "cost": 653,
+        "power": 1031740032
+    },
+    {
+        "number": 29,
+        "pieces": 0,
+        "cost": 655,
+        "power": 1038290032
+    },
+    {
+        "number": 29,
+        "pieces": 1,
+        "cost": 662,
+        "power": 1044910032
+    },
+    {
+        "number": 29,
+        "pieces": 2,
+        "cost": 664,
+        "power": 1051550032
+    },
+    {
+        "number": 29,
+        "pieces": 3,
+        "cost": 666,
+        "power": 1058210032
+    },
+    {
+        "number": 29,
+        "pieces": 4,
+        "cost": 668,
+        "power": 1064890032
+    },
+    {
+        "number": 29,
+        "pieces": 5,
+        "cost": 670,
+        "power": 1071590032
+    },
+    {
+        "number": 29,
+        "pieces": 6,
+        "cost": 672,
+        "power": 1078310032
+    },
+    {
+        "number": 29,
+        "pieces": 7,
+        "cost": 674,
+        "power": 1085050032
+    },
+    {
+        "number": 29,
+        "pieces": 8,
+        "cost": 676,
+        "power": 1091810032
+    },
+    {
+        "number": 29,
+        "pieces": 9,
+        "cost": 678,
+        "power": 1098590032
+    },
+    {
+        "number": 29,
+        "pieces": 10,
+        "cost": 680,
+        "power": 1105390032
+    },
+    {
+        "number": 29,
+        "pieces": 11,
+        "cost": 682,
+        "power": 1112210032
+    },
+    {
+        "number": 29,
+        "pieces": 12,
+        "cost": 684,
+        "power": 1119050032
+    },
+    {
+        "number": 29,
+        "pieces": 13,
+        "cost": 686,
+        "power": 1125910032
+    },
+    {
+        "number": 29,
+        "pieces": 14,
+        "cost": 688,
+        "power": 1132790032
+    },
+    {
+        "number": 29,
+        "pieces": 15,
+        "cost": 690,
+        "power": 1139690032
+    },
+    {
+        "number": 29,
+        "pieces": 16,
+        "cost": 692,
+        "power": 1146610032
+    },
+    {
+        "number": 29,
+        "pieces": 17,
+        "cost": 694,
+        "power": 1153550032
+    },
+    {
+        "number": 29,
+        "pieces": 18,
+        "cost": 696,
+        "power": 1160510032
+    },
+    {
+        "number": 29,
+        "pieces": 19,
+        "cost": 698,
+        "power": 1167490032
+    },
+    {
+        "number": 29,
+        "pieces": 20,
+        "cost": 700,
+        "power": 1174490032
+    },
+    {
+        "number": 29,
+        "pieces": 21,
+        "cost": 702,
+        "power": 1181510032
+    },
+    {
+        "number": 29,
+        "pieces": 22,
+        "cost": 704,
+        "power": 1188550032
+    },
+    {
+        "number": 29,
+        "pieces": 23,
+        "cost": 706,
+        "power": 1195610032
+    },
+    {
+        "number": 29,
+        "pieces": 24,
+        "cost": 708,
+        "power": 1202690032
+    },
+    {
+        "number": 30,
+        "pieces": 0,
+        "cost": 710,
+        "power": 1209790032
+    },
+    {
+        "number": 30,
+        "pieces": 1,
+        "cost": 717,
+        "power": 1216960032
+    },
+    {
+        "number": 30,
+        "pieces": 2,
+        "cost": 719,
+        "power": 1224150032
+    },
+    {
+        "number": 30,
+        "pieces": 3,
+        "cost": 721,
+        "power": 1231360032
+    },
+    {
+        "number": 30,
+        "pieces": 4,
+        "cost": 723,
+        "power": 1238590032
+    },
+    {
+        "number": 30,
+        "pieces": 5,
+        "cost": 725,
+        "power": 1245840032
+    },
+    {
+        "number": 30,
+        "pieces": 6,
+        "cost": 727,
+        "power": 1253110032
+    },
+    {
+        "number": 30,
+        "pieces": 7,
+        "cost": 729,
+        "power": 1260400032
+    },
+    {
+        "number": 30,
+        "pieces": 8,
+        "cost": 731,
+        "power": 1267710032
+    },
+    {
+        "number": 30,
+        "pieces": 9,
+        "cost": 733,
+        "power": 1275040032
+    },
+    {
+        "number": 30,
+        "pieces": 10,
+        "cost": 735,
+        "power": 1282390032
+    },
+    {
+        "number": 30,
+        "pieces": 11,
+        "cost": 737,
+        "power": 1289760032
+    },
+    {
+        "number": 30,
+        "pieces": 12,
+        "cost": 739,
+        "power": 1297150032
+    },
+    {
+        "number": 30,
+        "pieces": 13,
+        "cost": 741,
+        "power": 1304560032
+    },
+    {
+        "number": 30,
+        "pieces": 14,
+        "cost": 743,
+        "power": 1311990032
+    },
+    {
+        "number": 30,
+        "pieces": 15,
+        "cost": 745,
+        "power": 1319440032
+    },
+    {
+        "number": 30,
+        "pieces": 16,
+        "cost": 747,
+        "power": 1326910032
+    },
+    {
+        "number": 30,
+        "pieces": 17,
+        "cost": 749,
+        "power": 1334400032
+    },
+    {
+        "number": 30,
+        "pieces": 18,
+        "cost": 751,
+        "power": 1341910032
+    },
+    {
+        "number": 30,
+        "pieces": 19,
+        "cost": 753,
+        "power": 1353650048
+    },
+    {
+        "number": 30,
+        "pieces": 20,
+        "cost": 766,
+        "power": 1361309952
+    },
+    {
+        "number": 30,
+        "pieces": 21,
+        "cost": 768,
+        "power": 1368989952
+    },
+    {
+        "number": 30,
+        "pieces": 22,
+        "cost": 770,
+        "power": 1376689952
+    },
+    {
+        "number": 30,
+        "pieces": 23,
+        "cost": 772,
+        "power": 1384409952
+    },
+    {
+        "number": 30,
+        "pieces": 24,
+        "cost": 774,
+        "power": 1392149952
+    },
+    {
+        "number": 30,
+        "pieces": 25,
+        "cost": 776,
+        "power": 1399909952
+    }
+]

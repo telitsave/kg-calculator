@@ -1,0 +1,74 @@
+[
+  {
+    "rank": 1,
+    "booksCost": 5,
+    "booksPowerBoost": 0.5,
+    "crownsBooksCost": 10,
+    "crownsCost": 5,
+    "crownsPowerBoost": 6
+  },
+  {
+    "rank": 2,
+    "booksCost": 20,
+    "booksPowerBoost": 0.6,
+    "crownsBooksCost": 40,
+    "crownsCost": 20,
+    "crownsPowerBoost": 7.2
+  },
+  {
+    "rank": 3,
+    "booksCost": 100,
+    "booksPowerBoost": 0.9,
+    "crownsBooksCost": 200,
+    "crownsCost": 100,
+    "crownsPowerBoost": 9.5
+  },
+  {
+    "rank": 4,
+    "booksCost": 500,
+    "booksPowerBoost": 1.25,
+    "crownsBooksCost": 1000,
+    "crownsCost": 500,
+    "crownsPowerBoost": 15
+  },
+  {
+    "rank": 5,
+    "booksCost": 2500,
+    "booksPowerBoost": 1.8,
+    "crownsBooksCost": 5000,
+    "crownsCost": 2500,
+    "crownsPowerBoost": 22
+  },
+  {
+    "rank": 6,
+    "booksCost": 12500,
+    "booksPowerBoost": 2.6,
+    "crownsBooksCost": 25000,
+    "crownsCost": 12500,
+    "crownsPowerBoost": 32
+  },
+  {
+    "rank": 7,
+    "booksCost": 62500,
+    "booksPowerBoost": 3.8,
+    "crownsBooksCost": 125000,
+    "crownsCost": 62500,
+    "crownsPowerBoost": 48
+  },
+  {
+    "rank": 8,
+    "booksCost": 312500,
+    "booksPowerBoost": 5.6,
+    "crownsBooksCost": 625000,
+    "crownsCost": 312500,
+    "crownsPowerBoost": 66.9
+  },
+  {
+    "rank": 9,
+    "booksCost": 1562500,
+    "booksPowerBoost": 8.1,
+    "crownsBooksCost": 3125000,
+    "crownsCost": 1562500,
+    "crownsPowerBoost": 97
+  }
+]

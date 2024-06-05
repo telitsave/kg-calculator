@@ -1,0 +1,7256 @@
+[
+  {
+    "rank": 1,
+    "level": 0,
+    "power": 0,
+    "gold": 0
+  },
+  {
+    "rank": 1,
+    "level": 1,
+    "power": 4920,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 2,
+    "power": 9840,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 3,
+    "power": 14760,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 4,
+    "power": 19680,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 5,
+    "power": 24600,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 6,
+    "power": 29520,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 7,
+    "power": 34440,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 8,
+    "power": 39360,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 9,
+    "power": 44280,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 10,
+    "power": 49200,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 11,
+    "power": 54120,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 12,
+    "power": 59040,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 13,
+    "power": 63960,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 14,
+    "power": 68880,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 15,
+    "power": 73800,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 16,
+    "power": 78720,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 17,
+    "power": 83640,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 18,
+    "power": 88560,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 19,
+    "power": 93480,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 20,
+    "power": 98400,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 21,
+    "power": 103320,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 22,
+    "power": 108240,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 23,
+    "power": 113160,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 24,
+    "power": 118080,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 25,
+    "power": 123000,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 26,
+    "power": 127920,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 27,
+    "power": 132840,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 28,
+    "power": 137760,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 29,
+    "power": 142680,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 30,
+    "power": 147600,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 31,
+    "power": 152520,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 32,
+    "power": 157440,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 33,
+    "power": 162360,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 34,
+    "power": 167280,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 35,
+    "power": 172200,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 36,
+    "power": 177120,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 37,
+    "power": 182040,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 38,
+    "power": 186960,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 39,
+    "power": 191880,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 40,
+    "power": 196800,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 41,
+    "power": 201720,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 42,
+    "power": 206640,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 43,
+    "power": 211560,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 44,
+    "power": 216480,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 45,
+    "power": 221400,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 46,
+    "power": 226320,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 47,
+    "power": 231240,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 48,
+    "power": 236160,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 49,
+    "power": 241080,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 50,
+    "power": 246000,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 51,
+    "power": 250920,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 52,
+    "power": 255840,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 53,
+    "power": 260760,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 54,
+    "power": 265680,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 55,
+    "power": 270600,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 56,
+    "power": 275520,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 57,
+    "power": 280440,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 58,
+    "power": 285360,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 59,
+    "power": 290280,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 60,
+    "power": 295200,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 61,
+    "power": 300120,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 62,
+    "power": 305040,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 63,
+    "power": 309960,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 64,
+    "power": 314880,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 65,
+    "power": 319800,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 66,
+    "power": 324720,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 67,
+    "power": 329640,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 68,
+    "power": 334560,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 69,
+    "power": 339480,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 70,
+    "power": 344400,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 71,
+    "power": 349320,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 72,
+    "power": 354240,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 73,
+    "power": 359160,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 74,
+    "power": 364080,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 75,
+    "power": 369000,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 76,
+    "power": 373920,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 77,
+    "power": 378840,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 78,
+    "power": 383760,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 79,
+    "power": 388680,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 80,
+    "power": 393600,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 81,
+    "power": 398520,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 82,
+    "power": 403440,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 83,
+    "power": 408360,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 84,
+    "power": 413280,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 85,
+    "power": 418200,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 86,
+    "power": 423120,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 87,
+    "power": 428040,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 88,
+    "power": 432960,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 89,
+    "power": 437880,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 90,
+    "power": 442800,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 91,
+    "power": 447720,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 92,
+    "power": 452640,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 93,
+    "power": 457560,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 94,
+    "power": 462480,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 95,
+    "power": 467400,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 96,
+    "power": 472320,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 97,
+    "power": 477240,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 98,
+    "power": 482160,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 99,
+    "power": 487080,
+    "gold": 10
+  },
+  {
+    "rank": 1,
+    "level": 100,
+    "power": 492000,
+    "gold": 10
+  },
+  {
+    "rank": 2,
+    "level": 0,
+    "power": 504000,
+    "gold": 1000
+  },
+  {
+    "rank": 2,
+    "level": 1,
+    "power": 509040,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 2,
+    "power": 514080,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 3,
+    "power": 519120,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 4,
+    "power": 524160,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 5,
+    "power": 529200,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 6,
+    "power": 534240,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 7,
+    "power": 539280,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 8,
+    "power": 544320,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 9,
+    "power": 549360,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 10,
+    "power": 554400,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 11,
+    "power": 559440,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 12,
+    "power": 564480,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 13,
+    "power": 569520,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 14,
+    "power": 574560,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 15,
+    "power": 579600,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 16,
+    "power": 584640,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 17,
+    "power": 589680,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 18,
+    "power": 594720,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 19,
+    "power": 599760,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 20,
+    "power": 604800,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 21,
+    "power": 609840,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 22,
+    "power": 614880,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 23,
+    "power": 619920,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 24,
+    "power": 624960,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 25,
+    "power": 630000,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 26,
+    "power": 635040,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 27,
+    "power": 640080,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 28,
+    "power": 645120,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 29,
+    "power": 650160,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 30,
+    "power": 655200,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 31,
+    "power": 660240,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 32,
+    "power": 665280,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 33,
+    "power": 670320,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 34,
+    "power": 675360,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 35,
+    "power": 680400,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 36,
+    "power": 685440,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 37,
+    "power": 690480,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 38,
+    "power": 695520,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 39,
+    "power": 700560,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 40,
+    "power": 705600,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 41,
+    "power": 710640,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 42,
+    "power": 715680,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 43,
+    "power": 720720,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 44,
+    "power": 725760,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 45,
+    "power": 730800,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 46,
+    "power": 735840,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 47,
+    "power": 740880,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 48,
+    "power": 745920,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 49,
+    "power": 750960,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 50,
+    "power": 756000,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 51,
+    "power": 761040,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 52,
+    "power": 766080,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 53,
+    "power": 771120,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 54,
+    "power": 776160,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 55,
+    "power": 781200,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 56,
+    "power": 786240,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 57,
+    "power": 791280,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 58,
+    "power": 796320,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 59,
+    "power": 801360,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 60,
+    "power": 806400,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 61,
+    "power": 811440,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 62,
+    "power": 816480,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 63,
+    "power": 821520,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 64,
+    "power": 826560,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 65,
+    "power": 831600,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 66,
+    "power": 836640,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 67,
+    "power": 841680,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 68,
+    "power": 846720,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 69,
+    "power": 851760,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 70,
+    "power": 856800,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 71,
+    "power": 861840,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 72,
+    "power": 866880,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 73,
+    "power": 871920,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 74,
+    "power": 876960,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 75,
+    "power": 882000,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 76,
+    "power": 887040,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 77,
+    "power": 892080,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 78,
+    "power": 897120,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 79,
+    "power": 902160,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 80,
+    "power": 907200,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 81,
+    "power": 912240,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 82,
+    "power": 917280,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 83,
+    "power": 922320,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 84,
+    "power": 927360,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 85,
+    "power": 932400,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 86,
+    "power": 937440,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 87,
+    "power": 942480,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 88,
+    "power": 947520,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 89,
+    "power": 952560,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 90,
+    "power": 957600,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 91,
+    "power": 962640,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 92,
+    "power": 967680,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 93,
+    "power": 972720,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 94,
+    "power": 977760,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 95,
+    "power": 982800,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 96,
+    "power": 987840,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 97,
+    "power": 992880,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 98,
+    "power": 997920,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 99,
+    "power": 1002960,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 100,
+    "power": 1008000,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 101,
+    "power": 1013040,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 102,
+    "power": 1018080,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 103,
+    "power": 1023120,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 104,
+    "power": 1028160,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 105,
+    "power": 1033200,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 106,
+    "power": 1038240,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 107,
+    "power": 1043280,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 108,
+    "power": 1048320,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 109,
+    "power": 1053360,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 110,
+    "power": 1058400,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 111,
+    "power": 1063440,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 112,
+    "power": 1068480,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 113,
+    "power": 1073520,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 114,
+    "power": 1078560,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 115,
+    "power": 1083600,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 116,
+    "power": 1088640,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 117,
+    "power": 1093680,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 118,
+    "power": 1098720,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 119,
+    "power": 1103760,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 120,
+    "power": 1108800,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 121,
+    "power": 1113840,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 122,
+    "power": 1118880,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 123,
+    "power": 1123920,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 124,
+    "power": 1128960,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 125,
+    "power": 1134000,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 126,
+    "power": 1139040,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 127,
+    "power": 1144080,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 128,
+    "power": 1149120,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 129,
+    "power": 1154160,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 130,
+    "power": 1159200,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 131,
+    "power": 1164240,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 132,
+    "power": 1169280,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 133,
+    "power": 1174320,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 134,
+    "power": 1179360,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 135,
+    "power": 1184400,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 136,
+    "power": 1189440,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 137,
+    "power": 1194480,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 138,
+    "power": 1199520,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 139,
+    "power": 1204560,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 140,
+    "power": 1209600,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 141,
+    "power": 1214640,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 142,
+    "power": 1219680,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 143,
+    "power": 1224720,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 144,
+    "power": 1229760,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 145,
+    "power": 1234800,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 146,
+    "power": 1239840,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 147,
+    "power": 1244880,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 148,
+    "power": 1249920,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 149,
+    "power": 1254960,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 150,
+    "power": 1260000,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 151,
+    "power": 1265040,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 152,
+    "power": 1270080,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 153,
+    "power": 1275120,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 154,
+    "power": 1280160,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 155,
+    "power": 1285200,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 156,
+    "power": 1290240,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 157,
+    "power": 1295280,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 158,
+    "power": 1300320,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 159,
+    "power": 1305360,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 160,
+    "power": 1310400,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 161,
+    "power": 1315440,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 162,
+    "power": 1320480,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 163,
+    "power": 1325520,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 164,
+    "power": 1330560,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 165,
+    "power": 1335600,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 166,
+    "power": 1340640,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 167,
+    "power": 1345680,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 168,
+    "power": 1350720,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 169,
+    "power": 1355760,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 170,
+    "power": 1360800,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 171,
+    "power": 1365840,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 172,
+    "power": 1370880,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 173,
+    "power": 1375920,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 174,
+    "power": 1380960,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 175,
+    "power": 1386000,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 176,
+    "power": 1391040,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 177,
+    "power": 1396080,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 178,
+    "power": 1401120,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 179,
+    "power": 1406160,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 180,
+    "power": 1411200,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 181,
+    "power": 1416240,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 182,
+    "power": 1421280,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 183,
+    "power": 1426320,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 184,
+    "power": 1431360,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 185,
+    "power": 1436400,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 186,
+    "power": 1441440,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 187,
+    "power": 1446480,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 188,
+    "power": 1451520,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 189,
+    "power": 1456560,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 190,
+    "power": 1461600,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 191,
+    "power": 1466640,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 192,
+    "power": 1471680,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 193,
+    "power": 1476720,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 194,
+    "power": 1481760,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 195,
+    "power": 1486800,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 196,
+    "power": 1491840,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 197,
+    "power": 1496880,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 198,
+    "power": 1501920,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 199,
+    "power": 1506960,
+    "gold": 20
+  },
+  {
+    "rank": 2,
+    "level": 200,
+    "power": 1512000,
+    "gold": 20
+  },
+  {
+    "rank": 3,
+    "level": 0,
+    "power": 1536000,
+    "gold": 4000
+  },
+  {
+    "rank": 3,
+    "level": 1,
+    "power": 1560600,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 2,
+    "power": 1585200,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 3,
+    "power": 1609800,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 4,
+    "power": 1634400,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 5,
+    "power": 1659000,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 6,
+    "power": 1683600,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 7,
+    "power": 1708200,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 8,
+    "power": 1732800,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 9,
+    "power": 1757400,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 10,
+    "power": 1782000,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 11,
+    "power": 1806600,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 12,
+    "power": 1831200,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 13,
+    "power": 1855800,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 14,
+    "power": 1880400,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 15,
+    "power": 1905000,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 16,
+    "power": 1929600,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 17,
+    "power": 1954200,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 18,
+    "power": 1978800,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 19,
+    "power": 2003400,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 20,
+    "power": 2028000,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 21,
+    "power": 2052600,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 22,
+    "power": 2077200,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 23,
+    "power": 2101800,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 24,
+    "power": 2126400,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 25,
+    "power": 2151000,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 26,
+    "power": 2175600,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 27,
+    "power": 2200200,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 28,
+    "power": 2224800,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 29,
+    "power": 2249400,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 30,
+    "power": 2274000,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 31,
+    "power": 2298600,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 32,
+    "power": 2323200,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 33,
+    "power": 2347800,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 34,
+    "power": 2372400,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 35,
+    "power": 2397000,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 36,
+    "power": 2421600,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 37,
+    "power": 2446200,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 38,
+    "power": 2470800,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 39,
+    "power": 2495400,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 40,
+    "power": 2520000,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 41,
+    "power": 2544600,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 42,
+    "power": 2569200,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 43,
+    "power": 2593800,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 44,
+    "power": 2618400,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 45,
+    "power": 2643000,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 46,
+    "power": 2667600,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 47,
+    "power": 2692200,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 48,
+    "power": 2716800,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 49,
+    "power": 2741400,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 50,
+    "power": 2766000,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 51,
+    "power": 2790600,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 52,
+    "power": 2815200,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 53,
+    "power": 2839800,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 54,
+    "power": 2864400,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 55,
+    "power": 2889000,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 56,
+    "power": 2913600,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 57,
+    "power": 2938200,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 58,
+    "power": 2962800,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 59,
+    "power": 2987400,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 60,
+    "power": 3012000,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 61,
+    "power": 3036600,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 62,
+    "power": 3061200,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 63,
+    "power": 3085800,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 64,
+    "power": 3110400,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 65,
+    "power": 3135000,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 66,
+    "power": 3159600,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 67,
+    "power": 3184200,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 68,
+    "power": 3208800,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 69,
+    "power": 3233400,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 70,
+    "power": 3258000,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 71,
+    "power": 3282600,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 72,
+    "power": 3307200,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 73,
+    "power": 3331800,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 74,
+    "power": 3356400,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 75,
+    "power": 3381000,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 76,
+    "power": 3405600,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 77,
+    "power": 3430200,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 78,
+    "power": 3454800,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 79,
+    "power": 3479400,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 80,
+    "power": 3504000,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 81,
+    "power": 3528600,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 82,
+    "power": 3553200,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 83,
+    "power": 3577800,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 84,
+    "power": 3602400,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 85,
+    "power": 3627000,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 86,
+    "power": 3651600,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 87,
+    "power": 3676200,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 88,
+    "power": 3700800,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 89,
+    "power": 3725400,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 90,
+    "power": 3750000,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 91,
+    "power": 3774600,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 92,
+    "power": 3799200,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 93,
+    "power": 3823800,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 94,
+    "power": 3848400,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 95,
+    "power": 3873000,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 96,
+    "power": 3897600,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 97,
+    "power": 3922200,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 98,
+    "power": 3946800,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 99,
+    "power": 3971400,
+    "gold": 50
+  },
+  {
+    "rank": 3,
+    "level": 100,
+    "power": 3996000,
+    "gold": 50
+  },
+  {
+    "rank": 4,
+    "level": 0,
+    "power": 4056000,
+    "gold": 5000
+  },
+  {
+    "rank": 4,
+    "level": 1,
+    "power": 4081200,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 2,
+    "power": 4106400,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 3,
+    "power": 4131600,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 4,
+    "power": 4156800,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 5,
+    "power": 4182000,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 6,
+    "power": 4207200,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 7,
+    "power": 4232400,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 8,
+    "power": 4257600,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 9,
+    "power": 4282800,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 10,
+    "power": 4308000,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 11,
+    "power": 4333200,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 12,
+    "power": 4358400,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 13,
+    "power": 4383600,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 14,
+    "power": 4408800,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 15,
+    "power": 4434000,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 16,
+    "power": 4459200,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 17,
+    "power": 4484400,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 18,
+    "power": 4509600,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 19,
+    "power": 4534800,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 20,
+    "power": 4560000,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 21,
+    "power": 4585200,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 22,
+    "power": 4610400,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 23,
+    "power": 4635600,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 24,
+    "power": 4660800,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 25,
+    "power": 4686000,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 26,
+    "power": 4711200,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 27,
+    "power": 4736400,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 28,
+    "power": 4761600,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 29,
+    "power": 4786800,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 30,
+    "power": 4812000,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 31,
+    "power": 4837200,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 32,
+    "power": 4862400,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 33,
+    "power": 4887600,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 34,
+    "power": 4912800,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 35,
+    "power": 4938000,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 36,
+    "power": 4963200,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 37,
+    "power": 4988400,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 38,
+    "power": 5013600,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 39,
+    "power": 5038800,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 40,
+    "power": 5064000,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 41,
+    "power": 5089200,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 42,
+    "power": 5114400,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 43,
+    "power": 5139600,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 44,
+    "power": 5164800,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 45,
+    "power": 5190000,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 46,
+    "power": 5215200,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 47,
+    "power": 5240400,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 48,
+    "power": 5265600,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 49,
+    "power": 5290800,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 50,
+    "power": 5316000,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 51,
+    "power": 5341200,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 52,
+    "power": 5366400,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 53,
+    "power": 5391600,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 54,
+    "power": 5416800,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 55,
+    "power": 5442000,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 56,
+    "power": 5467200,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 57,
+    "power": 5492400,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 58,
+    "power": 5517600,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 59,
+    "power": 5542800,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 60,
+    "power": 5568000,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 61,
+    "power": 5593200,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 62,
+    "power": 5618400,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 63,
+    "power": 5643600,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 64,
+    "power": 5668800,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 65,
+    "power": 5694000,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 66,
+    "power": 5719200,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 67,
+    "power": 5744400,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 68,
+    "power": 5769600,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 69,
+    "power": 5794800,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 70,
+    "power": 5820000,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 71,
+    "power": 5845200,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 72,
+    "power": 5870400,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 73,
+    "power": 5895600,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 74,
+    "power": 5920800,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 75,
+    "power": 5946000,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 76,
+    "power": 5971200,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 77,
+    "power": 5996400,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 78,
+    "power": 6021600,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 79,
+    "power": 6046800,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 80,
+    "power": 6072000,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 81,
+    "power": 6097200,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 82,
+    "power": 6122400,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 83,
+    "power": 6147600,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 84,
+    "power": 6172800,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 85,
+    "power": 6198000,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 86,
+    "power": 6223200,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 87,
+    "power": 6248400,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 88,
+    "power": 6273600,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 89,
+    "power": 6298800,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 90,
+    "power": 6324000,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 91,
+    "power": 6349200,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 92,
+    "power": 6374400,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 93,
+    "power": 6399600,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 94,
+    "power": 6424800,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 95,
+    "power": 6450000,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 96,
+    "power": 6475200,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 97,
+    "power": 6500400,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 98,
+    "power": 6525600,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 99,
+    "power": 6550800,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 100,
+    "power": 6576000,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 101,
+    "power": 6601200,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 102,
+    "power": 6626400,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 103,
+    "power": 6651600,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 104,
+    "power": 6676800,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 105,
+    "power": 6702000,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 106,
+    "power": 6727200,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 107,
+    "power": 6752400,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 108,
+    "power": 6777600,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 109,
+    "power": 6802800,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 110,
+    "power": 6828000,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 111,
+    "power": 6853200,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 112,
+    "power": 6878400,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 113,
+    "power": 6903600,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 114,
+    "power": 6928800,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 115,
+    "power": 6954000,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 116,
+    "power": 6979200,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 117,
+    "power": 7004400,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 118,
+    "power": 7029600,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 119,
+    "power": 7054800,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 120,
+    "power": 7080000,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 121,
+    "power": 7105200,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 122,
+    "power": 7130400,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 123,
+    "power": 7155600,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 124,
+    "power": 7180800,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 125,
+    "power": 7206000,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 126,
+    "power": 7231200,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 127,
+    "power": 7256400,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 128,
+    "power": 7281600,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 129,
+    "power": 7306800,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 130,
+    "power": 7332000,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 131,
+    "power": 7357200,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 132,
+    "power": 7382400,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 133,
+    "power": 7407600,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 134,
+    "power": 7432800,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 135,
+    "power": 7458000,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 136,
+    "power": 7483200,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 137,
+    "power": 7508400,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 138,
+    "power": 7533600,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 139,
+    "power": 7558800,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 140,
+    "power": 7584000,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 141,
+    "power": 7609200,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 142,
+    "power": 7634400,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 143,
+    "power": 7659600,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 144,
+    "power": 7684800,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 145,
+    "power": 7710000,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 146,
+    "power": 7735200,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 147,
+    "power": 7760400,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 148,
+    "power": 7785600,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 149,
+    "power": 7810800,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 150,
+    "power": 7836000,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 151,
+    "power": 7861200,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 152,
+    "power": 7886400,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 153,
+    "power": 7911600,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 154,
+    "power": 7936800,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 155,
+    "power": 7962000,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 156,
+    "power": 7987200,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 157,
+    "power": 8012400,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 158,
+    "power": 8037600,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 159,
+    "power": 8062800,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 160,
+    "power": 8088000,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 161,
+    "power": 8113200,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 162,
+    "power": 8138400,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 163,
+    "power": 8163600,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 164,
+    "power": 8188800,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 165,
+    "power": 8214000,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 166,
+    "power": 8239200,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 167,
+    "power": 8264400,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 168,
+    "power": 8289600,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 169,
+    "power": 8314800,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 170,
+    "power": 8340000,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 171,
+    "power": 8365200,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 172,
+    "power": 8390400,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 173,
+    "power": 8415600,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 174,
+    "power": 8440800,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 175,
+    "power": 8466000,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 176,
+    "power": 8491200,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 177,
+    "power": 8516400,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 178,
+    "power": 8541600,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 179,
+    "power": 8566800,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 180,
+    "power": 8592000,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 181,
+    "power": 8617200,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 182,
+    "power": 8642400,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 183,
+    "power": 8667600,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 184,
+    "power": 8692800,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 185,
+    "power": 8718000,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 186,
+    "power": 8743200,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 187,
+    "power": 8768400,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 188,
+    "power": 8793600,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 189,
+    "power": 8818800,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 190,
+    "power": 8844000,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 191,
+    "power": 8869200,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 192,
+    "power": 8894400,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 193,
+    "power": 8919600,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 194,
+    "power": 8944800,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 195,
+    "power": 8970000,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 196,
+    "power": 8995200,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 197,
+    "power": 9020400,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 198,
+    "power": 9045600,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 199,
+    "power": 9070800,
+    "gold": 100
+  },
+  {
+    "rank": 4,
+    "level": 200,
+    "power": 9096000,
+    "gold": 100
+  },
+  {
+    "rank": 5,
+    "level": 0,
+    "power": 9216000,
+    "gold": 20000
+  },
+  {
+    "rank": 5,
+    "level": 1,
+    "power": 9338400,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 2,
+    "power": 9460800,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 3,
+    "power": 9583200,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 4,
+    "power": 9705600,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 5,
+    "power": 9828000,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 6,
+    "power": 9950400,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 7,
+    "power": 10072800,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 8,
+    "power": 10195200,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 9,
+    "power": 10317600,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 10,
+    "power": 10440000,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 11,
+    "power": 10562400,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 12,
+    "power": 10684800,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 13,
+    "power": 10807200,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 14,
+    "power": 10929600,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 15,
+    "power": 11052000,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 16,
+    "power": 11174400,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 17,
+    "power": 11296800,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 18,
+    "power": 11419200,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 19,
+    "power": 11541600,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 20,
+    "power": 11664000,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 21,
+    "power": 11786400,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 22,
+    "power": 11908800,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 23,
+    "power": 12031200,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 24,
+    "power": 12153600,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 25,
+    "power": 12276000,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 26,
+    "power": 12398400,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 27,
+    "power": 12520800,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 28,
+    "power": 12643200,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 29,
+    "power": 12765600,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 30,
+    "power": 12888000,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 31,
+    "power": 13010400,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 32,
+    "power": 13132800,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 33,
+    "power": 13255200,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 34,
+    "power": 13377600,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 35,
+    "power": 13500000,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 36,
+    "power": 13622400,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 37,
+    "power": 13744800,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 38,
+    "power": 13867200,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 39,
+    "power": 13989600,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 40,
+    "power": 14112000,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 41,
+    "power": 14234400,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 42,
+    "power": 14356800,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 43,
+    "power": 14479200,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 44,
+    "power": 14601600,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 45,
+    "power": 14724000,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 46,
+    "power": 14846400,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 47,
+    "power": 14968800,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 48,
+    "power": 15091200,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 49,
+    "power": 15213600,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 50,
+    "power": 15336000,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 51,
+    "power": 15458400,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 52,
+    "power": 15580800,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 53,
+    "power": 15703200,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 54,
+    "power": 15825600,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 55,
+    "power": 15948000,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 56,
+    "power": 16070400,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 57,
+    "power": 16192800,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 58,
+    "power": 16315200,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 59,
+    "power": 16437600,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 60,
+    "power": 16560000,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 61,
+    "power": 16682400,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 62,
+    "power": 16804800,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 63,
+    "power": 16927200,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 64,
+    "power": 17049600,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 65,
+    "power": 17172000,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 66,
+    "power": 17294400,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 67,
+    "power": 17416800,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 68,
+    "power": 17539200,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 69,
+    "power": 17661600,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 70,
+    "power": 17784000,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 71,
+    "power": 17906400,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 72,
+    "power": 18028800,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 73,
+    "power": 18151200,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 74,
+    "power": 18273600,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 75,
+    "power": 18396000,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 76,
+    "power": 18518400,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 77,
+    "power": 18640800,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 78,
+    "power": 18763200,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 79,
+    "power": 18885600,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 80,
+    "power": 19008000,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 81,
+    "power": 19130400,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 82,
+    "power": 19252800,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 83,
+    "power": 19375200,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 84,
+    "power": 19497600,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 85,
+    "power": 19620000,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 86,
+    "power": 19742400,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 87,
+    "power": 19864800,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 88,
+    "power": 19987200,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 89,
+    "power": 20109600,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 90,
+    "power": 20232000,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 91,
+    "power": 20354400,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 92,
+    "power": 20476800,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 93,
+    "power": 20599200,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 94,
+    "power": 20721600,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 95,
+    "power": 20844000,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 96,
+    "power": 20966400,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 97,
+    "power": 21088800,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 98,
+    "power": 21211200,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 99,
+    "power": 21333600,
+    "gold": 200
+  },
+  {
+    "rank": 5,
+    "level": 100,
+    "power": 21456000,
+    "gold": 200
+  },
+  {
+    "rank": 6,
+    "level": 0,
+    "power": 21696000,
+    "gold": 20000
+  },
+  {
+    "rank": 6,
+    "level": 1,
+    "power": 21822000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 2,
+    "power": 21948000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 3,
+    "power": 22074000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 4,
+    "power": 22200000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 5,
+    "power": 22326000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 6,
+    "power": 22452000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 7,
+    "power": 22578000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 8,
+    "power": 22704000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 9,
+    "power": 22830000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 10,
+    "power": 22956000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 11,
+    "power": 23082000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 12,
+    "power": 23208000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 13,
+    "power": 23334000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 14,
+    "power": 23460000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 15,
+    "power": 23586000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 16,
+    "power": 23712000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 17,
+    "power": 23838000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 18,
+    "power": 23964000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 19,
+    "power": 24090000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 20,
+    "power": 24216000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 21,
+    "power": 24342000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 22,
+    "power": 24468000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 23,
+    "power": 24594000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 24,
+    "power": 24720000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 25,
+    "power": 24846000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 26,
+    "power": 24972000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 27,
+    "power": 25098000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 28,
+    "power": 25224000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 29,
+    "power": 25350000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 30,
+    "power": 25476000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 31,
+    "power": 25602000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 32,
+    "power": 25728000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 33,
+    "power": 25854000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 34,
+    "power": 25980000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 35,
+    "power": 26106000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 36,
+    "power": 26232000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 37,
+    "power": 26358000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 38,
+    "power": 26484000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 39,
+    "power": 26610000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 40,
+    "power": 26736000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 41,
+    "power": 26862000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 42,
+    "power": 26988000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 43,
+    "power": 27114000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 44,
+    "power": 27240000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 45,
+    "power": 27366000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 46,
+    "power": 27492000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 47,
+    "power": 27618000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 48,
+    "power": 27744000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 49,
+    "power": 27870000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 50,
+    "power": 27996000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 51,
+    "power": 28122000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 52,
+    "power": 28248000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 53,
+    "power": 28374000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 54,
+    "power": 28500000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 55,
+    "power": 28626000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 56,
+    "power": 28752000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 57,
+    "power": 28878000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 58,
+    "power": 29004000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 59,
+    "power": 29130000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 60,
+    "power": 29256000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 61,
+    "power": 29382000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 62,
+    "power": 29508000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 63,
+    "power": 29634000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 64,
+    "power": 29760000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 65,
+    "power": 29886000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 66,
+    "power": 30012000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 67,
+    "power": 30138000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 68,
+    "power": 30264000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 69,
+    "power": 30390000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 70,
+    "power": 30516000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 71,
+    "power": 30642000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 72,
+    "power": 30768000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 73,
+    "power": 30894000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 74,
+    "power": 31020000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 75,
+    "power": 31146000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 76,
+    "power": 31272000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 77,
+    "power": 31398000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 78,
+    "power": 31524000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 79,
+    "power": 31650000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 80,
+    "power": 31776000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 81,
+    "power": 31902000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 82,
+    "power": 32028000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 83,
+    "power": 32154000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 84,
+    "power": 32280000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 85,
+    "power": 32406000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 86,
+    "power": 32532000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 87,
+    "power": 32658000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 88,
+    "power": 32784000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 89,
+    "power": 32910000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 90,
+    "power": 33036000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 91,
+    "power": 33162000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 92,
+    "power": 33288000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 93,
+    "power": 33414000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 94,
+    "power": 33540000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 95,
+    "power": 33666000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 96,
+    "power": 33792000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 97,
+    "power": 33918000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 98,
+    "power": 34044000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 99,
+    "power": 34170000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 100,
+    "power": 34296000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 101,
+    "power": 34422000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 102,
+    "power": 34548000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 103,
+    "power": 34674000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 104,
+    "power": 34800000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 105,
+    "power": 34926000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 106,
+    "power": 35052000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 107,
+    "power": 35178000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 108,
+    "power": 35304000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 109,
+    "power": 35430000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 110,
+    "power": 35556000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 111,
+    "power": 35682000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 112,
+    "power": 35808000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 113,
+    "power": 35934000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 114,
+    "power": 36060000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 115,
+    "power": 36186000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 116,
+    "power": 36312000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 117,
+    "power": 36438000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 118,
+    "power": 36564000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 119,
+    "power": 36690000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 120,
+    "power": 36816000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 121,
+    "power": 36942000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 122,
+    "power": 37068000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 123,
+    "power": 37194000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 124,
+    "power": 37320000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 125,
+    "power": 37446000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 126,
+    "power": 37572000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 127,
+    "power": 37698000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 128,
+    "power": 37824000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 129,
+    "power": 37950000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 130,
+    "power": 38076000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 131,
+    "power": 38202000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 132,
+    "power": 38328000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 133,
+    "power": 38454000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 134,
+    "power": 38580000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 135,
+    "power": 38706000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 136,
+    "power": 38832000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 137,
+    "power": 38958000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 138,
+    "power": 39084000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 139,
+    "power": 39210000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 140,
+    "power": 39336000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 141,
+    "power": 39462000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 142,
+    "power": 39588000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 143,
+    "power": 39714000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 144,
+    "power": 39840000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 145,
+    "power": 39966000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 146,
+    "power": 40092000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 147,
+    "power": 40218000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 148,
+    "power": 40344000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 149,
+    "power": 40470000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 150,
+    "power": 40596000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 151,
+    "power": 40722000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 152,
+    "power": 40848000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 153,
+    "power": 40974000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 154,
+    "power": 41100000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 155,
+    "power": 41226000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 156,
+    "power": 41352000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 157,
+    "power": 41478000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 158,
+    "power": 41604000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 159,
+    "power": 41730000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 160,
+    "power": 41856000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 161,
+    "power": 41982000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 162,
+    "power": 42108000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 163,
+    "power": 42234000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 164,
+    "power": 42360000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 165,
+    "power": 42486000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 166,
+    "power": 42612000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 167,
+    "power": 42738000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 168,
+    "power": 42864000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 169,
+    "power": 42990000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 170,
+    "power": 43116000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 171,
+    "power": 43242000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 172,
+    "power": 43368000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 173,
+    "power": 43494000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 174,
+    "power": 43620000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 175,
+    "power": 43746000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 176,
+    "power": 43872000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 177,
+    "power": 43998000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 178,
+    "power": 44124000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 179,
+    "power": 44250000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 180,
+    "power": 44376000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 181,
+    "power": 44502000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 182,
+    "power": 44628000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 183,
+    "power": 44754000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 184,
+    "power": 44880000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 185,
+    "power": 45006000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 186,
+    "power": 45132000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 187,
+    "power": 45258000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 188,
+    "power": 45384000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 189,
+    "power": 45510000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 190,
+    "power": 45636000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 191,
+    "power": 45762000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 192,
+    "power": 45888000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 193,
+    "power": 46014000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 194,
+    "power": 46140000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 195,
+    "power": 46266000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 196,
+    "power": 46392000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 197,
+    "power": 46518000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 198,
+    "power": 46644000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 199,
+    "power": 46770000,
+    "gold": 500
+  },
+  {
+    "rank": 6,
+    "level": 200,
+    "power": 46896000,
+    "gold": 500
+  },
+  {
+    "rank": 7,
+    "level": 0,
+    "power": 47496000,
+    "gold": 100000
+  },
+  {
+    "rank": 7,
+    "level": 1,
+    "power": 48108000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 2,
+    "power": 48720000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 3,
+    "power": 49332000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 4,
+    "power": 49944000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 5,
+    "power": 50556000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 6,
+    "power": 51168000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 7,
+    "power": 51780000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 8,
+    "power": 52392000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 9,
+    "power": 53004000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 10,
+    "power": 53616000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 11,
+    "power": 54228000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 12,
+    "power": 54840000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 13,
+    "power": 55452000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 14,
+    "power": 56064000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 15,
+    "power": 56676000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 16,
+    "power": 57288000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 17,
+    "power": 57900000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 18,
+    "power": 58512000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 19,
+    "power": 59124000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 20,
+    "power": 59736000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 21,
+    "power": 60348000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 22,
+    "power": 60960000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 23,
+    "power": 61572000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 24,
+    "power": 62184000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 25,
+    "power": 62796000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 26,
+    "power": 63408000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 27,
+    "power": 64020000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 28,
+    "power": 64632000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 29,
+    "power": 65244000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 30,
+    "power": 65856000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 31,
+    "power": 66468000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 32,
+    "power": 67080000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 33,
+    "power": 67692000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 34,
+    "power": 68304000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 35,
+    "power": 68916000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 36,
+    "power": 69528000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 37,
+    "power": 70140000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 38,
+    "power": 70752000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 39,
+    "power": 71364000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 40,
+    "power": 71976000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 41,
+    "power": 72588000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 42,
+    "power": 73200000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 43,
+    "power": 73812000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 44,
+    "power": 74424000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 45,
+    "power": 75036000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 46,
+    "power": 75648000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 47,
+    "power": 76260000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 48,
+    "power": 76872000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 49,
+    "power": 77484000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 50,
+    "power": 78096000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 51,
+    "power": 78708000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 52,
+    "power": 79320000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 53,
+    "power": 79932000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 54,
+    "power": 80544000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 55,
+    "power": 81156000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 56,
+    "power": 81768000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 57,
+    "power": 82380000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 58,
+    "power": 82992000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 59,
+    "power": 83604000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 60,
+    "power": 84216000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 61,
+    "power": 84828000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 62,
+    "power": 85440000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 63,
+    "power": 86052000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 64,
+    "power": 86664000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 65,
+    "power": 87276000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 66,
+    "power": 87888000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 67,
+    "power": 88500000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 68,
+    "power": 89112000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 69,
+    "power": 89724000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 70,
+    "power": 90336000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 71,
+    "power": 90948000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 72,
+    "power": 91560000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 73,
+    "power": 92172000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 74,
+    "power": 92784000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 75,
+    "power": 93396000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 76,
+    "power": 94008000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 77,
+    "power": 94620000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 78,
+    "power": 95232000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 79,
+    "power": 95844000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 80,
+    "power": 96456000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 81,
+    "power": 97068000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 82,
+    "power": 97680000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 83,
+    "power": 98292000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 84,
+    "power": 98904000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 85,
+    "power": 99516000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 86,
+    "power": 100128000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 87,
+    "power": 100740000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 88,
+    "power": 101352000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 89,
+    "power": 101964000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 90,
+    "power": 102576000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 91,
+    "power": 103188000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 92,
+    "power": 103800000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 93,
+    "power": 104412000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 94,
+    "power": 105024000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 95,
+    "power": 105636000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 96,
+    "power": 106248000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 97,
+    "power": 106860000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 98,
+    "power": 107472000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 99,
+    "power": 108084000,
+    "gold": 1000
+  },
+  {
+    "rank": 7,
+    "level": 100,
+    "power": 108696000,
+    "gold": 1000
+  },
+  {
+    "rank": 8,
+    "level": 0,
+    "power": 109896004,
+    "gold": 100000
+  },
+  {
+    "rank": 8,
+    "level": 1,
+    "power": 110520004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 2,
+    "power": 111144004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 3,
+    "power": 111768004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 4,
+    "power": 112392004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 5,
+    "power": 113016004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 6,
+    "power": 113640004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 7,
+    "power": 114264004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 8,
+    "power": 114888004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 9,
+    "power": 115512004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 10,
+    "power": 116136004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 11,
+    "power": 116760004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 12,
+    "power": 117384004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 13,
+    "power": 118008004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 14,
+    "power": 118632004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 15,
+    "power": 119256004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 16,
+    "power": 119880004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 17,
+    "power": 120504004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 18,
+    "power": 121128004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 19,
+    "power": 121752004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 20,
+    "power": 122376004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 21,
+    "power": 123000004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 22,
+    "power": 123624004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 23,
+    "power": 124248004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 24,
+    "power": 124872004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 25,
+    "power": 125496004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 26,
+    "power": 126120004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 27,
+    "power": 126744004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 28,
+    "power": 127368004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 29,
+    "power": 127992004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 30,
+    "power": 128616004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 31,
+    "power": 129240004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 32,
+    "power": 129864004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 33,
+    "power": 130488004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 34,
+    "power": 131112004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 35,
+    "power": 131736004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 36,
+    "power": 132360004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 37,
+    "power": 132984004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 38,
+    "power": 133608004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 39,
+    "power": 134232004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 40,
+    "power": 134856004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 41,
+    "power": 135480004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 42,
+    "power": 136104004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 43,
+    "power": 136728004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 44,
+    "power": 137352004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 45,
+    "power": 137976004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 46,
+    "power": 138600004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 47,
+    "power": 139224004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 48,
+    "power": 139848004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 49,
+    "power": 140472004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 50,
+    "power": 141096004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 51,
+    "power": 141720004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 52,
+    "power": 142344004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 53,
+    "power": 142968004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 54,
+    "power": 143592004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 55,
+    "power": 144216004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 56,
+    "power": 144840004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 57,
+    "power": 145464004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 58,
+    "power": 146088004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 59,
+    "power": 146712004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 60,
+    "power": 147336004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 61,
+    "power": 147960004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 62,
+    "power": 148584004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 63,
+    "power": 149208004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 64,
+    "power": 149832004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 65,
+    "power": 150456004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 66,
+    "power": 151080004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 67,
+    "power": 151704004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 68,
+    "power": 152328004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 69,
+    "power": 152952004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 70,
+    "power": 153576004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 71,
+    "power": 154200004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 72,
+    "power": 154824004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 73,
+    "power": 155448004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 74,
+    "power": 156072004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 75,
+    "power": 156696004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 76,
+    "power": 157320004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 77,
+    "power": 157944004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 78,
+    "power": 158568004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 79,
+    "power": 159192004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 80,
+    "power": 159816004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 81,
+    "power": 160440004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 82,
+    "power": 161064004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 83,
+    "power": 161688004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 84,
+    "power": 162312004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 85,
+    "power": 162936004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 86,
+    "power": 163560004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 87,
+    "power": 164184004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 88,
+    "power": 164808004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 89,
+    "power": 165432004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 90,
+    "power": 166056004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 91,
+    "power": 166680004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 92,
+    "power": 167304004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 93,
+    "power": 167928004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 94,
+    "power": 168552004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 95,
+    "power": 169176004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 96,
+    "power": 169800004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 97,
+    "power": 170424004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 98,
+    "power": 171048004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 99,
+    "power": 171672004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 100,
+    "power": 172296004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 101,
+    "power": 172920004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 102,
+    "power": 173544004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 103,
+    "power": 174168004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 104,
+    "power": 174792004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 105,
+    "power": 175416004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 106,
+    "power": 176040004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 107,
+    "power": 176664004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 108,
+    "power": 177288004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 109,
+    "power": 177912004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 110,
+    "power": 178536004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 111,
+    "power": 179160004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 112,
+    "power": 179784004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 113,
+    "power": 180408004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 114,
+    "power": 181032004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 115,
+    "power": 181656004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 116,
+    "power": 182280004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 117,
+    "power": 182904004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 118,
+    "power": 183528004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 119,
+    "power": 184152004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 120,
+    "power": 184776004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 121,
+    "power": 185400004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 122,
+    "power": 186024004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 123,
+    "power": 186648004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 124,
+    "power": 187272004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 125,
+    "power": 187896004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 126,
+    "power": 188520004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 127,
+    "power": 189144004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 128,
+    "power": 189768004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 129,
+    "power": 190392004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 130,
+    "power": 191016004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 131,
+    "power": 191640004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 132,
+    "power": 192264004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 133,
+    "power": 192888004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 134,
+    "power": 193512004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 135,
+    "power": 194136004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 136,
+    "power": 194760004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 137,
+    "power": 195384004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 138,
+    "power": 196008004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 139,
+    "power": 196632004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 140,
+    "power": 197256004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 141,
+    "power": 197880004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 142,
+    "power": 198504004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 143,
+    "power": 199128004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 144,
+    "power": 199752004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 145,
+    "power": 200376004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 146,
+    "power": 201000004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 147,
+    "power": 201624004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 148,
+    "power": 202248004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 149,
+    "power": 202872004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 150,
+    "power": 203496004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 151,
+    "power": 204120004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 152,
+    "power": 204744004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 153,
+    "power": 205368004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 154,
+    "power": 205992004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 155,
+    "power": 206616004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 156,
+    "power": 207240004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 157,
+    "power": 207864004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 158,
+    "power": 208488004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 159,
+    "power": 209112004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 160,
+    "power": 209736004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 161,
+    "power": 210360004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 162,
+    "power": 210984004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 163,
+    "power": 211608004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 164,
+    "power": 212232004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 165,
+    "power": 212856004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 166,
+    "power": 213480004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 167,
+    "power": 214104004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 168,
+    "power": 214728004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 169,
+    "power": 215352004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 170,
+    "power": 215976004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 171,
+    "power": 216600004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 172,
+    "power": 217224004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 173,
+    "power": 217848004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 174,
+    "power": 218472004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 175,
+    "power": 219096004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 176,
+    "power": 219720004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 177,
+    "power": 220344004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 178,
+    "power": 220968004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 179,
+    "power": 221592004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 180,
+    "power": 222216004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 181,
+    "power": 222840004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 182,
+    "power": 223464004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 183,
+    "power": 224088004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 184,
+    "power": 224712004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 185,
+    "power": 225336004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 186,
+    "power": 225960004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 187,
+    "power": 226584004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 188,
+    "power": 227208004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 189,
+    "power": 227832004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 190,
+    "power": 228456004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 191,
+    "power": 229080004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 192,
+    "power": 229704004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 193,
+    "power": 230328004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 194,
+    "power": 230952004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 195,
+    "power": 231576004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 196,
+    "power": 232200004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 197,
+    "power": 232824004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 198,
+    "power": 233448004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 199,
+    "power": 234072004,
+    "gold": 2000
+  },
+  {
+    "rank": 8,
+    "level": 200,
+    "power": 234696004,
+    "gold": 2000
+  },
+  {
+    "rank": 9,
+    "level": 0,
+    "power": 237096000,
+    "gold": 400000
+  }
+]

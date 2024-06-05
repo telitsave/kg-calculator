@@ -1,0 +1,10002 @@
+[
+    {
+        "level": 1,
+        "cost": 0,
+        "power": 0
+    },
+    {
+        "level": 2,
+        "cost": 5,
+        "power": 2500
+    },
+    {
+        "level": 3,
+        "cost": 5,
+        "power": 5000
+    },
+    {
+        "level": 4,
+        "cost": 5,
+        "power": 7500
+    },
+    {
+        "level": 5,
+        "cost": 10,
+        "power": 15000
+    },
+    {
+        "level": 6,
+        "cost": 10,
+        "power": 20000
+    },
+    {
+        "level": 7,
+        "cost": 10,
+        "power": 25000
+    },
+    {
+        "level": 8,
+        "cost": 10,
+        "power": 30000
+    },
+    {
+        "level": 9,
+        "cost": 15,
+        "power": 37500
+    },
+    {
+        "level": 10,
+        "cost": 15,
+        "power": 45000
+    },
+    {
+        "level": 11,
+        "cost": 15,
+        "power": 52500
+    },
+    {
+        "level": 12,
+        "cost": 15,
+        "power": 60000
+    },
+    {
+        "level": 13,
+        "cost": 15,
+        "power": 67500
+    },
+    {
+        "level": 14,
+        "cost": 20,
+        "power": 77500
+    },
+    {
+        "level": 15,
+        "cost": 20,
+        "power": 87500
+    },
+    {
+        "level": 16,
+        "cost": 20,
+        "power": 97500
+    },
+    {
+        "level": 17,
+        "cost": 20,
+        "power": 107500
+    },
+    {
+        "level": 18,
+        "cost": 20,
+        "power": 117500
+    },
+    {
+        "level": 19,
+        "cost": 25,
+        "power": 130000
+    },
+    {
+        "level": 20,
+        "cost": 25,
+        "power": 142500
+    },
+    {
+        "level": 21,
+        "cost": 25,
+        "power": 155000
+    },
+    {
+        "level": 22,
+        "cost": 25,
+        "power": 167500
+    },
+    {
+        "level": 23,
+        "cost": 25,
+        "power": 180000
+    },
+    {
+        "level": 24,
+        "cost": 25,
+        "power": 192500
+    },
+    {
+        "level": 25,
+        "cost": 30,
+        "power": 207500
+    },
+    {
+        "level": 26,
+        "cost": 30,
+        "power": 222500
+    },
+    {
+        "level": 27,
+        "cost": 30,
+        "power": 237500
+    },
+    {
+        "level": 28,
+        "cost": 30,
+        "power": 252500
+    },
+    {
+        "level": 29,
+        "cost": 30,
+        "power": 267500
+    },
+    {
+        "level": 30,
+        "cost": 35,
+        "power": 285000
+    },
+    {
+        "level": 31,
+        "cost": 35,
+        "power": 302500
+    },
+    {
+        "level": 32,
+        "cost": 35,
+        "power": 320000
+    },
+    {
+        "level": 33,
+        "cost": 35,
+        "power": 337500
+    },
+    {
+        "level": 34,
+        "cost": 35,
+        "power": 355000
+    },
+    {
+        "level": 35,
+        "cost": 35,
+        "power": 372500
+    },
+    {
+        "level": 36,
+        "cost": 40,
+        "power": 392500
+    },
+    {
+        "level": 37,
+        "cost": 40,
+        "power": 412500
+    },
+    {
+        "level": 38,
+        "cost": 40,
+        "power": 432500
+    },
+    {
+        "level": 39,
+        "cost": 40,
+        "power": 452500
+    },
+    {
+        "level": 40,
+        "cost": 40,
+        "power": 472500
+    },
+    {
+        "level": 41,
+        "cost": 45,
+        "power": 495000
+    },
+    {
+        "level": 42,
+        "cost": 45,
+        "power": 517500
+    },
+    {
+        "level": 43,
+        "cost": 45,
+        "power": 540000
+    },
+    {
+        "level": 44,
+        "cost": 45,
+        "power": 562500
+    },
+    {
+        "level": 45,
+        "cost": 45,
+        "power": 585000
+    },
+    {
+        "level": 46,
+        "cost": 45,
+        "power": 607500
+    },
+    {
+        "level": 47,
+        "cost": 50,
+        "power": 632500
+    },
+    {
+        "level": 48,
+        "cost": 50,
+        "power": 657500
+    },
+    {
+        "level": 49,
+        "cost": 50,
+        "power": 682500
+    },
+    {
+        "level": 50,
+        "cost": 50,
+        "power": 707500
+    },
+    {
+        "level": 51,
+        "cost": 50,
+        "power": 732500
+    },
+    {
+        "level": 52,
+        "cost": 50,
+        "power": 757500
+    },
+    {
+        "level": 53,
+        "cost": 55,
+        "power": 785000
+    },
+    {
+        "level": 54,
+        "cost": 55,
+        "power": 812500
+    },
+    {
+        "level": 55,
+        "cost": 55,
+        "power": 840000
+    },
+    {
+        "level": 56,
+        "cost": 55,
+        "power": 867500
+    },
+    {
+        "level": 57,
+        "cost": 55,
+        "power": 895000
+    },
+    {
+        "level": 58,
+        "cost": 55,
+        "power": 922500
+    },
+    {
+        "level": 59,
+        "cost": 60,
+        "power": 952500
+    },
+    {
+        "level": 60,
+        "cost": 60,
+        "power": 982500
+    },
+    {
+        "level": 61,
+        "cost": 60,
+        "power": 1012500
+    },
+    {
+        "level": 62,
+        "cost": 60,
+        "power": 1042500
+    },
+    {
+        "level": 63,
+        "cost": 60,
+        "power": 1072500
+    },
+    {
+        "level": 64,
+        "cost": 60,
+        "power": 1102500
+    },
+    {
+        "level": 65,
+        "cost": 65,
+        "power": 1135000
+    },
+    {
+        "level": 66,
+        "cost": 65,
+        "power": 1167500
+    },
+    {
+        "level": 67,
+        "cost": 65,
+        "power": 1200000
+    },
+    {
+        "level": 68,
+        "cost": 65,
+        "power": 1232500
+    },
+    {
+        "level": 69,
+        "cost": 65,
+        "power": 1265000
+    },
+    {
+        "level": 70,
+        "cost": 65,
+        "power": 1297500
+    },
+    {
+        "level": 71,
+        "cost": 70,
+        "power": 1332500
+    },
+    {
+        "level": 72,
+        "cost": 70,
+        "power": 1367500
+    },
+    {
+        "level": 73,
+        "cost": 70,
+        "power": 1402500
+    },
+    {
+        "level": 74,
+        "cost": 70,
+        "power": 1437500
+    },
+    {
+        "level": 75,
+        "cost": 70,
+        "power": 1472500
+    },
+    {
+        "level": 76,
+        "cost": 70,
+        "power": 1507500
+    },
+    {
+        "level": 77,
+        "cost": 75,
+        "power": 1545000
+    },
+    {
+        "level": 78,
+        "cost": 75,
+        "power": 1582500
+    },
+    {
+        "level": 79,
+        "cost": 75,
+        "power": 1620000
+    },
+    {
+        "level": 80,
+        "cost": 75,
+        "power": 1657500
+    },
+    {
+        "level": 81,
+        "cost": 75,
+        "power": 1695000
+    },
+    {
+        "level": 82,
+        "cost": 75,
+        "power": 1732500
+    },
+    {
+        "level": 83,
+        "cost": 80,
+        "power": 1772500
+    },
+    {
+        "level": 84,
+        "cost": 80,
+        "power": 1812500
+    },
+    {
+        "level": 85,
+        "cost": 80,
+        "power": 1852500
+    },
+    {
+        "level": 86,
+        "cost": 80,
+        "power": 1892500
+    },
+    {
+        "level": 87,
+        "cost": 80,
+        "power": 1932500
+    },
+    {
+        "level": 88,
+        "cost": 80,
+        "power": 1972500
+    },
+    {
+        "level": 89,
+        "cost": 85,
+        "power": 2015000
+    },
+    {
+        "level": 90,
+        "cost": 85,
+        "power": 2057500
+    },
+    {
+        "level": 91,
+        "cost": 85,
+        "power": 2100000
+    },
+    {
+        "level": 92,
+        "cost": 85,
+        "power": 2142500
+    },
+    {
+        "level": 93,
+        "cost": 85,
+        "power": 2185000
+    },
+    {
+        "level": 94,
+        "cost": 85,
+        "power": 2227500
+    },
+    {
+        "level": 95,
+        "cost": 90,
+        "power": 2272500
+    },
+    {
+        "level": 96,
+        "cost": 90,
+        "power": 2317500
+    },
+    {
+        "level": 97,
+        "cost": 90,
+        "power": 2362500
+    },
+    {
+        "level": 98,
+        "cost": 90,
+        "power": 2407500
+    },
+    {
+        "level": 99,
+        "cost": 90,
+        "power": 2452500
+    },
+    {
+        "level": 100,
+        "cost": 90,
+        "power": 2497500
+    },
+    {
+        "level": 101,
+        "cost": 95,
+        "power": 2545000
+    },
+    {
+        "level": 102,
+        "cost": 95,
+        "power": 2592500
+    },
+    {
+        "level": 103,
+        "cost": 95,
+        "power": 2640000
+    },
+    {
+        "level": 104,
+        "cost": 95,
+        "power": 2687500
+    },
+    {
+        "level": 105,
+        "cost": 95,
+        "power": 2735000
+    },
+    {
+        "level": 106,
+        "cost": 95,
+        "power": 2782500
+    },
+    {
+        "level": 107,
+        "cost": 95,
+        "power": 2830000
+    },
+    {
+        "level": 108,
+        "cost": 100,
+        "power": 2880000
+    },
+    {
+        "level": 109,
+        "cost": 100,
+        "power": 2930000
+    },
+    {
+        "level": 110,
+        "cost": 100,
+        "power": 2980000
+    },
+    {
+        "level": 111,
+        "cost": 100,
+        "power": 3030000
+    },
+    {
+        "level": 112,
+        "cost": 100,
+        "power": 3080000
+    },
+    {
+        "level": 113,
+        "cost": 100,
+        "power": 3130000
+    },
+    {
+        "level": 114,
+        "cost": 105,
+        "power": 3182500
+    },
+    {
+        "level": 115,
+        "cost": 105,
+        "power": 3235000
+    },
+    {
+        "level": 116,
+        "cost": 105,
+        "power": 3287500
+    },
+    {
+        "level": 117,
+        "cost": 105,
+        "power": 3340000
+    },
+    {
+        "level": 118,
+        "cost": 105,
+        "power": 3392500
+    },
+    {
+        "level": 119,
+        "cost": 105,
+        "power": 3445000
+    },
+    {
+        "level": 120,
+        "cost": 110,
+        "power": 3500000
+    },
+    {
+        "level": 121,
+        "cost": 110,
+        "power": 3555000
+    },
+    {
+        "level": 122,
+        "cost": 110,
+        "power": 3610000
+    },
+    {
+        "level": 123,
+        "cost": 110,
+        "power": 3665000
+    },
+    {
+        "level": 124,
+        "cost": 110,
+        "power": 3720000
+    },
+    {
+        "level": 125,
+        "cost": 110,
+        "power": 3775000
+    },
+    {
+        "level": 126,
+        "cost": 115,
+        "power": 3832500
+    },
+    {
+        "level": 127,
+        "cost": 115,
+        "power": 3890000
+    },
+    {
+        "level": 128,
+        "cost": 115,
+        "power": 3947500
+    },
+    {
+        "level": 129,
+        "cost": 115,
+        "power": 4005000
+    },
+    {
+        "level": 130,
+        "cost": 115,
+        "power": 4062500
+    },
+    {
+        "level": 131,
+        "cost": 115,
+        "power": 4120000
+    },
+    {
+        "level": 132,
+        "cost": 115,
+        "power": 4177500
+    },
+    {
+        "level": 133,
+        "cost": 120,
+        "power": 4237500
+    },
+    {
+        "level": 134,
+        "cost": 120,
+        "power": 4297500
+    },
+    {
+        "level": 135,
+        "cost": 120,
+        "power": 4357500
+    },
+    {
+        "level": 136,
+        "cost": 120,
+        "power": 4417500
+    },
+    {
+        "level": 137,
+        "cost": 120,
+        "power": 4477500
+    },
+    {
+        "level": 138,
+        "cost": 120,
+        "power": 4537500
+    },
+    {
+        "level": 139,
+        "cost": 125,
+        "power": 4600000
+    },
+    {
+        "level": 140,
+        "cost": 125,
+        "power": 4662500
+    },
+    {
+        "level": 141,
+        "cost": 125,
+        "power": 4725000
+    },
+    {
+        "level": 142,
+        "cost": 125,
+        "power": 4787500
+    },
+    {
+        "level": 143,
+        "cost": 125,
+        "power": 4850000
+    },
+    {
+        "level": 144,
+        "cost": 125,
+        "power": 4912500
+    },
+    {
+        "level": 145,
+        "cost": 125,
+        "power": 4975000
+    },
+    {
+        "level": 146,
+        "cost": 130,
+        "power": 5040000
+    },
+    {
+        "level": 147,
+        "cost": 130,
+        "power": 5105000
+    },
+    {
+        "level": 148,
+        "cost": 130,
+        "power": 5170000
+    },
+    {
+        "level": 149,
+        "cost": 130,
+        "power": 5235000
+    },
+    {
+        "level": 150,
+        "cost": 130,
+        "power": 5300000
+    },
+    {
+        "level": 151,
+        "cost": 130,
+        "power": 5365000
+    },
+    {
+        "level": 152,
+        "cost": 135,
+        "power": 5432500
+    },
+    {
+        "level": 153,
+        "cost": 135,
+        "power": 5500000
+    },
+    {
+        "level": 154,
+        "cost": 135,
+        "power": 5567500
+    },
+    {
+        "level": 155,
+        "cost": 135,
+        "power": 5635000
+    },
+    {
+        "level": 156,
+        "cost": 135,
+        "power": 5702500
+    },
+    {
+        "level": 157,
+        "cost": 135,
+        "power": 5770000
+    },
+    {
+        "level": 158,
+        "cost": 135,
+        "power": 5837500
+    },
+    {
+        "level": 159,
+        "cost": 140,
+        "power": 5907500
+    },
+    {
+        "level": 160,
+        "cost": 140,
+        "power": 5977500
+    },
+    {
+        "level": 161,
+        "cost": 140,
+        "power": 6047500
+    },
+    {
+        "level": 162,
+        "cost": 140,
+        "power": 6117500
+    },
+    {
+        "level": 163,
+        "cost": 140,
+        "power": 6187500
+    },
+    {
+        "level": 164,
+        "cost": 140,
+        "power": 6257500
+    },
+    {
+        "level": 165,
+        "cost": 145,
+        "power": 6330000
+    },
+    {
+        "level": 166,
+        "cost": 145,
+        "power": 6402500
+    },
+    {
+        "level": 167,
+        "cost": 145,
+        "power": 6475000
+    },
+    {
+        "level": 168,
+        "cost": 145,
+        "power": 6547500
+    },
+    {
+        "level": 169,
+        "cost": 145,
+        "power": 6620000
+    },
+    {
+        "level": 170,
+        "cost": 145,
+        "power": 6692500
+    },
+    {
+        "level": 171,
+        "cost": 145,
+        "power": 6765000
+    },
+    {
+        "level": 172,
+        "cost": 150,
+        "power": 6840000
+    },
+    {
+        "level": 173,
+        "cost": 150,
+        "power": 6915000
+    },
+    {
+        "level": 174,
+        "cost": 150,
+        "power": 6990000
+    },
+    {
+        "level": 175,
+        "cost": 150,
+        "power": 7065000
+    },
+    {
+        "level": 176,
+        "cost": 150,
+        "power": 7140000
+    },
+    {
+        "level": 177,
+        "cost": 150,
+        "power": 7215000
+    },
+    {
+        "level": 178,
+        "cost": 155,
+        "power": 7292500
+    },
+    {
+        "level": 179,
+        "cost": 155,
+        "power": 7370000
+    },
+    {
+        "level": 180,
+        "cost": 155,
+        "power": 7447500
+    },
+    {
+        "level": 181,
+        "cost": 155,
+        "power": 7525000
+    },
+    {
+        "level": 182,
+        "cost": 155,
+        "power": 7602500
+    },
+    {
+        "level": 183,
+        "cost": 155,
+        "power": 7680000
+    },
+    {
+        "level": 184,
+        "cost": 155,
+        "power": 7757500
+    },
+    {
+        "level": 185,
+        "cost": 160,
+        "power": 7837500
+    },
+    {
+        "level": 186,
+        "cost": 160,
+        "power": 7917500
+    },
+    {
+        "level": 187,
+        "cost": 160,
+        "power": 7997500
+    },
+    {
+        "level": 188,
+        "cost": 160,
+        "power": 8077500
+    },
+    {
+        "level": 189,
+        "cost": 160,
+        "power": 8157500
+    },
+    {
+        "level": 190,
+        "cost": 160,
+        "power": 8237500
+    },
+    {
+        "level": 191,
+        "cost": 160,
+        "power": 8317500
+    },
+    {
+        "level": 192,
+        "cost": 165,
+        "power": 8400000
+    },
+    {
+        "level": 193,
+        "cost": 165,
+        "power": 8482500
+    },
+    {
+        "level": 194,
+        "cost": 165,
+        "power": 8565000
+    },
+    {
+        "level": 195,
+        "cost": 165,
+        "power": 8647500
+    },
+    {
+        "level": 196,
+        "cost": 165,
+        "power": 8730000
+    },
+    {
+        "level": 197,
+        "cost": 165,
+        "power": 8812500
+    },
+    {
+        "level": 198,
+        "cost": 170,
+        "power": 8897500
+    },
+    {
+        "level": 199,
+        "cost": 170,
+        "power": 8982500
+    },
+    {
+        "level": 200,
+        "cost": 170,
+        "power": 9067500
+    },
+    {
+        "level": 201,
+        "cost": 170,
+        "power": 9152500
+    },
+    {
+        "level": 202,
+        "cost": 170,
+        "power": 9237500
+    },
+    {
+        "level": 203,
+        "cost": 170,
+        "power": 9322500
+    },
+    {
+        "level": 204,
+        "cost": 170,
+        "power": 9407500
+    },
+    {
+        "level": 205,
+        "cost": 175,
+        "power": 9495000
+    },
+    {
+        "level": 206,
+        "cost": 175,
+        "power": 9582500
+    },
+    {
+        "level": 207,
+        "cost": 175,
+        "power": 9670000
+    },
+    {
+        "level": 208,
+        "cost": 175,
+        "power": 9757500
+    },
+    {
+        "level": 209,
+        "cost": 175,
+        "power": 9845000
+    },
+    {
+        "level": 210,
+        "cost": 175,
+        "power": 9932500
+    },
+    {
+        "level": 211,
+        "cost": 175,
+        "power": 10020000
+    },
+    {
+        "level": 212,
+        "cost": 180,
+        "power": 10110000
+    },
+    {
+        "level": 213,
+        "cost": 180,
+        "power": 10200000
+    },
+    {
+        "level": 214,
+        "cost": 180,
+        "power": 10290000
+    },
+    {
+        "level": 215,
+        "cost": 180,
+        "power": 10380000
+    },
+    {
+        "level": 216,
+        "cost": 180,
+        "power": 10470000
+    },
+    {
+        "level": 217,
+        "cost": 180,
+        "power": 10560000
+    },
+    {
+        "level": 218,
+        "cost": 185,
+        "power": 10652500
+    },
+    {
+        "level": 219,
+        "cost": 185,
+        "power": 10745000
+    },
+    {
+        "level": 220,
+        "cost": 185,
+        "power": 10837500
+    },
+    {
+        "level": 221,
+        "cost": 185,
+        "power": 10930000
+    },
+    {
+        "level": 222,
+        "cost": 185,
+        "power": 11022500
+    },
+    {
+        "level": 223,
+        "cost": 185,
+        "power": 11115000
+    },
+    {
+        "level": 224,
+        "cost": 185,
+        "power": 11207500
+    },
+    {
+        "level": 225,
+        "cost": 190,
+        "power": 11302500
+    },
+    {
+        "level": 226,
+        "cost": 190,
+        "power": 11397500
+    },
+    {
+        "level": 227,
+        "cost": 190,
+        "power": 11492500
+    },
+    {
+        "level": 228,
+        "cost": 190,
+        "power": 11587500
+    },
+    {
+        "level": 229,
+        "cost": 190,
+        "power": 11682500
+    },
+    {
+        "level": 230,
+        "cost": 190,
+        "power": 11777500
+    },
+    {
+        "level": 231,
+        "cost": 190,
+        "power": 11872500
+    },
+    {
+        "level": 232,
+        "cost": 195,
+        "power": 11970000
+    },
+    {
+        "level": 233,
+        "cost": 195,
+        "power": 12067500
+    },
+    {
+        "level": 234,
+        "cost": 195,
+        "power": 12165000
+    },
+    {
+        "level": 235,
+        "cost": 195,
+        "power": 12262500
+    },
+    {
+        "level": 236,
+        "cost": 195,
+        "power": 12360000
+    },
+    {
+        "level": 237,
+        "cost": 195,
+        "power": 12457500
+    },
+    {
+        "level": 238,
+        "cost": 200,
+        "power": 12557500
+    },
+    {
+        "level": 239,
+        "cost": 200,
+        "power": 12657500
+    },
+    {
+        "level": 240,
+        "cost": 200,
+        "power": 12757500
+    },
+    {
+        "level": 241,
+        "cost": 200,
+        "power": 12857500
+    },
+    {
+        "level": 242,
+        "cost": 200,
+        "power": 12957500
+    },
+    {
+        "level": 243,
+        "cost": 200,
+        "power": 13057500
+    },
+    {
+        "level": 244,
+        "cost": 200,
+        "power": 13157500
+    },
+    {
+        "level": 245,
+        "cost": 205,
+        "power": 13260000
+    },
+    {
+        "level": 246,
+        "cost": 205,
+        "power": 13362500
+    },
+    {
+        "level": 247,
+        "cost": 205,
+        "power": 13465000
+    },
+    {
+        "level": 248,
+        "cost": 205,
+        "power": 13567500
+    },
+    {
+        "level": 249,
+        "cost": 205,
+        "power": 13670000
+    },
+    {
+        "level": 250,
+        "cost": 205,
+        "power": 13772500
+    },
+    {
+        "level": 251,
+        "cost": 205,
+        "power": 13875000
+    },
+    {
+        "level": 252,
+        "cost": 210,
+        "power": 13980000
+    },
+    {
+        "level": 253,
+        "cost": 210,
+        "power": 14085000
+    },
+    {
+        "level": 254,
+        "cost": 210,
+        "power": 14190000
+    },
+    {
+        "level": 255,
+        "cost": 210,
+        "power": 14295000
+    },
+    {
+        "level": 256,
+        "cost": 210,
+        "power": 14400000
+    },
+    {
+        "level": 257,
+        "cost": 210,
+        "power": 14505000
+    },
+    {
+        "level": 258,
+        "cost": 210,
+        "power": 14610000
+    },
+    {
+        "level": 259,
+        "cost": 215,
+        "power": 14717500
+    },
+    {
+        "level": 260,
+        "cost": 215,
+        "power": 14825000
+    },
+    {
+        "level": 261,
+        "cost": 215,
+        "power": 14932500
+    },
+    {
+        "level": 262,
+        "cost": 215,
+        "power": 15040000
+    },
+    {
+        "level": 263,
+        "cost": 215,
+        "power": 15147500
+    },
+    {
+        "level": 264,
+        "cost": 215,
+        "power": 15255000
+    },
+    {
+        "level": 265,
+        "cost": 215,
+        "power": 15362500
+    },
+    {
+        "level": 266,
+        "cost": 220,
+        "power": 15472500
+    },
+    {
+        "level": 267,
+        "cost": 220,
+        "power": 15582500
+    },
+    {
+        "level": 268,
+        "cost": 220,
+        "power": 15692500
+    },
+    {
+        "level": 269,
+        "cost": 220,
+        "power": 15802500
+    },
+    {
+        "level": 270,
+        "cost": 220,
+        "power": 15912500
+    },
+    {
+        "level": 271,
+        "cost": 220,
+        "power": 16022500
+    },
+    {
+        "level": 272,
+        "cost": 220,
+        "power": 16132500
+    },
+    {
+        "level": 273,
+        "cost": 225,
+        "power": 16245000
+    },
+    {
+        "level": 274,
+        "cost": 225,
+        "power": 16357500
+    },
+    {
+        "level": 275,
+        "cost": 225,
+        "power": 16470000
+    },
+    {
+        "level": 276,
+        "cost": 225,
+        "power": 16582500
+    },
+    {
+        "level": 277,
+        "cost": 225,
+        "power": 16695000
+    },
+    {
+        "level": 278,
+        "cost": 225,
+        "power": 16807500
+    },
+    {
+        "level": 279,
+        "cost": 230,
+        "power": 16922500
+    },
+    {
+        "level": 280,
+        "cost": 230,
+        "power": 17037500
+    },
+    {
+        "level": 281,
+        "cost": 230,
+        "power": 17152500
+    },
+    {
+        "level": 282,
+        "cost": 230,
+        "power": 17267500
+    },
+    {
+        "level": 283,
+        "cost": 230,
+        "power": 17382500
+    },
+    {
+        "level": 284,
+        "cost": 230,
+        "power": 17497500
+    },
+    {
+        "level": 285,
+        "cost": 230,
+        "power": 17612500
+    },
+    {
+        "level": 286,
+        "cost": 235,
+        "power": 17730000
+    },
+    {
+        "level": 287,
+        "cost": 235,
+        "power": 17847500
+    },
+    {
+        "level": 288,
+        "cost": 235,
+        "power": 17965000
+    },
+    {
+        "level": 289,
+        "cost": 235,
+        "power": 18082500
+    },
+    {
+        "level": 290,
+        "cost": 235,
+        "power": 18200000
+    },
+    {
+        "level": 291,
+        "cost": 235,
+        "power": 18317500
+    },
+    {
+        "level": 292,
+        "cost": 235,
+        "power": 18435000
+    },
+    {
+        "level": 293,
+        "cost": 240,
+        "power": 18555000
+    },
+    {
+        "level": 294,
+        "cost": 240,
+        "power": 18675000
+    },
+    {
+        "level": 295,
+        "cost": 240,
+        "power": 18795000
+    },
+    {
+        "level": 296,
+        "cost": 240,
+        "power": 18915000
+    },
+    {
+        "level": 297,
+        "cost": 240,
+        "power": 19035000
+    },
+    {
+        "level": 298,
+        "cost": 240,
+        "power": 19155000
+    },
+    {
+        "level": 299,
+        "cost": 240,
+        "power": 19275000
+    },
+    {
+        "level": 300,
+        "cost": 245,
+        "power": 19397500
+    },
+    {
+        "level": 301,
+        "cost": 245,
+        "power": 19520000
+    },
+    {
+        "level": 302,
+        "cost": 245,
+        "power": 19642500
+    },
+    {
+        "level": 303,
+        "cost": 245,
+        "power": 19765000
+    },
+    {
+        "level": 304,
+        "cost": 245,
+        "power": 19887500
+    },
+    {
+        "level": 305,
+        "cost": 245,
+        "power": 20010000
+    },
+    {
+        "level": 306,
+        "cost": 245,
+        "power": 20132500
+    },
+    {
+        "level": 307,
+        "cost": 250,
+        "power": 20257500
+    },
+    {
+        "level": 308,
+        "cost": 250,
+        "power": 20382500
+    },
+    {
+        "level": 309,
+        "cost": 250,
+        "power": 20507500
+    },
+    {
+        "level": 310,
+        "cost": 250,
+        "power": 20632500
+    },
+    {
+        "level": 311,
+        "cost": 250,
+        "power": 20757500
+    },
+    {
+        "level": 312,
+        "cost": 250,
+        "power": 20882500
+    },
+    {
+        "level": 313,
+        "cost": 250,
+        "power": 21007500
+    },
+    {
+        "level": 314,
+        "cost": 255,
+        "power": 21135000
+    },
+    {
+        "level": 315,
+        "cost": 255,
+        "power": 21262500
+    },
+    {
+        "level": 316,
+        "cost": 255,
+        "power": 21390000
+    },
+    {
+        "level": 317,
+        "cost": 255,
+        "power": 21517500
+    },
+    {
+        "level": 318,
+        "cost": 255,
+        "power": 21645000
+    },
+    {
+        "level": 319,
+        "cost": 255,
+        "power": 21772500
+    },
+    {
+        "level": 320,
+        "cost": 255,
+        "power": 21900000
+    },
+    {
+        "level": 321,
+        "cost": 260,
+        "power": 22030000
+    },
+    {
+        "level": 322,
+        "cost": 260,
+        "power": 22160000
+    },
+    {
+        "level": 323,
+        "cost": 260,
+        "power": 22290000
+    },
+    {
+        "level": 324,
+        "cost": 260,
+        "power": 22420000
+    },
+    {
+        "level": 325,
+        "cost": 260,
+        "power": 22550000
+    },
+    {
+        "level": 326,
+        "cost": 260,
+        "power": 22680000
+    },
+    {
+        "level": 327,
+        "cost": 260,
+        "power": 22810000
+    },
+    {
+        "level": 328,
+        "cost": 265,
+        "power": 22942500
+    },
+    {
+        "level": 329,
+        "cost": 265,
+        "power": 23075000
+    },
+    {
+        "level": 330,
+        "cost": 265,
+        "power": 23207500
+    },
+    {
+        "level": 331,
+        "cost": 265,
+        "power": 23340000
+    },
+    {
+        "level": 332,
+        "cost": 265,
+        "power": 23472500
+    },
+    {
+        "level": 333,
+        "cost": 265,
+        "power": 23605000
+    },
+    {
+        "level": 334,
+        "cost": 265,
+        "power": 23737500
+    },
+    {
+        "level": 335,
+        "cost": 270,
+        "power": 23872500
+    },
+    {
+        "level": 336,
+        "cost": 270,
+        "power": 24007500
+    },
+    {
+        "level": 337,
+        "cost": 270,
+        "power": 24142500
+    },
+    {
+        "level": 338,
+        "cost": 270,
+        "power": 24277500
+    },
+    {
+        "level": 339,
+        "cost": 270,
+        "power": 24412500
+    },
+    {
+        "level": 340,
+        "cost": 270,
+        "power": 24547500
+    },
+    {
+        "level": 341,
+        "cost": 270,
+        "power": 24682500
+    },
+    {
+        "level": 342,
+        "cost": 275,
+        "power": 24820000
+    },
+    {
+        "level": 343,
+        "cost": 275,
+        "power": 24957500
+    },
+    {
+        "level": 344,
+        "cost": 275,
+        "power": 25095000
+    },
+    {
+        "level": 345,
+        "cost": 275,
+        "power": 25232500
+    },
+    {
+        "level": 346,
+        "cost": 275,
+        "power": 25370000
+    },
+    {
+        "level": 347,
+        "cost": 275,
+        "power": 25507500
+    },
+    {
+        "level": 348,
+        "cost": 275,
+        "power": 25645000
+    },
+    {
+        "level": 349,
+        "cost": 280,
+        "power": 25785000
+    },
+    {
+        "level": 350,
+        "cost": 280,
+        "power": 25925000
+    },
+    {
+        "level": 351,
+        "cost": 280,
+        "power": 26065000
+    },
+    {
+        "level": 352,
+        "cost": 280,
+        "power": 26205000
+    },
+    {
+        "level": 353,
+        "cost": 280,
+        "power": 26345000
+    },
+    {
+        "level": 354,
+        "cost": 280,
+        "power": 26485000
+    },
+    {
+        "level": 355,
+        "cost": 280,
+        "power": 26625000
+    },
+    {
+        "level": 356,
+        "cost": 285,
+        "power": 26767500
+    },
+    {
+        "level": 357,
+        "cost": 285,
+        "power": 26910000
+    },
+    {
+        "level": 358,
+        "cost": 285,
+        "power": 27052500
+    },
+    {
+        "level": 359,
+        "cost": 285,
+        "power": 27195000
+    },
+    {
+        "level": 360,
+        "cost": 285,
+        "power": 27337500
+    },
+    {
+        "level": 361,
+        "cost": 285,
+        "power": 27480000
+    },
+    {
+        "level": 362,
+        "cost": 285,
+        "power": 27622500
+    },
+    {
+        "level": 363,
+        "cost": 290,
+        "power": 27767500
+    },
+    {
+        "level": 364,
+        "cost": 290,
+        "power": 27912500
+    },
+    {
+        "level": 365,
+        "cost": 290,
+        "power": 28057500
+    },
+    {
+        "level": 366,
+        "cost": 290,
+        "power": 28202500
+    },
+    {
+        "level": 367,
+        "cost": 290,
+        "power": 28347500
+    },
+    {
+        "level": 368,
+        "cost": 290,
+        "power": 28492500
+    },
+    {
+        "level": 369,
+        "cost": 290,
+        "power": 28637500
+    },
+    {
+        "level": 370,
+        "cost": 295,
+        "power": 28785000
+    },
+    {
+        "level": 371,
+        "cost": 295,
+        "power": 28932500
+    },
+    {
+        "level": 372,
+        "cost": 295,
+        "power": 29080000
+    },
+    {
+        "level": 373,
+        "cost": 295,
+        "power": 29227500
+    },
+    {
+        "level": 374,
+        "cost": 295,
+        "power": 29375000
+    },
+    {
+        "level": 375,
+        "cost": 295,
+        "power": 29522500
+    },
+    {
+        "level": 376,
+        "cost": 295,
+        "power": 29670000
+    },
+    {
+        "level": 377,
+        "cost": 300,
+        "power": 29820000
+    },
+    {
+        "level": 378,
+        "cost": 300,
+        "power": 29970000
+    },
+    {
+        "level": 379,
+        "cost": 300,
+        "power": 30120000
+    },
+    {
+        "level": 380,
+        "cost": 300,
+        "power": 30270000
+    },
+    {
+        "level": 381,
+        "cost": 300,
+        "power": 30420000
+    },
+    {
+        "level": 382,
+        "cost": 300,
+        "power": 30570000
+    },
+    {
+        "level": 383,
+        "cost": 300,
+        "power": 30720000
+    },
+    {
+        "level": 384,
+        "cost": 300,
+        "power": 30870000
+    },
+    {
+        "level": 385,
+        "cost": 305,
+        "power": 31022500
+    },
+    {
+        "level": 386,
+        "cost": 305,
+        "power": 31175000
+    },
+    {
+        "level": 387,
+        "cost": 305,
+        "power": 31327500
+    },
+    {
+        "level": 388,
+        "cost": 305,
+        "power": 31480000
+    },
+    {
+        "level": 389,
+        "cost": 305,
+        "power": 31632500
+    },
+    {
+        "level": 390,
+        "cost": 305,
+        "power": 31785000
+    },
+    {
+        "level": 391,
+        "cost": 305,
+        "power": 31937500
+    },
+    {
+        "level": 392,
+        "cost": 310,
+        "power": 32092500
+    },
+    {
+        "level": 393,
+        "cost": 310,
+        "power": 32247500
+    },
+    {
+        "level": 394,
+        "cost": 310,
+        "power": 32402500
+    },
+    {
+        "level": 395,
+        "cost": 310,
+        "power": 32557500
+    },
+    {
+        "level": 396,
+        "cost": 310,
+        "power": 32712500
+    },
+    {
+        "level": 397,
+        "cost": 310,
+        "power": 32867500
+    },
+    {
+        "level": 398,
+        "cost": 310,
+        "power": 33022500
+    },
+    {
+        "level": 399,
+        "cost": 315,
+        "power": 33180000
+    },
+    {
+        "level": 400,
+        "cost": 315,
+        "power": 33337500
+    },
+    {
+        "level": 401,
+        "cost": 315,
+        "power": 33495000
+    },
+    {
+        "level": 402,
+        "cost": 315,
+        "power": 33652500
+    },
+    {
+        "level": 403,
+        "cost": 315,
+        "power": 33810000
+    },
+    {
+        "level": 404,
+        "cost": 315,
+        "power": 33967500
+    },
+    {
+        "level": 405,
+        "cost": 315,
+        "power": 34125000
+    },
+    {
+        "level": 406,
+        "cost": 320,
+        "power": 34285000
+    },
+    {
+        "level": 407,
+        "cost": 320,
+        "power": 34445000
+    },
+    {
+        "level": 408,
+        "cost": 320,
+        "power": 34605000
+    },
+    {
+        "level": 409,
+        "cost": 320,
+        "power": 34765000
+    },
+    {
+        "level": 410,
+        "cost": 320,
+        "power": 34925000
+    },
+    {
+        "level": 411,
+        "cost": 320,
+        "power": 35085000
+    },
+    {
+        "level": 412,
+        "cost": 320,
+        "power": 35245000
+    },
+    {
+        "level": 413,
+        "cost": 325,
+        "power": 35407500
+    },
+    {
+        "level": 414,
+        "cost": 325,
+        "power": 35570000
+    },
+    {
+        "level": 415,
+        "cost": 325,
+        "power": 35732500
+    },
+    {
+        "level": 416,
+        "cost": 325,
+        "power": 35895000
+    },
+    {
+        "level": 417,
+        "cost": 325,
+        "power": 36057500
+    },
+    {
+        "level": 418,
+        "cost": 325,
+        "power": 36220000
+    },
+    {
+        "level": 419,
+        "cost": 325,
+        "power": 36382500
+    },
+    {
+        "level": 420,
+        "cost": 330,
+        "power": 36547500
+    },
+    {
+        "level": 421,
+        "cost": 330,
+        "power": 36712500
+    },
+    {
+        "level": 422,
+        "cost": 330,
+        "power": 36877500
+    },
+    {
+        "level": 423,
+        "cost": 330,
+        "power": 37042500
+    },
+    {
+        "level": 424,
+        "cost": 330,
+        "power": 37207500
+    },
+    {
+        "level": 425,
+        "cost": 330,
+        "power": 37372500
+    },
+    {
+        "level": 426,
+        "cost": 330,
+        "power": 37537500
+    },
+    {
+        "level": 427,
+        "cost": 335,
+        "power": 37705000
+    },
+    {
+        "level": 428,
+        "cost": 335,
+        "power": 37872500
+    },
+    {
+        "level": 429,
+        "cost": 335,
+        "power": 38040000
+    },
+    {
+        "level": 430,
+        "cost": 335,
+        "power": 38207500
+    },
+    {
+        "level": 431,
+        "cost": 335,
+        "power": 38375000
+    },
+    {
+        "level": 432,
+        "cost": 335,
+        "power": 38542500
+    },
+    {
+        "level": 433,
+        "cost": 335,
+        "power": 38710000
+    },
+    {
+        "level": 434,
+        "cost": 335,
+        "power": 38877500
+    },
+    {
+        "level": 435,
+        "cost": 340,
+        "power": 39047500
+    },
+    {
+        "level": 436,
+        "cost": 340,
+        "power": 39217500
+    },
+    {
+        "level": 437,
+        "cost": 340,
+        "power": 39387500
+    },
+    {
+        "level": 438,
+        "cost": 340,
+        "power": 39557500
+    },
+    {
+        "level": 439,
+        "cost": 340,
+        "power": 39727500
+    },
+    {
+        "level": 440,
+        "cost": 340,
+        "power": 39897500
+    },
+    {
+        "level": 441,
+        "cost": 340,
+        "power": 40067500
+    },
+    {
+        "level": 442,
+        "cost": 345,
+        "power": 40240000
+    },
+    {
+        "level": 443,
+        "cost": 345,
+        "power": 40412500
+    },
+    {
+        "level": 444,
+        "cost": 345,
+        "power": 40585000
+    },
+    {
+        "level": 445,
+        "cost": 345,
+        "power": 40757500
+    },
+    {
+        "level": 446,
+        "cost": 345,
+        "power": 40930000
+    },
+    {
+        "level": 447,
+        "cost": 345,
+        "power": 41102500
+    },
+    {
+        "level": 448,
+        "cost": 345,
+        "power": 41275000
+    },
+    {
+        "level": 449,
+        "cost": 350,
+        "power": 41450000
+    },
+    {
+        "level": 450,
+        "cost": 350,
+        "power": 41625000
+    },
+    {
+        "level": 451,
+        "cost": 350,
+        "power": 41800000
+    },
+    {
+        "level": 452,
+        "cost": 350,
+        "power": 41975000
+    },
+    {
+        "level": 453,
+        "cost": 350,
+        "power": 42150000
+    },
+    {
+        "level": 454,
+        "cost": 350,
+        "power": 42325000
+    },
+    {
+        "level": 455,
+        "cost": 350,
+        "power": 42500000
+    },
+    {
+        "level": 456,
+        "cost": 355,
+        "power": 42677500
+    },
+    {
+        "level": 457,
+        "cost": 355,
+        "power": 42855000
+    },
+    {
+        "level": 458,
+        "cost": 355,
+        "power": 43032500
+    },
+    {
+        "level": 459,
+        "cost": 355,
+        "power": 43210000
+    },
+    {
+        "level": 460,
+        "cost": 355,
+        "power": 43387500
+    },
+    {
+        "level": 461,
+        "cost": 355,
+        "power": 43565000
+    },
+    {
+        "level": 462,
+        "cost": 355,
+        "power": 43742500
+    },
+    {
+        "level": 463,
+        "cost": 355,
+        "power": 43920000
+    },
+    {
+        "level": 464,
+        "cost": 360,
+        "power": 44100000
+    },
+    {
+        "level": 465,
+        "cost": 360,
+        "power": 44280000
+    },
+    {
+        "level": 466,
+        "cost": 360,
+        "power": 44460000
+    },
+    {
+        "level": 467,
+        "cost": 360,
+        "power": 44640000
+    },
+    {
+        "level": 468,
+        "cost": 360,
+        "power": 44820000
+    },
+    {
+        "level": 469,
+        "cost": 360,
+        "power": 45000000
+    },
+    {
+        "level": 470,
+        "cost": 360,
+        "power": 45180000
+    },
+    {
+        "level": 471,
+        "cost": 365,
+        "power": 45362500
+    },
+    {
+        "level": 472,
+        "cost": 365,
+        "power": 45545000
+    },
+    {
+        "level": 473,
+        "cost": 365,
+        "power": 45727500
+    },
+    {
+        "level": 474,
+        "cost": 365,
+        "power": 45910000
+    },
+    {
+        "level": 475,
+        "cost": 365,
+        "power": 46092500
+    },
+    {
+        "level": 476,
+        "cost": 365,
+        "power": 46275000
+    },
+    {
+        "level": 477,
+        "cost": 365,
+        "power": 46457500
+    },
+    {
+        "level": 478,
+        "cost": 370,
+        "power": 46642500
+    },
+    {
+        "level": 479,
+        "cost": 370,
+        "power": 46827500
+    },
+    {
+        "level": 480,
+        "cost": 370,
+        "power": 47012500
+    },
+    {
+        "level": 481,
+        "cost": 370,
+        "power": 47197500
+    },
+    {
+        "level": 482,
+        "cost": 370,
+        "power": 47382500
+    },
+    {
+        "level": 483,
+        "cost": 370,
+        "power": 47567500
+    },
+    {
+        "level": 484,
+        "cost": 370,
+        "power": 47752500
+    },
+    {
+        "level": 485,
+        "cost": 375,
+        "power": 47940000
+    },
+    {
+        "level": 486,
+        "cost": 375,
+        "power": 48127500
+    },
+    {
+        "level": 487,
+        "cost": 375,
+        "power": 48315000
+    },
+    {
+        "level": 488,
+        "cost": 375,
+        "power": 48502500
+    },
+    {
+        "level": 489,
+        "cost": 375,
+        "power": 48690000
+    },
+    {
+        "level": 490,
+        "cost": 375,
+        "power": 48877500
+    },
+    {
+        "level": 491,
+        "cost": 375,
+        "power": 49065000
+    },
+    {
+        "level": 492,
+        "cost": 375,
+        "power": 49252500
+    },
+    {
+        "level": 493,
+        "cost": 380,
+        "power": 49442500
+    },
+    {
+        "level": 494,
+        "cost": 380,
+        "power": 49632500
+    },
+    {
+        "level": 495,
+        "cost": 380,
+        "power": 49822500
+    },
+    {
+        "level": 496,
+        "cost": 380,
+        "power": 50012500
+    },
+    {
+        "level": 497,
+        "cost": 380,
+        "power": 50202500
+    },
+    {
+        "level": 498,
+        "cost": 380,
+        "power": 50392500
+    },
+    {
+        "level": 499,
+        "cost": 380,
+        "power": 50582500
+    },
+    {
+        "level": 500,
+        "cost": 385,
+        "power": 50775000
+    },
+    {
+        "level": 501,
+        "cost": 385,
+        "power": 50967500
+    },
+    {
+        "level": 502,
+        "cost": 385,
+        "power": 51160000
+    },
+    {
+        "level": 503,
+        "cost": 385,
+        "power": 51352500
+    },
+    {
+        "level": 504,
+        "cost": 385,
+        "power": 51545000
+    },
+    {
+        "level": 505,
+        "cost": 385,
+        "power": 51737500
+    },
+    {
+        "level": 506,
+        "cost": 385,
+        "power": 51930000
+    },
+    {
+        "level": 507,
+        "cost": 390,
+        "power": 52125000
+    },
+    {
+        "level": 508,
+        "cost": 390,
+        "power": 52320000
+    },
+    {
+        "level": 509,
+        "cost": 390,
+        "power": 52515000
+    },
+    {
+        "level": 510,
+        "cost": 390,
+        "power": 52710000
+    },
+    {
+        "level": 511,
+        "cost": 390,
+        "power": 52905000
+    },
+    {
+        "level": 512,
+        "cost": 390,
+        "power": 53100000
+    },
+    {
+        "level": 513,
+        "cost": 390,
+        "power": 53295000
+    },
+    {
+        "level": 514,
+        "cost": 390,
+        "power": 53490000
+    },
+    {
+        "level": 515,
+        "cost": 395,
+        "power": 53687500
+    },
+    {
+        "level": 516,
+        "cost": 395,
+        "power": 53885000
+    },
+    {
+        "level": 517,
+        "cost": 395,
+        "power": 54082500
+    },
+    {
+        "level": 518,
+        "cost": 395,
+        "power": 54280000
+    },
+    {
+        "level": 519,
+        "cost": 395,
+        "power": 54477500
+    },
+    {
+        "level": 520,
+        "cost": 395,
+        "power": 54675000
+    },
+    {
+        "level": 521,
+        "cost": 395,
+        "power": 54872500
+    },
+    {
+        "level": 522,
+        "cost": 400,
+        "power": 55072500
+    },
+    {
+        "level": 523,
+        "cost": 400,
+        "power": 55272500
+    },
+    {
+        "level": 524,
+        "cost": 400,
+        "power": 55472500
+    },
+    {
+        "level": 525,
+        "cost": 400,
+        "power": 55672500
+    },
+    {
+        "level": 526,
+        "cost": 400,
+        "power": 55872500
+    },
+    {
+        "level": 527,
+        "cost": 400,
+        "power": 56072500
+    },
+    {
+        "level": 528,
+        "cost": 400,
+        "power": 56272500
+    },
+    {
+        "level": 529,
+        "cost": 405,
+        "power": 56475000
+    },
+    {
+        "level": 530,
+        "cost": 405,
+        "power": 56677500
+    },
+    {
+        "level": 531,
+        "cost": 405,
+        "power": 56880000
+    },
+    {
+        "level": 532,
+        "cost": 405,
+        "power": 57082500
+    },
+    {
+        "level": 533,
+        "cost": 405,
+        "power": 57285000
+    },
+    {
+        "level": 534,
+        "cost": 405,
+        "power": 57487500
+    },
+    {
+        "level": 535,
+        "cost": 405,
+        "power": 57690000
+    },
+    {
+        "level": 536,
+        "cost": 405,
+        "power": 57892500
+    },
+    {
+        "level": 537,
+        "cost": 410,
+        "power": 58097500
+    },
+    {
+        "level": 538,
+        "cost": 410,
+        "power": 58302500
+    },
+    {
+        "level": 539,
+        "cost": 410,
+        "power": 58507500
+    },
+    {
+        "level": 540,
+        "cost": 410,
+        "power": 58712500
+    },
+    {
+        "level": 541,
+        "cost": 410,
+        "power": 58917500
+    },
+    {
+        "level": 542,
+        "cost": 410,
+        "power": 59122500
+    },
+    {
+        "level": 543,
+        "cost": 410,
+        "power": 59327500
+    },
+    {
+        "level": 544,
+        "cost": 415,
+        "power": 59535000
+    },
+    {
+        "level": 545,
+        "cost": 415,
+        "power": 59742500
+    },
+    {
+        "level": 546,
+        "cost": 415,
+        "power": 59950000
+    },
+    {
+        "level": 547,
+        "cost": 415,
+        "power": 60157500
+    },
+    {
+        "level": 548,
+        "cost": 415,
+        "power": 60365000
+    },
+    {
+        "level": 549,
+        "cost": 415,
+        "power": 60572500
+    },
+    {
+        "level": 550,
+        "cost": 415,
+        "power": 60780000
+    },
+    {
+        "level": 551,
+        "cost": 420,
+        "power": 60990000
+    },
+    {
+        "level": 552,
+        "cost": 420,
+        "power": 61200000
+    },
+    {
+        "level": 553,
+        "cost": 420,
+        "power": 61410000
+    },
+    {
+        "level": 554,
+        "cost": 420,
+        "power": 61620000
+    },
+    {
+        "level": 555,
+        "cost": 420,
+        "power": 61830000
+    },
+    {
+        "level": 556,
+        "cost": 420,
+        "power": 62040000
+    },
+    {
+        "level": 557,
+        "cost": 420,
+        "power": 62250000
+    },
+    {
+        "level": 558,
+        "cost": 420,
+        "power": 62460000
+    },
+    {
+        "level": 559,
+        "cost": 425,
+        "power": 62672500
+    },
+    {
+        "level": 560,
+        "cost": 425,
+        "power": 62885000
+    },
+    {
+        "level": 561,
+        "cost": 425,
+        "power": 63097500
+    },
+    {
+        "level": 562,
+        "cost": 425,
+        "power": 63310000
+    },
+    {
+        "level": 563,
+        "cost": 425,
+        "power": 63522500
+    },
+    {
+        "level": 564,
+        "cost": 425,
+        "power": 63735000
+    },
+    {
+        "level": 565,
+        "cost": 425,
+        "power": 63947500
+    },
+    {
+        "level": 566,
+        "cost": 430,
+        "power": 64162500
+    },
+    {
+        "level": 567,
+        "cost": 430,
+        "power": 64377500
+    },
+    {
+        "level": 568,
+        "cost": 430,
+        "power": 64592500
+    },
+    {
+        "level": 569,
+        "cost": 430,
+        "power": 64807500
+    },
+    {
+        "level": 570,
+        "cost": 430,
+        "power": 65022500
+    },
+    {
+        "level": 571,
+        "cost": 430,
+        "power": 65237500
+    },
+    {
+        "level": 572,
+        "cost": 430,
+        "power": 65452500
+    },
+    {
+        "level": 573,
+        "cost": 435,
+        "power": 65670000
+    },
+    {
+        "level": 574,
+        "cost": 435,
+        "power": 65887500
+    },
+    {
+        "level": 575,
+        "cost": 435,
+        "power": 66105000
+    },
+    {
+        "level": 576,
+        "cost": 435,
+        "power": 66322500
+    },
+    {
+        "level": 577,
+        "cost": 435,
+        "power": 66540000
+    },
+    {
+        "level": 578,
+        "cost": 435,
+        "power": 66757500
+    },
+    {
+        "level": 579,
+        "cost": 435,
+        "power": 66975000
+    },
+    {
+        "level": 580,
+        "cost": 435,
+        "power": 67192500
+    },
+    {
+        "level": 581,
+        "cost": 440,
+        "power": 67412500
+    },
+    {
+        "level": 582,
+        "cost": 440,
+        "power": 67632500
+    },
+    {
+        "level": 583,
+        "cost": 440,
+        "power": 67852500
+    },
+    {
+        "level": 584,
+        "cost": 440,
+        "power": 68072500
+    },
+    {
+        "level": 585,
+        "cost": 440,
+        "power": 68292500
+    },
+    {
+        "level": 586,
+        "cost": 440,
+        "power": 68512500
+    },
+    {
+        "level": 587,
+        "cost": 440,
+        "power": 68732500
+    },
+    {
+        "level": 588,
+        "cost": 445,
+        "power": 68955000
+    },
+    {
+        "level": 589,
+        "cost": 445,
+        "power": 69177500
+    },
+    {
+        "level": 590,
+        "cost": 445,
+        "power": 69400000
+    },
+    {
+        "level": 591,
+        "cost": 445,
+        "power": 69622500
+    },
+    {
+        "level": 592,
+        "cost": 445,
+        "power": 69845000
+    },
+    {
+        "level": 593,
+        "cost": 445,
+        "power": 70067500
+    },
+    {
+        "level": 594,
+        "cost": 445,
+        "power": 70290000
+    },
+    {
+        "level": 595,
+        "cost": 445,
+        "power": 70512500
+    },
+    {
+        "level": 596,
+        "cost": 450,
+        "power": 70737500
+    },
+    {
+        "level": 597,
+        "cost": 450,
+        "power": 70962500
+    },
+    {
+        "level": 598,
+        "cost": 450,
+        "power": 71187500
+    },
+    {
+        "level": 599,
+        "cost": 450,
+        "power": 71412500
+    },
+    {
+        "level": 600,
+        "cost": 450,
+        "power": 71637500
+    },
+    {
+        "level": 601,
+        "cost": 450,
+        "power": 71862500
+    },
+    {
+        "level": 602,
+        "cost": 450,
+        "power": 72087500
+    },
+    {
+        "level": 603,
+        "cost": 455,
+        "power": 72315000
+    },
+    {
+        "level": 604,
+        "cost": 455,
+        "power": 72542500
+    },
+    {
+        "level": 605,
+        "cost": 455,
+        "power": 72770000
+    },
+    {
+        "level": 606,
+        "cost": 455,
+        "power": 72997500
+    },
+    {
+        "level": 607,
+        "cost": 455,
+        "power": 73225000
+    },
+    {
+        "level": 608,
+        "cost": 455,
+        "power": 73452500
+    },
+    {
+        "level": 609,
+        "cost": 455,
+        "power": 73680000
+    },
+    {
+        "level": 610,
+        "cost": 455,
+        "power": 73907500
+    },
+    {
+        "level": 611,
+        "cost": 460,
+        "power": 74137500
+    },
+    {
+        "level": 612,
+        "cost": 460,
+        "power": 74367500
+    },
+    {
+        "level": 613,
+        "cost": 460,
+        "power": 74597500
+    },
+    {
+        "level": 614,
+        "cost": 460,
+        "power": 74827500
+    },
+    {
+        "level": 615,
+        "cost": 460,
+        "power": 75057500
+    },
+    {
+        "level": 616,
+        "cost": 460,
+        "power": 75287500
+    },
+    {
+        "level": 617,
+        "cost": 460,
+        "power": 75517500
+    },
+    {
+        "level": 618,
+        "cost": 465,
+        "power": 75750000
+    },
+    {
+        "level": 619,
+        "cost": 465,
+        "power": 75982500
+    },
+    {
+        "level": 620,
+        "cost": 465,
+        "power": 76215000
+    },
+    {
+        "level": 621,
+        "cost": 465,
+        "power": 76447500
+    },
+    {
+        "level": 622,
+        "cost": 465,
+        "power": 76680000
+    },
+    {
+        "level": 623,
+        "cost": 465,
+        "power": 76912500
+    },
+    {
+        "level": 624,
+        "cost": 465,
+        "power": 77145000
+    },
+    {
+        "level": 625,
+        "cost": 465,
+        "power": 77377500
+    },
+    {
+        "level": 626,
+        "cost": 470,
+        "power": 77612500
+    },
+    {
+        "level": 627,
+        "cost": 470,
+        "power": 77847500
+    },
+    {
+        "level": 628,
+        "cost": 470,
+        "power": 78082500
+    },
+    {
+        "level": 629,
+        "cost": 470,
+        "power": 78317500
+    },
+    {
+        "level": 630,
+        "cost": 470,
+        "power": 78552500
+    },
+    {
+        "level": 631,
+        "cost": 470,
+        "power": 78787500
+    },
+    {
+        "level": 632,
+        "cost": 470,
+        "power": 79022500
+    },
+    {
+        "level": 633,
+        "cost": 475,
+        "power": 79260000
+    },
+    {
+        "level": 634,
+        "cost": 475,
+        "power": 79497500
+    },
+    {
+        "level": 635,
+        "cost": 475,
+        "power": 79735000
+    },
+    {
+        "level": 636,
+        "cost": 475,
+        "power": 79972500
+    },
+    {
+        "level": 637,
+        "cost": 475,
+        "power": 80210000
+    },
+    {
+        "level": 638,
+        "cost": 475,
+        "power": 80447500
+    },
+    {
+        "level": 639,
+        "cost": 475,
+        "power": 80685000
+    },
+    {
+        "level": 640,
+        "cost": 480,
+        "power": 80925000
+    },
+    {
+        "level": 641,
+        "cost": 480,
+        "power": 81165000
+    },
+    {
+        "level": 642,
+        "cost": 480,
+        "power": 81405000
+    },
+    {
+        "level": 643,
+        "cost": 480,
+        "power": 81645000
+    },
+    {
+        "level": 644,
+        "cost": 480,
+        "power": 81885000
+    },
+    {
+        "level": 645,
+        "cost": 480,
+        "power": 82125000
+    },
+    {
+        "level": 646,
+        "cost": 480,
+        "power": 82365000
+    },
+    {
+        "level": 647,
+        "cost": 480,
+        "power": 82605000
+    },
+    {
+        "level": 648,
+        "cost": 485,
+        "power": 82847500
+    },
+    {
+        "level": 649,
+        "cost": 485,
+        "power": 83090000
+    },
+    {
+        "level": 650,
+        "cost": 485,
+        "power": 83332500
+    },
+    {
+        "level": 651,
+        "cost": 485,
+        "power": 83575000
+    },
+    {
+        "level": 652,
+        "cost": 485,
+        "power": 83817500
+    },
+    {
+        "level": 653,
+        "cost": 485,
+        "power": 84060000
+    },
+    {
+        "level": 654,
+        "cost": 485,
+        "power": 84302500
+    },
+    {
+        "level": 655,
+        "cost": 490,
+        "power": 84547500
+    },
+    {
+        "level": 656,
+        "cost": 490,
+        "power": 84792500
+    },
+    {
+        "level": 657,
+        "cost": 490,
+        "power": 85037500
+    },
+    {
+        "level": 658,
+        "cost": 490,
+        "power": 85282500
+    },
+    {
+        "level": 659,
+        "cost": 490,
+        "power": 85527500
+    },
+    {
+        "level": 660,
+        "cost": 490,
+        "power": 85772500
+    },
+    {
+        "level": 661,
+        "cost": 490,
+        "power": 86017500
+    },
+    {
+        "level": 662,
+        "cost": 490,
+        "power": 86262500
+    },
+    {
+        "level": 663,
+        "cost": 495,
+        "power": 86510000
+    },
+    {
+        "level": 664,
+        "cost": 495,
+        "power": 86757500
+    },
+    {
+        "level": 665,
+        "cost": 495,
+        "power": 87005000
+    },
+    {
+        "level": 666,
+        "cost": 495,
+        "power": 87252500
+    },
+    {
+        "level": 667,
+        "cost": 495,
+        "power": 87500000
+    },
+    {
+        "level": 668,
+        "cost": 495,
+        "power": 87747500
+    },
+    {
+        "level": 669,
+        "cost": 495,
+        "power": 87995000
+    },
+    {
+        "level": 670,
+        "cost": 500,
+        "power": 88245000
+    },
+    {
+        "level": 671,
+        "cost": 500,
+        "power": 88495000
+    },
+    {
+        "level": 672,
+        "cost": 500,
+        "power": 88745000
+    },
+    {
+        "level": 673,
+        "cost": 500,
+        "power": 88995000
+    },
+    {
+        "level": 674,
+        "cost": 500,
+        "power": 89245000
+    },
+    {
+        "level": 675,
+        "cost": 500,
+        "power": 89495000
+    },
+    {
+        "level": 676,
+        "cost": 500,
+        "power": 89745000
+    },
+    {
+        "level": 677,
+        "cost": 500,
+        "power": 89995000
+    },
+    {
+        "level": 678,
+        "cost": 505,
+        "power": 90247500
+    },
+    {
+        "level": 679,
+        "cost": 505,
+        "power": 90500000
+    },
+    {
+        "level": 680,
+        "cost": 505,
+        "power": 90752500
+    },
+    {
+        "level": 681,
+        "cost": 505,
+        "power": 91005000
+    },
+    {
+        "level": 682,
+        "cost": 505,
+        "power": 91257500
+    },
+    {
+        "level": 683,
+        "cost": 505,
+        "power": 91510000
+    },
+    {
+        "level": 684,
+        "cost": 505,
+        "power": 91762500
+    },
+    {
+        "level": 685,
+        "cost": 505,
+        "power": 92015000
+    },
+    {
+        "level": 686,
+        "cost": 510,
+        "power": 92270000
+    },
+    {
+        "level": 687,
+        "cost": 510,
+        "power": 92525000
+    },
+    {
+        "level": 688,
+        "cost": 510,
+        "power": 92780000
+    },
+    {
+        "level": 689,
+        "cost": 510,
+        "power": 93035000
+    },
+    {
+        "level": 690,
+        "cost": 510,
+        "power": 93290000
+    },
+    {
+        "level": 691,
+        "cost": 510,
+        "power": 93545000
+    },
+    {
+        "level": 692,
+        "cost": 510,
+        "power": 93800000
+    },
+    {
+        "level": 693,
+        "cost": 515,
+        "power": 94057500
+    },
+    {
+        "level": 694,
+        "cost": 515,
+        "power": 94315000
+    },
+    {
+        "level": 695,
+        "cost": 515,
+        "power": 94572500
+    },
+    {
+        "level": 696,
+        "cost": 515,
+        "power": 94830000
+    },
+    {
+        "level": 697,
+        "cost": 515,
+        "power": 95087500
+    },
+    {
+        "level": 698,
+        "cost": 515,
+        "power": 95345000
+    },
+    {
+        "level": 699,
+        "cost": 515,
+        "power": 95602500
+    },
+    {
+        "level": 700,
+        "cost": 515,
+        "power": 95860000
+    },
+    {
+        "level": 701,
+        "cost": 520,
+        "power": 96120000
+    },
+    {
+        "level": 702,
+        "cost": 520,
+        "power": 96380000
+    },
+    {
+        "level": 703,
+        "cost": 520,
+        "power": 96640000
+    },
+    {
+        "level": 704,
+        "cost": 520,
+        "power": 96900000
+    },
+    {
+        "level": 705,
+        "cost": 520,
+        "power": 97160000
+    },
+    {
+        "level": 706,
+        "cost": 520,
+        "power": 97420000
+    },
+    {
+        "level": 707,
+        "cost": 520,
+        "power": 97680000
+    },
+    {
+        "level": 708,
+        "cost": 525,
+        "power": 97942500
+    },
+    {
+        "level": 709,
+        "cost": 525,
+        "power": 98205000
+    },
+    {
+        "level": 710,
+        "cost": 525,
+        "power": 98467500
+    },
+    {
+        "level": 711,
+        "cost": 525,
+        "power": 98730000
+    },
+    {
+        "level": 712,
+        "cost": 525,
+        "power": 98992500
+    },
+    {
+        "level": 713,
+        "cost": 525,
+        "power": 99255000
+    },
+    {
+        "level": 714,
+        "cost": 525,
+        "power": 99517500
+    },
+    {
+        "level": 715,
+        "cost": 525,
+        "power": 99780000
+    },
+    {
+        "level": 716,
+        "cost": 530,
+        "power": 100045000
+    },
+    {
+        "level": 717,
+        "cost": 530,
+        "power": 100310000
+    },
+    {
+        "level": 718,
+        "cost": 530,
+        "power": 100575000
+    },
+    {
+        "level": 719,
+        "cost": 530,
+        "power": 100840000
+    },
+    {
+        "level": 720,
+        "cost": 530,
+        "power": 101105000
+    },
+    {
+        "level": 721,
+        "cost": 530,
+        "power": 101370000
+    },
+    {
+        "level": 722,
+        "cost": 530,
+        "power": 101635000
+    },
+    {
+        "level": 723,
+        "cost": 535,
+        "power": 101902500
+    },
+    {
+        "level": 724,
+        "cost": 535,
+        "power": 102170000
+    },
+    {
+        "level": 725,
+        "cost": 535,
+        "power": 102437500
+    },
+    {
+        "level": 726,
+        "cost": 535,
+        "power": 102705000
+    },
+    {
+        "level": 727,
+        "cost": 535,
+        "power": 102972500
+    },
+    {
+        "level": 728,
+        "cost": 535,
+        "power": 103240000
+    },
+    {
+        "level": 729,
+        "cost": 535,
+        "power": 103507500
+    },
+    {
+        "level": 730,
+        "cost": 535,
+        "power": 103775000
+    },
+    {
+        "level": 731,
+        "cost": 540,
+        "power": 104045000
+    },
+    {
+        "level": 732,
+        "cost": 540,
+        "power": 104315000
+    },
+    {
+        "level": 733,
+        "cost": 540,
+        "power": 104585000
+    },
+    {
+        "level": 734,
+        "cost": 540,
+        "power": 104855000
+    },
+    {
+        "level": 735,
+        "cost": 540,
+        "power": 105125000
+    },
+    {
+        "level": 736,
+        "cost": 540,
+        "power": 105395000
+    },
+    {
+        "level": 737,
+        "cost": 540,
+        "power": 105665000
+    },
+    {
+        "level": 738,
+        "cost": 545,
+        "power": 105937500
+    },
+    {
+        "level": 739,
+        "cost": 545,
+        "power": 106210000
+    },
+    {
+        "level": 740,
+        "cost": 545,
+        "power": 106482500
+    },
+    {
+        "level": 741,
+        "cost": 545,
+        "power": 106755000
+    },
+    {
+        "level": 742,
+        "cost": 545,
+        "power": 107027500
+    },
+    {
+        "level": 743,
+        "cost": 545,
+        "power": 107300000
+    },
+    {
+        "level": 744,
+        "cost": 545,
+        "power": 107572500
+    },
+    {
+        "level": 745,
+        "cost": 545,
+        "power": 107845000
+    },
+    {
+        "level": 746,
+        "cost": 550,
+        "power": 108120000
+    },
+    {
+        "level": 747,
+        "cost": 550,
+        "power": 108395000
+    },
+    {
+        "level": 748,
+        "cost": 550,
+        "power": 108670000
+    },
+    {
+        "level": 749,
+        "cost": 550,
+        "power": 108945000
+    },
+    {
+        "level": 750,
+        "cost": 550,
+        "power": 109220000
+    },
+    {
+        "level": 751,
+        "cost": 550,
+        "power": 109495000
+    },
+    {
+        "level": 752,
+        "cost": 550,
+        "power": 109770000
+    },
+    {
+        "level": 753,
+        "cost": 550,
+        "power": 110045000
+    },
+    {
+        "level": 754,
+        "cost": 555,
+        "power": 110322500
+    },
+    {
+        "level": 755,
+        "cost": 555,
+        "power": 110600000
+    },
+    {
+        "level": 756,
+        "cost": 555,
+        "power": 110877500
+    },
+    {
+        "level": 757,
+        "cost": 555,
+        "power": 111155000
+    },
+    {
+        "level": 758,
+        "cost": 555,
+        "power": 111432500
+    },
+    {
+        "level": 759,
+        "cost": 555,
+        "power": 111710000
+    },
+    {
+        "level": 760,
+        "cost": 555,
+        "power": 111987500
+    },
+    {
+        "level": 761,
+        "cost": 560,
+        "power": 112267500
+    },
+    {
+        "level": 762,
+        "cost": 560,
+        "power": 112547500
+    },
+    {
+        "level": 763,
+        "cost": 560,
+        "power": 112827500
+    },
+    {
+        "level": 764,
+        "cost": 560,
+        "power": 113107500
+    },
+    {
+        "level": 765,
+        "cost": 560,
+        "power": 113387500
+    },
+    {
+        "level": 766,
+        "cost": 560,
+        "power": 113667500
+    },
+    {
+        "level": 767,
+        "cost": 560,
+        "power": 113947500
+    },
+    {
+        "level": 768,
+        "cost": 560,
+        "power": 114227500
+    },
+    {
+        "level": 769,
+        "cost": 565,
+        "power": 114510000
+    },
+    {
+        "level": 770,
+        "cost": 565,
+        "power": 114792500
+    },
+    {
+        "level": 771,
+        "cost": 565,
+        "power": 115075000
+    },
+    {
+        "level": 772,
+        "cost": 565,
+        "power": 115357500
+    },
+    {
+        "level": 773,
+        "cost": 565,
+        "power": 115640000
+    },
+    {
+        "level": 774,
+        "cost": 565,
+        "power": 115922500
+    },
+    {
+        "level": 775,
+        "cost": 565,
+        "power": 116205000
+    },
+    {
+        "level": 776,
+        "cost": 565,
+        "power": 116487500
+    },
+    {
+        "level": 777,
+        "cost": 570,
+        "power": 116772500
+    },
+    {
+        "level": 778,
+        "cost": 570,
+        "power": 117057500
+    },
+    {
+        "level": 779,
+        "cost": 570,
+        "power": 117342500
+    },
+    {
+        "level": 780,
+        "cost": 570,
+        "power": 117627500
+    },
+    {
+        "level": 781,
+        "cost": 570,
+        "power": 117912500
+    },
+    {
+        "level": 782,
+        "cost": 570,
+        "power": 118197500
+    },
+    {
+        "level": 783,
+        "cost": 570,
+        "power": 118482500
+    },
+    {
+        "level": 784,
+        "cost": 575,
+        "power": 118770000
+    },
+    {
+        "level": 785,
+        "cost": 575,
+        "power": 119057500
+    },
+    {
+        "level": 786,
+        "cost": 575,
+        "power": 119345000
+    },
+    {
+        "level": 787,
+        "cost": 575,
+        "power": 119632500
+    },
+    {
+        "level": 788,
+        "cost": 575,
+        "power": 119920000
+    },
+    {
+        "level": 789,
+        "cost": 575,
+        "power": 120207500
+    },
+    {
+        "level": 790,
+        "cost": 575,
+        "power": 120495000
+    },
+    {
+        "level": 791,
+        "cost": 575,
+        "power": 120782500
+    },
+    {
+        "level": 792,
+        "cost": 580,
+        "power": 121072500
+    },
+    {
+        "level": 793,
+        "cost": 580,
+        "power": 121362500
+    },
+    {
+        "level": 794,
+        "cost": 580,
+        "power": 121652500
+    },
+    {
+        "level": 795,
+        "cost": 580,
+        "power": 121942500
+    },
+    {
+        "level": 796,
+        "cost": 580,
+        "power": 122232500
+    },
+    {
+        "level": 797,
+        "cost": 580,
+        "power": 122522500
+    },
+    {
+        "level": 798,
+        "cost": 580,
+        "power": 122812500
+    },
+    {
+        "level": 799,
+        "cost": 585,
+        "power": 123105000
+    },
+    {
+        "level": 800,
+        "cost": 585,
+        "power": 123397500
+    },
+    {
+        "level": 801,
+        "cost": 585,
+        "power": 123690000
+    },
+    {
+        "level": 802,
+        "cost": 585,
+        "power": 123982500
+    },
+    {
+        "level": 803,
+        "cost": 585,
+        "power": 124275000
+    },
+    {
+        "level": 804,
+        "cost": 585,
+        "power": 124567500
+    },
+    {
+        "level": 805,
+        "cost": 585,
+        "power": 124860000
+    },
+    {
+        "level": 806,
+        "cost": 585,
+        "power": 125152500
+    },
+    {
+        "level": 807,
+        "cost": 590,
+        "power": 125447500
+    },
+    {
+        "level": 808,
+        "cost": 590,
+        "power": 125742500
+    },
+    {
+        "level": 809,
+        "cost": 590,
+        "power": 126037500
+    },
+    {
+        "level": 810,
+        "cost": 590,
+        "power": 126332500
+    },
+    {
+        "level": 811,
+        "cost": 590,
+        "power": 126627500
+    },
+    {
+        "level": 812,
+        "cost": 590,
+        "power": 126922500
+    },
+    {
+        "level": 813,
+        "cost": 590,
+        "power": 127217500
+    },
+    {
+        "level": 814,
+        "cost": 590,
+        "power": 127512500
+    },
+    {
+        "level": 815,
+        "cost": 595,
+        "power": 127810000
+    },
+    {
+        "level": 816,
+        "cost": 595,
+        "power": 128107500
+    },
+    {
+        "level": 817,
+        "cost": 595,
+        "power": 128405000
+    },
+    {
+        "level": 818,
+        "cost": 595,
+        "power": 128702500
+    },
+    {
+        "level": 819,
+        "cost": 595,
+        "power": 129000000
+    },
+    {
+        "level": 820,
+        "cost": 595,
+        "power": 129297500
+    },
+    {
+        "level": 821,
+        "cost": 595,
+        "power": 129595000
+    },
+    {
+        "level": 822,
+        "cost": 600,
+        "power": 129895000
+    },
+    {
+        "level": 823,
+        "cost": 600,
+        "power": 130195000
+    },
+    {
+        "level": 824,
+        "cost": 600,
+        "power": 130495000
+    },
+    {
+        "level": 825,
+        "cost": 600,
+        "power": 130795000
+    },
+    {
+        "level": 826,
+        "cost": 600,
+        "power": 131095000
+    },
+    {
+        "level": 827,
+        "cost": 600,
+        "power": 131395000
+    },
+    {
+        "level": 828,
+        "cost": 600,
+        "power": 131695000
+    },
+    {
+        "level": 829,
+        "cost": 600,
+        "power": 131995000
+    },
+    {
+        "level": 830,
+        "cost": 605,
+        "power": 132297500
+    },
+    {
+        "level": 831,
+        "cost": 605,
+        "power": 132600000
+    },
+    {
+        "level": 832,
+        "cost": 605,
+        "power": 132902500
+    },
+    {
+        "level": 833,
+        "cost": 605,
+        "power": 133205000
+    },
+    {
+        "level": 834,
+        "cost": 605,
+        "power": 133507500
+    },
+    {
+        "level": 835,
+        "cost": 605,
+        "power": 133810000
+    },
+    {
+        "level": 836,
+        "cost": 605,
+        "power": 134112500
+    },
+    {
+        "level": 837,
+        "cost": 605,
+        "power": 134415000
+    },
+    {
+        "level": 838,
+        "cost": 610,
+        "power": 134720000
+    },
+    {
+        "level": 839,
+        "cost": 610,
+        "power": 135025000
+    },
+    {
+        "level": 840,
+        "cost": 610,
+        "power": 135330000
+    },
+    {
+        "level": 841,
+        "cost": 610,
+        "power": 135635000
+    },
+    {
+        "level": 842,
+        "cost": 610,
+        "power": 135940000
+    },
+    {
+        "level": 843,
+        "cost": 610,
+        "power": 136245000
+    },
+    {
+        "level": 844,
+        "cost": 610,
+        "power": 136550000
+    },
+    {
+        "level": 845,
+        "cost": 610,
+        "power": 136855000
+    },
+    {
+        "level": 846,
+        "cost": 615,
+        "power": 137162500
+    },
+    {
+        "level": 847,
+        "cost": 615,
+        "power": 137470000
+    },
+    {
+        "level": 848,
+        "cost": 615,
+        "power": 137777500
+    },
+    {
+        "level": 849,
+        "cost": 615,
+        "power": 138085000
+    },
+    {
+        "level": 850,
+        "cost": 615,
+        "power": 138392500
+    },
+    {
+        "level": 851,
+        "cost": 615,
+        "power": 138700000
+    },
+    {
+        "level": 852,
+        "cost": 615,
+        "power": 139007500
+    },
+    {
+        "level": 853,
+        "cost": 620,
+        "power": 139317500
+    },
+    {
+        "level": 854,
+        "cost": 620,
+        "power": 139627500
+    },
+    {
+        "level": 855,
+        "cost": 620,
+        "power": 139937500
+    },
+    {
+        "level": 856,
+        "cost": 620,
+        "power": 140247500
+    },
+    {
+        "level": 857,
+        "cost": 620,
+        "power": 140557500
+    },
+    {
+        "level": 858,
+        "cost": 620,
+        "power": 140867500
+    },
+    {
+        "level": 859,
+        "cost": 620,
+        "power": 141177500
+    },
+    {
+        "level": 860,
+        "cost": 620,
+        "power": 141487500
+    },
+    {
+        "level": 861,
+        "cost": 625,
+        "power": 141800000
+    },
+    {
+        "level": 862,
+        "cost": 625,
+        "power": 142112500
+    },
+    {
+        "level": 863,
+        "cost": 625,
+        "power": 142425000
+    },
+    {
+        "level": 864,
+        "cost": 625,
+        "power": 142737500
+    },
+    {
+        "level": 865,
+        "cost": 625,
+        "power": 143050000
+    },
+    {
+        "level": 866,
+        "cost": 625,
+        "power": 143362500
+    },
+    {
+        "level": 867,
+        "cost": 625,
+        "power": 143675000
+    },
+    {
+        "level": 868,
+        "cost": 625,
+        "power": 143987500
+    },
+    {
+        "level": 869,
+        "cost": 630,
+        "power": 144302500
+    },
+    {
+        "level": 870,
+        "cost": 630,
+        "power": 144617500
+    },
+    {
+        "level": 871,
+        "cost": 630,
+        "power": 144932500
+    },
+    {
+        "level": 872,
+        "cost": 630,
+        "power": 145247500
+    },
+    {
+        "level": 873,
+        "cost": 630,
+        "power": 145562500
+    },
+    {
+        "level": 874,
+        "cost": 630,
+        "power": 145877500
+    },
+    {
+        "level": 875,
+        "cost": 630,
+        "power": 146192500
+    },
+    {
+        "level": 876,
+        "cost": 635,
+        "power": 146510000
+    },
+    {
+        "level": 877,
+        "cost": 635,
+        "power": 146827500
+    },
+    {
+        "level": 878,
+        "cost": 635,
+        "power": 147145000
+    },
+    {
+        "level": 879,
+        "cost": 635,
+        "power": 147462500
+    },
+    {
+        "level": 880,
+        "cost": 635,
+        "power": 147780000
+    },
+    {
+        "level": 881,
+        "cost": 635,
+        "power": 148097500
+    },
+    {
+        "level": 882,
+        "cost": 635,
+        "power": 148415000
+    },
+    {
+        "level": 883,
+        "cost": 635,
+        "power": 148732500
+    },
+    {
+        "level": 884,
+        "cost": 640,
+        "power": 149052500
+    },
+    {
+        "level": 885,
+        "cost": 640,
+        "power": 149372500
+    },
+    {
+        "level": 886,
+        "cost": 640,
+        "power": 149692500
+    },
+    {
+        "level": 887,
+        "cost": 640,
+        "power": 150012500
+    },
+    {
+        "level": 888,
+        "cost": 640,
+        "power": 150332500
+    },
+    {
+        "level": 889,
+        "cost": 640,
+        "power": 150652500
+    },
+    {
+        "level": 890,
+        "cost": 640,
+        "power": 150972500
+    },
+    {
+        "level": 891,
+        "cost": 640,
+        "power": 151292500
+    },
+    {
+        "level": 892,
+        "cost": 645,
+        "power": 151615000
+    },
+    {
+        "level": 893,
+        "cost": 645,
+        "power": 151937500
+    },
+    {
+        "level": 894,
+        "cost": 645,
+        "power": 152260000
+    },
+    {
+        "level": 895,
+        "cost": 645,
+        "power": 152582500
+    },
+    {
+        "level": 896,
+        "cost": 645,
+        "power": 152905000
+    },
+    {
+        "level": 897,
+        "cost": 645,
+        "power": 153227500
+    },
+    {
+        "level": 898,
+        "cost": 645,
+        "power": 153550000
+    },
+    {
+        "level": 899,
+        "cost": 645,
+        "power": 153872500
+    },
+    {
+        "level": 900,
+        "cost": 650,
+        "power": 154197500
+    },
+    {
+        "level": 901,
+        "cost": 650,
+        "power": 154522500
+    },
+    {
+        "level": 902,
+        "cost": 650,
+        "power": 154847500
+    },
+    {
+        "level": 903,
+        "cost": 650,
+        "power": 155172500
+    },
+    {
+        "level": 904,
+        "cost": 650,
+        "power": 155497500
+    },
+    {
+        "level": 905,
+        "cost": 650,
+        "power": 155822500
+    },
+    {
+        "level": 906,
+        "cost": 650,
+        "power": 156147500
+    },
+    {
+        "level": 907,
+        "cost": 655,
+        "power": 156475000
+    },
+    {
+        "level": 908,
+        "cost": 655,
+        "power": 156802500
+    },
+    {
+        "level": 909,
+        "cost": 655,
+        "power": 157130000
+    },
+    {
+        "level": 910,
+        "cost": 655,
+        "power": 157457500
+    },
+    {
+        "level": 911,
+        "cost": 655,
+        "power": 157785000
+    },
+    {
+        "level": 912,
+        "cost": 655,
+        "power": 158112500
+    },
+    {
+        "level": 913,
+        "cost": 655,
+        "power": 158440000
+    },
+    {
+        "level": 914,
+        "cost": 655,
+        "power": 158767500
+    },
+    {
+        "level": 915,
+        "cost": 660,
+        "power": 159097500
+    },
+    {
+        "level": 916,
+        "cost": 660,
+        "power": 159427500
+    },
+    {
+        "level": 917,
+        "cost": 660,
+        "power": 159757500
+    },
+    {
+        "level": 918,
+        "cost": 660,
+        "power": 160087500
+    },
+    {
+        "level": 919,
+        "cost": 660,
+        "power": 160417500
+    },
+    {
+        "level": 920,
+        "cost": 660,
+        "power": 160747500
+    },
+    {
+        "level": 921,
+        "cost": 660,
+        "power": 161077500
+    },
+    {
+        "level": 922,
+        "cost": 660,
+        "power": 161407500
+    },
+    {
+        "level": 923,
+        "cost": 665,
+        "power": 161740000
+    },
+    {
+        "level": 924,
+        "cost": 665,
+        "power": 162072500
+    },
+    {
+        "level": 925,
+        "cost": 665,
+        "power": 162405000
+    },
+    {
+        "level": 926,
+        "cost": 665,
+        "power": 162737500
+    },
+    {
+        "level": 927,
+        "cost": 665,
+        "power": 163070000
+    },
+    {
+        "level": 928,
+        "cost": 665,
+        "power": 163402500
+    },
+    {
+        "level": 929,
+        "cost": 665,
+        "power": 163735000
+    },
+    {
+        "level": 930,
+        "cost": 665,
+        "power": 164067500
+    },
+    {
+        "level": 931,
+        "cost": 670,
+        "power": 164402500
+    },
+    {
+        "level": 932,
+        "cost": 670,
+        "power": 164737500
+    },
+    {
+        "level": 933,
+        "cost": 670,
+        "power": 165072500
+    },
+    {
+        "level": 934,
+        "cost": 670,
+        "power": 165407500
+    },
+    {
+        "level": 935,
+        "cost": 670,
+        "power": 165742500
+    },
+    {
+        "level": 936,
+        "cost": 670,
+        "power": 166077500
+    },
+    {
+        "level": 937,
+        "cost": 670,
+        "power": 166412500
+    },
+    {
+        "level": 938,
+        "cost": 675,
+        "power": 166750000
+    },
+    {
+        "level": 939,
+        "cost": 675,
+        "power": 167087500
+    },
+    {
+        "level": 940,
+        "cost": 675,
+        "power": 167425000
+    },
+    {
+        "level": 941,
+        "cost": 675,
+        "power": 167762500
+    },
+    {
+        "level": 942,
+        "cost": 675,
+        "power": 168100000
+    },
+    {
+        "level": 943,
+        "cost": 675,
+        "power": 168437500
+    },
+    {
+        "level": 944,
+        "cost": 675,
+        "power": 168775000
+    },
+    {
+        "level": 945,
+        "cost": 675,
+        "power": 169112500
+    },
+    {
+        "level": 946,
+        "cost": 680,
+        "power": 169452500
+    },
+    {
+        "level": 947,
+        "cost": 680,
+        "power": 169792500
+    },
+    {
+        "level": 948,
+        "cost": 680,
+        "power": 170132500
+    },
+    {
+        "level": 949,
+        "cost": 680,
+        "power": 170472500
+    },
+    {
+        "level": 950,
+        "cost": 680,
+        "power": 170812500
+    },
+    {
+        "level": 951,
+        "cost": 680,
+        "power": 171152500
+    },
+    {
+        "level": 952,
+        "cost": 680,
+        "power": 171492500
+    },
+    {
+        "level": 953,
+        "cost": 680,
+        "power": 171832500
+    },
+    {
+        "level": 954,
+        "cost": 685,
+        "power": 172175000
+    },
+    {
+        "level": 955,
+        "cost": 685,
+        "power": 172517500
+    },
+    {
+        "level": 956,
+        "cost": 685,
+        "power": 172860000
+    },
+    {
+        "level": 957,
+        "cost": 685,
+        "power": 173202500
+    },
+    {
+        "level": 958,
+        "cost": 685,
+        "power": 173545000
+    },
+    {
+        "level": 959,
+        "cost": 685,
+        "power": 173887500
+    },
+    {
+        "level": 960,
+        "cost": 685,
+        "power": 174230000
+    },
+    {
+        "level": 961,
+        "cost": 685,
+        "power": 174572500
+    },
+    {
+        "level": 962,
+        "cost": 690,
+        "power": 174917500
+    },
+    {
+        "level": 963,
+        "cost": 690,
+        "power": 175262500
+    },
+    {
+        "level": 964,
+        "cost": 690,
+        "power": 175607500
+    },
+    {
+        "level": 965,
+        "cost": 690,
+        "power": 175952500
+    },
+    {
+        "level": 966,
+        "cost": 690,
+        "power": 176297500
+    },
+    {
+        "level": 967,
+        "cost": 690,
+        "power": 176642500
+    },
+    {
+        "level": 968,
+        "cost": 690,
+        "power": 176987500
+    },
+    {
+        "level": 969,
+        "cost": 690,
+        "power": 177332500
+    },
+    {
+        "level": 970,
+        "cost": 695,
+        "power": 177680000
+    },
+    {
+        "level": 971,
+        "cost": 695,
+        "power": 178027500
+    },
+    {
+        "level": 972,
+        "cost": 695,
+        "power": 178375000
+    },
+    {
+        "level": 973,
+        "cost": 695,
+        "power": 178722500
+    },
+    {
+        "level": 974,
+        "cost": 695,
+        "power": 179070000
+    },
+    {
+        "level": 975,
+        "cost": 695,
+        "power": 179417500
+    },
+    {
+        "level": 976,
+        "cost": 695,
+        "power": 179765000
+    },
+    {
+        "level": 977,
+        "cost": 700,
+        "power": 180115000
+    },
+    {
+        "level": 978,
+        "cost": 700,
+        "power": 180465000
+    },
+    {
+        "level": 979,
+        "cost": 700,
+        "power": 180815000
+    },
+    {
+        "level": 980,
+        "cost": 700,
+        "power": 181165000
+    },
+    {
+        "level": 981,
+        "cost": 700,
+        "power": 181515000
+    },
+    {
+        "level": 982,
+        "cost": 700,
+        "power": 181865000
+    },
+    {
+        "level": 983,
+        "cost": 700,
+        "power": 182215000
+    },
+    {
+        "level": 984,
+        "cost": 700,
+        "power": 182565000
+    },
+    {
+        "level": 985,
+        "cost": 705,
+        "power": 182917500
+    },
+    {
+        "level": 986,
+        "cost": 705,
+        "power": 183270000
+    },
+    {
+        "level": 987,
+        "cost": 705,
+        "power": 183622500
+    },
+    {
+        "level": 988,
+        "cost": 705,
+        "power": 183975000
+    },
+    {
+        "level": 989,
+        "cost": 705,
+        "power": 184327500
+    },
+    {
+        "level": 990,
+        "cost": 705,
+        "power": 184680000
+    },
+    {
+        "level": 991,
+        "cost": 705,
+        "power": 185032500
+    },
+    {
+        "level": 992,
+        "cost": 705,
+        "power": 185385000
+    },
+    {
+        "level": 993,
+        "cost": 710,
+        "power": 185740000
+    },
+    {
+        "level": 994,
+        "cost": 710,
+        "power": 186095000
+    },
+    {
+        "level": 995,
+        "cost": 710,
+        "power": 186450000
+    },
+    {
+        "level": 996,
+        "cost": 710,
+        "power": 186805000
+    },
+    {
+        "level": 997,
+        "cost": 710,
+        "power": 187160000
+    },
+    {
+        "level": 998,
+        "cost": 710,
+        "power": 187515000
+    },
+    {
+        "level": 999,
+        "cost": 710,
+        "power": 187870000
+    },
+    {
+        "level": 1000,
+        "cost": 710,
+        "power": 188225000
+    },
+    {
+        "level": 1001,
+        "cost": 715,
+        "power": 188582500
+    },
+    {
+        "level": 1002,
+        "cost": 715,
+        "power": 188940000
+    },
+    {
+        "level": 1003,
+        "cost": 715,
+        "power": 189297500
+    },
+    {
+        "level": 1004,
+        "cost": 715,
+        "power": 189655000
+    },
+    {
+        "level": 1005,
+        "cost": 715,
+        "power": 190012500
+    },
+    {
+        "level": 1006,
+        "cost": 715,
+        "power": 190370000
+    },
+    {
+        "level": 1007,
+        "cost": 715,
+        "power": 190727500
+    },
+    {
+        "level": 1008,
+        "cost": 715,
+        "power": 191085000
+    },
+    {
+        "level": 1009,
+        "cost": 720,
+        "power": 191445000
+    },
+    {
+        "level": 1010,
+        "cost": 720,
+        "power": 191805000
+    },
+    {
+        "level": 1011,
+        "cost": 720,
+        "power": 192165000
+    },
+    {
+        "level": 1012,
+        "cost": 720,
+        "power": 192525000
+    },
+    {
+        "level": 1013,
+        "cost": 720,
+        "power": 192885000
+    },
+    {
+        "level": 1014,
+        "cost": 720,
+        "power": 193245000
+    },
+    {
+        "level": 1015,
+        "cost": 720,
+        "power": 193605000
+    },
+    {
+        "level": 1016,
+        "cost": 725,
+        "power": 193967500
+    },
+    {
+        "level": 1017,
+        "cost": 725,
+        "power": 194330000
+    },
+    {
+        "level": 1018,
+        "cost": 725,
+        "power": 194692500
+    },
+    {
+        "level": 1019,
+        "cost": 725,
+        "power": 195055000
+    },
+    {
+        "level": 1020,
+        "cost": 725,
+        "power": 195417500
+    },
+    {
+        "level": 1021,
+        "cost": 725,
+        "power": 195780000
+    },
+    {
+        "level": 1022,
+        "cost": 725,
+        "power": 196142500
+    },
+    {
+        "level": 1023,
+        "cost": 725,
+        "power": 196505000
+    },
+    {
+        "level": 1024,
+        "cost": 730,
+        "power": 196870000
+    },
+    {
+        "level": 1025,
+        "cost": 730,
+        "power": 197235000
+    },
+    {
+        "level": 1026,
+        "cost": 730,
+        "power": 197600000
+    },
+    {
+        "level": 1027,
+        "cost": 730,
+        "power": 197965000
+    },
+    {
+        "level": 1028,
+        "cost": 730,
+        "power": 198330000
+    },
+    {
+        "level": 1029,
+        "cost": 730,
+        "power": 198695000
+    },
+    {
+        "level": 1030,
+        "cost": 730,
+        "power": 199060000
+    },
+    {
+        "level": 1031,
+        "cost": 730,
+        "power": 199425000
+    },
+    {
+        "level": 1032,
+        "cost": 735,
+        "power": 199792500
+    },
+    {
+        "level": 1033,
+        "cost": 735,
+        "power": 200160000
+    },
+    {
+        "level": 1034,
+        "cost": 735,
+        "power": 200527500
+    },
+    {
+        "level": 1035,
+        "cost": 735,
+        "power": 200895000
+    },
+    {
+        "level": 1036,
+        "cost": 735,
+        "power": 201262500
+    },
+    {
+        "level": 1037,
+        "cost": 735,
+        "power": 201630000
+    },
+    {
+        "level": 1038,
+        "cost": 735,
+        "power": 201997500
+    },
+    {
+        "level": 1039,
+        "cost": 735,
+        "power": 202365000
+    },
+    {
+        "level": 1040,
+        "cost": 740,
+        "power": 202735000
+    },
+    {
+        "level": 1041,
+        "cost": 740,
+        "power": 203105000
+    },
+    {
+        "level": 1042,
+        "cost": 740,
+        "power": 203475000
+    },
+    {
+        "level": 1043,
+        "cost": 740,
+        "power": 203845000
+    },
+    {
+        "level": 1044,
+        "cost": 740,
+        "power": 204215000
+    },
+    {
+        "level": 1045,
+        "cost": 740,
+        "power": 204585000
+    },
+    {
+        "level": 1046,
+        "cost": 740,
+        "power": 204955000
+    },
+    {
+        "level": 1047,
+        "cost": 740,
+        "power": 205325000
+    },
+    {
+        "level": 1048,
+        "cost": 745,
+        "power": 205697500
+    },
+    {
+        "level": 1049,
+        "cost": 745,
+        "power": 206070000
+    },
+    {
+        "level": 1050,
+        "cost": 745,
+        "power": 206442500
+    },
+    {
+        "level": 1051,
+        "cost": 745,
+        "power": 206815000
+    },
+    {
+        "level": 1052,
+        "cost": 745,
+        "power": 207187500
+    },
+    {
+        "level": 1053,
+        "cost": 745,
+        "power": 207560000
+    },
+    {
+        "level": 1054,
+        "cost": 745,
+        "power": 207932500
+    },
+    {
+        "level": 1055,
+        "cost": 745,
+        "power": 208305000
+    },
+    {
+        "level": 1056,
+        "cost": 750,
+        "power": 208680000
+    },
+    {
+        "level": 1057,
+        "cost": 750,
+        "power": 209055000
+    },
+    {
+        "level": 1058,
+        "cost": 750,
+        "power": 209430000
+    },
+    {
+        "level": 1059,
+        "cost": 750,
+        "power": 209805000
+    },
+    {
+        "level": 1060,
+        "cost": 750,
+        "power": 210180000
+    },
+    {
+        "level": 1061,
+        "cost": 750,
+        "power": 210555000
+    },
+    {
+        "level": 1062,
+        "cost": 750,
+        "power": 210930000
+    },
+    {
+        "level": 1063,
+        "cost": 750,
+        "power": 211305000
+    },
+    {
+        "level": 1064,
+        "cost": 755,
+        "power": 211682500
+    },
+    {
+        "level": 1065,
+        "cost": 755,
+        "power": 212060000
+    },
+    {
+        "level": 1066,
+        "cost": 755,
+        "power": 212437500
+    },
+    {
+        "level": 1067,
+        "cost": 755,
+        "power": 212815000
+    },
+    {
+        "level": 1068,
+        "cost": 755,
+        "power": 213192500
+    },
+    {
+        "level": 1069,
+        "cost": 755,
+        "power": 213570000
+    },
+    {
+        "level": 1070,
+        "cost": 755,
+        "power": 213947500
+    },
+    {
+        "level": 1071,
+        "cost": 760,
+        "power": 214327500
+    },
+    {
+        "level": 1072,
+        "cost": 760,
+        "power": 214707500
+    },
+    {
+        "level": 1073,
+        "cost": 760,
+        "power": 215087500
+    },
+    {
+        "level": 1074,
+        "cost": 760,
+        "power": 215467500
+    },
+    {
+        "level": 1075,
+        "cost": 760,
+        "power": 215847500
+    },
+    {
+        "level": 1076,
+        "cost": 760,
+        "power": 216227500
+    },
+    {
+        "level": 1077,
+        "cost": 760,
+        "power": 216607500
+    },
+    {
+        "level": 1078,
+        "cost": 760,
+        "power": 216987500
+    },
+    {
+        "level": 1079,
+        "cost": 765,
+        "power": 217370000
+    },
+    {
+        "level": 1080,
+        "cost": 765,
+        "power": 217752500
+    },
+    {
+        "level": 1081,
+        "cost": 765,
+        "power": 218135000
+    },
+    {
+        "level": 1082,
+        "cost": 765,
+        "power": 218517500
+    },
+    {
+        "level": 1083,
+        "cost": 765,
+        "power": 218900000
+    },
+    {
+        "level": 1084,
+        "cost": 765,
+        "power": 219282500
+    },
+    {
+        "level": 1085,
+        "cost": 765,
+        "power": 219665000
+    },
+    {
+        "level": 1086,
+        "cost": 765,
+        "power": 220047500
+    },
+    {
+        "level": 1087,
+        "cost": 770,
+        "power": 220432500
+    },
+    {
+        "level": 1088,
+        "cost": 770,
+        "power": 220817500
+    },
+    {
+        "level": 1089,
+        "cost": 770,
+        "power": 221202500
+    },
+    {
+        "level": 1090,
+        "cost": 770,
+        "power": 221587500
+    },
+    {
+        "level": 1091,
+        "cost": 770,
+        "power": 221972500
+    },
+    {
+        "level": 1092,
+        "cost": 770,
+        "power": 222357500
+    },
+    {
+        "level": 1093,
+        "cost": 770,
+        "power": 222742500
+    },
+    {
+        "level": 1094,
+        "cost": 770,
+        "power": 223127500
+    },
+    {
+        "level": 1095,
+        "cost": 775,
+        "power": 223515000
+    },
+    {
+        "level": 1096,
+        "cost": 775,
+        "power": 223902500
+    },
+    {
+        "level": 1097,
+        "cost": 775,
+        "power": 224290000
+    },
+    {
+        "level": 1098,
+        "cost": 775,
+        "power": 224677500
+    },
+    {
+        "level": 1099,
+        "cost": 775,
+        "power": 225065000
+    },
+    {
+        "level": 1100,
+        "cost": 775,
+        "power": 225452500
+    },
+    {
+        "level": 1101,
+        "cost": 775,
+        "power": 225840000
+    },
+    {
+        "level": 1102,
+        "cost": 775,
+        "power": 226227500
+    },
+    {
+        "level": 1103,
+        "cost": 780,
+        "power": 226617500
+    },
+    {
+        "level": 1104,
+        "cost": 780,
+        "power": 227007500
+    },
+    {
+        "level": 1105,
+        "cost": 780,
+        "power": 227397500
+    },
+    {
+        "level": 1106,
+        "cost": 780,
+        "power": 227787500
+    },
+    {
+        "level": 1107,
+        "cost": 780,
+        "power": 228177500
+    },
+    {
+        "level": 1108,
+        "cost": 780,
+        "power": 228567500
+    },
+    {
+        "level": 1109,
+        "cost": 780,
+        "power": 228957500
+    },
+    {
+        "level": 1110,
+        "cost": 780,
+        "power": 229347500
+    },
+    {
+        "level": 1111,
+        "cost": 785,
+        "power": 229740000
+    },
+    {
+        "level": 1112,
+        "cost": 785,
+        "power": 230132500
+    },
+    {
+        "level": 1113,
+        "cost": 785,
+        "power": 230525000
+    },
+    {
+        "level": 1114,
+        "cost": 785,
+        "power": 230917500
+    },
+    {
+        "level": 1115,
+        "cost": 785,
+        "power": 231310000
+    },
+    {
+        "level": 1116,
+        "cost": 785,
+        "power": 231702500
+    },
+    {
+        "level": 1117,
+        "cost": 785,
+        "power": 232095000
+    },
+    {
+        "level": 1118,
+        "cost": 785,
+        "power": 232487500
+    },
+    {
+        "level": 1119,
+        "cost": 790,
+        "power": 232882500
+    },
+    {
+        "level": 1120,
+        "cost": 790,
+        "power": 233277500
+    },
+    {
+        "level": 1121,
+        "cost": 790,
+        "power": 233672500
+    },
+    {
+        "level": 1122,
+        "cost": 790,
+        "power": 234067500
+    },
+    {
+        "level": 1123,
+        "cost": 790,
+        "power": 234462500
+    },
+    {
+        "level": 1124,
+        "cost": 790,
+        "power": 234857500
+    },
+    {
+        "level": 1125,
+        "cost": 790,
+        "power": 235252500
+    },
+    {
+        "level": 1126,
+        "cost": 790,
+        "power": 235647500
+    },
+    {
+        "level": 1127,
+        "cost": 795,
+        "power": 236045000
+    },
+    {
+        "level": 1128,
+        "cost": 795,
+        "power": 236442500
+    },
+    {
+        "level": 1129,
+        "cost": 795,
+        "power": 236840000
+    },
+    {
+        "level": 1130,
+        "cost": 795,
+        "power": 237237500
+    },
+    {
+        "level": 1131,
+        "cost": 795,
+        "power": 237635000
+    },
+    {
+        "level": 1132,
+        "cost": 795,
+        "power": 238032500
+    },
+    {
+        "level": 1133,
+        "cost": 795,
+        "power": 238430000
+    },
+    {
+        "level": 1134,
+        "cost": 795,
+        "power": 238827500
+    },
+    {
+        "level": 1135,
+        "cost": 800,
+        "power": 239227500
+    },
+    {
+        "level": 1136,
+        "cost": 800,
+        "power": 239627500
+    },
+    {
+        "level": 1137,
+        "cost": 800,
+        "power": 240027500
+    },
+    {
+        "level": 1138,
+        "cost": 800,
+        "power": 240427500
+    },
+    {
+        "level": 1139,
+        "cost": 800,
+        "power": 240827500
+    },
+    {
+        "level": 1140,
+        "cost": 800,
+        "power": 241227500
+    },
+    {
+        "level": 1141,
+        "cost": 800,
+        "power": 241627500
+    },
+    {
+        "level": 1142,
+        "cost": 800,
+        "power": 242027500
+    },
+    {
+        "level": 1143,
+        "cost": 805,
+        "power": 242430000
+    },
+    {
+        "level": 1144,
+        "cost": 805,
+        "power": 242832500
+    },
+    {
+        "level": 1145,
+        "cost": 805,
+        "power": 243235000
+    },
+    {
+        "level": 1146,
+        "cost": 805,
+        "power": 243637500
+    },
+    {
+        "level": 1147,
+        "cost": 805,
+        "power": 244040000
+    },
+    {
+        "level": 1148,
+        "cost": 805,
+        "power": 244442500
+    },
+    {
+        "level": 1149,
+        "cost": 805,
+        "power": 244845000
+    },
+    {
+        "level": 1150,
+        "cost": 805,
+        "power": 245247500
+    },
+    {
+        "level": 1151,
+        "cost": 810,
+        "power": 245652500
+    },
+    {
+        "level": 1152,
+        "cost": 810,
+        "power": 246057500
+    },
+    {
+        "level": 1153,
+        "cost": 810,
+        "power": 246462500
+    },
+    {
+        "level": 1154,
+        "cost": 810,
+        "power": 246867500
+    },
+    {
+        "level": 1155,
+        "cost": 810,
+        "power": 247272500
+    },
+    {
+        "level": 1156,
+        "cost": 810,
+        "power": 247677500
+    },
+    {
+        "level": 1157,
+        "cost": 810,
+        "power": 248082500
+    },
+    {
+        "level": 1158,
+        "cost": 815,
+        "power": 248490000
+    },
+    {
+        "level": 1159,
+        "cost": 815,
+        "power": 248897500
+    },
+    {
+        "level": 1160,
+        "cost": 815,
+        "power": 249305000
+    },
+    {
+        "level": 1161,
+        "cost": 815,
+        "power": 249712500
+    },
+    {
+        "level": 1162,
+        "cost": 815,
+        "power": 250120000
+    },
+    {
+        "level": 1163,
+        "cost": 815,
+        "power": 250527500
+    },
+    {
+        "level": 1164,
+        "cost": 815,
+        "power": 250935000
+    },
+    {
+        "level": 1165,
+        "cost": 815,
+        "power": 251342500
+    },
+    {
+        "level": 1166,
+        "cost": 820,
+        "power": 251752500
+    },
+    {
+        "level": 1167,
+        "cost": 820,
+        "power": 252162500
+    },
+    {
+        "level": 1168,
+        "cost": 820,
+        "power": 252572500
+    },
+    {
+        "level": 1169,
+        "cost": 820,
+        "power": 252982500
+    },
+    {
+        "level": 1170,
+        "cost": 820,
+        "power": 253392500
+    },
+    {
+        "level": 1171,
+        "cost": 820,
+        "power": 253802500
+    },
+    {
+        "level": 1172,
+        "cost": 820,
+        "power": 254212500
+    },
+    {
+        "level": 1173,
+        "cost": 820,
+        "power": 254622500
+    },
+    {
+        "level": 1174,
+        "cost": 825,
+        "power": 255035000
+    },
+    {
+        "level": 1175,
+        "cost": 825,
+        "power": 255447500
+    },
+    {
+        "level": 1176,
+        "cost": 825,
+        "power": 255860000
+    },
+    {
+        "level": 1177,
+        "cost": 825,
+        "power": 256272500
+    },
+    {
+        "level": 1178,
+        "cost": 825,
+        "power": 256685000
+    },
+    {
+        "level": 1179,
+        "cost": 825,
+        "power": 257097500
+    },
+    {
+        "level": 1180,
+        "cost": 825,
+        "power": 257510000
+    },
+    {
+        "level": 1181,
+        "cost": 825,
+        "power": 257922500
+    },
+    {
+        "level": 1182,
+        "cost": 830,
+        "power": 258337500
+    },
+    {
+        "level": 1183,
+        "cost": 830,
+        "power": 258752500
+    },
+    {
+        "level": 1184,
+        "cost": 830,
+        "power": 259167500
+    },
+    {
+        "level": 1185,
+        "cost": 830,
+        "power": 259582500
+    },
+    {
+        "level": 1186,
+        "cost": 830,
+        "power": 259997500
+    },
+    {
+        "level": 1187,
+        "cost": 830,
+        "power": 260412500
+    },
+    {
+        "level": 1188,
+        "cost": 830,
+        "power": 260827500
+    },
+    {
+        "level": 1189,
+        "cost": 830,
+        "power": 261242500
+    },
+    {
+        "level": 1190,
+        "cost": 835,
+        "power": 261660000
+    },
+    {
+        "level": 1191,
+        "cost": 835,
+        "power": 262077500
+    },
+    {
+        "level": 1192,
+        "cost": 835,
+        "power": 262495000
+    },
+    {
+        "level": 1193,
+        "cost": 835,
+        "power": 262912500
+    },
+    {
+        "level": 1194,
+        "cost": 835,
+        "power": 263330000
+    },
+    {
+        "level": 1195,
+        "cost": 835,
+        "power": 263747500
+    },
+    {
+        "level": 1196,
+        "cost": 835,
+        "power": 264165000
+    },
+    {
+        "level": 1197,
+        "cost": 835,
+        "power": 264582500
+    },
+    {
+        "level": 1198,
+        "cost": 840,
+        "power": 265002500
+    },
+    {
+        "level": 1199,
+        "cost": 840,
+        "power": 265422500
+    },
+    {
+        "level": 1200,
+        "cost": 840,
+        "power": 265842500
+    },
+    {
+        "level": 1201,
+        "cost": 840,
+        "power": 266262500
+    },
+    {
+        "level": 1202,
+        "cost": 840,
+        "power": 266682500
+    },
+    {
+        "level": 1203,
+        "cost": 840,
+        "power": 267102500
+    },
+    {
+        "level": 1204,
+        "cost": 840,
+        "power": 267522500
+    },
+    {
+        "level": 1205,
+        "cost": 840,
+        "power": 267942500
+    },
+    {
+        "level": 1206,
+        "cost": 845,
+        "power": 268365000
+    },
+    {
+        "level": 1207,
+        "cost": 845,
+        "power": 268787500
+    },
+    {
+        "level": 1208,
+        "cost": 845,
+        "power": 269210000
+    },
+    {
+        "level": 1209,
+        "cost": 845,
+        "power": 269632500
+    },
+    {
+        "level": 1210,
+        "cost": 845,
+        "power": 270055000
+    },
+    {
+        "level": 1211,
+        "cost": 845,
+        "power": 270477500
+    },
+    {
+        "level": 1212,
+        "cost": 845,
+        "power": 270900000
+    },
+    {
+        "level": 1213,
+        "cost": 845,
+        "power": 271322500
+    },
+    {
+        "level": 1214,
+        "cost": 850,
+        "power": 271747500
+    },
+    {
+        "level": 1215,
+        "cost": 850,
+        "power": 272172500
+    },
+    {
+        "level": 1216,
+        "cost": 850,
+        "power": 272597500
+    },
+    {
+        "level": 1217,
+        "cost": 850,
+        "power": 273022500
+    },
+    {
+        "level": 1218,
+        "cost": 850,
+        "power": 273447500
+    },
+    {
+        "level": 1219,
+        "cost": 850,
+        "power": 273872500
+    },
+    {
+        "level": 1220,
+        "cost": 850,
+        "power": 274297500
+    },
+    {
+        "level": 1221,
+        "cost": 850,
+        "power": 274722500
+    },
+    {
+        "level": 1222,
+        "cost": 855,
+        "power": 275150000
+    },
+    {
+        "level": 1223,
+        "cost": 855,
+        "power": 275577500
+    },
+    {
+        "level": 1224,
+        "cost": 855,
+        "power": 276005000
+    },
+    {
+        "level": 1225,
+        "cost": 855,
+        "power": 276432500
+    },
+    {
+        "level": 1226,
+        "cost": 855,
+        "power": 276860000
+    },
+    {
+        "level": 1227,
+        "cost": 855,
+        "power": 277287500
+    },
+    {
+        "level": 1228,
+        "cost": 855,
+        "power": 277715000
+    },
+    {
+        "level": 1229,
+        "cost": 855,
+        "power": 278142500
+    },
+    {
+        "level": 1230,
+        "cost": 860,
+        "power": 278572500
+    },
+    {
+        "level": 1231,
+        "cost": 860,
+        "power": 279002500
+    },
+    {
+        "level": 1232,
+        "cost": 860,
+        "power": 279432500
+    },
+    {
+        "level": 1233,
+        "cost": 860,
+        "power": 279862500
+    },
+    {
+        "level": 1234,
+        "cost": 860,
+        "power": 280292500
+    },
+    {
+        "level": 1235,
+        "cost": 860,
+        "power": 280722500
+    },
+    {
+        "level": 1236,
+        "cost": 860,
+        "power": 281152500
+    },
+    {
+        "level": 1237,
+        "cost": 860,
+        "power": 281582500
+    },
+    {
+        "level": 1238,
+        "cost": 865,
+        "power": 282015000
+    },
+    {
+        "level": 1239,
+        "cost": 865,
+        "power": 282447500
+    },
+    {
+        "level": 1240,
+        "cost": 865,
+        "power": 282880000
+    },
+    {
+        "level": 1241,
+        "cost": 865,
+        "power": 283312500
+    },
+    {
+        "level": 1242,
+        "cost": 865,
+        "power": 283745000
+    },
+    {
+        "level": 1243,
+        "cost": 865,
+        "power": 284177500
+    },
+    {
+        "level": 1244,
+        "cost": 865,
+        "power": 284610000
+    },
+    {
+        "level": 1245,
+        "cost": 865,
+        "power": 285042500
+    },
+    {
+        "level": 1246,
+        "cost": 870,
+        "power": 285477500
+    },
+    {
+        "level": 1247,
+        "cost": 870,
+        "power": 285912500
+    },
+    {
+        "level": 1248,
+        "cost": 870,
+        "power": 286347500
+    },
+    {
+        "level": 1249,
+        "cost": 870,
+        "power": 286782500
+    },
+    {
+        "level": 1250,
+        "cost": 870,
+        "power": 287217500
+    },
+    {
+        "level": 1251,
+        "cost": 870,
+        "power": 287652500
+    },
+    {
+        "level": 1252,
+        "cost": 870,
+        "power": 288087500
+    },
+    {
+        "level": 1253,
+        "cost": 870,
+        "power": 288522500
+    },
+    {
+        "level": 1254,
+        "cost": 875,
+        "power": 288960000
+    },
+    {
+        "level": 1255,
+        "cost": 875,
+        "power": 289397500
+    },
+    {
+        "level": 1256,
+        "cost": 875,
+        "power": 289835000
+    },
+    {
+        "level": 1257,
+        "cost": 875,
+        "power": 290272500
+    },
+    {
+        "level": 1258,
+        "cost": 875,
+        "power": 290710000
+    },
+    {
+        "level": 1259,
+        "cost": 875,
+        "power": 291147500
+    },
+    {
+        "level": 1260,
+        "cost": 875,
+        "power": 291585000
+    },
+    {
+        "level": 1261,
+        "cost": 875,
+        "power": 292022500
+    },
+    {
+        "level": 1262,
+        "cost": 880,
+        "power": 292462500
+    },
+    {
+        "level": 1263,
+        "cost": 880,
+        "power": 292902500
+    },
+    {
+        "level": 1264,
+        "cost": 880,
+        "power": 293342500
+    },
+    {
+        "level": 1265,
+        "cost": 880,
+        "power": 293782500
+    },
+    {
+        "level": 1266,
+        "cost": 880,
+        "power": 294222500
+    },
+    {
+        "level": 1267,
+        "cost": 880,
+        "power": 294662500
+    },
+    {
+        "level": 1268,
+        "cost": 880,
+        "power": 295102500
+    },
+    {
+        "level": 1269,
+        "cost": 880,
+        "power": 295542500
+    },
+    {
+        "level": 1270,
+        "cost": 885,
+        "power": 295985000
+    },
+    {
+        "level": 1271,
+        "cost": 885,
+        "power": 296427500
+    },
+    {
+        "level": 1272,
+        "cost": 885,
+        "power": 296870000
+    },
+    {
+        "level": 1273,
+        "cost": 885,
+        "power": 297312500
+    },
+    {
+        "level": 1274,
+        "cost": 885,
+        "power": 297755000
+    },
+    {
+        "level": 1275,
+        "cost": 885,
+        "power": 298197500
+    },
+    {
+        "level": 1276,
+        "cost": 885,
+        "power": 298640000
+    },
+    {
+        "level": 1277,
+        "cost": 885,
+        "power": 299082500
+    },
+    {
+        "level": 1278,
+        "cost": 890,
+        "power": 299527500
+    },
+    {
+        "level": 1279,
+        "cost": 890,
+        "power": 299972500
+    },
+    {
+        "level": 1280,
+        "cost": 890,
+        "power": 300417500
+    },
+    {
+        "level": 1281,
+        "cost": 890,
+        "power": 300862500
+    },
+    {
+        "level": 1282,
+        "cost": 890,
+        "power": 301307500
+    },
+    {
+        "level": 1283,
+        "cost": 890,
+        "power": 301752500
+    },
+    {
+        "level": 1284,
+        "cost": 890,
+        "power": 302197500
+    },
+    {
+        "level": 1285,
+        "cost": 890,
+        "power": 302642500
+    },
+    {
+        "level": 1286,
+        "cost": 895,
+        "power": 303090000
+    },
+    {
+        "level": 1287,
+        "cost": 895,
+        "power": 303537500
+    },
+    {
+        "level": 1288,
+        "cost": 895,
+        "power": 303985000
+    },
+    {
+        "level": 1289,
+        "cost": 895,
+        "power": 304432500
+    },
+    {
+        "level": 1290,
+        "cost": 895,
+        "power": 304880000
+    },
+    {
+        "level": 1291,
+        "cost": 895,
+        "power": 305327500
+    },
+    {
+        "level": 1292,
+        "cost": 895,
+        "power": 305775000
+    },
+    {
+        "level": 1293,
+        "cost": 895,
+        "power": 306222500
+    },
+    {
+        "level": 1294,
+        "cost": 900,
+        "power": 306672500
+    },
+    {
+        "level": 1295,
+        "cost": 900,
+        "power": 307122500
+    },
+    {
+        "level": 1296,
+        "cost": 900,
+        "power": 307572500
+    },
+    {
+        "level": 1297,
+        "cost": 900,
+        "power": 308022500
+    },
+    {
+        "level": 1298,
+        "cost": 900,
+        "power": 308472500
+    },
+    {
+        "level": 1299,
+        "cost": 900,
+        "power": 308922500
+    },
+    {
+        "level": 1300,
+        "cost": 900,
+        "power": 309372500
+    },
+    {
+        "level": 1301,
+        "cost": 900,
+        "power": 309822500
+    },
+    {
+        "level": 1302,
+        "cost": 905,
+        "power": 310275000
+    },
+    {
+        "level": 1303,
+        "cost": 905,
+        "power": 310727500
+    },
+    {
+        "level": 1304,
+        "cost": 905,
+        "power": 311180000
+    },
+    {
+        "level": 1305,
+        "cost": 905,
+        "power": 311632500
+    },
+    {
+        "level": 1306,
+        "cost": 905,
+        "power": 312085000
+    },
+    {
+        "level": 1307,
+        "cost": 905,
+        "power": 312537500
+    },
+    {
+        "level": 1308,
+        "cost": 905,
+        "power": 312990000
+    },
+    {
+        "level": 1309,
+        "cost": 905,
+        "power": 313442500
+    },
+    {
+        "level": 1310,
+        "cost": 910,
+        "power": 313897500
+    },
+    {
+        "level": 1311,
+        "cost": 910,
+        "power": 314352500
+    },
+    {
+        "level": 1312,
+        "cost": 910,
+        "power": 314807500
+    },
+    {
+        "level": 1313,
+        "cost": 910,
+        "power": 315262500
+    },
+    {
+        "level": 1314,
+        "cost": 910,
+        "power": 315717500
+    },
+    {
+        "level": 1315,
+        "cost": 910,
+        "power": 316172500
+    },
+    {
+        "level": 1316,
+        "cost": 910,
+        "power": 316627500
+    },
+    {
+        "level": 1317,
+        "cost": 910,
+        "power": 317082500
+    },
+    {
+        "level": 1318,
+        "cost": 915,
+        "power": 317540000
+    },
+    {
+        "level": 1319,
+        "cost": 915,
+        "power": 317997500
+    },
+    {
+        "level": 1320,
+        "cost": 915,
+        "power": 318455000
+    },
+    {
+        "level": 1321,
+        "cost": 915,
+        "power": 318912500
+    },
+    {
+        "level": 1322,
+        "cost": 915,
+        "power": 319370000
+    },
+    {
+        "level": 1323,
+        "cost": 915,
+        "power": 319827500
+    },
+    {
+        "level": 1324,
+        "cost": 915,
+        "power": 320285000
+    },
+    {
+        "level": 1325,
+        "cost": 915,
+        "power": 320742500
+    },
+    {
+        "level": 1326,
+        "cost": 920,
+        "power": 321202500
+    },
+    {
+        "level": 1327,
+        "cost": 920,
+        "power": 321662500
+    },
+    {
+        "level": 1328,
+        "cost": 920,
+        "power": 322122500
+    },
+    {
+        "level": 1329,
+        "cost": 920,
+        "power": 322582500
+    },
+    {
+        "level": 1330,
+        "cost": 920,
+        "power": 323042500
+    },
+    {
+        "level": 1331,
+        "cost": 920,
+        "power": 323502500
+    },
+    {
+        "level": 1332,
+        "cost": 920,
+        "power": 323962500
+    },
+    {
+        "level": 1333,
+        "cost": 920,
+        "power": 324422500
+    },
+    {
+        "level": 1334,
+        "cost": 925,
+        "power": 324885000
+    },
+    {
+        "level": 1335,
+        "cost": 925,
+        "power": 325347500
+    },
+    {
+        "level": 1336,
+        "cost": 925,
+        "power": 325810000
+    },
+    {
+        "level": 1337,
+        "cost": 925,
+        "power": 326272500
+    },
+    {
+        "level": 1338,
+        "cost": 925,
+        "power": 326735000
+    },
+    {
+        "level": 1339,
+        "cost": 925,
+        "power": 327197500
+    },
+    {
+        "level": 1340,
+        "cost": 925,
+        "power": 327660000
+    },
+    {
+        "level": 1341,
+        "cost": 925,
+        "power": 328122500
+    },
+    {
+        "level": 1342,
+        "cost": 925,
+        "power": 328585000
+    },
+    {
+        "level": 1343,
+        "cost": 930,
+        "power": 329050000
+    },
+    {
+        "level": 1344,
+        "cost": 930,
+        "power": 329515000
+    },
+    {
+        "level": 1345,
+        "cost": 930,
+        "power": 329980000
+    },
+    {
+        "level": 1346,
+        "cost": 930,
+        "power": 330445000
+    },
+    {
+        "level": 1347,
+        "cost": 930,
+        "power": 330910000
+    },
+    {
+        "level": 1348,
+        "cost": 930,
+        "power": 331375000
+    },
+    {
+        "level": 1349,
+        "cost": 930,
+        "power": 331840000
+    },
+    {
+        "level": 1350,
+        "cost": 930,
+        "power": 332305000
+    },
+    {
+        "level": 1351,
+        "cost": 935,
+        "power": 332772500
+    },
+    {
+        "level": 1352,
+        "cost": 935,
+        "power": 333240000
+    },
+    {
+        "level": 1353,
+        "cost": 935,
+        "power": 333707500
+    },
+    {
+        "level": 1354,
+        "cost": 935,
+        "power": 334175000
+    },
+    {
+        "level": 1355,
+        "cost": 935,
+        "power": 334642500
+    },
+    {
+        "level": 1356,
+        "cost": 935,
+        "power": 335110000
+    },
+    {
+        "level": 1357,
+        "cost": 935,
+        "power": 335577500
+    },
+    {
+        "level": 1358,
+        "cost": 935,
+        "power": 336045000
+    },
+    {
+        "level": 1359,
+        "cost": 940,
+        "power": 336515000
+    },
+    {
+        "level": 1360,
+        "cost": 940,
+        "power": 336985000
+    },
+    {
+        "level": 1361,
+        "cost": 940,
+        "power": 337455000
+    },
+    {
+        "level": 1362,
+        "cost": 940,
+        "power": 337925000
+    },
+    {
+        "level": 1363,
+        "cost": 940,
+        "power": 338395000
+    },
+    {
+        "level": 1364,
+        "cost": 940,
+        "power": 338865000
+    },
+    {
+        "level": 1365,
+        "cost": 940,
+        "power": 339335000
+    },
+    {
+        "level": 1366,
+        "cost": 940,
+        "power": 339805000
+    },
+    {
+        "level": 1367,
+        "cost": 945,
+        "power": 340277500
+    },
+    {
+        "level": 1368,
+        "cost": 945,
+        "power": 340750000
+    },
+    {
+        "level": 1369,
+        "cost": 945,
+        "power": 341222500
+    },
+    {
+        "level": 1370,
+        "cost": 945,
+        "power": 341695000
+    },
+    {
+        "level": 1371,
+        "cost": 945,
+        "power": 342167500
+    },
+    {
+        "level": 1372,
+        "cost": 945,
+        "power": 342640000
+    },
+    {
+        "level": 1373,
+        "cost": 945,
+        "power": 343112500
+    },
+    {
+        "level": 1374,
+        "cost": 945,
+        "power": 343585000
+    },
+    {
+        "level": 1375,
+        "cost": 950,
+        "power": 344060000
+    },
+    {
+        "level": 1376,
+        "cost": 950,
+        "power": 344535000
+    },
+    {
+        "level": 1377,
+        "cost": 950,
+        "power": 345010000
+    },
+    {
+        "level": 1378,
+        "cost": 950,
+        "power": 345485000
+    },
+    {
+        "level": 1379,
+        "cost": 950,
+        "power": 345960000
+    },
+    {
+        "level": 1380,
+        "cost": 950,
+        "power": 346435000
+    },
+    {
+        "level": 1381,
+        "cost": 950,
+        "power": 346910000
+    },
+    {
+        "level": 1382,
+        "cost": 950,
+        "power": 347385000
+    },
+    {
+        "level": 1383,
+        "cost": 955,
+        "power": 347862500
+    },
+    {
+        "level": 1384,
+        "cost": 955,
+        "power": 348340000
+    },
+    {
+        "level": 1385,
+        "cost": 955,
+        "power": 348817500
+    },
+    {
+        "level": 1386,
+        "cost": 955,
+        "power": 349295000
+    },
+    {
+        "level": 1387,
+        "cost": 955,
+        "power": 349772500
+    },
+    {
+        "level": 1388,
+        "cost": 955,
+        "power": 350250000
+    },
+    {
+        "level": 1389,
+        "cost": 955,
+        "power": 350727500
+    },
+    {
+        "level": 1390,
+        "cost": 955,
+        "power": 351205000
+    },
+    {
+        "level": 1391,
+        "cost": 960,
+        "power": 351685000
+    },
+    {
+        "level": 1392,
+        "cost": 960,
+        "power": 352165000
+    },
+    {
+        "level": 1393,
+        "cost": 960,
+        "power": 352645000
+    },
+    {
+        "level": 1394,
+        "cost": 960,
+        "power": 353125000
+    },
+    {
+        "level": 1395,
+        "cost": 960,
+        "power": 353605000
+    },
+    {
+        "level": 1396,
+        "cost": 960,
+        "power": 354085000
+    },
+    {
+        "level": 1397,
+        "cost": 960,
+        "power": 354565000
+    },
+    {
+        "level": 1398,
+        "cost": 960,
+        "power": 355045000
+    },
+    {
+        "level": 1399,
+        "cost": 965,
+        "power": 355527500
+    },
+    {
+        "level": 1400,
+        "cost": 965,
+        "power": 356010000
+    },
+    {
+        "level": 1401,
+        "cost": 965,
+        "power": 356492500
+    },
+    {
+        "level": 1402,
+        "cost": 965,
+        "power": 356975000
+    },
+    {
+        "level": 1403,
+        "cost": 965,
+        "power": 357457500
+    },
+    {
+        "level": 1404,
+        "cost": 965,
+        "power": 357940000
+    },
+    {
+        "level": 1405,
+        "cost": 965,
+        "power": 358422500
+    },
+    {
+        "level": 1406,
+        "cost": 965,
+        "power": 358905000
+    },
+    {
+        "level": 1407,
+        "cost": 970,
+        "power": 359390000
+    },
+    {
+        "level": 1408,
+        "cost": 970,
+        "power": 359875000
+    },
+    {
+        "level": 1409,
+        "cost": 970,
+        "power": 360360000
+    },
+    {
+        "level": 1410,
+        "cost": 970,
+        "power": 360845000
+    },
+    {
+        "level": 1411,
+        "cost": 970,
+        "power": 361330000
+    },
+    {
+        "level": 1412,
+        "cost": 970,
+        "power": 361815000
+    },
+    {
+        "level": 1413,
+        "cost": 970,
+        "power": 362300000
+    },
+    {
+        "level": 1414,
+        "cost": 970,
+        "power": 362785000
+    },
+    {
+        "level": 1415,
+        "cost": 975,
+        "power": 363272500
+    },
+    {
+        "level": 1416,
+        "cost": 975,
+        "power": 363760000
+    },
+    {
+        "level": 1417,
+        "cost": 975,
+        "power": 364247500
+    },
+    {
+        "level": 1418,
+        "cost": 975,
+        "power": 364735000
+    },
+    {
+        "level": 1419,
+        "cost": 975,
+        "power": 365222500
+    },
+    {
+        "level": 1420,
+        "cost": 975,
+        "power": 365710000
+    },
+    {
+        "level": 1421,
+        "cost": 975,
+        "power": 366197500
+    },
+    {
+        "level": 1422,
+        "cost": 975,
+        "power": 366685000
+    },
+    {
+        "level": 1423,
+        "cost": 980,
+        "power": 367175000
+    },
+    {
+        "level": 1424,
+        "cost": 980,
+        "power": 367665000
+    },
+    {
+        "level": 1425,
+        "cost": 980,
+        "power": 368155000
+    },
+    {
+        "level": 1426,
+        "cost": 980,
+        "power": 368645000
+    },
+    {
+        "level": 1427,
+        "cost": 980,
+        "power": 369135000
+    },
+    {
+        "level": 1428,
+        "cost": 980,
+        "power": 369625000
+    },
+    {
+        "level": 1429,
+        "cost": 980,
+        "power": 370115000
+    },
+    {
+        "level": 1430,
+        "cost": 980,
+        "power": 370605000
+    },
+    {
+        "level": 1431,
+        "cost": 985,
+        "power": 371097500
+    },
+    {
+        "level": 1432,
+        "cost": 985,
+        "power": 371590000
+    },
+    {
+        "level": 1433,
+        "cost": 985,
+        "power": 372082500
+    },
+    {
+        "level": 1434,
+        "cost": 985,
+        "power": 372575000
+    },
+    {
+        "level": 1435,
+        "cost": 985,
+        "power": 373067500
+    },
+    {
+        "level": 1436,
+        "cost": 985,
+        "power": 373560000
+    },
+    {
+        "level": 1437,
+        "cost": 985,
+        "power": 374052500
+    },
+    {
+        "level": 1438,
+        "cost": 985,
+        "power": 374545000
+    },
+    {
+        "level": 1439,
+        "cost": 985,
+        "power": 375037500
+    },
+    {
+        "level": 1440,
+        "cost": 990,
+        "power": 375532500
+    },
+    {
+        "level": 1441,
+        "cost": 990,
+        "power": 376027500
+    },
+    {
+        "level": 1442,
+        "cost": 990,
+        "power": 376522500
+    },
+    {
+        "level": 1443,
+        "cost": 990,
+        "power": 377017500
+    },
+    {
+        "level": 1444,
+        "cost": 990,
+        "power": 377512500
+    },
+    {
+        "level": 1445,
+        "cost": 990,
+        "power": 378007500
+    },
+    {
+        "level": 1446,
+        "cost": 990,
+        "power": 378502500
+    },
+    {
+        "level": 1447,
+        "cost": 990,
+        "power": 378997500
+    },
+    {
+        "level": 1448,
+        "cost": 995,
+        "power": 379495000
+    },
+    {
+        "level": 1449,
+        "cost": 995,
+        "power": 379992500
+    },
+    {
+        "level": 1450,
+        "cost": 995,
+        "power": 380490000
+    },
+    {
+        "level": 1451,
+        "cost": 995,
+        "power": 380987500
+    },
+    {
+        "level": 1452,
+        "cost": 995,
+        "power": 381485000
+    },
+    {
+        "level": 1453,
+        "cost": 995,
+        "power": 381982500
+    },
+    {
+        "level": 1454,
+        "cost": 995,
+        "power": 382480000
+    },
+    {
+        "level": 1455,
+        "cost": 995,
+        "power": 382977500
+    },
+    {
+        "level": 1456,
+        "cost": 1000,
+        "power": 383477500
+    },
+    {
+        "level": 1457,
+        "cost": 1000,
+        "power": 383977500
+    },
+    {
+        "level": 1458,
+        "cost": 1000,
+        "power": 384477500
+    },
+    {
+        "level": 1459,
+        "cost": 1000,
+        "power": 384977500
+    },
+    {
+        "level": 1460,
+        "cost": 1000,
+        "power": 385477500
+    },
+    {
+        "level": 1461,
+        "cost": 1000,
+        "power": 385977500
+    },
+    {
+        "level": 1462,
+        "cost": 1000,
+        "power": 386477500
+    },
+    {
+        "level": 1463,
+        "cost": 1000,
+        "power": 386977500
+    },
+    {
+        "level": 1464,
+        "cost": 1005,
+        "power": 387480000
+    },
+    {
+        "level": 1465,
+        "cost": 1005,
+        "power": 387982500
+    },
+    {
+        "level": 1466,
+        "cost": 1005,
+        "power": 388485000
+    },
+    {
+        "level": 1467,
+        "cost": 1005,
+        "power": 388987500
+    },
+    {
+        "level": 1468,
+        "cost": 1005,
+        "power": 389490000
+    },
+    {
+        "level": 1469,
+        "cost": 1005,
+        "power": 389992500
+    },
+    {
+        "level": 1470,
+        "cost": 1005,
+        "power": 390495000
+    },
+    {
+        "level": 1471,
+        "cost": 1005,
+        "power": 390997500
+    },
+    {
+        "level": 1472,
+        "cost": 1010,
+        "power": 391502500
+    },
+    {
+        "level": 1473,
+        "cost": 1010,
+        "power": 392007500
+    },
+    {
+        "level": 1474,
+        "cost": 1010,
+        "power": 392512500
+    },
+    {
+        "level": 1475,
+        "cost": 1010,
+        "power": 393017500
+    },
+    {
+        "level": 1476,
+        "cost": 1010,
+        "power": 393522500
+    },
+    {
+        "level": 1477,
+        "cost": 1010,
+        "power": 394027500
+    },
+    {
+        "level": 1478,
+        "cost": 1010,
+        "power": 394532500
+    },
+    {
+        "level": 1479,
+        "cost": 1010,
+        "power": 395037500
+    },
+    {
+        "level": 1480,
+        "cost": 1015,
+        "power": 395545000
+    },
+    {
+        "level": 1481,
+        "cost": 1015,
+        "power": 396052500
+    },
+    {
+        "level": 1482,
+        "cost": 1015,
+        "power": 396560000
+    },
+    {
+        "level": 1483,
+        "cost": 1015,
+        "power": 397067500
+    },
+    {
+        "level": 1484,
+        "cost": 1015,
+        "power": 397575000
+    },
+    {
+        "level": 1485,
+        "cost": 1015,
+        "power": 398082500
+    },
+    {
+        "level": 1486,
+        "cost": 1015,
+        "power": 398590000
+    },
+    {
+        "level": 1487,
+        "cost": 1015,
+        "power": 399097500
+    },
+    {
+        "level": 1488,
+        "cost": 1020,
+        "power": 399607500
+    },
+    {
+        "level": 1489,
+        "cost": 1020,
+        "power": 400117500
+    },
+    {
+        "level": 1490,
+        "cost": 1020,
+        "power": 400627500
+    },
+    {
+        "level": 1491,
+        "cost": 1020,
+        "power": 401137500
+    },
+    {
+        "level": 1492,
+        "cost": 1020,
+        "power": 401647500
+    },
+    {
+        "level": 1493,
+        "cost": 1020,
+        "power": 402157500
+    },
+    {
+        "level": 1494,
+        "cost": 1020,
+        "power": 402667500
+    },
+    {
+        "level": 1495,
+        "cost": 1020,
+        "power": 403177500
+    },
+    {
+        "level": 1496,
+        "cost": 1020,
+        "power": 403687500
+    },
+    {
+        "level": 1497,
+        "cost": 1025,
+        "power": 404200000
+    },
+    {
+        "level": 1498,
+        "cost": 1025,
+        "power": 404712500
+    },
+    {
+        "level": 1499,
+        "cost": 1025,
+        "power": 405225000
+    },
+    {
+        "level": 1500,
+        "cost": 1025,
+        "power": 405737500
+    },
+    {
+        "level": 1501,
+        "cost": 1025,
+        "power": 406250000
+    },
+    {
+        "level": 1502,
+        "cost": 1025,
+        "power": 406762500
+    },
+    {
+        "level": 1503,
+        "cost": 1025,
+        "power": 407275000
+    },
+    {
+        "level": 1504,
+        "cost": 1025,
+        "power": 407787500
+    },
+    {
+        "level": 1505,
+        "cost": 1030,
+        "power": 408302500
+    },
+    {
+        "level": 1506,
+        "cost": 1030,
+        "power": 408817500
+    },
+    {
+        "level": 1507,
+        "cost": 1030,
+        "power": 409332500
+    },
+    {
+        "level": 1508,
+        "cost": 1030,
+        "power": 409847500
+    },
+    {
+        "level": 1509,
+        "cost": 1030,
+        "power": 410362500
+    },
+    {
+        "level": 1510,
+        "cost": 1030,
+        "power": 410877500
+    },
+    {
+        "level": 1511,
+        "cost": 1030,
+        "power": 411392500
+    },
+    {
+        "level": 1512,
+        "cost": 1030,
+        "power": 411907500
+    },
+    {
+        "level": 1513,
+        "cost": 1035,
+        "power": 412425000
+    },
+    {
+        "level": 1514,
+        "cost": 1035,
+        "power": 412942500
+    },
+    {
+        "level": 1515,
+        "cost": 1035,
+        "power": 413460000
+    },
+    {
+        "level": 1516,
+        "cost": 1035,
+        "power": 413977500
+    },
+    {
+        "level": 1517,
+        "cost": 1035,
+        "power": 414495000
+    },
+    {
+        "level": 1518,
+        "cost": 1035,
+        "power": 415012500
+    },
+    {
+        "level": 1519,
+        "cost": 1035,
+        "power": 415530000
+    },
+    {
+        "level": 1520,
+        "cost": 1035,
+        "power": 416047500
+    },
+    {
+        "level": 1521,
+        "cost": 1040,
+        "power": 416567500
+    },
+    {
+        "level": 1522,
+        "cost": 1040,
+        "power": 417087500
+    },
+    {
+        "level": 1523,
+        "cost": 1040,
+        "power": 417607500
+    },
+    {
+        "level": 1524,
+        "cost": 1040,
+        "power": 418127500
+    },
+    {
+        "level": 1525,
+        "cost": 1040,
+        "power": 418647500
+    },
+    {
+        "level": 1526,
+        "cost": 1040,
+        "power": 419167500
+    },
+    {
+        "level": 1527,
+        "cost": 1040,
+        "power": 419687500
+    },
+    {
+        "level": 1528,
+        "cost": 1040,
+        "power": 420207500
+    },
+    {
+        "level": 1529,
+        "cost": 1045,
+        "power": 420730000
+    },
+    {
+        "level": 1530,
+        "cost": 1045,
+        "power": 421252500
+    },
+    {
+        "level": 1531,
+        "cost": 1045,
+        "power": 421775000
+    },
+    {
+        "level": 1532,
+        "cost": 1045,
+        "power": 422297500
+    },
+    {
+        "level": 1533,
+        "cost": 1045,
+        "power": 422820000
+    },
+    {
+        "level": 1534,
+        "cost": 1045,
+        "power": 423342500
+    },
+    {
+        "level": 1535,
+        "cost": 1045,
+        "power": 423865000
+    },
+    {
+        "level": 1536,
+        "cost": 1045,
+        "power": 424387500
+    },
+    {
+        "level": 1537,
+        "cost": 1050,
+        "power": 424912500
+    },
+    {
+        "level": 1538,
+        "cost": 1050,
+        "power": 425437500
+    },
+    {
+        "level": 1539,
+        "cost": 1050,
+        "power": 425962500
+    },
+    {
+        "level": 1540,
+        "cost": 1050,
+        "power": 426487500
+    },
+    {
+        "level": 1541,
+        "cost": 1050,
+        "power": 427012500
+    },
+    {
+        "level": 1542,
+        "cost": 1050,
+        "power": 427537500
+    },
+    {
+        "level": 1543,
+        "cost": 1050,
+        "power": 428062500
+    },
+    {
+        "level": 1544,
+        "cost": 1050,
+        "power": 428587500
+    },
+    {
+        "level": 1545,
+        "cost": 1055,
+        "power": 429115000
+    },
+    {
+        "level": 1546,
+        "cost": 1055,
+        "power": 429642500
+    },
+    {
+        "level": 1547,
+        "cost": 1055,
+        "power": 430170000
+    },
+    {
+        "level": 1548,
+        "cost": 1055,
+        "power": 430697500
+    },
+    {
+        "level": 1549,
+        "cost": 1055,
+        "power": 431225000
+    },
+    {
+        "level": 1550,
+        "cost": 1055,
+        "power": 431752500
+    },
+    {
+        "level": 1551,
+        "cost": 1055,
+        "power": 432280000
+    },
+    {
+        "level": 1552,
+        "cost": 1055,
+        "power": 432807500
+    },
+    {
+        "level": 1553,
+        "cost": 1055,
+        "power": 433335000
+    },
+    {
+        "level": 1554,
+        "cost": 1060,
+        "power": 433865000
+    },
+    {
+        "level": 1555,
+        "cost": 1060,
+        "power": 434395000
+    },
+    {
+        "level": 1556,
+        "cost": 1060,
+        "power": 434925000
+    },
+    {
+        "level": 1557,
+        "cost": 1060,
+        "power": 435455000
+    },
+    {
+        "level": 1558,
+        "cost": 1060,
+        "power": 435985000
+    },
+    {
+        "level": 1559,
+        "cost": 1060,
+        "power": 436515000
+    },
+    {
+        "level": 1560,
+        "cost": 1060,
+        "power": 437045000
+    },
+    {
+        "level": 1561,
+        "cost": 1060,
+        "power": 437575000
+    },
+    {
+        "level": 1562,
+        "cost": 1065,
+        "power": 438107500
+    },
+    {
+        "level": 1563,
+        "cost": 1065,
+        "power": 438640000
+    },
+    {
+        "level": 1564,
+        "cost": 1065,
+        "power": 439172500
+    },
+    {
+        "level": 1565,
+        "cost": 1065,
+        "power": 439705000
+    },
+    {
+        "level": 1566,
+        "cost": 1065,
+        "power": 440237500
+    },
+    {
+        "level": 1567,
+        "cost": 1065,
+        "power": 440770000
+    },
+    {
+        "level": 1568,
+        "cost": 1065,
+        "power": 441302500
+    },
+    {
+        "level": 1569,
+        "cost": 1065,
+        "power": 441835000
+    },
+    {
+        "level": 1570,
+        "cost": 1070,
+        "power": 442370000
+    },
+    {
+        "level": 1571,
+        "cost": 1070,
+        "power": 442905000
+    },
+    {
+        "level": 1572,
+        "cost": 1070,
+        "power": 443440000
+    },
+    {
+        "level": 1573,
+        "cost": 1070,
+        "power": 443975000
+    },
+    {
+        "level": 1574,
+        "cost": 1070,
+        "power": 444510000
+    },
+    {
+        "level": 1575,
+        "cost": 1070,
+        "power": 445045000
+    },
+    {
+        "level": 1576,
+        "cost": 1070,
+        "power": 445580000
+    },
+    {
+        "level": 1577,
+        "cost": 1070,
+        "power": 446115000
+    },
+    {
+        "level": 1578,
+        "cost": 1075,
+        "power": 446652500
+    },
+    {
+        "level": 1579,
+        "cost": 1075,
+        "power": 447190000
+    },
+    {
+        "level": 1580,
+        "cost": 1075,
+        "power": 447727500
+    },
+    {
+        "level": 1581,
+        "cost": 1075,
+        "power": 448265000
+    },
+    {
+        "level": 1582,
+        "cost": 1075,
+        "power": 448802500
+    },
+    {
+        "level": 1583,
+        "cost": 1075,
+        "power": 449340000
+    },
+    {
+        "level": 1584,
+        "cost": 1075,
+        "power": 449877500
+    },
+    {
+        "level": 1585,
+        "cost": 1075,
+        "power": 450415000
+    },
+    {
+        "level": 1586,
+        "cost": 1080,
+        "power": 450955000
+    },
+    {
+        "level": 1587,
+        "cost": 1080,
+        "power": 451495000
+    },
+    {
+        "level": 1588,
+        "cost": 1080,
+        "power": 452035000
+    },
+    {
+        "level": 1589,
+        "cost": 1080,
+        "power": 452575000
+    },
+    {
+        "level": 1590,
+        "cost": 1080,
+        "power": 453115000
+    },
+    {
+        "level": 1591,
+        "cost": 1080,
+        "power": 453655000
+    },
+    {
+        "level": 1592,
+        "cost": 1080,
+        "power": 454195000
+    },
+    {
+        "level": 1593,
+        "cost": 1080,
+        "power": 454735000
+    },
+    {
+        "level": 1594,
+        "cost": 1080,
+        "power": 455275000
+    },
+    {
+        "level": 1595,
+        "cost": 1085,
+        "power": 455817500
+    },
+    {
+        "level": 1596,
+        "cost": 1085,
+        "power": 456360000
+    },
+    {
+        "level": 1597,
+        "cost": 1085,
+        "power": 456902500
+    },
+    {
+        "level": 1598,
+        "cost": 1085,
+        "power": 457445000
+    },
+    {
+        "level": 1599,
+        "cost": 1085,
+        "power": 457987500
+    },
+    {
+        "level": 1600,
+        "cost": 1085,
+        "power": 458530000
+    },
+    {
+        "level": 1601,
+        "cost": 1085,
+        "power": 459072500
+    },
+    {
+        "level": 1602,
+        "cost": 1085,
+        "power": 459615000
+    },
+    {
+        "level": 1603,
+        "cost": 1090,
+        "power": 460160000
+    },
+    {
+        "level": 1604,
+        "cost": 1090,
+        "power": 460705000
+    },
+    {
+        "level": 1605,
+        "cost": 1090,
+        "power": 461250000
+    },
+    {
+        "level": 1606,
+        "cost": 1090,
+        "power": 461795000
+    },
+    {
+        "level": 1607,
+        "cost": 1090,
+        "power": 462340000
+    },
+    {
+        "level": 1608,
+        "cost": 1090,
+        "power": 462885000
+    },
+    {
+        "level": 1609,
+        "cost": 1090,
+        "power": 463430000
+    },
+    {
+        "level": 1610,
+        "cost": 1090,
+        "power": 463975000
+    },
+    {
+        "level": 1611,
+        "cost": 1095,
+        "power": 464522500
+    },
+    {
+        "level": 1612,
+        "cost": 1095,
+        "power": 465070000
+    },
+    {
+        "level": 1613,
+        "cost": 1095,
+        "power": 465617500
+    },
+    {
+        "level": 1614,
+        "cost": 1095,
+        "power": 466165000
+    },
+    {
+        "level": 1615,
+        "cost": 1095,
+        "power": 466712500
+    },
+    {
+        "level": 1616,
+        "cost": 1095,
+        "power": 467260000
+    },
+    {
+        "level": 1617,
+        "cost": 1095,
+        "power": 467807500
+    },
+    {
+        "level": 1618,
+        "cost": 1095,
+        "power": 468355000
+    },
+    {
+        "level": 1619,
+        "cost": 1100,
+        "power": 468905000
+    },
+    {
+        "level": 1620,
+        "cost": 1100,
+        "power": 469455000
+    },
+    {
+        "level": 1621,
+        "cost": 1100,
+        "power": 470005000
+    },
+    {
+        "level": 1622,
+        "cost": 1100,
+        "power": 470555000
+    },
+    {
+        "level": 1623,
+        "cost": 1100,
+        "power": 471105000
+    },
+    {
+        "level": 1624,
+        "cost": 1100,
+        "power": 471655000
+    },
+    {
+        "level": 1625,
+        "cost": 1100,
+        "power": 472205000
+    },
+    {
+        "level": 1626,
+        "cost": 1100,
+        "power": 472755000
+    },
+    {
+        "level": 1627,
+        "cost": 1105,
+        "power": 473307500
+    },
+    {
+        "level": 1628,
+        "cost": 1105,
+        "power": 473860000
+    },
+    {
+        "level": 1629,
+        "cost": 1105,
+        "power": 474412500
+    },
+    {
+        "level": 1630,
+        "cost": 1105,
+        "power": 474965000
+    },
+    {
+        "level": 1631,
+        "cost": 1105,
+        "power": 475517500
+    },
+    {
+        "level": 1632,
+        "cost": 1105,
+        "power": 476070000
+    },
+    {
+        "level": 1633,
+        "cost": 1105,
+        "power": 476622500
+    },
+    {
+        "level": 1634,
+        "cost": 1105,
+        "power": 477175000
+    },
+    {
+        "level": 1635,
+        "cost": 1105,
+        "power": 477727500
+    },
+    {
+        "level": 1636,
+        "cost": 1110,
+        "power": 478282500
+    },
+    {
+        "level": 1637,
+        "cost": 1110,
+        "power": 478837500
+    },
+    {
+        "level": 1638,
+        "cost": 1110,
+        "power": 479392500
+    },
+    {
+        "level": 1639,
+        "cost": 1110,
+        "power": 479947500
+    },
+    {
+        "level": 1640,
+        "cost": 1110,
+        "power": 480502500
+    },
+    {
+        "level": 1641,
+        "cost": 1110,
+        "power": 481057500
+    },
+    {
+        "level": 1642,
+        "cost": 1110,
+        "power": 481612500
+    },
+    {
+        "level": 1643,
+        "cost": 1110,
+        "power": 482167500
+    },
+    {
+        "level": 1644,
+        "cost": 1115,
+        "power": 482725000
+    },
+    {
+        "level": 1645,
+        "cost": 1115,
+        "power": 483282500
+    },
+    {
+        "level": 1646,
+        "cost": 1115,
+        "power": 483840000
+    },
+    {
+        "level": 1647,
+        "cost": 1115,
+        "power": 484397500
+    },
+    {
+        "level": 1648,
+        "cost": 1115,
+        "power": 484955000
+    },
+    {
+        "level": 1649,
+        "cost": 1115,
+        "power": 485512500
+    },
+    {
+        "level": 1650,
+        "cost": 1115,
+        "power": 486070000
+    },
+    {
+        "level": 1651,
+        "cost": 1115,
+        "power": 486627500
+    },
+    {
+        "level": 1652,
+        "cost": 1120,
+        "power": 487187500
+    },
+    {
+        "level": 1653,
+        "cost": 1120,
+        "power": 487747500
+    },
+    {
+        "level": 1654,
+        "cost": 1120,
+        "power": 488307500
+    },
+    {
+        "level": 1655,
+        "cost": 1120,
+        "power": 488867500
+    },
+    {
+        "level": 1656,
+        "cost": 1120,
+        "power": 489427500
+    },
+    {
+        "level": 1657,
+        "cost": 1120,
+        "power": 489987500
+    },
+    {
+        "level": 1658,
+        "cost": 1120,
+        "power": 490547500
+    },
+    {
+        "level": 1659,
+        "cost": 1120,
+        "power": 491107500
+    },
+    {
+        "level": 1660,
+        "cost": 1125,
+        "power": 491670000
+    },
+    {
+        "level": 1661,
+        "cost": 1125,
+        "power": 492232500
+    },
+    {
+        "level": 1662,
+        "cost": 1125,
+        "power": 492795000
+    },
+    {
+        "level": 1663,
+        "cost": 1125,
+        "power": 493357500
+    },
+    {
+        "level": 1664,
+        "cost": 1125,
+        "power": 493920000
+    },
+    {
+        "level": 1665,
+        "cost": 1125,
+        "power": 494482500
+    },
+    {
+        "level": 1666,
+        "cost": 1125,
+        "power": 495045000
+    },
+    {
+        "level": 1667,
+        "cost": 1125,
+        "power": 495607500
+    },
+    {
+        "level": 1668,
+        "cost": 1125,
+        "power": 496170000
+    },
+    {
+        "level": 1669,
+        "cost": 1130,
+        "power": 496735000
+    },
+    {
+        "level": 1670,
+        "cost": 1130,
+        "power": 497300000
+    },
+    {
+        "level": 1671,
+        "cost": 1130,
+        "power": 497865000
+    },
+    {
+        "level": 1672,
+        "cost": 1130,
+        "power": 498430000
+    },
+    {
+        "level": 1673,
+        "cost": 1130,
+        "power": 498995000
+    },
+    {
+        "level": 1674,
+        "cost": 1130,
+        "power": 499560000
+    },
+    {
+        "level": 1675,
+        "cost": 1130,
+        "power": 500125000
+    },
+    {
+        "level": 1676,
+        "cost": 1130,
+        "power": 500690000
+    },
+    {
+        "level": 1677,
+        "cost": 1135,
+        "power": 501257500
+    },
+    {
+        "level": 1678,
+        "cost": 1135,
+        "power": 501825000
+    },
+    {
+        "level": 1679,
+        "cost": 1135,
+        "power": 502392500
+    },
+    {
+        "level": 1680,
+        "cost": 1135,
+        "power": 502960000
+    },
+    {
+        "level": 1681,
+        "cost": 1135,
+        "power": 503527500
+    },
+    {
+        "level": 1682,
+        "cost": 1135,
+        "power": 504095000
+    },
+    {
+        "level": 1683,
+        "cost": 1135,
+        "power": 504662500
+    },
+    {
+        "level": 1684,
+        "cost": 1135,
+        "power": 505230000
+    },
+    {
+        "level": 1685,
+        "cost": 1140,
+        "power": 505800000
+    },
+    {
+        "level": 1686,
+        "cost": 1140,
+        "power": 506370000
+    },
+    {
+        "level": 1687,
+        "cost": 1140,
+        "power": 506940000
+    },
+    {
+        "level": 1688,
+        "cost": 1140,
+        "power": 507510000
+    },
+    {
+        "level": 1689,
+        "cost": 1140,
+        "power": 508080000
+    },
+    {
+        "level": 1690,
+        "cost": 1140,
+        "power": 508650000
+    },
+    {
+        "level": 1691,
+        "cost": 1140,
+        "power": 509220000
+    },
+    {
+        "level": 1692,
+        "cost": 1140,
+        "power": 509790000
+    },
+    {
+        "level": 1693,
+        "cost": 1145,
+        "power": 510362500
+    },
+    {
+        "level": 1694,
+        "cost": 1145,
+        "power": 510935000
+    },
+    {
+        "level": 1695,
+        "cost": 1145,
+        "power": 511507500
+    },
+    {
+        "level": 1696,
+        "cost": 1145,
+        "power": 512080000
+    },
+    {
+        "level": 1697,
+        "cost": 1145,
+        "power": 512652500
+    },
+    {
+        "level": 1698,
+        "cost": 1145,
+        "power": 513225000
+    },
+    {
+        "level": 1699,
+        "cost": 1145,
+        "power": 513797500
+    },
+    {
+        "level": 1700,
+        "cost": 1145,
+        "power": 514370000
+    },
+    {
+        "level": 1701,
+        "cost": 1145,
+        "power": 514942500
+    },
+    {
+        "level": 1702,
+        "cost": 1150,
+        "power": 515517500
+    },
+    {
+        "level": 1703,
+        "cost": 1150,
+        "power": 516092500
+    },
+    {
+        "level": 1704,
+        "cost": 1150,
+        "power": 516667500
+    },
+    {
+        "level": 1705,
+        "cost": 1150,
+        "power": 517242500
+    },
+    {
+        "level": 1706,
+        "cost": 1150,
+        "power": 517817500
+    },
+    {
+        "level": 1707,
+        "cost": 1150,
+        "power": 518392500
+    },
+    {
+        "level": 1708,
+        "cost": 1150,
+        "power": 518967500
+    },
+    {
+        "level": 1709,
+        "cost": 1150,
+        "power": 519542500
+    },
+    {
+        "level": 1710,
+        "cost": 1155,
+        "power": 520120000
+    },
+    {
+        "level": 1711,
+        "cost": 1155,
+        "power": 520697500
+    },
+    {
+        "level": 1712,
+        "cost": 1155,
+        "power": 521275000
+    },
+    {
+        "level": 1713,
+        "cost": 1155,
+        "power": 521852500
+    },
+    {
+        "level": 1714,
+        "cost": 1155,
+        "power": 522430000
+    },
+    {
+        "level": 1715,
+        "cost": 1155,
+        "power": 523007500
+    },
+    {
+        "level": 1716,
+        "cost": 1155,
+        "power": 523585000
+    },
+    {
+        "level": 1717,
+        "cost": 1155,
+        "power": 524162500
+    },
+    {
+        "level": 1718,
+        "cost": 1160,
+        "power": 524742500
+    },
+    {
+        "level": 1719,
+        "cost": 1160,
+        "power": 525322500
+    },
+    {
+        "level": 1720,
+        "cost": 1160,
+        "power": 525902500
+    },
+    {
+        "level": 1721,
+        "cost": 1160,
+        "power": 526482500
+    },
+    {
+        "level": 1722,
+        "cost": 1160,
+        "power": 527062500
+    },
+    {
+        "level": 1723,
+        "cost": 1160,
+        "power": 527642500
+    },
+    {
+        "level": 1724,
+        "cost": 1160,
+        "power": 528222500
+    },
+    {
+        "level": 1725,
+        "cost": 1160,
+        "power": 528802500
+    },
+    {
+        "level": 1726,
+        "cost": 1165,
+        "power": 529385000
+    },
+    {
+        "level": 1727,
+        "cost": 1165,
+        "power": 529967500
+    },
+    {
+        "level": 1728,
+        "cost": 1165,
+        "power": 530550000
+    },
+    {
+        "level": 1729,
+        "cost": 1165,
+        "power": 531132500
+    },
+    {
+        "level": 1730,
+        "cost": 1165,
+        "power": 531715000
+    },
+    {
+        "level": 1731,
+        "cost": 1165,
+        "power": 532297500
+    },
+    {
+        "level": 1732,
+        "cost": 1165,
+        "power": 532880000
+    },
+    {
+        "level": 1733,
+        "cost": 1165,
+        "power": 533462500
+    },
+    {
+        "level": 1734,
+        "cost": 1165,
+        "power": 534045000
+    },
+    {
+        "level": 1735,
+        "cost": 1170,
+        "power": 534630000
+    },
+    {
+        "level": 1736,
+        "cost": 1170,
+        "power": 535215000
+    },
+    {
+        "level": 1737,
+        "cost": 1170,
+        "power": 535800000
+    },
+    {
+        "level": 1738,
+        "cost": 1170,
+        "power": 536385000
+    },
+    {
+        "level": 1739,
+        "cost": 1170,
+        "power": 536970000
+    },
+    {
+        "level": 1740,
+        "cost": 1170,
+        "power": 537555000
+    },
+    {
+        "level": 1741,
+        "cost": 1170,
+        "power": 538140000
+    },
+    {
+        "level": 1742,
+        "cost": 1170,
+        "power": 538725000
+    },
+    {
+        "level": 1743,
+        "cost": 1175,
+        "power": 539312500
+    },
+    {
+        "level": 1744,
+        "cost": 1175,
+        "power": 539900000
+    },
+    {
+        "level": 1745,
+        "cost": 1175,
+        "power": 540487500
+    },
+    {
+        "level": 1746,
+        "cost": 1175,
+        "power": 541075000
+    },
+    {
+        "level": 1747,
+        "cost": 1175,
+        "power": 541662500
+    },
+    {
+        "level": 1748,
+        "cost": 1175,
+        "power": 542250000
+    },
+    {
+        "level": 1749,
+        "cost": 1175,
+        "power": 542837500
+    },
+    {
+        "level": 1750,
+        "cost": 1175,
+        "power": 543425000
+    },
+    {
+        "level": 1751,
+        "cost": 1180,
+        "power": 544015000
+    },
+    {
+        "level": 1752,
+        "cost": 1180,
+        "power": 544605000
+    },
+    {
+        "level": 1753,
+        "cost": 1180,
+        "power": 545195000
+    },
+    {
+        "level": 1754,
+        "cost": 1180,
+        "power": 545785000
+    },
+    {
+        "level": 1755,
+        "cost": 1180,
+        "power": 546375000
+    },
+    {
+        "level": 1756,
+        "cost": 1180,
+        "power": 546965000
+    },
+    {
+        "level": 1757,
+        "cost": 1180,
+        "power": 547555000
+    },
+    {
+        "level": 1758,
+        "cost": 1180,
+        "power": 548145000
+    },
+    {
+        "level": 1759,
+        "cost": 1185,
+        "power": 548737500
+    },
+    {
+        "level": 1760,
+        "cost": 1185,
+        "power": 549330000
+    },
+    {
+        "level": 1761,
+        "cost": 1185,
+        "power": 549922500
+    },
+    {
+        "level": 1762,
+        "cost": 1185,
+        "power": 550515000
+    },
+    {
+        "level": 1763,
+        "cost": 1185,
+        "power": 551107500
+    },
+    {
+        "level": 1764,
+        "cost": 1185,
+        "power": 551700000
+    },
+    {
+        "level": 1765,
+        "cost": 1185,
+        "power": 552292500
+    },
+    {
+        "level": 1766,
+        "cost": 1185,
+        "power": 552885000
+    },
+    {
+        "level": 1767,
+        "cost": 1185,
+        "power": 553477500
+    },
+    {
+        "level": 1768,
+        "cost": 1190,
+        "power": 554072500
+    },
+    {
+        "level": 1769,
+        "cost": 1190,
+        "power": 554667500
+    },
+    {
+        "level": 1770,
+        "cost": 1190,
+        "power": 555262500
+    },
+    {
+        "level": 1771,
+        "cost": 1190,
+        "power": 555857500
+    },
+    {
+        "level": 1772,
+        "cost": 1190,
+        "power": 556452500
+    },
+    {
+        "level": 1773,
+        "cost": 1190,
+        "power": 557047500
+    },
+    {
+        "level": 1774,
+        "cost": 1190,
+        "power": 557642500
+    },
+    {
+        "level": 1775,
+        "cost": 1190,
+        "power": 558237500
+    },
+    {
+        "level": 1776,
+        "cost": 1195,
+        "power": 558835000
+    },
+    {
+        "level": 1777,
+        "cost": 1195,
+        "power": 559432500
+    },
+    {
+        "level": 1778,
+        "cost": 1195,
+        "power": 560030000
+    },
+    {
+        "level": 1779,
+        "cost": 1195,
+        "power": 560627500
+    },
+    {
+        "level": 1780,
+        "cost": 1195,
+        "power": 561225000
+    },
+    {
+        "level": 1781,
+        "cost": 1195,
+        "power": 561822500
+    },
+    {
+        "level": 1782,
+        "cost": 1195,
+        "power": 562420000
+    },
+    {
+        "level": 1783,
+        "cost": 1195,
+        "power": 563017500
+    },
+    {
+        "level": 1784,
+        "cost": 1200,
+        "power": 563617500
+    },
+    {
+        "level": 1785,
+        "cost": 1200,
+        "power": 564217500
+    },
+    {
+        "level": 1786,
+        "cost": 1200,
+        "power": 564817500
+    },
+    {
+        "level": 1787,
+        "cost": 1200,
+        "power": 565417500
+    },
+    {
+        "level": 1788,
+        "cost": 1200,
+        "power": 566017500
+    },
+    {
+        "level": 1789,
+        "cost": 1200,
+        "power": 566617500
+    },
+    {
+        "level": 1790,
+        "cost": 1200,
+        "power": 567217500
+    },
+    {
+        "level": 1791,
+        "cost": 1200,
+        "power": 567817500
+    },
+    {
+        "level": 1792,
+        "cost": 1200,
+        "power": 568417500
+    },
+    {
+        "level": 1793,
+        "cost": 1205,
+        "power": 569020000
+    },
+    {
+        "level": 1794,
+        "cost": 1205,
+        "power": 569622500
+    },
+    {
+        "level": 1795,
+        "cost": 1205,
+        "power": 570225000
+    },
+    {
+        "level": 1796,
+        "cost": 1205,
+        "power": 570827500
+    },
+    {
+        "level": 1797,
+        "cost": 1205,
+        "power": 571430000
+    },
+    {
+        "level": 1798,
+        "cost": 1205,
+        "power": 572032500
+    },
+    {
+        "level": 1799,
+        "cost": 1205,
+        "power": 572635000
+    },
+    {
+        "level": 1800,
+        "cost": 1205,
+        "power": 573237500
+    },
+    {
+        "level": 1801,
+        "cost": 1210,
+        "power": 573842500
+    },
+    {
+        "level": 1802,
+        "cost": 1210,
+        "power": 574447500
+    },
+    {
+        "level": 1803,
+        "cost": 1210,
+        "power": 575052500
+    },
+    {
+        "level": 1804,
+        "cost": 1210,
+        "power": 575657500
+    },
+    {
+        "level": 1805,
+        "cost": 1210,
+        "power": 576262500
+    },
+    {
+        "level": 1806,
+        "cost": 1210,
+        "power": 576867500
+    },
+    {
+        "level": 1807,
+        "cost": 1210,
+        "power": 577472500
+    },
+    {
+        "level": 1808,
+        "cost": 1210,
+        "power": 578077500
+    },
+    {
+        "level": 1809,
+        "cost": 1215,
+        "power": 578685000
+    },
+    {
+        "level": 1810,
+        "cost": 1215,
+        "power": 579292500
+    },
+    {
+        "level": 1811,
+        "cost": 1215,
+        "power": 579900000
+    },
+    {
+        "level": 1812,
+        "cost": 1215,
+        "power": 580507500
+    },
+    {
+        "level": 1813,
+        "cost": 1215,
+        "power": 581115000
+    },
+    {
+        "level": 1814,
+        "cost": 1215,
+        "power": 581722500
+    },
+    {
+        "level": 1815,
+        "cost": 1215,
+        "power": 582330000
+    },
+    {
+        "level": 1816,
+        "cost": 1215,
+        "power": 582937500
+    },
+    {
+        "level": 1817,
+        "cost": 1220,
+        "power": 583547500
+    },
+    {
+        "level": 1818,
+        "cost": 1220,
+        "power": 584157500
+    },
+    {
+        "level": 1819,
+        "cost": 1220,
+        "power": 584767500
+    },
+    {
+        "level": 1820,
+        "cost": 1220,
+        "power": 585377500
+    },
+    {
+        "level": 1821,
+        "cost": 1220,
+        "power": 585987500
+    },
+    {
+        "level": 1822,
+        "cost": 1220,
+        "power": 586597500
+    },
+    {
+        "level": 1823,
+        "cost": 1220,
+        "power": 587207500
+    },
+    {
+        "level": 1824,
+        "cost": 1220,
+        "power": 587817500
+    },
+    {
+        "level": 1825,
+        "cost": 1220,
+        "power": 588427500
+    },
+    {
+        "level": 1826,
+        "cost": 1225,
+        "power": 589040000
+    },
+    {
+        "level": 1827,
+        "cost": 1225,
+        "power": 589652500
+    },
+    {
+        "level": 1828,
+        "cost": 1225,
+        "power": 590265000
+    },
+    {
+        "level": 1829,
+        "cost": 1225,
+        "power": 590877500
+    },
+    {
+        "level": 1830,
+        "cost": 1225,
+        "power": 591490000
+    },
+    {
+        "level": 1831,
+        "cost": 1225,
+        "power": 592102500
+    },
+    {
+        "level": 1832,
+        "cost": 1225,
+        "power": 592715000
+    },
+    {
+        "level": 1833,
+        "cost": 1225,
+        "power": 593327500
+    },
+    {
+        "level": 1834,
+        "cost": 1230,
+        "power": 593942500
+    },
+    {
+        "level": 1835,
+        "cost": 1230,
+        "power": 594557500
+    },
+    {
+        "level": 1836,
+        "cost": 1230,
+        "power": 595172500
+    },
+    {
+        "level": 1837,
+        "cost": 1230,
+        "power": 595787500
+    },
+    {
+        "level": 1838,
+        "cost": 1230,
+        "power": 596402500
+    },
+    {
+        "level": 1839,
+        "cost": 1230,
+        "power": 597017500
+    },
+    {
+        "level": 1840,
+        "cost": 1230,
+        "power": 597632500
+    },
+    {
+        "level": 1841,
+        "cost": 1230,
+        "power": 598247500
+    },
+    {
+        "level": 1842,
+        "cost": 1235,
+        "power": 598865000
+    },
+    {
+        "level": 1843,
+        "cost": 1235,
+        "power": 599482500
+    },
+    {
+        "level": 1844,
+        "cost": 1235,
+        "power": 600100000
+    },
+    {
+        "level": 1845,
+        "cost": 1235,
+        "power": 600717500
+    },
+    {
+        "level": 1846,
+        "cost": 1235,
+        "power": 601335000
+    },
+    {
+        "level": 1847,
+        "cost": 1235,
+        "power": 601952500
+    },
+    {
+        "level": 1848,
+        "cost": 1235,
+        "power": 602570000
+    },
+    {
+        "level": 1849,
+        "cost": 1235,
+        "power": 603187500
+    },
+    {
+        "level": 1850,
+        "cost": 1235,
+        "power": 603805000
+    },
+    {
+        "level": 1851,
+        "cost": 1240,
+        "power": 604425000
+    },
+    {
+        "level": 1852,
+        "cost": 1240,
+        "power": 605045000
+    },
+    {
+        "level": 1853,
+        "cost": 1240,
+        "power": 605665000
+    },
+    {
+        "level": 1854,
+        "cost": 1240,
+        "power": 606285000
+    },
+    {
+        "level": 1855,
+        "cost": 1240,
+        "power": 606905000
+    },
+    {
+        "level": 1856,
+        "cost": 1240,
+        "power": 607525000
+    },
+    {
+        "level": 1857,
+        "cost": 1240,
+        "power": 608145000
+    },
+    {
+        "level": 1858,
+        "cost": 1240,
+        "power": 608765000
+    },
+    {
+        "level": 1859,
+        "cost": 1245,
+        "power": 609387500
+    },
+    {
+        "level": 1860,
+        "cost": 1245,
+        "power": 610010000
+    },
+    {
+        "level": 1861,
+        "cost": 1245,
+        "power": 610632500
+    },
+    {
+        "level": 1862,
+        "cost": 1245,
+        "power": 611255000
+    },
+    {
+        "level": 1863,
+        "cost": 1245,
+        "power": 611877500
+    },
+    {
+        "level": 1864,
+        "cost": 1245,
+        "power": 612500000
+    },
+    {
+        "level": 1865,
+        "cost": 1245,
+        "power": 613122500
+    },
+    {
+        "level": 1866,
+        "cost": 1245,
+        "power": 613745000
+    },
+    {
+        "level": 1867,
+        "cost": 1250,
+        "power": 614370000
+    },
+    {
+        "level": 1868,
+        "cost": 1250,
+        "power": 614995000
+    },
+    {
+        "level": 1869,
+        "cost": 1250,
+        "power": 615620000
+    },
+    {
+        "level": 1870,
+        "cost": 1250,
+        "power": 616245000
+    },
+    {
+        "level": 1871,
+        "cost": 1250,
+        "power": 616870000
+    },
+    {
+        "level": 1872,
+        "cost": 1250,
+        "power": 617495000
+    },
+    {
+        "level": 1873,
+        "cost": 1250,
+        "power": 618120000
+    },
+    {
+        "level": 1874,
+        "cost": 1250,
+        "power": 618745000
+    },
+    {
+        "level": 1875,
+        "cost": 1250,
+        "power": 619370000
+    },
+    {
+        "level": 1876,
+        "cost": 1255,
+        "power": 619997500
+    },
+    {
+        "level": 1877,
+        "cost": 1255,
+        "power": 620625000
+    },
+    {
+        "level": 1878,
+        "cost": 1255,
+        "power": 621252500
+    },
+    {
+        "level": 1879,
+        "cost": 1255,
+        "power": 621880000
+    },
+    {
+        "level": 1880,
+        "cost": 1255,
+        "power": 622507500
+    },
+    {
+        "level": 1881,
+        "cost": 1255,
+        "power": 623135000
+    },
+    {
+        "level": 1882,
+        "cost": 1255,
+        "power": 623762500
+    },
+    {
+        "level": 1883,
+        "cost": 1255,
+        "power": 624390000
+    },
+    {
+        "level": 1884,
+        "cost": 1260,
+        "power": 625020000
+    },
+    {
+        "level": 1885,
+        "cost": 1260,
+        "power": 625650000
+    },
+    {
+        "level": 1886,
+        "cost": 1260,
+        "power": 626280000
+    },
+    {
+        "level": 1887,
+        "cost": 1260,
+        "power": 626910000
+    },
+    {
+        "level": 1888,
+        "cost": 1260,
+        "power": 627540000
+    },
+    {
+        "level": 1889,
+        "cost": 1260,
+        "power": 628170000
+    },
+    {
+        "level": 1890,
+        "cost": 1260,
+        "power": 628800000
+    },
+    {
+        "level": 1891,
+        "cost": 1260,
+        "power": 629430000
+    },
+    {
+        "level": 1892,
+        "cost": 1265,
+        "power": 630062500
+    },
+    {
+        "level": 1893,
+        "cost": 1265,
+        "power": 630695000
+    },
+    {
+        "level": 1894,
+        "cost": 1265,
+        "power": 631327500
+    },
+    {
+        "level": 1895,
+        "cost": 1265,
+        "power": 631960000
+    },
+    {
+        "level": 1896,
+        "cost": 1265,
+        "power": 632592500
+    },
+    {
+        "level": 1897,
+        "cost": 1265,
+        "power": 633225000
+    },
+    {
+        "level": 1898,
+        "cost": 1265,
+        "power": 633857500
+    },
+    {
+        "level": 1899,
+        "cost": 1265,
+        "power": 634490000
+    },
+    {
+        "level": 1900,
+        "cost": 1265,
+        "power": 635122500
+    },
+    {
+        "level": 1901,
+        "cost": 1270,
+        "power": 635757500
+    },
+    {
+        "level": 1902,
+        "cost": 1270,
+        "power": 636392500
+    },
+    {
+        "level": 1903,
+        "cost": 1270,
+        "power": 637027500
+    },
+    {
+        "level": 1904,
+        "cost": 1270,
+        "power": 637662500
+    },
+    {
+        "level": 1905,
+        "cost": 1270,
+        "power": 638297500
+    },
+    {
+        "level": 1906,
+        "cost": 1270,
+        "power": 638932500
+    },
+    {
+        "level": 1907,
+        "cost": 1270,
+        "power": 639567500
+    },
+    {
+        "level": 1908,
+        "cost": 1270,
+        "power": 640202500
+    },
+    {
+        "level": 1909,
+        "cost": 1275,
+        "power": 640840000
+    },
+    {
+        "level": 1910,
+        "cost": 1275,
+        "power": 641477500
+    },
+    {
+        "level": 1911,
+        "cost": 1275,
+        "power": 642115000
+    },
+    {
+        "level": 1912,
+        "cost": 1275,
+        "power": 642752500
+    },
+    {
+        "level": 1913,
+        "cost": 1275,
+        "power": 643390000
+    },
+    {
+        "level": 1914,
+        "cost": 1275,
+        "power": 644027500
+    },
+    {
+        "level": 1915,
+        "cost": 1275,
+        "power": 644665000
+    },
+    {
+        "level": 1916,
+        "cost": 1275,
+        "power": 645302500
+    },
+    {
+        "level": 1917,
+        "cost": 1280,
+        "power": 645942500
+    },
+    {
+        "level": 1918,
+        "cost": 1280,
+        "power": 646582500
+    },
+    {
+        "level": 1919,
+        "cost": 1280,
+        "power": 647222500
+    },
+    {
+        "level": 1920,
+        "cost": 1280,
+        "power": 647862500
+    },
+    {
+        "level": 1921,
+        "cost": 1280,
+        "power": 648502500
+    },
+    {
+        "level": 1922,
+        "cost": 1280,
+        "power": 649142500
+    },
+    {
+        "level": 1923,
+        "cost": 1280,
+        "power": 649782500
+    },
+    {
+        "level": 1924,
+        "cost": 1280,
+        "power": 650422500
+    },
+    {
+        "level": 1925,
+        "cost": 1280,
+        "power": 651062500
+    },
+    {
+        "level": 1926,
+        "cost": 1285,
+        "power": 651705000
+    },
+    {
+        "level": 1927,
+        "cost": 1285,
+        "power": 652347500
+    },
+    {
+        "level": 1928,
+        "cost": 1285,
+        "power": 652990000
+    },
+    {
+        "level": 1929,
+        "cost": 1285,
+        "power": 653632500
+    },
+    {
+        "level": 1930,
+        "cost": 1285,
+        "power": 654275000
+    },
+    {
+        "level": 1931,
+        "cost": 1285,
+        "power": 654917500
+    },
+    {
+        "level": 1932,
+        "cost": 1285,
+        "power": 655560000
+    },
+    {
+        "level": 1933,
+        "cost": 1285,
+        "power": 656202500
+    },
+    {
+        "level": 1934,
+        "cost": 1290,
+        "power": 656847500
+    },
+    {
+        "level": 1935,
+        "cost": 1290,
+        "power": 657492500
+    },
+    {
+        "level": 1936,
+        "cost": 1290,
+        "power": 658137500
+    },
+    {
+        "level": 1937,
+        "cost": 1290,
+        "power": 658782500
+    },
+    {
+        "level": 1938,
+        "cost": 1290,
+        "power": 659427500
+    },
+    {
+        "level": 1939,
+        "cost": 1290,
+        "power": 660072500
+    },
+    {
+        "level": 1940,
+        "cost": 1290,
+        "power": 660717500
+    },
+    {
+        "level": 1941,
+        "cost": 1290,
+        "power": 661362500
+    },
+    {
+        "level": 1942,
+        "cost": 1290,
+        "power": 662007500
+    },
+    {
+        "level": 1943,
+        "cost": 1295,
+        "power": 662655000
+    },
+    {
+        "level": 1944,
+        "cost": 1295,
+        "power": 663302500
+    },
+    {
+        "level": 1945,
+        "cost": 1295,
+        "power": 663950000
+    },
+    {
+        "level": 1946,
+        "cost": 1295,
+        "power": 664597500
+    },
+    {
+        "level": 1947,
+        "cost": 1295,
+        "power": 665245000
+    },
+    {
+        "level": 1948,
+        "cost": 1295,
+        "power": 665892500
+    },
+    {
+        "level": 1949,
+        "cost": 1295,
+        "power": 666540000
+    },
+    {
+        "level": 1950,
+        "cost": 1295,
+        "power": 667187500
+    },
+    {
+        "level": 1951,
+        "cost": 1300,
+        "power": 667837500
+    },
+    {
+        "level": 1952,
+        "cost": 1300,
+        "power": 668487500
+    },
+    {
+        "level": 1953,
+        "cost": 1300,
+        "power": 669137500
+    },
+    {
+        "level": 1954,
+        "cost": 1300,
+        "power": 669787500
+    },
+    {
+        "level": 1955,
+        "cost": 1300,
+        "power": 670437500
+    },
+    {
+        "level": 1956,
+        "cost": 1300,
+        "power": 671087500
+    },
+    {
+        "level": 1957,
+        "cost": 1300,
+        "power": 671737500
+    },
+    {
+        "level": 1958,
+        "cost": 1300,
+        "power": 672387500
+    },
+    {
+        "level": 1959,
+        "cost": 1305,
+        "power": 673040000
+    },
+    {
+        "level": 1960,
+        "cost": 1305,
+        "power": 673692500
+    },
+    {
+        "level": 1961,
+        "cost": 1305,
+        "power": 674345000
+    },
+    {
+        "level": 1962,
+        "cost": 1305,
+        "power": 674997500
+    },
+    {
+        "level": 1963,
+        "cost": 1305,
+        "power": 675650000
+    },
+    {
+        "level": 1964,
+        "cost": 1305,
+        "power": 676302500
+    },
+    {
+        "level": 1965,
+        "cost": 1305,
+        "power": 676955000
+    },
+    {
+        "level": 1966,
+        "cost": 1305,
+        "power": 677607500
+    },
+    {
+        "level": 1967,
+        "cost": 1305,
+        "power": 678260000
+    },
+    {
+        "level": 1968,
+        "cost": 1310,
+        "power": 678915000
+    },
+    {
+        "level": 1969,
+        "cost": 1310,
+        "power": 679570000
+    },
+    {
+        "level": 1970,
+        "cost": 1310,
+        "power": 680225000
+    },
+    {
+        "level": 1971,
+        "cost": 1310,
+        "power": 680880000
+    },
+    {
+        "level": 1972,
+        "cost": 1310,
+        "power": 681535000
+    },
+    {
+        "level": 1973,
+        "cost": 1310,
+        "power": 682190000
+    },
+    {
+        "level": 1974,
+        "cost": 1310,
+        "power": 682845000
+    },
+    {
+        "level": 1975,
+        "cost": 1310,
+        "power": 683500000
+    },
+    {
+        "level": 1976,
+        "cost": 1315,
+        "power": 684157500
+    },
+    {
+        "level": 1977,
+        "cost": 1315,
+        "power": 684815000
+    },
+    {
+        "level": 1978,
+        "cost": 1315,
+        "power": 685472500
+    },
+    {
+        "level": 1979,
+        "cost": 1315,
+        "power": 686130000
+    },
+    {
+        "level": 1980,
+        "cost": 1315,
+        "power": 686787500
+    },
+    {
+        "level": 1981,
+        "cost": 1315,
+        "power": 687445000
+    },
+    {
+        "level": 1982,
+        "cost": 1315,
+        "power": 688102500
+    },
+    {
+        "level": 1983,
+        "cost": 1315,
+        "power": 688760000
+    },
+    {
+        "level": 1984,
+        "cost": 1320,
+        "power": 689420000
+    },
+    {
+        "level": 1985,
+        "cost": 1320,
+        "power": 690080000
+    },
+    {
+        "level": 1986,
+        "cost": 1320,
+        "power": 690740000
+    },
+    {
+        "level": 1987,
+        "cost": 1320,
+        "power": 691400000
+    },
+    {
+        "level": 1988,
+        "cost": 1320,
+        "power": 692060000
+    },
+    {
+        "level": 1989,
+        "cost": 1320,
+        "power": 692720000
+    },
+    {
+        "level": 1990,
+        "cost": 1320,
+        "power": 693380000
+    },
+    {
+        "level": 1991,
+        "cost": 1320,
+        "power": 694040000
+    },
+    {
+        "level": 1992,
+        "cost": 1325,
+        "power": 694702500
+    },
+    {
+        "level": 1993,
+        "cost": 1325,
+        "power": 695365000
+    },
+    {
+        "level": 1994,
+        "cost": 1325,
+        "power": 696027500
+    },
+    {
+        "level": 1995,
+        "cost": 1325,
+        "power": 696690000
+    },
+    {
+        "level": 1996,
+        "cost": 1325,
+        "power": 697352500
+    },
+    {
+        "level": 1997,
+        "cost": 1325,
+        "power": 698015000
+    },
+    {
+        "level": 1998,
+        "cost": 1325,
+        "power": 698677500
+    },
+    {
+        "level": 1999,
+        "cost": 1325,
+        "power": 699340000
+    },
+    {
+        "level": 2000,
+        "cost": 1325,
+        "power": 700000000
+    }
+]

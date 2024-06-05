@@ -1,0 +1,7502 @@
+[
+  {
+    "emblem": 1,
+    "power": 140000,
+    "runes": 2
+  },
+  {
+    "emblem": 2,
+    "power": 350000,
+    "runes": 3
+  },
+  {
+    "emblem": 3,
+    "power": 630000,
+    "runes": 4
+  },
+  {
+    "emblem": 4,
+    "power": 1050000,
+    "runes": 6
+  },
+  {
+    "emblem": 5,
+    "power": 1540000,
+    "runes": 7
+  },
+  {
+    "emblem": 6,
+    "power": 2100000,
+    "runes": 8
+  },
+  {
+    "emblem": 7,
+    "power": 2800000,
+    "runes": 10
+  },
+  {
+    "emblem": 8,
+    "power": 3570000,
+    "runes": 11
+  },
+  {
+    "emblem": 9,
+    "power": 4410000,
+    "runes": 12
+  },
+  {
+    "emblem": 10,
+    "power": 5390000,
+    "runes": 14
+  },
+  {
+    "emblem": 11,
+    "power": 6440000,
+    "runes": 15
+  },
+  {
+    "emblem": 12,
+    "power": 7560000,
+    "runes": 16
+  },
+  {
+    "emblem": 13,
+    "power": 8820000,
+    "runes": 18
+  },
+  {
+    "emblem": 14,
+    "power": 10150000,
+    "runes": 19
+  },
+  {
+    "emblem": 15,
+    "power": 11550000,
+    "runes": 20
+  },
+  {
+    "emblem": 16,
+    "power": 13090000,
+    "runes": 22
+  },
+  {
+    "emblem": 17,
+    "power": 14700000,
+    "runes": 23
+  },
+  {
+    "emblem": 18,
+    "power": 16380000,
+    "runes": 24
+  },
+  {
+    "emblem": 19,
+    "power": 18200000,
+    "runes": 26
+  },
+  {
+    "emblem": 20,
+    "power": 20090000,
+    "runes": 27
+  },
+  {
+    "emblem": 21,
+    "power": 22050000,
+    "runes": 28
+  },
+  {
+    "emblem": 22,
+    "power": 24150000,
+    "runes": 30
+  },
+  {
+    "emblem": 23,
+    "power": 26320000,
+    "runes": 31
+  },
+  {
+    "emblem": 24,
+    "power": 28560000,
+    "runes": 32
+  },
+  {
+    "emblem": 25,
+    "power": 30870000,
+    "runes": 33
+  },
+  {
+    "emblem": 26,
+    "power": 33320000,
+    "runes": 35
+  },
+  {
+    "emblem": 27,
+    "power": 35840000,
+    "runes": 36
+  },
+  {
+    "emblem": 28,
+    "power": 38430000,
+    "runes": 37
+  },
+  {
+    "emblem": 29,
+    "power": 41160000,
+    "runes": 39
+  },
+  {
+    "emblem": 30,
+    "power": 43960000,
+    "runes": 40
+  },
+  {
+    "emblem": 31,
+    "power": 46830000,
+    "runes": 41
+  },
+  {
+    "emblem": 32,
+    "power": 49840000,
+    "runes": 43
+  },
+  {
+    "emblem": 33,
+    "power": 52920000,
+    "runes": 44
+  },
+  {
+    "emblem": 34,
+    "power": 56070000,
+    "runes": 45
+  },
+  {
+    "emblem": 35,
+    "power": 59360000,
+    "runes": 47
+  },
+  {
+    "emblem": 36,
+    "power": 62720000,
+    "runes": 48
+  },
+  {
+    "emblem": 37,
+    "power": 66150000,
+    "runes": 49
+  },
+  {
+    "emblem": 38,
+    "power": 69720000,
+    "runes": 51
+  },
+  {
+    "emblem": 39,
+    "power": 73360000,
+    "runes": 52
+  },
+  {
+    "emblem": 40,
+    "power": 77070000,
+    "runes": 53
+  },
+  {
+    "emblem": 41,
+    "power": 80920000,
+    "runes": 55
+  },
+  {
+    "emblem": 42,
+    "power": 84840000,
+    "runes": 56
+  },
+  {
+    "emblem": 43,
+    "power": 88830000,
+    "runes": 57
+  },
+  {
+    "emblem": 44,
+    "power": 92960000,
+    "runes": 59
+  },
+  {
+    "emblem": 45,
+    "power": 97160000,
+    "runes": 60
+  },
+  {
+    "emblem": 46,
+    "power": 101430000,
+    "runes": 61
+  },
+  {
+    "emblem": 47,
+    "power": 105840000,
+    "runes": 63
+  },
+  {
+    "emblem": 48,
+    "power": 110320000,
+    "runes": 64
+  },
+  {
+    "emblem": 49,
+    "power": 114870000,
+    "runes": 65
+  },
+  {
+    "emblem": 50,
+    "power": 119490000,
+    "runes": 66
+  },
+  {
+    "emblem": 51,
+    "power": 124110000,
+    "runes": 66
+  },
+  {
+    "emblem": 52,
+    "power": 128730000,
+    "runes": 66
+  },
+  {
+    "emblem": 53,
+    "power": 133350000,
+    "runes": 66
+  },
+  {
+    "emblem": 54,
+    "power": 137970000,
+    "runes": 66
+  },
+  {
+    "emblem": 55,
+    "power": 142590000,
+    "runes": 66
+  },
+  {
+    "emblem": 56,
+    "power": 147210000,
+    "runes": 66
+  },
+  {
+    "emblem": 57,
+    "power": 151830000,
+    "runes": 66
+  },
+  {
+    "emblem": 58,
+    "power": 156450000,
+    "runes": 66
+  },
+  {
+    "emblem": 59,
+    "power": 161070000,
+    "runes": 66
+  },
+  {
+    "emblem": 60,
+    "power": 165690000,
+    "runes": 66
+  },
+  {
+    "emblem": 61,
+    "power": 170310000,
+    "runes": 66
+  },
+  {
+    "emblem": 62,
+    "power": 174930000,
+    "runes": 66
+  },
+  {
+    "emblem": 63,
+    "power": 179550000,
+    "runes": 66
+  },
+  {
+    "emblem": 64,
+    "power": 184170000,
+    "runes": 66
+  },
+  {
+    "emblem": 65,
+    "power": 188790000,
+    "runes": 66
+  },
+  {
+    "emblem": 66,
+    "power": 193410000,
+    "runes": 66
+  },
+  {
+    "emblem": 67,
+    "power": 198030000,
+    "runes": 66
+  },
+  {
+    "emblem": 68,
+    "power": 202650000,
+    "runes": 66
+  },
+  {
+    "emblem": 69,
+    "power": 207270000,
+    "runes": 66
+  },
+  {
+    "emblem": 70,
+    "power": 211890000,
+    "runes": 66
+  },
+  {
+    "emblem": 71,
+    "power": 216510000,
+    "runes": 66
+  },
+  {
+    "emblem": 72,
+    "power": 221130000,
+    "runes": 66
+  },
+  {
+    "emblem": 73,
+    "power": 225750000,
+    "runes": 66
+  },
+  {
+    "emblem": 74,
+    "power": 230370000,
+    "runes": 66
+  },
+  {
+    "emblem": 75,
+    "power": 234990000,
+    "runes": 66
+  },
+  {
+    "emblem": 76,
+    "power": 239610000,
+    "runes": 66
+  },
+  {
+    "emblem": 77,
+    "power": 244230000,
+    "runes": 66
+  },
+  {
+    "emblem": 78,
+    "power": 248850000,
+    "runes": 66
+  },
+  {
+    "emblem": 79,
+    "power": 253470000,
+    "runes": 66
+  },
+  {
+    "emblem": 80,
+    "power": 258090000,
+    "runes": 66
+  },
+  {
+    "emblem": 81,
+    "power": 262710000,
+    "runes": 66
+  },
+  {
+    "emblem": 82,
+    "power": 267330000,
+    "runes": 66
+  },
+  {
+    "emblem": 83,
+    "power": 271950000,
+    "runes": 66
+  },
+  {
+    "emblem": 84,
+    "power": 276570000,
+    "runes": 66
+  },
+  {
+    "emblem": 85,
+    "power": 281190000,
+    "runes": 66
+  },
+  {
+    "emblem": 86,
+    "power": 285810000,
+    "runes": 66
+  },
+  {
+    "emblem": 87,
+    "power": 290430000,
+    "runes": 66
+  },
+  {
+    "emblem": 88,
+    "power": 295050000,
+    "runes": 66
+  },
+  {
+    "emblem": 89,
+    "power": 299670000,
+    "runes": 66
+  },
+  {
+    "emblem": 90,
+    "power": 304290000,
+    "runes": 66
+  },
+  {
+    "emblem": 91,
+    "power": 308910000,
+    "runes": 66
+  },
+  {
+    "emblem": 92,
+    "power": 313530000,
+    "runes": 66
+  },
+  {
+    "emblem": 93,
+    "power": 318150000,
+    "runes": 66
+  },
+  {
+    "emblem": 94,
+    "power": 322770000,
+    "runes": 66
+  },
+  {
+    "emblem": 95,
+    "power": 327390000,
+    "runes": 66
+  },
+  {
+    "emblem": 96,
+    "power": 332010000,
+    "runes": 66
+  },
+  {
+    "emblem": 97,
+    "power": 336630000,
+    "runes": 66
+  },
+  {
+    "emblem": 98,
+    "power": 341250000,
+    "runes": 66
+  },
+  {
+    "emblem": 99,
+    "power": 345870000,
+    "runes": 66
+  },
+  {
+    "emblem": 100,
+    "power": 350490000,
+    "runes": 66
+  },
+  {
+    "emblem": 101,
+    "power": 355110000,
+    "runes": 66
+  },
+  {
+    "emblem": 102,
+    "power": 359730000,
+    "runes": 66
+  },
+  {
+    "emblem": 103,
+    "power": 364350000,
+    "runes": 66
+  },
+  {
+    "emblem": 104,
+    "power": 368970000,
+    "runes": 66
+  },
+  {
+    "emblem": 105,
+    "power": 373590000,
+    "runes": 66
+  },
+  {
+    "emblem": 106,
+    "power": 378210000,
+    "runes": 66
+  },
+  {
+    "emblem": 107,
+    "power": 382830000,
+    "runes": 66
+  },
+  {
+    "emblem": 108,
+    "power": 387450000,
+    "runes": 66
+  },
+  {
+    "emblem": 109,
+    "power": 392070000,
+    "runes": 66
+  },
+  {
+    "emblem": 110,
+    "power": 396690000,
+    "runes": 66
+  },
+  {
+    "emblem": 111,
+    "power": 401310000,
+    "runes": 66
+  },
+  {
+    "emblem": 112,
+    "power": 405930000,
+    "runes": 66
+  },
+  {
+    "emblem": 113,
+    "power": 410550000,
+    "runes": 66
+  },
+  {
+    "emblem": 114,
+    "power": 415170000,
+    "runes": 66
+  },
+  {
+    "emblem": 115,
+    "power": 419790000,
+    "runes": 66
+  },
+  {
+    "emblem": 116,
+    "power": 424410000,
+    "runes": 66
+  },
+  {
+    "emblem": 117,
+    "power": 429030000,
+    "runes": 66
+  },
+  {
+    "emblem": 118,
+    "power": 433650000,
+    "runes": 66
+  },
+  {
+    "emblem": 119,
+    "power": 438270000,
+    "runes": 66
+  },
+  {
+    "emblem": 120,
+    "power": 442890000,
+    "runes": 66
+  },
+  {
+    "emblem": 121,
+    "power": 447510000,
+    "runes": 66
+  },
+  {
+    "emblem": 122,
+    "power": 452130000,
+    "runes": 66
+  },
+  {
+    "emblem": 123,
+    "power": 456750000,
+    "runes": 66
+  },
+  {
+    "emblem": 124,
+    "power": 461370000,
+    "runes": 66
+  },
+  {
+    "emblem": 125,
+    "power": 465990000,
+    "runes": 66
+  },
+  {
+    "emblem": 126,
+    "power": 470610000,
+    "runes": 66
+  },
+  {
+    "emblem": 127,
+    "power": 475230000,
+    "runes": 66
+  },
+  {
+    "emblem": 128,
+    "power": 479850000,
+    "runes": 66
+  },
+  {
+    "emblem": 129,
+    "power": 484470000,
+    "runes": 66
+  },
+  {
+    "emblem": 130,
+    "power": 489090000,
+    "runes": 66
+  },
+  {
+    "emblem": 131,
+    "power": 493710000,
+    "runes": 66
+  },
+  {
+    "emblem": 132,
+    "power": 498330000,
+    "runes": 66
+  },
+  {
+    "emblem": 133,
+    "power": 502950000,
+    "runes": 66
+  },
+  {
+    "emblem": 134,
+    "power": 507570000,
+    "runes": 66
+  },
+  {
+    "emblem": 135,
+    "power": 512190000,
+    "runes": 66
+  },
+  {
+    "emblem": 136,
+    "power": 516810000,
+    "runes": 66
+  },
+  {
+    "emblem": 137,
+    "power": 521430000,
+    "runes": 66
+  },
+  {
+    "emblem": 138,
+    "power": 526050000,
+    "runes": 66
+  },
+  {
+    "emblem": 139,
+    "power": 530670000,
+    "runes": 66
+  },
+  {
+    "emblem": 140,
+    "power": 535290000,
+    "runes": 66
+  },
+  {
+    "emblem": 141,
+    "power": 539910000,
+    "runes": 66
+  },
+  {
+    "emblem": 142,
+    "power": 544530000,
+    "runes": 66
+  },
+  {
+    "emblem": 143,
+    "power": 549150000,
+    "runes": 66
+  },
+  {
+    "emblem": 144,
+    "power": 553770000,
+    "runes": 66
+  },
+  {
+    "emblem": 145,
+    "power": 558390000,
+    "runes": 66
+  },
+  {
+    "emblem": 146,
+    "power": 563010000,
+    "runes": 66
+  },
+  {
+    "emblem": 147,
+    "power": 567630000,
+    "runes": 66
+  },
+  {
+    "emblem": 148,
+    "power": 572250000,
+    "runes": 66
+  },
+  {
+    "emblem": 149,
+    "power": 576870000,
+    "runes": 66
+  },
+  {
+    "emblem": 150,
+    "power": 581490000,
+    "runes": 66
+  },
+  {
+    "emblem": 151,
+    "power": 586110000,
+    "runes": 66
+  },
+  {
+    "emblem": 152,
+    "power": 590730000,
+    "runes": 66
+  },
+  {
+    "emblem": 153,
+    "power": 595350000,
+    "runes": 66
+  },
+  {
+    "emblem": 154,
+    "power": 599970000,
+    "runes": 66
+  },
+  {
+    "emblem": 155,
+    "power": 604590000,
+    "runes": 66
+  },
+  {
+    "emblem": 156,
+    "power": 609210000,
+    "runes": 66
+  },
+  {
+    "emblem": 157,
+    "power": 613830000,
+    "runes": 66
+  },
+  {
+    "emblem": 158,
+    "power": 618450000,
+    "runes": 66
+  },
+  {
+    "emblem": 159,
+    "power": 623070000,
+    "runes": 66
+  },
+  {
+    "emblem": 160,
+    "power": 627690000,
+    "runes": 66
+  },
+  {
+    "emblem": 161,
+    "power": 632310000,
+    "runes": 66
+  },
+  {
+    "emblem": 162,
+    "power": 636930000,
+    "runes": 66
+  },
+  {
+    "emblem": 163,
+    "power": 641550000,
+    "runes": 66
+  },
+  {
+    "emblem": 164,
+    "power": 646170000,
+    "runes": 66
+  },
+  {
+    "emblem": 165,
+    "power": 650790000,
+    "runes": 66
+  },
+  {
+    "emblem": 166,
+    "power": 655410000,
+    "runes": 66
+  },
+  {
+    "emblem": 167,
+    "power": 660030000,
+    "runes": 66
+  },
+  {
+    "emblem": 168,
+    "power": 664650000,
+    "runes": 66
+  },
+  {
+    "emblem": 169,
+    "power": 669270000,
+    "runes": 66
+  },
+  {
+    "emblem": 170,
+    "power": 673890000,
+    "runes": 66
+  },
+  {
+    "emblem": 171,
+    "power": 678510000,
+    "runes": 66
+  },
+  {
+    "emblem": 172,
+    "power": 683130000,
+    "runes": 66
+  },
+  {
+    "emblem": 173,
+    "power": 687750000,
+    "runes": 66
+  },
+  {
+    "emblem": 174,
+    "power": 692370000,
+    "runes": 66
+  },
+  {
+    "emblem": 175,
+    "power": 696990000,
+    "runes": 66
+  },
+  {
+    "emblem": 176,
+    "power": 701610000,
+    "runes": 66
+  },
+  {
+    "emblem": 177,
+    "power": 706230000,
+    "runes": 66
+  },
+  {
+    "emblem": 178,
+    "power": 710850000,
+    "runes": 66
+  },
+  {
+    "emblem": 179,
+    "power": 715470000,
+    "runes": 66
+  },
+  {
+    "emblem": 180,
+    "power": 720090000,
+    "runes": 66
+  },
+  {
+    "emblem": 181,
+    "power": 724710000,
+    "runes": 66
+  },
+  {
+    "emblem": 182,
+    "power": 729330000,
+    "runes": 66
+  },
+  {
+    "emblem": 183,
+    "power": 733950000,
+    "runes": 66
+  },
+  {
+    "emblem": 184,
+    "power": 738570000,
+    "runes": 66
+  },
+  {
+    "emblem": 185,
+    "power": 743190000,
+    "runes": 66
+  },
+  {
+    "emblem": 186,
+    "power": 747810000,
+    "runes": 66
+  },
+  {
+    "emblem": 187,
+    "power": 752430000,
+    "runes": 66
+  },
+  {
+    "emblem": 188,
+    "power": 757050000,
+    "runes": 66
+  },
+  {
+    "emblem": 189,
+    "power": 761670000,
+    "runes": 66
+  },
+  {
+    "emblem": 190,
+    "power": 766290000,
+    "runes": 66
+  },
+  {
+    "emblem": 191,
+    "power": 770910000,
+    "runes": 66
+  },
+  {
+    "emblem": 192,
+    "power": 775530000,
+    "runes": 66
+  },
+  {
+    "emblem": 193,
+    "power": 780150000,
+    "runes": 66
+  },
+  {
+    "emblem": 194,
+    "power": 784770000,
+    "runes": 66
+  },
+  {
+    "emblem": 195,
+    "power": 789390000,
+    "runes": 66
+  },
+  {
+    "emblem": 196,
+    "power": 794010000,
+    "runes": 66
+  },
+  {
+    "emblem": 197,
+    "power": 798630000,
+    "runes": 66
+  },
+  {
+    "emblem": 198,
+    "power": 803250000,
+    "runes": 66
+  },
+  {
+    "emblem": 199,
+    "power": 807870000,
+    "runes": 66
+  },
+  {
+    "emblem": 200,
+    "power": 812490000,
+    "runes": 66
+  },
+  {
+    "emblem": 201,
+    "power": 817110000,
+    "runes": 66
+  },
+  {
+    "emblem": 202,
+    "power": 821730000,
+    "runes": 66
+  },
+  {
+    "emblem": 203,
+    "power": 826350000,
+    "runes": 66
+  },
+  {
+    "emblem": 204,
+    "power": 830970000,
+    "runes": 66
+  },
+  {
+    "emblem": 205,
+    "power": 835590000,
+    "runes": 66
+  },
+  {
+    "emblem": 206,
+    "power": 840210000,
+    "runes": 66
+  },
+  {
+    "emblem": 207,
+    "power": 844830000,
+    "runes": 66
+  },
+  {
+    "emblem": 208,
+    "power": 849450000,
+    "runes": 66
+  },
+  {
+    "emblem": 209,
+    "power": 854070000,
+    "runes": 66
+  },
+  {
+    "emblem": 210,
+    "power": 858690000,
+    "runes": 66
+  },
+  {
+    "emblem": 211,
+    "power": 863310000,
+    "runes": 66
+  },
+  {
+    "emblem": 212,
+    "power": 867930000,
+    "runes": 66
+  },
+  {
+    "emblem": 213,
+    "power": 872550000,
+    "runes": 66
+  },
+  {
+    "emblem": 214,
+    "power": 877170000,
+    "runes": 66
+  },
+  {
+    "emblem": 215,
+    "power": 881790000,
+    "runes": 66
+  },
+  {
+    "emblem": 216,
+    "power": 886410000,
+    "runes": 66
+  },
+  {
+    "emblem": 217,
+    "power": 891030000,
+    "runes": 66
+  },
+  {
+    "emblem": 218,
+    "power": 895650000,
+    "runes": 66
+  },
+  {
+    "emblem": 219,
+    "power": 900270000,
+    "runes": 66
+  },
+  {
+    "emblem": 220,
+    "power": 904890000,
+    "runes": 66
+  },
+  {
+    "emblem": 221,
+    "power": 909510000,
+    "runes": 66
+  },
+  {
+    "emblem": 222,
+    "power": 914130000,
+    "runes": 66
+  },
+  {
+    "emblem": 223,
+    "power": 918750000,
+    "runes": 66
+  },
+  {
+    "emblem": 224,
+    "power": 923370000,
+    "runes": 66
+  },
+  {
+    "emblem": 225,
+    "power": 927990000,
+    "runes": 66
+  },
+  {
+    "emblem": 226,
+    "power": 932610000,
+    "runes": 66
+  },
+  {
+    "emblem": 227,
+    "power": 937230000,
+    "runes": 66
+  },
+  {
+    "emblem": 228,
+    "power": 941850000,
+    "runes": 66
+  },
+  {
+    "emblem": 229,
+    "power": 946470000,
+    "runes": 66
+  },
+  {
+    "emblem": 230,
+    "power": 951090000,
+    "runes": 66
+  },
+  {
+    "emblem": 231,
+    "power": 955710000,
+    "runes": 66
+  },
+  {
+    "emblem": 232,
+    "power": 960330000,
+    "runes": 66
+  },
+  {
+    "emblem": 233,
+    "power": 964950000,
+    "runes": 66
+  },
+  {
+    "emblem": 234,
+    "power": 969570000,
+    "runes": 66
+  },
+  {
+    "emblem": 235,
+    "power": 974190000,
+    "runes": 66
+  },
+  {
+    "emblem": 236,
+    "power": 978810000,
+    "runes": 66
+  },
+  {
+    "emblem": 237,
+    "power": 983430000,
+    "runes": 66
+  },
+  {
+    "emblem": 238,
+    "power": 988050000,
+    "runes": 66
+  },
+  {
+    "emblem": 239,
+    "power": 992670000,
+    "runes": 66
+  },
+  {
+    "emblem": 240,
+    "power": 997290000,
+    "runes": 66
+  },
+  {
+    "emblem": 241,
+    "power": 1001910000,
+    "runes": 66
+  },
+  {
+    "emblem": 242,
+    "power": 1006530000,
+    "runes": 66
+  },
+  {
+    "emblem": 243,
+    "power": 1011150000,
+    "runes": 66
+  },
+  {
+    "emblem": 244,
+    "power": 1015770000,
+    "runes": 66
+  },
+  {
+    "emblem": 245,
+    "power": 1020390000,
+    "runes": 66
+  },
+  {
+    "emblem": 246,
+    "power": 1025010000,
+    "runes": 66
+  },
+  {
+    "emblem": 247,
+    "power": 1029630000,
+    "runes": 66
+  },
+  {
+    "emblem": 248,
+    "power": 1034250000,
+    "runes": 66
+  },
+  {
+    "emblem": 249,
+    "power": 1038870000,
+    "runes": 66
+  },
+  {
+    "emblem": 250,
+    "power": 1043490000,
+    "runes": 66
+  },
+  {
+    "emblem": 251,
+    "power": 1048110000,
+    "runes": 66
+  },
+  {
+    "emblem": 252,
+    "power": 1052730000,
+    "runes": 66
+  },
+  {
+    "emblem": 253,
+    "power": 1057350000,
+    "runes": 66
+  },
+  {
+    "emblem": 254,
+    "power": 1061970000,
+    "runes": 66
+  },
+  {
+    "emblem": 255,
+    "power": 1066590000,
+    "runes": 66
+  },
+  {
+    "emblem": 256,
+    "power": 1071210000,
+    "runes": 66
+  },
+  {
+    "emblem": 257,
+    "power": 1075830000,
+    "runes": 66
+  },
+  {
+    "emblem": 258,
+    "power": 1080450000,
+    "runes": 66
+  },
+  {
+    "emblem": 259,
+    "power": 1085070000,
+    "runes": 66
+  },
+  {
+    "emblem": 260,
+    "power": 1089690000,
+    "runes": 66
+  },
+  {
+    "emblem": 261,
+    "power": 1094310000,
+    "runes": 66
+  },
+  {
+    "emblem": 262,
+    "power": 1098930000,
+    "runes": 66
+  },
+  {
+    "emblem": 263,
+    "power": 1103550000,
+    "runes": 66
+  },
+  {
+    "emblem": 264,
+    "power": 1108170000,
+    "runes": 66
+  },
+  {
+    "emblem": 265,
+    "power": 1112790000,
+    "runes": 66
+  },
+  {
+    "emblem": 266,
+    "power": 1117410000,
+    "runes": 66
+  },
+  {
+    "emblem": 267,
+    "power": 1122030000,
+    "runes": 66
+  },
+  {
+    "emblem": 268,
+    "power": 1126650000,
+    "runes": 66
+  },
+  {
+    "emblem": 269,
+    "power": 1131270000,
+    "runes": 66
+  },
+  {
+    "emblem": 270,
+    "power": 1135890000,
+    "runes": 66
+  },
+  {
+    "emblem": 271,
+    "power": 1140510000,
+    "runes": 66
+  },
+  {
+    "emblem": 272,
+    "power": 1145130000,
+    "runes": 66
+  },
+  {
+    "emblem": 273,
+    "power": 1149750000,
+    "runes": 66
+  },
+  {
+    "emblem": 274,
+    "power": 1154370000,
+    "runes": 66
+  },
+  {
+    "emblem": 275,
+    "power": 1158990000,
+    "runes": 66
+  },
+  {
+    "emblem": 276,
+    "power": 1163610000,
+    "runes": 66
+  },
+  {
+    "emblem": 277,
+    "power": 1168230000,
+    "runes": 66
+  },
+  {
+    "emblem": 278,
+    "power": 1172850000,
+    "runes": 66
+  },
+  {
+    "emblem": 279,
+    "power": 1177470000,
+    "runes": 66
+  },
+  {
+    "emblem": 280,
+    "power": 1182090000,
+    "runes": 66
+  },
+  {
+    "emblem": 281,
+    "power": 1186710000,
+    "runes": 66
+  },
+  {
+    "emblem": 282,
+    "power": 1191330000,
+    "runes": 66
+  },
+  {
+    "emblem": 283,
+    "power": 1195950000,
+    "runes": 66
+  },
+  {
+    "emblem": 284,
+    "power": 1200570000,
+    "runes": 66
+  },
+  {
+    "emblem": 285,
+    "power": 1205190000,
+    "runes": 66
+  },
+  {
+    "emblem": 286,
+    "power": 1209810000,
+    "runes": 66
+  },
+  {
+    "emblem": 287,
+    "power": 1214430000,
+    "runes": 66
+  },
+  {
+    "emblem": 288,
+    "power": 1219050000,
+    "runes": 66
+  },
+  {
+    "emblem": 289,
+    "power": 1223670000,
+    "runes": 66
+  },
+  {
+    "emblem": 290,
+    "power": 1228290000,
+    "runes": 66
+  },
+  {
+    "emblem": 291,
+    "power": 1232910000,
+    "runes": 66
+  },
+  {
+    "emblem": 292,
+    "power": 1237530000,
+    "runes": 66
+  },
+  {
+    "emblem": 293,
+    "power": 1242150000,
+    "runes": 66
+  },
+  {
+    "emblem": 294,
+    "power": 1246770000,
+    "runes": 66
+  },
+  {
+    "emblem": 295,
+    "power": 1251390000,
+    "runes": 66
+  },
+  {
+    "emblem": 296,
+    "power": 1256010000,
+    "runes": 66
+  },
+  {
+    "emblem": 297,
+    "power": 1260630000,
+    "runes": 66
+  },
+  {
+    "emblem": 298,
+    "power": 1265250000,
+    "runes": 66
+  },
+  {
+    "emblem": 299,
+    "power": 1269870000,
+    "runes": 66
+  },
+  {
+    "emblem": 300,
+    "power": 1274490000,
+    "runes": 66
+  },
+  {
+    "emblem": 301,
+    "power": 1279110000,
+    "runes": 66
+  },
+  {
+    "emblem": 302,
+    "power": 1283730000,
+    "runes": 66
+  },
+  {
+    "emblem": 303,
+    "power": 1288350000,
+    "runes": 66
+  },
+  {
+    "emblem": 304,
+    "power": 1292970000,
+    "runes": 66
+  },
+  {
+    "emblem": 305,
+    "power": 1297590000,
+    "runes": 66
+  },
+  {
+    "emblem": 306,
+    "power": 1302210000,
+    "runes": 66
+  },
+  {
+    "emblem": 307,
+    "power": 1306830000,
+    "runes": 66
+  },
+  {
+    "emblem": 308,
+    "power": 1311450000,
+    "runes": 66
+  },
+  {
+    "emblem": 309,
+    "power": 1316070000,
+    "runes": 66
+  },
+  {
+    "emblem": 310,
+    "power": 1320690000,
+    "runes": 66
+  },
+  {
+    "emblem": 311,
+    "power": 1325310000,
+    "runes": 66
+  },
+  {
+    "emblem": 312,
+    "power": 1329930000,
+    "runes": 66
+  },
+  {
+    "emblem": 313,
+    "power": 1334550000,
+    "runes": 66
+  },
+  {
+    "emblem": 314,
+    "power": 1339170000,
+    "runes": 66
+  },
+  {
+    "emblem": 315,
+    "power": 1343790000,
+    "runes": 66
+  },
+  {
+    "emblem": 316,
+    "power": 1348410000,
+    "runes": 66
+  },
+  {
+    "emblem": 317,
+    "power": 1353030000,
+    "runes": 66
+  },
+  {
+    "emblem": 318,
+    "power": 1357650000,
+    "runes": 66
+  },
+  {
+    "emblem": 319,
+    "power": 1362270000,
+    "runes": 66
+  },
+  {
+    "emblem": 320,
+    "power": 1366890000,
+    "runes": 66
+  },
+  {
+    "emblem": 321,
+    "power": 1371510000,
+    "runes": 66
+  },
+  {
+    "emblem": 322,
+    "power": 1376130000,
+    "runes": 66
+  },
+  {
+    "emblem": 323,
+    "power": 1380750000,
+    "runes": 66
+  },
+  {
+    "emblem": 324,
+    "power": 1385370000,
+    "runes": 66
+  },
+  {
+    "emblem": 325,
+    "power": 1389990000,
+    "runes": 66
+  },
+  {
+    "emblem": 326,
+    "power": 1394610000,
+    "runes": 66
+  },
+  {
+    "emblem": 327,
+    "power": 1399230000,
+    "runes": 66
+  },
+  {
+    "emblem": 328,
+    "power": 1403850000,
+    "runes": 66
+  },
+  {
+    "emblem": 329,
+    "power": 1408470000,
+    "runes": 66
+  },
+  {
+    "emblem": 330,
+    "power": 1413090000,
+    "runes": 66
+  },
+  {
+    "emblem": 331,
+    "power": 1417710000,
+    "runes": 66
+  },
+  {
+    "emblem": 332,
+    "power": 1422330000,
+    "runes": 66
+  },
+  {
+    "emblem": 333,
+    "power": 1426950000,
+    "runes": 66
+  },
+  {
+    "emblem": 334,
+    "power": 1431570000,
+    "runes": 66
+  },
+  {
+    "emblem": 335,
+    "power": 1436190000,
+    "runes": 66
+  },
+  {
+    "emblem": 336,
+    "power": 1440810000,
+    "runes": 66
+  },
+  {
+    "emblem": 337,
+    "power": 1445430000,
+    "runes": 66
+  },
+  {
+    "emblem": 338,
+    "power": 1450050000,
+    "runes": 66
+  },
+  {
+    "emblem": 339,
+    "power": 1454670000,
+    "runes": 66
+  },
+  {
+    "emblem": 340,
+    "power": 1459290000,
+    "runes": 66
+  },
+  {
+    "emblem": 341,
+    "power": 1463910000,
+    "runes": 66
+  },
+  {
+    "emblem": 342,
+    "power": 1468530000,
+    "runes": 66
+  },
+  {
+    "emblem": 343,
+    "power": 1473150000,
+    "runes": 66
+  },
+  {
+    "emblem": 344,
+    "power": 1477770000,
+    "runes": 66
+  },
+  {
+    "emblem": 345,
+    "power": 1482390000,
+    "runes": 66
+  },
+  {
+    "emblem": 346,
+    "power": 1487010000,
+    "runes": 66
+  },
+  {
+    "emblem": 347,
+    "power": 1491630000,
+    "runes": 66
+  },
+  {
+    "emblem": 348,
+    "power": 1496250000,
+    "runes": 66
+  },
+  {
+    "emblem": 349,
+    "power": 1500870000,
+    "runes": 66
+  },
+  {
+    "emblem": 350,
+    "power": 1505490000,
+    "runes": 66
+  },
+  {
+    "emblem": 351,
+    "power": 1510110000,
+    "runes": 66
+  },
+  {
+    "emblem": 352,
+    "power": 1514730000,
+    "runes": 66
+  },
+  {
+    "emblem": 353,
+    "power": 1519350000,
+    "runes": 66
+  },
+  {
+    "emblem": 354,
+    "power": 1523970000,
+    "runes": 66
+  },
+  {
+    "emblem": 355,
+    "power": 1528590000,
+    "runes": 66
+  },
+  {
+    "emblem": 356,
+    "power": 1533210000,
+    "runes": 66
+  },
+  {
+    "emblem": 357,
+    "power": 1537830000,
+    "runes": 66
+  },
+  {
+    "emblem": 358,
+    "power": 1542450000,
+    "runes": 66
+  },
+  {
+    "emblem": 359,
+    "power": 1547070000,
+    "runes": 66
+  },
+  {
+    "emblem": 360,
+    "power": 1551690000,
+    "runes": 66
+  },
+  {
+    "emblem": 361,
+    "power": 1556310000,
+    "runes": 66
+  },
+  {
+    "emblem": 362,
+    "power": 1560930000,
+    "runes": 66
+  },
+  {
+    "emblem": 363,
+    "power": 1565550000,
+    "runes": 66
+  },
+  {
+    "emblem": 364,
+    "power": 1570170000,
+    "runes": 66
+  },
+  {
+    "emblem": 365,
+    "power": 1574790000,
+    "runes": 66
+  },
+  {
+    "emblem": 366,
+    "power": 1579410000,
+    "runes": 66
+  },
+  {
+    "emblem": 367,
+    "power": 1584030000,
+    "runes": 66
+  },
+  {
+    "emblem": 368,
+    "power": 1588650000,
+    "runes": 66
+  },
+  {
+    "emblem": 369,
+    "power": 1593270000,
+    "runes": 66
+  },
+  {
+    "emblem": 370,
+    "power": 1597890000,
+    "runes": 66
+  },
+  {
+    "emblem": 371,
+    "power": 1602510000,
+    "runes": 66
+  },
+  {
+    "emblem": 372,
+    "power": 1607130000,
+    "runes": 66
+  },
+  {
+    "emblem": 373,
+    "power": 1611750000,
+    "runes": 66
+  },
+  {
+    "emblem": 374,
+    "power": 1616370000,
+    "runes": 66
+  },
+  {
+    "emblem": 375,
+    "power": 1620990000,
+    "runes": 66
+  },
+  {
+    "emblem": 376,
+    "power": 1625610000,
+    "runes": 66
+  },
+  {
+    "emblem": 377,
+    "power": 1630230000,
+    "runes": 66
+  },
+  {
+    "emblem": 378,
+    "power": 1634850000,
+    "runes": 66
+  },
+  {
+    "emblem": 379,
+    "power": 1639470000,
+    "runes": 66
+  },
+  {
+    "emblem": 380,
+    "power": 1644090000,
+    "runes": 66
+  },
+  {
+    "emblem": 381,
+    "power": 1648710000,
+    "runes": 66
+  },
+  {
+    "emblem": 382,
+    "power": 1653330000,
+    "runes": 66
+  },
+  {
+    "emblem": 383,
+    "power": 1657950000,
+    "runes": 66
+  },
+  {
+    "emblem": 384,
+    "power": 1662570000,
+    "runes": 66
+  },
+  {
+    "emblem": 385,
+    "power": 1667190000,
+    "runes": 66
+  },
+  {
+    "emblem": 386,
+    "power": 1671810000,
+    "runes": 66
+  },
+  {
+    "emblem": 387,
+    "power": 1676430000,
+    "runes": 66
+  },
+  {
+    "emblem": 388,
+    "power": 1681050000,
+    "runes": 66
+  },
+  {
+    "emblem": 389,
+    "power": 1685670000,
+    "runes": 66
+  },
+  {
+    "emblem": 390,
+    "power": 1690290000,
+    "runes": 66
+  },
+  {
+    "emblem": 391,
+    "power": 1694910000,
+    "runes": 66
+  },
+  {
+    "emblem": 392,
+    "power": 1699530000,
+    "runes": 66
+  },
+  {
+    "emblem": 393,
+    "power": 1704150000,
+    "runes": 66
+  },
+  {
+    "emblem": 394,
+    "power": 1708770000,
+    "runes": 66
+  },
+  {
+    "emblem": 395,
+    "power": 1713390000,
+    "runes": 66
+  },
+  {
+    "emblem": 396,
+    "power": 1718010000,
+    "runes": 66
+  },
+  {
+    "emblem": 397,
+    "power": 1722630000,
+    "runes": 66
+  },
+  {
+    "emblem": 398,
+    "power": 1727250000,
+    "runes": 66
+  },
+  {
+    "emblem": 399,
+    "power": 1731870000,
+    "runes": 66
+  },
+  {
+    "emblem": 400,
+    "power": 1736490000,
+    "runes": 66
+  },
+  {
+    "emblem": 401,
+    "power": 1741110000,
+    "runes": 66
+  },
+  {
+    "emblem": 402,
+    "power": 1745730000,
+    "runes": 66
+  },
+  {
+    "emblem": 403,
+    "power": 1750350000,
+    "runes": 66
+  },
+  {
+    "emblem": 404,
+    "power": 1754970000,
+    "runes": 66
+  },
+  {
+    "emblem": 405,
+    "power": 1759590000,
+    "runes": 66
+  },
+  {
+    "emblem": 406,
+    "power": 1764210000,
+    "runes": 66
+  },
+  {
+    "emblem": 407,
+    "power": 1768830000,
+    "runes": 66
+  },
+  {
+    "emblem": 408,
+    "power": 1773450000,
+    "runes": 66
+  },
+  {
+    "emblem": 409,
+    "power": 1778070000,
+    "runes": 66
+  },
+  {
+    "emblem": 410,
+    "power": 1782690000,
+    "runes": 66
+  },
+  {
+    "emblem": 411,
+    "power": 1787310000,
+    "runes": 66
+  },
+  {
+    "emblem": 412,
+    "power": 1791930000,
+    "runes": 66
+  },
+  {
+    "emblem": 413,
+    "power": 1796550000,
+    "runes": 66
+  },
+  {
+    "emblem": 414,
+    "power": 1801170000,
+    "runes": 66
+  },
+  {
+    "emblem": 415,
+    "power": 1805790000,
+    "runes": 66
+  },
+  {
+    "emblem": 416,
+    "power": 1810410000,
+    "runes": 66
+  },
+  {
+    "emblem": 417,
+    "power": 1815030000,
+    "runes": 66
+  },
+  {
+    "emblem": 418,
+    "power": 1819650000,
+    "runes": 66
+  },
+  {
+    "emblem": 419,
+    "power": 1824270000,
+    "runes": 66
+  },
+  {
+    "emblem": 420,
+    "power": 1828890000,
+    "runes": 66
+  },
+  {
+    "emblem": 421,
+    "power": 1833510000,
+    "runes": 66
+  },
+  {
+    "emblem": 422,
+    "power": 1838130000,
+    "runes": 66
+  },
+  {
+    "emblem": 423,
+    "power": 1842750000,
+    "runes": 66
+  },
+  {
+    "emblem": 424,
+    "power": 1847370000,
+    "runes": 66
+  },
+  {
+    "emblem": 425,
+    "power": 1851990000,
+    "runes": 66
+  },
+  {
+    "emblem": 426,
+    "power": 1856610000,
+    "runes": 66
+  },
+  {
+    "emblem": 427,
+    "power": 1861230000,
+    "runes": 66
+  },
+  {
+    "emblem": 428,
+    "power": 1865850000,
+    "runes": 66
+  },
+  {
+    "emblem": 429,
+    "power": 1870470000,
+    "runes": 66
+  },
+  {
+    "emblem": 430,
+    "power": 1875090000,
+    "runes": 66
+  },
+  {
+    "emblem": 431,
+    "power": 1879710000,
+    "runes": 66
+  },
+  {
+    "emblem": 432,
+    "power": 1884330000,
+    "runes": 66
+  },
+  {
+    "emblem": 433,
+    "power": 1888950000,
+    "runes": 66
+  },
+  {
+    "emblem": 434,
+    "power": 1893570000,
+    "runes": 66
+  },
+  {
+    "emblem": 435,
+    "power": 1898190000,
+    "runes": 66
+  },
+  {
+    "emblem": 436,
+    "power": 1902810000,
+    "runes": 66
+  },
+  {
+    "emblem": 437,
+    "power": 1907430000,
+    "runes": 66
+  },
+  {
+    "emblem": 438,
+    "power": 1912050000,
+    "runes": 66
+  },
+  {
+    "emblem": 439,
+    "power": 1916670000,
+    "runes": 66
+  },
+  {
+    "emblem": 440,
+    "power": 1921290000,
+    "runes": 66
+  },
+  {
+    "emblem": 441,
+    "power": 1925910000,
+    "runes": 66
+  },
+  {
+    "emblem": 442,
+    "power": 1930530000,
+    "runes": 66
+  },
+  {
+    "emblem": 443,
+    "power": 1935150000,
+    "runes": 66
+  },
+  {
+    "emblem": 444,
+    "power": 1939770000,
+    "runes": 66
+  },
+  {
+    "emblem": 445,
+    "power": 1944390000,
+    "runes": 66
+  },
+  {
+    "emblem": 446,
+    "power": 1949010000,
+    "runes": 66
+  },
+  {
+    "emblem": 447,
+    "power": 1953630000,
+    "runes": 66
+  },
+  {
+    "emblem": 448,
+    "power": 1958250000,
+    "runes": 66
+  },
+  {
+    "emblem": 449,
+    "power": 1962870000,
+    "runes": 66
+  },
+  {
+    "emblem": 450,
+    "power": 1967490000,
+    "runes": 66
+  },
+  {
+    "emblem": 451,
+    "power": 1972110000,
+    "runes": 66
+  },
+  {
+    "emblem": 452,
+    "power": 1976730000,
+    "runes": 66
+  },
+  {
+    "emblem": 453,
+    "power": 1981350000,
+    "runes": 66
+  },
+  {
+    "emblem": 454,
+    "power": 1985970000,
+    "runes": 66
+  },
+  {
+    "emblem": 455,
+    "power": 1990590000,
+    "runes": 66
+  },
+  {
+    "emblem": 456,
+    "power": 1995210000,
+    "runes": 66
+  },
+  {
+    "emblem": 457,
+    "power": 1999830000,
+    "runes": 66
+  },
+  {
+    "emblem": 458,
+    "power": 2004450000,
+    "runes": 66
+  },
+  {
+    "emblem": 459,
+    "power": 2009070000,
+    "runes": 66
+  },
+  {
+    "emblem": 460,
+    "power": 2013690000,
+    "runes": 66
+  },
+  {
+    "emblem": 461,
+    "power": 2018310000,
+    "runes": 66
+  },
+  {
+    "emblem": 462,
+    "power": 2022930000,
+    "runes": 66
+  },
+  {
+    "emblem": 463,
+    "power": 2027550000,
+    "runes": 66
+  },
+  {
+    "emblem": 464,
+    "power": 2032170000,
+    "runes": 66
+  },
+  {
+    "emblem": 465,
+    "power": 2036790000,
+    "runes": 66
+  },
+  {
+    "emblem": 466,
+    "power": 2041410000,
+    "runes": 66
+  },
+  {
+    "emblem": 467,
+    "power": 2046030000,
+    "runes": 66
+  },
+  {
+    "emblem": 468,
+    "power": 2050650000,
+    "runes": 66
+  },
+  {
+    "emblem": 469,
+    "power": 2055270000,
+    "runes": 66
+  },
+  {
+    "emblem": 470,
+    "power": 2059890000,
+    "runes": 66
+  },
+  {
+    "emblem": 471,
+    "power": 2064510000,
+    "runes": 66
+  },
+  {
+    "emblem": 472,
+    "power": 2069130000,
+    "runes": 66
+  },
+  {
+    "emblem": 473,
+    "power": 2073750000,
+    "runes": 66
+  },
+  {
+    "emblem": 474,
+    "power": 2078370000,
+    "runes": 66
+  },
+  {
+    "emblem": 475,
+    "power": 2082990000,
+    "runes": 66
+  },
+  {
+    "emblem": 476,
+    "power": 2087610000,
+    "runes": 66
+  },
+  {
+    "emblem": 477,
+    "power": 2092230000,
+    "runes": 66
+  },
+  {
+    "emblem": 478,
+    "power": 2096850000,
+    "runes": 66
+  },
+  {
+    "emblem": 479,
+    "power": 2101470000,
+    "runes": 66
+  },
+  {
+    "emblem": 480,
+    "power": 2106090000,
+    "runes": 66
+  },
+  {
+    "emblem": 481,
+    "power": 2110710000,
+    "runes": 66
+  },
+  {
+    "emblem": 482,
+    "power": 2115330000,
+    "runes": 66
+  },
+  {
+    "emblem": 483,
+    "power": 2119950000,
+    "runes": 66
+  },
+  {
+    "emblem": 484,
+    "power": 2124570000,
+    "runes": 66
+  },
+  {
+    "emblem": 485,
+    "power": 2129190000,
+    "runes": 66
+  },
+  {
+    "emblem": 486,
+    "power": 2133810000,
+    "runes": 66
+  },
+  {
+    "emblem": 487,
+    "power": 2138430000,
+    "runes": 66
+  },
+  {
+    "emblem": 488,
+    "power": 2143050000,
+    "runes": 66
+  },
+  {
+    "emblem": 489,
+    "power": 2147670000,
+    "runes": 66
+  },
+  {
+    "emblem": 490,
+    "power": 2152290000,
+    "runes": 66
+  },
+  {
+    "emblem": 491,
+    "power": 2156910000,
+    "runes": 66
+  },
+  {
+    "emblem": 492,
+    "power": 2161530000,
+    "runes": 66
+  },
+  {
+    "emblem": 493,
+    "power": 2166150000,
+    "runes": 66
+  },
+  {
+    "emblem": 494,
+    "power": 2170770000,
+    "runes": 66
+  },
+  {
+    "emblem": 495,
+    "power": 2175390000,
+    "runes": 66
+  },
+  {
+    "emblem": 496,
+    "power": 2180010000,
+    "runes": 66
+  },
+  {
+    "emblem": 497,
+    "power": 2184630000,
+    "runes": 66
+  },
+  {
+    "emblem": 498,
+    "power": 2189250000,
+    "runes": 66
+  },
+  {
+    "emblem": 499,
+    "power": 2193870000,
+    "runes": 66
+  },
+  {
+    "emblem": 500,
+    "power": 2198490000,
+    "runes": 66
+  },
+  {
+    "emblem": 501,
+    "power": 2203110000,
+    "runes": 66
+  },
+  {
+    "emblem": 502,
+    "power": 2207730000,
+    "runes": 66
+  },
+  {
+    "emblem": 503,
+    "power": 2212350000,
+    "runes": 66
+  },
+  {
+    "emblem": 504,
+    "power": 2216970000,
+    "runes": 66
+  },
+  {
+    "emblem": 505,
+    "power": 2221590000,
+    "runes": 66
+  },
+  {
+    "emblem": 506,
+    "power": 2226210000,
+    "runes": 66
+  },
+  {
+    "emblem": 507,
+    "power": 2230830000,
+    "runes": 66
+  },
+  {
+    "emblem": 508,
+    "power": 2235450000,
+    "runes": 66
+  },
+  {
+    "emblem": 509,
+    "power": 2240070000,
+    "runes": 66
+  },
+  {
+    "emblem": 510,
+    "power": 2244690000,
+    "runes": 66
+  },
+  {
+    "emblem": 511,
+    "power": 2249310000,
+    "runes": 66
+  },
+  {
+    "emblem": 512,
+    "power": 2253930000,
+    "runes": 66
+  },
+  {
+    "emblem": 513,
+    "power": 2258550000,
+    "runes": 66
+  },
+  {
+    "emblem": 514,
+    "power": 2263170000,
+    "runes": 66
+  },
+  {
+    "emblem": 515,
+    "power": 2267790000,
+    "runes": 66
+  },
+  {
+    "emblem": 516,
+    "power": 2272410000,
+    "runes": 66
+  },
+  {
+    "emblem": 517,
+    "power": 2277030000,
+    "runes": 66
+  },
+  {
+    "emblem": 518,
+    "power": 2281650000,
+    "runes": 66
+  },
+  {
+    "emblem": 519,
+    "power": 2286270000,
+    "runes": 66
+  },
+  {
+    "emblem": 520,
+    "power": 2290890000,
+    "runes": 66
+  },
+  {
+    "emblem": 521,
+    "power": 2295510000,
+    "runes": 66
+  },
+  {
+    "emblem": 522,
+    "power": 2300130000,
+    "runes": 66
+  },
+  {
+    "emblem": 523,
+    "power": 2304750000,
+    "runes": 66
+  },
+  {
+    "emblem": 524,
+    "power": 2309370000,
+    "runes": 66
+  },
+  {
+    "emblem": 525,
+    "power": 2313990000,
+    "runes": 66
+  },
+  {
+    "emblem": 526,
+    "power": 2318610000,
+    "runes": 66
+  },
+  {
+    "emblem": 527,
+    "power": 2323230000,
+    "runes": 66
+  },
+  {
+    "emblem": 528,
+    "power": 2327850000,
+    "runes": 66
+  },
+  {
+    "emblem": 529,
+    "power": 2332470000,
+    "runes": 66
+  },
+  {
+    "emblem": 530,
+    "power": 2337090000,
+    "runes": 66
+  },
+  {
+    "emblem": 531,
+    "power": 2341710000,
+    "runes": 66
+  },
+  {
+    "emblem": 532,
+    "power": 2346330000,
+    "runes": 66
+  },
+  {
+    "emblem": 533,
+    "power": 2350950000,
+    "runes": 66
+  },
+  {
+    "emblem": 534,
+    "power": 2355570000,
+    "runes": 66
+  },
+  {
+    "emblem": 535,
+    "power": 2360190000,
+    "runes": 66
+  },
+  {
+    "emblem": 536,
+    "power": 2364810000,
+    "runes": 66
+  },
+  {
+    "emblem": 537,
+    "power": 2369430000,
+    "runes": 66
+  },
+  {
+    "emblem": 538,
+    "power": 2374050000,
+    "runes": 66
+  },
+  {
+    "emblem": 539,
+    "power": 2378670000,
+    "runes": 66
+  },
+  {
+    "emblem": 540,
+    "power": 2383290000,
+    "runes": 66
+  },
+  {
+    "emblem": 541,
+    "power": 2387910000,
+    "runes": 66
+  },
+  {
+    "emblem": 542,
+    "power": 2392530000,
+    "runes": 66
+  },
+  {
+    "emblem": 543,
+    "power": 2397150000,
+    "runes": 66
+  },
+  {
+    "emblem": 544,
+    "power": 2401770000,
+    "runes": 66
+  },
+  {
+    "emblem": 545,
+    "power": 2406390000,
+    "runes": 66
+  },
+  {
+    "emblem": 546,
+    "power": 2411010000,
+    "runes": 66
+  },
+  {
+    "emblem": 547,
+    "power": 2415630000,
+    "runes": 66
+  },
+  {
+    "emblem": 548,
+    "power": 2420250000,
+    "runes": 66
+  },
+  {
+    "emblem": 549,
+    "power": 2424870000,
+    "runes": 66
+  },
+  {
+    "emblem": 550,
+    "power": 2429490000,
+    "runes": 66
+  },
+  {
+    "emblem": 551,
+    "power": 2434110000,
+    "runes": 66
+  },
+  {
+    "emblem": 552,
+    "power": 2438730000,
+    "runes": 66
+  },
+  {
+    "emblem": 553,
+    "power": 2443350000,
+    "runes": 66
+  },
+  {
+    "emblem": 554,
+    "power": 2447970000,
+    "runes": 66
+  },
+  {
+    "emblem": 555,
+    "power": 2452590000,
+    "runes": 66
+  },
+  {
+    "emblem": 556,
+    "power": 2457210000,
+    "runes": 66
+  },
+  {
+    "emblem": 557,
+    "power": 2461830000,
+    "runes": 66
+  },
+  {
+    "emblem": 558,
+    "power": 2466450000,
+    "runes": 66
+  },
+  {
+    "emblem": 559,
+    "power": 2471070000,
+    "runes": 66
+  },
+  {
+    "emblem": 560,
+    "power": 2475690000,
+    "runes": 66
+  },
+  {
+    "emblem": 561,
+    "power": 2480310000,
+    "runes": 66
+  },
+  {
+    "emblem": 562,
+    "power": 2484930000,
+    "runes": 66
+  },
+  {
+    "emblem": 563,
+    "power": 2489550000,
+    "runes": 66
+  },
+  {
+    "emblem": 564,
+    "power": 2494170000,
+    "runes": 66
+  },
+  {
+    "emblem": 565,
+    "power": 2498790000,
+    "runes": 66
+  },
+  {
+    "emblem": 566,
+    "power": 2503410000,
+    "runes": 66
+  },
+  {
+    "emblem": 567,
+    "power": 2508030000,
+    "runes": 66
+  },
+  {
+    "emblem": 568,
+    "power": 2512650000,
+    "runes": 66
+  },
+  {
+    "emblem": 569,
+    "power": 2517270000,
+    "runes": 66
+  },
+  {
+    "emblem": 570,
+    "power": 2521890000,
+    "runes": 66
+  },
+  {
+    "emblem": 571,
+    "power": 2526510000,
+    "runes": 66
+  },
+  {
+    "emblem": 572,
+    "power": 2531130000,
+    "runes": 66
+  },
+  {
+    "emblem": 573,
+    "power": 2535750000,
+    "runes": 66
+  },
+  {
+    "emblem": 574,
+    "power": 2540370000,
+    "runes": 66
+  },
+  {
+    "emblem": 575,
+    "power": 2544990000,
+    "runes": 66
+  },
+  {
+    "emblem": 576,
+    "power": 2549610000,
+    "runes": 66
+  },
+  {
+    "emblem": 577,
+    "power": 2554230000,
+    "runes": 66
+  },
+  {
+    "emblem": 578,
+    "power": 2558850000,
+    "runes": 66
+  },
+  {
+    "emblem": 579,
+    "power": 2563470000,
+    "runes": 66
+  },
+  {
+    "emblem": 580,
+    "power": 2568090000,
+    "runes": 66
+  },
+  {
+    "emblem": 581,
+    "power": 2572710000,
+    "runes": 66
+  },
+  {
+    "emblem": 582,
+    "power": 2577330000,
+    "runes": 66
+  },
+  {
+    "emblem": 583,
+    "power": 2581950000,
+    "runes": 66
+  },
+  {
+    "emblem": 584,
+    "power": 2586570000,
+    "runes": 66
+  },
+  {
+    "emblem": 585,
+    "power": 2591190000,
+    "runes": 66
+  },
+  {
+    "emblem": 586,
+    "power": 2595810000,
+    "runes": 66
+  },
+  {
+    "emblem": 587,
+    "power": 2600430000,
+    "runes": 66
+  },
+  {
+    "emblem": 588,
+    "power": 2605050000,
+    "runes": 66
+  },
+  {
+    "emblem": 589,
+    "power": 2609670000,
+    "runes": 66
+  },
+  {
+    "emblem": 590,
+    "power": 2614290000,
+    "runes": 66
+  },
+  {
+    "emblem": 591,
+    "power": 2618910000,
+    "runes": 66
+  },
+  {
+    "emblem": 592,
+    "power": 2623530000,
+    "runes": 66
+  },
+  {
+    "emblem": 593,
+    "power": 2628150000,
+    "runes": 66
+  },
+  {
+    "emblem": 594,
+    "power": 2632770000,
+    "runes": 66
+  },
+  {
+    "emblem": 595,
+    "power": 2637390000,
+    "runes": 66
+  },
+  {
+    "emblem": 596,
+    "power": 2642010000,
+    "runes": 66
+  },
+  {
+    "emblem": 597,
+    "power": 2646630000,
+    "runes": 66
+  },
+  {
+    "emblem": 598,
+    "power": 2651250000,
+    "runes": 66
+  },
+  {
+    "emblem": 599,
+    "power": 2655870000,
+    "runes": 66
+  },
+  {
+    "emblem": 600,
+    "power": 2660490000,
+    "runes": 66
+  },
+  {
+    "emblem": 601,
+    "power": 2665110000,
+    "runes": 66
+  },
+  {
+    "emblem": 602,
+    "power": 2669730000,
+    "runes": 66
+  },
+  {
+    "emblem": 603,
+    "power": 2674350000,
+    "runes": 66
+  },
+  {
+    "emblem": 604,
+    "power": 2678970000,
+    "runes": 66
+  },
+  {
+    "emblem": 605,
+    "power": 2683590000,
+    "runes": 66
+  },
+  {
+    "emblem": 606,
+    "power": 2688210000,
+    "runes": 66
+  },
+  {
+    "emblem": 607,
+    "power": 2692830000,
+    "runes": 66
+  },
+  {
+    "emblem": 608,
+    "power": 2697450000,
+    "runes": 66
+  },
+  {
+    "emblem": 609,
+    "power": 2702070000,
+    "runes": 66
+  },
+  {
+    "emblem": 610,
+    "power": 2706690000,
+    "runes": 66
+  },
+  {
+    "emblem": 611,
+    "power": 2711310000,
+    "runes": 66
+  },
+  {
+    "emblem": 612,
+    "power": 2715930000,
+    "runes": 66
+  },
+  {
+    "emblem": 613,
+    "power": 2720550000,
+    "runes": 66
+  },
+  {
+    "emblem": 614,
+    "power": 2725170000,
+    "runes": 66
+  },
+  {
+    "emblem": 615,
+    "power": 2729790000,
+    "runes": 66
+  },
+  {
+    "emblem": 616,
+    "power": 2734410000,
+    "runes": 66
+  },
+  {
+    "emblem": 617,
+    "power": 2739030000,
+    "runes": 66
+  },
+  {
+    "emblem": 618,
+    "power": 2743650000,
+    "runes": 66
+  },
+  {
+    "emblem": 619,
+    "power": 2748270000,
+    "runes": 66
+  },
+  {
+    "emblem": 620,
+    "power": 2752890000,
+    "runes": 66
+  },
+  {
+    "emblem": 621,
+    "power": 2757510000,
+    "runes": 66
+  },
+  {
+    "emblem": 622,
+    "power": 2762130000,
+    "runes": 66
+  },
+  {
+    "emblem": 623,
+    "power": 2766750000,
+    "runes": 66
+  },
+  {
+    "emblem": 624,
+    "power": 2771370000,
+    "runes": 66
+  },
+  {
+    "emblem": 625,
+    "power": 2775990000,
+    "runes": 66
+  },
+  {
+    "emblem": 626,
+    "power": 2780610000,
+    "runes": 66
+  },
+  {
+    "emblem": 627,
+    "power": 2785230000,
+    "runes": 66
+  },
+  {
+    "emblem": 628,
+    "power": 2789850000,
+    "runes": 66
+  },
+  {
+    "emblem": 629,
+    "power": 2794470000,
+    "runes": 66
+  },
+  {
+    "emblem": 630,
+    "power": 2799090000,
+    "runes": 66
+  },
+  {
+    "emblem": 631,
+    "power": 2803710000,
+    "runes": 66
+  },
+  {
+    "emblem": 632,
+    "power": 2808330000,
+    "runes": 66
+  },
+  {
+    "emblem": 633,
+    "power": 2812950000,
+    "runes": 66
+  },
+  {
+    "emblem": 634,
+    "power": 2817570000,
+    "runes": 66
+  },
+  {
+    "emblem": 635,
+    "power": 2822190000,
+    "runes": 66
+  },
+  {
+    "emblem": 636,
+    "power": 2826810000,
+    "runes": 66
+  },
+  {
+    "emblem": 637,
+    "power": 2831430000,
+    "runes": 66
+  },
+  {
+    "emblem": 638,
+    "power": 2836050000,
+    "runes": 66
+  },
+  {
+    "emblem": 639,
+    "power": 2840670000,
+    "runes": 66
+  },
+  {
+    "emblem": 640,
+    "power": 2845290000,
+    "runes": 66
+  },
+  {
+    "emblem": 641,
+    "power": 2849910000,
+    "runes": 66
+  },
+  {
+    "emblem": 642,
+    "power": 2854530000,
+    "runes": 66
+  },
+  {
+    "emblem": 643,
+    "power": 2859150000,
+    "runes": 66
+  },
+  {
+    "emblem": 644,
+    "power": 2863770000,
+    "runes": 66
+  },
+  {
+    "emblem": 645,
+    "power": 2868390000,
+    "runes": 66
+  },
+  {
+    "emblem": 646,
+    "power": 2873010000,
+    "runes": 66
+  },
+  {
+    "emblem": 647,
+    "power": 2877630000,
+    "runes": 66
+  },
+  {
+    "emblem": 648,
+    "power": 2882250000,
+    "runes": 66
+  },
+  {
+    "emblem": 649,
+    "power": 2886870000,
+    "runes": 66
+  },
+  {
+    "emblem": 650,
+    "power": 2891490000,
+    "runes": 66
+  },
+  {
+    "emblem": 651,
+    "power": 2896110000,
+    "runes": 66
+  },
+  {
+    "emblem": 652,
+    "power": 2900730000,
+    "runes": 66
+  },
+  {
+    "emblem": 653,
+    "power": 2905350000,
+    "runes": 66
+  },
+  {
+    "emblem": 654,
+    "power": 2909970000,
+    "runes": 66
+  },
+  {
+    "emblem": 655,
+    "power": 2914590000,
+    "runes": 66
+  },
+  {
+    "emblem": 656,
+    "power": 2919210000,
+    "runes": 66
+  },
+  {
+    "emblem": 657,
+    "power": 2923830000,
+    "runes": 66
+  },
+  {
+    "emblem": 658,
+    "power": 2928450000,
+    "runes": 66
+  },
+  {
+    "emblem": 659,
+    "power": 2933070000,
+    "runes": 66
+  },
+  {
+    "emblem": 660,
+    "power": 2937690000,
+    "runes": 66
+  },
+  {
+    "emblem": 661,
+    "power": 2942310000,
+    "runes": 66
+  },
+  {
+    "emblem": 662,
+    "power": 2946930000,
+    "runes": 66
+  },
+  {
+    "emblem": 663,
+    "power": 2951550000,
+    "runes": 66
+  },
+  {
+    "emblem": 664,
+    "power": 2956170000,
+    "runes": 66
+  },
+  {
+    "emblem": 665,
+    "power": 2960790000,
+    "runes": 66
+  },
+  {
+    "emblem": 666,
+    "power": 2965410000,
+    "runes": 66
+  },
+  {
+    "emblem": 667,
+    "power": 2970030000,
+    "runes": 66
+  },
+  {
+    "emblem": 668,
+    "power": 2974650000,
+    "runes": 66
+  },
+  {
+    "emblem": 669,
+    "power": 2979270000,
+    "runes": 66
+  },
+  {
+    "emblem": 670,
+    "power": 2983890000,
+    "runes": 66
+  },
+  {
+    "emblem": 671,
+    "power": 2988510000,
+    "runes": 66
+  },
+  {
+    "emblem": 672,
+    "power": 2993130000,
+    "runes": 66
+  },
+  {
+    "emblem": 673,
+    "power": 2997750000,
+    "runes": 66
+  },
+  {
+    "emblem": 674,
+    "power": 3002370000,
+    "runes": 66
+  },
+  {
+    "emblem": 675,
+    "power": 3006990000,
+    "runes": 66
+  },
+  {
+    "emblem": 676,
+    "power": 3011610000,
+    "runes": 66
+  },
+  {
+    "emblem": 677,
+    "power": 3016230000,
+    "runes": 66
+  },
+  {
+    "emblem": 678,
+    "power": 3020850000,
+    "runes": 66
+  },
+  {
+    "emblem": 679,
+    "power": 3025470000,
+    "runes": 66
+  },
+  {
+    "emblem": 680,
+    "power": 3030090000,
+    "runes": 66
+  },
+  {
+    "emblem": 681,
+    "power": 3034710000,
+    "runes": 66
+  },
+  {
+    "emblem": 682,
+    "power": 3039330000,
+    "runes": 66
+  },
+  {
+    "emblem": 683,
+    "power": 3043950000,
+    "runes": 66
+  },
+  {
+    "emblem": 684,
+    "power": 3048570000,
+    "runes": 66
+  },
+  {
+    "emblem": 685,
+    "power": 3053190000,
+    "runes": 66
+  },
+  {
+    "emblem": 686,
+    "power": 3057810000,
+    "runes": 66
+  },
+  {
+    "emblem": 687,
+    "power": 3062430000,
+    "runes": 66
+  },
+  {
+    "emblem": 688,
+    "power": 3067050000,
+    "runes": 66
+  },
+  {
+    "emblem": 689,
+    "power": 3071670000,
+    "runes": 66
+  },
+  {
+    "emblem": 690,
+    "power": 3076290000,
+    "runes": 66
+  },
+  {
+    "emblem": 691,
+    "power": 3080910000,
+    "runes": 66
+  },
+  {
+    "emblem": 692,
+    "power": 3085530000,
+    "runes": 66
+  },
+  {
+    "emblem": 693,
+    "power": 3090150000,
+    "runes": 66
+  },
+  {
+    "emblem": 694,
+    "power": 3094770000,
+    "runes": 66
+  },
+  {
+    "emblem": 695,
+    "power": 3099390000,
+    "runes": 66
+  },
+  {
+    "emblem": 696,
+    "power": 3104010000,
+    "runes": 66
+  },
+  {
+    "emblem": 697,
+    "power": 3108630000,
+    "runes": 66
+  },
+  {
+    "emblem": 698,
+    "power": 3113250000,
+    "runes": 66
+  },
+  {
+    "emblem": 699,
+    "power": 3117870000,
+    "runes": 66
+  },
+  {
+    "emblem": 700,
+    "power": 3122490000,
+    "runes": 66
+  },
+  {
+    "emblem": 701,
+    "power": 3127110000,
+    "runes": 66
+  },
+  {
+    "emblem": 702,
+    "power": 3131730000,
+    "runes": 66
+  },
+  {
+    "emblem": 703,
+    "power": 3136350000,
+    "runes": 66
+  },
+  {
+    "emblem": 704,
+    "power": 3140970000,
+    "runes": 66
+  },
+  {
+    "emblem": 705,
+    "power": 3145590000,
+    "runes": 66
+  },
+  {
+    "emblem": 706,
+    "power": 3150210000,
+    "runes": 66
+  },
+  {
+    "emblem": 707,
+    "power": 3154830000,
+    "runes": 66
+  },
+  {
+    "emblem": 708,
+    "power": 3159450000,
+    "runes": 66
+  },
+  {
+    "emblem": 709,
+    "power": 3164070000,
+    "runes": 66
+  },
+  {
+    "emblem": 710,
+    "power": 3168690000,
+    "runes": 66
+  },
+  {
+    "emblem": 711,
+    "power": 3173310000,
+    "runes": 66
+  },
+  {
+    "emblem": 712,
+    "power": 3177930000,
+    "runes": 66
+  },
+  {
+    "emblem": 713,
+    "power": 3182550000,
+    "runes": 66
+  },
+  {
+    "emblem": 714,
+    "power": 3187170000,
+    "runes": 66
+  },
+  {
+    "emblem": 715,
+    "power": 3191790000,
+    "runes": 66
+  },
+  {
+    "emblem": 716,
+    "power": 3196410000,
+    "runes": 66
+  },
+  {
+    "emblem": 717,
+    "power": 3201030000,
+    "runes": 66
+  },
+  {
+    "emblem": 718,
+    "power": 3205650000,
+    "runes": 66
+  },
+  {
+    "emblem": 719,
+    "power": 3210270000,
+    "runes": 66
+  },
+  {
+    "emblem": 720,
+    "power": 3214890000,
+    "runes": 66
+  },
+  {
+    "emblem": 721,
+    "power": 3219510000,
+    "runes": 66
+  },
+  {
+    "emblem": 722,
+    "power": 3224130000,
+    "runes": 66
+  },
+  {
+    "emblem": 723,
+    "power": 3228750000,
+    "runes": 66
+  },
+  {
+    "emblem": 724,
+    "power": 3233370000,
+    "runes": 66
+  },
+  {
+    "emblem": 725,
+    "power": 3237990000,
+    "runes": 66
+  },
+  {
+    "emblem": 726,
+    "power": 3242610000,
+    "runes": 66
+  },
+  {
+    "emblem": 727,
+    "power": 3247230000,
+    "runes": 66
+  },
+  {
+    "emblem": 728,
+    "power": 3251850000,
+    "runes": 66
+  },
+  {
+    "emblem": 729,
+    "power": 3256470000,
+    "runes": 66
+  },
+  {
+    "emblem": 730,
+    "power": 3261090000,
+    "runes": 66
+  },
+  {
+    "emblem": 731,
+    "power": 3265710000,
+    "runes": 66
+  },
+  {
+    "emblem": 732,
+    "power": 3270330000,
+    "runes": 66
+  },
+  {
+    "emblem": 733,
+    "power": 3274950000,
+    "runes": 66
+  },
+  {
+    "emblem": 734,
+    "power": 3279570000,
+    "runes": 66
+  },
+  {
+    "emblem": 735,
+    "power": 3284190000,
+    "runes": 66
+  },
+  {
+    "emblem": 736,
+    "power": 3288810000,
+    "runes": 66
+  },
+  {
+    "emblem": 737,
+    "power": 3293430000,
+    "runes": 66
+  },
+  {
+    "emblem": 738,
+    "power": 3298050000,
+    "runes": 66
+  },
+  {
+    "emblem": 739,
+    "power": 3302670000,
+    "runes": 66
+  },
+  {
+    "emblem": 740,
+    "power": 3307290000,
+    "runes": 66
+  },
+  {
+    "emblem": 741,
+    "power": 3311910000,
+    "runes": 66
+  },
+  {
+    "emblem": 742,
+    "power": 3316530000,
+    "runes": 66
+  },
+  {
+    "emblem": 743,
+    "power": 3321150000,
+    "runes": 66
+  },
+  {
+    "emblem": 744,
+    "power": 3325770000,
+    "runes": 66
+  },
+  {
+    "emblem": 745,
+    "power": 3330390000,
+    "runes": 66
+  },
+  {
+    "emblem": 746,
+    "power": 3335010000,
+    "runes": 66
+  },
+  {
+    "emblem": 747,
+    "power": 3339630000,
+    "runes": 66
+  },
+  {
+    "emblem": 748,
+    "power": 3344250000,
+    "runes": 66
+  },
+  {
+    "emblem": 749,
+    "power": 3348870000,
+    "runes": 66
+  },
+  {
+    "emblem": 750,
+    "power": 3353490000,
+    "runes": 66
+  },
+  {
+    "emblem": 751,
+    "power": 3358110000,
+    "runes": 66
+  },
+  {
+    "emblem": 752,
+    "power": 3362730000,
+    "runes": 66
+  },
+  {
+    "emblem": 753,
+    "power": 3367350000,
+    "runes": 66
+  },
+  {
+    "emblem": 754,
+    "power": 3371970000,
+    "runes": 66
+  },
+  {
+    "emblem": 755,
+    "power": 3376590000,
+    "runes": 66
+  },
+  {
+    "emblem": 756,
+    "power": 3381210000,
+    "runes": 66
+  },
+  {
+    "emblem": 757,
+    "power": 3385830000,
+    "runes": 66
+  },
+  {
+    "emblem": 758,
+    "power": 3390450000,
+    "runes": 66
+  },
+  {
+    "emblem": 759,
+    "power": 3395070000,
+    "runes": 66
+  },
+  {
+    "emblem": 760,
+    "power": 3399690000,
+    "runes": 66
+  },
+  {
+    "emblem": 761,
+    "power": 3404310000,
+    "runes": 66
+  },
+  {
+    "emblem": 762,
+    "power": 3408930000,
+    "runes": 66
+  },
+  {
+    "emblem": 763,
+    "power": 3413550000,
+    "runes": 66
+  },
+  {
+    "emblem": 764,
+    "power": 3418170000,
+    "runes": 66
+  },
+  {
+    "emblem": 765,
+    "power": 3422790000,
+    "runes": 66
+  },
+  {
+    "emblem": 766,
+    "power": 3427410000,
+    "runes": 66
+  },
+  {
+    "emblem": 767,
+    "power": 3432030000,
+    "runes": 66
+  },
+  {
+    "emblem": 768,
+    "power": 3436650000,
+    "runes": 66
+  },
+  {
+    "emblem": 769,
+    "power": 3441270000,
+    "runes": 66
+  },
+  {
+    "emblem": 770,
+    "power": 3445890000,
+    "runes": 66
+  },
+  {
+    "emblem": 771,
+    "power": 3450510000,
+    "runes": 66
+  },
+  {
+    "emblem": 772,
+    "power": 3455130000,
+    "runes": 66
+  },
+  {
+    "emblem": 773,
+    "power": 3459750000,
+    "runes": 66
+  },
+  {
+    "emblem": 774,
+    "power": 3464370000,
+    "runes": 66
+  },
+  {
+    "emblem": 775,
+    "power": 3468990000,
+    "runes": 66
+  },
+  {
+    "emblem": 776,
+    "power": 3473610000,
+    "runes": 66
+  },
+  {
+    "emblem": 777,
+    "power": 3478230000,
+    "runes": 66
+  },
+  {
+    "emblem": 778,
+    "power": 3482850000,
+    "runes": 66
+  },
+  {
+    "emblem": 779,
+    "power": 3487470000,
+    "runes": 66
+  },
+  {
+    "emblem": 780,
+    "power": 3492090000,
+    "runes": 66
+  },
+  {
+    "emblem": 781,
+    "power": 3496710000,
+    "runes": 66
+  },
+  {
+    "emblem": 782,
+    "power": 3501330000,
+    "runes": 66
+  },
+  {
+    "emblem": 783,
+    "power": 3505950000,
+    "runes": 66
+  },
+  {
+    "emblem": 784,
+    "power": 3510570000,
+    "runes": 66
+  },
+  {
+    "emblem": 785,
+    "power": 3515190000,
+    "runes": 66
+  },
+  {
+    "emblem": 786,
+    "power": 3519810000,
+    "runes": 66
+  },
+  {
+    "emblem": 787,
+    "power": 3524430000,
+    "runes": 66
+  },
+  {
+    "emblem": 788,
+    "power": 3529050000,
+    "runes": 66
+  },
+  {
+    "emblem": 789,
+    "power": 3533670000,
+    "runes": 66
+  },
+  {
+    "emblem": 790,
+    "power": 3538290000,
+    "runes": 66
+  },
+  {
+    "emblem": 791,
+    "power": 3542910000,
+    "runes": 66
+  },
+  {
+    "emblem": 792,
+    "power": 3547530000,
+    "runes": 66
+  },
+  {
+    "emblem": 793,
+    "power": 3552150000,
+    "runes": 66
+  },
+  {
+    "emblem": 794,
+    "power": 3556770000,
+    "runes": 66
+  },
+  {
+    "emblem": 795,
+    "power": 3561390000,
+    "runes": 66
+  },
+  {
+    "emblem": 796,
+    "power": 3566010000,
+    "runes": 66
+  },
+  {
+    "emblem": 797,
+    "power": 3570630000,
+    "runes": 66
+  },
+  {
+    "emblem": 798,
+    "power": 3575250000,
+    "runes": 66
+  },
+  {
+    "emblem": 799,
+    "power": 3579870000,
+    "runes": 66
+  },
+  {
+    "emblem": 800,
+    "power": 3584490000,
+    "runes": 66
+  },
+  {
+    "emblem": 801,
+    "power": 3589110000,
+    "runes": 66
+  },
+  {
+    "emblem": 802,
+    "power": 3593730000,
+    "runes": 66
+  },
+  {
+    "emblem": 803,
+    "power": 3598350000,
+    "runes": 66
+  },
+  {
+    "emblem": 804,
+    "power": 3602970000,
+    "runes": 66
+  },
+  {
+    "emblem": 805,
+    "power": 3607590000,
+    "runes": 66
+  },
+  {
+    "emblem": 806,
+    "power": 3612210000,
+    "runes": 66
+  },
+  {
+    "emblem": 807,
+    "power": 3616830000,
+    "runes": 66
+  },
+  {
+    "emblem": 808,
+    "power": 3621450000,
+    "runes": 66
+  },
+  {
+    "emblem": 809,
+    "power": 3626070000,
+    "runes": 66
+  },
+  {
+    "emblem": 810,
+    "power": 3630690000,
+    "runes": 66
+  },
+  {
+    "emblem": 811,
+    "power": 3635310000,
+    "runes": 66
+  },
+  {
+    "emblem": 812,
+    "power": 3639930000,
+    "runes": 66
+  },
+  {
+    "emblem": 813,
+    "power": 3644550000,
+    "runes": 66
+  },
+  {
+    "emblem": 814,
+    "power": 3649170000,
+    "runes": 66
+  },
+  {
+    "emblem": 815,
+    "power": 3653790000,
+    "runes": 66
+  },
+  {
+    "emblem": 816,
+    "power": 3658410000,
+    "runes": 66
+  },
+  {
+    "emblem": 817,
+    "power": 3663030000,
+    "runes": 66
+  },
+  {
+    "emblem": 818,
+    "power": 3667650000,
+    "runes": 66
+  },
+  {
+    "emblem": 819,
+    "power": 3672270000,
+    "runes": 66
+  },
+  {
+    "emblem": 820,
+    "power": 3676890000,
+    "runes": 66
+  },
+  {
+    "emblem": 821,
+    "power": 3681510000,
+    "runes": 66
+  },
+  {
+    "emblem": 822,
+    "power": 3686130000,
+    "runes": 66
+  },
+  {
+    "emblem": 823,
+    "power": 3690750000,
+    "runes": 66
+  },
+  {
+    "emblem": 824,
+    "power": 3695370000,
+    "runes": 66
+  },
+  {
+    "emblem": 825,
+    "power": 3699990000,
+    "runes": 66
+  },
+  {
+    "emblem": 826,
+    "power": 3704610000,
+    "runes": 66
+  },
+  {
+    "emblem": 827,
+    "power": 3709230000,
+    "runes": 66
+  },
+  {
+    "emblem": 828,
+    "power": 3713850000,
+    "runes": 66
+  },
+  {
+    "emblem": 829,
+    "power": 3718470000,
+    "runes": 66
+  },
+  {
+    "emblem": 830,
+    "power": 3723090000,
+    "runes": 66
+  },
+  {
+    "emblem": 831,
+    "power": 3727710000,
+    "runes": 66
+  },
+  {
+    "emblem": 832,
+    "power": 3732330000,
+    "runes": 66
+  },
+  {
+    "emblem": 833,
+    "power": 3736950000,
+    "runes": 66
+  },
+  {
+    "emblem": 834,
+    "power": 3741570000,
+    "runes": 66
+  },
+  {
+    "emblem": 835,
+    "power": 3746190000,
+    "runes": 66
+  },
+  {
+    "emblem": 836,
+    "power": 3750810000,
+    "runes": 66
+  },
+  {
+    "emblem": 837,
+    "power": 3755430000,
+    "runes": 66
+  },
+  {
+    "emblem": 838,
+    "power": 3760050000,
+    "runes": 66
+  },
+  {
+    "emblem": 839,
+    "power": 3764670000,
+    "runes": 66
+  },
+  {
+    "emblem": 840,
+    "power": 3769290000,
+    "runes": 66
+  },
+  {
+    "emblem": 841,
+    "power": 3773910000,
+    "runes": 66
+  },
+  {
+    "emblem": 842,
+    "power": 3778530000,
+    "runes": 66
+  },
+  {
+    "emblem": 843,
+    "power": 3783150000,
+    "runes": 66
+  },
+  {
+    "emblem": 844,
+    "power": 3787770000,
+    "runes": 66
+  },
+  {
+    "emblem": 845,
+    "power": 3792390000,
+    "runes": 66
+  },
+  {
+    "emblem": 846,
+    "power": 3797010000,
+    "runes": 66
+  },
+  {
+    "emblem": 847,
+    "power": 3801630000,
+    "runes": 66
+  },
+  {
+    "emblem": 848,
+    "power": 3806250000,
+    "runes": 66
+  },
+  {
+    "emblem": 849,
+    "power": 3810870000,
+    "runes": 66
+  },
+  {
+    "emblem": 850,
+    "power": 3815490000,
+    "runes": 66
+  },
+  {
+    "emblem": 851,
+    "power": 3820110000,
+    "runes": 66
+  },
+  {
+    "emblem": 852,
+    "power": 3824730000,
+    "runes": 66
+  },
+  {
+    "emblem": 853,
+    "power": 3829350000,
+    "runes": 66
+  },
+  {
+    "emblem": 854,
+    "power": 3833970000,
+    "runes": 66
+  },
+  {
+    "emblem": 855,
+    "power": 3838590000,
+    "runes": 66
+  },
+  {
+    "emblem": 856,
+    "power": 3843210000,
+    "runes": 66
+  },
+  {
+    "emblem": 857,
+    "power": 3847830000,
+    "runes": 66
+  },
+  {
+    "emblem": 858,
+    "power": 3852450000,
+    "runes": 66
+  },
+  {
+    "emblem": 859,
+    "power": 3857070000,
+    "runes": 66
+  },
+  {
+    "emblem": 860,
+    "power": 3861690000,
+    "runes": 66
+  },
+  {
+    "emblem": 861,
+    "power": 3866310000,
+    "runes": 66
+  },
+  {
+    "emblem": 862,
+    "power": 3870930000,
+    "runes": 66
+  },
+  {
+    "emblem": 863,
+    "power": 3875550000,
+    "runes": 66
+  },
+  {
+    "emblem": 864,
+    "power": 3880170000,
+    "runes": 66
+  },
+  {
+    "emblem": 865,
+    "power": 3884790000,
+    "runes": 66
+  },
+  {
+    "emblem": 866,
+    "power": 3889410000,
+    "runes": 66
+  },
+  {
+    "emblem": 867,
+    "power": 3894030000,
+    "runes": 66
+  },
+  {
+    "emblem": 868,
+    "power": 3898650000,
+    "runes": 66
+  },
+  {
+    "emblem": 869,
+    "power": 3903270000,
+    "runes": 66
+  },
+  {
+    "emblem": 870,
+    "power": 3907890000,
+    "runes": 66
+  },
+  {
+    "emblem": 871,
+    "power": 3912510000,
+    "runes": 66
+  },
+  {
+    "emblem": 872,
+    "power": 3917130000,
+    "runes": 66
+  },
+  {
+    "emblem": 873,
+    "power": 3921750000,
+    "runes": 66
+  },
+  {
+    "emblem": 874,
+    "power": 3926370000,
+    "runes": 66
+  },
+  {
+    "emblem": 875,
+    "power": 3930990000,
+    "runes": 66
+  },
+  {
+    "emblem": 876,
+    "power": 3935610000,
+    "runes": 66
+  },
+  {
+    "emblem": 877,
+    "power": 3940230000,
+    "runes": 66
+  },
+  {
+    "emblem": 878,
+    "power": 3944850000,
+    "runes": 66
+  },
+  {
+    "emblem": 879,
+    "power": 3949470000,
+    "runes": 66
+  },
+  {
+    "emblem": 880,
+    "power": 3954090000,
+    "runes": 66
+  },
+  {
+    "emblem": 881,
+    "power": 3958710000,
+    "runes": 66
+  },
+  {
+    "emblem": 882,
+    "power": 3963330000,
+    "runes": 66
+  },
+  {
+    "emblem": 883,
+    "power": 3967950000,
+    "runes": 66
+  },
+  {
+    "emblem": 884,
+    "power": 3972570000,
+    "runes": 66
+  },
+  {
+    "emblem": 885,
+    "power": 3977190000,
+    "runes": 66
+  },
+  {
+    "emblem": 886,
+    "power": 3981810000,
+    "runes": 66
+  },
+  {
+    "emblem": 887,
+    "power": 3986430000,
+    "runes": 66
+  },
+  {
+    "emblem": 888,
+    "power": 3991050000,
+    "runes": 66
+  },
+  {
+    "emblem": 889,
+    "power": 3995670000,
+    "runes": 66
+  },
+  {
+    "emblem": 890,
+    "power": 4000290000,
+    "runes": 66
+  },
+  {
+    "emblem": 891,
+    "power": 4004910000,
+    "runes": 66
+  },
+  {
+    "emblem": 892,
+    "power": 4009530000,
+    "runes": 66
+  },
+  {
+    "emblem": 893,
+    "power": 4014150000,
+    "runes": 66
+  },
+  {
+    "emblem": 894,
+    "power": 4018770000,
+    "runes": 66
+  },
+  {
+    "emblem": 895,
+    "power": 4023390000,
+    "runes": 66
+  },
+  {
+    "emblem": 896,
+    "power": 4028010000,
+    "runes": 66
+  },
+  {
+    "emblem": 897,
+    "power": 4032630000,
+    "runes": 66
+  },
+  {
+    "emblem": 898,
+    "power": 4037250000,
+    "runes": 66
+  },
+  {
+    "emblem": 899,
+    "power": 4041870000,
+    "runes": 66
+  },
+  {
+    "emblem": 900,
+    "power": 4046490000,
+    "runes": 66
+  },
+  {
+    "emblem": 901,
+    "power": 4051110000,
+    "runes": 66
+  },
+  {
+    "emblem": 902,
+    "power": 4055730000,
+    "runes": 66
+  },
+  {
+    "emblem": 903,
+    "power": 4060350000,
+    "runes": 66
+  },
+  {
+    "emblem": 904,
+    "power": 4064970000,
+    "runes": 66
+  },
+  {
+    "emblem": 905,
+    "power": 4069590000,
+    "runes": 66
+  },
+  {
+    "emblem": 906,
+    "power": 4074210000,
+    "runes": 66
+  },
+  {
+    "emblem": 907,
+    "power": 4078830000,
+    "runes": 66
+  },
+  {
+    "emblem": 908,
+    "power": 4083450000,
+    "runes": 66
+  },
+  {
+    "emblem": 909,
+    "power": 4088070000,
+    "runes": 66
+  },
+  {
+    "emblem": 910,
+    "power": 4092690000,
+    "runes": 66
+  },
+  {
+    "emblem": 911,
+    "power": 4097310000,
+    "runes": 66
+  },
+  {
+    "emblem": 912,
+    "power": 4101930000,
+    "runes": 66
+  },
+  {
+    "emblem": 913,
+    "power": 4106550000,
+    "runes": 66
+  },
+  {
+    "emblem": 914,
+    "power": 4111170000,
+    "runes": 66
+  },
+  {
+    "emblem": 915,
+    "power": 4115790000,
+    "runes": 66
+  },
+  {
+    "emblem": 916,
+    "power": 4120410000,
+    "runes": 66
+  },
+  {
+    "emblem": 917,
+    "power": 4125030000,
+    "runes": 66
+  },
+  {
+    "emblem": 918,
+    "power": 4129650000,
+    "runes": 66
+  },
+  {
+    "emblem": 919,
+    "power": 4134270000,
+    "runes": 66
+  },
+  {
+    "emblem": 920,
+    "power": 4138890000,
+    "runes": 66
+  },
+  {
+    "emblem": 921,
+    "power": 4143510000,
+    "runes": 66
+  },
+  {
+    "emblem": 922,
+    "power": 4148130000,
+    "runes": 66
+  },
+  {
+    "emblem": 923,
+    "power": 4152750000,
+    "runes": 66
+  },
+  {
+    "emblem": 924,
+    "power": 4157370000,
+    "runes": 66
+  },
+  {
+    "emblem": 925,
+    "power": 4161990000,
+    "runes": 66
+  },
+  {
+    "emblem": 926,
+    "power": 4166610000,
+    "runes": 66
+  },
+  {
+    "emblem": 927,
+    "power": 4171230000,
+    "runes": 66
+  },
+  {
+    "emblem": 928,
+    "power": 4175850000,
+    "runes": 66
+  },
+  {
+    "emblem": 929,
+    "power": 4180470000,
+    "runes": 66
+  },
+  {
+    "emblem": 930,
+    "power": 4185090000,
+    "runes": 66
+  },
+  {
+    "emblem": 931,
+    "power": 4189710000,
+    "runes": 66
+  },
+  {
+    "emblem": 932,
+    "power": 4194330000,
+    "runes": 66
+  },
+  {
+    "emblem": 933,
+    "power": 4198950000,
+    "runes": 66
+  },
+  {
+    "emblem": 934,
+    "power": 4203570000,
+    "runes": 66
+  },
+  {
+    "emblem": 935,
+    "power": 4208190000,
+    "runes": 66
+  },
+  {
+    "emblem": 936,
+    "power": 4212810000,
+    "runes": 66
+  },
+  {
+    "emblem": 937,
+    "power": 4217430000,
+    "runes": 66
+  },
+  {
+    "emblem": 938,
+    "power": 4222050000,
+    "runes": 66
+  },
+  {
+    "emblem": 939,
+    "power": 4226670000,
+    "runes": 66
+  },
+  {
+    "emblem": 940,
+    "power": 4231290000,
+    "runes": 66
+  },
+  {
+    "emblem": 941,
+    "power": 4235910000,
+    "runes": 66
+  },
+  {
+    "emblem": 942,
+    "power": 4240530000,
+    "runes": 66
+  },
+  {
+    "emblem": 943,
+    "power": 4245150000,
+    "runes": 66
+  },
+  {
+    "emblem": 944,
+    "power": 4249770000,
+    "runes": 66
+  },
+  {
+    "emblem": 945,
+    "power": 4254390000,
+    "runes": 66
+  },
+  {
+    "emblem": 946,
+    "power": 4259010000,
+    "runes": 66
+  },
+  {
+    "emblem": 947,
+    "power": 4263630000,
+    "runes": 66
+  },
+  {
+    "emblem": 948,
+    "power": 4268250000,
+    "runes": 66
+  },
+  {
+    "emblem": 949,
+    "power": 4272870000,
+    "runes": 66
+  },
+  {
+    "emblem": 950,
+    "power": 4277490000,
+    "runes": 66
+  },
+  {
+    "emblem": 951,
+    "power": 4282110000,
+    "runes": 66
+  },
+  {
+    "emblem": 952,
+    "power": 4286730000,
+    "runes": 66
+  },
+  {
+    "emblem": 953,
+    "power": 4291350000,
+    "runes": 66
+  },
+  {
+    "emblem": 954,
+    "power": 4295970000,
+    "runes": 66
+  },
+  {
+    "emblem": 955,
+    "power": 4300590000,
+    "runes": 66
+  },
+  {
+    "emblem": 956,
+    "power": 4305210000,
+    "runes": 66
+  },
+  {
+    "emblem": 957,
+    "power": 4309830000,
+    "runes": 66
+  },
+  {
+    "emblem": 958,
+    "power": 4314450000,
+    "runes": 66
+  },
+  {
+    "emblem": 959,
+    "power": 4319070000,
+    "runes": 66
+  },
+  {
+    "emblem": 960,
+    "power": 4323690000,
+    "runes": 66
+  },
+  {
+    "emblem": 961,
+    "power": 4328310000,
+    "runes": 66
+  },
+  {
+    "emblem": 962,
+    "power": 4332930000,
+    "runes": 66
+  },
+  {
+    "emblem": 963,
+    "power": 4337550000,
+    "runes": 66
+  },
+  {
+    "emblem": 964,
+    "power": 4342170000,
+    "runes": 66
+  },
+  {
+    "emblem": 965,
+    "power": 4346790000,
+    "runes": 66
+  },
+  {
+    "emblem": 966,
+    "power": 4351410000,
+    "runes": 66
+  },
+  {
+    "emblem": 967,
+    "power": 4356030000,
+    "runes": 66
+  },
+  {
+    "emblem": 968,
+    "power": 4360650000,
+    "runes": 66
+  },
+  {
+    "emblem": 969,
+    "power": 4365270000,
+    "runes": 66
+  },
+  {
+    "emblem": 970,
+    "power": 4369890000,
+    "runes": 66
+  },
+  {
+    "emblem": 971,
+    "power": 4374510000,
+    "runes": 66
+  },
+  {
+    "emblem": 972,
+    "power": 4379130000,
+    "runes": 66
+  },
+  {
+    "emblem": 973,
+    "power": 4383750000,
+    "runes": 66
+  },
+  {
+    "emblem": 974,
+    "power": 4388370000,
+    "runes": 66
+  },
+  {
+    "emblem": 975,
+    "power": 4392990000,
+    "runes": 66
+  },
+  {
+    "emblem": 976,
+    "power": 4397610000,
+    "runes": 66
+  },
+  {
+    "emblem": 977,
+    "power": 4402230000,
+    "runes": 66
+  },
+  {
+    "emblem": 978,
+    "power": 4406850000,
+    "runes": 66
+  },
+  {
+    "emblem": 979,
+    "power": 4411470000,
+    "runes": 66
+  },
+  {
+    "emblem": 980,
+    "power": 4416090000,
+    "runes": 66
+  },
+  {
+    "emblem": 981,
+    "power": 4420710000,
+    "runes": 66
+  },
+  {
+    "emblem": 982,
+    "power": 4425330000,
+    "runes": 66
+  },
+  {
+    "emblem": 983,
+    "power": 4429950000,
+    "runes": 66
+  },
+  {
+    "emblem": 984,
+    "power": 4434570000,
+    "runes": 66
+  },
+  {
+    "emblem": 985,
+    "power": 4439190000,
+    "runes": 66
+  },
+  {
+    "emblem": 986,
+    "power": 4443810000,
+    "runes": 66
+  },
+  {
+    "emblem": 987,
+    "power": 4448430000,
+    "runes": 66
+  },
+  {
+    "emblem": 988,
+    "power": 4453050000,
+    "runes": 66
+  },
+  {
+    "emblem": 989,
+    "power": 4457670000,
+    "runes": 66
+  },
+  {
+    "emblem": 990,
+    "power": 4462290000,
+    "runes": 66
+  },
+  {
+    "emblem": 991,
+    "power": 4466910000,
+    "runes": 66
+  },
+  {
+    "emblem": 992,
+    "power": 4471530000,
+    "runes": 66
+  },
+  {
+    "emblem": 993,
+    "power": 4476150000,
+    "runes": 66
+  },
+  {
+    "emblem": 994,
+    "power": 4480770000,
+    "runes": 66
+  },
+  {
+    "emblem": 995,
+    "power": 4485390000,
+    "runes": 66
+  },
+  {
+    "emblem": 996,
+    "power": 4490010000,
+    "runes": 66
+  },
+  {
+    "emblem": 997,
+    "power": 4494630000,
+    "runes": 66
+  },
+  {
+    "emblem": 998,
+    "power": 4499250000,
+    "runes": 66
+  },
+  {
+    "emblem": 999,
+    "power": 4503870000,
+    "runes": 66
+  },
+  {
+    "emblem": 1000,
+    "power": 4508490000,
+    "runes": 66
+  },
+  {
+    "emblem": 1001,
+    "power": 4513110000,
+    "runes": 66
+  },
+  {
+    "emblem": 1002,
+    "power": 4517730000,
+    "runes": 66
+  },
+  {
+    "emblem": 1003,
+    "power": 4522350000,
+    "runes": 66
+  },
+  {
+    "emblem": 1004,
+    "power": 4526970000,
+    "runes": 66
+  },
+  {
+    "emblem": 1005,
+    "power": 4531590000,
+    "runes": 66
+  },
+  {
+    "emblem": 1006,
+    "power": 4536210000,
+    "runes": 66
+  },
+  {
+    "emblem": 1007,
+    "power": 4540830000,
+    "runes": 66
+  },
+  {
+    "emblem": 1008,
+    "power": 4545450000,
+    "runes": 66
+  },
+  {
+    "emblem": 1009,
+    "power": 4550070000,
+    "runes": 66
+  },
+  {
+    "emblem": 1010,
+    "power": 4554690000,
+    "runes": 66
+  },
+  {
+    "emblem": 1011,
+    "power": 4559310000,
+    "runes": 66
+  },
+  {
+    "emblem": 1012,
+    "power": 4563930000,
+    "runes": 66
+  },
+  {
+    "emblem": 1013,
+    "power": 4568550000,
+    "runes": 66
+  },
+  {
+    "emblem": 1014,
+    "power": 4573170000,
+    "runes": 66
+  },
+  {
+    "emblem": 1015,
+    "power": 4577790000,
+    "runes": 66
+  },
+  {
+    "emblem": 1016,
+    "power": 4582410000,
+    "runes": 66
+  },
+  {
+    "emblem": 1017,
+    "power": 4587030000,
+    "runes": 66
+  },
+  {
+    "emblem": 1018,
+    "power": 4591650000,
+    "runes": 66
+  },
+  {
+    "emblem": 1019,
+    "power": 4596270000,
+    "runes": 66
+  },
+  {
+    "emblem": 1020,
+    "power": 4600890000,
+    "runes": 66
+  },
+  {
+    "emblem": 1021,
+    "power": 4605510000,
+    "runes": 66
+  },
+  {
+    "emblem": 1022,
+    "power": 4610130000,
+    "runes": 66
+  },
+  {
+    "emblem": 1023,
+    "power": 4614750000,
+    "runes": 66
+  },
+  {
+    "emblem": 1024,
+    "power": 4619370000,
+    "runes": 66
+  },
+  {
+    "emblem": 1025,
+    "power": 4623990000,
+    "runes": 66
+  },
+  {
+    "emblem": 1026,
+    "power": 4628610000,
+    "runes": 66
+  },
+  {
+    "emblem": 1027,
+    "power": 4633230000,
+    "runes": 66
+  },
+  {
+    "emblem": 1028,
+    "power": 4637850000,
+    "runes": 66
+  },
+  {
+    "emblem": 1029,
+    "power": 4642470000,
+    "runes": 66
+  },
+  {
+    "emblem": 1030,
+    "power": 4647090000,
+    "runes": 66
+  },
+  {
+    "emblem": 1031,
+    "power": 4651710000,
+    "runes": 66
+  },
+  {
+    "emblem": 1032,
+    "power": 4656330000,
+    "runes": 66
+  },
+  {
+    "emblem": 1033,
+    "power": 4660950000,
+    "runes": 66
+  },
+  {
+    "emblem": 1034,
+    "power": 4665570000,
+    "runes": 66
+  },
+  {
+    "emblem": 1035,
+    "power": 4670190000,
+    "runes": 66
+  },
+  {
+    "emblem": 1036,
+    "power": 4674810000,
+    "runes": 66
+  },
+  {
+    "emblem": 1037,
+    "power": 4679430000,
+    "runes": 66
+  },
+  {
+    "emblem": 1038,
+    "power": 4684050000,
+    "runes": 66
+  },
+  {
+    "emblem": 1039,
+    "power": 4688670000,
+    "runes": 66
+  },
+  {
+    "emblem": 1040,
+    "power": 4693290000,
+    "runes": 66
+  },
+  {
+    "emblem": 1041,
+    "power": 4697910000,
+    "runes": 66
+  },
+  {
+    "emblem": 1042,
+    "power": 4702530000,
+    "runes": 66
+  },
+  {
+    "emblem": 1043,
+    "power": 4707150000,
+    "runes": 66
+  },
+  {
+    "emblem": 1044,
+    "power": 4711770000,
+    "runes": 66
+  },
+  {
+    "emblem": 1045,
+    "power": 4716390000,
+    "runes": 66
+  },
+  {
+    "emblem": 1046,
+    "power": 4721010000,
+    "runes": 66
+  },
+  {
+    "emblem": 1047,
+    "power": 4725630000,
+    "runes": 66
+  },
+  {
+    "emblem": 1048,
+    "power": 4730250000,
+    "runes": 66
+  },
+  {
+    "emblem": 1049,
+    "power": 4734870000,
+    "runes": 66
+  },
+  {
+    "emblem": 1050,
+    "power": 4739490000,
+    "runes": 66
+  },
+  {
+    "emblem": 1051,
+    "power": 4744110000,
+    "runes": 66
+  },
+  {
+    "emblem": 1052,
+    "power": 4748730000,
+    "runes": 66
+  },
+  {
+    "emblem": 1053,
+    "power": 4753350000,
+    "runes": 66
+  },
+  {
+    "emblem": 1054,
+    "power": 4757970000,
+    "runes": 66
+  },
+  {
+    "emblem": 1055,
+    "power": 4762590000,
+    "runes": 66
+  },
+  {
+    "emblem": 1056,
+    "power": 4767210000,
+    "runes": 66
+  },
+  {
+    "emblem": 1057,
+    "power": 4771830000,
+    "runes": 66
+  },
+  {
+    "emblem": 1058,
+    "power": 4776450000,
+    "runes": 66
+  },
+  {
+    "emblem": 1059,
+    "power": 4781070000,
+    "runes": 66
+  },
+  {
+    "emblem": 1060,
+    "power": 4785690000,
+    "runes": 66
+  },
+  {
+    "emblem": 1061,
+    "power": 4790310000,
+    "runes": 66
+  },
+  {
+    "emblem": 1062,
+    "power": 4794930000,
+    "runes": 66
+  },
+  {
+    "emblem": 1063,
+    "power": 4799550000,
+    "runes": 66
+  },
+  {
+    "emblem": 1064,
+    "power": 4804170000,
+    "runes": 66
+  },
+  {
+    "emblem": 1065,
+    "power": 4808790000,
+    "runes": 66
+  },
+  {
+    "emblem": 1066,
+    "power": 4813410000,
+    "runes": 66
+  },
+  {
+    "emblem": 1067,
+    "power": 4818030000,
+    "runes": 66
+  },
+  {
+    "emblem": 1068,
+    "power": 4822650000,
+    "runes": 66
+  },
+  {
+    "emblem": 1069,
+    "power": 4827270000,
+    "runes": 66
+  },
+  {
+    "emblem": 1070,
+    "power": 4831890000,
+    "runes": 66
+  },
+  {
+    "emblem": 1071,
+    "power": 4836510000,
+    "runes": 66
+  },
+  {
+    "emblem": 1072,
+    "power": 4841130000,
+    "runes": 66
+  },
+  {
+    "emblem": 1073,
+    "power": 4845750000,
+    "runes": 66
+  },
+  {
+    "emblem": 1074,
+    "power": 4850370000,
+    "runes": 66
+  },
+  {
+    "emblem": 1075,
+    "power": 4854990000,
+    "runes": 66
+  },
+  {
+    "emblem": 1076,
+    "power": 4859610000,
+    "runes": 66
+  },
+  {
+    "emblem": 1077,
+    "power": 4864230000,
+    "runes": 66
+  },
+  {
+    "emblem": 1078,
+    "power": 4868850000,
+    "runes": 66
+  },
+  {
+    "emblem": 1079,
+    "power": 4873470000,
+    "runes": 66
+  },
+  {
+    "emblem": 1080,
+    "power": 4878090000,
+    "runes": 66
+  },
+  {
+    "emblem": 1081,
+    "power": 4882710000,
+    "runes": 66
+  },
+  {
+    "emblem": 1082,
+    "power": 4887330000,
+    "runes": 66
+  },
+  {
+    "emblem": 1083,
+    "power": 4891950000,
+    "runes": 66
+  },
+  {
+    "emblem": 1084,
+    "power": 4896570000,
+    "runes": 66
+  },
+  {
+    "emblem": 1085,
+    "power": 4901190000,
+    "runes": 66
+  },
+  {
+    "emblem": 1086,
+    "power": 4905810000,
+    "runes": 66
+  },
+  {
+    "emblem": 1087,
+    "power": 4910430000,
+    "runes": 66
+  },
+  {
+    "emblem": 1088,
+    "power": 4915050000,
+    "runes": 66
+  },
+  {
+    "emblem": 1089,
+    "power": 4919670000,
+    "runes": 66
+  },
+  {
+    "emblem": 1090,
+    "power": 4924290000,
+    "runes": 66
+  },
+  {
+    "emblem": 1091,
+    "power": 4928910000,
+    "runes": 66
+  },
+  {
+    "emblem": 1092,
+    "power": 4933530000,
+    "runes": 66
+  },
+  {
+    "emblem": 1093,
+    "power": 4938150000,
+    "runes": 66
+  },
+  {
+    "emblem": 1094,
+    "power": 4942770000,
+    "runes": 66
+  },
+  {
+    "emblem": 1095,
+    "power": 4947390000,
+    "runes": 66
+  },
+  {
+    "emblem": 1096,
+    "power": 4952010000,
+    "runes": 66
+  },
+  {
+    "emblem": 1097,
+    "power": 4956630000,
+    "runes": 66
+  },
+  {
+    "emblem": 1098,
+    "power": 4961250000,
+    "runes": 66
+  },
+  {
+    "emblem": 1099,
+    "power": 4965870000,
+    "runes": 66
+  },
+  {
+    "emblem": 1100,
+    "power": 4970490000,
+    "runes": 66
+  },
+  {
+    "emblem": 1101,
+    "power": 4975110000,
+    "runes": 66
+  },
+  {
+    "emblem": 1102,
+    "power": 4979730000,
+    "runes": 66
+  },
+  {
+    "emblem": 1103,
+    "power": 4984350000,
+    "runes": 66
+  },
+  {
+    "emblem": 1104,
+    "power": 4988970000,
+    "runes": 66
+  },
+  {
+    "emblem": 1105,
+    "power": 4993590000,
+    "runes": 66
+  },
+  {
+    "emblem": 1106,
+    "power": 4998210000,
+    "runes": 66
+  },
+  {
+    "emblem": 1107,
+    "power": 5002830000,
+    "runes": 66
+  },
+  {
+    "emblem": 1108,
+    "power": 5007450000,
+    "runes": 66
+  },
+  {
+    "emblem": 1109,
+    "power": 5012070000,
+    "runes": 66
+  },
+  {
+    "emblem": 1110,
+    "power": 5016690000,
+    "runes": 66
+  },
+  {
+    "emblem": 1111,
+    "power": 5021310000,
+    "runes": 66
+  },
+  {
+    "emblem": 1112,
+    "power": 5025930000,
+    "runes": 66
+  },
+  {
+    "emblem": 1113,
+    "power": 5030550000,
+    "runes": 66
+  },
+  {
+    "emblem": 1114,
+    "power": 5035170000,
+    "runes": 66
+  },
+  {
+    "emblem": 1115,
+    "power": 5039790000,
+    "runes": 66
+  },
+  {
+    "emblem": 1116,
+    "power": 5044410000,
+    "runes": 66
+  },
+  {
+    "emblem": 1117,
+    "power": 5049030000,
+    "runes": 66
+  },
+  {
+    "emblem": 1118,
+    "power": 5053650000,
+    "runes": 66
+  },
+  {
+    "emblem": 1119,
+    "power": 5058270000,
+    "runes": 66
+  },
+  {
+    "emblem": 1120,
+    "power": 5062890000,
+    "runes": 66
+  },
+  {
+    "emblem": 1121,
+    "power": 5067510000,
+    "runes": 66
+  },
+  {
+    "emblem": 1122,
+    "power": 5072130000,
+    "runes": 66
+  },
+  {
+    "emblem": 1123,
+    "power": 5076750000,
+    "runes": 66
+  },
+  {
+    "emblem": 1124,
+    "power": 5081370000,
+    "runes": 66
+  },
+  {
+    "emblem": 1125,
+    "power": 5085990000,
+    "runes": 66
+  },
+  {
+    "emblem": 1126,
+    "power": 5090610000,
+    "runes": 66
+  },
+  {
+    "emblem": 1127,
+    "power": 5095230000,
+    "runes": 66
+  },
+  {
+    "emblem": 1128,
+    "power": 5099850000,
+    "runes": 66
+  },
+  {
+    "emblem": 1129,
+    "power": 5104470000,
+    "runes": 66
+  },
+  {
+    "emblem": 1130,
+    "power": 5109090000,
+    "runes": 66
+  },
+  {
+    "emblem": 1131,
+    "power": 5113710000,
+    "runes": 66
+  },
+  {
+    "emblem": 1132,
+    "power": 5118330000,
+    "runes": 66
+  },
+  {
+    "emblem": 1133,
+    "power": 5122950000,
+    "runes": 66
+  },
+  {
+    "emblem": 1134,
+    "power": 5127570000,
+    "runes": 66
+  },
+  {
+    "emblem": 1135,
+    "power": 5132190000,
+    "runes": 66
+  },
+  {
+    "emblem": 1136,
+    "power": 5136810000,
+    "runes": 66
+  },
+  {
+    "emblem": 1137,
+    "power": 5141430000,
+    "runes": 66
+  },
+  {
+    "emblem": 1138,
+    "power": 5146050000,
+    "runes": 66
+  },
+  {
+    "emblem": 1139,
+    "power": 5150670000,
+    "runes": 66
+  },
+  {
+    "emblem": 1140,
+    "power": 5155290000,
+    "runes": 66
+  },
+  {
+    "emblem": 1141,
+    "power": 5159910000,
+    "runes": 66
+  },
+  {
+    "emblem": 1142,
+    "power": 5164530000,
+    "runes": 66
+  },
+  {
+    "emblem": 1143,
+    "power": 5169150000,
+    "runes": 66
+  },
+  {
+    "emblem": 1144,
+    "power": 5173770000,
+    "runes": 66
+  },
+  {
+    "emblem": 1145,
+    "power": 5178390000,
+    "runes": 66
+  },
+  {
+    "emblem": 1146,
+    "power": 5183010000,
+    "runes": 66
+  },
+  {
+    "emblem": 1147,
+    "power": 5187630000,
+    "runes": 66
+  },
+  {
+    "emblem": 1148,
+    "power": 5192250000,
+    "runes": 66
+  },
+  {
+    "emblem": 1149,
+    "power": 5196870000,
+    "runes": 66
+  },
+  {
+    "emblem": 1150,
+    "power": 5201490000,
+    "runes": 66
+  },
+  {
+    "emblem": 1151,
+    "power": 5206110000,
+    "runes": 66
+  },
+  {
+    "emblem": 1152,
+    "power": 5210730000,
+    "runes": 66
+  },
+  {
+    "emblem": 1153,
+    "power": 5215350000,
+    "runes": 66
+  },
+  {
+    "emblem": 1154,
+    "power": 5219970000,
+    "runes": 66
+  },
+  {
+    "emblem": 1155,
+    "power": 5224590000,
+    "runes": 66
+  },
+  {
+    "emblem": 1156,
+    "power": 5229210000,
+    "runes": 66
+  },
+  {
+    "emblem": 1157,
+    "power": 5233830000,
+    "runes": 66
+  },
+  {
+    "emblem": 1158,
+    "power": 5238450000,
+    "runes": 66
+  },
+  {
+    "emblem": 1159,
+    "power": 5243070000,
+    "runes": 66
+  },
+  {
+    "emblem": 1160,
+    "power": 5247690000,
+    "runes": 66
+  },
+  {
+    "emblem": 1161,
+    "power": 5252310000,
+    "runes": 66
+  },
+  {
+    "emblem": 1162,
+    "power": 5256930000,
+    "runes": 66
+  },
+  {
+    "emblem": 1163,
+    "power": 5261550000,
+    "runes": 66
+  },
+  {
+    "emblem": 1164,
+    "power": 5266170000,
+    "runes": 66
+  },
+  {
+    "emblem": 1165,
+    "power": 5270790000,
+    "runes": 66
+  },
+  {
+    "emblem": 1166,
+    "power": 5275410000,
+    "runes": 66
+  },
+  {
+    "emblem": 1167,
+    "power": 5280030000,
+    "runes": 66
+  },
+  {
+    "emblem": 1168,
+    "power": 5284650000,
+    "runes": 66
+  },
+  {
+    "emblem": 1169,
+    "power": 5289270000,
+    "runes": 66
+  },
+  {
+    "emblem": 1170,
+    "power": 5293890000,
+    "runes": 66
+  },
+  {
+    "emblem": 1171,
+    "power": 5298510000,
+    "runes": 66
+  },
+  {
+    "emblem": 1172,
+    "power": 5303130000,
+    "runes": 66
+  },
+  {
+    "emblem": 1173,
+    "power": 5307750000,
+    "runes": 66
+  },
+  {
+    "emblem": 1174,
+    "power": 5312370000,
+    "runes": 66
+  },
+  {
+    "emblem": 1175,
+    "power": 5316990000,
+    "runes": 66
+  },
+  {
+    "emblem": 1176,
+    "power": 5321610000,
+    "runes": 66
+  },
+  {
+    "emblem": 1177,
+    "power": 5326230000,
+    "runes": 66
+  },
+  {
+    "emblem": 1178,
+    "power": 5330850000,
+    "runes": 66
+  },
+  {
+    "emblem": 1179,
+    "power": 5335470000,
+    "runes": 66
+  },
+  {
+    "emblem": 1180,
+    "power": 5340090000,
+    "runes": 66
+  },
+  {
+    "emblem": 1181,
+    "power": 5344710000,
+    "runes": 66
+  },
+  {
+    "emblem": 1182,
+    "power": 5349330000,
+    "runes": 66
+  },
+  {
+    "emblem": 1183,
+    "power": 5353950000,
+    "runes": 66
+  },
+  {
+    "emblem": 1184,
+    "power": 5358570000,
+    "runes": 66
+  },
+  {
+    "emblem": 1185,
+    "power": 5363190000,
+    "runes": 66
+  },
+  {
+    "emblem": 1186,
+    "power": 5367810000,
+    "runes": 66
+  },
+  {
+    "emblem": 1187,
+    "power": 5372430000,
+    "runes": 66
+  },
+  {
+    "emblem": 1188,
+    "power": 5377050000,
+    "runes": 66
+  },
+  {
+    "emblem": 1189,
+    "power": 5381670000,
+    "runes": 66
+  },
+  {
+    "emblem": 1190,
+    "power": 5386290000,
+    "runes": 66
+  },
+  {
+    "emblem": 1191,
+    "power": 5390910000,
+    "runes": 66
+  },
+  {
+    "emblem": 1192,
+    "power": 5395530000,
+    "runes": 66
+  },
+  {
+    "emblem": 1193,
+    "power": 5400150000,
+    "runes": 66
+  },
+  {
+    "emblem": 1194,
+    "power": 5404770000,
+    "runes": 66
+  },
+  {
+    "emblem": 1195,
+    "power": 5409390000,
+    "runes": 66
+  },
+  {
+    "emblem": 1196,
+    "power": 5414010000,
+    "runes": 66
+  },
+  {
+    "emblem": 1197,
+    "power": 5418630000,
+    "runes": 66
+  },
+  {
+    "emblem": 1198,
+    "power": 5423250000,
+    "runes": 66
+  },
+  {
+    "emblem": 1199,
+    "power": 5427870000,
+    "runes": 66
+  },
+  {
+    "emblem": 1200,
+    "power": 5432490000,
+    "runes": 66
+  },
+  {
+    "emblem": 1201,
+    "power": 5437110000,
+    "runes": 66
+  },
+  {
+    "emblem": 1202,
+    "power": 5441730000,
+    "runes": 66
+  },
+  {
+    "emblem": 1203,
+    "power": 5446350000,
+    "runes": 66
+  },
+  {
+    "emblem": 1204,
+    "power": 5450970000,
+    "runes": 66
+  },
+  {
+    "emblem": 1205,
+    "power": 5455590000,
+    "runes": 66
+  },
+  {
+    "emblem": 1206,
+    "power": 5460210000,
+    "runes": 66
+  },
+  {
+    "emblem": 1207,
+    "power": 5464830000,
+    "runes": 66
+  },
+  {
+    "emblem": 1208,
+    "power": 5469450000,
+    "runes": 66
+  },
+  {
+    "emblem": 1209,
+    "power": 5474070000,
+    "runes": 66
+  },
+  {
+    "emblem": 1210,
+    "power": 5478690000,
+    "runes": 66
+  },
+  {
+    "emblem": 1211,
+    "power": 5483310000,
+    "runes": 66
+  },
+  {
+    "emblem": 1212,
+    "power": 5487930000,
+    "runes": 66
+  },
+  {
+    "emblem": 1213,
+    "power": 5492550000,
+    "runes": 66
+  },
+  {
+    "emblem": 1214,
+    "power": 5497170000,
+    "runes": 66
+  },
+  {
+    "emblem": 1215,
+    "power": 5501790000,
+    "runes": 66
+  },
+  {
+    "emblem": 1216,
+    "power": 5506410000,
+    "runes": 66
+  },
+  {
+    "emblem": 1217,
+    "power": 5511030000,
+    "runes": 66
+  },
+  {
+    "emblem": 1218,
+    "power": 5515650000,
+    "runes": 66
+  },
+  {
+    "emblem": 1219,
+    "power": 5520270000,
+    "runes": 66
+  },
+  {
+    "emblem": 1220,
+    "power": 5524890000,
+    "runes": 66
+  },
+  {
+    "emblem": 1221,
+    "power": 5529510000,
+    "runes": 66
+  },
+  {
+    "emblem": 1222,
+    "power": 5534130000,
+    "runes": 66
+  },
+  {
+    "emblem": 1223,
+    "power": 5538750000,
+    "runes": 66
+  },
+  {
+    "emblem": 1224,
+    "power": 5543370000,
+    "runes": 66
+  },
+  {
+    "emblem": 1225,
+    "power": 5547990000,
+    "runes": 66
+  },
+  {
+    "emblem": 1226,
+    "power": 5552610000,
+    "runes": 66
+  },
+  {
+    "emblem": 1227,
+    "power": 5557230000,
+    "runes": 66
+  },
+  {
+    "emblem": 1228,
+    "power": 5561850000,
+    "runes": 66
+  },
+  {
+    "emblem": 1229,
+    "power": 5566470000,
+    "runes": 66
+  },
+  {
+    "emblem": 1230,
+    "power": 5571090000,
+    "runes": 66
+  },
+  {
+    "emblem": 1231,
+    "power": 5575710000,
+    "runes": 66
+  },
+  {
+    "emblem": 1232,
+    "power": 5580330000,
+    "runes": 66
+  },
+  {
+    "emblem": 1233,
+    "power": 5584950000,
+    "runes": 66
+  },
+  {
+    "emblem": 1234,
+    "power": 5589570000,
+    "runes": 66
+  },
+  {
+    "emblem": 1235,
+    "power": 5594190000,
+    "runes": 66
+  },
+  {
+    "emblem": 1236,
+    "power": 5598810000,
+    "runes": 66
+  },
+  {
+    "emblem": 1237,
+    "power": 5603430000,
+    "runes": 66
+  },
+  {
+    "emblem": 1238,
+    "power": 5608050000,
+    "runes": 66
+  },
+  {
+    "emblem": 1239,
+    "power": 5612670000,
+    "runes": 66
+  },
+  {
+    "emblem": 1240,
+    "power": 5617290000,
+    "runes": 66
+  },
+  {
+    "emblem": 1241,
+    "power": 5621910000,
+    "runes": 66
+  },
+  {
+    "emblem": 1242,
+    "power": 5626530000,
+    "runes": 66
+  },
+  {
+    "emblem": 1243,
+    "power": 5631150000,
+    "runes": 66
+  },
+  {
+    "emblem": 1244,
+    "power": 5635770000,
+    "runes": 66
+  },
+  {
+    "emblem": 1245,
+    "power": 5640390000,
+    "runes": 66
+  },
+  {
+    "emblem": 1246,
+    "power": 5645010000,
+    "runes": 66
+  },
+  {
+    "emblem": 1247,
+    "power": 5649630000,
+    "runes": 66
+  },
+  {
+    "emblem": 1248,
+    "power": 5654250000,
+    "runes": 66
+  },
+  {
+    "emblem": 1249,
+    "power": 5658870000,
+    "runes": 66
+  },
+  {
+    "emblem": 1250,
+    "power": 5663490000,
+    "runes": 66
+  },
+  {
+    "emblem": 1251,
+    "power": 5668110000,
+    "runes": 66
+  },
+  {
+    "emblem": 1252,
+    "power": 5672730000,
+    "runes": 66
+  },
+  {
+    "emblem": 1253,
+    "power": 5677350000,
+    "runes": 66
+  },
+  {
+    "emblem": 1254,
+    "power": 5681970000,
+    "runes": 66
+  },
+  {
+    "emblem": 1255,
+    "power": 5686590000,
+    "runes": 66
+  },
+  {
+    "emblem": 1256,
+    "power": 5691210000,
+    "runes": 66
+  },
+  {
+    "emblem": 1257,
+    "power": 5695830000,
+    "runes": 66
+  },
+  {
+    "emblem": 1258,
+    "power": 5700450000,
+    "runes": 66
+  },
+  {
+    "emblem": 1259,
+    "power": 5705070000,
+    "runes": 66
+  },
+  {
+    "emblem": 1260,
+    "power": 5709690000,
+    "runes": 66
+  },
+  {
+    "emblem": 1261,
+    "power": 5714310000,
+    "runes": 66
+  },
+  {
+    "emblem": 1262,
+    "power": 5718930000,
+    "runes": 66
+  },
+  {
+    "emblem": 1263,
+    "power": 5723550000,
+    "runes": 66
+  },
+  {
+    "emblem": 1264,
+    "power": 5728170000,
+    "runes": 66
+  },
+  {
+    "emblem": 1265,
+    "power": 5732790000,
+    "runes": 66
+  },
+  {
+    "emblem": 1266,
+    "power": 5737410000,
+    "runes": 66
+  },
+  {
+    "emblem": 1267,
+    "power": 5742030000,
+    "runes": 66
+  },
+  {
+    "emblem": 1268,
+    "power": 5746650000,
+    "runes": 66
+  },
+  {
+    "emblem": 1269,
+    "power": 5751270000,
+    "runes": 66
+  },
+  {
+    "emblem": 1270,
+    "power": 5755890000,
+    "runes": 66
+  },
+  {
+    "emblem": 1271,
+    "power": 5760510000,
+    "runes": 66
+  },
+  {
+    "emblem": 1272,
+    "power": 5765130000,
+    "runes": 66
+  },
+  {
+    "emblem": 1273,
+    "power": 5769750000,
+    "runes": 66
+  },
+  {
+    "emblem": 1274,
+    "power": 5774370000,
+    "runes": 66
+  },
+  {
+    "emblem": 1275,
+    "power": 5778990000,
+    "runes": 66
+  },
+  {
+    "emblem": 1276,
+    "power": 5783610000,
+    "runes": 66
+  },
+  {
+    "emblem": 1277,
+    "power": 5788230000,
+    "runes": 66
+  },
+  {
+    "emblem": 1278,
+    "power": 5792850000,
+    "runes": 66
+  },
+  {
+    "emblem": 1279,
+    "power": 5797470000,
+    "runes": 66
+  },
+  {
+    "emblem": 1280,
+    "power": 5802090000,
+    "runes": 66
+  },
+  {
+    "emblem": 1281,
+    "power": 5806710000,
+    "runes": 66
+  },
+  {
+    "emblem": 1282,
+    "power": 5811330000,
+    "runes": 66
+  },
+  {
+    "emblem": 1283,
+    "power": 5815950000,
+    "runes": 66
+  },
+  {
+    "emblem": 1284,
+    "power": 5820570000,
+    "runes": 66
+  },
+  {
+    "emblem": 1285,
+    "power": 5825190000,
+    "runes": 66
+  },
+  {
+    "emblem": 1286,
+    "power": 5829810000,
+    "runes": 66
+  },
+  {
+    "emblem": 1287,
+    "power": 5834430000,
+    "runes": 66
+  },
+  {
+    "emblem": 1288,
+    "power": 5839050000,
+    "runes": 66
+  },
+  {
+    "emblem": 1289,
+    "power": 5843670000,
+    "runes": 66
+  },
+  {
+    "emblem": 1290,
+    "power": 5848290000,
+    "runes": 66
+  },
+  {
+    "emblem": 1291,
+    "power": 5852910000,
+    "runes": 66
+  },
+  {
+    "emblem": 1292,
+    "power": 5857530000,
+    "runes": 66
+  },
+  {
+    "emblem": 1293,
+    "power": 5862150000,
+    "runes": 66
+  },
+  {
+    "emblem": 1294,
+    "power": 5866770000,
+    "runes": 66
+  },
+  {
+    "emblem": 1295,
+    "power": 5871390000,
+    "runes": 66
+  },
+  {
+    "emblem": 1296,
+    "power": 5876010000,
+    "runes": 66
+  },
+  {
+    "emblem": 1297,
+    "power": 5880630000,
+    "runes": 66
+  },
+  {
+    "emblem": 1298,
+    "power": 5885250000,
+    "runes": 66
+  },
+  {
+    "emblem": 1299,
+    "power": 5889870000,
+    "runes": 66
+  },
+  {
+    "emblem": 1300,
+    "power": 5894490000,
+    "runes": 66
+  },
+  {
+    "emblem": 1301,
+    "power": 5899110000,
+    "runes": 66
+  },
+  {
+    "emblem": 1302,
+    "power": 5903730000,
+    "runes": 66
+  },
+  {
+    "emblem": 1303,
+    "power": 5908350000,
+    "runes": 66
+  },
+  {
+    "emblem": 1304,
+    "power": 5912970000,
+    "runes": 66
+  },
+  {
+    "emblem": 1305,
+    "power": 5917590000,
+    "runes": 66
+  },
+  {
+    "emblem": 1306,
+    "power": 5922210000,
+    "runes": 66
+  },
+  {
+    "emblem": 1307,
+    "power": 5926830000,
+    "runes": 66
+  },
+  {
+    "emblem": 1308,
+    "power": 5931450000,
+    "runes": 66
+  },
+  {
+    "emblem": 1309,
+    "power": 5936070000,
+    "runes": 66
+  },
+  {
+    "emblem": 1310,
+    "power": 5940690000,
+    "runes": 66
+  },
+  {
+    "emblem": 1311,
+    "power": 5945310000,
+    "runes": 66
+  },
+  {
+    "emblem": 1312,
+    "power": 5949930000,
+    "runes": 66
+  },
+  {
+    "emblem": 1313,
+    "power": 5954550000,
+    "runes": 66
+  },
+  {
+    "emblem": 1314,
+    "power": 5959170000,
+    "runes": 66
+  },
+  {
+    "emblem": 1315,
+    "power": 5963790000,
+    "runes": 66
+  },
+  {
+    "emblem": 1316,
+    "power": 5968410000,
+    "runes": 66
+  },
+  {
+    "emblem": 1317,
+    "power": 5973030000,
+    "runes": 66
+  },
+  {
+    "emblem": 1318,
+    "power": 5977650000,
+    "runes": 66
+  },
+  {
+    "emblem": 1319,
+    "power": 5982270000,
+    "runes": 66
+  },
+  {
+    "emblem": 1320,
+    "power": 5986890000,
+    "runes": 66
+  },
+  {
+    "emblem": 1321,
+    "power": 5991510000,
+    "runes": 66
+  },
+  {
+    "emblem": 1322,
+    "power": 5996130000,
+    "runes": 66
+  },
+  {
+    "emblem": 1323,
+    "power": 6000750000,
+    "runes": 66
+  },
+  {
+    "emblem": 1324,
+    "power": 6005370000,
+    "runes": 66
+  },
+  {
+    "emblem": 1325,
+    "power": 6009990000,
+    "runes": 66
+  },
+  {
+    "emblem": 1326,
+    "power": 6014610000,
+    "runes": 66
+  },
+  {
+    "emblem": 1327,
+    "power": 6019230000,
+    "runes": 66
+  },
+  {
+    "emblem": 1328,
+    "power": 6023850000,
+    "runes": 66
+  },
+  {
+    "emblem": 1329,
+    "power": 6028470000,
+    "runes": 66
+  },
+  {
+    "emblem": 1330,
+    "power": 6033090000,
+    "runes": 66
+  },
+  {
+    "emblem": 1331,
+    "power": 6037710000,
+    "runes": 66
+  },
+  {
+    "emblem": 1332,
+    "power": 6042330000,
+    "runes": 66
+  },
+  {
+    "emblem": 1333,
+    "power": 6046950000,
+    "runes": 66
+  },
+  {
+    "emblem": 1334,
+    "power": 6051570000,
+    "runes": 66
+  },
+  {
+    "emblem": 1335,
+    "power": 6056190000,
+    "runes": 66
+  },
+  {
+    "emblem": 1336,
+    "power": 6060810000,
+    "runes": 66
+  },
+  {
+    "emblem": 1337,
+    "power": 6065430000,
+    "runes": 66
+  },
+  {
+    "emblem": 1338,
+    "power": 6070050000,
+    "runes": 66
+  },
+  {
+    "emblem": 1339,
+    "power": 6074670000,
+    "runes": 66
+  },
+  {
+    "emblem": 1340,
+    "power": 6079290000,
+    "runes": 66
+  },
+  {
+    "emblem": 1341,
+    "power": 6083910000,
+    "runes": 66
+  },
+  {
+    "emblem": 1342,
+    "power": 6088530000,
+    "runes": 66
+  },
+  {
+    "emblem": 1343,
+    "power": 6093150000,
+    "runes": 66
+  },
+  {
+    "emblem": 1344,
+    "power": 6097770000,
+    "runes": 66
+  },
+  {
+    "emblem": 1345,
+    "power": 6102390000,
+    "runes": 66
+  },
+  {
+    "emblem": 1346,
+    "power": 6107010000,
+    "runes": 66
+  },
+  {
+    "emblem": 1347,
+    "power": 6111630000,
+    "runes": 66
+  },
+  {
+    "emblem": 1348,
+    "power": 6116250000,
+    "runes": 66
+  },
+  {
+    "emblem": 1349,
+    "power": 6120870000,
+    "runes": 66
+  },
+  {
+    "emblem": 1350,
+    "power": 6125490000,
+    "runes": 66
+  },
+  {
+    "emblem": 1351,
+    "power": 6130110000,
+    "runes": 66
+  },
+  {
+    "emblem": 1352,
+    "power": 6134730000,
+    "runes": 66
+  },
+  {
+    "emblem": 1353,
+    "power": 6139350000,
+    "runes": 66
+  },
+  {
+    "emblem": 1354,
+    "power": 6143970000,
+    "runes": 66
+  },
+  {
+    "emblem": 1355,
+    "power": 6148590000,
+    "runes": 66
+  },
+  {
+    "emblem": 1356,
+    "power": 6153210000,
+    "runes": 66
+  },
+  {
+    "emblem": 1357,
+    "power": 6157830000,
+    "runes": 66
+  },
+  {
+    "emblem": 1358,
+    "power": 6162450000,
+    "runes": 66
+  },
+  {
+    "emblem": 1359,
+    "power": 6167070000,
+    "runes": 66
+  },
+  {
+    "emblem": 1360,
+    "power": 6171690000,
+    "runes": 66
+  },
+  {
+    "emblem": 1361,
+    "power": 6176310000,
+    "runes": 66
+  },
+  {
+    "emblem": 1362,
+    "power": 6180930000,
+    "runes": 66
+  },
+  {
+    "emblem": 1363,
+    "power": 6185550000,
+    "runes": 66
+  },
+  {
+    "emblem": 1364,
+    "power": 6190170000,
+    "runes": 66
+  },
+  {
+    "emblem": 1365,
+    "power": 6194790000,
+    "runes": 66
+  },
+  {
+    "emblem": 1366,
+    "power": 6199410000,
+    "runes": 66
+  },
+  {
+    "emblem": 1367,
+    "power": 6204030000,
+    "runes": 66
+  },
+  {
+    "emblem": 1368,
+    "power": 6208650000,
+    "runes": 66
+  },
+  {
+    "emblem": 1369,
+    "power": 6213270000,
+    "runes": 66
+  },
+  {
+    "emblem": 1370,
+    "power": 6217890000,
+    "runes": 66
+  },
+  {
+    "emblem": 1371,
+    "power": 6222510000,
+    "runes": 66
+  },
+  {
+    "emblem": 1372,
+    "power": 6227130000,
+    "runes": 66
+  },
+  {
+    "emblem": 1373,
+    "power": 6231750000,
+    "runes": 66
+  },
+  {
+    "emblem": 1374,
+    "power": 6236370000,
+    "runes": 66
+  },
+  {
+    "emblem": 1375,
+    "power": 6240990000,
+    "runes": 66
+  },
+  {
+    "emblem": 1376,
+    "power": 6245610000,
+    "runes": 66
+  },
+  {
+    "emblem": 1377,
+    "power": 6250230000,
+    "runes": 66
+  },
+  {
+    "emblem": 1378,
+    "power": 6254850000,
+    "runes": 66
+  },
+  {
+    "emblem": 1379,
+    "power": 6259470000,
+    "runes": 66
+  },
+  {
+    "emblem": 1380,
+    "power": 6264090000,
+    "runes": 66
+  },
+  {
+    "emblem": 1381,
+    "power": 6268710000,
+    "runes": 66
+  },
+  {
+    "emblem": 1382,
+    "power": 6273330000,
+    "runes": 66
+  },
+  {
+    "emblem": 1383,
+    "power": 6277950000,
+    "runes": 66
+  },
+  {
+    "emblem": 1384,
+    "power": 6282570000,
+    "runes": 66
+  },
+  {
+    "emblem": 1385,
+    "power": 6287190000,
+    "runes": 66
+  },
+  {
+    "emblem": 1386,
+    "power": 6291810000,
+    "runes": 66
+  },
+  {
+    "emblem": 1387,
+    "power": 6296430000,
+    "runes": 66
+  },
+  {
+    "emblem": 1388,
+    "power": 6301050000,
+    "runes": 66
+  },
+  {
+    "emblem": 1389,
+    "power": 6305670000,
+    "runes": 66
+  },
+  {
+    "emblem": 1390,
+    "power": 6310290000,
+    "runes": 66
+  },
+  {
+    "emblem": 1391,
+    "power": 6314910000,
+    "runes": 66
+  },
+  {
+    "emblem": 1392,
+    "power": 6319530000,
+    "runes": 66
+  },
+  {
+    "emblem": 1393,
+    "power": 6324150000,
+    "runes": 66
+  },
+  {
+    "emblem": 1394,
+    "power": 6328770000,
+    "runes": 66
+  },
+  {
+    "emblem": 1395,
+    "power": 6333390000,
+    "runes": 66
+  },
+  {
+    "emblem": 1396,
+    "power": 6338010000,
+    "runes": 66
+  },
+  {
+    "emblem": 1397,
+    "power": 6342630000,
+    "runes": 66
+  },
+  {
+    "emblem": 1398,
+    "power": 6347250000,
+    "runes": 66
+  },
+  {
+    "emblem": 1399,
+    "power": 6351870000,
+    "runes": 66
+  },
+  {
+    "emblem": 1400,
+    "power": 6356490000,
+    "runes": 66
+  },
+  {
+    "emblem": 1401,
+    "power": 6361110000,
+    "runes": 66
+  },
+  {
+    "emblem": 1402,
+    "power": 6365730000,
+    "runes": 66
+  },
+  {
+    "emblem": 1403,
+    "power": 6370350000,
+    "runes": 66
+  },
+  {
+    "emblem": 1404,
+    "power": 6374970000,
+    "runes": 66
+  },
+  {
+    "emblem": 1405,
+    "power": 6379590000,
+    "runes": 66
+  },
+  {
+    "emblem": 1406,
+    "power": 6384210000,
+    "runes": 66
+  },
+  {
+    "emblem": 1407,
+    "power": 6388830000,
+    "runes": 66
+  },
+  {
+    "emblem": 1408,
+    "power": 6393450000,
+    "runes": 66
+  },
+  {
+    "emblem": 1409,
+    "power": 6398070000,
+    "runes": 66
+  },
+  {
+    "emblem": 1410,
+    "power": 6402690000,
+    "runes": 66
+  },
+  {
+    "emblem": 1411,
+    "power": 6407310000,
+    "runes": 66
+  },
+  {
+    "emblem": 1412,
+    "power": 6411930000,
+    "runes": 66
+  },
+  {
+    "emblem": 1413,
+    "power": 6416550000,
+    "runes": 66
+  },
+  {
+    "emblem": 1414,
+    "power": 6421170000,
+    "runes": 66
+  },
+  {
+    "emblem": 1415,
+    "power": 6425790000,
+    "runes": 66
+  },
+  {
+    "emblem": 1416,
+    "power": 6430410000,
+    "runes": 66
+  },
+  {
+    "emblem": 1417,
+    "power": 6435030000,
+    "runes": 66
+  },
+  {
+    "emblem": 1418,
+    "power": 6439650000,
+    "runes": 66
+  },
+  {
+    "emblem": 1419,
+    "power": 6444270000,
+    "runes": 66
+  },
+  {
+    "emblem": 1420,
+    "power": 6448890000,
+    "runes": 66
+  },
+  {
+    "emblem": 1421,
+    "power": 6453510000,
+    "runes": 66
+  },
+  {
+    "emblem": 1422,
+    "power": 6458130000,
+    "runes": 66
+  },
+  {
+    "emblem": 1423,
+    "power": 6462750000,
+    "runes": 66
+  },
+  {
+    "emblem": 1424,
+    "power": 6467370000,
+    "runes": 66
+  },
+  {
+    "emblem": 1425,
+    "power": 6471990000,
+    "runes": 66
+  },
+  {
+    "emblem": 1426,
+    "power": 6476610000,
+    "runes": 66
+  },
+  {
+    "emblem": 1427,
+    "power": 6481230000,
+    "runes": 66
+  },
+  {
+    "emblem": 1428,
+    "power": 6485850000,
+    "runes": 66
+  },
+  {
+    "emblem": 1429,
+    "power": 6490470000,
+    "runes": 66
+  },
+  {
+    "emblem": 1430,
+    "power": 6495090000,
+    "runes": 66
+  },
+  {
+    "emblem": 1431,
+    "power": 6499710000,
+    "runes": 66
+  },
+  {
+    "emblem": 1432,
+    "power": 6504330000,
+    "runes": 66
+  },
+  {
+    "emblem": 1433,
+    "power": 6508950000,
+    "runes": 66
+  },
+  {
+    "emblem": 1434,
+    "power": 6513570000,
+    "runes": 66
+  },
+  {
+    "emblem": 1435,
+    "power": 6518190000,
+    "runes": 66
+  },
+  {
+    "emblem": 1436,
+    "power": 6522810000,
+    "runes": 66
+  },
+  {
+    "emblem": 1437,
+    "power": 6527430000,
+    "runes": 66
+  },
+  {
+    "emblem": 1438,
+    "power": 6532050000,
+    "runes": 66
+  },
+  {
+    "emblem": 1439,
+    "power": 6536670000,
+    "runes": 66
+  },
+  {
+    "emblem": 1440,
+    "power": 6541290000,
+    "runes": 66
+  },
+  {
+    "emblem": 1441,
+    "power": 6545910000,
+    "runes": 66
+  },
+  {
+    "emblem": 1442,
+    "power": 6550530000,
+    "runes": 66
+  },
+  {
+    "emblem": 1443,
+    "power": 6555150000,
+    "runes": 66
+  },
+  {
+    "emblem": 1444,
+    "power": 6559770000,
+    "runes": 66
+  },
+  {
+    "emblem": 1445,
+    "power": 6564390000,
+    "runes": 66
+  },
+  {
+    "emblem": 1446,
+    "power": 6569010000,
+    "runes": 66
+  },
+  {
+    "emblem": 1447,
+    "power": 6573630000,
+    "runes": 66
+  },
+  {
+    "emblem": 1448,
+    "power": 6578250000,
+    "runes": 66
+  },
+  {
+    "emblem": 1449,
+    "power": 6582870000,
+    "runes": 66
+  },
+  {
+    "emblem": 1450,
+    "power": 6587490000,
+    "runes": 66
+  },
+  {
+    "emblem": 1451,
+    "power": 6592110000,
+    "runes": 66
+  },
+  {
+    "emblem": 1452,
+    "power": 6596730000,
+    "runes": 66
+  },
+  {
+    "emblem": 1453,
+    "power": 6601350000,
+    "runes": 66
+  },
+  {
+    "emblem": 1454,
+    "power": 6605970000,
+    "runes": 66
+  },
+  {
+    "emblem": 1455,
+    "power": 6610590000,
+    "runes": 66
+  },
+  {
+    "emblem": 1456,
+    "power": 6615210000,
+    "runes": 66
+  },
+  {
+    "emblem": 1457,
+    "power": 6619830000,
+    "runes": 66
+  },
+  {
+    "emblem": 1458,
+    "power": 6624450000,
+    "runes": 66
+  },
+  {
+    "emblem": 1459,
+    "power": 6629070000,
+    "runes": 66
+  },
+  {
+    "emblem": 1460,
+    "power": 6633690000,
+    "runes": 66
+  },
+  {
+    "emblem": 1461,
+    "power": 6638310000,
+    "runes": 66
+  },
+  {
+    "emblem": 1462,
+    "power": 6642930000,
+    "runes": 66
+  },
+  {
+    "emblem": 1463,
+    "power": 6647550000,
+    "runes": 66
+  },
+  {
+    "emblem": 1464,
+    "power": 6652170000,
+    "runes": 66
+  },
+  {
+    "emblem": 1465,
+    "power": 6656790000,
+    "runes": 66
+  },
+  {
+    "emblem": 1466,
+    "power": 6661410000,
+    "runes": 66
+  },
+  {
+    "emblem": 1467,
+    "power": 6666030000,
+    "runes": 66
+  },
+  {
+    "emblem": 1468,
+    "power": 6670650000,
+    "runes": 66
+  },
+  {
+    "emblem": 1469,
+    "power": 6675270000,
+    "runes": 66
+  },
+  {
+    "emblem": 1470,
+    "power": 6679890000,
+    "runes": 66
+  },
+  {
+    "emblem": 1471,
+    "power": 6684510000,
+    "runes": 66
+  },
+  {
+    "emblem": 1472,
+    "power": 6689130000,
+    "runes": 66
+  },
+  {
+    "emblem": 1473,
+    "power": 6693750000,
+    "runes": 66
+  },
+  {
+    "emblem": 1474,
+    "power": 6698370000,
+    "runes": 66
+  },
+  {
+    "emblem": 1475,
+    "power": 6702990000,
+    "runes": 66
+  },
+  {
+    "emblem": 1476,
+    "power": 6707610000,
+    "runes": 66
+  },
+  {
+    "emblem": 1477,
+    "power": 6712230000,
+    "runes": 66
+  },
+  {
+    "emblem": 1478,
+    "power": 6716850000,
+    "runes": 66
+  },
+  {
+    "emblem": 1479,
+    "power": 6721470000,
+    "runes": 66
+  },
+  {
+    "emblem": 1480,
+    "power": 6726090000,
+    "runes": 66
+  },
+  {
+    "emblem": 1481,
+    "power": 6730710000,
+    "runes": 66
+  },
+  {
+    "emblem": 1482,
+    "power": 6735330000,
+    "runes": 66
+  },
+  {
+    "emblem": 1483,
+    "power": 6739950000,
+    "runes": 66
+  },
+  {
+    "emblem": 1484,
+    "power": 6744570000,
+    "runes": 66
+  },
+  {
+    "emblem": 1485,
+    "power": 6749190000,
+    "runes": 66
+  },
+  {
+    "emblem": 1486,
+    "power": 6753810000,
+    "runes": 66
+  },
+  {
+    "emblem": 1487,
+    "power": 6758430000,
+    "runes": 66
+  },
+  {
+    "emblem": 1488,
+    "power": 6763050000,
+    "runes": 66
+  },
+  {
+    "emblem": 1489,
+    "power": 6767670000,
+    "runes": 66
+  },
+  {
+    "emblem": 1490,
+    "power": 6772290000,
+    "runes": 66
+  },
+  {
+    "emblem": 1491,
+    "power": 6776910000,
+    "runes": 66
+  },
+  {
+    "emblem": 1492,
+    "power": 6781530000,
+    "runes": 66
+  },
+  {
+    "emblem": 1493,
+    "power": 6786150000,
+    "runes": 66
+  },
+  {
+    "emblem": 1494,
+    "power": 6790770000,
+    "runes": 66
+  },
+  {
+    "emblem": 1495,
+    "power": 6795390000,
+    "runes": 66
+  },
+  {
+    "emblem": 1496,
+    "power": 6800010000,
+    "runes": 66
+  },
+  {
+    "emblem": 1497,
+    "power": 6804630000,
+    "runes": 66
+  },
+  {
+    "emblem": 1498,
+    "power": 6809250000,
+    "runes": 66
+  },
+  {
+    "emblem": 1499,
+    "power": 6813870000,
+    "runes": 66
+  },
+  {
+    "emblem": 1500,
+    "power": 6818490000,
+    "runes": 66
+  }
+]

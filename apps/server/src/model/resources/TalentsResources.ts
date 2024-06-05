@@ -1,0 +1,28 @@
+import { BaseResources } from './BaseResources'
+
+export default class TalentsResources implements BaseResources<TalentsResources> {
+  books: number = 0
+  oraclesCrowns: number = 0
+
+  constructor(initData?: Partial<Pick<TalentsResources, 'books' | 'oraclesCrowns'>>) {
+    this.books = initData?.books || 0
+    this.oraclesCrowns = initData?.oraclesCrowns || 0
+  }
+
+  add(otherResources: TalentsResources): void {
+    this.books += otherResources.books
+    this.oraclesCrowns += otherResources.oraclesCrowns
+  }
+
+  clone(): TalentsResources {
+    return new TalentsResources(this)
+  }
+
+  substract(otherResources: TalentsResources): void {
+    this.books -= otherResources.books
+    if (this.books < 0) this.books = 0
+
+    this.oraclesCrowns -= otherResources.oraclesCrowns
+    if (this.oraclesCrowns < 0) this.oraclesCrowns = 0
+  }
+}

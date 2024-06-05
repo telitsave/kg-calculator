@@ -1,0 +1,14 @@
+@import "shared/assets/icons/baseIcon"
+
+.background
+  @include baseBackground
+
+  @media screen and (max-width: 600px)
+    width: 24px
+    height: 24px
+
+  .icon
+    @include baseIcon
+    @each $element in 'bow', 'fire', 'ice', 'poison'
+      &.#{$element}
+        background-image: url("./icons/#{$element}.png")
