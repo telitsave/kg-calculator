@@ -1,11 +1,12 @@
-import { useMutation } from "@tanstack/react-query";
-import * as api from "../../api/api";
+import { useMutation } from '@tanstack/react-query'
+import api from 'shared/api'
+
 
 const useCalculateGoalCastle = () => {
   return useMutation({
-    mutationKey: ["calculateGoalCastle"],
-    mutationFn: api.calculateGoalCastle,
-  });
-};
+    mutationKey: ['calculateGoalCastle'],
+    mutationFn: api.castle.calculateGoalCastle,
+  })
+}
 
-export default useCalculateGoalCastle;
+export default useCalculateGoalCastle

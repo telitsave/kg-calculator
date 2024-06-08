@@ -4,11 +4,11 @@ import cors from 'cors'
 import calculatorRouter from './routes/calculatorRouter'
 
 dotenv.config()
-const app = express();
+const app = express()
 app.use(cors())
 app.use(express.json())
 const port = process.env.PORT
 
 app.use('/calculator', calculatorRouter)
 
-app.listen(port, () => console.log(`Running on port ${port}`));
+app.listen(port, () => console.log(`Running on port ${port}`))

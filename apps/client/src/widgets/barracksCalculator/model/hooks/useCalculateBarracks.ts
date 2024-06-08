@@ -1,10 +1,11 @@
 import { useMutation } from '@tanstack/react-query'
-import * as api from '../../api/api'
+import api from 'shared/api'
+
 
 const useCalculateBarracks = () => {
   return useMutation({
     mutationKey: ['calculateBarracks'],
-    mutationFn: api.calculateBarracks,
+    mutationFn: api.barracks.calculateBarracks,
   })
 }
 

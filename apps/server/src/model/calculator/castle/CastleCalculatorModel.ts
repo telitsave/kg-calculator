@@ -37,7 +37,7 @@ export default class CastleCalculatorModel {
         wood: castleInfo[this._parameters.castle.level].wood,
         stone: castleInfo[this._parameters.castle.level].stone,
         steel: castleInfo[this._parameters.castle.level].steel,
-        boxes: 0
+        boxes: 0,
       },
     })
 
@@ -49,7 +49,7 @@ export default class CastleCalculatorModel {
           wood: castleInfo[this._parameters.castle.level].wood,
           stone: castleInfo[this._parameters.castle.level].stone,
           steel: castleInfo[this._parameters.castle.level].steel,
-          boxes: 0
+          boxes: 0,
         },
       })
     }

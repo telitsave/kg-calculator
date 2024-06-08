@@ -1,13 +1,19 @@
 {
   "compilerOptions": {
-    "esModuleInterop": true,
     "outDir": "dist",
     "baseUrl": ".",
-    "sourceMap": true,
-    "resolveJsonModule": true,
-    "isolatedModules": true,
+    "paths": {
+      "kg-calculator-typings": [
+        "../../libs/typings"
+      ]
+    },
     "typeRoots": [
-      "node_modules/@types"
+      "kg-calculator-typings"
     ]
-  }
+  },
+  "include": [
+    "src/**/*",
+    "src/**/*.json"
+  ],
+  "extends": "../../tsconfig.base.json"
 }

@@ -1,10 +1,11 @@
 import { useMutation } from '@tanstack/react-query'
-import * as api from '../../api/api'
+import api from 'shared/api'
+
 
 const useCalculateDragon = () => {
   return useMutation({
     mutationKey: ['calculateDragonEmblems'],
-    mutationFn: api.calculateDragonRunes,
+    mutationFn: api.dragon.calculateDragonRunes,
   })
 }
 

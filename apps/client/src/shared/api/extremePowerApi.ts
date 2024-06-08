@@ -1,9 +1,9 @@
-import {
+import type {
   CalculateExtremePowerPayload,
   CalculateExtremePowerResponse,
   CalculateTotalExtremePowerPayload,
 } from 'kg-calculator-typings'
-import AxiosService from 'shared/services/axiosService'
+import AxiosService from '../services/axiosService'
 
 export const calculateExtremePower = (payload: CalculateExtremePowerPayload) => {
   return AxiosService.post<CalculateExtremePowerResponse>('/calculator/extremePower', {

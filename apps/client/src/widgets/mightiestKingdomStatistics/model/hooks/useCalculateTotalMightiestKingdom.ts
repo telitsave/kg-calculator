@@ -2,7 +2,7 @@ import { useQuery } from '@tanstack/react-query'
 import { useSettings } from 'entities/calculationSettings'
 import { useParameters } from 'entities/parameter'
 import { useResources } from 'entities/resource'
-import * as api from '../../api/api'
+import api from 'shared/api'
 
 
 const useCalculateTotalMightiestKingdom = () => {
@@ -12,7 +12,7 @@ const useCalculateTotalMightiestKingdom = () => {
   return useQuery({
     queryKey: ['mightiestKingdomTotal', resources, settings],
     queryFn: () =>
-      api.calculateTotalMightiestKingdom({
+      api.mightiestKingdom.calculateTotalMightiestKingdom({
         resources,
         parameters,
         settings,

@@ -1,4 +1,4 @@
-import type { ElementsType } from 'kg-calculator-typings/api/Elements'
+import type { ElementsType } from 'kg-calculator-typings'
 
 export const elements: { key: ElementsType; title: string }[] = [
   {

@@ -1,10 +1,11 @@
 import { useMutation } from '@tanstack/react-query'
-import * as api from '../../api/api'
+import api from 'shared/api'
+
 
 const useCalculateGallery = () => {
   return useMutation({
     mutationKey: ['calculateGallery'],
-    mutationFn: api.calculateGallery,
+    mutationFn: api.gallery.calculateGallery,
   })
 }
 

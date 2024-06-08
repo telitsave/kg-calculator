@@ -1,0 +1,37 @@
+{
+  "name": "kg-calculator-server",
+  "sourceRoot": "apps/server/src",
+  "projectType": "application",
+  "outputs": [
+    "dist/server"
+  ],
+  "implicitDependencies": [
+    "kg-calculator-typings"
+  ],
+  "targets": {
+    "start": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "nodemon apps/server/src/index.ts"
+      }
+    },
+    "build": {
+      "executor": "@nx/js:tsc",
+      "options": {
+        "outputPath": "dist/server",
+        "main": "apps/server/src/index.ts",
+        "tsConfig": "apps/server/tsconfig.build.json",
+        "generatePackageJson": true
+      }
+    },
+    "deploy": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "node scripts/deployServer.js"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    }
+  }
+}

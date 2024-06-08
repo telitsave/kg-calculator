@@ -1,5 +1,5 @@
-import AxiosService from 'shared/services/axiosService'
-import { CalculateBarracksPayload, CalculateBarracksResponse } from 'kg-calculator-typings'
+import type { CalculateBarracksPayload, CalculateBarracksResponse } from 'kg-calculator-typings'
+import AxiosService from '../services/axiosService'
 
 export const calculateBarracks = (payload: CalculateBarracksPayload) => {
   return AxiosService.post<CalculateBarracksResponse>('/calculator/barracks', {

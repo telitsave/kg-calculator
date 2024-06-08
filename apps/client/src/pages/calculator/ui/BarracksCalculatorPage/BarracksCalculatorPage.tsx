@@ -20,6 +20,7 @@ const BarracksCalculatorPage: FC<Props> = memo(({ className }) => {
     (spentResources: ResourcesData) => <MightiestKingdomStatistics spentResources={spentResources} />,
     [],
   )
+  
   return (
     <BarracksCalculator
       className={cx(css.root, className)}

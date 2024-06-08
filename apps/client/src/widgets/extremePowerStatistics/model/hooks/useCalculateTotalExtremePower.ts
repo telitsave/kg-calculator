@@ -2,7 +2,7 @@ import { useQuery } from '@tanstack/react-query'
 import { useSettings } from 'entities/calculationSettings'
 import { useParameters } from 'entities/parameter'
 import { useResources } from 'entities/resource'
-import * as api from '../../api/api'
+import api from 'shared/api'
 
 
 const useCalculateTotalExtremePower = () => {
@@ -12,7 +12,7 @@ const useCalculateTotalExtremePower = () => {
   return useQuery({
     queryKey: ['extremePowerTotal', resources, settings],
     queryFn: () =>
-      api.calculateTotalExtremePower({
+      api.extremePower.calculateTotalExtremePower({
         resources,
         parameters,
         settings,
