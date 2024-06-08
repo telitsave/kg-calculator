@@ -1,0 +1,5 @@
+{
+  "name": "kg-calculator-typings",
+  "sourceRoot": "libs/typings",
+  "projectType": "library"
+}
