@@ -1,13 +1,14 @@
 import express from 'express'
-import castleRouter from './castleRouter'
-import extremePowerRouter from './extremePowerRouter'
-import dragonRunesRouter from './dragonRunesRouter'
-import witchRouter from './witchRouter'
 import barracksRouter from './barracksRouter'
-import mightiestKingdomRouter from './mightiestKingdomRouter'
 import blacksmithRouter from './blacksmithRouter'
+import castleRouter from './castleRouter'
+import dragonRunesRouter from './dragonRunesRouter'
+import extremePowerRouter from './extremePowerRouter'
 import galleryRouter from './galleryRouter'
-import heroesRouter from './heroesRouter'
+import heroesCalculatorRouter from './heroesCalculatorRouter'
+import mightiestKingdomRouter from './mightiestKingdomRouter'
+import witchRouter from './witchRouter'
+
 
 const calculatorRouter = express.Router()
 
@@ -19,6 +20,6 @@ calculatorRouter.use('/witch', witchRouter)
 calculatorRouter.use('/barracks', barracksRouter)
 calculatorRouter.use('/blacksmith', blacksmithRouter)
 calculatorRouter.use('/gallery', galleryRouter)
-calculatorRouter.use('/heroes', heroesRouter)
+calculatorRouter.use('/heroes', heroesCalculatorRouter)
 
 export default calculatorRouter

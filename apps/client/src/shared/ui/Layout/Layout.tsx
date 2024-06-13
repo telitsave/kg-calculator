@@ -51,6 +51,9 @@ const Layout: FC<Props> = memo(({ className }) => {
           <RouterNavLink className={css.link} to="/parameters">
             {({ isActive }) => <NavLink label={getPageName('parameters')} active={isActive} onClick={close} />}
           </RouterNavLink>
+          <RouterNavLink className={css.link} to="/heroes">
+            {({ isActive }) => <NavLink label={getPageName('heroes')} active={isActive} onClick={close} />}
+          </RouterNavLink>
 
           <RouterNavLink className={css.link} to="/calculator">
             {({ isActive }) => (

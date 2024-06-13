@@ -1,7 +1,9 @@
 import { Request, Response } from 'express'
-import Resources from '../model/resources/Resources'
 import type { CalculateHeroesPayload } from 'kg-calculator-typings'
 import HeroesCalculatorModel from '../model/calculator/heroes/HeroesCalculatorModel'
+import HeroesModel from '../model/heroes/HeroesModel'
+import Resources from '../model/resources/Resources'
+
 
 export default class HeroesController {
   static calculateHeroes(request: Request, response: Response) {
@@ -12,5 +14,11 @@ export default class HeroesController {
     const heroesCalculatorModel = new HeroesCalculatorModel(resources)
 
     response.json(heroesCalculatorModel.calculateHeroes())
+  }
+
+  static getAllHeroes(request: Request, response: Response) {
+    const heroesModel = new HeroesModel()
+
+    response.json(heroesModel.getAllHeroes())
   }
 }

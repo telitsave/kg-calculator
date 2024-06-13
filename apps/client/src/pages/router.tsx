@@ -13,6 +13,7 @@ import {
 } from './calculator'
 import Inventory from './inventory'
 import { ParametersPage } from './parameters'
+import HeroesPage from './parameters/ui/HeroesPage'
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
       {
         path: '/parameters',
         element: <ParametersPage />,
+      },
+      {
+        path: '/heroes',
+        element: <HeroesPage />,
       },
       {
         path: '/calculator',
