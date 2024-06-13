@@ -1,7 +1,8 @@
-import Resources from '../../resources/Resources'
 import Parameters from '../../parameters/Parameters'
+import Resources from '../../resources/Resources'
 import data from './data.json'
 import type { CalculateGalleryResponse } from 'kg-calculator-typings'
+
 
 export default class GalleryCalculatorModel {
   private readonly _sourceParameters: Parameters
@@ -34,7 +35,7 @@ export default class GalleryCalculatorModel {
 
     const indexCurrentStepData = data.findIndex((it) => it.number === level && it.pieces === step)
 
-    if (indexCurrentStepData === data.length) return false
+    if (indexCurrentStepData === data.length - 1) return false
 
     const nextStepData = data[indexCurrentStepData + 1]
 
