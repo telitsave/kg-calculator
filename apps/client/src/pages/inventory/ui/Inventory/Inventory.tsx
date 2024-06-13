@@ -5,6 +5,7 @@ import { ResourceInput, ResourceType } from 'entities/resource'
 import Flexbox from 'shared/ui/Flexbox'
 import css from './styles.module.sass'
 
+
 interface Props {
   className?: string
 }
@@ -44,6 +45,10 @@ const itemsByGroups: ResourceType[] = [
   'talentCrown',
   'hummer',
   'galleryShards',
+  'heroGreenCards',
+  'heroBlueCards',
+  'heroPurpleCards',
+  'heroGoldCards',
 ]
 const itemsLikeInGame: ResourceType[] = [
   'gold',
@@ -80,6 +85,10 @@ const itemsLikeInGame: ResourceType[] = [
   'bookRandom',
   'lightReagent',
   'customConstructionItem',
+  'heroGreenCards',
+  'heroBlueCards',
+  'heroPurpleCards',
+  'heroGoldCards',
 ]
 
 const Inventory: FC<Props> = memo(({ className }) => {
