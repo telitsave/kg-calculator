@@ -1,0 +1,6 @@
+{
+  "watch": [
+    "apps/server/*",
+    "libs/typings/*"
+  ]
+}
