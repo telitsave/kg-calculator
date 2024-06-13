@@ -1,0 +1,20 @@
+module.exports = {
+  ...require('../../.prettierrc.js'),
+  importOrder: [
+    '^@mantine$',
+    '^react$',
+    '^prop-types$',
+    '^react-redux$',
+    '^react-router-dom$',
+    '^classnames$',
+    '<THIRD_PARTY_MODULES>',
+    '^app/',
+    '^entities/',
+    '^features/',
+    '^pages/',
+    '^shared/',
+    '^widgets/',
+    '^../',
+    '^./',
+  ],
+}
