@@ -1,6 +1,7 @@
 import { BaseResources } from './BaseResources'
 import type { ResourcesData } from 'kg-calculator-typings'
 
+
 export default class CastleResources implements BaseResources<CastleResources> {
   stone: number = 0
   wood: number = 0
@@ -46,9 +47,11 @@ export default class CastleResources implements BaseResources<CastleResources> {
             isSuccess = true
           }
         }
-        if (isSuccess) {
+        if (isSuccess && this.isEnought(resources)) {
           spent = resources.clone()
           this.substract(resources)
+        } else {
+          isSuccess = false
         }
       } else {
         isSuccess = false
