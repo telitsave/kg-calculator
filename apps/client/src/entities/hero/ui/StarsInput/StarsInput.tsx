@@ -1,6 +1,5 @@
 import React, { FC, memo, useCallback, useState } from 'react'
-import { Combobox, Rating } from '@mantine/core'
-import Flexbox from 'shared/ui/Flexbox'
+import { Combobox, Flex, Rating } from '@mantine/core'
 
 interface Props {
   className?: string
@@ -19,10 +18,10 @@ const StarsInput: FC<Props> = memo(({ className }) => {
     setRating(0)
   }, [])
   return (
-    <Flexbox className={className}>
+    <Flex className={className} align="center">
       <Combobox.ClearButton onClear={handleClear} />
-      <Rating value={rating} onChange={handleRatingChange} />
-    </Flexbox>
+      <Rating value={rating} onChange={handleRatingChange} size="xl" />
+    </Flex>
   )
 })
 

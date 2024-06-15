@@ -1,5 +1,6 @@
-import React, { FC, memo } from 'react'
-import { HeroInput } from 'entities/hero'
+import React, { FC, memo, useMemo } from 'react'
+import { orderBy } from 'lodash'
+import HeroCard from 'entities/hero/ui/HeroCard'
 import Flexbox from 'shared/ui/Flexbox'
 import useData from '../../model/hooks/useData'
 
@@ -10,10 +11,11 @@ interface Props {
 
 const HeroesGrid: FC<Props> = memo(({ className }) => {
   const { heroes } = useData()
+  const sortedHeroes = useMemo(() => orderBy(heroes, ['element', 'rank', 'heroId'], ['asc', 'desc', 'asc']), [heroes])
   return (
-    <Flexbox className={className} flexWrap="wrap" gap={8}>
-      {heroes.map((hero) => (
-        <HeroInput key={hero.heroId} hero={hero} />
+    <Flexbox className={className} flexDirection="column" gap={8}>
+      {sortedHeroes.map((hero) => (
+        <HeroCard key={hero.heroId} hero={hero} />
       ))}
     </Flexbox>
   )
