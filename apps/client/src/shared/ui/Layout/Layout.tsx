@@ -103,6 +103,17 @@ const Layout: FC<Props> = memo(({ className }) => {
               </NavLink>
             )}
           </RouterNavLink>
+          <RouterNavLink className={css.link} to="/other">
+            {({ isActive }) => (
+              <NavLink label={getPageName('other')} active={isActive} defaultOpened={isActive}>
+                <RouterNavLink className={css.link} to="/other/spiritInvasion">
+                  {({ isActive }) => (
+                    <NavLink label={getPageName('/other/spiritInvasion')} active={isActive} onClick={close} />
+                  )}
+                </RouterNavLink>
+              </NavLink>
+            )}
+          </RouterNavLink>
         </AppShell.Section>
         <AppShell.Section>
           <Flexbox justifyContent="flex-end" alignItems="center">
