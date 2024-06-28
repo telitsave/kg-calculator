@@ -96,9 +96,9 @@ export default class DragonEmblemsCalculatorModel {
       case 'blue':
         return this._parameters.dragonEmblems.blue < Math.floor(this._parameters.dragonEmblems.green / 5)
       case 'purple':
-        return this._parameters.dragonEmblems.purple < Math.floor(this._parameters.dragonEmblems.green / 20)
+        return this._parameters.dragonEmblems.purple < Math.floor(this._parameters.dragonEmblems.blue / 4)
       case 'gold':
-        return this._parameters.dragonEmblems.gold < Math.floor(this._parameters.dragonEmblems.green / 100)
+        return this._parameters.dragonEmblems.gold < Math.floor(this._parameters.dragonEmblems.purple / 5)
     }
   }
 
