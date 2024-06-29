@@ -27,4 +27,6 @@ export const PAGE_NAMES: Record<string, string> = {
   blacksmith: 'Кузнец',
   gallery: 'Галерея',
   heroes: 'Герои',
+  spiritInvasion: 'Вторжение злых духов',
+  other: 'Прочее',
 }

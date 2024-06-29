@@ -1,12 +1,13 @@
-import Resources from '../../resources/Resources'
 import Parameters from '../../parameters/Parameters'
 import DragonRunesResources, { DragonRuneType } from '../../resources/DragonRunesResources'
-import greenEmblemInfo from './jsonGreen.json'
-import blueEmblemInfo from './jsonBlue.json'
-import purpleEmblemInfo from './jsonPurple.json'
-import goldEmblemInfo from './jsonGold.json'
+import Resources from '../../resources/Resources'
 import Settings from '../../settings/Settings'
+import blueEmblemInfo from './jsonBlue.json'
+import goldEmblemInfo from './jsonGold.json'
+import greenEmblemInfo from './jsonGreen.json'
+import purpleEmblemInfo from './jsonPurple.json'
 import type { CalculatePossibleDragonResponse } from 'kg-calculator-typings'
+
 
 export default class DragonEmblemsCalculatorModel {
   private readonly _sourceResources: Resources
@@ -28,6 +29,7 @@ export default class DragonEmblemsCalculatorModel {
   }
 
   getPossibleDragon(): CalculatePossibleDragonResponse {
+    this._spentResourcesWithoutBoxes()
     while (this.tryLevelUp()) {}
 
     return {
@@ -40,35 +42,26 @@ export default class DragonEmblemsCalculatorModel {
     }
   }
 
-  private tryLevelUp(): boolean {
-    const shouldUpGoldEmblem =
-      this._parameters.dragonEmblems.green % 100 === 0 &&
-      this._parameters.dragonEmblems.gold < this._parameters.dragonEmblems.green / 100
-    const shouldUpPurpleEmblem =
-      this._parameters.dragonEmblems.green % 20 === 0 &&
-      this._parameters.dragonEmblems.purple < this._parameters.dragonEmblems.green / 20
-    const shouldUpBlueEmblem =
-      this._parameters.dragonEmblems.green % 5 === 0 &&
-      this._parameters.dragonEmblems.blue < this._parameters.dragonEmblems.green / 5
-
-    if (shouldUpBlueEmblem) {
-      return this.tryLevelUpEmblem('blue', blueEmblemInfo[this._parameters.dragonEmblems.blue])
-    } else if (shouldUpPurpleEmblem) {
-      return this.tryLevelUpEmblem('purple', purpleEmblemInfo[this._parameters.dragonEmblems.purple])
-    } else if (shouldUpGoldEmblem) {
-      return this.tryLevelUpEmblem('gold', goldEmblemInfo[this._parameters.dragonEmblems.gold])
-    }
-
-    if (this._parameters.dragonEmblems.green === 30000) {
-      return false
-    }
-
-    return this.tryLevelUpEmblem('green', greenEmblemInfo[this._parameters.dragonEmblems.green])
+  private _spentResourcesWithoutBoxes() {
+    while (this._upEmblem('green')) {}
+    while (this._upEmblem('blue')) {}
+    while (this._upEmblem('purple')) {}
+    while (this._upEmblem('gold')) {}
   }
 
-  private tryLevelUpEmblem(runeType: DragonRuneType, emblemInfo: (typeof greenEmblemInfo)[0]): boolean {
-    if (this._leftResources.dragonsRunes[runeType] < emblemInfo.runes) {
+  private tryLevelUp(): boolean {
+    return (['gold', 'purple', 'blue', 'green'] as DragonRuneType[]).some((runeType) => {
+      if (!this._isAllowUpEmblem(runeType)) return false
+
+      return this.tryLevelUpEmblem(runeType)
+    })
+  }
+
+  private tryLevelUpEmblem(runeType: DragonRuneType): boolean {
+    if (!this._isEnoughResources(runeType)) {
       if (!this._settings.canUseDragonBoxes) return false
+
+      const emblemInfo = this._getEmblemInfo(runeType)
 
       const neededRunes = emblemInfo.runes - this._leftResources.dragonsRunes[runeType]
       const neededBoxes = DragonRunesResources.getNeededBoxes(neededRunes, runeType)
@@ -80,6 +73,45 @@ export default class DragonEmblemsCalculatorModel {
       this._spentResources.dragonsRunes.boxes += neededBoxes
     }
 
+    return this._upEmblem(runeType)
+  }
+
+  private _getEmblemInfo(runeType: DragonRuneType) {
+    switch (runeType) {
+      case 'green':
+        return greenEmblemInfo[this._parameters.dragonEmblems.green]
+      case 'blue':
+        return blueEmblemInfo[this._parameters.dragonEmblems.blue]
+      case 'purple':
+        return purpleEmblemInfo[this._parameters.dragonEmblems.purple]
+      case 'gold':
+        return goldEmblemInfo[this._parameters.dragonEmblems.gold]
+    }
+  }
+
+  private _isAllowUpEmblem(runeType: DragonRuneType) {
+    switch (runeType) {
+      case 'green':
+        return this._parameters.dragonEmblems.green < 30000
+      case 'blue':
+        return this._parameters.dragonEmblems.blue < Math.floor(this._parameters.dragonEmblems.green / 5)
+      case 'purple':
+        return this._parameters.dragonEmblems.purple < Math.floor(this._parameters.dragonEmblems.blue / 4)
+      case 'gold':
+        return this._parameters.dragonEmblems.gold < Math.floor(this._parameters.dragonEmblems.purple / 5)
+    }
+  }
+
+  private _isEnoughResources(runeType: DragonRuneType) {
+    const emblemInfo = this._getEmblemInfo(runeType)
+    return this._leftResources.dragonsRunes[runeType] >= emblemInfo.runes
+  }
+
+  private _upEmblem(runeType: DragonRuneType) {
+    if (!this._isAllowUpEmblem(runeType)) return false
+    if (!this._isEnoughResources(runeType)) return false
+
+    const emblemInfo = this._getEmblemInfo(runeType)
     this._leftResources.dragonsRunes[runeType] -= emblemInfo.runes
     this._spentResources.dragonsRunes[runeType] += emblemInfo.runes
     this._parameters.dragonEmblems[runeType] += 1

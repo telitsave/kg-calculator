@@ -13,6 +13,7 @@ import {
 } from './calculator'
 import Inventory from './inventory'
 import { ParametersPage } from './parameters'
+import { SpiritInvasionPage } from './spiritInvasionPage'
 import HeroesPage from './parameters/ui/HeroesPage'
 
 const router = createBrowserRouter([
@@ -78,6 +79,19 @@ const router = createBrowserRouter([
           {
             path: '/calculator/mightiestKingdom',
             element: <MightiestKingdomPage />,
+          },
+        ],
+      },
+      {
+        path: '/other',
+        children: [
+          {
+            index: true,
+            element: <Navigate to="/other/spiritInvasion" />,
+          },
+          {
+            path: '/other/spiritInvasion',
+            element: <SpiritInvasionPage />,
           },
         ],
       },

@@ -108,13 +108,13 @@ const ResultsPossible: FC<Props> = memo(
             sourceResourceType="customConstructionItem"
             targetResourceType="wood"
             sourceValue={spentBoxes.wood}
-            targetValue={(spentBoxes.wood || 0) * 20}
+            targetValue={(spentBoxes.wood || 0) * 4}
           />
           <ResourcesConverts
             sourceResourceType="customConstructionItem"
             targetResourceType="steel"
             sourceValue={spentBoxes.steel}
-            targetValue={(spentBoxes.steel || 0) * 20}
+            targetValue={spentBoxes.steel || 0}
           />
         </Flexbox>
         <Divider />
