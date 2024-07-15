@@ -1,7 +1,8 @@
 import React, { FC, memo } from 'react'
-import { Button, Title } from '@mantine/core'
+import { Button, Divider, Flex, Title } from '@mantine/core'
 import { ResourceInput } from 'entities/resource'
 import Flexbox from 'shared/ui/Flexbox'
+import CardDistributionPanel from '../CardDistributionPanel'
 
 
 interface Props {
@@ -19,6 +20,12 @@ const Inputs: FC<Props> = memo(({ className, onCalculateButtonClick }) => (
       <ResourceInput resourceType="heroPurpleCards" />
       <ResourceInput resourceType="heroGoldCards" />
     </Flexbox>
+
+    <Divider size="sm" />
+
+    <Flex direction="column">
+      <CardDistributionPanel />
+    </Flex>
 
     <Button onClick={onCalculateButtonClick}>Посчитать</Button>
   </Flexbox>

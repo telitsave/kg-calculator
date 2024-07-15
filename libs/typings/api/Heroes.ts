@@ -22,6 +22,12 @@ export interface Hero {
   heroId: string
   rank: Ranks
   element: ElementsType
+  name: string
+  season?: number
 }
 
 export type HeroesResponse = Hero[]
+
+export type HeroesInCardsResponse = Hero[]
+
+export type HeroesDistribution = Record<string, number>
