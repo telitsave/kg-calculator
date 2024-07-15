@@ -26,7 +26,7 @@ const BarracksTalentsInput: FC<Props> = memo(({ className, element }) => {
 
   return (
     <Flexbox className={className} flexDirection="column" gap={8}>
-      {Array.from({ length: 5 }).map((_, index, array) => (
+      {Array.from({ length: 6 }).map((_, index, array) => (
         <Fragment key={index}>
           <Flexbox alignItems="center" gap={8}>
             <Text flex="0 0 auto">Ранг {index + 1}:</Text>

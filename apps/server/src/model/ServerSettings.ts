@@ -1,5 +1,5 @@
 const serverSettings = {
-  talentsMaxRank: 5,
+  talentsMaxRank: 6,
   talentBooksConversionRate: {
     rank1: 3,
     rank2: 15,

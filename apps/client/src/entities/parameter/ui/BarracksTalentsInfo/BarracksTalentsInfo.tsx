@@ -15,7 +15,7 @@ interface Props {
 
 const BarracksTalentsInfo: FC<Props> = memo(({ className, element, parameters, oldParameters }) => (
   <Flexbox className={className} flexDirection="column">
-    {Array.from({ length: 5 }).map((_, index) => (
+    {Array.from({ length: 6 }).map((_, index) => (
       <Flexbox alignItems="center" gap={4}>
         <Text>Ранг {index + 1}:</Text>
         <BarracksTalentInfo
