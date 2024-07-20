@@ -1,89 +1,131 @@
-import React, { FC, memo, useCallback, useMemo, useState } from 'react'
-import { Button, Flex, NumberInput, Rating, Text } from '@mantine/core'
-import type { Hero } from 'kg-calculator-typings'
-import { AiOutlineCaretLeft, AiOutlineCaretRight } from 'react-icons/ai'
-import { HeroIcon } from 'entities/hero'
-import HeroHelper from 'entities/hero/libs/HeroHelper'
-import useHero from 'entities/hero/model/hooks/useHero'
-import Bars from '../../../../entities/hero/ui/Bars'
+import React, { FC, memo, useCallback, useMemo } from 'react'
+import { Button, Flex, Text } from '@mantine/core'
+import type { ElementsType, Ranks } from 'kg-calculator-typings'
+import { FaStar, FaStarHalfAlt } from 'react-icons/fa'
+import { Bars, HeroHelper, HeroIcon, Stars } from 'entities/hero'
+import { ResourceIcon } from 'entities/resource'
+import css from './styles.module.sass'
 
 
 interface Props {
   className?: string
-  heroData: Hero
+  id: string
+  name: string
+  stars: number
+  bars: number
+  heroCards: number
+  rank: Ranks
+  element: ElementsType
+  cards: number | undefined
+
+  onSetCards: (heroId: string, cardsAmount: number) => void
 }
 
-const CardDistribution: FC<Props> = memo(({ className, heroData }) => {
-  const [cards, setCards] = useState(0)
-  const { hero } = useHero(heroData.heroId, heroData.rank)
-  const { newStars, newBars, leftCards, neededCardsForNextLevel, spentCardsForPrevLevel } = useMemo(
-    () => HeroHelper.upStarsBars(hero.stars, hero.bars, hero.cards + cards, heroData.rank),
-    [hero, heroData, cards],
-  )
-
-  const maxStars = HeroHelper.getMaxStars(heroData.rank)
-
-  const handleInputChange = useCallback((value: string | number) => {
-    setCards(Number(value))
-  }, [])
-
-  const handleAddCardsButtonClick = useCallback(() => {
-    setCards((val) => val + neededCardsForNextLevel)
-  }, [neededCardsForNextLevel])
-
-  const handleRemoveCardsButtonClick = useCallback(() => {
-    setCards((val) =>
-      val < spentCardsForPrevLevel ? 0 : spentCardsForPrevLevel === 0 ? 0 : val - spentCardsForPrevLevel,
+const CardDistribution: FC<Props> = memo(
+  ({ className, id, name, element, stars, heroCards, bars, rank, cards = 0, onSetCards }) => {
+    const {
+      newStars,
+      newBars,
+      neededCardsForNextLevel,
+      neededCardsForNextStar,
+      spentCardsForPrevLevel,
+      spentCardsForPrevStar,
+    } = useMemo(
+      () => HeroHelper.upStarsBars(stars, bars, heroCards + cards, rank),
+      [stars, bars, heroCards, rank, cards],
     )
-  }, [spentCardsForPrevLevel])
 
-  return (
-    <Flex className={className} align="center" gap={16}>
-      <Flex
-        direction="column"
-        align="center"
-        w={{
-          base: 48,
-          sm: 64,
-        }}
-      >
-        <HeroIcon heroId={heroData.heroId} element={heroData.element} />
-        <Text size="sm">{heroData.name}</Text>
-      </Flex>
-      <Flex gap={16} align="center">
-        <Flex direction="column" w={100}>
-          <Rating value={hero.stars} readOnly size={20} count={maxStars} />
-          <Bars rank={heroData.rank} stars={hero.stars} value={hero.bars} />
-          <Text size="sm">Карт: {hero.cards}</Text>
-          <Text>&nbsp;</Text>
-        </Flex>
-        <Flex gap={8}>
-          <Button variant="outline" size="xs" p={8} onClick={handleRemoveCardsButtonClick}>
-            <AiOutlineCaretLeft />
-          </Button>
-          <NumberInput
-            className={className}
-            size="xs"
-            hideControls
-            w={65}
-            min={0}
-            value={cards}
-            onChange={handleInputChange}
-          />
-          <Button variant="outline" size="xs" p={8} onClick={handleAddCardsButtonClick}>
-            <AiOutlineCaretRight />
-          </Button>
-        </Flex>
+    const maxStars = HeroHelper.getMaxStars(rank)
+    const maxBars = HeroHelper.getMaxBars(rank, newStars)
 
-        <Flex direction="column" w={100}>
-          <Rating value={newStars} readOnly size={20} count={maxStars} />
-          <Bars value={newBars} rank={heroData.rank} stars={newStars} />
-          <Text size="sm">Осталось: {leftCards}</Text>
-          {neededCardsForNextLevel > 0 && <Text size="sm">Надо: {neededCardsForNextLevel}</Text>}
+    const handleAddLevelClick = useCallback(() => {
+      onSetCards(id, cards + neededCardsForNextLevel)
+    }, [neededCardsForNextLevel, onSetCards, cards])
+
+    const handleRemoveLevelClick = useCallback(() => {
+      onSetCards(
+        id,
+        cards < spentCardsForPrevLevel ? 0 : spentCardsForPrevLevel === 0 ? 0 : cards - spentCardsForPrevLevel,
+      )
+    }, [spentCardsForPrevLevel, onSetCards, cards])
+
+    const handleAddStarClick = useCallback(() => {
+      onSetCards(id, cards + neededCardsForNextStar)
+    }, [neededCardsForNextLevel, onSetCards, cards])
+
+    const handleRemoveStarClick = useCallback(() => {
+      onSetCards(
+        id,
+        cards < spentCardsForPrevStar ? 0 : spentCardsForPrevStar === 0 ? 0 : cards - spentCardsForPrevStar,
+      )
+    }, [spentCardsForPrevLevel, onSetCards, cards])
+
+    return (
+      <Flex className={className} align="center" gap={16}>
+        <Flex
+          direction="column"
+          align="center"
+          w={{
+            base: 48,
+            sm: 64,
+          }}
+        >
+          <HeroIcon heroId={id} element={element} />
+          <Text size="sm">{name}</Text>
+        </Flex>
+        <Flex gap={8} align="center">
+          <Button variant="outline" size="md" p={8} onClick={handleRemoveStarClick}>
+            <FaStarHalfAlt color="var(--mantine-color-yellow-filled)" />
+          </Button>
+          <Button variant="outline" size="md" p={8} onClick={handleRemoveLevelClick}>
+            -1
+          </Button>
+          <Flex direction="column" w={80}>
+            <Stars classNameStar={css.star} starsCount={maxStars} oldValue={stars} newValue={newStars} />
+            <Bars barsCount={maxBars} oldValue={stars !== newStars ? 0 : bars} newValue={newBars} />
+          </Flex>
+          <Button variant="outline" size="md" p={8} onClick={handleAddLevelClick}>
+            +1
+          </Button>
+          <Button variant="outline" size="md" p={8} onClick={handleAddStarClick}>
+            <FaStar color="var(--mantine-color-yellow-filled)" />
+          </Button>
+        </Flex>
+        <Flex direction="column">
+          <Text
+            size="sm"
+            display="flex"
+            style={{
+              alignItems: 'center',
+              gap: 4,
+            }}
+          >
+            Исп-но <ResourceIcon className={css.icon} resourceType="heroGoldCards" />: {cards}
+          </Text>
+          <Text
+            size="sm"
+            display="flex"
+            style={{
+              alignItems: 'center',
+              gap: 4,
+            }}
+          >
+            До <div className={css.bar} />: {neededCardsForNextLevel}
+          </Text>
+          <Text
+            size="sm"
+            display="flex"
+            style={{
+              alignItems: 'center',
+              gap: 4,
+            }}
+          >
+            До <FaStar className={css.star} color="var(--mantine-color-yellow-filled)" />: {neededCardsForNextStar}
+          </Text>
         </Flex>
       </Flex>
-    </Flex>
-  )
-})
+    )
+  },
+)
 
 export default CardDistribution

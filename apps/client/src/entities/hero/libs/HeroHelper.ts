@@ -37,7 +37,9 @@ export default class HeroHelper {
     let leftCards = cards
     let barsArray = heroNeededCardsInfo[stars]
     let neededCardsForNextLevel = 0
+    let neededCardsForNextStar = 0
     let spentCardsForPrevLevel = 0
+    let spentCardsForPrevStar = 0
 
     if (barsArray) {
       do {
@@ -49,21 +51,31 @@ export default class HeroHelper {
         } else {
           if (leftCards < neededCards + 1) {
             neededCardsForNextLevel = neededCards - leftCards + 1
+            neededCardsForNextStar =
+              barsArray.reduce((total, val, index) => (index >= bars ? total + val : total), 0) - leftCards + 1
             break
           }
           leftCards -= neededCards
           spentCardsForPrevLevel = neededCards
+          if (bars === 0) {
+            spentCardsForPrevStar = neededCards
+          } else {
+            spentCardsForPrevStar += neededCards
+          }
           bars += 1
         }
       } while (stars < maxStars && !!barsArray)
     }
+
     return {
       newStars: stars,
       newBars: bars,
       leftCards,
       spentCards: cards - leftCards,
       neededCardsForNextLevel,
+      neededCardsForNextStar,
       spentCardsForPrevLevel,
+      spentCardsForPrevStar,
     }
   }
 }

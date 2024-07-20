@@ -25,6 +25,6 @@ export default class HeroesController {
   static getHeroesInCards(request: Request, response: Response) {
     const heroesModel = new HeroesModel()
 
-    response.json(heroesModel.getHeroesInCards(55))
+    response.json(heroesModel.getHeroesInCards(6))
   }
 }
