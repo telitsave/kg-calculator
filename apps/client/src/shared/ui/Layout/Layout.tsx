@@ -1,9 +1,9 @@
 import React, { FC, memo } from 'react'
 import { Outlet, NavLink as RouterNavLink, useLocation } from 'react-router-dom'
 import cx from 'classnames'
-import { AppShell, Burger, Group, NavLink, Text } from '@mantine/core'
+import { AppShell, Burger, Flex, Group, NavLink, Text } from '@mantine/core'
 import { useDisclosure } from '@mantine/hooks'
-import TelegramIcon from '../../assets/icons/TelegramIcon'
+import { FaTelegram } from 'react-icons/fa'
 import Flexbox from '../Flexbox'
 import { getPageName } from './pageNames'
 import css from './styles.module.sass'
@@ -119,11 +119,35 @@ const Layout: FC<Props> = memo(({ className }) => {
           </RouterNavLink>
         </AppShell.Section>
         <AppShell.Section>
-          <Flexbox justifyContent="flex-end" alignItems="center">
-            <Text size="sm">Created by: [KMZ] DonLi, S1574</Text>
-            <a href="https://t.me/DonLi_V" target="_blank" rel="noreferrer">
-              <TelegramIcon />
-            </a>
+          <Flexbox justifyContent="flex-end" flexDirection="column">
+            <Flex align="center" justify="flex-end" gap={4}>
+              <Text size="sm" ta="end">
+                Created by: [KMZ] DonLi, S1574
+              </Text>
+              <a href="https://t.me/DonLi_V" target="_blank" rel="noreferrer">
+                <FaTelegram color="#29B6F6" size={24} />
+              </a>
+            </Flex>
+            <Flex align="flex-end" direction="column">
+              <Text size="sm" ta="end">
+                Поддержать разработчика можно{' '}
+                <a href="https://pay2.tap4fun.com/kg" target="_blank" rel="noreferrer">
+                  покупкой монеток в игру
+                </a>
+              </Text>
+              <Text size="sm" ta="end" mt={8}>
+                ID:{' '}
+                <Text component="span" fw={700}>
+                  17648694
+                </Text>
+              </Text>
+              <Text size="sm" ta="end">
+                Никнейм:{' '}
+                <Text component="span" fw={700}>
+                  DonLi
+                </Text>
+              </Text>
+            </Flex>
           </Flexbox>
         </AppShell.Section>
       </AppShell.Navbar>
