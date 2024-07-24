@@ -1,6 +1,7 @@
+import type { SettingsData } from 'kg-calculator-typings'
 import usePriorityElementSetting from './usePriorityElementSetting'
 import useSetting from './useSetting'
-import type { SettingsData } from 'kg-calculator-typings'
+
 
 const useSettings = (): SettingsData => {
   return {
@@ -10,6 +11,7 @@ const useSettings = (): SettingsData => {
     canUseDragonBoxes: useSetting('canUseDragonBoxes')[0],
     canUseRandomBarracksBooks: useSetting('canUseRandomBarracksBooks')[0],
     canUseTalentsToNonPriorityElements: useSetting('canUseTalentsToNonPriorityElements')[0],
+    useAdvancedHeroMode: useSetting('useAdvancedHeroMode')[0],
     priorityElement: usePriorityElementSetting()[0],
   }
 }

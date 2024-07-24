@@ -1,0 +1,745 @@
+[
+  {
+    "heroId": "allen",
+    "element": "fire",
+    "rank": "ssr",
+    "name": "Аллен",
+    "season": 0
+  },
+  {
+    "heroId": "alucard",
+    "element": "poison",
+    "rank": "sr",
+    "name": "Алукард",
+    "season": 0
+  },
+  {
+    "heroId": "angelina",
+    "element": "poison",
+    "rank": "ssr",
+    "name": "Ангелина",
+    "season": 30
+  },
+  {
+    "heroId": "anko",
+    "element": "fire",
+    "rank": "ssr",
+    "name": "Анко",
+    "season": 0
+  },
+  {
+    "heroId": "anton",
+    "element": "fire",
+    "rank": "r",
+    "name": "Антон",
+    "season": 0
+  },
+  {
+    "heroId": "aodenggerile",
+    "element": "ice",
+    "rank": "ssr",
+    "name": "Ао Дэн Гэ Ри Лэ",
+    "season": 25
+  },
+  {
+    "heroId": "aoyue",
+    "element": "ice",
+    "rank": "ssr",
+    "name": "Ао Юэ",
+    "season": 25
+  },
+  {
+    "heroId": "apollo",
+    "element": "fire",
+    "rank": "ssr",
+    "name": "Аполлон",
+    "season": 11
+  },
+  {
+    "heroId": "ariza",
+    "element": "bow",
+    "rank": "ssr",
+    "name": "Ариза",
+    "season": 9
+  },
+  {
+    "heroId": "arthur",
+    "element": "bow",
+    "rank": "ssr",
+    "name": "Артур",
+    "season": 0
+  },
+  {
+    "heroId": "arwin",
+    "element": "poison",
+    "rank": "ssr",
+    "name": "Элви",
+    "season": 10
+  },
+  {
+    "heroId": "arwyn",
+    "element": "bow",
+    "rank": "sr",
+    "name": "Арвин",
+    "season": 0
+  },
+  {
+    "heroId": "bella",
+    "element": "bow",
+    "rank": "ssr",
+    "name": "Белла",
+    "season": 17
+  },
+  {
+    "heroId": "benjamin",
+    "element": "poison",
+    "rank": "ssr",
+    "name": "Бенджамин",
+    "season": 12
+  },
+  {
+    "heroId": "blackwell",
+    "element": "poison",
+    "rank": "ssr",
+    "name": "Блэквелл",
+    "season": 24
+  },
+  {
+    "heroId": "boudica",
+    "element": "poison",
+    "rank": "ssr",
+    "name": "Боудика",
+    "season": 30
+  },
+  {
+    "heroId": "brie",
+    "element": "fire",
+    "rank": "ssr",
+    "name": "Бри",
+    "season": 17
+  },
+  {
+    "heroId": "catherine",
+    "element": "poison",
+    "rank": "ssr",
+    "name": "Катерина",
+    "season": 0
+  },
+  {
+    "heroId": "chiyoko",
+    "element": "poison",
+    "rank": "ssr",
+    "name": "Тийоко",
+    "season": 18
+  },
+  {
+    "heroId": "christie",
+    "element": "fire",
+    "rank": "ssr",
+    "name": "Кристи",
+    "season": 1
+  },
+  {
+    "heroId": "clarence",
+    "element": "ice",
+    "rank": "ssr",
+    "name": "Кларенс"
+  },
+  {
+    "heroId": "claudia",
+    "element": "poison",
+    "rank": "ssr",
+    "name": "Клаудия",
+    "season": 0
+  },
+  {
+    "heroId": "colin",
+    "element": "bow",
+    "rank": "ssr",
+    "name": "Колин",
+    "season": 11
+  },
+  {
+    "heroId": "cosette",
+    "element": "fire",
+    "rank": "ssr",
+    "name": "Козетта",
+    "season": 0
+  },
+  {
+    "heroId": "dain",
+    "element": "fire",
+    "rank": "ssr",
+    "name": "Даин",
+    "season": 13
+  },
+  {
+    "heroId": "daniel",
+    "element": "poison",
+    "rank": "n",
+    "name": "Дэниел",
+    "season": 0
+  },
+  {
+    "heroId": "daria",
+    "element": "fire",
+    "rank": "ssr",
+    "name": "Дарья",
+    "season": 28
+  },
+  {
+    "heroId": "dean",
+    "element": "fire",
+    "rank": "ssr",
+    "name": "Дин",
+    "season": 15
+  },
+  {
+    "heroId": "doris",
+    "element": "bow",
+    "rank": "ssr",
+    "name": "Дорис",
+    "season": 31
+  },
+  {
+    "heroId": "dovlar",
+    "element": "fire",
+    "rank": "ssr",
+    "name": "Долвар",
+    "season": 0
+  },
+  {
+    "heroId": "dylan",
+    "element": "bow",
+    "rank": "ssr",
+    "name": "Дилан",
+    "season": 31
+  },
+  {
+    "heroId": "enzo",
+    "element": "ice",
+    "rank": "ssr",
+    "name": "Энцо"
+  },
+  {
+    "heroId": "erika",
+    "element": "fire",
+    "rank": "ssr",
+    "name": "Эрика",
+    "season": 0
+  },
+  {
+    "heroId": "etley",
+    "element": "ice",
+    "rank": "r",
+    "name": "Этли",
+    "season": 0
+  },
+  {
+    "heroId": "fatima",
+    "element": "bow",
+    "rank": "ssr",
+    "name": "Фатима",
+    "season": 15
+  },
+  {
+    "heroId": "filius",
+    "element": "ice",
+    "rank": "ssr",
+    "name": "Филиус",
+    "season": 10
+  },
+  {
+    "heroId": "gabriel",
+    "element": "bow",
+    "rank": "ssr",
+    "name": "Габриэль",
+    "season": 0
+  },
+  {
+    "heroId": "giselle",
+    "element": "fire",
+    "rank": "ssr",
+    "name": "Жизель",
+    "season": 7
+  },
+  {
+    "heroId": "gro",
+    "element": "fire",
+    "rank": "ssr",
+    "name": "Гро",
+    "season": 0
+  },
+  {
+    "heroId": "gruen",
+    "element": "poison",
+    "rank": "ssr",
+    "name": "Грун",
+    "season": 2
+  },
+  {
+    "heroId": "hadi",
+    "element": "ice",
+    "rank": "ssr",
+    "name": "Хэди",
+    "season": 0
+  },
+  {
+    "heroId": "hana",
+    "element": "ice",
+    "rank": "ssr",
+    "name": "Хана",
+    "season": 21
+  },
+  {
+    "heroId": "harold",
+    "element": "bow",
+    "rank": "sr",
+    "name": "Гарольд",
+    "season": 0
+  },
+  {
+    "heroId": "issac",
+    "element": "poison",
+    "rank": "ssr",
+    "name": "Иссак",
+    "season": 0
+  },
+  {
+    "heroId": "ivy",
+    "element": "fire",
+    "rank": "ssr",
+    "name": "Иви",
+    "season": 32
+  },
+  {
+    "heroId": "jennifer",
+    "element": "bow",
+    "rank": "ssr",
+    "name": "Дженнифер",
+    "season": 0
+  },
+  {
+    "heroId": "jessica",
+    "element": "ice",
+    "rank": "ssr",
+    "name": "Джессика",
+    "season": 4
+  },
+  {
+    "heroId": "johannes",
+    "element": "bow",
+    "rank": "ssr",
+    "name": "Йоханнес",
+    "season": 27
+  },
+  {
+    "heroId": "judy",
+    "element": "ice",
+    "rank": "ssr",
+    "name": "Джуди",
+    "season": 29
+  },
+  {
+    "heroId": "kadir",
+    "element": "bow",
+    "rank": "ssr",
+    "name": "Кадыр",
+    "season": 0
+  },
+  {
+    "heroId": "keith",
+    "element": "ice",
+    "rank": "ssr",
+    "name": "Кит",
+    "season": 18
+  },
+  {
+    "heroId": "kenshiro",
+    "element": "fire",
+    "rank": "ssr",
+    "name": "Кенширо",
+    "season": 5
+  },
+  {
+    "heroId": "kris",
+    "element": "fire",
+    "rank": "sr",
+    "name": "Крис",
+    "season": 0
+  },
+  {
+    "heroId": "lilani",
+    "element": "ice",
+    "rank": "ssr",
+    "name": "Лилани",
+    "season": 6
+  },
+  {
+    "heroId": "lilith",
+    "element": "poison",
+    "rank": "ssr",
+    "name": "Лилит",
+    "season": 26
+  },
+  {
+    "heroId": "livia",
+    "element": "bow",
+    "rank": "ssr",
+    "name": "Ливия",
+    "season": 7
+  },
+  {
+    "heroId": "lomax",
+    "element": "poison",
+    "rank": "ssr",
+    "name": "Ломакс",
+    "season": 6
+  },
+  {
+    "heroId": "lovelace",
+    "element": "fire",
+    "rank": "ssr",
+    "name": "Лавлейс",
+    "season": 28
+  },
+  {
+    "heroId": "luvia",
+    "element": "poison",
+    "rank": "ssr",
+    "name": "Лувия",
+    "season": 20
+  },
+  {
+    "heroId": "maud",
+    "element": "ice",
+    "rank": "ssr",
+    "name": "Мод",
+    "season": 16
+  },
+  {
+    "heroId": "maya",
+    "element": "bow",
+    "rank": "ssr",
+    "name": "Майя",
+    "season": 27
+  },
+  {
+    "heroId": "meg",
+    "element": "bow",
+    "rank": "ssr",
+    "name": "Мэг",
+    "season": 19
+  },
+  {
+    "heroId": "meniere",
+    "element": "poison",
+    "rank": "ssr",
+    "name": "Менил",
+    "season": 4
+  },
+  {
+    "heroId": "merlin",
+    "element": "ice",
+    "rank": "sr",
+    "name": "Мерлин",
+    "season": 0
+  },
+  {
+    "heroId": "miku",
+    "element": "fire",
+    "rank": "ssr",
+    "name": "Мику"
+  },
+  {
+    "heroId": "montag",
+    "element": "bow",
+    "rank": "ssr",
+    "name": "Монтаг",
+    "season": 22
+  },
+  {
+    "heroId": "nathaniel",
+    "element": "ice",
+    "rank": "ssr",
+    "name": "Натаниэль",
+    "season": 20
+  },
+  {
+    "heroId": "nicole",
+    "element": "ice",
+    "rank": "ssr",
+    "name": "Николь",
+    "season": 0
+  },
+  {
+    "heroId": "oneil",
+    "element": "bow",
+    "rank": "ssr",
+    "name": "О'Нил",
+    "season": 0
+  },
+  {
+    "heroId": "ophelia",
+    "element": "fire",
+    "rank": "sr",
+    "name": "Офелия",
+    "season": 0
+  },
+  {
+    "heroId": "padme",
+    "element": "bow",
+    "rank": "ssr",
+    "name": "Падме"
+  },
+  {
+    "heroId": "pan",
+    "element": "bow",
+    "rank": "ssr",
+    "name": "Пан",
+    "season": 0
+  },
+  {
+    "heroId": "parr",
+    "element": "ice",
+    "rank": "ssr",
+    "name": "Парр",
+    "season": 12
+  },
+  {
+    "heroId": "paul",
+    "element": "fire",
+    "rank": "ssr",
+    "name": "Пауль",
+    "season": 0
+  },
+  {
+    "heroId": "paula",
+    "element": "ice",
+    "rank": "ssr",
+    "name": "Паула",
+    "season": 0
+  },
+  {
+    "heroId": "pedra",
+    "element": "ice",
+    "rank": "ssr",
+    "name": "Педра",
+    "season": 8
+  },
+  {
+    "heroId": "penny",
+    "element": "fire",
+    "rank": "ssr",
+    "name": "Пенни",
+    "season": 3
+  },
+  {
+    "heroId": "peter",
+    "element": "poison",
+    "rank": "r",
+    "name": "Питер",
+    "season": 0
+  },
+  {
+    "heroId": "ptolemy",
+    "element": "bow",
+    "rank": "ssr",
+    "name": "Птолемей",
+    "season": 24
+  },
+  {
+    "heroId": "pythia",
+    "element": "poison",
+    "rank": "ssr",
+    "name": "Пифия",
+    "season": 21
+  },
+  {
+    "heroId": "ralph",
+    "element": "ice",
+    "rank": "ssr",
+    "name": "Ральф",
+    "season": 0
+  },
+  {
+    "heroId": "rebecca",
+    "element": "ice",
+    "rank": "ssr",
+    "name": "Ребекка"
+  },
+  {
+    "heroId": "richard",
+    "element": "bow",
+    "rank": "ssr",
+    "name": "Ричард",
+    "season": 3
+  },
+  {
+    "heroId": "rila",
+    "element": "poison",
+    "rank": "ssr",
+    "name": "Рила",
+    "season": 26
+  },
+  {
+    "heroId": "rogers",
+    "element": "poison",
+    "rank": "ssr",
+    "name": "Роджерс",
+    "season": 22
+  },
+  {
+    "heroId": "rosamond",
+    "element": "poison",
+    "rank": "ssr",
+    "name": "Розамунд",
+    "season": 8
+  },
+  {
+    "heroId": "rudolph",
+    "element": "ice",
+    "rank": "ssr",
+    "name": "Рудольф",
+    "season": 14
+  },
+  {
+    "heroId": "sahar",
+    "element": "bow",
+    "rank": "ssr",
+    "name": "Сейхар",
+    "season": 1
+  },
+  {
+    "heroId": "samar",
+    "element": "fire",
+    "rank": "sr",
+    "name": "Самара",
+    "season": 9
+  },
+  {
+    "heroId": "sebastian",
+    "element": "bow",
+    "rank": "ssr",
+    "name": "Себастьян",
+    "season": 13
+  },
+  {
+    "heroId": "simon",
+    "element": "fire",
+    "rank": "ssr",
+    "name": "Симон",
+    "season": 23
+  },
+  {
+    "heroId": "sindra",
+    "element": "fire",
+    "rank": "ssr",
+    "name": "Синдра",
+    "season": 32
+  },
+  {
+    "heroId": "suad",
+    "element": "poison",
+    "rank": "ssr",
+    "name": "Суад",
+    "season": 16
+  },
+  {
+    "heroId": "torvi",
+    "element": "bow",
+    "rank": "ssr",
+    "name": "Торви",
+    "season": 5
+  },
+  {
+    "heroId": "tracy",
+    "element": "fire",
+    "rank": "ssr",
+    "name": "Трейси"
+  },
+  {
+    "heroId": "trishy",
+    "element": "ice",
+    "rank": "ssr",
+    "name": "Триш",
+    "season": 29
+  },
+  {
+    "heroId": "trist",
+    "element": "bow",
+    "rank": "ssr",
+    "name": "Трист",
+    "season": 23
+  },
+  {
+    "heroId": "tumnus",
+    "element": "poison",
+    "rank": "ssr",
+    "name": "Тумнус"
+  },
+  {
+    "heroId": "vanessa",
+    "element": "fire",
+    "rank": "ssr",
+    "name": "Ванесса",
+    "season": 19
+  },
+  {
+    "heroId": "vera",
+    "element": "ice",
+    "rank": "ssr",
+    "name": "Вера",
+    "season": 2
+  },
+  {
+    "heroId": "wallis",
+    "element": "fire",
+    "rank": "ssr",
+    "name": "Варис",
+    "season": 0
+  },
+  {
+    "heroId": "wendy",
+    "element": "poison",
+    "rank": "ssr",
+    "name": "Венди",
+    "season": 14
+  },
+  {
+    "heroId": "daisy",
+    "element": "poison",
+    "rank": "ssr",
+    "name": "Маргаритка"
+  },
+  {
+    "heroId": "mycelia",
+    "element": "poison",
+    "rank": "ssr",
+    "name": "Мицелий"
+  },
+  {
+    "heroId": "edmund",
+    "element": "fire",
+    "rank": "ssr",
+    "name": "Эдмунд"
+  },
+  {
+    "heroId": "layla",
+    "element": "bow",
+    "rank": "ssr",
+    "name": "Лайла"
+  },
+  {
+    "heroId": "catrina",
+    "element": "fire",
+    "rank": "ssr",
+    "name": "Катрин"
+  },
+  {
+    "heroId": "nina",
+    "element": "ice",
+    "rank": "ssr",
+    "name": "Нина"
+  }
+]

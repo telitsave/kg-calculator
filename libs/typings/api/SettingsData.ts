@@ -5,5 +5,7 @@ export interface SettingsData {
   canUseRandomBarracksBooks: boolean
   canConvertBarracksBooksToTalents: boolean
   canUseTalentsToNonPriorityElements: boolean
+  useAdvancedHeroMode: boolean
+
   priorityElement: 'bow' | 'fire' | 'ice' | 'poison'
 }

@@ -4,6 +4,8 @@ import cors from 'cors'
 import dotenv from 'dotenv'
 import express from 'express'
 
+import heroesRouter from './routes/heroesRouter'
+
 
 dotenv.config()
 const app = express()
@@ -13,5 +15,6 @@ const port = process.env.PORT
 
 app.use('/calculator', calculatorRouter)
 app.use('/spiritsInvasion', spiritsInvasionRouter)
+app.use('/heroes', heroesRouter)
 
 app.listen(port, () => console.log(`Running on port ${port}`))

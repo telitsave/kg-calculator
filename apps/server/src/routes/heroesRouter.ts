@@ -1,8 +1,9 @@
-import express from 'express'
 import HeroesController from '../controllers/heroesController'
+import express from 'express'
 
 const heroesRouter = express.Router()
 
-heroesRouter.post('/', HeroesController.calculateHeroes)
+heroesRouter.get('/all', HeroesController.getAllHeroes)
+heroesRouter.get('/heroesInCards', HeroesController.getHeroesInCards)
 
 export default heroesRouter

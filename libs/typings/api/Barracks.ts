@@ -1,6 +1,7 @@
-import type { ResourcesData } from './ResourcesData'
 import type { ParametersData } from './ParametersData'
+import type { ResourcesData } from './ResourcesData'
 import type { SettingsData } from './SettingsData'
+
 
 export interface BarracksBooksByElement {
   rank1: number

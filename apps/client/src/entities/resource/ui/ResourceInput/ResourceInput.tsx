@@ -12,9 +12,10 @@ interface Props {
   className?: string
   resourceType: ResourceType
   viewMode?: 'default' | 'bigIcon'
+  disabled?: boolean
 }
 
-const ResourceInput: FC<Props> = memo(({ className, resourceType, viewMode = 'default' }) => {
+const ResourceInput: FC<Props> = memo(({ className, resourceType, viewMode = 'default', disabled = false }) => {
   const [value, setValue] = useResource(resourceType)
 
   const handleNumberInputChange = useCallback(
@@ -28,7 +29,14 @@ const ResourceInput: FC<Props> = memo(({ className, resourceType, viewMode = 'de
     return (
       <Flexbox className={cx(css.root, css.bigIcon, className)} flexDirection="column" alignItems="center" gap={4}>
         <ResourceIcon className={css.icon} resourceType={resourceType} />
-        <NumberInput w={140} min={0} value={value} onChange={handleNumberInputChange} thousandSeparator=" " />
+        <NumberInput
+          w={140}
+          min={0}
+          value={value}
+          onChange={handleNumberInputChange}
+          thousandSeparator=" "
+          disabled={disabled}
+        />
       </Flexbox>
     )
   }
@@ -38,6 +46,7 @@ const ResourceInput: FC<Props> = memo(({ className, resourceType, viewMode = 'de
       className={cx(css.root, className)}
       min={0}
       flex="1 1 33%"
+      disabled={disabled}
       leftSection={<ResourceIcon resourceType={resourceType} />}
       value={value}
       onChange={handleNumberInputChange}

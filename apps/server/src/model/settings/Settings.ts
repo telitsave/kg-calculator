@@ -7,6 +7,7 @@ export default class Settings {
   canUseRandomBarracksBooks: boolean
   canConvertBarracksBooksToTalents: boolean
   canUseTalentsToNonPriorityElements: boolean
+  useAdvancedHeroMode: boolean
   priorityElement: 'bow' | 'fire' | 'ice' | 'poison'
 
   constructor(initData?: SettingsData) {
@@ -16,6 +17,7 @@ export default class Settings {
     this.canUseRandomBarracksBooks = initData?.canUseRandomBarracksBooks || false
     this.canConvertBarracksBooksToTalents = initData?.canConvertBarracksBooksToTalents || false
     this.canUseTalentsToNonPriorityElements = initData?.canUseTalentsToNonPriorityElements || false
+    this.useAdvancedHeroMode = initData?.useAdvancedHeroMode || false
     this.priorityElement = initData?.priorityElement || 'bow'
   }
 }
