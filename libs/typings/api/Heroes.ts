@@ -1,6 +1,7 @@
 import type { ElementsType } from './Elements'
 import type { Ranks } from './Ranks'
 import type { ResourcesData } from './ResourcesData'
+import type { SettingsData } from './SettingsData'
 
 
 export interface HeroesResources {
@@ -12,10 +13,34 @@ export interface HeroesResources {
 
 export interface CalculateHeroesPayload {
   resources: ResourcesData
+  settings: SettingsData
+  heroesData: IHeroData[]
+  heroesDistribution: HeroesDistribution
 }
 
 export interface CalculateHeroesResponse {
   spentResources: ResourcesData
+  heroesUpgrades: HeroUpgrade[]
+  heroesExperienceSpent: HeroExperienceSpent[]
+  spentDistributionCards?: number
+  gettingStars?: number
+}
+
+export interface HeroUpgrade {
+  hero: Hero
+  maxStars: number
+  maxBars: number
+  oldStars: number
+  oldBars: number
+  newBars: number
+  newStars: number
+  spentCards: number
+  spentDistributionCards: number
+}
+
+export interface HeroExperienceSpent {
+  hero: Hero
+  spentCards: number
 }
 
 export interface Hero {
@@ -24,6 +49,13 @@ export interface Hero {
   element: ElementsType
   name: string
   season?: number
+}
+
+export interface IHeroData {
+  id: string
+  stars: number
+  bars: number
+  cards: number
 }
 
 export type HeroesResponse = Hero[]

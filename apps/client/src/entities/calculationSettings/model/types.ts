@@ -6,3 +6,4 @@ export type SettingsTypes =
   | 'canConvertBarracksBooksToTalents'
   | 'canUseTalentsToNonPriorityElements'
   | 'priorityElement'
+  | 'useAdvancedHeroMode'

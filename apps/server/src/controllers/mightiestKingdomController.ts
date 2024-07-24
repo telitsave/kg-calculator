@@ -1,15 +1,16 @@
-import { Request, Response } from 'express'
-import Resources from '../model/resources/Resources'
-import Parameters from '../model/parameters/Parameters'
-import DragonEmblemsCalculatorModel from '../model/calculator/dragonEmblems/DragonEmblemsCalculatorModel'
-import WitchCalculatorModel from '../model/calculator/witch/WitchCalculatorModel'
-import Settings from '../model/settings/Settings'
 import BarracksCalculatorModel from '../model/calculator/barracks/BarracksCalculatorModel'
-import MightiestKingdomEventCalculator from '../model/calculator/events/mightiestKingdom/MightiestKingdomEventCalculator'
 import BlacksmithCalculatorModel from '../model/calculator/blacksmith/BlacksmithCalculatorModel'
+import DragonEmblemsCalculatorModel from '../model/calculator/dragonEmblems/DragonEmblemsCalculatorModel'
+import MightiestKingdomEventCalculator from '../model/calculator/events/mightiestKingdom/MightiestKingdomEventCalculator'
 import GalleryCalculatorModel from '../model/calculator/gallery/GalleryCalculatorModel'
-import type { CalculateMightiestKingdomPayload, CalculateTotalMightiestKingdomPayload } from 'kg-calculator-typings'
 import HeroesCalculatorModel from '../model/calculator/heroes/HeroesCalculatorModel'
+import WitchCalculatorModel from '../model/calculator/witch/WitchCalculatorModel'
+import Parameters from '../model/parameters/Parameters'
+import Resources from '../model/resources/Resources'
+import Settings from '../model/settings/Settings'
+import { Request, Response } from 'express'
+import type { CalculateMightiestKingdomPayload, CalculateTotalMightiestKingdomPayload } from 'kg-calculator-typings'
+
 
 export default class MightiestKingdomController {
   static calculateScores(request: Request, response: Response) {
@@ -29,7 +30,12 @@ export default class MightiestKingdomController {
     const witchCalculatorModel = new WitchCalculatorModel(resources, parameters)
     const blacksmithCalculatorModel = new BlacksmithCalculatorModel(resources, parameters)
     const galleryCalculatorModel = new GalleryCalculatorModel(resources, parameters)
-    const heroesCalculatorModel = new HeroesCalculatorModel(resources)
+    const heroesCalculatorModel = new HeroesCalculatorModel(
+      resources,
+      settings,
+      payload.heroesData,
+      payload.heroesDistribution,
+    )
 
     const dragonResult = dragonEmblemsCalculatorModel.getPossibleDragon()
     const witchResult = witchCalculatorModel.calculateWitch()

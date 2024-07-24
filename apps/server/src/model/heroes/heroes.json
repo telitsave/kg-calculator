@@ -73,7 +73,7 @@
     "heroId": "arwin",
     "element": "poison",
     "rank": "ssr",
-    "name": "Арвин",
+    "name": "Элви",
     "season": 10
   },
   {
@@ -705,5 +705,41 @@
     "rank": "ssr",
     "name": "Венди",
     "season": 14
+  },
+  {
+    "heroId": "daisy",
+    "element": "poison",
+    "rank": "ssr",
+    "name": "Маргаритка"
+  },
+  {
+    "heroId": "mycelia",
+    "element": "poison",
+    "rank": "ssr",
+    "name": "Мицелий"
+  },
+  {
+    "heroId": "edmund",
+    "element": "fire",
+    "rank": "ssr",
+    "name": "Эдмунд"
+  },
+  {
+    "heroId": "layla",
+    "element": "bow",
+    "rank": "ssr",
+    "name": "Лайла"
+  },
+  {
+    "heroId": "catrina",
+    "element": "fire",
+    "rank": "ssr",
+    "name": "Катрин"
+  },
+  {
+    "heroId": "nina",
+    "element": "ice",
+    "rank": "ssr",
+    "name": "Нина"
   }
 ]

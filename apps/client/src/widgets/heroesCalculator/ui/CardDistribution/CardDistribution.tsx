@@ -70,7 +70,7 @@ const CardDistribution: FC<Props> = memo(
             sm: 64,
           }}
         >
-          <HeroIcon heroId={id} element={element} />
+          <HeroIcon heroId={id} element={element} small />
           <Text size="sm">{name}</Text>
         </Flex>
         <Flex gap={8} align="center">

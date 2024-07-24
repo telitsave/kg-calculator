@@ -48,6 +48,8 @@ const SettingsSwitch: FC<Props> = memo(({ className, settingsType }) => {
             <HelpButton helpContent={<HelpNode settingsType={settingsType} />} />
           </Flexbox>
         )
+      case 'useAdvancedHeroMode':
+        return <Text>Продвинутый режим героев</Text>
     }
   }, [settingsType])
 

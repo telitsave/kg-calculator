@@ -11,11 +11,12 @@ interface Props {
   heroId: string
   element: ElementsType
   cards?: number
+  small?: boolean
 }
 
-const HeroIcon: FC<Props> = memo(({ className, heroId, element, cards = -1 }) => (
+const HeroIcon: FC<Props> = memo(({ className, heroId, element, cards = -1, small = false }) => (
   <div className={cx(css.root, className)}>
-    <HeroIconAsset hero={heroId} />
+    <HeroIconAsset hero={heroId} small={small} />
     <ElementIcon className={css.icon} element={element} />
     {cards >= 0 && <Text className={css.cards}>x{cards}</Text>}
   </div>
