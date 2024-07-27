@@ -1,6 +1,7 @@
 import type {
   CalculateHeroesPayload,
   CalculateHeroesResponse,
+  GetHeroesInCardsPayload,
   HeroesInCardsResponse,
   HeroesResponse,
 } from 'kg-calculator-typings'
@@ -16,6 +17,8 @@ export const getAllHeroes = () => {
   return AxiosService.get<HeroesResponse>('/heroes/all')
 }
 
-export const getHeroesInCards = () => {
-  return AxiosService.get<HeroesInCardsResponse>('/heroes/heroesInCards')
+export const getHeroesInCards = (payload: GetHeroesInCardsPayload) => {
+  return AxiosService.post<HeroesInCardsResponse>('/heroes/heroesInCards', {
+    data: payload,
+  })
 }

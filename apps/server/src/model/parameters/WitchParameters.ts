@@ -12,6 +12,7 @@ export default class WitchParameters {
     rank6: GemsRankParameters
     rank7: GemsRankParameters
     rank8: GemsRankParameters
+    rank9: GemsRankParameters
   }
 
   constructor(initData?: ParametersData['witch']) {
@@ -26,6 +27,7 @@ export default class WitchParameters {
       rank6: this.getFilledGemsByRank(initData?.gems?.rank6),
       rank7: this.getFilledGemsByRank(initData?.gems?.rank7),
       rank8: this.getFilledGemsByRank(initData?.gems?.rank8),
+      rank9: this.getFilledGemsByRank(initData?.gems?.rank9),
     }
   }
 

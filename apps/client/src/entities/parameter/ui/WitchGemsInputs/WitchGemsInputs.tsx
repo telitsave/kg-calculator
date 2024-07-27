@@ -7,9 +7,10 @@ import WitchGemInput from '../WitchGemInput'
 
 interface Props {
   className?: string
+  maxRank: number
 }
 
-const WitchGemsInputs: FC<Props> = memo(({ className }) => {
+const WitchGemsInputs: FC<Props> = memo(({ className, maxRank }) => {
   const [value, setValue] = useState<Ranks>('rank1')
 
   const handleSegmentedControlChange = useCallback((value: string) => {
@@ -20,7 +21,7 @@ const WitchGemsInputs: FC<Props> = memo(({ className }) => {
     <div className={className}>
       <ScrollArea>
         <SegmentedControl
-          data={Array.from({ length: 8 }).map((_, index) => ({
+          data={Array.from({ length: maxRank }).map((_, index) => ({
             label: `Ранг ${index + 1}`,
             value: `rank${index + 1}`,
           }))}

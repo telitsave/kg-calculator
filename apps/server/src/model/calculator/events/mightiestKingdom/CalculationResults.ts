@@ -1,4 +1,4 @@
-import scoresSettings from './mightiestKingdomScoresSettings.json'
+import type ServerSettings from '../../../ServerSettings'
 import Resources from '../../../resources/Resources'
 
 export default class CalculationResults {
@@ -36,31 +36,41 @@ export default class CalculationResults {
     shards: 0,
   }
 
-  constructor(resources: Resources) {
-    this.heroesCards.n = resources.heroesCards.n * scoresSettings.nHeroCard
-    this.heroesCards.r = resources.heroesCards.r * scoresSettings.rHeroCard
-    this.heroesCards.sr = resources.heroesCards.sr * scoresSettings.srHeroCard
-    this.heroesCards.ssr = resources.heroesCards.ssr * scoresSettings.ssrHeroCard
+  constructor(resources: Resources, serverSettings: ServerSettings) {
+    this.heroesCards.n = resources.heroesCards.n * serverSettings.mightiestKingdomConversionRate.nHeroCard
+    this.heroesCards.r = resources.heroesCards.r * serverSettings.mightiestKingdomConversionRate.rHeroCard
+    this.heroesCards.sr = resources.heroesCards.sr * serverSettings.mightiestKingdomConversionRate.srHeroCard
+    this.heroesCards.ssr = resources.heroesCards.ssr * serverSettings.mightiestKingdomConversionRate.ssrHeroCard
 
-    this.dragonRunes.green = resources.dragonsRunes.green * scoresSettings.dragonRuneGreen
-    this.dragonRunes.blue = resources.dragonsRunes.blue * scoresSettings.dragonRuneBlue
-    this.dragonRunes.purple = resources.dragonsRunes.purple * scoresSettings.dragonRunePurple
-    this.dragonRunes.gold = resources.dragonsRunes.gold * scoresSettings.dragonRuneGold
+    this.dragonRunes.green =
+      resources.dragonsRunes.green * serverSettings.mightiestKingdomConversionRate.dragonRuneGreen
+    this.dragonRunes.blue = resources.dragonsRunes.blue * serverSettings.mightiestKingdomConversionRate.dragonRuneBlue
+    this.dragonRunes.purple =
+      resources.dragonsRunes.purple * serverSettings.mightiestKingdomConversionRate.dragonRunePurple
+    this.dragonRunes.gold = resources.dragonsRunes.gold * serverSettings.mightiestKingdomConversionRate.dragonRuneGold
 
-    this.barracksBooks.rank1 = resources.barracksBooks.getAllBooksByRank('rank1') * scoresSettings.barrackBook1
-    this.barracksBooks.rank2 = resources.barracksBooks.getAllBooksByRank('rank2') * scoresSettings.barrackBook2
-    this.barracksBooks.rank3 = resources.barracksBooks.getAllBooksByRank('rank3') * scoresSettings.barrackBook3
-    this.barracksBooks.rank4 = resources.barracksBooks.getAllBooksByRank('rank4') * scoresSettings.barrackBook4
+    this.barracksBooks.rank1 =
+      resources.barracksBooks.getAllBooksByRank('rank1') * serverSettings.mightiestKingdomConversionRate.barrackBook1
+    this.barracksBooks.rank2 =
+      resources.barracksBooks.getAllBooksByRank('rank2') * serverSettings.mightiestKingdomConversionRate.barrackBook2
+    this.barracksBooks.rank3 =
+      resources.barracksBooks.getAllBooksByRank('rank3') * serverSettings.mightiestKingdomConversionRate.barrackBook3
+    this.barracksBooks.rank4 =
+      resources.barracksBooks.getAllBooksByRank('rank4') * serverSettings.mightiestKingdomConversionRate.barrackBook4
 
-    this.barracksTalents.books = resources.talents.books * scoresSettings.talentsBook
-    this.barracksTalents.oraclesCrowns = resources.talents.oraclesCrowns * scoresSettings.oracleCrown
+    this.barracksTalents.books = resources.talents.books * serverSettings.mightiestKingdomConversionRate.talentsBook
+    this.barracksTalents.oraclesCrowns =
+      resources.talents.oraclesCrowns * serverSettings.mightiestKingdomConversionRate.oracleCrown
 
-    this.witch.lightReagents = resources.witch.lightReagents * scoresSettings.lightReagent
-    this.witch.greenPotions = resources.witch.greenWitchPotion * scoresSettings.greenWitchPotion
-    this.witch.purplePotions = resources.witch.purpleWitchPotion * scoresSettings.purpleWitchPotion
+    this.witch.lightReagents =
+      resources.witch.lightReagents * serverSettings.mightiestKingdomConversionRate.lightReagent
+    this.witch.greenPotions =
+      resources.witch.greenWitchPotion * serverSettings.mightiestKingdomConversionRate.greenWitchPotion
+    this.witch.purplePotions =
+      resources.witch.purpleWitchPotion * serverSettings.mightiestKingdomConversionRate.purpleWitchPotion
 
-    this.blacksmith.hammers = resources.blacksmith.hammers * scoresSettings.blacksmith
-    this.gallery.shards = resources.galleryShards * scoresSettings.galleryShard
+    this.blacksmith.hammers = resources.blacksmith.hammers * serverSettings.mightiestKingdomConversionRate.blacksmith
+    this.gallery.shards = resources.galleryShards * serverSettings.mightiestKingdomConversionRate.galleryShard
   }
 
   getData() {

@@ -10,9 +10,10 @@ interface Props {
   className?: string
   witchParameters: WitchParameters
   oldWitchParameters: WitchParameters
+  maxRank: number
 }
 
-const WitchGemsInfo: FC<Props> = memo(({ className, witchParameters, oldWitchParameters }) => {
+const WitchGemsInfo: FC<Props> = memo(({ className, witchParameters, oldWitchParameters, maxRank }) => {
   const [value, setValue] = useState<Ranks>('rank1')
 
   const handleSegmentedControlChange = useCallback((value: string) => {
@@ -23,7 +24,7 @@ const WitchGemsInfo: FC<Props> = memo(({ className, witchParameters, oldWitchPar
     <div className={className}>
       <ScrollArea>
         <SegmentedControl
-          data={Array.from({ length: 8 }).map((_, index) => ({
+          data={Array.from({ length: maxRank }).map((_, index) => ({
             label: `Ранг ${index + 1}`,
             value: `rank${index + 1}`,
           }))}

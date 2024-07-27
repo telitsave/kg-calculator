@@ -1,11 +1,12 @@
 import type { HeroesDistribution, IHeroData } from './Heroes'
 import type { ParametersData } from './ParametersData'
 import type { ResourcesData } from './ResourcesData'
-import type { SettingsData } from './SettingsData'
+import type { CustomServerSettingsData, SettingsData } from './SettingsData'
 
 
 export interface CalculateMightiestKingdomPayload {
   resources: ResourcesData
+  customServerSettings?: CustomServerSettingsData
 }
 
 export interface CalculateMightiestKingdomResponse {
@@ -58,4 +59,5 @@ export interface CalculateTotalMightiestKingdomPayload {
   settings: SettingsData
   heroesData: IHeroData[]
   heroesDistribution: HeroesDistribution
+  customServerSettings?: CustomServerSettingsData
 }

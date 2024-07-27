@@ -4,6 +4,7 @@ import type { ResourcesData } from 'kg-calculator-typings/api/ResourcesData'
 import { useSettings } from 'entities/calculationSettings'
 import { useParameters } from 'entities/parameter'
 import { useResources } from 'entities/resource'
+import { useServerSettings } from 'entities/serverSettings'
 import Flexbox from 'shared/ui/Flexbox'
 import useCalculateBarracks from '../../model/hooks/useCalculateBarracks'
 import Inputs from '../Inputs'
@@ -21,11 +22,13 @@ const BarracksCalculator: FC<Props> = memo(({ className, getExtremePowerNode, ge
   const resources = useResources()
   const parameters = useParameters()
   const settings = useSettings()
+  const { serverSettings, enabledCustomServerSettings } = useServerSettings()
   const handleSubmitButtonClick = useCallback(() => {
     mutate({
       resources,
       parameters,
       settings,
+      customServerSettings: enabledCustomServerSettings ? serverSettings : undefined,
     })
   }, [mutate, parameters, resources, settings])
   return (

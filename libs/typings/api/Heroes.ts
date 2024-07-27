@@ -1,7 +1,7 @@
 import type { ElementsType } from './Elements'
 import type { Ranks } from './Ranks'
 import type { ResourcesData } from './ResourcesData'
-import type { SettingsData } from './SettingsData'
+import type { CustomServerSettingsData, SettingsData } from './SettingsData'
 
 
 export interface HeroesResources {
@@ -56,6 +56,10 @@ export interface IHeroData {
   stars: number
   bars: number
   cards: number
+}
+
+export interface GetHeroesInCardsPayload {
+  customServerSettings?: CustomServerSettingsData
 }
 
 export type HeroesResponse = Hero[]
