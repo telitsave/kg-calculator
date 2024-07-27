@@ -117,6 +117,10 @@ const Layout: FC<Props> = memo(({ className }) => {
               </NavLink>
             )}
           </RouterNavLink>
+
+          <RouterNavLink className={css.link} to="/serverSettings">
+            {({ isActive }) => <NavLink label={getPageName('serverSettings')} active={isActive} onClick={close} />}
+          </RouterNavLink>
         </AppShell.Section>
         <AppShell.Section>
           <Flexbox justifyContent="flex-end" flexDirection="column">

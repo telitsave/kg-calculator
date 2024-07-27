@@ -1,3 +1,4 @@
+import ServerSettings from '../model/ServerSettings'
 import BarracksCalculatorModel from '../model/calculator/barracks/BarracksCalculatorModel'
 import BlacksmithCalculatorModel from '../model/calculator/blacksmith/BlacksmithCalculatorModel'
 import CastleCalculatorModel from '../model/calculator/castle/CastleCalculatorModel'
@@ -16,7 +17,8 @@ import type { CalculateExtremePowerPayload, CalculateTotalExtremePowerPayload } 
 export default class ExtremePowerController {
   static calculateScores(request: Request, response: Response) {
     const payload: CalculateExtremePowerPayload = request.body.data
-    response.json(ExtremePowerEventCalculator.calculate(new Resources(payload.resources)))
+    const serverSettings = new ServerSettings(payload.customServerSettings)
+    response.json(ExtremePowerEventCalculator.calculate(new Resources(payload.resources), serverSettings))
   }
 
   static calculateAllScores(request: Request, response: Response) {
@@ -25,11 +27,12 @@ export default class ExtremePowerController {
     const resources = new Resources(payload.resources)
     const parameters = new Parameters(payload.parameters)
     const settings = new Settings(payload.settings)
+    const serverSettings = new ServerSettings(payload.customServerSettings)
 
     const castleCalculatorModel = new CastleCalculatorModel(resources, parameters, settings)
     const dragonEmblemsCalculatorModel = new DragonEmblemsCalculatorModel(resources, parameters, settings)
-    const barracksCalculatorModel = new BarracksCalculatorModel(resources, parameters, settings)
-    const witchCalculatorModel = new WitchCalculatorModel(resources, parameters)
+    const barracksCalculatorModel = new BarracksCalculatorModel(resources, parameters, settings, serverSettings)
+    const witchCalculatorModel = new WitchCalculatorModel(resources, parameters, serverSettings)
     const blacksmithCalculatorModel = new BlacksmithCalculatorModel(resources, parameters)
     const galleryCalculatorModel = new GalleryCalculatorModel(resources, parameters)
     const heroesCalculatorModel = new HeroesCalculatorModel(
@@ -56,6 +59,6 @@ export default class ExtremePowerController {
     spentResources.add(new Resources(galleryResult.spentResources))
     spentResources.add(new Resources(heroesResult.spentResources))
 
-    response.json(ExtremePowerEventCalculator.calculate(spentResources))
+    response.json(ExtremePowerEventCalculator.calculate(spentResources, serverSettings))
   }
 }

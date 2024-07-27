@@ -1,11 +1,12 @@
 import type { HeroesDistribution, IHeroData } from './Heroes'
 import type { ParametersData } from './ParametersData'
 import type { ResourcesData } from './ResourcesData'
-import type { SettingsData } from './SettingsData'
+import type { CustomServerSettingsData, SettingsData } from './SettingsData'
 
 
 export interface CalculateExtremePowerPayload {
   resources: ResourcesData
+  customServerSettings?: CustomServerSettingsData
 }
 
 export interface CalculateExtremePowerResponse {
@@ -64,4 +65,5 @@ export interface CalculateTotalExtremePowerPayload {
   settings: SettingsData
   heroesData: IHeroData[]
   heroesDistribution: HeroesDistribution
+  customServerSettings?: CustomServerSettingsData
 }

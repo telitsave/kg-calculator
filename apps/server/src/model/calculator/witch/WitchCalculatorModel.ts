@@ -1,19 +1,23 @@
-import Resources from '../../resources/Resources'
+import type ServerSettings from '../../ServerSettings'
 import Parameters from '../../parameters/Parameters'
-import witchInfo from './witchInfo.json'
+import Resources from '../../resources/Resources'
 import gemsInfo from './gemsInfo.json'
+import witchInfo from './witchInfo.json'
 import type { CalculateWitchResponse } from 'kg-calculator-typings'
+
 
 export default class WitchCalculatorModel {
   private readonly _sourceResources: Resources
   private readonly _sourceParameters: Parameters
+  private readonly _serverSettings: ServerSettings
   private _parameters: Parameters
   private _leftResources: Resources
   private _spentResources: Resources
 
-  constructor(resources: Resources, parameters: Parameters) {
+  constructor(resources: Resources, parameters: Parameters, serverSettings: ServerSettings) {
     this._sourceResources = resources
     this._sourceParameters = parameters
+    this._serverSettings = serverSettings
     this._parameters = parameters.clone()
     this._leftResources = resources.clone()
     this._spentResources = new Resources()
@@ -48,6 +52,8 @@ export default class WitchCalculatorModel {
 
   private tryLevelUpGem(): boolean {
     for (const rank of Object.keys(this._parameters.witch.gems)) {
+      const rankNumber = Number(rank.substring(4))
+      if (rankNumber > this._serverSettings.witchGemsMaxRank) continue
       const gems = this._parameters.witch.gems[rank]
 
       const rankInfo = gemsInfo[rank]

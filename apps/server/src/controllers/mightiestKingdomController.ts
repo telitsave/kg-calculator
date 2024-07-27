@@ -1,3 +1,4 @@
+import ServerSettings from '../model/ServerSettings'
 import BarracksCalculatorModel from '../model/calculator/barracks/BarracksCalculatorModel'
 import BlacksmithCalculatorModel from '../model/calculator/blacksmith/BlacksmithCalculatorModel'
 import DragonEmblemsCalculatorModel from '../model/calculator/dragonEmblems/DragonEmblemsCalculatorModel'
@@ -15,7 +16,8 @@ import type { CalculateMightiestKingdomPayload, CalculateTotalMightiestKingdomPa
 export default class MightiestKingdomController {
   static calculateScores(request: Request, response: Response) {
     const payload: CalculateMightiestKingdomPayload = request.body.data
-    response.json(MightiestKingdomEventCalculator.calculate(new Resources(payload.resources)))
+    const serverSettings = new ServerSettings(payload.customServerSettings)
+    response.json(MightiestKingdomEventCalculator.calculate(new Resources(payload.resources), serverSettings))
   }
 
   static calculateAllScores(request: Request, response: Response) {
@@ -24,10 +26,11 @@ export default class MightiestKingdomController {
     const resources = new Resources(payload.resources)
     const parameters = new Parameters(payload.parameters)
     const settings = new Settings(payload.settings)
+    const serverSettings = new ServerSettings(payload.customServerSettings)
 
     const dragonEmblemsCalculatorModel = new DragonEmblemsCalculatorModel(resources, parameters, settings)
-    const barracksCalculatorModel = new BarracksCalculatorModel(resources, parameters, settings)
-    const witchCalculatorModel = new WitchCalculatorModel(resources, parameters)
+    const barracksCalculatorModel = new BarracksCalculatorModel(resources, parameters, settings, serverSettings)
+    const witchCalculatorModel = new WitchCalculatorModel(resources, parameters, serverSettings)
     const blacksmithCalculatorModel = new BlacksmithCalculatorModel(resources, parameters)
     const galleryCalculatorModel = new GalleryCalculatorModel(resources, parameters)
     const heroesCalculatorModel = new HeroesCalculatorModel(
@@ -52,6 +55,6 @@ export default class MightiestKingdomController {
     spentResources.add(new Resources(galleryResult.spentResources))
     spentResources.add(new Resources(heroesResult.spentResources))
 
-    response.json(MightiestKingdomEventCalculator.calculate(spentResources))
+    response.json(MightiestKingdomEventCalculator.calculate(spentResources, serverSettings))
   }
 }

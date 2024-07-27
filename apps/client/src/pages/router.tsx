@@ -13,8 +13,9 @@ import {
 } from './calculator'
 import Inventory from './inventory'
 import { ParametersPage } from './parameters'
-import { SpiritInvasionPage } from './spiritInvasionPage'
 import HeroesPage from './parameters/ui/HeroesPage'
+import { ServerSettingsPage } from './serverSettings'
+import { SpiritInvasionPage } from './spiritInvasionPage'
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
       {
         path: '/heroes',
         element: <HeroesPage />,
+      },
+      {
+        path: '/serverSettings',
+        element: <ServerSettingsPage />,
       },
       {
         path: '/calculator',

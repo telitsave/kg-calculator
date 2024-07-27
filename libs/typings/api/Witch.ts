@@ -1,9 +1,12 @@
 import type { ParametersData } from './ParametersData'
 import type { ResourcesData } from './ResourcesData'
+import type { CustomServerSettingsData } from './SettingsData'
+
 
 export interface CalculateWitchPayload {
   parameters: ParametersData
   resources: ResourcesData
+  customServerSettings?: CustomServerSettingsData
 }
 
 export interface CalculateWitchResponse {
@@ -26,6 +29,7 @@ export interface WitchParameters {
     rank6: GemsRankParameters
     rank7: GemsRankParameters
     rank8: GemsRankParameters
+    rank9: GemsRankParameters
   }
 }
 

@@ -29,4 +29,5 @@ export const PAGE_NAMES: Record<string, string> = {
   heroes: 'Герои',
   spiritInvasion: 'Вторжение злых духов',
   other: 'Прочее',
+  serverSettings: 'Серверные настройки',
 }

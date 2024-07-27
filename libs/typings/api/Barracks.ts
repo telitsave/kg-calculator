@@ -1,6 +1,6 @@
 import type { ParametersData } from './ParametersData'
 import type { ResourcesData } from './ResourcesData'
-import type { SettingsData } from './SettingsData'
+import type { CustomServerSettingsData, SettingsData } from './SettingsData'
 
 
 export interface BarracksBooksByElement {
@@ -33,6 +33,7 @@ export interface CalculateBarracksPayload {
   resources: ResourcesData
   parameters: ParametersData
   settings: SettingsData
+  customServerSettings?: CustomServerSettingsData
 }
 
 export interface CalculateBarracksResponse {

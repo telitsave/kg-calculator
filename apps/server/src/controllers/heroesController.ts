@@ -1,9 +1,10 @@
+import ServerSettings from '../model/ServerSettings'
 import HeroesCalculatorModel from '../model/calculator/heroes/HeroesCalculatorModel'
 import HeroesModel from '../model/heroes/HeroesModel'
 import Resources from '../model/resources/Resources'
 import Settings from '../model/settings/Settings'
 import { Request, Response } from 'express'
-import type { CalculateHeroesPayload } from 'kg-calculator-typings'
+import type { CalculateHeroesPayload, GetHeroesInCardsPayload } from 'kg-calculator-typings'
 
 
 export default class HeroesController {
@@ -30,8 +31,10 @@ export default class HeroesController {
   }
 
   static getHeroesInCards(request: Request, response: Response) {
+    const payload: GetHeroesInCardsPayload = request.body.data
+    const serverSettings = new ServerSettings(payload.customServerSettings)
     const heroesModel = new HeroesModel()
 
-    response.json(heroesModel.getHeroesInCards(6))
+    response.json(heroesModel.getHeroesInCards(serverSettings))
   }
 }

@@ -11,11 +11,12 @@ interface Props {
   element: ElementsType
   parameters: TalentsParameters
   oldParameters: TalentsParameters
+  maxRank: number
 }
 
-const BarracksTalentsInfo: FC<Props> = memo(({ className, element, parameters, oldParameters }) => (
+const BarracksTalentsInfo: FC<Props> = memo(({ className, element, parameters, oldParameters, maxRank }) => (
   <Flexbox className={className} flexDirection="column">
-    {Array.from({ length: 6 }).map((_, index) => (
+    {Array.from({ length: maxRank }).map((_, index) => (
       <Flexbox alignItems="center" gap={4}>
         <Text>Ранг {index + 1}:</Text>
         <BarracksTalentInfo

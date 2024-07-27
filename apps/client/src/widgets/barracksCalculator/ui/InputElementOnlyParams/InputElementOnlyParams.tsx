@@ -2,6 +2,7 @@ import React, { FC, memo } from 'react'
 import { Divider, Text, Title } from '@mantine/core'
 import type { ElementsType } from 'kg-calculator-typings/api/Elements'
 import { BarracksElementalInput, BarracksTalentsInput, ParameterIcon } from 'entities/parameter'
+import { useServerSettings } from 'entities/serverSettings'
 import Flexbox from 'shared/ui/Flexbox'
 import HelpButton from 'shared/ui/HelpButton'
 
@@ -25,16 +26,20 @@ const HelpNode = () => (
   </Flexbox>
 )
 
-const InputElementOnlyParams: FC<Props> = memo(({ element }) => (
-  <Flexbox flexDirection="column" gap={16}>
-    <BarracksElementalInput element={element} />
-    <Divider size="sm" />
-    <Flexbox gap={4} alignItems="center">
-      <Title order={5}>Параметры талантов</Title>
-      <HelpButton helpContent={<HelpNode />} />
+const InputElementOnlyParams: FC<Props> = memo(({ element }) => {
+  const { serverSettings } = useServerSettings()
+
+  return (
+    <Flexbox flexDirection="column" gap={16}>
+      <BarracksElementalInput element={element} />
+      <Divider size="sm" />
+      <Flexbox gap={4} alignItems="center">
+        <Title order={5}>Параметры талантов</Title>
+        <HelpButton helpContent={<HelpNode />} />
+      </Flexbox>
+      <BarracksTalentsInput element={element} maxRank={serverSettings?.talentsMaxRank || 1} />
     </Flexbox>
-    <BarracksTalentsInput element={element} />
-  </Flexbox>
-))
+  )
+})
 
 export default InputElementOnlyParams

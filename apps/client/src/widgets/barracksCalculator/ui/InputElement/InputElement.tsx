@@ -3,6 +3,7 @@ import { Divider, Text, Title } from '@mantine/core'
 import type { ElementsType } from 'kg-calculator-typings/api/Elements'
 import { BarracksElementalInput, BarracksTalentsInput, ParameterIcon } from 'entities/parameter'
 import { KeysHelper, ResourceInput } from 'entities/resource'
+import { useServerSettings } from 'entities/serverSettings'
 import Flexbox from 'shared/ui/Flexbox'
 import HelpButton from 'shared/ui/HelpButton'
 
@@ -27,24 +28,28 @@ const HelpNode = () => (
   </Flexbox>
 )
 
-const InputElement: FC<Props> = memo(({ element }) => (
-  <Flexbox flexDirection="column" gap={16}>
-    <BarracksElementalInput element={element} />
-    <Divider size="sm" />
-    <Flexbox gap={4} alignItems="center">
-      <Title order={5}>Параметры талантов</Title>
-      <HelpButton helpContent={<HelpNode />} />
+const InputElement: FC<Props> = memo(({ element }) => {
+  const { serverSettings } = useServerSettings()
+
+  return (
+    <Flexbox flexDirection="column" gap={16}>
+      <BarracksElementalInput element={element} />
+      <Divider size="sm" />
+      <Flexbox gap={4} alignItems="center">
+        <Title order={5}>Параметры талантов</Title>
+        <HelpButton helpContent={<HelpNode />} />
+      </Flexbox>
+      <BarracksTalentsInput element={element} maxRank={serverSettings?.talentsMaxRank || 1} />
+      <Divider size="sm" />
+      <Title order={5}>Ресурсы</Title>
+      <Flexbox flexWrap="wrap" gap={8} justifyContent="space-between">
+        <ResourceInput resourceType={KeysHelper.getBarracksBookResourceTypeByElementRank(element, 1)} />
+        <ResourceInput resourceType={KeysHelper.getBarracksBookResourceTypeByElementRank(element, 2)} />
+        <ResourceInput resourceType={KeysHelper.getBarracksBookResourceTypeByElementRank(element, 3)} />
+        <ResourceInput resourceType={KeysHelper.getBarracksBookResourceTypeByElementRank(element, 4)} />
+      </Flexbox>
     </Flexbox>
-    <BarracksTalentsInput element={element} />
-    <Divider size="sm" />
-    <Title order={5}>Ресурсы</Title>
-    <Flexbox flexWrap="wrap" gap={8} justifyContent="space-between">
-      <ResourceInput resourceType={KeysHelper.getBarracksBookResourceTypeByElementRank(element, 1)} />
-      <ResourceInput resourceType={KeysHelper.getBarracksBookResourceTypeByElementRank(element, 2)} />
-      <ResourceInput resourceType={KeysHelper.getBarracksBookResourceTypeByElementRank(element, 3)} />
-      <ResourceInput resourceType={KeysHelper.getBarracksBookResourceTypeByElementRank(element, 4)} />
-    </Flexbox>
-  </Flexbox>
-))
+  )
+})
 
 export default InputElement

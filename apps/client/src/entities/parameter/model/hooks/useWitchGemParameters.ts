@@ -68,6 +68,14 @@ const useWitchGemParameters = (): WitchParameters['gems'] => {
       malachite: useWitchGemParameter('rank8', 5)[0],
       emerald: useWitchGemParameter('rank8', 6)[0],
     },
+    rank9: {
+      sapphire: useWitchGemParameter('rank9', 1)[0],
+      amethyst: useWitchGemParameter('rank9', 2)[0],
+      ruby: useWitchGemParameter('rank9', 3)[0],
+      amber: useWitchGemParameter('rank9', 4)[0],
+      malachite: useWitchGemParameter('rank9', 5)[0],
+      emerald: useWitchGemParameter('rank9', 6)[0],
+    },
   }
 }
 

@@ -4,6 +4,7 @@ import { Divider } from '@mantine/core'
 import type { ResourcesData } from 'kg-calculator-typings/api/ResourcesData'
 import { useParameters } from 'entities/parameter'
 import { useResources } from 'entities/resource'
+import { useServerSettings } from 'entities/serverSettings'
 import { useCalculateWitch } from 'entities/witch'
 import Flexbox from 'shared/ui/Flexbox'
 import Inputs from '../Inputs'
@@ -20,12 +21,14 @@ interface Props {
 const WitchCalculator: FC<Props> = memo(({ className, getExtremePowerNode, getMightiestKingdomNode }) => {
   const resources = useResources()
   const parameters = useParameters()
+  const { serverSettings, enabledCustomServerSettings } = useServerSettings()
   const { mutate, data } = useCalculateWitch()
 
   const handleSubmitButtonClick = useCallback(() => {
     mutate({
       resources,
       parameters,
+      customServerSettings: enabledCustomServerSettings ? serverSettings : undefined,
     })
   }, [mutate, parameters, resources])
 
