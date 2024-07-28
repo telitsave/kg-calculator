@@ -1,10 +1,10 @@
 import React, { FC, memo } from 'react'
-import { NavLink } from 'react-router-dom'
-import { Alert, Button, Divider, Flex, Text, Title } from '@mantine/core'
+import { Button, Divider, Title } from '@mantine/core'
 import { SettingsSwitch, useSetting } from 'entities/calculationSettings'
 import { ResourceInput } from 'entities/resource'
 import Flexbox from 'shared/ui/Flexbox'
 import useHeroesDistributionModel from '../../model/hooks/useHeroesDistributionModel'
+import AlertAdvancedMode from '../AlertAdvancedMode'
 
 
 interface Props {
@@ -30,21 +30,7 @@ const Inputs: FC<Props> = memo(({ className, onCalculateButtonClick }) => {
 
       <SettingsSwitch settingsType="useAdvancedHeroMode" />
 
-      {isUsedAdvancedMode && (
-        <Alert title="Продвинутый режим героев">
-          <Flex direction="column" gap={8}>
-            <Text>Внимание! Включен продвинутый режим подсчета очков героев</Text>
-            <Text>
-              В данном режиме расчет очков героев производится на основе отдельно введенных параметров героев, а так же
-              распределения карт самовыбора.
-            </Text>
-            <Text>
-              Для настройки героев и распредления карт самовыбора, пожалуйста, перейдите на страницу{' '}
-              <NavLink to="/heroes">Герои</NavLink>.
-            </Text>
-          </Flex>
-        </Alert>
-      )}
+      <AlertAdvancedMode />
 
       <Button onClick={onCalculateButtonClick} disabled={leftCards < 0}>
         Посчитать

@@ -45,6 +45,9 @@ const Layout: FC<Props> = memo(({ className }) => {
           </Group>
         </AppShell.Section>
         <AppShell.Section grow>
+          <RouterNavLink className={css.link} to="/about">
+            {({ isActive }) => <NavLink label={getPageName('about')} active={isActive} onClick={close} />}
+          </RouterNavLink>
           <RouterNavLink className={css.link} to="/inventory">
             {({ isActive }) => <NavLink label={getPageName('inventory')} active={isActive} onClick={close} />}
           </RouterNavLink>
@@ -134,7 +137,7 @@ const Layout: FC<Props> = memo(({ className }) => {
             </Flex>
             <Flex align="flex-end" direction="column">
               <Text size="sm" ta="end">
-                Поддержать разработчика можно{' '}
+                Поблагодарить разработчика можно{' '}
                 <a href="https://pay2.tap4fun.com/kg" target="_blank" rel="noreferrer">
                   покупкой монеток в игру
                 </a>

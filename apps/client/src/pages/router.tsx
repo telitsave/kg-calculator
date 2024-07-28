@@ -1,5 +1,6 @@
 import { Navigate, createBrowserRouter } from 'react-router-dom'
 import Layout from 'shared/ui/Layout'
+import { AboutPage } from './about'
 import {
   BarracksCalculatorPage,
   BlacksmithPage,
@@ -24,7 +25,11 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Navigate to="/inventory" />,
+        element: <Navigate to="/about" />,
+      },
+      {
+        path: '/about',
+        element: <AboutPage />,
       },
       {
         path: '/inventory',

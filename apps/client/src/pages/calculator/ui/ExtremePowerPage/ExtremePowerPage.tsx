@@ -5,6 +5,7 @@ import { Alert, Space, Text } from '@mantine/core'
 import { SettingPriorityElement, SettingsSwitch } from 'entities/calculationSettings'
 import Flexbox from 'shared/ui/Flexbox'
 import { ExtremePowerStatisticsTotal } from 'widgets/extremePowerStatistics'
+import { AlertAdvancedMode } from 'widgets/heroesCalculator'
 import css from './styles.module.sass'
 
 
@@ -34,7 +35,9 @@ const ExtremePowerPage: FC<Props> = memo(({ className }) => (
       <SettingsSwitch settingsType="canUseRandomBarracksBooks" />
       <SettingsSwitch settingsType="canConvertBarracksBooksToTalents" />
       <SettingsSwitch settingsType="canUseTalentsToNonPriorityElements" />
+      <SettingsSwitch settingsType="useAdvancedHeroMode" />
       <SettingPriorityElement />
+      <AlertAdvancedMode />
     </Flexbox>
     <ExtremePowerStatisticsTotal />
   </Flexbox>

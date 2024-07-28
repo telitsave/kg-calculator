@@ -15,9 +15,10 @@ export const getPageName = (pathname: string, withParents = false) => {
 }
 
 export const PAGE_NAMES: Record<string, string> = {
+  about: 'О калькуляторе',
   inventory: 'Инвентарь',
   parameters: 'Параметры персонажа',
-  calculator: 'Калькулятор',
+  calculator: 'Калькуляторы',
   castle: 'Замок',
   dragon: 'Руны дракона',
   witch: 'Ведьма',

@@ -4,6 +4,7 @@ import cx from 'classnames'
 import { Alert, Space, Text } from '@mantine/core'
 import { SettingPriorityElement, SettingsSwitch } from 'entities/calculationSettings'
 import Flexbox from 'shared/ui/Flexbox'
+import { AlertAdvancedMode } from 'widgets/heroesCalculator'
 import { MightiestKingdomStatisticsTotal } from 'widgets/mightiestKingdomStatistics'
 import css from './styles.module.sass'
 
@@ -32,7 +33,9 @@ const MightiestKingdomPage: FC<Props> = memo(({ className }) => (
       <SettingsSwitch settingsType="canUseRandomBarracksBooks" />
       <SettingsSwitch settingsType="canConvertBarracksBooksToTalents" />
       <SettingsSwitch settingsType="canUseTalentsToNonPriorityElements" />
+      <SettingsSwitch settingsType="useAdvancedHeroMode" />
       <SettingPriorityElement />
+      <AlertAdvancedMode />
     </Flexbox>
     <MightiestKingdomStatisticsTotal />
   </Flexbox>
