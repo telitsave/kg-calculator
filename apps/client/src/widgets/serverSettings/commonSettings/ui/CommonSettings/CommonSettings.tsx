@@ -11,7 +11,7 @@ const CommonSettings: FC<Props> = memo(({ className }) => (
   <Stack className={className} gap={16}>
     <ServerSettingInput settingKey="season" minValue={0} />
     <ServerSettingInput settingKey="talentsMaxRank" minValue={1} maxValue={10} />
-    <ServerSettingInput settingKey="witchGemsMaxRank" minValue={1} maxValue={9} />
+    <ServerSettingInput settingKey="witchGemsMaxRank" minValue={1} maxValue={10} />
 
     <Fieldset legend="Курс обмена книг бойцов казармы на книги талантов в магазине обмена">
       <ServerSettingInput settingKey="talentBooksConversionRate_rank1" minValue={1} />
