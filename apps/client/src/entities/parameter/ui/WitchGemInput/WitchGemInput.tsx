@@ -1,18 +1,18 @@
 import React, { FC, memo, useCallback } from 'react'
-import { NumberInput } from '@mantine/core'
+import { Button, Flex, NumberInput } from '@mantine/core'
 import { WitchGemsIcon } from 'shared/assets/icons'
 import Flexbox from 'shared/ui/Flexbox'
 import useWitchGemParameter from '../../model/hooks/useWitchGemParameter'
 import { Ranks } from '../../model/types'
 import css from './styles.module.sass'
 
+
 interface Props {
-  className?: string
   rank: Ranks
   gem: number
 }
 
-const WitchGemInput: FC<Props> = memo(({ className, rank, gem }) => {
+const WitchGemInput: FC<Props> = memo(({ rank, gem }) => {
   const [value, setValue] = useWitchGemParameter(rank, gem)
 
   const handleNumberInputChange = useCallback(
@@ -21,6 +21,13 @@ const WitchGemInput: FC<Props> = memo(({ className, rank, gem }) => {
     },
     [setValue],
   )
+  const handleMinButtonClick = useCallback(() => {
+    setValue(0)
+  }, [])
+
+  const handleMaxButtonClick = useCallback(() => {
+    setValue(20)
+  }, [])
 
   return (
     <Flexbox className={css.root} flexDirection="column" alignItems="center" gap={4}>
@@ -33,6 +40,14 @@ const WitchGemInput: FC<Props> = memo(({ className, rank, gem }) => {
         value={value}
         onChange={handleNumberInputChange}
       />
+      <Flex gap={8}>
+        <Button onClick={handleMinButtonClick} size="xs">
+          MIN
+        </Button>
+        <Button onClick={handleMaxButtonClick} size="xs">
+          MAX
+        </Button>
+      </Flex>
     </Flexbox>
   )
 })
