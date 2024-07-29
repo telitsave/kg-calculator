@@ -39,6 +39,7 @@ export default class GalleryCalculatorModel {
 
     const nextStepData = data[indexCurrentStepData + 1]
 
+    if (!nextStepData) return false
     if (nextStepData.cost > this._leftResources.galleryShards) return false
 
     this._leftResources.galleryShards -= nextStepData.cost

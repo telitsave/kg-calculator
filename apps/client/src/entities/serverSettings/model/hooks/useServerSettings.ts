@@ -8,6 +8,7 @@ const useServerSettings = () => {
   const [customServerSettings, setCustomServerSettings] = useLocalStorage<CustomServerSettingsData>({
     key: 'customServerSettings',
     defaultValue: {},
+    getInitialValueInEffect: false,
     serialize: (value) => JSON.stringify(value),
     deserialize: (value) => JSON.parse(value || '{}'),
   })
@@ -15,6 +16,7 @@ const useServerSettings = () => {
   const [enabledCustomServerSettings, setEnabledCustomServerSettings] = useLocalStorage<boolean>({
     key: 'enabledCustomServerSettings',
     defaultValue: false,
+    getInitialValueInEffect: false,
     serialize: (value) => JSON.stringify(value),
     deserialize: (value) => JSON.parse(value || 'false'),
   })
@@ -36,6 +38,7 @@ const useServerSettings = () => {
       () => (enabledCustomServerSettings ? customServerSettings : serverSettings.data),
       [enabledCustomServerSettings, customServerSettings, serverSettings.data],
     ),
+    customServerSettings: enabledCustomServerSettings ? customServerSettings : undefined,
     enabledCustomServerSettings,
     setCustomServerSettings,
     setEnabledCustomServerSettings,

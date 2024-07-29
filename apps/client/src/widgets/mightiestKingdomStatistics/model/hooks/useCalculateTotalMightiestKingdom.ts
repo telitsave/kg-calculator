@@ -14,10 +14,10 @@ const useCalculateTotalMightiestKingdom = () => {
   const settings = useSettings()
   const { heroes } = useHeroes()
   const { heroesDistribution } = useHeroesDistributionModel()
-  const { serverSettings, enabledCustomServerSettings } = useServerSettings()
+  const { customServerSettings } = useServerSettings()
 
   return useQuery({
-    queryKey: ['mightiestKingdomTotal', resources, settings],
+    queryKey: ['mightiestKingdomTotal', resources, settings, heroes, heroesDistribution, customServerSettings],
     queryFn: () =>
       api.mightiestKingdom.calculateTotalMightiestKingdom({
         resources,
@@ -25,7 +25,7 @@ const useCalculateTotalMightiestKingdom = () => {
         settings,
         heroesData: heroes,
         heroesDistribution,
-        customServerSettings: enabledCustomServerSettings ? serverSettings : undefined,
+        customServerSettings,
       }),
     enabled: !!resources,
   })

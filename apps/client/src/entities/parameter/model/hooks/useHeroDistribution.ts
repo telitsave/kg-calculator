@@ -6,6 +6,7 @@ const useHeroDistribution = () =>
   useLocalStorage<HeroesDistribution>({
     key: 'heroesDistribution',
     defaultValue: {},
+    getInitialValueInEffect: false,
     serialize: (value) => JSON.stringify(value),
     deserialize: (value) => (value && JSON.parse(value)) || {},
   })

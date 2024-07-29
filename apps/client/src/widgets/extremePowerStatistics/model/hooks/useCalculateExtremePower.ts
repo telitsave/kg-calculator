@@ -5,14 +5,14 @@ import api from 'shared/api'
 
 
 const useCalculateExtremePower = (resources: ResourcesData) => {
-  const { serverSettings, enabledCustomServerSettings } = useServerSettings()
-  
+  const { customServerSettings } = useServerSettings()
+
   return useQuery({
-    queryKey: ['extremePower', resources],
+    queryKey: ['extremePower', resources, customServerSettings],
     queryFn: () =>
       api.extremePower.calculateExtremePower({
         resources,
-        customServerSettings: enabledCustomServerSettings ? serverSettings : undefined,
+        customServerSettings,
       }),
     enabled: !!resources,
   })

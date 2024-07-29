@@ -14,10 +14,10 @@ const useCalculateTotalExtremePower = () => {
   const settings = useSettings()
   const { heroes } = useHeroes()
   const { heroesDistribution } = useHeroesDistributionModel()
-  const { serverSettings, enabledCustomServerSettings } = useServerSettings()
+  const { customServerSettings } = useServerSettings()
 
   return useQuery({
-    queryKey: ['extremePowerTotal', resources, settings],
+    queryKey: ['extremePowerTotal', resources, settings, heroes, heroesDistribution, customServerSettings],
     queryFn: () =>
       api.extremePower.calculateTotalExtremePower({
         resources,
@@ -25,7 +25,7 @@ const useCalculateTotalExtremePower = () => {
         settings,
         heroesData: heroes,
         heroesDistribution,
-        customServerSettings: enabledCustomServerSettings ? serverSettings : undefined,
+        customServerSettings,
       }),
     enabled: !!resources,
   })

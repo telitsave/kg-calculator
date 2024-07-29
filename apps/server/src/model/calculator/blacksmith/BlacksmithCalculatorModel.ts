@@ -1,7 +1,8 @@
-import Resources from '../../resources/Resources'
 import Parameters from '../../parameters/Parameters'
+import Resources from '../../resources/Resources'
 import data from './data.json'
-import {CalculateBlacksmithResponse} from 'kg-calculator-typings'
+import { CalculateBlacksmithResponse } from 'kg-calculator-typings'
+
 
 export default class BlacksmithCalculatorModel {
   private readonly _sourceParameters: Parameters
@@ -32,6 +33,7 @@ export default class BlacksmithCalculatorModel {
   private tryCalculateBlacksmith() {
     const nextLevelData = data[this._parameters.blacksmith.level]
 
+    if (!nextLevelData) return false
     if (nextLevelData.cost > this._leftResources.blacksmith.hammers) return false
 
     this._leftResources.blacksmith.hammers -= nextLevelData.cost

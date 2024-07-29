@@ -6,6 +6,7 @@ const useTalentParameter = (element: ElementsType, rank: string, param: 'books' 
   useLocalStorage<number>({
     key: `talent-${element}-${rank}-${param}`,
     defaultValue: 0,
+    getInitialValueInEffect: false,
     serialize: (value) => value.toString(),
     deserialize: (value) => parseInt(value || '0', 10),
   })

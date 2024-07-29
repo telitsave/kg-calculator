@@ -5,13 +5,13 @@ import { useServerSettings } from '../../../serverSettings'
 
 const useGetHeroesInCards = () => {
   // TODO: настройки должны поступать в хук извне, т.к. появилась связность между разными Entity
-  const { serverSettings, enabledCustomServerSettings } = useServerSettings()
+  const { customServerSettings } = useServerSettings()
   return useQuery({
     queryFn: () =>
       api.heroes.getHeroesInCards({
-        customServerSettings: enabledCustomServerSettings ? serverSettings : undefined,
+        customServerSettings,
       }),
-    queryKey: ['heroesInCards', enabledCustomServerSettings, serverSettings],
+    queryKey: ['heroesInCards', customServerSettings],
   })
 }
 

@@ -15,6 +15,7 @@ const useHeroes = () => {
   const [heroes, setHeroes] = useLocalStorage<IHeroData[]>({
     key: 'heroesData',
     defaultValue: [],
+    getInitialValueInEffect: false,
     serialize: (value: IHeroData[]) => JSON.stringify(value),
     deserialize: (value: string | undefined) => JSON.parse(value || '[]') as IHeroData[],
   })

@@ -5,14 +5,14 @@ import api from 'shared/api'
 
 
 const useCalculateMightiestKingdom = (resources: ResourcesData) => {
-  const { serverSettings, enabledCustomServerSettings } = useServerSettings()
-
+  const { customServerSettings } = useServerSettings()
+  
   return useQuery({
-    queryKey: ['mightiestKingdom', resources],
+    queryKey: ['mightiestKingdom', resources, customServerSettings],
     queryFn: () =>
       api.mightiestKingdom.calculateMightiestKingdom({
         resources,
-        customServerSettings: enabledCustomServerSettings ? serverSettings : undefined,
+        customServerSettings,
       }),
     enabled: !!resources,
   })

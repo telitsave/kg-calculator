@@ -42,12 +42,14 @@
     })
     (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-    ym(97931908, "init", {
-      clickmap: true,
-      trackLinks: true,
-      accurateTrackBounce: true,
-      webvisor: true
-    });
+    if ('%NODE_ENV%' === 'production') {
+      ym(97931908, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true
+      });
+    }
   </script>
   <noscript>
     <div><img src="https://mc.yandex.ru/watch/97931908" style="position:absolute; left:-9999px;" alt=""/></div>
@@ -57,5 +59,6 @@
 <body>
 <noscript>You need to enable JavaScript to run this app.</noscript>
 <div id='root'></div>
+
 </body>
 </html>
