@@ -29,7 +29,7 @@ export default class ServerSettings {
     steel: 2000,
     lightReagent: 70,
     greenWitchPotion: 175,
-    purpleWitchPotion: 3500,
+    purpleWitchPotion: 1750,
     blacksmith: 100,
     galleryShard: 1000,
   }
@@ -50,7 +50,7 @@ export default class ServerSettings {
     oracleCrown: 1400,
     lightReagent: 70,
     greenWitchPotion: 175,
-    purpleWitchPotion: 3500,
+    purpleWitchPotion: 1750,
     blacksmith: 100,
     galleryShard: 1000,
   }
