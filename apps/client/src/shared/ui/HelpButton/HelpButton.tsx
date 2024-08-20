@@ -3,17 +3,17 @@ import { Popover, UnstyledButton } from '@mantine/core'
 import { useDisclosure } from '@mantine/hooks'
 import { AiOutlineQuestionCircle } from 'react-icons/ai'
 
+
 interface Props {
-  className?: string
   helpContent: ReactNode
 }
 
-const HelpButton: FC<Props> = memo(({ className, helpContent }) => {
+const HelpButton: FC<Props> = memo(({ helpContent }) => {
   const [opened, { close, open }] = useDisclosure(false)
   return (
     <Popover width={300} position="bottom" withArrow shadow="md" opened={opened}>
       <Popover.Target>
-        <UnstyledButton onMouseEnter={open} onMouseLeave={close}>
+        <UnstyledButton onMouseEnter={open} onMouseLeave={close} tabIndex={-1}>
           <AiOutlineQuestionCircle />
         </UnstyledButton>
       </Popover.Target>

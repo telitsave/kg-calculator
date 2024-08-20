@@ -89,20 +89,20 @@ const HeroCard: FC<Props> = memo(
             }}
           >
             <Flex align="center" gap={8}>
-              <Button variant="outline" size="md" p={8} onClick={handleRemoveStarClick}>
+              <Button variant="outline" size="md" p={8} onClick={handleRemoveStarClick} tabIndex={-1}>
                 <FaStarHalfAlt color="var(--mantine-color-yellow-filled)" />
               </Button>
-              <Button variant="outline" size="md" p={8} onClick={handleRemoveBarClick}>
+              <Button variant="outline" size="md" p={8} onClick={handleRemoveBarClick} tabIndex={-1}>
                 -1
               </Button>
               <Flex direction="column" w={80}>
                 <Stars classNameStar={css.star} starsCount={maxStars} oldValue={stars} />
                 <Bars barsCount={maxBars} oldValue={bars} />
               </Flex>
-              <Button variant="outline" size="md" p={8} onClick={handleAddBarClick}>
+              <Button variant="outline" size="md" p={8} onClick={handleAddBarClick} tabIndex={-1}>
                 +1
               </Button>
-              <Button variant="outline" size="md" p={8} onClick={handleAddStarClick}>
+              <Button variant="outline" size="md" p={8} onClick={handleAddStarClick} tabIndex={-1}>
                 <FaStar color="var(--mantine-color-yellow-filled)" />
               </Button>
             </Flex>

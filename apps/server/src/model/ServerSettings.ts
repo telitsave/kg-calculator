@@ -4,10 +4,10 @@ export default class ServerSettings {
   talentsMaxRank = 6
   witchGemsMaxRank = 5
   talentBooksConversionRate = {
-    rank1: 3,
-    rank2: 15,
-    rank3: 72,
-    rank4: 358,
+    rank1: 6,
+    rank2: 29,
+    rank3: 143,
+    rank4: 715,
   }
   extremePowerConversionRate = {
     nHeroCard: 100,
@@ -28,8 +28,8 @@ export default class ServerSettings {
     wood: 500,
     steel: 2000,
     lightReagent: 70,
-    greenWitchPotion: 175,
-    purpleWitchPotion: 1750,
+    greenWitchPotion: 70,
+    purpleWitchPotion: 700,
     blacksmith: 100,
     galleryShard: 1000,
   }
@@ -49,12 +49,12 @@ export default class ServerSettings {
     talentsBook: 140,
     oracleCrown: 1400,
     lightReagent: 70,
-    greenWitchPotion: 175,
-    purpleWitchPotion: 1750,
+    greenWitchPotion: 70,
+    purpleWitchPotion: 700,
     blacksmith: 100,
     galleryShard: 1000,
   }
-  season = 6
+  season = 7
 
   constructor(customServerSettings?: CustomServerSettingsData) {
     if (customServerSettings) {
