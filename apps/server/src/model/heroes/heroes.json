@@ -741,5 +741,11 @@
     "element": "ice",
     "rank": "ssr",
     "name": "Нина"
+  },
+  {
+    "heroId": "ryan",
+    "element": "bow",
+    "rank": "ssr",
+    "name": "Райан"
   }
 ]
