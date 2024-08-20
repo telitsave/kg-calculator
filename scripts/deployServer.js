@@ -1,14 +1,19 @@
 const FtpDeploy = require('ftp-deploy')
+const dotenv = require('dotenv')
 const ftpDeploy = new FtpDeploy()
 
+dotenv.config()
+
+console.log()
+
 const config = {
-  user: 'host1870882_deploy',
+  user: process.env.FTP_LOGIN,
   // Password optional, prompted if none given
-  password: 'CU7^7TQtx7NPyvVx2aS#tA#o',
+  password: process.env.FTP_PASSWORD,
   host: 'ftp79.hostland.ru',
   port: 21,
   localRoot: __dirname + '/../dist/server/src',
-  remoteRoot: '/api.telitsave.ru/node_server/www/dist',
+  remoteRoot: '/api.telitsave.ru/projects/node_server',
   // include: ["*", "**/*"],      // this would upload everything except dot files
   include: ['*', '**/*'],
   // e.g. exclude sourcemaps, and ALL files in node_modules (including dot files)

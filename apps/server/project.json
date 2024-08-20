@@ -12,14 +12,14 @@
     "start": {
       "executor": "nx:run-commands",
       "options": {
-        "command": "nodemon apps/server/src/index.ts"
+        "command": "nodemon apps/server/src/server.ts"
       }
     },
     "build": {
       "executor": "@nx/js:tsc",
       "options": {
         "outputPath": "dist/server",
-        "main": "apps/server/src/index.ts",
+        "main": "apps/server/src/server.ts",
         "tsConfig": "apps/server/tsconfig.build.json",
         "generatePackageJson": true
       }

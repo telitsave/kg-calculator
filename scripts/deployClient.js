@@ -2,9 +2,9 @@ const FtpDeploy = require('ftp-deploy')
 const ftpDeploy = new FtpDeploy()
 
 const config = {
-  user: 'host1870882_deploy',
+  user: process.env.FTP_LOGIN,
   // Password optional, prompted if none given
-  password: 'CU7^7TQtx7NPyvVx2aS#tA#o',
+  password: process.env.FTP_PASSWORD,
   host: 'ftp79.hostland.ru',
   port: 21,
   localRoot: __dirname + '/../dist/client',
