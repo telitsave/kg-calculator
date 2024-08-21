@@ -1,21 +1,22 @@
-import calculatorRouter from './routes/calculatorRouter'
-import heroesRouter from './routes/heroesRouter'
-import serverSettingsRouter from './routes/serverSettingsRouter'
-import spiritsInvasionRouter from './routes/spiritsInvasionRouter'
+import MysqlAdapter from './adapters/mysql-adapter'
+import errorMiddleware from './middlewares/error-middleware'
+import router from './routes'
+import cookieParser from 'cookie-parser'
 import cors from 'cors'
 import dotenv from 'dotenv'
 import express from 'express'
 
 
 dotenv.config()
+
 const app = express()
-app.use(cors())
+
 app.use(express.json())
-const port = process.env.PORT
+app.use(cookieParser())
+app.use(cors())
+app.use('', router)
+app.use(errorMiddleware)
 
-app.use('/calculator', calculatorRouter)
-app.use('/spiritsInvasion', spiritsInvasionRouter)
-app.use('/heroes', heroesRouter)
-app.use('/serverSettings', serverSettingsRouter)
+MysqlAdapter.init()
 
-app.listen(port, () => console.log(`Running on port ${port}`))
+app.listen(process.env.PORT, () => console.log(`Running on port ${process.env.PORT}`))
