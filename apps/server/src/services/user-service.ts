@@ -9,7 +9,16 @@ import { v4 as uuidV4 } from 'uuid'
 export default class UserService {
   static async registration(email: string, password: string) {
     const user = await UserRepository.getUserByEmail(email)
+
     if (user) {
+      if (!user.confirmed) {
+        const registrationToken = uuidV4()
+        await UserRepository.setUserRegistrationToken(user.id, registrationToken)
+        MailService.sendActivationMail(email, registrationToken)
+        throw ApiError.BadRequestError(
+          'Пользователь с такой почтой уже зарегистрирован, но не активирован. Новая ссылка на активацию была отправлена на почту, указанную при регистрации.',
+        )
+      }
       throw ApiError.BadRequestError('Пользователь с такой почтой уже зарегистрирован')
     }
 
@@ -24,7 +33,7 @@ export default class UserService {
     const user = await UserRepository.getUserByRegistrationToken(registrationToken)
 
     if (!user) {
-      throw ApiError.BadRequestError('Токен активации недействителен')
+      throw ApiError.BadRequestError('Ссылка активации недействительна')
     }
 
     await UserRepository.activateUser(user.id)
@@ -35,6 +44,10 @@ export default class UserService {
 
     if (!user) {
       throw ApiError.BadRequestError('Логин или пароль неверные')
+    }
+
+    if (!user.confirmed) {
+      throw ApiError.BadRequestError('Пользователь не активирован')
     }
 
     const isPasswordValid = await bcrypt.compare(password, user.password)
@@ -84,5 +97,41 @@ export default class UserService {
       throw ApiError.BadRequestError('Ошибка при обновлении авторизации')
     }
     return { ...tokens, user: user.getDto() }
+  }
+
+  static async forgotPassword(email: string) {
+    const user = await UserRepository.getUserByEmail(email)
+
+    if (!user) {
+      return
+    }
+
+    try {
+      const passwordResetToken = uuidV4()
+      await UserRepository.setUserResetPasswordToken(user.id, passwordResetToken)
+      await MailService.sendResetPasswordMail(email, passwordResetToken)
+    } catch (e) {
+      throw e
+    }
+  }
+
+  static async resetPassword(passwordResetToken: string, newPassword: string) {
+    const user = await UserRepository.getUserByResetPasswordToken(passwordResetToken)
+
+    if (!user) {
+      throw ApiError.BadRequestError('Ссылка для сброса пароля устарела')
+    }
+
+    if (!user.confirmed) {
+      throw ApiError.BadRequestError('Пользователь не активирован')
+    }
+
+    const passwordHash = await bcrypt.hash(newPassword, 3)
+    await UserRepository.setUserPassword(user.id, passwordHash)
+
+    for (const refreshToken of user.refreshTokens) {
+      await TokenService.removeToken(refreshToken)
+    }
+    await UserRepository.setUserResetPasswordToken(user.id, null)
   }
 }

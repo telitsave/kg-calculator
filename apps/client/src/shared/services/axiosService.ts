@@ -7,6 +7,7 @@ export default class AxiosService {
     if (!this.axiosInstance) {
       this.axiosInstance = axios.create({
         baseURL: baseUrl,
+        withCredentials: true,
       })
     }
   }

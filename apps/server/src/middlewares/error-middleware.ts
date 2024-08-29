@@ -1,19 +1,18 @@
 import ApiError from '../model/exceptions/ApiError'
-import type { Request, Response } from 'express'
+import type { NextFunction, Request, Response } from 'express'
+import type { ApiDefaultError } from 'kg-calculator-typings'
 
-function errorMiddleware(err: Error, req: Request, res: Response) {
+
+function errorMiddleware(err: Error, req: Request, res: Response, next: NextFunction) {
   console.log(err)
 
   if (err instanceof ApiError) {
     return res.status(err.status).json({
       message: err.message,
-      errors: err.errors,
-    })
+    } as ApiDefaultError)
   }
 
-  return res.status(500).json({
-    message: 'Непредвиденная ошибка',
-  })
+  return res.status(500).json()
 }
 
 export default errorMiddleware

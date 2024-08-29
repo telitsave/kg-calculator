@@ -59,6 +59,25 @@ export default class UserRepository {
     }
   }
 
+  static async getUserByResetPasswordToken(resetPasswordToken: string): Promise<User | null> {
+    try {
+      const connection = await mysqlAdapter.getConnection()
+      const [users] = await connection.query<RowDataPacket[]>('SELECT * FROM users WHERE reset_password_token = ?', [
+        resetPasswordToken,
+      ])
+
+      if (users.length === 0) return null
+
+      const [refreshTokens] = await connection.query<RowDataPacket[]>('SELECT * FROM users_tokens WHERE user_id = ?', [
+        users[0].id,
+      ])
+
+      return new User(users[0], refreshTokens)
+    } catch (err) {
+      throw err
+    }
+  }
+
   static async createUser(email: string, password: string, registrationToken: string): Promise<User> {
     try {
       const connection = await mysqlAdapter.getConnection()
@@ -113,6 +132,42 @@ export default class UserRepository {
     try {
       const connection = await mysqlAdapter.getConnection()
       await connection.execute('DELETE FROM `users_tokens` WHERE `refresh_token` = ?', [refreshToken])
+    } catch (err) {
+      throw err
+    }
+  }
+
+  static async setUserResetPasswordToken(userId: number, resetPasswordToken: string | null): Promise<void> {
+    try {
+      const connection = await mysqlAdapter.getConnection()
+
+      await connection.execute('UPDATE `users` SET `reset_password_token` = ? WHERE `id` = ?', [
+        resetPasswordToken,
+        userId,
+      ])
+    } catch (err) {
+      throw err
+    }
+  }
+
+  static async setUserRegistrationToken(userId: number, registrationToken: string): Promise<void> {
+    try {
+      const connection = await mysqlAdapter.getConnection()
+
+      await connection.execute('UPDATE `users` SET `registration_token` = ? WHERE `id` = ?', [
+        registrationToken,
+        userId,
+      ])
+    } catch (err) {
+      throw err
+    }
+  }
+
+  static async setUserPassword(userId: number, password: string): Promise<void> {
+    try {
+      const connection = await mysqlAdapter.getConnection()
+
+      await connection.execute('UPDATE `users` SET `password` = ? WHERE `id` = ?', [password, userId])
     } catch (err) {
       throw err
     }

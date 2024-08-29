@@ -1,9 +1,11 @@
-import React, { FC, memo } from 'react'
+import React, { FC, type ReactNode, memo } from 'react'
 import { Outlet, NavLink as RouterNavLink, useLocation } from 'react-router-dom'
 import cx from 'classnames'
 import { AppShell, Burger, Flex, Group, NavLink, Text } from '@mantine/core'
 import { useDisclosure } from '@mantine/hooks'
 import { FaTelegram } from 'react-icons/fa'
+import { useActivate } from 'features/auth/login'
+import { ResetPasswordModal, useResetPassword } from 'features/auth/resetPassword'
 import Flexbox from '../Flexbox'
 import { getPageName } from './pageNames'
 import css from './styles.module.sass'
@@ -11,11 +13,15 @@ import css from './styles.module.sass'
 
 interface Props {
   className?: string
+  rightHeaderSlot?: ReactNode
 }
 
-const Layout: FC<Props> = memo(({ className }) => {
+const Layout: FC<Props> = memo(({ className, rightHeaderSlot }) => {
   const [opened, { toggle, close }] = useDisclosure()
   const location = useLocation()
+  useActivate()
+  const { openedModal, onCloseModal, resetPasswordToken } = useResetPassword()
+
   return (
     <AppShell
       layout="alt"
@@ -29,11 +35,14 @@ const Layout: FC<Props> = memo(({ className }) => {
       padding="md"
     >
       <AppShell.Header>
-        <Group h="100%" ml="md">
+        <Group h="100%" ml="md" mr="md">
           <Burger opened={opened} onClick={toggle} hiddenFrom="sm" size="sm" />
-          <Text fw={700} size="sm">
-            {getPageName(location.pathname, true)}
-          </Text>
+          <Flex flex="1 1 auto" justify="space-between" align="center">
+            <Text fw={700} size="sm">
+              {getPageName(location.pathname, true)}
+            </Text>
+            {rightHeaderSlot}
+          </Flex>
         </Group>
       </AppShell.Header>
 
@@ -162,6 +171,9 @@ const Layout: FC<Props> = memo(({ className }) => {
       <AppShell.Main>
         <Outlet />
       </AppShell.Main>
+      {resetPasswordToken && (
+        <ResetPasswordModal resetPasswordToken={resetPasswordToken} opened={openedModal} onClose={onCloseModal} />
+      )}
     </AppShell>
   )
 })

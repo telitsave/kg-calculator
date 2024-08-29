@@ -1,5 +1,6 @@
 import { Navigate, createBrowserRouter } from 'react-router-dom'
 import Layout from 'shared/ui/Layout'
+import { UserInfo } from '../widgets/userInfo'
 import { AboutPage } from './about'
 import {
   BarracksCalculatorPage,
@@ -21,11 +22,11 @@ import { SpiritInvasionPage } from './spiritInvasionPage'
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Layout />,
+    element: <Layout rightHeaderSlot={<UserInfo />} />,
     children: [
       {
         index: true,
-        element: <Navigate to="/about" />,
+        element: <Navigate to="/about" replace />,
       },
       {
         path: '/about',

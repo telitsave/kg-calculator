@@ -1,3 +1,4 @@
+import * as auth from './authApi'
 import * as barracks from './barracksApi'
 import * as blacksmith from './blacksmithApi'
 import * as castle from './castleApi'
@@ -12,6 +13,7 @@ import * as witch from './witchApi'
 
 
 const api = {
+  auth,
   barracks,
   blacksmith,
   castle,

@@ -65,6 +65,7 @@
     "typescript": "5.4.5"
   },
   "dependencies": {
+    "@mantine/notifications": "^7.12.1",
     "bcrypt": "^5.1.1",
     "cookie-parser": "^1.4.6",
     "dayjs": "^1.11.13",
