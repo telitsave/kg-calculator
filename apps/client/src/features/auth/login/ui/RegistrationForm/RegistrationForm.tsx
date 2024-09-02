@@ -1,9 +1,8 @@
-import React, { FC, memo, useCallback } from 'react'
+import { FC, memo, useCallback } from 'react'
 import { Button, Flex, PasswordInput, Text, TextInput } from '@mantine/core'
 import { hasLength, isEmail, matchesField, useForm } from '@mantine/form'
 import NotificationsHelper from 'shared/helpers/notificationsHelper'
 import useRegistration from '../../model/useRegistration'
-
 
 interface Props {
   className?: string

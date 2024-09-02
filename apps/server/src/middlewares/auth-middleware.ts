@@ -19,6 +19,8 @@ export default function authMiddleware(req: Request, res: Response, next: NextFu
     if (!userData) {
       return next(ApiError.UnauthorizedError())
     }
+
+    res.locals.userData = userData
     next()
   } catch (err) {
     return next(ApiError.UnauthorizedError())

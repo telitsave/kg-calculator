@@ -18,6 +18,16 @@ export default class TalentsParameters {
     this.poison = this.getFilledTalentsByElement(initData?.poison)
   }
 
+  static transformDataFromDB(items: { parameterId: string; value: string }[]): TalentsParameters {
+    const parameters = new TalentsParameters()
+    items.forEach((item) => {
+      const [, element, rank, param] = item.parameterId.split('_')
+      parameters[element].rank[rank][param] = Number(item.value) || 0
+    })
+
+    return parameters
+  }
+
   getFirstNotMaxRankBooks(element: ElementsType) {
     return Object.keys(this[element].rank)
       .map((rank) => Number(rank))
@@ -45,6 +55,51 @@ export default class TalentsParameters {
         10: this.getFilledTalentsByElementRank(element?.rank[10]),
       },
     }
+  }
+
+  getDataForDB() {
+    return [
+      ...Object.entries(this.bow.rank).flatMap(([rank, value]) => [
+        {
+          parameterId: `talents_bow_${rank}_booksCells`,
+          value: value.booksCells || null,
+        },
+        {
+          parameterId: `talents_bow_${rank}_crownsCells`,
+          value: value.crownsCells || null,
+        },
+      ]),
+      ...Object.entries(this.fire.rank).flatMap(([rank, value]) => [
+        {
+          parameterId: `talents_fire_${rank}_booksCells`,
+          value: value.booksCells || null,
+        },
+        {
+          parameterId: `talents_fire_${rank}_crownsCells`,
+          value: value.crownsCells || null,
+        },
+      ]),
+      ...Object.entries(this.ice.rank).flatMap(([rank, value]) => [
+        {
+          parameterId: `talents_ice_${rank}_booksCells`,
+          value: value.booksCells || null,
+        },
+        {
+          parameterId: `talents_ice_${rank}_crownsCells`,
+          value: value.crownsCells || null,
+        },
+      ]),
+      ...Object.entries(this.poison.rank).flatMap(([rank, value]) => [
+        {
+          parameterId: `talents_poison_${rank}_booksCells`,
+          value: value.booksCells || null,
+        },
+        {
+          parameterId: `talents_poison_${rank}_crownsCells`,
+          value: value.crownsCells || null,
+        },
+      ]),
+    ]
   }
 
   private getFilledTalentsByElementRank(rank?: TalentParametersByElementRank): TalentParametersByElementRank {

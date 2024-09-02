@@ -1,12 +1,13 @@
-import CastleResources from './CastleResources'
-import HeroesResources from './HeroesResources'
 import BarracksBooksResources from './BarracksBooksResources'
+import { BaseResources } from './BaseResources'
+import BlacksmithResources from './BlacksmithResources'
+import CastleResources from './CastleResources'
 import DragonRunesResources from './DragonRunesResources'
+import HeroesResources from './HeroesResources'
 import TalentsResources from './TalentsResources'
 import WitchResources from './WitchResources'
-import BlacksmithResources from './BlacksmithResources'
-import { BaseResources } from './BaseResources'
 import type { ResourcesData } from 'kg-calculator-typings'
+
 
 export default class Resources implements BaseResources<Resources> {
   heroesCards: HeroesResources
@@ -19,16 +20,16 @@ export default class Resources implements BaseResources<Resources> {
   galleryShards: number
   gold: number
 
-  constructor(initData?: Partial<ResourcesData>) {
-    this.heroesCards = new HeroesResources(initData?.heroesCards)
-    this.castle = new CastleResources(initData?.castle)
-    this.barracksBooks = new BarracksBooksResources(initData?.barracksBooks)
-    this.dragonsRunes = new DragonRunesResources(initData?.dragonsRunes)
-    this.talents = new TalentsResources(initData?.talents)
-    this.witch = new WitchResources(initData?.witch)
-    this.blacksmith = new BlacksmithResources(initData?.blacksmith)
-    this.galleryShards = initData?.galleryShards || 0
-    this.gold = initData?.gold || 0
+  constructor(data?: Partial<ResourcesData>) {
+    this.heroesCards = new HeroesResources(data?.heroesCards)
+    this.castle = new CastleResources(data?.castle)
+    this.barracksBooks = new BarracksBooksResources(data?.barracksBooks)
+    this.dragonsRunes = new DragonRunesResources(data?.dragonsRunes)
+    this.talents = new TalentsResources(data?.talents)
+    this.witch = new WitchResources(data?.witch)
+    this.blacksmith = new BlacksmithResources(data?.blacksmith)
+    this.galleryShards = data?.galleryShards || 0
+    this.gold = data?.gold || 0
   }
 
   clone() {
@@ -63,7 +64,7 @@ export default class Resources implements BaseResources<Resources> {
     if (this.gold < 0) this.gold = 0
   }
 
-  getData(): ResourcesData{
+  getData(): ResourcesData {
     return {
       witch: this.witch,
       talents: this.talents,
@@ -73,7 +74,41 @@ export default class Resources implements BaseResources<Resources> {
       barracksBooks: this.barracksBooks,
       heroesCards: this.heroesCards,
       galleryShards: this.galleryShards,
-      gold: this.gold
+      gold: this.gold,
     }
+  }
+
+  getDataForDB() {
+    return [
+      ...this.barracksBooks.getDataForDB(),
+      ...this.heroesCards.getDataForDB(),
+      ...this.castle.getDataForDB(),
+      ...this.dragonsRunes.getDataForDB(),
+      ...this.talents.getDataForDB(),
+      ...this.witch.getDataForDB(),
+      { itemId: 'hammers', count: this.blacksmith.hammers },
+      { itemId: 'galleryShards', count: this.galleryShards },
+      { itemId: 'gold', count: this.gold },
+    ]
+  }
+
+  static transformDataFromDB(data: { itemId: string; count: number }[]): Resources {
+    return new Resources({
+      barracksBooks: BarracksBooksResources.transformDataFromDB(
+        data.filter((it) => it.itemId.startsWith('barracksBooks')),
+      ),
+      heroesCards: HeroesResources.transformDataFromDB(data.filter((it) => it.itemId.startsWith('heroesCards'))),
+      blacksmith: new BlacksmithResources({
+        hammers: data.find((it) => it.itemId === 'hammers')?.count || 0,
+      }),
+      castle: CastleResources.transformDataFromDB(data.filter((it) => it.itemId.startsWith('castleResources'))),
+      gold: data.find((it) => it.itemId === 'gold')?.count || 0,
+      galleryShards: data.find((it) => it.itemId === 'galleryShards')?.count || 0,
+      dragonsRunes: DragonRunesResources.transformDataFromDB(
+        data.filter((it) => it.itemId.startsWith('dragonResources')),
+      ),
+      talents: TalentsResources.transformDataFromDB(data.filter((it) => it.itemId.startsWith('talentsResources'))),
+      witch: WitchResources.transformDataFromDB(data.filter((it) => it.itemId.startsWith('witchResources'))),
+    })
   }
 }

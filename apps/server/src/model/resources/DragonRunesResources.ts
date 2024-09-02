@@ -1,6 +1,7 @@
 import { BaseResources } from './BaseResources'
 import type { ResourcesData } from 'kg-calculator-typings'
 
+
 export type DragonRuneType = 'green' | 'blue' | 'purple' | 'gold'
 
 export default class DragonRunesResources implements BaseResources<DragonRunesResources> {
@@ -16,6 +17,16 @@ export default class DragonRunesResources implements BaseResources<DragonRunesRe
     this.purple = initData?.purple || 0
     this.gold = initData?.gold || 0
     this.boxes = initData?.boxes || 0
+  }
+
+  static transformDataFromDB(items: { itemId: string; count: number }[]): DragonRunesResources {
+    const resources = new DragonRunesResources()
+    items.forEach((item) => {
+      const [, resource] = item.itemId.split('_')
+      resources[resource] = item.count
+    })
+
+    return resources
   }
 
   static getNeededBoxes(runesCount: number, runeType: DragonRuneType) {
@@ -76,5 +87,15 @@ export default class DragonRunesResources implements BaseResources<DragonRunesRe
 
     this.boxes -= otherResources.boxes
     if (this.boxes < 0) this.boxes = 0
+  }
+
+  getDataForDB() {
+    return [
+      { itemId: 'dragonResources_green', count: this.green },
+      { itemId: 'dragonResources_blue', count: this.blue },
+      { itemId: 'dragonResources_purple', count: this.purple },
+      { itemId: 'dragonResources_gold', count: this.gold },
+      { itemId: 'dragonResources_boxes', count: this.boxes },
+    ]
   }
 }

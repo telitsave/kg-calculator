@@ -1,4 +1,5 @@
 import ApiError from '../model/exceptions/ApiError'
+import ProfileRepository from '../repositories/profile-repository'
 import UserRepository from '../repositories/user-repository'
 import MailService from './mail-service'
 import TokenService from './token-service'
@@ -55,7 +56,12 @@ export default class UserService {
       throw ApiError.BadRequestError('Логин или пароль неверные')
     }
 
-    const tokens = TokenService.generateTokens(user.getDto())
+    const profiles = await ProfileRepository.getProfilesByUserId(user.id)
+
+    const tokens = TokenService.generateTokens({
+      ...user.getDto(),
+      profiles: profiles.map((it) => it.id),
+    })
     try {
       if (user.refreshTokens.length >= 3) {
         await TokenService.setToken(user.id, tokens.refreshToken, tokens.expiresIn, user.refreshTokens[0])

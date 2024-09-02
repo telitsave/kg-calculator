@@ -78,7 +78,7 @@ export default class UserRepository {
     }
   }
 
-  static async createUser(email: string, password: string, registrationToken: string): Promise<User> {
+  static async createUser(email: string, password: string, registrationToken: string): Promise<User | null> {
     try {
       const connection = await mysqlAdapter.getConnection()
       const [result] = await connection.execute<ResultSetHeader>(

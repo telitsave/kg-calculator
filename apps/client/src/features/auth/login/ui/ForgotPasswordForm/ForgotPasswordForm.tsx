@@ -1,8 +1,7 @@
-import React, { FC, memo, useCallback } from 'react'
+import { FC, memo, useCallback } from 'react'
 import { Button, Flex, TextInput } from '@mantine/core'
 import { isEmail, useForm } from '@mantine/form'
 import useForgotPassword from '../../model/useForgotPassword'
-
 
 interface Props {
   className?: string

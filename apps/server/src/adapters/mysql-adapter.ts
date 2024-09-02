@@ -7,11 +7,11 @@ class MysqlAdapter {
     if (this._connection) return
 
     this._connection = await mysql.createConnection({
-      host: process.env.MYSQL_HOST,
+      host: process.env.MYSQL_HOST as string,
       port: Number(process.env.MYSQL_PORT),
-      user: process.env.MYSQL_LOGIN,
-      password: process.env.MYSQL_PASSWORD,
-      database: process.env.MYSQL_DATABASE,
+      user: process.env.MYSQL_LOGIN as string,
+      password: process.env.MYSQL_PASSWORD as string,
+      database: process.env.MYSQL_DATABASE as string,
     })
   }
 
@@ -20,7 +20,7 @@ class MysqlAdapter {
       await this.init()
     }
 
-    return this._connection
+    return this._connection as mysql.Connection
   }
 }
 

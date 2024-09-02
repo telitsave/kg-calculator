@@ -15,6 +15,16 @@ export default class CastleResources implements BaseResources<CastleResources> {
     this.boxes = initData?.boxes || 0
   }
 
+  static transformDataFromDB(items: { itemId: string; count: number }[]): CastleResources {
+    const resources = new CastleResources()
+    items.forEach((item) => {
+      const [, resource] = item.itemId.split('_')
+      resources[resource] = item.count
+    })
+
+    return resources
+  }
+
   spent(resources: CastleResources, canUseBoxes: boolean, canConvert: boolean) {
     let spent = new CastleResources()
     let convertedSource = new CastleResources()
@@ -198,5 +208,14 @@ export default class CastleResources implements BaseResources<CastleResources> {
 
   clone() {
     return new CastleResources(this)
+  }
+
+  getDataForDB() {
+    return [
+      { itemId: 'castleResources_stone', count: this.stone },
+      { itemId: 'castleResources_wood', count: this.wood },
+      { itemId: 'castleResources_steel', count: this.steel },
+      { itemId: 'castleResources_boxes', count: this.boxes },
+    ]
   }
 }

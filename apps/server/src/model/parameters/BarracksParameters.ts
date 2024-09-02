@@ -30,6 +30,16 @@ export default class BarracksParameters {
     }
   }
 
+  static transformDataFromDB(items: { parameterId: string; value: string }[]): BarracksParameters {
+    const parameters = new BarracksParameters()
+    items.forEach((item) => {
+      const [, element, param] = item.parameterId.split('_')
+      parameters[element][param] = Number(item.value) || 0
+    })
+
+    return parameters
+  }
+
   getElementsWithMaxRank() {
     const elements: ElementsType[] = []
     if (this.bow.rank === 9) elements.push('bow')
@@ -40,7 +50,7 @@ export default class BarracksParameters {
     return elements
   }
 
-  getData(): ParametersData['barracks']{
+  getData(): ParametersData['barracks'] {
     return {
       bowRank: this.bow.rank,
       bowLevel: this.bow.level,
@@ -55,5 +65,18 @@ export default class BarracksParameters {
 
   clone() {
     return new BarracksParameters(this.getData())
+  }
+
+  getDataForDB() {
+    return [
+      { parameterId: 'barracks_bow_rank', value: this.bow.rank || null },
+      { parameterId: 'barracks_bow_level', value: this.bow.level || null },
+      { parameterId: 'barracks_fire_rank', value: this.fire.rank || null },
+      { parameterId: 'barracks_fire_level', value: this.fire.level || null },
+      { parameterId: 'barracks_ice_rank', value: this.ice.rank || null },
+      { parameterId: 'barracks_ice_level', value: this.ice.level || null },
+      { parameterId: 'barracks_poison_rank', value: this.poison.rank || null },
+      { parameterId: 'barracks_poison_level', value: this.poison.level || null },
+    ]
   }
 }

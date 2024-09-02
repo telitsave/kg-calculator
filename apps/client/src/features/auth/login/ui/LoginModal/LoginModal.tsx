@@ -1,4 +1,4 @@
-import React, { FC, memo, useCallback, useMemo, useState } from 'react'
+import { FC, memo, useCallback, useMemo, useState } from 'react'
 import { Modal } from '@mantine/core'
 import { useMediaQuery } from '@mantine/hooks'
 import ForgotPasswordForm from '../ForgotPasswordForm'
@@ -6,7 +6,6 @@ import ForgotPasswordSuccess from '../ForgotPasswordSuccess'
 import LoginForm from '../LoginForm/LoginForm'
 import RegistrationForm from '../RegistrationForm/RegistrationForm'
 import RegistrationSuccess from '../RegistrationSuccess'
-
 
 interface Props {
   className?: string

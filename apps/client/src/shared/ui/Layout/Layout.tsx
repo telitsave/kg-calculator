@@ -1,11 +1,9 @@
-import React, { FC, type ReactNode, memo } from 'react'
+import { FC, type ReactNode, memo } from 'react'
 import { Outlet, NavLink as RouterNavLink, useLocation } from 'react-router-dom'
 import cx from 'classnames'
 import { AppShell, Burger, Flex, Group, NavLink, Text } from '@mantine/core'
 import { useDisclosure } from '@mantine/hooks'
 import { FaTelegram } from 'react-icons/fa'
-import { useActivate } from 'features/auth/login'
-import { ResetPasswordModal, useResetPassword } from 'features/auth/resetPassword'
 import Flexbox from '../Flexbox'
 import { getPageName } from './pageNames'
 import css from './styles.module.sass'
@@ -19,8 +17,6 @@ interface Props {
 const Layout: FC<Props> = memo(({ className, rightHeaderSlot }) => {
   const [opened, { toggle, close }] = useDisclosure()
   const location = useLocation()
-  useActivate()
-  const { openedModal, onCloseModal, resetPasswordToken } = useResetPassword()
 
   return (
     <AppShell
@@ -35,15 +31,15 @@ const Layout: FC<Props> = memo(({ className, rightHeaderSlot }) => {
       padding="md"
     >
       <AppShell.Header>
-        <Group h="100%" ml="md" mr="md">
-          <Burger opened={opened} onClick={toggle} hiddenFrom="sm" size="sm" />
-          <Flex flex="1 1 auto" justify="space-between" align="center">
+        <Flex h="100%" ml="md" mr="md" align="center" gap="sm" justify="space-between">
+          <Flex align="center" gap="sm">
+            <Burger opened={opened} onClick={toggle} hiddenFrom="sm" size="sm" />
             <Text fw={700} size="sm">
               {getPageName(location.pathname, true)}
             </Text>
-            {rightHeaderSlot}
           </Flex>
-        </Group>
+          {rightHeaderSlot}
+        </Flex>
       </AppShell.Header>
 
       <AppShell.Navbar p="md">
@@ -171,9 +167,6 @@ const Layout: FC<Props> = memo(({ className, rightHeaderSlot }) => {
       <AppShell.Main>
         <Outlet />
       </AppShell.Main>
-      {resetPasswordToken && (
-        <ResetPasswordModal resetPasswordToken={resetPasswordToken} opened={openedModal} onClose={onCloseModal} />
-      )}
     </AppShell>
   )
 })

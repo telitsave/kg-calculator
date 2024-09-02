@@ -14,4 +14,23 @@ export default class DragonEmblemParameters {
       this.gold = initData.gold || 0
     }
   }
+
+  static transformDataFromDB(items: { parameterId: string; value: string }[]): DragonEmblemParameters {
+    const parameters = new DragonEmblemParameters()
+    items.forEach((item) => {
+      const [, param] = item.parameterId.split('_')
+      parameters[param] = Number(item.value) || 0
+    })
+
+    return parameters
+  }
+
+  getDataForDB() {
+    return [
+      { parameterId: 'dragonEmblems_green', value: this.green || null },
+      { parameterId: 'dragonEmblems_blue', value: this.blue || null },
+      { parameterId: 'dragonEmblems_purple', value: this.purple || null },
+      { parameterId: 'dragonEmblems_gold', value: this.gold || null },
+    ]
+  }
 }

@@ -31,6 +31,33 @@ export default class WitchParameters {
     }
   }
 
+  static transformDataFromDB(items: { parameterId: string; value: string }[]): WitchParameters {
+    const parameters = new WitchParameters()
+    items.forEach((item) => {
+      const [, param, rank, gem] = item.parameterId.split('_')
+      if (param === 'gems') {
+        parameters[param][rank][gem] = Number(item.value) || 0
+      } else {
+        parameters[param] = Number(item.value) || 0
+      }
+    })
+
+    return parameters
+  }
+
+  getDataForDB() {
+    return [
+      { parameterId: 'witch_lightLevel', value: this.lightLevel || null },
+      { parameterId: 'witch_darkLevel', value: this.darkLevel || null },
+      ...Object.entries(this.gems).flatMap(([rank, value]) => {
+        return Object.entries(value).flatMap(([gem, count]) => ({
+          parameterId: `witch_gems_${rank}_${gem}`,
+          value: count || null,
+        }))
+      }),
+    ]
+  }
+
   private getFilledGemsByRank(rank?: GemsRankParameters) {
     return {
       amber: rank?.amber || 0,

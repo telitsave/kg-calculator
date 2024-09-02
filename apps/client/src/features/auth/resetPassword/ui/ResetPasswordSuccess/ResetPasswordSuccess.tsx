@@ -1,6 +1,5 @@
-import React, { FC, memo } from 'react'
+import { FC, memo } from 'react'
 import { Text } from '@mantine/core'
-
 
 const ResetPasswordSuccess: FC = memo(() => (
   <div>

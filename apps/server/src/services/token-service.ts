@@ -5,10 +5,10 @@ import jwt from 'jsonwebtoken'
 
 export default class TokenService {
   static generateTokens(payload: any) {
-    const accessToken = jwt.sign(payload, process.env.SECRET_KEY_ACCESS, {
-      expiresIn: '30s',
+    const accessToken = jwt.sign(payload, process.env.SECRET_KEY_ACCESS as string, {
+      expiresIn: '30m',
     })
-    const refreshToken = jwt.sign(payload, process.env.SECRET_KEY_REFRESH, {
+    const refreshToken = jwt.sign(payload, process.env.SECRET_KEY_REFRESH as string, {
       expiresIn: '30d',
     })
 
@@ -40,8 +40,8 @@ export default class TokenService {
 
   static validateAccessToken(accessToken: string) {
     try {
-      const userData = jwt.verify(accessToken, process.env.SECRET_KEY_ACCESS)
-      return userData as ReturnType<User['getDto']>
+      const userData = jwt.verify(accessToken, process.env.SECRET_KEY_ACCESS as string)
+      return userData as ReturnType<User['getDto']> & { profiles: number[] }
     } catch (err) {
       return null
     }
@@ -49,8 +49,8 @@ export default class TokenService {
 
   static validateRefreshToken(refreshToken: string) {
     try {
-      const userData = jwt.verify(refreshToken, process.env.SECRET_KEY_REFRESH)
-      return userData as ReturnType<User['getDto']>
+      const userData = jwt.verify(refreshToken, process.env.SECRET_KEY_REFRESH as string)
+      return userData as ReturnType<User['getDto']> & { profiles: number[] }
     } catch (err) {
       return null
     }

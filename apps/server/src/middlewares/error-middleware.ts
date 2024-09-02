@@ -3,7 +3,7 @@ import type { NextFunction, Request, Response } from 'express'
 import type { ApiDefaultError } from 'kg-calculator-typings'
 
 
-function errorMiddleware(err: Error, req: Request, res: Response, next: NextFunction) {
+function errorMiddleware(err: Error, _: Request, res: Response, __: NextFunction) {
   console.log(err)
 
   if (err instanceof ApiError) {

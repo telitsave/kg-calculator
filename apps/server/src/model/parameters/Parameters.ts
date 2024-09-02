@@ -1,11 +1,12 @@
-import DragonEmblemParameters from './DragonEmblemParameters'
-import CastleParameters from './CastleParameters'
-import WitchParameters from './WitchParameters'
 import BarracksParameters from './BarracksParameters'
-import TalentsParameters from './TalentsParameters'
 import BlacksmithParameters from './BlacksmithParameters'
+import CastleParameters from './CastleParameters'
+import DragonEmblemParameters from './DragonEmblemParameters'
 import GalleryParameters from './GalleryParameters'
+import TalentsParameters from './TalentsParameters'
+import WitchParameters from './WitchParameters'
 import type { ParametersData } from 'kg-calculator-typings'
+
 
 export default class Parameters {
   dragonEmblems: DragonEmblemParameters
@@ -48,5 +49,33 @@ export default class Parameters {
       blacksmith: this.blacksmith,
       dragonEmblems: this.dragonEmblems,
     }
+  }
+
+  getDataForDB() {
+    return [
+      ...this.barracks.getDataForDB(),
+      ...this.castle.getDataForDB(),
+      ...this.witch.getDataForDB(),
+      ...this.talents.getDataForDB(),
+      ...this.gallery.getDataForDB(),
+      ...this.blacksmith.getDataForDB(),
+      ...this.dragonEmblems.getDataForDB(),
+    ].filter((it) => it.value !== null)
+  }
+
+  static transformDataFromDB(data: { parameterId: string; value: string }[]): Parameters {
+    const params = new Parameters()
+    params.barracks = BarracksParameters.transformDataFromDB(data.filter((it) => it.parameterId.startsWith('barracks')))
+    params.castle = CastleParameters.transformDataFromDB(data.filter((it) => it.parameterId.startsWith('castle')))
+    params.witch = WitchParameters.transformDataFromDB(data.filter((it) => it.parameterId.startsWith('witch')))
+    params.dragonEmblems = DragonEmblemParameters.transformDataFromDB(
+      data.filter((it) => it.parameterId.startsWith('dragonEmblems')),
+    )
+    params.talents = TalentsParameters.transformDataFromDB(data.filter((it) => it.parameterId.startsWith('talents')))
+    params.blacksmith = BlacksmithParameters.transformDataFromDB(
+      data.filter((it) => it.parameterId.startsWith('blacksmith')),
+    )
+    params.gallery = GalleryParameters.transformDataFromDB(data.filter((it) => it.parameterId.startsWith('gallery')))
+    return params
   }
 }

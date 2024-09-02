@@ -7,6 +7,7 @@ import * as extremePower from './extremePowerApi'
 import * as gallery from './galleryApi'
 import * as heroes from './heroesApi'
 import * as mightiestKingdom from './mightiestKingdomApi'
+import * as profiles from './profilesApi'
 import * as serverSettings from './serverSettingsApi'
 import * as spiritsInvasion from './spiritsInvasion'
 import * as witch from './witchApi'
@@ -25,6 +26,7 @@ const api = {
   witch,
   spiritsInvasion,
   serverSettings,
+  profiles,
 }
 
 export default api

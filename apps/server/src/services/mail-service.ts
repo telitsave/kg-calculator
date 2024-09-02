@@ -8,8 +8,8 @@ class MailService {
       host: 'mail.hostland.ru',
       port: 587,
       auth: {
-        user: process.env.SMTP_USER,
-        pass: process.env.SMTP_PASSWORD,
+        user: process.env.SMTP_USER as string,
+        pass: process.env.SMTP_PASSWORD as string,
       },
     })
   }
@@ -18,7 +18,7 @@ class MailService {
     try {
       const regLink = `${process.env.CLIENT_URL}/about?registrationToken=${registrationToken}`
       await this._mailTransporter.sendMail({
-        from: process.env.SMTP_USER,
+        from: process.env.SMTP_USER as string,
         to,
         subject: 'Регистрация в калькуляторе Kingdoms Guard',
         text: `Ваша почта была указана при регистрации в калькуляторе Kingdoms Guard. Для подтверждения регистрации, пожалуйста, перейдите по ссылке: ${regLink}`,
@@ -33,7 +33,7 @@ class MailService {
     try {
       const resetPasswordLink = `${process.env.CLIENT_URL}/about?resetPasswordToken=${resetPasswordToken}`
       await this._mailTransporter.sendMail({
-        from: process.env.SMTP_USER,
+        from: process.env.SMTP_USER as string,
         to,
         subject: 'Сброс пароля в калькуляторе Kingdoms Guard',
         text: `Был произведен запрос на сброс пароля. Чтобы сбросить пароль, перейдите по следующей ссылке: ${resetPasswordLink}. Если это были не вы, не переходите по ссылке и проигнорируйте данное письмо.`,

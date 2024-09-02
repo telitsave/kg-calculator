@@ -1,8 +1,7 @@
-import React, { FC, memo } from 'react'
+import { FC, memo } from 'react'
 import { Button } from '@mantine/core'
 import { useDisclosure } from '@mantine/hooks'
 import LoginModal from '../LoginModal/LoginModal'
-
 
 interface Props {
   className?: string

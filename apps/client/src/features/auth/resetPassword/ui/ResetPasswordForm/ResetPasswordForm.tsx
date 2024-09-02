@@ -1,9 +1,8 @@
-import React, { FC, memo, useCallback } from 'react'
+import { FC, memo, useCallback } from 'react'
 import { Button, Flex, PasswordInput } from '@mantine/core'
 import { hasLength, matchesField, useForm } from '@mantine/form'
 import NotificationsHelper from 'shared/helpers/notificationsHelper'
 import useResetPassword from '../../model/useResetPassword'
-
 
 interface Props {
   className?: string

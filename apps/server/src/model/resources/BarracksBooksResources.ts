@@ -1,6 +1,7 @@
 import { BaseResources } from './BaseResources'
 import type { BarracksBooksByElement, ElementsType, ResourcesData } from 'kg-calculator-typings'
 
+
 export default class BarracksBooksResources implements BaseResources<BarracksBooksResources> {
   bow: BarracksBooksByElement
   fire: BarracksBooksByElement
@@ -14,6 +15,16 @@ export default class BarracksBooksResources implements BaseResources<BarracksBoo
     this.ice = this.getFilledBooksByElement(initData?.ice)
     this.poison = this.getFilledBooksByElement(initData?.poison)
     this.random = initData?.random || 0
+  }
+
+  static transformDataFromDB(items: { itemId: string; count: number }[]): BarracksBooksResources {
+    const resources = new BarracksBooksResources()
+    items.forEach((item) => {
+      const [, element, rank] = item.itemId.split('_')
+      resources[element][rank] = item.count
+    })
+
+    return resources
   }
 
   clone(): BarracksBooksResources {
@@ -39,6 +50,31 @@ export default class BarracksBooksResources implements BaseResources<BarracksBoo
 
   getAllBooksByRank(rank: keyof BarracksBooksByElement) {
     return this.bow[rank] + this.fire[rank] + this.ice[rank] + this.poison[rank]
+  }
+
+  getDataForDB() {
+    return [
+      ...Object.entries(this.bow).flatMap(([rank, value]) => ({
+        itemId: `barracksBooks_bow_${rank}`,
+        count: value,
+      })),
+      ...Object.entries(this.ice).flatMap(([rank, value]) => ({
+        itemId: `barracksBooks_ice_${rank}`,
+        count: value,
+      })),
+      ...Object.entries(this.fire).flatMap(([rank, value]) => ({
+        itemId: `barracksBooks_fire_${rank}`,
+        count: value,
+      })),
+      ...Object.entries(this.poison).flatMap(([rank, value]) => ({
+        itemId: `barracksBooks_poison_${rank}`,
+        count: value,
+      })),
+      {
+        itemId: `barracksBooks_random`,
+        count: this.random,
+      },
+    ]
   }
 
   convertBooksToRankByElement(element: ElementsType, rank: number) {
