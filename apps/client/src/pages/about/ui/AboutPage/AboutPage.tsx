@@ -1,7 +1,6 @@
-import React, { FC, memo } from 'react'
+import { FC, memo } from 'react'
 import { Flex, Stack, Text, Title } from '@mantine/core'
 import { FaTelegram } from 'react-icons/fa'
-
 
 interface Props {
   className?: string

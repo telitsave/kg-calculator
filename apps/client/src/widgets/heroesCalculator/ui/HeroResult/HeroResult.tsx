@@ -1,10 +1,9 @@
-import React, { FC, memo } from 'react'
+import { FC, memo } from 'react'
 import { Flex, Text, Title } from '@mantine/core'
 import type { Hero } from 'kg-calculator-typings'
 import { Bars, HeroIcon, Stars } from 'entities/hero'
 import { KeysHelper, ResourceIcon } from 'entities/resource'
 import css from '../CardDistribution/styles.module.sass'
-
 
 interface Props {
   className?: string

@@ -1,4 +1,4 @@
-import React, { FC, memo, useCallback, useMemo } from 'react'
+import { FC, memo, useCallback, useMemo } from 'react'
 import cx from 'classnames'
 import { Switch, SwitchGroup, Text } from '@mantine/core'
 import Flexbox from 'shared/ui/Flexbox'
@@ -7,7 +7,6 @@ import useSetting from '../../model/hooks/useSetting'
 import { SettingsTypes } from '../../model/types'
 import HelpNode from '../HelpNode'
 import css from './styles.module.sass'
-
 
 interface Props {
   className?: string
@@ -50,6 +49,8 @@ const SettingsSwitch: FC<Props> = memo(({ className, settingsType }) => {
         )
       case 'useAdvancedHeroMode':
         return <Text>Продвинутый режим героев</Text>
+      default:
+        return <Text />
     }
   }, [settingsType])
 

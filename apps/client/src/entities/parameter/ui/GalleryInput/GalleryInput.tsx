@@ -1,4 +1,4 @@
-import React, { FC, memo, useCallback } from 'react'
+import { FC, memo, useCallback } from 'react'
 import { NumberInput } from '@mantine/core'
 import { GalleryIcon } from 'shared/assets/icons'
 import Flexbox from 'shared/ui/Flexbox'

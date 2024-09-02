@@ -1,8 +1,7 @@
-import React, { FC, ReactNode, memo } from 'react'
+import { FC, ReactNode, memo } from 'react'
 import { Popover, UnstyledButton } from '@mantine/core'
 import { useDisclosure } from '@mantine/hooks'
 import { AiOutlineQuestionCircle } from 'react-icons/ai'
-
 
 interface Props {
   helpContent: ReactNode

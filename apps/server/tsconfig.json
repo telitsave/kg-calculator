@@ -9,6 +9,9 @@
     },
     "typeRoots": [
       "kg-calculator-typings"
+    ],
+    "types": [
+      "src/custom.d.ts"
     ]
   },
   "include": [

@@ -1,10 +1,9 @@
-import React, { FC, forwardRef, memo } from 'react'
+import { FC, forwardRef, memo } from 'react'
 import cx from 'classnames'
 import { Overlay } from '@mantine/core'
 import type { WitchParameters } from 'kg-calculator-typings'
 import Flexbox from 'shared/ui/Flexbox'
 import css from './styles.module.sass'
-
 
 interface Props {
   className?: string

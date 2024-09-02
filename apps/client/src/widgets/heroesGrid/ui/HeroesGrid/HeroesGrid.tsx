@@ -1,4 +1,4 @@
-import React, { FC, memo, useMemo, useState } from 'react'
+import { FC, memo, useMemo, useState } from 'react'
 import { Flex } from '@mantine/core'
 import type { ElementsType } from 'kg-calculator-typings'
 import { orderBy } from 'lodash'
@@ -6,7 +6,6 @@ import { HeroHelper } from 'entities/hero'
 import HeroCard from 'entities/hero/ui/HeroCard'
 import useData from '../../model/hooks/useData'
 import ElementFilter from '../ElementFilter'
-
 
 interface Props {
   className?: string

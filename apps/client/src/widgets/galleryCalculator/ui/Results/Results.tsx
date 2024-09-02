@@ -1,11 +1,10 @@
-import React, { FC, ReactNode, memo } from 'react'
+import { FC, ReactNode, memo } from 'react'
 import { Divider, Title } from '@mantine/core'
 import type { GalleryParameters } from 'kg-calculator-typings/api/Gallery'
 import type { ResourcesData } from 'kg-calculator-typings/api/ResourcesData'
 import { GalleryInfo } from 'entities/parameter'
 import { ResourceCount } from 'entities/resource'
 import Flexbox from 'shared/ui/Flexbox'
-
 
 interface Props {
   className?: string

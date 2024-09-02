@@ -1,10 +1,9 @@
-import React, { FC, memo, useCallback, useState } from 'react'
+import { FC, memo, useCallback, useState } from 'react'
 import { ScrollArea, SegmentedControl } from '@mantine/core'
 import type { WitchParameters } from 'kg-calculator-typings/api/Witch'
 import Flexbox from 'shared/ui/Flexbox'
 import { Ranks } from '../../model/types'
 import WitchGemInfo from '../WitchGemInfo'
-
 
 interface Props {
   className?: string

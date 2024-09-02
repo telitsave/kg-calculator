@@ -1,4 +1,4 @@
-import React, { FC, memo, useCallback, useState } from 'react'
+import { FC, memo, useCallback, useState } from 'react'
 import { Combobox, Flex, Rating } from '@mantine/core'
 
 interface Props {

@@ -1,10 +1,9 @@
-import React, { FC, memo, useCallback, useMemo } from 'react'
+import { FC, memo, useCallback, useMemo } from 'react'
 import { NumberInput } from '@mantine/core'
 import type { CustomServerSettingsData } from 'kg-calculator-typings'
 import { useServerSettings } from '../../index'
 import { settingsNames } from '../../model/locale'
 import type { ServerSettingsKeys } from '../../model/types'
-
 
 interface Props {
   className?: string

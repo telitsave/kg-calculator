@@ -1,9 +1,8 @@
-import React, { FC, memo } from 'react'
+import { FC, memo } from 'react'
 import { Text } from '@mantine/core'
 import type { GalleryParameters } from 'kg-calculator-typings/api/Gallery'
 import { GalleryIcon } from 'shared/assets/icons'
 import Flexbox from 'shared/ui/Flexbox'
-
 
 interface Props {
   className?: string

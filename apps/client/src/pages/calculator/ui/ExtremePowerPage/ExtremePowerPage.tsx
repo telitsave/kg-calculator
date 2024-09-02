@@ -1,4 +1,4 @@
-import React, { FC, memo } from 'react'
+import { FC, memo } from 'react'
 import { NavLink } from 'react-router-dom'
 import cx from 'classnames'
 import { Alert, Space, Text } from '@mantine/core'
@@ -7,7 +7,6 @@ import Flexbox from 'shared/ui/Flexbox'
 import { ExtremePowerStatisticsTotal } from 'widgets/extremePowerStatistics'
 import { AlertAdvancedMode } from 'widgets/heroesCalculator'
 import css from './styles.module.sass'
-
 
 interface Props {
   className?: string

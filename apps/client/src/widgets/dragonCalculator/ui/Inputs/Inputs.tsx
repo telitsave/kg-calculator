@@ -1,4 +1,4 @@
-import React, { FC, memo } from 'react'
+import { FC, memo } from 'react'
 import { Button, Title } from '@mantine/core'
 import { SettingsSwitch } from 'entities/calculationSettings'
 import { ParameterInput } from 'entities/parameter'

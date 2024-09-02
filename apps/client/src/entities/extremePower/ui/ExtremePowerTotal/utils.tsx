@@ -1,11 +1,9 @@
-import React from 'react'
 import type { CalculateExtremePowerResponse } from 'kg-calculator-typings/api/ExtremePower'
 import { ResourceIcon } from 'entities/resource'
 import Flexbox from 'shared/ui/Flexbox'
 import NamesHelper from '../../helpers/namesHelper'
 import ExtremePowerElement from '../ExtremePowerElement'
 import ExtremePowerModule from '../ExtremePowerModule'
-
 
 export const getModuleByType = (
   type: keyof Omit<CalculateExtremePowerResponse, 'total'>,

@@ -1,4 +1,4 @@
-import React, { FC, memo } from 'react'
+import { FC, memo } from 'react'
 import cx from 'classnames'
 import { Accordion, Divider } from '@mantine/core'
 import { ParameterInput, WitchGemsInputs, WitchPowerInput } from 'entities/parameter'
@@ -8,7 +8,6 @@ import { ElementIcon } from 'shared/assets/icons'
 import Flexbox from 'shared/ui/Flexbox'
 import { InputElementOnlyParams, elements } from 'widgets/barracksCalculator'
 import css from './styles.module.sass'
-
 
 interface Props {
   className?: string

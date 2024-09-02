@@ -1,4 +1,4 @@
-import React, { FC, forwardRef, memo, useMemo } from 'react'
+import { FC, forwardRef, memo, useMemo } from 'react'
 import cx from 'classnames'
 import Flexbox from 'shared/ui/Flexbox'
 import css from './styles.module.sass'

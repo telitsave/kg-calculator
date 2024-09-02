@@ -10167,6 +10167,7 @@ __metadata:
     react-icons: "npm:^5.2.1"
     react-router-dom: "npm:^6.22.2"
     react-scripts: "npm:5.0.1"
+    react-use-cookie: "npm:^1.6.1"
     sass: "npm:^1.71.1"
     serve: "npm:^14.2.3"
     ts-node: "npm:10.9.2"
@@ -13167,6 +13168,15 @@ __metadata:
     react: ">=16.6.0"
     react-dom: ">=16.6.0"
   checksum: 10c0/2ba754ba748faefa15f87c96dfa700d5525054a0141de8c75763aae6734af0740e77e11261a1e8f4ffc08fd9ab78510122e05c21c2d79066c38bb6861a886c82
+  languageName: node
+  linkType: hard
+
+"react-use-cookie@npm:^1.6.1":
+  version: 1.6.1
+  resolution: "react-use-cookie@npm:1.6.1"
+  peerDependencies:
+    react: ">=16.8"
+  checksum: 10c0/76d2bc2ce2ee55d3c4753402ff183e5eeaed9b3ff2ec7e9f51ce118ce27c5937f541fb60c4aae822c76b463d4dbec1402176034da845a10e112962a594603c10
   languageName: node
   linkType: hard
 

@@ -1,4 +1,4 @@
-import React, { FC, ReactNode, memo, useCallback, useState } from 'react'
+import { FC, ReactNode, memo, useCallback, useState } from 'react'
 import cx from 'classnames'
 import type { ResourcesData } from 'kg-calculator-typings/api/ResourcesData'
 import { useSettings } from 'entities/calculationSettings'
@@ -23,11 +23,7 @@ const CastleCalculator: FC<Props> = memo(({ className, getExtremePowerNode }) =>
   const resources = useResources()
   const parameters = useParameters()
   const settings = useSettings()
-  const {
-    mutate: calculatePossibleCastle,
-    data: possibleData,
-    isSuccess: isCalculatingPossibleCastle,
-  } = useCalculatePossibleCastle()
+  const { mutate: calculatePossibleCastle, data: possibleData } = useCalculatePossibleCastle()
 
   const {
     mutate: calculateGoalCastle,

@@ -1,7 +1,8 @@
-import React, { FC, memo, ReactNode, useCallback } from 'react'
+import { FC, ReactNode, memo, useCallback } from 'react'
 import cx from 'classnames'
 import { NumberInput } from '@mantine/core'
 import css from './styles.module.sass'
+
 
 interface Props {
   className?: string
@@ -25,11 +26,11 @@ const GoalCastleLevelInput: FC<Props> = memo(({ className, value: propValue, dis
       className={cx(css.root, className)}
       min={0}
       leftSection={icon}
-      value={propValue}
+      value={propValue || 0}
       onChange={handleNumberInputChange}
-      thousandSeparator=' '
+      thousandSeparator=" "
       disabled={disabled}
-      label='Желаемый уровень замка'
+      label="Желаемый уровень замка"
     />
   )
 })

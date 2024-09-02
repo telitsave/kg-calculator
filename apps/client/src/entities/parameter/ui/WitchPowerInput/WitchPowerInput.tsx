@@ -1,4 +1,4 @@
-import React, { FC, memo } from 'react'
+import { FC, memo } from 'react'
 import { Progress } from '@mantine/core'
 import Flexbox from 'shared/ui/Flexbox'
 import useParameters from '../../model/hooks/useParameters'

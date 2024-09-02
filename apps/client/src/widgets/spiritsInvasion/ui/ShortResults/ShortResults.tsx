@@ -1,8 +1,7 @@
-import React, { FC, memo } from 'react'
+import { FC, memo } from 'react'
 import { Flex, Grid, GridCol, NumberFormatter, Text, Title } from '@mantine/core'
 import type { SpiritsInvasionShortData } from 'kg-calculator-typings'
 import StringHelper from 'shared/helpers/stringHelper'
-
 
 interface Props {
   data: SpiritsInvasionShortData

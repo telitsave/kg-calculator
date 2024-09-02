@@ -1,9 +1,8 @@
-import React, { FC, memo, useCallback, useState } from 'react'
+import { FC, memo, useCallback, useState } from 'react'
 import { ScrollArea, SegmentedControl } from '@mantine/core'
 import Flexbox from 'shared/ui/Flexbox'
 import { Ranks } from '../../model/types'
 import WitchGemInput from '../WitchGemInput'
-
 
 interface Props {
   className?: string

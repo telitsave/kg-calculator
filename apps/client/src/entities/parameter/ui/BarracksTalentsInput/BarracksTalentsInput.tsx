@@ -1,11 +1,10 @@
-import React, { FC, Fragment, MouseEvent, memo, useCallback } from 'react'
+import { FC, Fragment, MouseEvent, memo, useCallback } from 'react'
 import { Button, Divider, Text } from '@mantine/core'
 import type { ElementsType } from 'kg-calculator-typings/api/Elements'
 import { IntRange } from 'shared/types'
 import Flexbox from 'shared/ui/Flexbox'
 import useTalentsParameters from '../../model/hooks/useTalentsParameters'
 import BarracksTalentInput from '../BarracksTalentInput'
-
 
 interface Props {
   className?: string

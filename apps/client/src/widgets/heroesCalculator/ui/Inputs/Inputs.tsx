@@ -1,11 +1,10 @@
-import React, { FC, memo } from 'react'
+import { FC, memo } from 'react'
 import { Button, Divider, Title } from '@mantine/core'
 import { SettingsSwitch, useSetting } from 'entities/calculationSettings'
 import { ResourceInput } from 'entities/resource'
 import Flexbox from 'shared/ui/Flexbox'
 import useHeroesDistributionModel from '../../model/hooks/useHeroesDistributionModel'
 import AlertAdvancedMode from '../AlertAdvancedMode'
-
 
 interface Props {
   className?: string

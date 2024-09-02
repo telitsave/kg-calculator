@@ -1,11 +1,10 @@
-import React, { FC, ReactNode, memo, useMemo } from 'react'
+import { FC, ReactNode, memo, useMemo } from 'react'
 import { Divider, Table, TableData, Text, Title } from '@mantine/core'
 import type { CalculateGoalCastleResponse } from 'kg-calculator-typings/api/Castle'
 import { ParameterIcon } from 'entities/parameter'
 import { ResourceIcon } from 'entities/resource'
 import Flexbox from 'shared/ui/Flexbox'
 import css from './styles.module.sass'
-
 
 interface Props {
   goalCastleLevelData: CalculateGoalCastleResponse

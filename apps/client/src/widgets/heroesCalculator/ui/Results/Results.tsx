@@ -1,4 +1,4 @@
-import React, { FC, ReactNode, memo, useMemo } from 'react'
+import { FC, ReactNode, memo, useMemo } from 'react'
 import { Accordion, Divider, Flex, Text, Title } from '@mantine/core'
 import type { CalculateHeroesResponse } from 'kg-calculator-typings'
 import { orderBy } from 'lodash'
@@ -8,7 +8,6 @@ import Flexbox from 'shared/ui/Flexbox'
 import HeroExperienceResult from '../HeroExperienceResult'
 import HeroResult from '../HeroResult'
 import css from './styles.module.sass'
-
 
 interface Props {
   className?: string

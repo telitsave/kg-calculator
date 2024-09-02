@@ -1,4 +1,4 @@
-import React, { FC, ReactNode, memo, useCallback } from 'react'
+import { FC, ReactNode, memo, useCallback } from 'react'
 import cx from 'classnames'
 import { Divider } from '@mantine/core'
 import type { ResourcesData } from 'kg-calculator-typings/api/ResourcesData'
@@ -10,7 +10,6 @@ import Flexbox from 'shared/ui/Flexbox'
 import Inputs from '../Inputs'
 import Results from '../Results'
 import css from './styles.module.sass'
-
 
 interface Props {
   className?: string

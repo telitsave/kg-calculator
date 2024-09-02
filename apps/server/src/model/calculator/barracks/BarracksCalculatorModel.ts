@@ -105,7 +105,7 @@ export default class BarracksCalculatorModel {
   private tryUpRankByElement(element: ElementsType, newRank: number) {
     const rankInfo = barracksInfo.find((it) => it.rank === newRank && it.level === 0)
 
-    if (this._leftResources.gold < rankInfo.gold) return false
+    if (!rankInfo || this._leftResources.gold < rankInfo.gold) return false
 
     this._parameters.barracks[element].rank += 1
     this._parameters.barracks[element].level = 0
@@ -131,8 +131,8 @@ export default class BarracksCalculatorModel {
   private tryCalculateTalentsByElement(element: ElementsType): boolean {
     const rankForBooksCells = this._parameters.talents.getFirstNotMaxRankBooks(element)
     const rankForBooksCrowns = this._parameters.talents.getFirstNotMaxRankCrowns(element)
-    let firstRank = Math.min(rankForBooksCells, rankForBooksCrowns)
-    let lastRank = Math.max(rankForBooksCells, rankForBooksCrowns)
+    let firstRank = Math.min(rankForBooksCells || 100, rankForBooksCrowns || 1)
+    let lastRank = Math.max(rankForBooksCells || 0, rankForBooksCrowns || 1)
     if (firstRank > this._serverSettings.talentsMaxRank) {
       firstRank = this._serverSettings.talentsMaxRank
     }
@@ -364,7 +364,7 @@ export default class BarracksCalculatorModel {
 
   private _convertBookToTalentBook(element: ElementsType, rank: number, count: number = 1) {
     const rankKey = `rank${rank}`
-    if (this._leftResources.barracksBooks[element][rankKey] < count) return false
+    if (this._leftResources.barracksBooks[element][rankKey] < count) return
 
     this._leftResources.barracksBooks[element][rankKey] -= count
     this._leftResources.talents.books += count * this._serverSettings.talentBooksConversionRate[rankKey]

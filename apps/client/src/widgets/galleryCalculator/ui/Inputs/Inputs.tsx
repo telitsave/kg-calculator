@@ -1,4 +1,4 @@
-import React, { FC, memo } from 'react'
+import { FC, memo } from 'react'
 import { Button, Divider, Title } from '@mantine/core'
 import { GalleryInput } from 'entities/parameter'
 import { ResourceInput } from 'entities/resource'

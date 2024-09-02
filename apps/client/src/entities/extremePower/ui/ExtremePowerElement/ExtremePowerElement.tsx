@@ -1,7 +1,6 @@
-import React, { FC, ReactNode, memo } from 'react'
-import { Text } from '@mantine/core'
+import { FC, ReactNode, memo } from 'react'
+import { Flex, Text } from '@mantine/core'
 import TypeHelper from 'shared/helpers/typeHelper'
-import Flexbox from 'shared/ui/Flexbox'
 
 interface Props {
   className?: string
@@ -10,10 +9,10 @@ interface Props {
 }
 
 const ExtremePowerElement: FC<Props> = memo(({ className, iconNode, value }) => (
-  <Flexbox className={className} gap={4} alignItems="center" justifyContent="space-between">
+  <Flex className={className} gap={4} align="center" justify="space-between">
     {iconNode}
     <Text>{TypeHelper.isNumber(value) ? value.toLocaleString('ru') : '-'}</Text>{' '}
-  </Flexbox>
+  </Flex>
 ))
 
 export default ExtremePowerElement

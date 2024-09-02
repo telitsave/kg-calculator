@@ -1,4 +1,4 @@
-import React, { FC, ReactNode, memo } from 'react'
+import { FC, ReactNode, memo } from 'react'
 import { Text } from '@mantine/core'
 import TypeHelper from 'shared/helpers/typeHelper'
 import Flexbox from 'shared/ui/Flexbox'

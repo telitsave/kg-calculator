@@ -1,4 +1,4 @@
-import React, { FC, ReactNode, memo, useCallback } from 'react'
+import { FC, ReactNode, memo, useCallback } from 'react'
 import { Divider } from '@mantine/core'
 import type { ResourcesData } from 'kg-calculator-typings/api/ResourcesData'
 import { useParameters } from 'entities/parameter'
@@ -7,7 +7,6 @@ import Flexbox from 'shared/ui/Flexbox'
 import useCalculateGallery from '../../model/hooks/useCalculateGallery'
 import Inputs from '../Inputs'
 import Results from '../Results'
-
 
 interface Props {
   className?: string

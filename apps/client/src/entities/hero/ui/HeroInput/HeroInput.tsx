@@ -1,9 +1,8 @@
-import React, { FC, memo } from 'react'
+import { FC, memo } from 'react'
 import { NumberInput } from '@mantine/core'
 import type { Hero } from 'kg-calculator-typings'
 import Flexbox from 'shared/ui/Flexbox'
 import HeroIcon from '../HeroIcon'
-
 
 interface Props {
   className?: string

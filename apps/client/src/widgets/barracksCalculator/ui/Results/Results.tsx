@@ -1,4 +1,4 @@
-import React, { FC, ReactNode, memo } from 'react'
+import { FC, ReactNode, memo } from 'react'
 import { Accordion, Divider, Title } from '@mantine/core'
 import { BarracksBooksResources, ParametersData, ResourcesData } from 'kg-calculator-typings'
 import { ResourceCount } from 'entities/resource'
@@ -6,7 +6,6 @@ import { ElementIcon } from 'shared/assets/icons'
 import Flexbox from 'shared/ui/Flexbox'
 import { elements } from '../../model/constants'
 import ResultElement from '../ResultElement'
-
 
 interface Props {
   className?: string

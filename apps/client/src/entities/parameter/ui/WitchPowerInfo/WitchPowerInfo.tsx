@@ -1,9 +1,8 @@
-import React, { FC, memo } from 'react'
+import { FC, memo } from 'react'
 import { Progress } from '@mantine/core'
 import type { WitchParameters } from 'kg-calculator-typings/api/Witch'
 import Flexbox from 'shared/ui/Flexbox'
 import ParameterInfo from '../ParameterInfo'
-
 
 interface Props {
   className?: string

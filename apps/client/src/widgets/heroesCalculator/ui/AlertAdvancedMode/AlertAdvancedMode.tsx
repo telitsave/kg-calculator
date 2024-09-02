@@ -1,14 +1,10 @@
-import React, { FC, memo } from 'react'
+import { FC, memo } from 'react'
 import { NavLink } from 'react-router-dom'
 import { Alert, Flex, Text } from '@mantine/core'
 import { useSetting } from 'entities/calculationSettings'
 
 
-interface Props {
-  className?: string
-}
-
-const AlertAdvancedMode: FC<Props> = memo(({ className }) => {
+const AlertAdvancedMode: FC = memo(() => {
   const [isUsedAdvancedMode] = useSetting('useAdvancedHeroMode')
 
   if (!isUsedAdvancedMode) return null

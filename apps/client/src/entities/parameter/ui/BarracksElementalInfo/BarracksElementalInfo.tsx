@@ -1,4 +1,4 @@
-import React, { FC, memo } from 'react'
+import { FC, memo } from 'react'
 import { Progress, Text } from '@mantine/core'
 import type { BarracksParameters } from 'kg-calculator-typings/api/Barracks'
 import type { ElementsType } from 'kg-calculator-typings/api/Elements'

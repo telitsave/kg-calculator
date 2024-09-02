@@ -1,11 +1,10 @@
-import React, { FC, memo, useCallback } from 'react'
+import { FC, memo, useCallback } from 'react'
 import { Button, Flex, NumberInput } from '@mantine/core'
 import { WitchGemsIcon } from 'shared/assets/icons'
 import Flexbox from 'shared/ui/Flexbox'
 import useWitchGemParameter from '../../model/hooks/useWitchGemParameter'
 import { Ranks } from '../../model/types'
 import css from './styles.module.sass'
-
 
 interface Props {
   rank: Ranks

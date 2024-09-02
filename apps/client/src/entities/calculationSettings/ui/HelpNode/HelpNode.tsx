@@ -1,14 +1,13 @@
-import React, { FC, memo } from 'react'
+import { FC, memo } from 'react'
 import { Text } from '@mantine/core'
 import Flexbox from 'shared/ui/Flexbox'
 import { SettingsTypes } from '../../model/types'
 
 interface Props {
-  className?: string
   settingsType: SettingsTypes
 }
 
-const HelpNode: FC<Props> = memo(({ className, settingsType }) => {
+const HelpNode: FC<Props> = memo(({ settingsType }) => {
   switch (settingsType) {
     case 'canConvertBarracksBooksToTalents':
       return (

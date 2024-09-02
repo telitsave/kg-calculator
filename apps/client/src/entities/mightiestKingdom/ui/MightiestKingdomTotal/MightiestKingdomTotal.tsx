@@ -1,4 +1,4 @@
-import React, { FC, memo } from 'react'
+import { FC, memo } from 'react'
 import cx from 'classnames'
 import { Divider, Text, Tooltip } from '@mantine/core'
 import type { CalculateMightiestKingdomResponse } from 'kg-calculator-typings/api/MightiestKingdom'
@@ -7,7 +7,6 @@ import TypeHelper from 'shared/helpers/typeHelper'
 import Flexbox from 'shared/ui/Flexbox'
 import css from './styles.module.sass'
 import { getModuleByType } from './utils'
-
 
 interface Props {
   className?: string

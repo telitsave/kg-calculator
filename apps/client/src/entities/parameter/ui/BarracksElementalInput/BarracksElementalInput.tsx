@@ -1,10 +1,9 @@
-import React, { FC, memo, useCallback } from 'react'
+import { FC, memo, useCallback } from 'react'
 import { NumberInput, Progress } from '@mantine/core'
 import type { ElementsType } from 'kg-calculator-typings/api/Elements'
 import { BarracksRankIcon } from 'shared/assets/icons'
 import Flexbox from 'shared/ui/Flexbox'
 import useBarracksParameter from '../../model/hooks/useBarracksParameter'
-
 
 interface Props {
   className?: string

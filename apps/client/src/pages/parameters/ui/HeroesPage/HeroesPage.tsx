@@ -1,9 +1,8 @@
-import React, { FC, memo } from 'react'
+import { FC, memo } from 'react'
 import { Flex, Tabs } from '@mantine/core'
 import { ResourceInput } from 'entities/resource'
 import { CardDistributionPanel } from 'widgets/heroesCalculator'
 import { HeroesGrid } from 'widgets/heroesGrid'
-
 
 interface Props {
   className?: string

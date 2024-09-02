@@ -1,10 +1,9 @@
-import React, { FC, memo, useCallback, useMemo, useState } from 'react'
+import { FC, memo, useCallback, useMemo, useState } from 'react'
 import cx from 'classnames'
 import { SegmentedControl, Text, Title } from '@mantine/core'
 import { ResourceInput, ResourceType } from 'entities/resource'
 import Flexbox from 'shared/ui/Flexbox'
 import css from './styles.module.sass'
-
 
 interface Props {
   className?: string

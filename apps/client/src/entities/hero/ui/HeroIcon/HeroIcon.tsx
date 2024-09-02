@@ -1,10 +1,9 @@
-import React, { FC, memo } from 'react'
+import { FC, memo } from 'react'
 import cx from 'classnames'
 import { Text } from '@mantine/core'
 import type { ElementsType } from 'kg-calculator-typings'
 import { ElementIcon, HeroIcon as HeroIconAsset } from 'shared/assets/icons'
 import css from './styles.module.sass'
-
 
 interface Props {
   className?: string

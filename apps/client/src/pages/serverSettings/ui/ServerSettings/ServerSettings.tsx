@@ -1,10 +1,9 @@
-import React, { FC, memo, useCallback } from 'react'
+import { FC, memo, useCallback } from 'react'
 import { Alert, Stack, Switch, SwitchGroup, Tabs, Text } from '@mantine/core'
 import { useServerSettings } from 'entities/serverSettings'
 import { CommonSettings } from 'widgets/serverSettings/commonSettings'
 import { ExtremePowerSettings } from 'widgets/serverSettings/extremePowerSettings'
 import { MightiestKingdomSettings } from 'widgets/serverSettings/mightiestKingdomSettings'
-
 
 interface Props {
   className?: string

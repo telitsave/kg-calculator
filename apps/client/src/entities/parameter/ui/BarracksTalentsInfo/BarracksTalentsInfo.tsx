@@ -1,10 +1,9 @@
-import React, { FC, memo } from 'react'
+import { FC, memo } from 'react'
 import { Text } from '@mantine/core'
 import type { ElementsType } from 'kg-calculator-typings/api/Elements'
 import type { TalentsParameters } from 'kg-calculator-typings/api/Talents'
 import Flexbox from 'shared/ui/Flexbox'
 import BarracksTalentInfo from '../BarracksTalentInfo'
-
 
 interface Props {
   className?: string

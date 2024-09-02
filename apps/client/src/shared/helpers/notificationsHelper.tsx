@@ -1,4 +1,3 @@
-import React from 'react'
 import { notifications } from '@mantine/notifications'
 import { TbCheck, TbX } from 'react-icons/tb'
 

@@ -1,10 +1,9 @@
-import React, { FC, memo } from 'react'
+import { FC, memo } from 'react'
 import { Button, Divider, Title } from '@mantine/core'
 import { WitchGemsInputs, WitchPowerInput } from 'entities/parameter'
 import { ResourceInput } from 'entities/resource'
 import { useServerSettings } from 'entities/serverSettings'
 import Flexbox from 'shared/ui/Flexbox'
-
 
 interface Props {
   onSubmitButtonClick: () => void

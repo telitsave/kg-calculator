@@ -1,4 +1,4 @@
-import React, { FC, memo } from 'react'
+import { FC, memo } from 'react'
 import { Text } from '@mantine/core'
 import { isNil } from 'lodash'
 import Flexbox from 'shared/ui/Flexbox'
@@ -6,15 +6,15 @@ import { ResourceType } from '../../model/types'
 import ResourceIcon from '../ResourceIcon'
 import css from './styles.module.sass'
 
+
 interface Props {
-  className?: string
   resourceType: ResourceType
   count?: number
   sourceCount?: number
   leftCount?: number
 }
 
-const ResourceCount: FC<Props> = memo(({ className, resourceType, count, sourceCount, leftCount }) => (
+const ResourceCount: FC<Props> = memo(({ resourceType, count, sourceCount, leftCount }) => (
   <Flexbox alignItems="center" gap={4} flexWrap="wrap">
     <ResourceIcon className={css.icon} resourceType={resourceType} />
     {isNil(count) && <Text>-</Text>}

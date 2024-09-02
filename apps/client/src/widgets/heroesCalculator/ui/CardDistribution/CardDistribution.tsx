@@ -1,11 +1,10 @@
-import React, { FC, memo, useCallback, useMemo } from 'react'
+import { FC, memo, useCallback, useMemo } from 'react'
 import { Button, Flex, Text } from '@mantine/core'
 import type { ElementsType, Ranks } from 'kg-calculator-typings'
 import { FaStar, FaStarHalfAlt } from 'react-icons/fa'
 import { Bars, HeroHelper, HeroIcon, Stars } from 'entities/hero'
 import { ResourceIcon } from 'entities/resource'
 import css from './styles.module.sass'
-
 
 interface Props {
   className?: string

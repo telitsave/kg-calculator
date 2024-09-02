@@ -1,6 +1,5 @@
-import React, { FC, memo } from 'react'
+import { FC, memo } from 'react'
 import { SpiritsInvasion } from 'widgets/spiritsInvasion'
-
 
 const SpiritInvasionPage: FC = memo(() => <SpiritsInvasion />)
 

@@ -1,4 +1,4 @@
-import React, { FC, memo } from 'react'
+import { FC, memo } from 'react'
 import { Tooltip } from '@mantine/core'
 import {
   BarracksBookIcon,
@@ -262,8 +262,6 @@ const ResourceIcon: FC<Props> = memo(({ className, resourceType }) => {
         </Tooltip>
       )
   }
-
-  return null
 })
 
 export default ResourceIcon

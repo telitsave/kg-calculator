@@ -1,4 +1,4 @@
-import React, { FC, memo } from 'react'
+import { FC, memo } from 'react'
 import { Divider, Title } from '@mantine/core'
 import type { BarracksBooksResources, ElementsType, ParametersData, ResourcesData } from 'kg-calculator-typings'
 import { BarracksElementalInfo, BarracksTalentsInfo } from 'entities/parameter'
@@ -6,7 +6,6 @@ import { KeysHelper, ResourceCount, ResourcesConverts } from 'entities/resource'
 import { useServerSettings } from 'entities/serverSettings'
 import Flexbox from 'shared/ui/Flexbox'
 import css from './styles.module.sass'
-
 
 interface Props {
   className?: string

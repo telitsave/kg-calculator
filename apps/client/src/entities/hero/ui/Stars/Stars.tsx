@@ -1,8 +1,7 @@
-import React, { FC, memo } from 'react'
+import { FC, memo } from 'react'
 import cx from 'classnames'
 import { FaStar } from 'react-icons/fa'
 import css from './styles.module.sass'
-
 
 interface Props {
   className?: string

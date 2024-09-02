@@ -1,7 +1,6 @@
-import React, { FC, memo, useCallback } from 'react'
+import { FC, memo, useCallback } from 'react'
 import { Button, Fieldset, NumberInput } from '@mantine/core'
 import { useInputState } from '@mantine/hooks'
-
 
 interface Props {
   className?: string

@@ -1,11 +1,10 @@
-import React, { FC, memo, useCallback } from 'react'
+import { FC, memo, useCallback } from 'react'
 import cx from 'classnames'
 import type { ResourcesData } from 'kg-calculator-typings/api/ResourcesData'
 import { BlacksmithCalculator } from 'widgets/blacksmithCalculator'
 import { ExtremePowerStatistics } from 'widgets/extremePowerStatistics'
 import { MightiestKingdomStatistics } from 'widgets/mightiestKingdomStatistics'
 import css from './styles.module.sass'
-
 
 interface Props {
   className?: string

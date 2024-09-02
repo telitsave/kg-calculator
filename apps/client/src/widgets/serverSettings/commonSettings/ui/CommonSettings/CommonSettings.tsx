@@ -1,7 +1,6 @@
-import React, { FC, memo } from 'react'
+import { FC, memo } from 'react'
 import { Fieldset, Stack } from '@mantine/core'
 import { ServerSettingInput } from 'entities/serverSettings'
-
 
 interface Props {
   className?: string

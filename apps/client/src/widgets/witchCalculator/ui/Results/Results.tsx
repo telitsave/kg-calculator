@@ -1,11 +1,10 @@
-import React, { FC, ReactNode, memo } from 'react'
+import { FC, ReactNode, memo } from 'react'
 import { Divider, Text, Title } from '@mantine/core'
 import type { WitchParameters, WitchResources } from 'kg-calculator-typings/api/Witch'
 import { WitchGemsInfo, WitchPowerInfo } from 'entities/parameter'
 import { ResourceCount } from 'entities/resource'
 import { useServerSettings } from 'entities/serverSettings'
 import Flexbox from 'shared/ui/Flexbox'
-
 
 interface Props {
   className?: string

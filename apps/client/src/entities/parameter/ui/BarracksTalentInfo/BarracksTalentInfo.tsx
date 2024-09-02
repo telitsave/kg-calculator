@@ -1,4 +1,4 @@
-import React, { FC, memo } from 'react'
+import { FC, memo } from 'react'
 import { Text } from '@mantine/core'
 import Flexbox from 'shared/ui/Flexbox'
 import ParameterIcon from '../ParameterIcon'

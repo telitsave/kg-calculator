@@ -1,8 +1,7 @@
-import React, { FC, memo, useCallback } from 'react'
+import { FC, memo, useCallback } from 'react'
 import { SegmentedControl, Text } from '@mantine/core'
 import type { ElementsType } from 'kg-calculator-typings'
 import { ElementIcon } from 'shared/assets/icons'
-
 
 interface Props {
   value: ElementsType | null

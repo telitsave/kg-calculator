@@ -1,10 +1,9 @@
-import React, { FC, memo, useMemo, useState } from 'react'
+import { FC, memo, useMemo, useState } from 'react'
 import { Flex, Text } from '@mantine/core'
 import type { Hero } from 'kg-calculator-typings'
 import { orderBy } from 'lodash'
 import useHeroesDistributionModel from '../../model/hooks/useHeroesDistributionModel'
 import CardDistribution from '../CardDistribution'
-
 
 interface Props {
   className?: string

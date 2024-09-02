@@ -1,4 +1,4 @@
-import React, { Dispatch, FC, memo } from 'react'
+import { Dispatch, FC, memo } from 'react'
 import { Button, Title } from '@mantine/core'
 import { SettingsSwitch } from 'entities/calculationSettings'
 import { GoalCastleLevelInput } from 'entities/castle'

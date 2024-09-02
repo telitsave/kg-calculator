@@ -1,10 +1,9 @@
-import React, { FC, memo, useCallback } from 'react'
+import { FC, memo, useCallback } from 'react'
 import { Flex } from '@mantine/core'
 import useGetSpiritsInvasionData from '../../model/hooks/useGetSpiritsInvasionData'
 import DetailsResultsTable from '../DetailsResultsTable'
 import Inputs from '../Inputs'
 import ShortResults from '../ShortResults'
-
 
 interface Props {
   className?: string

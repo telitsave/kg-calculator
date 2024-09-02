@@ -1,4 +1,4 @@
-import React, { FC, memo } from 'react'
+import { FC, memo } from 'react'
 import { Accordion, Button, Divider, Title } from '@mantine/core'
 import { SettingPriorityElement, SettingsSwitch } from 'entities/calculationSettings'
 import { ResourceInput } from 'entities/resource'
@@ -6,7 +6,6 @@ import { ElementIcon } from 'shared/assets/icons'
 import Flexbox from 'shared/ui/Flexbox'
 import { elements } from '../../model/constants'
 import InputElement from '../InputElement'
-
 
 interface Props {
   className?: string

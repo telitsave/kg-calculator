@@ -24,7 +24,7 @@ export default class HeroesController {
     response.json(heroesCalculatorModel.calculateHeroes())
   }
 
-  static getAllHeroes(request: Request, response: Response) {
+  static getAllHeroes(_: Request, response: Response) {
     const heroesModel = new HeroesModel()
 
     response.json(heroesModel.getAllHeroes())
