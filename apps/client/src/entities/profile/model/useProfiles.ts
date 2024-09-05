@@ -12,6 +12,19 @@ const useProfiles = () => {
   })
   const [currentProfile, setCurrentProfile, deleteProfileCookie] = useCookie('profileId')
 
+  const setCookie = useCallback(
+    (value: string) => {
+      if (process.env.NODE_ENV === 'production') {
+        setCurrentProfile(value, {
+          domain: `${process.env.COOKIE_DOMAIN}`,
+        })
+      } else {
+        setCurrentProfile(value)
+      }
+    },
+    [setCurrentProfile],
+  )
+
   const selectedProfile = useMemo<Profile>(() => {
     return (
       data?.find((it) => it.id === Number(currentProfile)) || {
@@ -25,7 +38,7 @@ const useProfiles = () => {
   const handleSetProfile = useCallback(
     (profileId: string) => {
       if (selectedProfile.id !== Number(profileId)) {
-        setCurrentProfile(profileId)
+        setCookie(profileId)
         window.location.reload()
       }
     },
@@ -34,9 +47,12 @@ const useProfiles = () => {
 
   useEffect(() => {
     if (isFetched && (!selectedProfile || selectedProfile.id === -1) && data && data.length > 0) {
-      setCurrentProfile(data[0].id.toString())
+      if (!currentProfile) {
+        setCookie(data[0].id.toString())
+        window.location.reload()
+      }
     }
-  }, [isFetched, data, currentProfile])
+  }, [isFetched, data, selectedProfile, currentProfile, setCookie])
 
   return {
     profiles: data,
@@ -44,6 +60,7 @@ const useProfiles = () => {
     selectedProfile,
     setCurrentProfile: handleSetProfile,
     deleteProfileCookie,
+    setCookie,
   }
 }
 
