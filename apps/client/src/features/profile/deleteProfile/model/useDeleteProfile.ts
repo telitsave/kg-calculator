@@ -4,15 +4,23 @@ import api from 'shared/api'
 
 
 export const useDeleteProfile = () => {
-  const { profiles = [], selectedProfile, setCurrentProfile } = useProfiles()
+  const { profiles = [], selectedProfile, setCurrentProfile, deleteProfileCookie } = useProfiles()
   const queryClient = useQueryClient()
 
   return useMutation({
     mutationKey: ['deleteProfile'],
     mutationFn: (profileId: number) => api.profiles.deleteProfile(profileId),
     onSuccess(_, profileId) {
+      if (profiles.length === 1) {
+        deleteProfileCookie()
+        window.location.reload()
+      }
       if (selectedProfile.id === profileId) {
-        setCurrentProfile(profiles[0].id.toString())
+        if (profiles[0].id !== profileId) {
+          setCurrentProfile(profiles[0].id.toString())
+        } else {
+          setCurrentProfile(profiles[1].id.toString())
+        }
       }
       queryClient.invalidateQueries({
         queryKey: ['profiles'],

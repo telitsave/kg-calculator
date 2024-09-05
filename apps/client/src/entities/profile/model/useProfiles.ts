@@ -10,7 +10,7 @@ const useProfiles = () => {
     queryKey: ['profiles'],
     queryFn: api.profiles.getProfiles,
   })
-  const [currentProfile, setCurrentProfile] = useCookie('profileId')
+  const [currentProfile, setCurrentProfile, deleteProfileCookie] = useCookie('profileId')
 
   const selectedProfile = useMemo<Profile>(() => {
     return (
@@ -40,8 +40,10 @@ const useProfiles = () => {
 
   return {
     profiles: data,
+    isLoaded: isFetched,
     selectedProfile,
     setCurrentProfile: handleSetProfile,
+    deleteProfileCookie,
   }
 }
 

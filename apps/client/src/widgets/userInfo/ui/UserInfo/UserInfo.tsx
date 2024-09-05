@@ -5,7 +5,7 @@ import type { LoginResponse } from 'kg-calculator-typings'
 import { LoginButton, useActivate } from 'features/auth/login'
 import { LogoutButton } from 'features/auth/logout'
 import { ResetPasswordModal, useResetPassword } from 'features/auth/resetPassword'
-import { AddProfileButton } from 'features/profile/addProfile'
+import { AddProfileButton, NoProfileWrapper } from 'features/profile/addProfile'
 import { DeleteProfileButtonIcon } from 'features/profile/deleteProfile'
 import { EditProfileButtonIcon } from 'features/profile/editProfile'
 import { ProfileSelector } from 'features/profile/profileSelector'
@@ -28,6 +28,7 @@ const UserInfo: FC = memo(() => {
         {resetPasswordToken && (
           <ResetPasswordModal resetPasswordToken={resetPasswordToken} opened={openedModal} onClose={onCloseModal} />
         )}
+        <NoProfileWrapper />
       </Flex>
     )
   }
@@ -37,6 +38,7 @@ const UserInfo: FC = memo(() => {
       {resetPasswordToken && (
         <ResetPasswordModal resetPasswordToken={resetPasswordToken} opened={openedModal} onClose={onCloseModal} />
       )}
+      <NoProfileWrapper />
     </>
   )
 })

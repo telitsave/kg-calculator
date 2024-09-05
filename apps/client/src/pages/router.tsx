@@ -18,10 +18,23 @@ import { HeroesPage, ParametersPage } from './parameters'
 import { ServerSettingsPage } from './serverSettings'
 import { SpiritInvasionPage } from './spiritInvasionPage'
 
+function getCookie(name: string) {
+  const value = `; ${document.cookie}`
+  const parts = value.split(`; ${name}=`)
+  if (parts.length === 2) return parts.pop()!.split(';').shift()
+  return undefined
+}
+
+function isAuth() {
+  const accessToken = localStorage.getItem('access-token')
+  const profileId = getCookie('profileId')
+  return !!accessToken && !!profileId
+}
+
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Layout rightHeaderSlot={<UserInfo />} />,
+    element: <Layout rightHeaderSlot={<UserInfo />} isAuth={isAuth()} />,
     children: [
       {
         index: true,
