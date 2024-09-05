@@ -9,6 +9,7 @@ import Flexbox from 'shared/ui/Flexbox'
 import { InputElementOnlyParams, elements } from 'widgets/barracksCalculator'
 import css from './styles.module.sass'
 
+
 interface Props {
   className?: string
 }
@@ -27,10 +28,10 @@ const ParametersPage: FC<Props> = memo(({ className }) => {
           <Accordion.Control>Дракон</Accordion.Control>
           <Accordion.Panel>
             <Flexbox flexDirection="column" gap={8}>
-              <ParameterInput parameterType="greenEmblem" />
-              <ParameterInput parameterType="blueEmblem" />
-              <ParameterInput parameterType="purpleEmblem" />
-              <ParameterInput parameterType="goldEmblem" />
+              <ParameterInput parameterType="dragonParams_green" />
+              <ParameterInput parameterType="dragonParams_blue" />
+              <ParameterInput parameterType="dragonParams_purple" />
+              <ParameterInput parameterType="dragonParams_gold" />
             </Flexbox>
           </Accordion.Panel>
         </Accordion.Item>
@@ -38,7 +39,7 @@ const ParametersPage: FC<Props> = memo(({ className }) => {
           <Accordion.Control>Замок</Accordion.Control>
           <Accordion.Panel>
             <Flexbox flexDirection="column" gap={8}>
-              <ParameterInput parameterType="castleLevel" />
+              <ParameterInput parameterType="castleParams_level" />
             </Flexbox>
           </Accordion.Panel>
         </Accordion.Item>
@@ -69,7 +70,7 @@ const ParametersPage: FC<Props> = memo(({ className }) => {
           <Accordion.Control>Кузнец</Accordion.Control>
           <Accordion.Panel>
             <Flexbox flexDirection="column" gap={8}>
-              <ParameterInput parameterType="blacksmithLevel" />
+              <ParameterInput parameterType="blacksmithParams_level" />
             </Flexbox>
           </Accordion.Panel>
         </Accordion.Item>

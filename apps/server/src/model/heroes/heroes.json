@@ -143,7 +143,8 @@
     "heroId": "clarence",
     "element": "ice",
     "rank": "ssr",
-    "name": "Кларенс"
+    "name": "Кларенс",
+    "season": null
   },
   {
     "heroId": "claudia",
@@ -219,7 +220,8 @@
     "heroId": "enzo",
     "element": "ice",
     "rank": "ssr",
-    "name": "Энцо"
+    "name": "Энцо",
+    "season": null
   },
   {
     "heroId": "erika",
@@ -449,7 +451,8 @@
     "heroId": "miku",
     "element": "fire",
     "rank": "ssr",
-    "name": "Мику"
+    "name": "Мику",
+    "season": null
   },
   {
     "heroId": "montag",
@@ -490,7 +493,8 @@
     "heroId": "padme",
     "element": "bow",
     "rank": "ssr",
-    "name": "Падме"
+    "name": "Падме",
+    "season": null
   },
   {
     "heroId": "pan",
@@ -566,7 +570,8 @@
     "heroId": "rebecca",
     "element": "ice",
     "rank": "ssr",
-    "name": "Ребекка"
+    "name": "Ребекка",
+    "season": null
   },
   {
     "heroId": "richard",
@@ -656,7 +661,8 @@
     "heroId": "tracy",
     "element": "fire",
     "rank": "ssr",
-    "name": "Трейси"
+    "name": "Трейси",
+    "season": null
   },
   {
     "heroId": "trishy",
@@ -676,7 +682,8 @@
     "heroId": "tumnus",
     "element": "poison",
     "rank": "ssr",
-    "name": "Тумнус"
+    "name": "Тумнус",
+    "season": null
   },
   {
     "heroId": "vanessa",
@@ -710,42 +717,49 @@
     "heroId": "daisy",
     "element": "poison",
     "rank": "ssr",
-    "name": "Маргаритка"
+    "name": "Маргаритка",
+    "season": null
   },
   {
     "heroId": "mycelia",
     "element": "poison",
     "rank": "ssr",
-    "name": "Мицелий"
+    "name": "Мицелий",
+    "season": null
   },
   {
     "heroId": "edmund",
     "element": "fire",
     "rank": "ssr",
-    "name": "Эдмунд"
+    "name": "Эдмунд",
+    "season": null
   },
   {
     "heroId": "layla",
     "element": "bow",
     "rank": "ssr",
-    "name": "Лайла"
+    "name": "Лайла",
+    "season": null
   },
   {
     "heroId": "catrina",
     "element": "fire",
     "rank": "ssr",
-    "name": "Катрин"
+    "name": "Катрин",
+    "season": null
   },
   {
     "heroId": "nina",
     "element": "ice",
     "rank": "ssr",
-    "name": "Нина"
+    "name": "Нина",
+    "season": null
   },
   {
     "heroId": "ryan",
     "element": "bow",
     "rank": "ssr",
-    "name": "Райан"
+    "name": "Райан",
+    "season": null
   }
 ]

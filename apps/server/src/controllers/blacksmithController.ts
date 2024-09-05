@@ -1,18 +1,25 @@
-import { Request, Response } from 'express'
-import Resources from '../model/resources/Resources'
-import Parameters from '../model/parameters/Parameters'
 import BlacksmithCalculatorModel from '../model/calculator/blacksmith/BlacksmithCalculatorModel'
-import type { CalculateBlacksmithPayload } from 'kg-calculator-typings'
+import Parameters from '../model/parameters/Parameters'
+import Resources from '../model/resources/Resources'
+import InventoryService from '../services/inventory-service'
+import ParametersService from '../services/parameters-service'
+import BaseController from './base-controller'
+import { type NextFunction, Request, Response } from 'express'
 
-export default class BlacksmithController {
-  static calculateBlacksmith(request: Request, response: Response) {
-    const payload: CalculateBlacksmithPayload = request.body.data
 
-    const resources = new Resources(payload.resources)
-    const parameters = new Parameters(payload.parameters)
+export default class BlacksmithController extends BaseController {
+  static async calculateBlacksmith(_: Request, response: Response, next: NextFunction) {
+    try {
+      const profileId = BlacksmithController.getProfileId(response)
 
-    const blacksmithCalculatorModel = new BlacksmithCalculatorModel(resources, parameters)
+      const resources = Resources.transformDataFromDB(await InventoryService.getInventory(profileId))
+      const parameters = Parameters.transformDataFromDB(await ParametersService.getParameters(profileId))
 
-    response.json(blacksmithCalculatorModel.calculateBlacksmith())
+      const blacksmithCalculatorModel = new BlacksmithCalculatorModel(resources, parameters)
+
+      response.json(blacksmithCalculatorModel.calculateBlacksmith())
+    } catch (err) {
+      next(err)
+    }
   }
 }

@@ -1,49 +1,41 @@
-import { FC, ReactNode, memo, useCallback } from 'react'
-import { Divider } from '@mantine/core'
-import type { ResourcesData } from 'kg-calculator-typings/api/ResourcesData'
-import { useParameters } from 'entities/parameter'
-import { useResources } from 'entities/resource'
-import Flexbox from 'shared/ui/Flexbox'
+import { FC, memo, useCallback } from 'react'
+import { Divider, Flex } from '@mantine/core'
+import { SettingsQueue } from 'entities/calculationSettings'
+import { useCalculateMightiestKingdom } from 'entities/mightiestKingdom'
+import { ParametersQueue } from 'entities/parameter'
+import { ResourcesQueue } from 'entities/resource'
+import { useCalculateUltimatePower } from 'entities/ultimatePower'
 import useCalculateGallery from '../../model/hooks/useCalculateGallery'
 import Inputs from '../Inputs'
 import Results from '../Results'
 
+
 interface Props {
   className?: string
-  getExtremePowerNode: (resources: ResourcesData) => ReactNode
-  getMightiestKingdomNode: (resources: ResourcesData) => ReactNode
 }
 
-const GalleryCalculator: FC<Props> = memo(({ className, getExtremePowerNode, getMightiestKingdomNode }) => {
+const GalleryCalculator: FC<Props> = memo(({ className }) => {
   const { mutate, data } = useCalculateGallery()
-  const resources = useResources()
-  const parameters = useParameters()
+  const { mutate: calculateUltimatePower, data: ultimatePowerData } = useCalculateUltimatePower()
+  const { mutate: calculateMK, data: mkData } = useCalculateMightiestKingdom()
 
-  const handleCalculateButtonClick = useCallback(() => {
-    mutate({
-      resources,
-      parameters,
-    })
-  }, [mutate, parameters, resources])
+  const handleCalculateButtonClick = useCallback(async () => {
+    await ResourcesQueue.saveData()
+    await ParametersQueue.saveData()
+    await SettingsQueue.saveData()
+    mutate()
+    calculateUltimatePower(['gallery'])
+    calculateMK(['gallery'])
+  }, [mutate, calculateUltimatePower, calculateMK])
 
   return (
-    <Flexbox className={className} flexDirection="column" gap={16}>
+    <Flex className={className} direction="column" gap={16}>
       <Inputs onCalculateButtonClick={handleCalculateButtonClick} />
 
       <Divider size="md" />
 
-      {data && (
-        <Results
-          sourceParameters={data.sourceParameters.gallery}
-          parameters={data.parameters.gallery}
-          spentResources={data.spentResources}
-          leftResources={data.leftResources}
-          sourceResources={data.sourceResources}
-          extremePowerNode={getExtremePowerNode(data.spentResources)}
-          mightiestKingdomNode={getMightiestKingdomNode(data.spentResources)}
-        />
-      )}
-    </Flexbox>
+      {data && <Results data={data} mightiestKingdomData={mkData} ultimatePowerData={ultimatePowerData} />}
+    </Flex>
   )
 })
 

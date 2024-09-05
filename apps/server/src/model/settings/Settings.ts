@@ -1,4 +1,4 @@
-import type { SettingsData } from 'kg-calculator-typings'
+import type { Settings as SettingsData } from 'kg-calculator-typings'
 
 export default class Settings {
   canUseCastleBoxes: boolean

@@ -1,5 +1,5 @@
 import { BaseResources } from './BaseResources'
-import type { BarracksBooksByElement, ElementsType, ResourcesData } from 'kg-calculator-typings'
+import type { BarracksBooksByElement, ElementsType, Resources, ResourcesData } from 'kg-calculator-typings'
 
 
 export default class BarracksBooksResources implements BaseResources<BarracksBooksResources> {
@@ -17,11 +17,17 @@ export default class BarracksBooksResources implements BaseResources<BarracksBoo
     this.random = initData?.random || 0
   }
 
-  static transformDataFromDB(items: { itemId: string; count: number }[]): BarracksBooksResources {
+  static transformDataFromDB(items: Resources): BarracksBooksResources {
     const resources = new BarracksBooksResources()
-    items.forEach((item) => {
-      const [, element, rank] = item.itemId.split('_')
-      resources[element][rank] = item.count
+    Object.entries(items).forEach(([key, value]) => {
+      const [resourceType, element, rank] = key.split('_')
+      if (resourceType !== 'barracksResources') return
+
+      if (element === 'random') {
+        resources.random = value
+      } else {
+        resources[element][`rank${rank}`] = value
+      }
     })
 
     return resources
@@ -52,29 +58,26 @@ export default class BarracksBooksResources implements BaseResources<BarracksBoo
     return this.bow[rank] + this.fire[rank] + this.ice[rank] + this.poison[rank]
   }
 
-  getDataForDB() {
-    return [
-      ...Object.entries(this.bow).flatMap(([rank, value]) => ({
-        itemId: `barracksBooks_bow_${rank}`,
-        count: value,
-      })),
-      ...Object.entries(this.ice).flatMap(([rank, value]) => ({
-        itemId: `barracksBooks_ice_${rank}`,
-        count: value,
-      })),
-      ...Object.entries(this.fire).flatMap(([rank, value]) => ({
-        itemId: `barracksBooks_fire_${rank}`,
-        count: value,
-      })),
-      ...Object.entries(this.poison).flatMap(([rank, value]) => ({
-        itemId: `barracksBooks_poison_${rank}`,
-        count: value,
-      })),
-      {
-        itemId: `barracksBooks_random`,
-        count: this.random,
-      },
-    ]
+  getData(): Resources {
+    return {
+      barracksResources_bow_1: this.bow.rank1,
+      barracksResources_bow_2: this.bow.rank2,
+      barracksResources_bow_3: this.bow.rank3,
+      barracksResources_bow_4: this.bow.rank4,
+      barracksResources_fire_1: this.fire.rank1,
+      barracksResources_fire_2: this.fire.rank2,
+      barracksResources_fire_3: this.fire.rank3,
+      barracksResources_fire_4: this.fire.rank4,
+      barracksResources_ice_1: this.ice.rank1,
+      barracksResources_ice_2: this.ice.rank2,
+      barracksResources_ice_3: this.ice.rank3,
+      barracksResources_ice_4: this.ice.rank4,
+      barracksResources_poison_1: this.poison.rank1,
+      barracksResources_poison_2: this.poison.rank2,
+      barracksResources_poison_3: this.poison.rank3,
+      barracksResources_poison_4: this.poison.rank4,
+      barracksResources_random: this.random,
+    }
   }
 
   convertBooksToRankByElement(element: ElementsType, rank: number) {

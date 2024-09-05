@@ -1,82 +1,92 @@
-import { FC, ReactNode, memo } from 'react'
-import { Divider, Text, Title } from '@mantine/core'
-import type { WitchParameters, WitchResources } from 'kg-calculator-typings/api/Witch'
+import { FC, memo } from 'react'
+import { Divider, Flex, Text, Title } from '@mantine/core'
+import type {
+  CalculateMightiestKingdomResponse,
+  CalculateUltimatePowerResponse,
+  CalculateWitchResponse,
+} from 'kg-calculator-typings'
+import { MightiestKingdomStatistics } from 'entities/mightiestKingdom'
 import { WitchGemsInfo, WitchPowerInfo } from 'entities/parameter'
 import { ResourceCount } from 'entities/resource'
 import { useServerSettings } from 'entities/serverSettings'
-import Flexbox from 'shared/ui/Flexbox'
+import { UltimatePowerStatistics } from 'entities/ultimatePower'
+
 
 interface Props {
   className?: string
-  witchParameters: WitchParameters
-  oldWitchParameters: WitchParameters
-  sourceResources: WitchResources
-  spentResources: WitchResources
-  leftResources: WitchResources
-  extremePowerNode: ReactNode
-  mightiestKingdomNode: ReactNode
+  data: CalculateWitchResponse
+  ultimatePowerData?: CalculateUltimatePowerResponse
+  mightiestKingdomData?: CalculateMightiestKingdomResponse
 }
 
 const Results: FC<Props> = memo(
   ({
     className,
-    witchParameters,
-    oldWitchParameters,
-    sourceResources,
-    leftResources,
-    spentResources,
-    extremePowerNode,
-    mightiestKingdomNode,
+    data: {
+      oldParameters,
+      newParameters,
+      oldGemsParameters,
+      newGemsParameters,
+      sourceResources,
+      leftResources,
+      spentResources,
+    },
+    ultimatePowerData,
+    mightiestKingdomData,
   }) => {
     const { serverSettings } = useServerSettings()
 
     return (
-      <Flexbox className={className} flexDirection="column" gap={8}>
+      <Flex className={className} direction="column" gap={8}>
         <Title order={4}>
-          Новый уровень магии ведьмы {spentResources.lightReagents === 0 ? <Text c="dimmed">Нет изменений</Text> : ''}
+          Новый уровень магии ведьмы{' '}
+          {spentResources.witchResources_lightReagents === 0 ? <Text c="dimmed">Нет изменений</Text> : ''}
         </Title>
-        <WitchPowerInfo witchParameters={witchParameters} oldWitchParameters={oldWitchParameters} />
-        {spentResources.lightReagents > 0 && <Title order={5}>Потраченные ресурсы</Title>}
-        {spentResources.lightReagents > 0 && (
+        <WitchPowerInfo params={newParameters} oldParams={oldParameters} />
+        {(spentResources.witchResources_lightReagents || 0) > 0 && <Title order={5}>Потраченные ресурсы</Title>}
+        {(spentResources.witchResources_lightReagents || 0) > 0 && (
           <ResourceCount
-            resourceType="lightReagent"
-            sourceCount={sourceResources.lightReagents}
-            count={spentResources.lightReagents}
-            leftCount={leftResources.lightReagents}
+            resourceType="witchResources_lightReagents"
+            sourceCount={sourceResources.witchResources_lightReagents}
+            count={spentResources.witchResources_lightReagents}
+            leftCount={leftResources.witchResources_lightReagents}
           />
         )}
         <Divider />
         <Title order={4}>
           Новые уровни камней ведьмы{' '}
-          {spentResources.greenWitchPotion === 0 ? <Text c="dimmed">Нет изменений</Text> : ''}
+          {spentResources.witchResources_greenWitchPotion === 0 ? <Text c="dimmed">Нет изменений</Text> : ''}
         </Title>
         <WitchGemsInfo
-          witchParameters={witchParameters}
-          oldWitchParameters={oldWitchParameters}
+          gemsParams={newGemsParameters}
+          oldGemsParams={oldGemsParameters}
           maxRank={serverSettings?.witchGemsMaxRank || 1}
         />
-        {spentResources.greenWitchPotion > 0 && <Title order={5}>Потраченные ресурсы</Title>}
-        {spentResources.greenWitchPotion > 0 && (
+        {(spentResources.witchResources_greenWitchPotion || 0) > 0 && <Title order={5}>Потраченные ресурсы</Title>}
+        {(spentResources.witchResources_greenWitchPotion || 0) > 0 && (
           <ResourceCount
-            resourceType="strengthPotion"
-            sourceCount={sourceResources.greenWitchPotion}
-            count={spentResources.greenWitchPotion}
-            leftCount={leftResources.greenWitchPotion}
+            resourceType="witchResources_greenWitchPotion"
+            sourceCount={sourceResources.witchResources_greenWitchPotion}
+            count={spentResources.witchResources_greenWitchPotion}
+            leftCount={leftResources.witchResources_greenWitchPotion}
           />
         )}
-        {spentResources.greenWitchPotion > 0 && (
+        {(spentResources.witchResources_greenWitchPotion || 0) > 0 && (
           <ResourceCount
-            resourceType="luckPotion"
-            sourceCount={sourceResources.purpleWitchPotion}
-            count={spentResources.purpleWitchPotion}
-            leftCount={leftResources.purpleWitchPotion}
+            resourceType="witchResources_purpleWitchPotion"
+            sourceCount={sourceResources.witchResources_purpleWitchPotion}
+            count={spentResources.witchResources_purpleWitchPotion}
+            leftCount={leftResources.witchResources_purpleWitchPotion}
           />
         )}
         <Divider />
-        {mightiestKingdomNode}
+
+        <MightiestKingdomStatistics data={mightiestKingdomData} />
+
         <Divider />
-        {extremePowerNode}
-      </Flexbox>
+
+        <UltimatePowerStatistics data={ultimatePowerData} />
+      </Flex>
     )
   },
 )

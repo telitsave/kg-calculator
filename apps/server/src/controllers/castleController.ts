@@ -1,32 +1,45 @@
-import { Request, Response } from 'express'
 import CastleCalculatorModel from '../model/calculator/castle/CastleCalculatorModel'
-import Resources from '../model/resources/Resources'
 import Parameters from '../model/parameters/Parameters'
-import Settings from '../model/settings/Settings'
-import type { CalculateGoalCastlePayload, CalculatePossibleCastlePayload } from 'kg-calculator-typings'
+import Resources from '../model/resources/Resources'
+import InventoryService from '../services/inventory-service'
+import ParametersService from '../services/parameters-service'
+import SettingsService from '../services/settings-service'
+import BaseController from './base-controller'
+import { type NextFunction, Request, Response } from 'express'
+import type { CalculateGoalCastlePayload } from 'kg-calculator-typings'
 
-export default class CastleController {
-  static calculatePossibleCastle(request: Request, response: Response) {
-    const payload: CalculatePossibleCastlePayload = request.body.data
 
-    const resources = new Resources(payload.resources)
-    const parameters = new Parameters(payload.parameters)
-    const settings = new Settings(payload.settings)
+export default class CastleController extends BaseController {
+  static async calculatePossibleCastle(_: Request, response: Response, next: NextFunction) {
+    try {
+      const profileId = CastleController.getProfileId(response)
 
-    const castleCalculatorModel = new CastleCalculatorModel(resources, parameters, settings)
+      const resources = Resources.transformDataFromDB(await InventoryService.getInventory(profileId))
+      const parameters = Parameters.transformDataFromDB(await ParametersService.getParameters(profileId))
+      const settings = await SettingsService.getSettings(profileId)
 
-    response.json(castleCalculatorModel.getPossibleCastle())
+      const castleCalculatorModel = new CastleCalculatorModel(resources, parameters, settings)
+
+      response.json(castleCalculatorModel.getPossibleCastle())
+    } catch (err) {
+      next(err)
+    }
   }
 
-  static getGoalCastleResources(request: Request, response: Response) {
-    const payload: CalculateGoalCastlePayload = request.body.data
+  static async getGoalCastleResources(request: Request, response: Response, next: NextFunction) {
+    try {
+      const payload: CalculateGoalCastlePayload = request.body.data
+      const profileId = CastleController.getProfileId(response)
 
-    const resources = new Resources(payload.resources)
-    const parameters = new Parameters(payload.parameters)
-    const settings = new Settings(payload.settings)
+      const resources = Resources.transformDataFromDB(await InventoryService.getInventory(profileId))
+      const parameters = Parameters.transformDataFromDB(await ParametersService.getParameters(profileId))
+      const settings = await SettingsService.getSettings(profileId)
 
-    const castleCalculatorModel = new CastleCalculatorModel(resources, parameters, settings)
+      const castleCalculatorModel = new CastleCalculatorModel(resources, parameters, settings)
 
-    response.json(castleCalculatorModel.getGoalCastleResources(payload.goalLevel))
+      response.json(castleCalculatorModel.getGoalCastleResources(payload.goalLevel))
+    } catch (err) {
+      next(err)
+    }
   }
 }

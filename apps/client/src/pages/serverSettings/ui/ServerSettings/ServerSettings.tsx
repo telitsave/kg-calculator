@@ -1,20 +1,32 @@
-import { FC, memo, useCallback } from 'react'
+import { FC, memo, useCallback, useEffect, useState } from 'react'
 import { Alert, Stack, Switch, SwitchGroup, Tabs, Text } from '@mantine/core'
-import { useServerSettings } from 'entities/serverSettings'
+import { settingsNames, useServerSettings } from 'entities/serverSettings'
 import { CommonSettings } from 'widgets/serverSettings/commonSettings'
-import { ExtremePowerSettings } from 'widgets/serverSettings/extremePowerSettings'
 import { MightiestKingdomSettings } from 'widgets/serverSettings/mightiestKingdomSettings'
+import { UltimatePowerSettings } from 'widgets/serverSettings/ultimatePowerSettings'
+
 
 interface Props {
   className?: string
 }
 
 const ServerSettings: FC<Props> = memo(({ className }) => {
-  const { enabledCustomServerSettings, setEnabledCustomServerSettings } = useServerSettings()
+  const { serverSettings, saveServerSetting } = useServerSettings()
+  const [enabled, setEnabled] = useState(serverSettings.enabledCustomServerSettings)
 
-  const handleSwitchChange = useCallback((values: string[]) => {
-    setEnabledCustomServerSettings(values.includes('enabledCustomServerSettings'))
-  }, [])
+  const handleSwitchChange = useCallback(
+    (values: string[]) => {
+      saveServerSetting('enabledCustomServerSettings', values.includes('enabledCustomServerSettings') ? 1 : 0)
+      setEnabled(values.includes('enabledCustomServerSettings') ? 1 : 0)
+    },
+    [saveServerSetting],
+  )
+
+  useEffect(() => {
+    if (serverSettings.enabledCustomServerSettings) {
+      setEnabled(1)
+    }
+  }, [serverSettings.enabledCustomServerSettings])
 
   return (
     <Stack className={className} maw={600}>
@@ -39,23 +51,20 @@ const ServerSettings: FC<Props> = memo(({ className }) => {
           </Text>
         </Stack>
       </Alert>
-      <SwitchGroup
-        value={enabledCustomServerSettings ? ['enabledCustomServerSettings'] : []}
-        onChange={handleSwitchChange}
-      >
-        <Switch label="Использовать нестандартные настройки" value="enabledCustomServerSettings" />
+      <SwitchGroup value={enabled ? ['enabledCustomServerSettings'] : []} onChange={handleSwitchChange}>
+        <Switch label={settingsNames.enabledCustomServerSettings} value="enabledCustomServerSettings" />
       </SwitchGroup>
       <Tabs defaultValue="common">
         <Tabs.List>
           <Tabs.Tab value="common">Общие настройки</Tabs.Tab>
-          <Tabs.Tab value="extremePower">Экстремальная мощь</Tabs.Tab>
+          <Tabs.Tab value="ultimatePower">Экстремальная мощь</Tabs.Tab>
           <Tabs.Tab value="mightiestKingdom">Сильнейшее королевство</Tabs.Tab>
         </Tabs.List>
         <Tabs.Panel value="common">
           <CommonSettings />
         </Tabs.Panel>
-        <Tabs.Panel value="extremePower">
-          <ExtremePowerSettings />
+        <Tabs.Panel value="ultimatePower">
+          <UltimatePowerSettings />
         </Tabs.Panel>
         <Tabs.Panel value="mightiestKingdom">
           <MightiestKingdomSettings />

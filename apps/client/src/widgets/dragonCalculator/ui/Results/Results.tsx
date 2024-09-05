@@ -1,134 +1,144 @@
-import { FC, ReactNode, memo } from 'react'
-import { Divider, Title } from '@mantine/core'
-import type { CalculatePossibleDragonResponse } from 'kg-calculator-typings/api/Dragon'
+import { FC, memo } from 'react'
+import { Divider, Flex, Title } from '@mantine/core'
+import type {
+  CalculateMightiestKingdomResponse,
+  CalculatePossibleDragonResponse,
+  CalculateUltimatePowerResponse,
+} from 'kg-calculator-typings'
 import { useSetting } from 'entities/calculationSettings'
+import { MightiestKingdomStatistics } from 'entities/mightiestKingdom'
 import { ParameterInfo } from 'entities/parameter'
 import { ResourceCount, ResourcesConverts } from 'entities/resource'
-import Flexbox from 'shared/ui/Flexbox'
+import { UltimatePowerStatistics } from 'entities/ultimatePower'
 import css from './styles.module.sass'
+
 
 interface Props {
   data: CalculatePossibleDragonResponse
-  extremePowerNode: ReactNode
-  mightiestKingdomNode: ReactNode
+  ultimatePowerData?: CalculateUltimatePowerResponse
+  mightiestKingdomData?: CalculateMightiestKingdomResponse
 }
 
 const Results: FC<Props> = memo(
   ({
     data: { leftResources, spentResources, spentBoxesResources, sourceResources, oldParameters, newParameters },
-    extremePowerNode,
-    mightiestKingdomNode,
+    ultimatePowerData,
+    mightiestKingdomData,
   }) => {
     const [canUseBoxes] = useSetting('canUseDragonBoxes')
     return (
-      <Flexbox flexDirection="column" gap={16}>
+      <Flex direction="column" gap={16}>
         <Title order={4}>Результаты</Title>
 
-        <Flexbox alignItems="center" gap={24} flexWrap="wrap" justifyContent="center">
+        <Flex align="center" gap={24} wrap="wrap" justify="center">
           <ParameterInfo
-            parameterType="greenEmblem"
-            value={newParameters.dragonEmblems.green}
-            oldValue={oldParameters.dragonEmblems.green}
+            parameterType="dragonParams_green"
+            value={newParameters.dragonParams_green || 0}
+            oldValue={oldParameters.dragonParams_green}
             viewMode="bigIcon"
           />
           <ParameterInfo
-            parameterType="blueEmblem"
-            value={newParameters.dragonEmblems.blue}
-            oldValue={oldParameters.dragonEmblems.blue}
+            parameterType="dragonParams_blue"
+            value={newParameters.dragonParams_blue || 0}
+            oldValue={oldParameters.dragonParams_blue}
             viewMode="bigIcon"
           />
           <ParameterInfo
-            parameterType="purpleEmblem"
-            value={newParameters.dragonEmblems.purple}
-            oldValue={oldParameters.dragonEmblems.purple}
+            parameterType="dragonParams_purple"
+            value={newParameters.dragonParams_purple || 0}
+            oldValue={oldParameters.dragonParams_purple}
             viewMode="bigIcon"
           />
           <ParameterInfo
-            parameterType="goldEmblem"
-            value={newParameters.dragonEmblems.gold}
-            oldValue={oldParameters.dragonEmblems.gold}
+            parameterType="dragonParams_gold"
+            value={newParameters.dragonParams_gold || 0}
+            oldValue={oldParameters.dragonParams_gold}
             viewMode="bigIcon"
           />
           <ParameterInfo
-            parameterType="dragonLevel"
-            value={newParameters.dragonEmblems.gold + 1}
-            oldValue={oldParameters.dragonEmblems.gold + 1}
+            parameterType="dragonParams_level"
+            value={(newParameters.dragonParams_gold || 0) + 1}
+            oldValue={(newParameters.dragonParams_gold || 0) + 1}
             viewMode="bigIcon"
           />
-        </Flexbox>
+        </Flex>
 
-        <Flexbox flexDirection="column" gap={4}>
+        <Flex direction="column" gap={4}>
           <Title order={5}>Потраченные ресурсы</Title>
-          <Flexbox flexDirection="column" gap={8}>
+          <Flex direction="column" gap={8}>
             <ResourceCount
-              resourceType="greenRune"
-              sourceCount={sourceResources.dragonsRunes.green}
-              count={spentResources.dragonsRunes.green}
-              leftCount={leftResources.dragonsRunes.green}
+              resourceType="dragonResources_green"
+              sourceCount={sourceResources.dragonResources_green}
+              count={spentResources.dragonResources_green}
+              leftCount={leftResources.dragonResources_green}
             />
             <ResourceCount
-              resourceType="blueRune"
-              sourceCount={sourceResources.dragonsRunes.blue}
-              count={spentResources.dragonsRunes.blue}
-              leftCount={leftResources.dragonsRunes.blue}
+              resourceType="dragonResources_blue"
+              sourceCount={sourceResources.dragonResources_blue}
+              count={spentResources.dragonResources_blue}
+              leftCount={leftResources.dragonResources_blue}
             />
             <ResourceCount
-              resourceType="purpleRune"
-              sourceCount={sourceResources.dragonsRunes.purple}
-              count={spentResources.dragonsRunes.purple}
-              leftCount={leftResources.dragonsRunes.purple}
+              resourceType="dragonResources_purple"
+              sourceCount={sourceResources.dragonResources_purple}
+              count={spentResources.dragonResources_purple}
+              leftCount={leftResources.dragonResources_purple}
             />
             <ResourceCount
-              resourceType="goldRune"
-              sourceCount={sourceResources.dragonsRunes.gold}
-              count={spentResources.dragonsRunes.gold}
-              leftCount={leftResources.dragonsRunes.gold}
+              resourceType="dragonResources_gold"
+              sourceCount={sourceResources.dragonResources_gold}
+              count={spentResources.dragonResources_gold}
+              leftCount={leftResources.dragonResources_gold}
             />
             <ResourceCount
-              resourceType="runesBox"
-              sourceCount={sourceResources.dragonsRunes.boxes}
-              count={spentResources.dragonsRunes.boxes}
-              leftCount={leftResources.dragonsRunes.boxes}
+              resourceType="dragonResources_boxes"
+              sourceCount={sourceResources.dragonResources_boxes}
+              count={spentResources.dragonResources_boxes}
+              leftCount={leftResources.dragonResources_boxes}
             />
-          </Flexbox>
-        </Flexbox>
+          </Flex>
+        </Flex>
 
         <Divider size="xs" />
 
         {canUseBoxes && (
-          <Flexbox className={css.converts} flexDirection="column" gap={4}>
+          <Flex className={css.converts} direction="column" gap={4}>
             <Title order={5}>Конвертация коробок в руны</Title>
             <ResourcesConverts
-              sourceResourceType="runesBox"
-              targetResourceType="greenRune"
-              sourceValue={spentBoxesResources.green}
-              targetValue={spentBoxesResources.green * 200}
+              sourceResourceType="dragonResources_boxes"
+              targetResourceType="dragonResources_green"
+              sourceValue={spentBoxesResources.dragonResources_green}
+              targetValue={(spentBoxesResources?.dragonResources_green || 0) * 200}
             />
             <ResourcesConverts
-              sourceResourceType="runesBox"
-              targetResourceType="blueRune"
-              sourceValue={spentBoxesResources.blue}
-              targetValue={spentBoxesResources.blue * 20}
+              sourceResourceType="dragonResources_boxes"
+              targetResourceType="dragonResources_blue"
+              sourceValue={spentBoxesResources.dragonResources_blue}
+              targetValue={(spentBoxesResources.dragonResources_blue || 0) * 20}
             />
             <ResourcesConverts
-              sourceResourceType="runesBox"
-              targetResourceType="purpleRune"
-              sourceValue={spentBoxesResources.purple}
-              targetValue={spentBoxesResources.purple * 2}
+              sourceResourceType="dragonResources_boxes"
+              targetResourceType="dragonResources_purple"
+              sourceValue={spentBoxesResources.dragonResources_purple}
+              targetValue={(spentBoxesResources.dragonResources_purple || 0) * 2}
             />
             <ResourcesConverts
-              sourceResourceType="runesBox"
-              targetResourceType="goldRune"
-              sourceValue={spentBoxesResources.gold}
-              targetValue={spentBoxesResources.gold}
+              sourceResourceType="dragonResources_boxes"
+              targetResourceType="dragonResources_gold"
+              sourceValue={spentBoxesResources.dragonResources_gold}
+              targetValue={spentBoxesResources.dragonResources_gold}
             />
-          </Flexbox>
+          </Flex>
         )}
+
         <Divider />
-        {mightiestKingdomNode}
+
+        <MightiestKingdomStatistics data={mightiestKingdomData} />
+
         <Divider />
-        {extremePowerNode}
-      </Flexbox>
+
+        <UltimatePowerStatistics data={ultimatePowerData} />
+      </Flex>
     )
   },
 )

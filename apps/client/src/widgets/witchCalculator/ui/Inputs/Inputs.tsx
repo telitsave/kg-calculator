@@ -5,6 +5,7 @@ import { ResourceInput } from 'entities/resource'
 import { useServerSettings } from 'entities/serverSettings'
 import Flexbox from 'shared/ui/Flexbox'
 
+
 interface Props {
   onSubmitButtonClick: () => void
 }
@@ -16,9 +17,9 @@ const Inputs: FC<Props> = memo(({ onSubmitButtonClick }) => {
     <>
       <Flexbox flexDirection="column" gap={8}>
         <Title order={4}>Мои ресурсы</Title>
-        <ResourceInput resourceType="lightReagent" />
-        <ResourceInput resourceType="strengthPotion" />
-        <ResourceInput resourceType="luckPotion" />
+        <ResourceInput resourceType="witchResources_lightReagents" />
+        <ResourceInput resourceType="witchResources_greenWitchPotion" />
+        <ResourceInput resourceType="witchResources_purpleWitchPotion" />
       </Flexbox>
       <Flexbox flexDirection="column" gap={8}>
         <Title order={4}>Мои параметры</Title>

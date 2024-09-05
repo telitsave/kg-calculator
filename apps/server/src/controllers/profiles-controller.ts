@@ -1,6 +1,9 @@
+import HeroesService from '../services/heroes-service'
 import InventoryService from '../services/inventory-service'
 import ParametersService from '../services/parameters-service'
 import ProfileService from '../services/profile-service'
+import ServerSettingsService from '../services/serverSettings-service'
+import SettingsService from '../services/settings-service'
 import BaseController from './base-controller'
 import type { NextFunction, Request, Response } from 'express'
 import type { CreateProfilePayload, UpdateProfilePayload } from 'kg-calculator-typings'
@@ -49,6 +52,9 @@ export default class ProfileController extends BaseController {
       await ProfileService.deleteProfile(userData.id, profileId)
       await InventoryService.removeInventory(profileId)
       await ParametersService.removeParameters(profileId)
+      await HeroesService.removeHeroesParams(profileId)
+      await SettingsService.removeSettings(profileId)
+      await ServerSettingsService.removeServerSettings(profileId)
 
       res.json()
     } catch (err) {

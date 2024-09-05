@@ -1,36 +1,33 @@
-import { FC, ReactNode, memo, useCallback } from 'react'
+import { FC, memo, useCallback } from 'react'
 import { Divider } from '@mantine/core'
-import type { ResourcesData } from 'kg-calculator-typings/api/ResourcesData'
-import { useSettings } from 'entities/calculationSettings'
-import { useHeroes } from 'entities/hero'
-import { useResources } from 'entities/resource'
+import { SettingsQueue } from 'entities/calculationSettings'
+import { useCalculateMightiestKingdom } from 'entities/mightiestKingdom'
+import { ParametersQueue } from 'entities/parameter'
+import { ResourcesQueue } from 'entities/resource'
+import { useCalculateUltimatePower } from 'entities/ultimatePower'
 import Flexbox from 'shared/ui/Flexbox'
 import useCalculateHeroes from '../../model/hooks/useCalculateHeroes'
-import useHeroesDistributionModel from '../../model/hooks/useHeroesDistributionModel'
 import Inputs from '../Inputs'
 import Results from '../Results'
 
+
 interface Props {
   className?: string
-  getExtremePowerNode: (resources: ResourcesData) => ReactNode
-  getMightiestKingdomNode: (resources: ResourcesData) => ReactNode
 }
 
-const HeroesCalculator: FC<Props> = memo(({ className, getExtremePowerNode, getMightiestKingdomNode }) => {
+const HeroesCalculator: FC<Props> = memo(({ className }) => {
   const { mutate, data } = useCalculateHeroes()
-  const resources = useResources()
-  const settings = useSettings()
-  const { heroes } = useHeroes()
-  const { heroesDistribution } = useHeroesDistributionModel()
+  const { mutate: calculateUltimatePower, data: ultimatePowerData } = useCalculateUltimatePower()
+  const { mutate: calculateMK, data: mkData } = useCalculateMightiestKingdom()
 
-  const handleCalculateButtonClick = useCallback(() => {
-    mutate({
-      resources,
-      settings,
-      heroesData: heroes,
-      heroesDistribution,
-    })
-  }, [mutate, resources])
+  const handleCalculateButtonClick = useCallback(async () => {
+    await ResourcesQueue.saveData()
+    await ParametersQueue.saveData()
+    await SettingsQueue.saveData()
+    mutate()
+    calculateUltimatePower(['heroes'])
+    calculateMK(['heroes'])
+  }, [mutate, calculateUltimatePower, calculateMK])
 
   return (
     <Flexbox className={className} flexDirection="column" gap={16}>
@@ -38,13 +35,7 @@ const HeroesCalculator: FC<Props> = memo(({ className, getExtremePowerNode, getM
 
       <Divider size="md" />
 
-      {data && (
-        <Results
-          results={data}
-          extremePowerNode={getExtremePowerNode(data.spentResources)}
-          mightiestKingdomNode={getMightiestKingdomNode(data.spentResources)}
-        />
-      )}
+      {data && <Results results={data} mightiestKingdomData={mkData} ultimatePowerData={ultimatePowerData} />}
     </Flexbox>
   )
 })

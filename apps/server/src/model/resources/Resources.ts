@@ -6,7 +6,7 @@ import DragonRunesResources from './DragonRunesResources'
 import HeroesResources from './HeroesResources'
 import TalentsResources from './TalentsResources'
 import WitchResources from './WitchResources'
-import type { ResourcesData } from 'kg-calculator-typings'
+import type { ResourcesData, Resources as ResourcesLib } from 'kg-calculator-typings'
 
 
 export default class Resources implements BaseResources<Resources> {
@@ -64,51 +64,31 @@ export default class Resources implements BaseResources<Resources> {
     if (this.gold < 0) this.gold = 0
   }
 
-  getData(): ResourcesData {
+  getData(): ResourcesLib {
     return {
-      witch: this.witch,
-      talents: this.talents,
-      castle: this.castle,
-      dragonsRunes: this.dragonsRunes,
-      blacksmith: this.blacksmith,
-      barracksBooks: this.barracksBooks,
-      heroesCards: this.heroesCards,
-      galleryShards: this.galleryShards,
+      ...this.witch.getData(),
+      ...this.talents.getData(),
+      ...this.castle.getData(),
+      ...this.dragonsRunes.getData(),
+      ...this.blacksmith.getData(),
+      ...this.barracksBooks.getData(),
+      ...this.heroesCards.getData(),
+      galleryResources_shards: this.galleryShards,
       gold: this.gold,
     }
   }
 
-  getDataForDB() {
-    return [
-      ...this.barracksBooks.getDataForDB(),
-      ...this.heroesCards.getDataForDB(),
-      ...this.castle.getDataForDB(),
-      ...this.dragonsRunes.getDataForDB(),
-      ...this.talents.getDataForDB(),
-      ...this.witch.getDataForDB(),
-      { itemId: 'hammers', count: this.blacksmith.hammers },
-      { itemId: 'galleryShards', count: this.galleryShards },
-      { itemId: 'gold', count: this.gold },
-    ]
-  }
-
-  static transformDataFromDB(data: { itemId: string; count: number }[]): Resources {
+  static transformDataFromDB(data: ResourcesLib): Resources {
     return new Resources({
-      barracksBooks: BarracksBooksResources.transformDataFromDB(
-        data.filter((it) => it.itemId.startsWith('barracksBooks')),
-      ),
-      heroesCards: HeroesResources.transformDataFromDB(data.filter((it) => it.itemId.startsWith('heroesCards'))),
-      blacksmith: new BlacksmithResources({
-        hammers: data.find((it) => it.itemId === 'hammers')?.count || 0,
-      }),
-      castle: CastleResources.transformDataFromDB(data.filter((it) => it.itemId.startsWith('castleResources'))),
-      gold: data.find((it) => it.itemId === 'gold')?.count || 0,
-      galleryShards: data.find((it) => it.itemId === 'galleryShards')?.count || 0,
-      dragonsRunes: DragonRunesResources.transformDataFromDB(
-        data.filter((it) => it.itemId.startsWith('dragonResources')),
-      ),
-      talents: TalentsResources.transformDataFromDB(data.filter((it) => it.itemId.startsWith('talentsResources'))),
-      witch: WitchResources.transformDataFromDB(data.filter((it) => it.itemId.startsWith('witchResources'))),
+      barracksBooks: BarracksBooksResources.transformDataFromDB(data),
+      heroesCards: HeroesResources.transformDataFromDB(data),
+      blacksmith: BlacksmithResources.transformDataFromDB(data),
+      castle: CastleResources.transformDataFromDB(data),
+      dragonsRunes: DragonRunesResources.transformDataFromDB(data),
+      talents: TalentsResources.transformDataFromDB(data),
+      witch: WitchResources.transformDataFromDB(data),
+      gold: data.gold,
+      galleryShards: data.galleryResources_shards,
     })
   }
 }

@@ -1,20 +1,27 @@
-import { Request, Response } from 'express'
-import Resources from '../model/resources/Resources'
-import Parameters from '../model/parameters/Parameters'
 import DragonEmblemsCalculatorModel from '../model/calculator/dragonEmblems/DragonEmblemsCalculatorModel'
-import Settings from '../model/settings/Settings'
-import type { CalculatePossibleDragonPayload } from 'kg-calculator-typings'
+import Parameters from '../model/parameters/Parameters'
+import Resources from '../model/resources/Resources'
+import InventoryService from '../services/inventory-service'
+import ParametersService from '../services/parameters-service'
+import SettingsService from '../services/settings-service'
+import BaseController from './base-controller'
+import { type NextFunction, Request, Response } from 'express'
 
-export default class DragonRunesController {
-  static getPossibleDragon(request: Request, response: Response) {
-    const payload: CalculatePossibleDragonPayload = request.body.data
 
-    const resources = new Resources(payload.resources)
-    const parameters = new Parameters(payload.parameters)
-    const settings = new Settings(payload.settings)
+export default class DragonRunesController extends BaseController {
+  static async getPossibleDragon(_: Request, response: Response, next: NextFunction) {
+    try {
+      const profileId = DragonRunesController.getProfileId(response)
 
-    const dragonEmblemsCalculatorModel = new DragonEmblemsCalculatorModel(resources, parameters, settings)
+      const resources = Resources.transformDataFromDB(await InventoryService.getInventory(profileId))
+      const parameters = Parameters.transformDataFromDB(await ParametersService.getParameters(profileId))
+      const settings = await SettingsService.getSettings(profileId)
 
-    response.json(dragonEmblemsCalculatorModel.getPossibleDragon())
+      const dragonEmblemsCalculatorModel = new DragonEmblemsCalculatorModel(resources, parameters, settings)
+
+      response.json(dragonEmblemsCalculatorModel.getPossibleDragon())
+    } catch (err) {
+      next(err)
+    }
   }
 }

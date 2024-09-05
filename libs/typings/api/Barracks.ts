@@ -1,6 +1,5 @@
-import type { ParametersData } from './ParametersData'
-import type { ResourcesData } from './ResourcesData'
-import type { CustomServerSettingsData, SettingsData } from './SettingsData'
+import type { Resources } from './Inventory'
+import type { Parameters } from './Parameters'
 
 
 export interface BarracksBooksByElement {
@@ -29,21 +28,16 @@ export interface BarracksParameters {
   poisonLevel: number
 }
 
-export interface CalculateBarracksPayload {
-  resources: ResourcesData
-  parameters: ParametersData
-  settings: SettingsData
-  customServerSettings?: CustomServerSettingsData
-}
-
 export interface CalculateBarracksResponse {
-  oldParameters: ParametersData
-  parameters: ParametersData
-  sourceResources: ResourcesData
-  spentResources: ResourcesData
-  leftResources: ResourcesData
-  randomBooksUsed: BarracksBooksResources
-  convertBooksForBarracks: BarracksBooksResources
-  convertTalentBooks: BarracksBooksResources
-  spentTalentBooks: BarracksBooksResources
+  oldParameters: Parameters
+  parameters: Parameters
+  oldTalentParameters: Record<string, number>
+  newTalentParameters: Record<string, number>
+  sourceResources: Resources
+  spentResources: Resources
+  leftResources: Resources
+  randomBooksUsed: Resources
+  convertBooksForBarracks: Resources
+  convertTalentBooks: Resources
+  spentTalentBooks: Resources
 }

@@ -27,12 +27,17 @@ export default class WitchCalculatorModel {
     while (this.tryLevelUpWitch()) {}
     while (this.tryLevelUpGem()) {}
 
+    const oldParams = this._sourceParameters.getData()
+    const newParams = this._parameters.getData()
+
     return {
-      newParameters: this._parameters.getData(),
-      oldParameters: this._sourceParameters.getData(),
-      sourceResources: this._sourceResources,
-      leftResources: this._leftResources,
-      spentResources: this._spentResources,
+      newParameters: newParams.params,
+      oldParameters: oldParams.params,
+      newGemsParameters: newParams.gems,
+      oldGemsParameters: oldParams.gems,
+      sourceResources: this._sourceResources.getData(),
+      leftResources: this._leftResources.getData(),
+      spentResources: this._spentResources.getData(),
     }
   }
 
@@ -52,11 +57,11 @@ export default class WitchCalculatorModel {
 
   private tryLevelUpGem(): boolean {
     for (const rank of Object.keys(this._parameters.witch.gems)) {
-      const rankNumber = Number(rank.substring(4))
+      const rankNumber = Number(rank)
       if (rankNumber > this._serverSettings.witchGemsMaxRank) continue
       const gems = this._parameters.witch.gems[rank]
 
-      const rankInfo = gemsInfo[rank]
+      const rankInfo = gemsInfo[`rank${rank}`]
 
       for (const gem of Object.keys(gems)) {
         const level: number = gems[gem]

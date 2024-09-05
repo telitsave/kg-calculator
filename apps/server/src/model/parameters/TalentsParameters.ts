@@ -18,11 +18,12 @@ export default class TalentsParameters {
     this.poison = this.getFilledTalentsByElement(initData?.poison)
   }
 
-  static transformDataFromDB(items: { parameterId: string; value: string }[]): TalentsParameters {
+  static transformDataFromDB(items: Record<string, number> = {}): TalentsParameters {
     const parameters = new TalentsParameters()
-    items.forEach((item) => {
-      const [, element, rank, param] = item.parameterId.split('_')
-      parameters[element].rank[rank][param] = Number(item.value) || 0
+    Object.entries(items).forEach(([key, value]) => {
+      const [element, rank, param] = key.split('_')
+
+      parameters[element].rank[rank][param === 'small' ? 'booksCells' : 'crownsCells'] = value
     })
 
     return parameters
@@ -40,6 +41,27 @@ export default class TalentsParameters {
       .find((rank) => this[element].rank[rank].crownsCells < 6)
   }
 
+  getData(): Record<string, number> {
+    const data: Record<string, number> = {}
+    Object.entries(this.bow.rank).forEach(([rank, value]) => {
+      data[`bow_${rank}_small`] = value.booksCells
+      data[`bow_${rank}_big`] = value.crownsCells
+    })
+    Object.entries(this.fire.rank).forEach(([rank, value]) => {
+      data[`fire_${rank}_small`] = value.booksCells
+      data[`fire_${rank}_big`] = value.crownsCells
+    })
+    Object.entries(this.ice.rank).forEach(([rank, value]) => {
+      data[`ice_${rank}_small`] = value.booksCells
+      data[`ice_${rank}_big`] = value.crownsCells
+    })
+    Object.entries(this.poison.rank).forEach(([rank, value]) => {
+      data[`poison_${rank}_small`] = value.booksCells
+      data[`poison_${rank}_big`] = value.crownsCells
+    })
+    return data
+  }
+
   private getFilledTalentsByElement(element?: TalentParametersByElement): TalentParametersByElement {
     return {
       rank: {
@@ -55,51 +77,6 @@ export default class TalentsParameters {
         10: this.getFilledTalentsByElementRank(element?.rank[10]),
       },
     }
-  }
-
-  getDataForDB() {
-    return [
-      ...Object.entries(this.bow.rank).flatMap(([rank, value]) => [
-        {
-          parameterId: `talents_bow_${rank}_booksCells`,
-          value: value.booksCells || null,
-        },
-        {
-          parameterId: `talents_bow_${rank}_crownsCells`,
-          value: value.crownsCells || null,
-        },
-      ]),
-      ...Object.entries(this.fire.rank).flatMap(([rank, value]) => [
-        {
-          parameterId: `talents_fire_${rank}_booksCells`,
-          value: value.booksCells || null,
-        },
-        {
-          parameterId: `talents_fire_${rank}_crownsCells`,
-          value: value.crownsCells || null,
-        },
-      ]),
-      ...Object.entries(this.ice.rank).flatMap(([rank, value]) => [
-        {
-          parameterId: `talents_ice_${rank}_booksCells`,
-          value: value.booksCells || null,
-        },
-        {
-          parameterId: `talents_ice_${rank}_crownsCells`,
-          value: value.crownsCells || null,
-        },
-      ]),
-      ...Object.entries(this.poison.rank).flatMap(([rank, value]) => [
-        {
-          parameterId: `talents_poison_${rank}_booksCells`,
-          value: value.booksCells || null,
-        },
-        {
-          parameterId: `talents_poison_${rank}_crownsCells`,
-          value: value.crownsCells || null,
-        },
-      ]),
-    ]
   }
 
   private getFilledTalentsByElementRank(rank?: TalentParametersByElementRank): TalentParametersByElementRank {

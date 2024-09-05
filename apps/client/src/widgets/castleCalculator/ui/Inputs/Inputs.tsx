@@ -1,10 +1,10 @@
 import { Dispatch, FC, memo } from 'react'
-import { Button, Title } from '@mantine/core'
+import { Button, Flex, Title } from '@mantine/core'
 import { SettingsSwitch } from 'entities/calculationSettings'
 import { GoalCastleLevelInput } from 'entities/castle'
 import { ParameterIcon, ParameterInput } from 'entities/parameter'
 import { ResourceInput } from 'entities/resource'
-import Flexbox from 'shared/ui/Flexbox'
+
 
 interface Props {
   className?: string
@@ -16,30 +16,30 @@ interface Props {
 }
 
 const Inputs: FC<Props> = memo(({ className, goalCastleLevel, setGoalCastleLevel, onCalculateButtonClick }) => (
-  <Flexbox className={className} flexDirection="column" gap={12}>
-    <Flexbox flexDirection="column" gap={8}>
+  <Flex className={className} direction="column" gap={12}>
+    <Flex direction="column" gap={8}>
       <Title order={3}>Мой замок сейчас</Title>
-      <ParameterInput parameterType="castleLevel" />
-    </Flexbox>
-    <Flexbox flexDirection="column" gap={8}>
+      <ParameterInput parameterType="castleParams_level" />
+    </Flex>
+    <Flex direction="column" gap={8}>
       <Title order={4}>Мои ресурсы</Title>
       <ResourceInput resourceType="gold" />
-      <ResourceInput resourceType="stone" />
-      <ResourceInput resourceType="wood" />
-      <ResourceInput resourceType="steel" />
-      <ResourceInput resourceType="customConstructionItem" />
-    </Flexbox>
-    <Flexbox flexDirection="column" gap={8}>
+      <ResourceInput resourceType="castleResources_stone" />
+      <ResourceInput resourceType="castleResources_wood" />
+      <ResourceInput resourceType="castleResources_steel" />
+      <ResourceInput resourceType="castleResources_boxes" />
+    </Flex>
+    <Flex direction="column" gap={8}>
       <SettingsSwitch settingsType="canUseCastleBoxes" />
       <SettingsSwitch settingsType="canConvertCastleResources" />
-    </Flexbox>
+    </Flex>
     <GoalCastleLevelInput
-      icon={<ParameterIcon parameterType="castleLevel" />}
+      icon={<ParameterIcon parameterType="castleParams_level" />}
       value={goalCastleLevel}
       onChange={setGoalCastleLevel}
     />
     <Button onClick={onCalculateButtonClick}>Посчитать</Button>
-  </Flexbox>
+  </Flex>
 ))
 
 export default Inputs

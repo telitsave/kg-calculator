@@ -1,5 +1,6 @@
 import { FC, memo } from 'react'
 import { Tooltip } from '@mantine/core'
+import type { ParameterTypes } from 'kg-calculator-typings'
 import {
   BlacksmithIcon,
   CastleIcon,
@@ -13,7 +14,6 @@ import {
   TalentBooksIcon,
   TalentCrownsIcon,
 } from 'shared/assets/icons'
-import { ParameterTypes } from '../../model/types'
 
 interface Props {
   className?: string
@@ -22,67 +22,67 @@ interface Props {
 
 const ParameterIcon: FC<Props> = memo(({ className, parameterType }) => {
   switch (parameterType) {
-    case 'castleLevel':
+    case 'castleParams_level':
       return (
         <Tooltip label="Уровень замка">
           <CastleIcon className={className} />
         </Tooltip>
       )
-    case 'greenEmblem':
+    case 'dragonParams_green':
       return (
         <Tooltip label="Зеленая эмблема дракона">
           <DragonEmblemGreenIcon className={className} />
         </Tooltip>
       )
-    case 'blueEmblem':
+    case 'dragonParams_blue':
       return (
         <Tooltip label="Синяя эмблема дракона">
           <DragonEmblemBlueIcon className={className} />
         </Tooltip>
       )
-    case 'purpleEmblem':
+    case 'dragonParams_purple':
       return (
         <Tooltip label="Фиолетовая эмблема дракона">
           <DragonEmblemPurpleIcon className={className} />
         </Tooltip>
       )
-    case 'goldEmblem':
+    case 'dragonParams_gold':
       return (
         <Tooltip label="Золотая эмблема дракона">
           <DragonEmblemGoldIcon className={className} />
         </Tooltip>
       )
-    case 'dragonLevel':
+    case 'dragonParams_level':
       return (
         <Tooltip label="Уровень дракона">
           <DragonLevelIcon className={className} />
         </Tooltip>
       )
-    case 'lightPower':
+    case 'witchParams_lightLevel':
       return (
         <Tooltip label="Сила магии света">
           <LightPowerIcon className={className} />
         </Tooltip>
       )
-    case 'darkPower':
+    case 'witchParams_darkLevel':
       return (
         <Tooltip label="Сила магии тьмы">
           <DarkPowerIcon className={className} />
         </Tooltip>
       )
-    case 'talentBooks':
+    case 'talentParams_books':
       return (
         <Tooltip label="Малый атрибут">
           <TalentBooksIcon className={className} />
         </Tooltip>
       )
-    case 'talentCrowns':
+    case 'talentParams_crowns':
       return (
         <Tooltip label="Большой атрибут">
           <TalentCrownsIcon className={className} />
         </Tooltip>
       )
-    case 'blacksmithLevel':
+    case 'blacksmithParams_level':
       return (
         <Tooltip label="Уровень кузнеца">
           <BlacksmithIcon className={className} />

@@ -1,4 +1,4 @@
-import type { ParametersData } from 'kg-calculator-typings'
+import type { Parameters, ParametersData } from 'kg-calculator-typings'
 
 export default class DragonEmblemParameters {
   green: number = 0
@@ -15,22 +15,24 @@ export default class DragonEmblemParameters {
     }
   }
 
-  static transformDataFromDB(items: { parameterId: string; value: string }[]): DragonEmblemParameters {
+  static transformDataFromDB(items: Parameters): DragonEmblemParameters {
     const parameters = new DragonEmblemParameters()
-    items.forEach((item) => {
-      const [, param] = item.parameterId.split('_')
-      parameters[param] = Number(item.value) || 0
+    Object.entries(items).forEach(([key, value]) => {
+      const [resourceType, param] = key.split('_')
+      if (resourceType !== 'dragonParams') return
+
+      parameters[param] = value
     })
 
     return parameters
   }
 
-  getDataForDB() {
-    return [
-      { parameterId: 'dragonEmblems_green', value: this.green || null },
-      { parameterId: 'dragonEmblems_blue', value: this.blue || null },
-      { parameterId: 'dragonEmblems_purple', value: this.purple || null },
-      { parameterId: 'dragonEmblems_gold', value: this.gold || null },
-    ]
+  getData(): Parameters {
+    return {
+      dragonParams_green: this.green,
+      dragonParams_blue: this.blue,
+      dragonParams_purple: this.purple,
+      dragonParams_gold: this.gold,
+    }
   }
 }

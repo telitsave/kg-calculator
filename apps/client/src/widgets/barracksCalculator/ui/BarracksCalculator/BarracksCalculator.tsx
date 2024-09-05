@@ -1,55 +1,39 @@
-import { FC, ReactNode, memo, useCallback } from 'react'
-import { Divider } from '@mantine/core'
-import type { ResourcesData } from 'kg-calculator-typings/api/ResourcesData'
-import { useSettings } from 'entities/calculationSettings'
-import { useParameters } from 'entities/parameter'
-import { useResources } from 'entities/resource'
-import { useServerSettings } from 'entities/serverSettings'
-import Flexbox from 'shared/ui/Flexbox'
+import { FC, memo, useCallback } from 'react'
+import { Divider, Flex } from '@mantine/core'
+import { SettingsQueue } from 'entities/calculationSettings'
+import { useCalculateMightiestKingdom } from 'entities/mightiestKingdom'
+import { ParametersQueue } from 'entities/parameter'
+import { ResourcesQueue } from 'entities/resource'
+import { useCalculateUltimatePower } from 'entities/ultimatePower'
 import useCalculateBarracks from '../../model/hooks/useCalculateBarracks'
 import Inputs from '../Inputs'
 import Results from '../Results'
 
+
 interface Props {
   className?: string
-  getExtremePowerNode: (resources: ResourcesData) => ReactNode
-  getMightiestKingdomNode: (resources: ResourcesData) => ReactNode
 }
 
-const BarracksCalculator: FC<Props> = memo(({ className, getExtremePowerNode, getMightiestKingdomNode }) => {
+const BarracksCalculator: FC<Props> = memo(({ className }) => {
   const { mutate, data } = useCalculateBarracks()
-  const resources = useResources()
-  const parameters = useParameters()
-  const settings = useSettings()
-  const { serverSettings, enabledCustomServerSettings } = useServerSettings()
-  const handleSubmitButtonClick = useCallback(() => {
-    mutate({
-      resources,
-      parameters,
-      settings,
-      customServerSettings: enabledCustomServerSettings ? serverSettings : undefined,
-    })
-  }, [mutate, parameters, resources, settings])
+  const { mutate: calculateUltimatePower, data: ultimatePowerData } = useCalculateUltimatePower()
+  const { mutate: calculateMK, data: mkData } = useCalculateMightiestKingdom()
+
+  const handleSubmitButtonClick = useCallback(async () => {
+    await ResourcesQueue.saveData()
+    await ParametersQueue.saveData()
+    await SettingsQueue.saveData()
+    mutate()
+    calculateUltimatePower(['barracks'])
+    calculateMK(['barracks'])
+  }, [mutate, calculateUltimatePower, calculateMK])
+
   return (
-    <Flexbox className={className} flexDirection="column" gap={16}>
+    <Flex className={className} direction="column" gap={16}>
       <Inputs onCalculateButtonClick={handleSubmitButtonClick} />
       <Divider size="md" />
-      {data && (
-        <Results
-          params={data.parameters}
-          oldParams={data.oldParameters}
-          sourceResources={data.sourceResources}
-          leftResources={data.leftResources}
-          spentResources={data.spentResources}
-          randomBooksUsed={data.randomBooksUsed}
-          convertTalentBooks={data.convertTalentBooks}
-          convertBooksForBarracks={data.convertBooksForBarracks}
-          spentTalentBooks={data.spentTalentBooks}
-          extremePowerNode={getExtremePowerNode(data.spentResources)}
-          mightiestKingdomNode={getMightiestKingdomNode(data.spentResources)}
-        />
-      )}
-    </Flexbox>
+      {data && <Results data={data} ultimatePowerData={ultimatePowerData} mightiestKingdomData={mkData} />}
+    </Flex>
   )
 })
 

@@ -3,41 +3,45 @@ import { Button, Flex, NumberInput, Paper, Text } from '@mantine/core'
 import type { ElementsType, Ranks } from 'kg-calculator-typings'
 import { FaStar, FaStarHalfAlt } from 'react-icons/fa'
 import HelpButton from 'shared/ui/HelpButton'
-import css from 'widgets/heroesCalculator/ui/CardDistribution/styles.module.sass'
 import { Bars, Stars } from '../../index'
+import useHeroes from '../../model/hooks/useHeroes'
 import HeroIcon from '../HeroIcon'
+import css from './styles.module.sass'
+
 
 interface Props {
   className?: string
-  id: string
+  heroId: string
+  stars: number
+  bars: number
+  cards: number
+  distributionCards: number
+  rank: Ranks
   element: ElementsType
   name: string
   maxBars: number
   maxStars: number
-  stars: number
-  bars: number
-  cards: number
-  rank: Ranks
 
-  onAddStar: (heroId: string, rank: Ranks) => void
-  onAddBar: (heroId: string, rank: Ranks) => void
-  onRemoveStar: (heroId: string, rank: Ranks) => void
-  onRemoveBar: (heroId: string, rank: Ranks) => void
-  onSetCards: (cards: number, heroId: string, rank: Ranks) => void
+  onAddStar: ReturnType<typeof useHeroes>['onAddStar']
+  onAddBar: ReturnType<typeof useHeroes>['onAddBar']
+  onRemoveStar: ReturnType<typeof useHeroes>['onRemoveStar']
+  onRemoveBar: ReturnType<typeof useHeroes>['onRemoveBar']
+  onSetCards: ReturnType<typeof useHeroes>['onSetCards']
 }
 
 const HeroCard: FC<Props> = memo(
   ({
     className,
-    id,
+    heroId,
+    stars,
+    bars,
+    cards,
+    distributionCards,
+    rank,
     element,
     name,
     maxBars,
     maxStars,
-    stars,
-    bars,
-    cards,
-    rank,
     onSetCards,
     onAddStar,
     onAddBar,
@@ -45,33 +49,33 @@ const HeroCard: FC<Props> = memo(
     onRemoveStar,
   }) => {
     const handleAddStarClick = useCallback(() => {
-      onAddStar(id, rank)
-    }, [onAddStar, id, rank])
+      onAddStar(heroId, rank, stars, bars, cards, distributionCards)
+    }, [onAddStar, heroId, rank, stars, bars, cards, distributionCards])
 
     const handleAddBarClick = useCallback(() => {
-      onAddBar(id, rank)
-    }, [onAddBar, id, rank])
+      onAddBar(heroId, rank, stars, bars, cards, distributionCards)
+    }, [onAddBar, heroId, rank, stars, bars, cards, distributionCards])
 
     const handleRemoveStarClick = useCallback(() => {
-      onRemoveStar(id, rank)
-    }, [onRemoveStar, id, rank])
+      onRemoveStar(heroId, rank, stars, bars, cards, distributionCards)
+    }, [onRemoveStar, heroId, rank, stars, bars, cards, distributionCards])
 
     const handleRemoveBarClick = useCallback(() => {
-      onRemoveBar(id, rank)
-    }, [onRemoveBar, id, rank])
+      onRemoveBar(heroId, rank, stars, bars, cards, distributionCards)
+    }, [onRemoveBar, heroId, rank, stars, bars, cards, distributionCards])
 
     const handleSetCards = useCallback(
       (value: string | number) => {
-        onSetCards(Number(value), id, rank)
+        onSetCards(heroId, stars, bars, Number(value), distributionCards)
       },
-      [onSetCards, id, rank],
+      [onSetCards, heroId, stars, bars, cards, distributionCards],
     )
 
     return (
       <Paper shadow="sm" p="md" withBorder>
         <Flex className={className} align="center" gap={20}>
           <Flex direction="column" align="center" w={110}>
-            <HeroIcon heroId={id} element={element} />
+            <HeroIcon heroId={heroId} element={element} />
             <Text size="sm" ta="center">
               {name}
             </Text>

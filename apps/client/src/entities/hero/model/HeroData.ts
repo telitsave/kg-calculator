@@ -6,14 +6,12 @@ export default class HeroData {
   rank: Ranks
   stars: number = 0
   bars: number = 0
-  cards: number = 0
 
-  constructor(id: string, rank: Ranks, stars: number = 0, bars: number = 0, cards: number = 0) {
+  constructor(id: string, rank: Ranks, stars = 0, bars = 0) {
     this.id = id
     this.rank = rank
     this.stars = stars
     this.bars = bars
-    this.cards = cards
   }
 
   addStar() {
@@ -53,19 +51,6 @@ export default class HeroData {
       this.stars -= 1
     } else {
       this.bars -= 1
-    }
-  }
-
-  setCards(value: number) {
-    this.cards = Math.max(value, 0)
-  }
-
-  getData() {
-    return {
-      id: this.id,
-      stars: this.stars,
-      bars: this.bars,
-      cards: this.cards,
     }
   }
 }

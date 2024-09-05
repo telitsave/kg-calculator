@@ -1,18 +1,23 @@
-import type { SettingsData } from 'kg-calculator-typings'
-import usePriorityElementSetting from './usePriorityElementSetting'
-import useSetting from './useSetting'
+import { useCallback } from 'react'
+import { useQuery } from '@tanstack/react-query'
+import type { Settings } from 'kg-calculator-typings'
+import api from 'shared/api'
+import SettingsQueue from '../SettingsQueue'
 
 
-const useSettings = (): SettingsData => {
+const useSettings = () => {
+  const { data: settings = {} } = useQuery({
+    queryKey: ['settings'],
+    queryFn: api.settings.getSettings,
+  })
+
+  const saveSetting = useCallback((setting: keyof Settings, value: string | boolean) => {
+    SettingsQueue.setSetting(setting, value)
+  }, [])
+
   return {
-    canUseCastleBoxes: useSetting('canUseCastleBoxes')[0],
-    canConvertBarracksBooksToTalents: useSetting('canConvertBarracksBooksToTalents')[0],
-    canConvertCastleResources: useSetting('canConvertCastleResources')[0],
-    canUseDragonBoxes: useSetting('canUseDragonBoxes')[0],
-    canUseRandomBarracksBooks: useSetting('canUseRandomBarracksBooks')[0],
-    canUseTalentsToNonPriorityElements: useSetting('canUseTalentsToNonPriorityElements')[0],
-    useAdvancedHeroMode: useSetting('useAdvancedHeroMode')[0],
-    priorityElement: usePriorityElementSetting()[0],
+    settings,
+    saveSetting,
   }
 }
 

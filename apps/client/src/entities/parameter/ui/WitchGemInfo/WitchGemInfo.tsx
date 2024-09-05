@@ -2,13 +2,13 @@ import { FC, memo } from 'react'
 import { Text } from '@mantine/core'
 import { WitchGemsIcon } from 'shared/assets/icons'
 import Flexbox from 'shared/ui/Flexbox'
-import { Ranks } from '../../model/types'
 import css from './styles.module.sass'
+
 
 interface Props {
   className?: string
-  rank: Ranks
-  gem: number
+  rank: number
+  gem: string
   value: number
   oldValue?: number
 }

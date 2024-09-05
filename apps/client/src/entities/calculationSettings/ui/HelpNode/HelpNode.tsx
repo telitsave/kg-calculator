@@ -1,10 +1,11 @@
 import { FC, memo } from 'react'
 import { Text } from '@mantine/core'
+import type { Settings } from 'kg-calculator-typings'
 import Flexbox from 'shared/ui/Flexbox'
-import { SettingsTypes } from '../../model/types'
+
 
 interface Props {
-  settingsType: SettingsTypes
+  settingsType: keyof Settings
 }
 
 const HelpNode: FC<Props> = memo(({ settingsType }) => {

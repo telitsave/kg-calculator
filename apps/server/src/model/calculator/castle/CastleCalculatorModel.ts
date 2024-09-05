@@ -1,9 +1,10 @@
-import CastleResources from '../../resources/CastleResources'
-import castleInfo from './castleInfo.json'
-import Resources from '../../resources/Resources'
 import Parameters from '../../parameters/Parameters'
+import CastleResources from '../../resources/CastleResources'
+import Resources from '../../resources/Resources'
 import Settings from '../../settings/Settings'
+import castleInfo from './castleInfo.json'
 import type { CalculateGoalCastleResponse, CalculatePossibleCastleResponse } from 'kg-calculator-typings'
+
 
 const MAX_CASTLE_LEVEL = castleInfo.length - 1
 
@@ -55,14 +56,14 @@ export default class CastleCalculatorModel {
     }
 
     return {
-      oldParameters: this._sourceParameters.getData(),
-      parameters: this._parameters.getData(),
-      sourceResources: this._sourceResources,
-      leftResources: this._leftResources,
-      spentResources: this._spentResources,
-      convertedSource: this._convertedSource,
-      convertedTarget: this._convertedTarget,
-      spentBoxesResources: this._spentBoxesResources,
+      oldParameters: this._sourceParameters.getData().params,
+      parameters: this._parameters.getData().params,
+      sourceResources: this._sourceResources.getData(),
+      leftResources: this._leftResources.getData(),
+      spentResources: this._spentResources.getData(),
+      convertedSource: this._convertedSource.getData(),
+      convertedTarget: this._convertedTarget.getData(),
+      spentBoxesResources: this._spentBoxesResources.getData(),
     }
   }
 
@@ -106,6 +107,13 @@ export default class CastleCalculatorModel {
     neededResources.castle.substract(this._sourceResources.castle)
     neededResources.gold -= this._sourceResources.gold
 
-    return { requiredResources, neededResources, parameters: this._parameters.getData(), goalLevel }
+    if (neededResources.gold < 0) neededResources.gold = 0
+
+    return {
+      requiredResources: requiredResources.getData(),
+      neededResources: neededResources.getData(),
+      parameters: this._parameters.getData().params,
+      goalLevel,
+    }
   }
 }

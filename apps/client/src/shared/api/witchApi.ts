@@ -1,7 +1,4 @@
-import type { CalculateWitchPayload, CalculateWitchResponse } from 'kg-calculator-typings'
+import type { CalculateWitchResponse } from 'kg-calculator-typings'
 import AxiosService from '../services/axiosService'
 
-export const calculateWitch = (payload: CalculateWitchPayload) =>
-  AxiosService.post<CalculateWitchResponse>('/calculator/witch', {
-    data: payload,
-  })
+export const calculateWitch = () => AxiosService.post<CalculateWitchResponse>('/calculator/witch')

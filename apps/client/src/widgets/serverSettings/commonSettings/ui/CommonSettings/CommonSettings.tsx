@@ -2,6 +2,7 @@ import { FC, memo } from 'react'
 import { Fieldset, Stack } from '@mantine/core'
 import { ServerSettingInput } from 'entities/serverSettings'
 
+
 interface Props {
   className?: string
 }
@@ -13,10 +14,10 @@ const CommonSettings: FC<Props> = memo(({ className }) => (
     <ServerSettingInput settingKey="witchGemsMaxRank" minValue={1} maxValue={10} />
 
     <Fieldset legend="Курс обмена книг бойцов казармы на книги талантов в магазине обмена">
-      <ServerSettingInput settingKey="talentBooksConversionRate_rank1" minValue={1} />
-      <ServerSettingInput settingKey="talentBooksConversionRate_rank2" minValue={1} />
-      <ServerSettingInput settingKey="talentBooksConversionRate_rank3" minValue={1} />
-      <ServerSettingInput settingKey="talentBooksConversionRate_rank4" minValue={1} />
+      <ServerSettingInput settingKey="talentBooks_rank1" minValue={1} />
+      <ServerSettingInput settingKey="talentBooks_rank2" minValue={1} />
+      <ServerSettingInput settingKey="talentBooks_rank3" minValue={1} />
+      <ServerSettingInput settingKey="talentBooks_rank4" minValue={1} />
     </Fieldset>
   </Stack>
 ))

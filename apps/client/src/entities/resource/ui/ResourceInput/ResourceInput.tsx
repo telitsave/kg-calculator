@@ -1,11 +1,12 @@
 import { FC, memo, useCallback } from 'react'
 import cx from 'classnames'
 import { NumberInput } from '@mantine/core'
+import type { ResourceType } from 'kg-calculator-typings'
 import Flexbox from 'shared/ui/Flexbox'
 import useResource from '../../model/hooks/useResource'
-import { ResourceType } from '../../model/types'
 import ResourceIcon from '../ResourceIcon'
 import css from './styles.module.sass'
+
 
 interface Props {
   className?: string
@@ -15,7 +16,7 @@ interface Props {
 }
 
 const ResourceInput: FC<Props> = memo(({ className, resourceType, viewMode = 'default', disabled = false }) => {
-  const [value, setValue] = useResource(resourceType)
+  const [value = 0, setValue] = useResource(resourceType)
 
   const handleNumberInputChange = useCallback(
     (value: string | number) => {
@@ -35,6 +36,10 @@ const ResourceInput: FC<Props> = memo(({ className, resourceType, viewMode = 'de
           onChange={handleNumberInputChange}
           thousandSeparator=" "
           disabled={disabled}
+          allowLeadingZeros={false}
+          allowDecimal={false}
+          allowNegative={false}
+          trimLeadingZeroesOnBlur
         />
       </Flexbox>
     )
@@ -50,6 +55,10 @@ const ResourceInput: FC<Props> = memo(({ className, resourceType, viewMode = 'de
       value={value}
       onChange={handleNumberInputChange}
       thousandSeparator=" "
+      allowLeadingZeros={false}
+      allowDecimal={false}
+      allowNegative={false}
+      trimLeadingZeroesOnBlur
     />
   )
 })

@@ -22,8 +22,8 @@ export default class BlacksmithCalculatorModel {
     while (this.tryCalculateBlacksmith()) {}
 
     return {
-      sourceParameters: this._sourceParameters.getData(),
-      parameters: this._parameters.getData(),
+      sourceParameters: this._sourceParameters.getData().params,
+      parameters: this._parameters.getData().params,
       sourceResources: this._sourceResources.getData(),
       spentResources: this._spentResources.getData(),
       leftResources: this._leftResources.getData(),

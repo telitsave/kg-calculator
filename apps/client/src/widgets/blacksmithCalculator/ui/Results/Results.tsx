@@ -1,67 +1,65 @@
-import { FC, ReactNode, memo } from 'react'
-import { Divider, Title } from '@mantine/core'
-import type { BlacksmithParameters, BlacksmithResources } from 'kg-calculator-typings/api/Blacksmith'
+import { FC, memo } from 'react'
+import { Divider, Flex, Title } from '@mantine/core'
+import type {
+  CalculateBlacksmithResponse,
+  CalculateMightiestKingdomResponse,
+  CalculateUltimatePowerResponse,
+} from 'kg-calculator-typings'
+import { MightiestKingdomStatistics } from 'entities/mightiestKingdom'
 import { ParameterInfo } from 'entities/parameter'
 import { ResourceCount } from 'entities/resource'
-import Flexbox from 'shared/ui/Flexbox'
+import { UltimatePowerStatistics } from 'entities/ultimatePower'
+
 
 interface Props {
   className?: string
-  sourceResources: BlacksmithResources
-  spentResources: BlacksmithResources
-  leftResources: BlacksmithResources
-  sourceParameters: BlacksmithParameters
-  parameters: BlacksmithParameters
-  extremePowerNode: ReactNode
-  mightiestKingdomNode: ReactNode
+  data: CalculateBlacksmithResponse
+  ultimatePowerData?: CalculateUltimatePowerResponse
+  mkData?: CalculateMightiestKingdomResponse
 }
 
 const Results: FC<Props> = memo(
   ({
     className,
-    sourceResources,
-    spentResources,
-    leftResources,
-    sourceParameters,
-    parameters,
-    extremePowerNode,
-    mightiestKingdomNode,
+    data: { sourceResources, spentResources, leftResources, sourceParameters, parameters },
+    ultimatePowerData,
+    mkData,
   }) => (
-    <Flexbox className={className} flexDirection="column" gap={16}>
-      <Flexbox flexDirection="column" gap={8}>
+    <Flex className={className} direction="column" gap={16}>
+      <Flex direction="column" gap={8}>
         <Title order={4}>Результаты</Title>
 
-        <Flexbox flexDirection="column" gap={8}>
+        <Flex direction="column" gap={8}>
           <ParameterInfo
-            parameterType="blacksmithLevel"
-            value={parameters.level}
-            oldValue={sourceParameters.level}
+            parameterType="blacksmithParams_level"
+            value={parameters.blacksmithParams_level || 0}
+            oldValue={sourceParameters.blacksmithParams_level}
             viewMode="bigIcon"
           />
-        </Flexbox>
+        </Flex>
 
         <Divider size="xs" />
 
         <Title order={5}>Потраченные ресурсы</Title>
 
-        <Flexbox flexDirection="column" gap={8}>
+        <Flex direction="column" gap={8}>
           <ResourceCount
-            resourceType="hummer"
-            sourceCount={sourceResources.hammers}
-            count={spentResources.hammers}
-            leftCount={leftResources.hammers}
+            resourceType="blacksmithResources_hammers"
+            sourceCount={sourceResources.blacksmithResources_hammers}
+            count={spentResources.blacksmithResources_hammers}
+            leftCount={leftResources.blacksmithResources_hammers}
           />
-        </Flexbox>
-      </Flexbox>
+        </Flex>
+      </Flex>
 
       <Divider />
 
-      {mightiestKingdomNode}
+      <MightiestKingdomStatistics data={mkData} />
 
       <Divider />
 
-      {extremePowerNode}
-    </Flexbox>
+      <UltimatePowerStatistics data={ultimatePowerData} />
+    </Flex>
   ),
 )
 

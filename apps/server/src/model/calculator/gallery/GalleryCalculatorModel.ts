@@ -22,11 +22,11 @@ export default class GalleryCalculatorModel {
     while (this.tryCalculateGallery()) {}
 
     return {
-      sourceParameters: this._sourceParameters.getData(),
-      parameters: this._parameters.getData(),
-      sourceResources: this._sourceResources,
-      spentResources: this._spentResources,
-      leftResources: this._leftResources,
+      sourceParameters: this._sourceParameters.getData().params,
+      parameters: this._parameters.getData().params,
+      sourceResources: this._sourceResources.getData(),
+      spentResources: this._spentResources.getData(),
+      leftResources: this._leftResources.getData(),
     }
   }
 

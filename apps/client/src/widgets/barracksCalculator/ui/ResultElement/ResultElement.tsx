@@ -1,22 +1,25 @@
 import { FC, memo } from 'react'
 import { Divider, Title } from '@mantine/core'
-import type { BarracksBooksResources, ElementsType, ParametersData, ResourcesData } from 'kg-calculator-typings'
+import type { ElementsType, Parameters, Resources } from 'kg-calculator-typings'
 import { BarracksElementalInfo, BarracksTalentsInfo } from 'entities/parameter'
 import { KeysHelper, ResourceCount, ResourcesConverts } from 'entities/resource'
 import { useServerSettings } from 'entities/serverSettings'
 import Flexbox from 'shared/ui/Flexbox'
 import css from './styles.module.sass'
 
+
 interface Props {
   className?: string
   element: ElementsType
-  oldParams: ParametersData
-  params: ParametersData
-  spentResources: ResourcesData
-  randomBooksUsed: BarracksBooksResources
-  convertBooksForBarracks: BarracksBooksResources
-  convertTalentBooks: BarracksBooksResources
-  spentTalentBooks: BarracksBooksResources
+  oldParams: Parameters
+  params: Parameters
+  oldTalentParams: Record<string, number>
+  talentParams: Record<string, number>
+  spentResources: Resources
+  randomBooksUsed: Resources
+  convertBooksForBarracks: Resources
+  convertTalentBooks: Resources
+  spentTalentBooks: Resources
 }
 
 const ResultElement: FC<Props> = memo(
@@ -24,6 +27,8 @@ const ResultElement: FC<Props> = memo(
     element,
     oldParams,
     params,
+    oldTalentParams,
+    talentParams,
     spentResources,
     randomBooksUsed,
     convertBooksForBarracks,
@@ -34,119 +39,121 @@ const ResultElement: FC<Props> = memo(
 
     return (
       <Flexbox flexDirection="column" gap={16}>
-        <BarracksElementalInfo
-          element={element}
-          oldBarrackParams={oldParams.barracks}
-          barrackParams={params.barracks}
-        />
+        <BarracksElementalInfo element={element} oldParams={oldParams} newParams={params} />
         <Divider size="sm" />
         <Title order={5}>Параметры талантов</Title>
         <BarracksTalentsInfo
           element={element}
-          oldParameters={oldParams.talents}
-          parameters={params.talents}
+          oldTalentParams={oldTalentParams}
+          newTalentParams={talentParams}
           maxRank={serverSettings?.talentsMaxRank || 1}
         />
         <Divider size="sm" />
         <Title order={5}>Конвертации ресурсов</Title>
         <Flexbox className={css.converts} flexDirection="column" gap={4}>
-          {randomBooksUsed[element].rank1 > 0 && (
+          {(randomBooksUsed[KeysHelper.getBaracksKey(element, 1)] || 0) > 0 && (
             <ResourcesConverts
-              sourceResourceType="bookRandom"
-              targetResourceType={KeysHelper.getBarracksBookResourceTypeByElementRank(element, 1)}
-              sourceValue={randomBooksUsed[element].rank1}
-              targetValue={randomBooksUsed[element].rank1}
+              sourceResourceType="barracksResources_random"
+              targetResourceType={KeysHelper.getBaracksKey(element, 1)}
+              sourceValue={randomBooksUsed[KeysHelper.getBaracksKey(element, 1)]}
+              targetValue={randomBooksUsed[KeysHelper.getBaracksKey(element, 1)]}
             />
           )}
-          {convertBooksForBarracks[element].rank1 > 0 && (
+          {(convertBooksForBarracks[KeysHelper.getBaracksKey(element, 1)] || 0) > 0 && (
             <ResourcesConverts
-              sourceResourceType={KeysHelper.getBarracksBookResourceTypeByElementRank(element, 1)}
-              targetResourceType={KeysHelper.getBarracksBookResourceTypeByElementRank(element, 2)}
-              sourceValue={convertBooksForBarracks[element].rank1}
-              targetValue={convertBooksForBarracks[element].rank1 / 5}
+              sourceResourceType={KeysHelper.getBaracksKey(element, 1)}
+              targetResourceType={KeysHelper.getBaracksKey(element, 2)}
+              sourceValue={convertBooksForBarracks[KeysHelper.getBaracksKey(element, 1)]}
+              targetValue={(convertBooksForBarracks[KeysHelper.getBaracksKey(element, 1)] || 0) / 5}
             />
           )}
-          {convertBooksForBarracks[element].rank2 > 0 && (
+          {(convertBooksForBarracks[KeysHelper.getBaracksKey(element, 2)] || 0) > 0 && (
             <ResourcesConverts
-              sourceResourceType={KeysHelper.getBarracksBookResourceTypeByElementRank(element, 2)}
-              targetResourceType={KeysHelper.getBarracksBookResourceTypeByElementRank(element, 3)}
-              sourceValue={convertBooksForBarracks[element].rank2}
-              targetValue={convertBooksForBarracks[element].rank2 / 5}
+              sourceResourceType={KeysHelper.getBaracksKey(element, 2)}
+              targetResourceType={KeysHelper.getBaracksKey(element, 3)}
+              sourceValue={convertBooksForBarracks[KeysHelper.getBaracksKey(element, 2)]}
+              targetValue={(convertBooksForBarracks[KeysHelper.getBaracksKey(element, 2)] || 0) / 5}
             />
           )}
-          {convertBooksForBarracks[element].rank3 > 0 && (
+          {(convertBooksForBarracks[KeysHelper.getBaracksKey(element, 3)] || 0) > 0 && (
             <ResourcesConverts
-              sourceResourceType={KeysHelper.getBarracksBookResourceTypeByElementRank(element, 3)}
-              targetResourceType={KeysHelper.getBarracksBookResourceTypeByElementRank(element, 4)}
-              sourceValue={convertBooksForBarracks[element].rank3}
-              targetValue={convertBooksForBarracks[element].rank3 / 5}
+              sourceResourceType={KeysHelper.getBaracksKey(element, 3)}
+              targetResourceType={KeysHelper.getBaracksKey(element, 4)}
+              sourceValue={convertBooksForBarracks[KeysHelper.getBaracksKey(element, 3)]}
+              targetValue={(convertBooksForBarracks[KeysHelper.getBaracksKey(element, 3)] || 0) / 5}
             />
           )}
-          {convertTalentBooks[element].rank1 > 0 && (
+          {(convertTalentBooks[KeysHelper.getBaracksKey(element, 1)] || 0) > 0 && (
             <ResourcesConverts
-              sourceResourceType={KeysHelper.getBarracksBookResourceTypeByElementRank(element, 1)}
-              targetResourceType="talentBook"
-              sourceValue={convertTalentBooks[element].rank1}
-              targetValue={convertTalentBooks[element].rank1 * 3}
+              sourceResourceType={KeysHelper.getBaracksKey(element, 1)}
+              targetResourceType="talentsResources_books"
+              sourceValue={convertTalentBooks[KeysHelper.getBaracksKey(element, 1)]}
+              targetValue={(convertTalentBooks[KeysHelper.getBaracksKey(element, 1)] || 0) * 3}
             />
           )}
-          {convertTalentBooks[element].rank2 > 0 && (
+          {(convertTalentBooks[KeysHelper.getBaracksKey(element, 2)] || 0) > 0 && (
             <ResourcesConverts
-              sourceResourceType={KeysHelper.getBarracksBookResourceTypeByElementRank(element, 2)}
-              targetResourceType="talentBook"
-              sourceValue={convertTalentBooks[element].rank2}
-              targetValue={convertTalentBooks[element].rank2 * 15}
+              sourceResourceType={KeysHelper.getBaracksKey(element, 2)}
+              targetResourceType="talentsResources_books"
+              sourceValue={convertTalentBooks[KeysHelper.getBaracksKey(element, 2)]}
+              targetValue={(convertTalentBooks[KeysHelper.getBaracksKey(element, 2)] || 0) * 15}
             />
           )}
-          {convertTalentBooks[element].rank3 > 0 && (
+          {(convertTalentBooks[KeysHelper.getBaracksKey(element, 3)] || 0) > 0 && (
             <ResourcesConverts
-              sourceResourceType={KeysHelper.getBarracksBookResourceTypeByElementRank(element, 3)}
-              targetResourceType="talentBook"
-              sourceValue={convertTalentBooks[element].rank3}
-              targetValue={convertTalentBooks[element].rank3 * 72}
+              sourceResourceType={KeysHelper.getBaracksKey(element, 3)}
+              targetResourceType="talentsResources_books"
+              sourceValue={convertTalentBooks[KeysHelper.getBaracksKey(element, 3)]}
+              targetValue={(convertTalentBooks[KeysHelper.getBaracksKey(element, 3)] || 0) * 72}
             />
           )}
-          {convertTalentBooks[element].rank4 > 0 && (
+          {(convertTalentBooks[KeysHelper.getBaracksKey(element, 4)] || 0) > 0 && (
             <ResourcesConverts
-              sourceResourceType={KeysHelper.getBarracksBookResourceTypeByElementRank(element, 4)}
-              targetResourceType="talentBook"
-              sourceValue={convertTalentBooks[element].rank4}
-              targetValue={convertTalentBooks[element].rank4 * 358}
+              sourceResourceType={KeysHelper.getBaracksKey(element, 4)}
+              targetResourceType="talentsResources_books"
+              sourceValue={convertTalentBooks[KeysHelper.getBaracksKey(element, 4)]}
+              targetValue={(convertTalentBooks[KeysHelper.getBaracksKey(element, 4)] || 0) * 358}
             />
           )}
         </Flexbox>
         <Divider size="sm" />
         <Title order={5}>Потрачено ресурсов</Title>
         <Flexbox gap={16} flexWrap="wrap">
-          {spentResources.barracksBooks[element].rank1 > 0 && (
+          {(spentResources[KeysHelper.getBaracksKey(element, 1)] || 0) > 0 && (
             <ResourceCount
-              resourceType={KeysHelper.getBarracksBookResourceTypeByElementRank(element, 1)}
-              count={spentResources.barracksBooks[element].rank1}
+              resourceType={KeysHelper.getBaracksKey(element, 1)}
+              count={spentResources[KeysHelper.getBaracksKey(element, 1)]}
             />
           )}
-          {spentResources.barracksBooks[element].rank2 > 0 && (
+          {(spentResources[KeysHelper.getBaracksKey(element, 2)] || 0) > 0 && (
             <ResourceCount
-              resourceType={KeysHelper.getBarracksBookResourceTypeByElementRank(element, 2)}
-              count={spentResources.barracksBooks[element].rank2}
+              resourceType={KeysHelper.getBaracksKey(element, 2)}
+              count={spentResources[KeysHelper.getBaracksKey(element, 2)]}
             />
           )}
-          {spentResources.barracksBooks[element].rank3 > 0 && (
+          {(spentResources[KeysHelper.getBaracksKey(element, 3)] || 0) > 0 && (
             <ResourceCount
-              resourceType={KeysHelper.getBarracksBookResourceTypeByElementRank(element, 3)}
-              count={spentResources.barracksBooks[element].rank3}
+              resourceType={KeysHelper.getBaracksKey(element, 3)}
+              count={spentResources[KeysHelper.getBaracksKey(element, 3)]}
             />
           )}
-          {spentResources.barracksBooks[element].rank4 > 0 && (
+          {(spentResources[KeysHelper.getBaracksKey(element, 4)] || 0) > 0 && (
             <ResourceCount
-              resourceType={KeysHelper.getBarracksBookResourceTypeByElementRank(element, 4)}
-              count={spentResources.barracksBooks[element].rank4}
+              resourceType={KeysHelper.getBaracksKey(element, 4)}
+              count={spentResources[KeysHelper.getBaracksKey(element, 4)]}
             />
           )}
-          {spentTalentBooks[element].rank1 > 0 && (
-            <ResourceCount resourceType="talentBook" count={spentTalentBooks[element].rank1} />
+          {(spentTalentBooks[KeysHelper.getBaracksKey(element, 1)] || 0) > 0 && (
+            <ResourceCount
+              resourceType="talentsResources_books"
+              count={spentTalentBooks[KeysHelper.getBaracksKey(element, 1)]}
+            />
           )}
-          {spentTalentBooks[element].rank2 > 0 && (
-            <ResourceCount resourceType="talentCrown" count={spentTalentBooks[element].rank2} />
+          {(spentTalentBooks[KeysHelper.getBaracksKey(element, 2)] || 0) > 0 && (
+            <ResourceCount
+              resourceType="talentsResources_oraclesCrowns"
+              count={spentTalentBooks[KeysHelper.getBaracksKey(element, 2)]}
+            />
           )}
         </Flexbox>
       </Flexbox>

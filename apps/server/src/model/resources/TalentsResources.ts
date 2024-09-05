@@ -1,5 +1,5 @@
 import { BaseResources } from './BaseResources'
-import type { ResourcesData } from 'kg-calculator-typings'
+import type { Resources, ResourcesData } from 'kg-calculator-typings'
 
 
 export default class TalentsResources implements BaseResources<TalentsResources> {
@@ -11,11 +11,13 @@ export default class TalentsResources implements BaseResources<TalentsResources>
     this.oraclesCrowns = initData?.oraclesCrowns || 0
   }
 
-  static transformDataFromDB(items: { itemId: string; count: number }[]): TalentsResources {
+  static transformDataFromDB(items: Resources): TalentsResources {
     const resources = new TalentsResources()
-    items.forEach((item) => {
-      const [, resource] = item.itemId.split('_')
-      resources[resource] = item.count
+    Object.entries(items).forEach(([key, value]) => {
+      const [resourceType, param] = key.split('_')
+      if (resourceType !== 'talentsResources') return
+
+      resources[param] = value
     })
 
     return resources
@@ -38,10 +40,10 @@ export default class TalentsResources implements BaseResources<TalentsResources>
     if (this.oraclesCrowns < 0) this.oraclesCrowns = 0
   }
 
-  getDataForDB() {
-    return [
-      { itemId: 'talentsResources_books', count: this.books },
-      { itemId: 'talentsResources_oraclesCrowns', count: this.oraclesCrowns },
-    ]
+  getData(): Resources {
+    return {
+      talentsResources_books: this.books,
+      talentsResources_oraclesCrowns: this.oraclesCrowns,
+    }
   }
 }

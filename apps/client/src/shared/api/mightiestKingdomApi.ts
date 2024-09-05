@@ -1,8 +1,4 @@
-import type {
-  CalculateMightiestKingdomPayload,
-  CalculateMightiestKingdomResponse,
-  CalculateTotalMightiestKingdomPayload,
-} from 'kg-calculator-typings'
+import type { CalculateMightiestKingdomPayload, CalculateMightiestKingdomResponse } from 'kg-calculator-typings'
 import AxiosService from '../services/axiosService'
 
 export const calculateMightiestKingdom = (payload: CalculateMightiestKingdomPayload) => {
@@ -11,8 +7,6 @@ export const calculateMightiestKingdom = (payload: CalculateMightiestKingdomPayl
   })
 }
 
-export const calculateTotalMightiestKingdom = (payload: CalculateTotalMightiestKingdomPayload) => {
-  return AxiosService.post<CalculateMightiestKingdomResponse>('/calculator/mightiestKingdom/total', {
-    data: payload,
-  })
+export const calculateTotalMightiestKingdom = () => {
+  return AxiosService.post<CalculateMightiestKingdomResponse>('/calculator/mightiestKingdom/total')
 }

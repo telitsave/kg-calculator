@@ -1,4 +1,3 @@
-export { default as MightiestKingdomTotal } from './ui/MightiestKingdomTotal'
-export { default as MightiestKingdomElement } from './ui/MightiestKingdomElement'
-export { default as MightiestKingdomModule } from './ui/MightiestKingdomModule'
-export { default as NamesHelper } from './helpers/namesHelper'
+export { default as MightiestKingdomStatistics } from './ui/MightiestKingdomStatistics'
+export { default as useCalculateTotalMightiestKingdom } from './model/hooks/useCalculateTotalMightiestKingdom'
+export { default as useCalculateMightiestKingdom } from './model/hooks/useCalculateMightiestKingdom'

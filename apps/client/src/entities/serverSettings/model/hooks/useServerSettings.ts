@@ -1,47 +1,23 @@
-import { useEffect, useMemo } from 'react'
-import { useLocalStorage } from '@mantine/hooks'
+import { useCallback } from 'react'
+import { useQuery } from '@tanstack/react-query'
 import type { CustomServerSettingsData } from 'kg-calculator-typings'
-import useGetServerSettings from './useGetServerSettings'
+import api from 'shared/api'
+import ServerSettingsQueue from '../ServerSettingsQueue'
 
 
 const useServerSettings = () => {
-  const [customServerSettings, setCustomServerSettings] = useLocalStorage<CustomServerSettingsData>({
-    key: 'customServerSettings',
-    defaultValue: {},
-    getInitialValueInEffect: false,
-    serialize: (value) => JSON.stringify(value),
-    deserialize: (value) => JSON.parse(value || '{}'),
+  const { data: serverSettings = {} } = useQuery({
+    queryKey: ['serverSettings'],
+    queryFn: api.serverSettings.getServerSettings,
   })
 
-  const [enabledCustomServerSettings, setEnabledCustomServerSettings] = useLocalStorage<boolean>({
-    key: 'enabledCustomServerSettings',
-    defaultValue: false,
-    getInitialValueInEffect: false,
-    serialize: (value) => JSON.stringify(value),
-    deserialize: (value) => JSON.parse(value || 'false'),
-  })
-
-  const serverSettings = useGetServerSettings()
-
-  useEffect(() => {
-    if (serverSettings.data) {
-      setCustomServerSettings((val) => ({
-        ...serverSettings.data,
-        ...val,
-      }))
-    }
-  }, [serverSettings.data])
+  const saveServerSetting = useCallback((setting: keyof CustomServerSettingsData, value: number) => {
+    ServerSettingsQueue.setServerSetting(setting, value)
+  }, [])
 
   return {
-    // TODO: вынести в отдельную константу
-    serverSettings: useMemo(
-      () => (enabledCustomServerSettings ? customServerSettings : serverSettings.data),
-      [enabledCustomServerSettings, customServerSettings, serverSettings.data],
-    ),
-    customServerSettings: enabledCustomServerSettings ? customServerSettings : undefined,
-    enabledCustomServerSettings,
-    setCustomServerSettings,
-    setEnabledCustomServerSettings,
+    serverSettings,
+    saveServerSetting,
   }
 }
 

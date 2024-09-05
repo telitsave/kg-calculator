@@ -4,6 +4,7 @@ import { GalleryInput } from 'entities/parameter'
 import { ResourceInput } from 'entities/resource'
 import Flexbox from 'shared/ui/Flexbox'
 
+
 interface Props {
   className?: string
 
@@ -14,7 +15,7 @@ const Inputs: FC<Props> = memo(({ className, onCalculateButtonClick }) => (
   <Flexbox className={className} flexDirection="column" gap={8}>
     <Flexbox flexDirection="column" gap={8}>
       <Title order={4}>Мои ресурсы</Title>
-      <ResourceInput resourceType="galleryShards" />
+      <ResourceInput resourceType="galleryResources_shards" />
     </Flexbox>
 
     <Divider size="xs" />

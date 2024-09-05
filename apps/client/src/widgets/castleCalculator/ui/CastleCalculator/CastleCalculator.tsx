@@ -1,11 +1,11 @@
-import { FC, ReactNode, memo, useCallback, useState } from 'react'
+import { FC, memo, useCallback, useState } from 'react'
 import cx from 'classnames'
-import type { ResourcesData } from 'kg-calculator-typings/api/ResourcesData'
-import { useSettings } from 'entities/calculationSettings'
+import { Flex } from '@mantine/core'
+import { SettingsQueue } from 'entities/calculationSettings'
 import { useCalculateGoalCastle, useCalculatePossibleCastle } from 'entities/castle'
-import { useParameters } from 'entities/parameter'
-import { useResources } from 'entities/resource'
-import Flexbox from 'shared/ui/Flexbox'
+import { ParametersQueue, useParameter } from 'entities/parameter'
+import { ResourcesQueue } from 'entities/resource'
+import { useCalculateUltimatePower } from 'entities/ultimatePower'
 import Inputs from '../Inputs'
 import ResultsPossible from '../Results'
 import ResultsGoal from '../ResultsGoal'
@@ -14,81 +14,61 @@ import css from './styles.module.sass'
 
 interface Props {
   className?: string
-  getExtremePowerNode: (resources: ResourcesData) => ReactNode
 }
 
-const CastleCalculator: FC<Props> = memo(({ className, getExtremePowerNode }) => {
+const CastleCalculator: FC<Props> = memo(({ className }) => {
   const [goalCastleLevel, setGoalCastleLevel] = useState<number | undefined>()
 
-  const resources = useResources()
-  const parameters = useParameters()
-  const settings = useSettings()
+  const [castleLevel = 0] = useParameter('castleParams_level')
   const { mutate: calculatePossibleCastle, data: possibleData } = useCalculatePossibleCastle()
 
   const {
     mutate: calculateGoalCastle,
     data: goalCastleLevelData,
-    isSuccess: isCalculatingGoalCastle,
+    isSuccess: isCalculatedGoalCastle,
     reset: resetCalculateGoalCastle,
   } = useCalculateGoalCastle()
+  const { mutate: calculateUltimatePower, data: ultimatePowerData } = useCalculateUltimatePower()
+  const { mutate: calculateUltimatePowerGoal, data: ultimatePowerDataGoal } = useCalculateUltimatePower(goalCastleLevel)
 
-  const handleCalculateButtonClick = useCallback(() => {
-    calculatePossibleCastle({
-      parameters,
-      resources,
-      settings,
-    })
+  const handleCalculateButtonClick = useCallback(async () => {
+    await ResourcesQueue.saveData()
+    await ParametersQueue.saveData()
+    await SettingsQueue.saveData()
+    calculatePossibleCastle()
 
-    const shouldCalculateGoalCastle =
-      goalCastleLevel && !isNaN(goalCastleLevel) && goalCastleLevel > parameters.castle.level
+    const shouldCalculateGoalCastle = goalCastleLevel && !isNaN(goalCastleLevel) && goalCastleLevel > castleLevel
 
     if (shouldCalculateGoalCastle) {
       calculateGoalCastle({
-        resources,
-        parameters,
-        settings,
         goalLevel: goalCastleLevel,
       })
+      calculateUltimatePowerGoal(['castle'])
     } else {
       resetCalculateGoalCastle()
     }
+    calculateUltimatePower(['castle'])
   }, [
     calculateGoalCastle,
     calculatePossibleCastle,
+    calculateUltimatePower,
     goalCastleLevel,
-    parameters,
+    castleLevel,
     resetCalculateGoalCastle,
-    resources,
-    settings,
   ])
 
   return (
-    <Flexbox className={cx(css.root, className)} gap={24} flexDirection="column">
+    <Flex className={cx(css.root, className)} gap={24} direction="column">
       <Inputs
         goalCastleLevel={goalCastleLevel}
         setGoalCastleLevel={setGoalCastleLevel}
         onCalculateButtonClick={handleCalculateButtonClick}
       />
-      {possibleData && (
-        <ResultsPossible
-          oldParameters={possibleData.oldParameters}
-          parameters={possibleData.parameters}
-          sourceResources={possibleData.sourceResources}
-          spentResources={possibleData.spentResources}
-          leftResources={possibleData.leftResources}
-          convertedSource={possibleData.convertedSource}
-          convertedTarget={possibleData.convertedTarget}
-          spentBoxes={possibleData.spentBoxesResources}
-          extremePowerPossibleNode={getExtremePowerNode(possibleData.spentResources)}
-        />
+      {possibleData && <ResultsPossible data={possibleData} ultimatePowerData={ultimatePowerData} />}
+      {isCalculatedGoalCastle && goalCastleLevelData && (
+        <ResultsGoal data={goalCastleLevelData} ultimatePowerData={ultimatePowerDataGoal} />
       )}
-      {isCalculatingGoalCastle && (
-        <ResultsGoal
-          goalCastleLevelData={goalCastleLevelData}
-          extremePowerGoalNode={goalCastleLevelData && getExtremePowerNode(goalCastleLevelData.requiredResources)}
-        />
-      )}
-    </Flexbox>
+    </Flex>
   )
 })
 

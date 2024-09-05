@@ -1,63 +1,60 @@
-import { FC, ReactNode, memo } from 'react'
-import { Divider, Title } from '@mantine/core'
-import type { GalleryParameters } from 'kg-calculator-typings/api/Gallery'
-import type { ResourcesData } from 'kg-calculator-typings/api/ResourcesData'
+import { FC, memo } from 'react'
+import { Divider, Flex, Title } from '@mantine/core'
+import type {
+  CalculateGalleryResponse,
+  CalculateMightiestKingdomResponse,
+  CalculateUltimatePowerResponse,
+} from 'kg-calculator-typings'
+import { MightiestKingdomStatistics } from 'entities/mightiestKingdom'
 import { GalleryInfo } from 'entities/parameter'
 import { ResourceCount } from 'entities/resource'
-import Flexbox from 'shared/ui/Flexbox'
+import { UltimatePowerStatistics } from 'entities/ultimatePower'
+
 
 interface Props {
   className?: string
-  sourceResources: ResourcesData
-  spentResources: ResourcesData
-  leftResources: ResourcesData
-  sourceParameters: GalleryParameters
-  parameters: GalleryParameters
-  extremePowerNode: ReactNode
-  mightiestKingdomNode: ReactNode
+  data: CalculateGalleryResponse
+  ultimatePowerData?: CalculateUltimatePowerResponse
+  mightiestKingdomData?: CalculateMightiestKingdomResponse
 }
 
 const Results: FC<Props> = memo(
   ({
     className,
-    sourceResources,
-    spentResources,
-    leftResources,
-    sourceParameters,
-    parameters,
-    extremePowerNode,
-    mightiestKingdomNode,
+    data: { sourceResources, spentResources, leftResources, sourceParameters, parameters },
+    ultimatePowerData,
+    mightiestKingdomData,
   }) => (
-    <Flexbox className={className} flexDirection="column" gap={16}>
-      <Flexbox flexDirection="column" gap={8}>
+    <Flex className={className} direction="column" gap={16}>
+      <Flex direction="column" gap={8}>
         <Title order={4}>Результаты</Title>
 
-        <Flexbox flexDirection="column" gap={8}>
+        <Flex direction="column" gap={8}>
           <GalleryInfo oldParams={sourceParameters} newParams={parameters} />
-        </Flexbox>
+        </Flex>
 
         <Divider size="xs" />
 
         <Title order={5}>Потраченные ресурсы</Title>
 
-        <Flexbox flexDirection="column" gap={8}>
+        <Flex direction="column" gap={8}>
           <ResourceCount
-            resourceType="galleryShards"
-            sourceCount={sourceResources.galleryShards}
-            count={spentResources.galleryShards}
-            leftCount={leftResources.galleryShards}
+            resourceType="galleryResources_shards"
+            sourceCount={sourceResources.galleryResources_shards}
+            count={spentResources.galleryResources_shards}
+            leftCount={leftResources.galleryResources_shards}
           />
-        </Flexbox>
-      </Flexbox>
+        </Flex>
+      </Flex>
 
       <Divider />
 
-      {mightiestKingdomNode}
+      <MightiestKingdomStatistics data={mightiestKingdomData} />
 
       <Divider />
 
-      {extremePowerNode}
-    </Flexbox>
+      <UltimatePowerStatistics data={ultimatePowerData} />
+    </Flex>
   ),
 )
 

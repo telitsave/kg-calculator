@@ -4,9 +4,10 @@ import Resources from '../../resources/Resources'
 import type Settings from '../../settings/Settings'
 import type {
   CalculateHeroesResponse,
+  Hero,
   HeroExperienceSpent,
   HeroUpgrade,
-  HeroesDistribution,
+  HeroesParams,
   IHeroData,
 } from 'kg-calculator-typings'
 
@@ -17,20 +18,15 @@ export default class HeroesCalculatorModel {
   private _gettingStars: number = 0
   private _heroesExperienceSpent: HeroExperienceSpent[] = []
   private readonly _settings: Settings
-  private readonly _heroesData: IHeroData[]
-  private readonly _heroesDistribution: HeroesDistribution
+  private readonly _heroesParams: HeroesParams
+  private readonly _heroes: Hero[]
 
-  constructor(
-    resources: Resources,
-    settings: Settings,
-    heroesData: IHeroData[],
-    heroesDistribution: HeroesDistribution,
-  ) {
+  constructor(resources: Resources, settings: Settings, heroes: Hero[], heroesParams: HeroesParams) {
     this._spentResources = new Resources()
     this._spentResources.heroesCards.add(resources.heroesCards)
     this._settings = settings
-    this._heroesData = heroesData
-    this._heroesDistribution = heroesDistribution
+    this._heroes = heroes
+    this._heroesParams = heroesParams
   }
 
   calculateHeroes(): CalculateHeroesResponse {
@@ -38,7 +34,7 @@ export default class HeroesCalculatorModel {
       this._advancedCalculateHeroes()
     }
     return {
-      spentResources: this._spentResources,
+      spentResources: this._spentResources.getData(),
       heroesUpgrades: this._heroesUpgrades,
       heroesExperienceSpent: this._heroesExperienceSpent,
       spentDistributionCards: this._spentDistributionCards,
@@ -48,20 +44,23 @@ export default class HeroesCalculatorModel {
 
   private _advancedCalculateHeroes() {
     this._spentResources.heroesCards = new HeroesResources()
-    this._heroesData.forEach((hero) => this._calculateHero(hero, this._heroesDistribution[hero.id]))
+    Object.values(this._heroesParams).forEach((heroParam) => {
+      const hero = this._heroes.find((it) => it.heroId === heroParam!.id)
+      this._calculateHero(hero!, heroParam!)
+    })
   }
 
-  private _calculateHero(heroData: IHeroData, distributionCards: number = 0) {
-    const hero = new HeroModel(heroData.id, heroData)
+  private _calculateHero(heroData_S: Hero, heroParam: IHeroData) {
+    const hero = new HeroModel(heroData_S, heroParam)
 
     const heroUpgrade: HeroUpgrade = {
       hero: hero.heroData,
       spentDistributionCards: 0,
       spentCards: 0,
-      newBars: heroData.bars,
-      oldBars: heroData.bars,
-      oldStars: heroData.stars,
-      newStars: heroData.stars,
+      newBars: heroParam.bars,
+      oldBars: heroParam.bars,
+      oldStars: heroParam.stars,
+      newStars: heroParam.stars,
       maxBars: 0,
       maxStars: 0,
     }
@@ -78,9 +77,9 @@ export default class HeroesCalculatorModel {
         heroUpped = hero.upHero()
       }
 
-      hero.cards += distributionCards
-      heroUpgrade.spentDistributionCards += distributionCards
-      this._spentDistributionCards += distributionCards
+      hero.cards += heroParam.distributionCards
+      heroUpgrade.spentDistributionCards += heroParam.distributionCards
+      this._spentDistributionCards += heroParam.distributionCards
 
       heroUpped = hero.upHero()
       while (heroUpped) {
@@ -111,7 +110,7 @@ export default class HeroesCalculatorModel {
       }
     }
     if (hero.heroData.rank === 'sr' || hero.heroData.rank === 'ssr') {
-      const gettingStars = hero.stars - heroData.stars
+      const gettingStars = hero.stars - heroParam.stars
       this._gettingStars += gettingStars
     }
   }

@@ -36,16 +36,20 @@ export default class BarracksCalculatorModel {
   }
 
   getData(): CalculateBarracksResponse {
+    const oldParams = this._sourceParameters.getData()
+    const newParams = this._parameters.getData()
     return {
-      oldParameters: this._sourceParameters.getData(),
-      parameters: this._parameters.getData(),
+      oldParameters: oldParams.params,
+      parameters: newParams.params,
+      newTalentParameters: newParams.talents,
+      oldTalentParameters: oldParams.talents,
       sourceResources: this._sourceResources.getData(),
       spentResources: this._spentResources.getData(),
       leftResources: this._leftResources.getData(),
-      randomBooksUsed: this._randomBooksUsed,
-      convertBooksForBarracks: this._convertBooksForBarracks,
-      convertTalentBooks: this._convertTalentBooks,
-      spentTalentBooks: this._spentTalentBooks,
+      randomBooksUsed: this._randomBooksUsed.getData(),
+      convertBooksForBarracks: this._convertBooksForBarracks.getData(),
+      convertTalentBooks: this._convertTalentBooks.getData(),
+      spentTalentBooks: this._spentTalentBooks.getData(),
     }
   }
 
@@ -227,10 +231,10 @@ export default class BarracksCalculatorModel {
       const { rank1, rank2, rank3, rank4 } = this._leftResources.barracksBooks[element]
       return (
         total +
-        rank4 * this._serverSettings.talentBooksConversionRate.rank4 +
-        rank3 * this._serverSettings.talentBooksConversionRate.rank3 +
-        rank2 * this._serverSettings.talentBooksConversionRate.rank2 +
-        rank1 * this._serverSettings.talentBooksConversionRate.rank1
+        rank4 * this._serverSettings.talentBooks_rank4 +
+        rank3 * this._serverSettings.talentBooks_rank3 +
+        rank2 * this._serverSettings.talentBooks_rank2 +
+        rank1 * this._serverSettings.talentBooks_rank1
       )
     }, 0)
 
@@ -238,8 +242,7 @@ export default class BarracksCalculatorModel {
 
     if (!this._settings.canUseRandomBarracksBooks) return false
 
-    possibleTalentBooks +=
-      this._leftResources.barracksBooks.random * this._serverSettings.talentBooksConversionRate.rank1
+    possibleTalentBooks += this._leftResources.barracksBooks.random * this._serverSettings.talentBooks_rank1
 
     return possibleTalentBooks >= targetCount
   }
@@ -272,11 +275,10 @@ export default class BarracksCalculatorModel {
     if (!this._settings.canUseRandomBarracksBooks) return
 
     const elements = this._parameters.barracks.getElementsWithMaxRank()
-    const possibleTalentBooks =
-      this._leftResources.barracksBooks.random * this._serverSettings.talentBooksConversionRate.rank1
+    const possibleTalentBooks = this._leftResources.barracksBooks.random * this._serverSettings.talentBooks_rank1
 
     if (possibleTalentBooks > targetCount) {
-      const needRandomBooks = Math.ceil(targetCount / this._serverSettings.talentBooksConversionRate.rank1)
+      const needRandomBooks = Math.ceil(targetCount / this._serverSettings.talentBooks_rank1)
       this._useRandomBooks(elements[0], needRandomBooks)
       this._convertBookToTalentBook(elements[0], 1, needRandomBooks)
     }
@@ -367,7 +369,7 @@ export default class BarracksCalculatorModel {
     if (this._leftResources.barracksBooks[element][rankKey] < count) return
 
     this._leftResources.barracksBooks[element][rankKey] -= count
-    this._leftResources.talents.books += count * this._serverSettings.talentBooksConversionRate[rankKey]
+    this._leftResources.talents.books += count * this._serverSettings[`talentBooks_${rankKey}`]
     this._convertTalentBooks[element][rankKey] += count
   }
 }

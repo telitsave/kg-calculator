@@ -1,8 +1,8 @@
 import { FC, memo } from 'react'
 import { Text } from '@mantine/core'
+import type { ResourceType } from 'kg-calculator-typings'
 import { isNil } from 'lodash'
 import Flexbox from 'shared/ui/Flexbox'
-import { ResourceType } from '../../model/types'
 import ResourceIcon from '../ResourceIcon'
 import css from './styles.module.sass'
 

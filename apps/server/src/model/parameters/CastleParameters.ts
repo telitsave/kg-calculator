@@ -1,4 +1,4 @@
-import type { ParametersData } from 'kg-calculator-typings'
+import type { Parameters, ParametersData } from 'kg-calculator-typings'
 
 export default class CastleParameters {
   level: number = 0
@@ -9,17 +9,21 @@ export default class CastleParameters {
     }
   }
 
-  static transformDataFromDB(items: { parameterId: string; value: string }[]): CastleParameters {
+  static transformDataFromDB(items: Parameters): CastleParameters {
     const parameters = new CastleParameters()
-    items.forEach((item) => {
-      const [, param] = item.parameterId.split('_')
-      parameters[param] = Number(item.value) || 0
+    Object.entries(items).forEach(([key, value]) => {
+      const [resourceType, param] = key.split('_')
+      if (resourceType !== 'castleParams') return
+
+      parameters[param] = value
     })
 
     return parameters
   }
 
-  getDataForDB() {
-    return [{ parameterId: 'castle_level', value: this.level || null }]
+  getData(): Parameters {
+    return {
+      castleParams_level: this.level,
+    }
   }
 }

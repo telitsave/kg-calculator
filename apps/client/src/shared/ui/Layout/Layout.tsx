@@ -101,9 +101,9 @@ const Layout: FC<Props> = memo(({ className, rightHeaderSlot }) => {
                     <NavLink label={getPageName('/calculator/heroes')} active={isActive} onClick={close} />
                   )}
                 </RouterNavLink>
-                <RouterNavLink className={css.link} to="/calculator/extremePower">
+                <RouterNavLink className={css.link} to="/calculator/ultimatePower">
                   {({ isActive }) => (
-                    <NavLink label={getPageName('/calculator/extremePower')} active={isActive} onClick={close} />
+                    <NavLink label={getPageName('/calculator/ultimatePower')} active={isActive} onClick={close} />
                   )}
                 </RouterNavLink>
                 <RouterNavLink className={css.link} to="/calculator/mightiestKingdom">

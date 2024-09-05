@@ -1,52 +1,41 @@
-import { FC, ReactNode, memo, useCallback } from 'react'
+import { FC, memo, useCallback } from 'react'
 import cx from 'classnames'
-import { Divider } from '@mantine/core'
-import type { ResourcesData } from 'kg-calculator-typings/api/ResourcesData'
-import { useParameters } from 'entities/parameter'
-import { useResources } from 'entities/resource'
-import { useServerSettings } from 'entities/serverSettings'
+import { Divider, Flex } from '@mantine/core'
+import { SettingsQueue } from 'entities/calculationSettings'
+import { useCalculateMightiestKingdom } from 'entities/mightiestKingdom'
+import { ParametersQueue } from 'entities/parameter'
+import { ResourcesQueue } from 'entities/resource'
+import { useCalculateUltimatePower } from 'entities/ultimatePower'
 import { useCalculateWitch } from 'entities/witch'
-import Flexbox from 'shared/ui/Flexbox'
 import Inputs from '../Inputs'
 import Results from '../Results'
 import css from './styles.module.sass'
 
+
 interface Props {
   className?: string
-  getExtremePowerNode: (resources: ResourcesData) => ReactNode
-  getMightiestKingdomNode: (resources: ResourcesData) => ReactNode
 }
 
-const WitchCalculator: FC<Props> = memo(({ className, getExtremePowerNode, getMightiestKingdomNode }) => {
-  const resources = useResources()
-  const parameters = useParameters()
-  const { serverSettings, enabledCustomServerSettings } = useServerSettings()
+const WitchCalculator: FC<Props> = memo(({ className }) => {
   const { mutate, data } = useCalculateWitch()
+  const { mutate: calculateUltimatePower, data: ultimatePowerData } = useCalculateUltimatePower()
+  const { mutate: calculateMK, data: mkData } = useCalculateMightiestKingdom()
 
-  const handleSubmitButtonClick = useCallback(() => {
-    mutate({
-      resources,
-      parameters,
-      customServerSettings: enabledCustomServerSettings ? serverSettings : undefined,
-    })
-  }, [mutate, parameters, resources])
+  const handleSubmitButtonClick = useCallback(async () => {
+    await ResourcesQueue.saveData()
+    await ParametersQueue.saveData()
+    await SettingsQueue.saveData()
+    mutate()
+    calculateUltimatePower(['witch'])
+    calculateMK(['witch'])
+  }, [mutate, calculateUltimatePower, calculateMK])
 
   return (
-    <Flexbox className={cx(css.root, className)} flexDirection="column" gap={16}>
+    <Flex className={cx(css.root, className)} direction="column" gap={16}>
       <Inputs onSubmitButtonClick={handleSubmitButtonClick} />
       <Divider size="md" />
-      {data && (
-        <Results
-          witchParameters={data.newParameters.witch}
-          oldWitchParameters={data.oldParameters.witch}
-          sourceResources={data.sourceResources.witch}
-          spentResources={data.spentResources.witch}
-          leftResources={data.leftResources.witch}
-          extremePowerNode={getExtremePowerNode(data.spentResources)}
-          mightiestKingdomNode={getMightiestKingdomNode(data.spentResources)}
-        />
-      )}
-    </Flexbox>
+      {data && <Results data={data} mightiestKingdomData={mkData} ultimatePowerData={ultimatePowerData} />}
+    </Flex>
   )
 })
 

@@ -1,25 +1,33 @@
-import ServerSettings from '../model/ServerSettings'
 import BarracksCalculatorModel from '../model/calculator/barracks/BarracksCalculatorModel'
 import Parameters from '../model/parameters/Parameters'
 import Resources from '../model/resources/Resources'
-import Settings from '../model/settings/Settings'
-import { Request, Response } from 'express'
-import type { CalculateBarracksPayload } from 'kg-calculator-typings'
+import InventoryService from '../services/inventory-service'
+import ParametersService from '../services/parameters-service'
+import ServerSettingsService from '../services/serverSettings-service'
+import SettingsService from '../services/settings-service'
+import BaseController from './base-controller'
+import { type NextFunction, Request, Response } from 'express'
 
 
-export default class BarracksController {
-  static calculateBarracks(request: Request, response: Response) {
-    const payload: CalculateBarracksPayload = request.body.data
+export default class BarracksController extends BaseController {
+  static async calculateBarracks(_: Request, response: Response, next: NextFunction) {
+    try {
+      const profileId = BarracksController.getProfileId(response)
 
-    const resources = new Resources(payload.resources)
-    const parameters = new Parameters(payload.parameters)
-    const settings = new Settings(payload.settings)
-    const serverSettings = new ServerSettings(payload.customServerSettings)
+      const resources = Resources.transformDataFromDB(await InventoryService.getInventory(profileId))
+      const talents = await ParametersService.getTalents(profileId)
+      const params = await ParametersService.getParameters(profileId)
+      const parameters = Parameters.transformDataFromDB(params, undefined, talents)
+      const settings = await SettingsService.getSettings(profileId)
+      const serverSettings = await ServerSettingsService.getServerSettings(profileId)
 
-    const barracksCalculatorModel = new BarracksCalculatorModel(resources, parameters, settings, serverSettings)
+      const barracksCalculatorModel = new BarracksCalculatorModel(resources, parameters, settings, serverSettings)
 
-    barracksCalculatorModel.calculateBarracks()
+      barracksCalculatorModel.calculateBarracks()
 
-    response.json(barracksCalculatorModel.getData())
+      response.json(barracksCalculatorModel.getData())
+    } catch (err) {
+      next(err)
+    }
   }
 }

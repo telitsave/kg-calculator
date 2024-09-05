@@ -4,6 +4,7 @@ import { ParameterInput } from 'entities/parameter'
 import { ResourceInput } from 'entities/resource'
 import Flexbox from 'shared/ui/Flexbox'
 
+
 interface Props {
   className?: string
 
@@ -14,14 +15,14 @@ const Inputs: FC<Props> = memo(({ className, onCalculateButtonClick }) => (
   <Flexbox className={className} flexDirection="column" gap={8}>
     <Flexbox flexDirection="column" gap={8}>
       <Title order={4}>Мои ресурсы</Title>
-      <ResourceInput resourceType="hummer" />
+      <ResourceInput resourceType="blacksmithResources_hammers" />
     </Flexbox>
 
     <Divider size="xs" />
 
     <Flexbox flexDirection="column" gap={8}>
       <Title order={4}>Мои параметры</Title>
-      <ParameterInput parameterType="blacksmithLevel" />
+      <ParameterInput parameterType="blacksmithParams_level" />
     </Flexbox>
 
     <Button onClick={onCalculateButtonClick}>Посчитать</Button>

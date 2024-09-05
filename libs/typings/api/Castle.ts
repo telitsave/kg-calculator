@@ -1,6 +1,6 @@
-import type { ResourcesData } from './ResourcesData'
-import type { ParametersData } from './ParametersData'
-import type { SettingsData } from './SettingsData'
+import type { Resources } from './Inventory'
+import type { Parameters } from './Parameters'
+
 
 export interface CastleParameters {
   level: number
@@ -14,32 +14,23 @@ export interface CastleResources {
 }
 
 export interface CalculateGoalCastlePayload {
-  resources:ResourcesData
-  parameters: ParametersData
-  settings: SettingsData
   goalLevel: number
 }
 
 export interface CalculateGoalCastleResponse {
-  neededResources: ResourcesData
-  requiredResources: ResourcesData
-  parameters: ParametersData
+  neededResources: Resources
+  requiredResources: Resources
+  parameters: Parameters
   goalLevel: number
 }
 
-export interface CalculatePossibleCastlePayload {
-  resources: ResourcesData
-  parameters: ParametersData
-  settings: SettingsData
-}
-
 export interface CalculatePossibleCastleResponse {
-  oldParameters: ParametersData
-  parameters: ParametersData
-  sourceResources: ResourcesData
-  leftResources: ResourcesData
-  spentResources: ResourcesData
-  convertedSource: CastleResources
-  convertedTarget: CastleResources
-  spentBoxesResources: CastleResources
+  oldParameters: Parameters
+  parameters: Parameters
+  sourceResources: Resources
+  leftResources: Resources
+  spentResources: Resources
+  convertedSource: Resources
+  convertedTarget: Resources
+  spentBoxesResources: Resources
 }

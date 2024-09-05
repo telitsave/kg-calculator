@@ -1,44 +1,50 @@
-import type { ParametersData } from 'kg-calculator-typings/api/ParametersData'
-import useParameter from './useParameter'
-import useTalentsParameters from './useTalentsParameters'
-import useWitchGemParameters from './useWitchGemParameters'
+import { useCallback } from 'react'
+import { useQuery } from '@tanstack/react-query'
+import type { ElementsType, ParameterTypes } from 'kg-calculator-typings'
+import api from 'shared/api'
+import ParametersQueue from '../ParametersQueue'
 
 
-const useParameters = (): ParametersData => {
-  const gems = useWitchGemParameters()
+const useParameters = () => {
+  const { data } = useQuery({
+    queryKey: ['parameters'],
+    queryFn: api.parameters.getParameters,
+  })
+
+  const saveParameter = useCallback((parameterType: ParameterTypes, value: number) => {
+    ParametersQueue.setParameter(parameterType, value)
+  }, [])
+
+  const saveGem = useCallback(
+    (rank: number, gem: string, value: number) => {
+      ParametersQueue.gems = data?.gems || {}
+      ParametersQueue.setGem(rank, gem, value)
+    },
+    [data?.gems],
+  )
+
+  const saveTalent = useCallback(
+    (element: ElementsType, rank: number, talentType: 'small' | 'big', value: number) => {
+      console.log(data?.talents)
+      console.log(ParametersQueue.talents)
+      ParametersQueue.talents = {
+        ...(data?.talents || {}),
+        ...ParametersQueue.talents,
+      }
+      console.log(ParametersQueue.talents)
+      ParametersQueue.setTalent(element, rank, talentType, value)
+      console.log(ParametersQueue.talents)
+    },
+    [data?.talents],
+  )
+
   return {
-    dragonEmblems: {
-      green: useParameter('greenEmblem')[0],
-      blue: useParameter('blueEmblem')[0],
-      purple: useParameter('purpleEmblem')[0],
-      gold: useParameter('goldEmblem')[0],
-    },
-    castle: {
-      level: useParameter('castleLevel')[0],
-    },
-    witch: {
-      lightLevel: useParameter('lightPower')[0],
-      darkLevel: useParameter('darkPower')[0],
-      gems,
-    },
-    barracks: {
-      bowLevel: useParameter('barracksBowLevel')[0],
-      bowRank: useParameter('barracksBowRank')[0],
-      fireLevel: useParameter('barracksFireLevel')[0],
-      fireRank: useParameter('barracksFireRank')[0],
-      iceLevel: useParameter('barracksIceLevel')[0],
-      iceRank: useParameter('barracksIceRank')[0],
-      poisonLevel: useParameter('barracksPoisonLevel')[0],
-      poisonRank: useParameter('barracksPoisonRank')[0],
-    },
-    talents: useTalentsParameters().read,
-    blacksmith: {
-      level: useParameter('blacksmithLevel')[0],
-    },
-    gallery: {
-      step: useParameter('galleryStep')[0],
-      level: useParameter('galleryLevel')[0],
-    },
+    params: data?.params,
+    gems: data?.gems,
+    talents: data?.talents,
+    saveParameter,
+    saveGem,
+    saveTalent,
   }
 }
 

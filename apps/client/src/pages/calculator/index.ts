@@ -1,7 +1,7 @@
 export { default as CastleCalculatorPage } from './ui/CastleCalculator'
 export { default as DragonCalculatorPage } from './ui/DragonCalculator'
 export { default as WitchCalculatorPage } from './ui/WitchCalculatorPage'
-export { default as ExtremePowerPage } from './ui/ExtremePowerPage'
+export { default as UltimatePowerPage } from './ui/UltimatePowerPage'
 export { default as MightiestKingdomPage } from './ui/MightiestKingdomPage'
 export { default as BarracksCalculatorPage } from './ui/BarracksCalculatorPage'
 export { default as BlacksmithPage } from './ui/BlacksmithPage'

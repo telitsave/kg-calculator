@@ -1,11 +1,12 @@
 import { FC, memo, useCallback, useMemo } from 'react'
 import cx from 'classnames'
 import { NumberInput } from '@mantine/core'
+import type { ParameterTypes } from 'kg-calculator-typings'
 import Flexbox from 'shared/ui/Flexbox'
 import useParameter from '../../model/hooks/useParameter'
-import { ParameterTypes } from '../../model/types'
 import ParameterIcon from '../ParameterIcon'
 import css from './styles.module.sass'
+
 
 interface Props {
   className?: string
@@ -14,7 +15,7 @@ interface Props {
 }
 
 const ParameterInput: FC<Props> = memo(({ className, parameterType, viewMode = 'default' }) => {
-  const [value, setValue] = useParameter(parameterType)
+  const [value = 0, setValue] = useParameter(parameterType)
 
   const handleNumberInputChange = useCallback(
     (value: string | number) => {
@@ -24,7 +25,7 @@ const ParameterInput: FC<Props> = memo(({ className, parameterType, viewMode = '
   )
 
   const max = useMemo(() => {
-    if (parameterType === 'lightPower' || parameterType === 'darkPower') {
+    if (parameterType === 'witchParams_lightLevel' || parameterType === 'witchParams_darkLevel') {
       return 2000
     }
 

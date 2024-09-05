@@ -1,19 +1,25 @@
-import { Request, Response } from 'express'
-import Resources from '../model/resources/Resources'
-import Parameters  from '../model/parameters/Parameters'
 import GalleryCalculatorModel from '../model/calculator/gallery/GalleryCalculatorModel'
-import type { CalculateGalleryPayload } from 'kg-calculator-typings'
+import Parameters from '../model/parameters/Parameters'
+import Resources from '../model/resources/Resources'
+import InventoryService from '../services/inventory-service'
+import ParametersService from '../services/parameters-service'
+import BaseController from './base-controller'
+import { type NextFunction, Request, Response } from 'express'
 
 
-export default class GalleryController {
-  static calculateGallery(request: Request, response: Response) {
-    const payload: CalculateGalleryPayload = request.body.data
+export default class GalleryController extends BaseController {
+  static async calculateGallery(_: Request, response: Response, next: NextFunction) {
+    try {
+      const profileId = GalleryController.getProfileId(response)
 
-    const resources = new Resources(payload.resources)
-    const parameters = new Parameters(payload.parameters)
+      const resources = Resources.transformDataFromDB(await InventoryService.getInventory(profileId))
+      const parameters = Parameters.transformDataFromDB(await ParametersService.getParameters(profileId))
 
-    const galleryCalculatorModel = new GalleryCalculatorModel(resources, parameters)
+      const galleryCalculatorModel = new GalleryCalculatorModel(resources, parameters)
 
-    response.json(galleryCalculatorModel.calculateGallery())
+      response.json(galleryCalculatorModel.calculateGallery())
+    } catch (err) {
+      next(err)
+    }
   }
 }

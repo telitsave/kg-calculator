@@ -7,15 +7,14 @@ import {
   BlacksmithPage,
   CastleCalculatorPage,
   DragonCalculatorPage,
-  ExtremePowerPage,
   GalleryPage,
   HeroesCalculatorPage,
   MightiestKingdomPage,
+  UltimatePowerPage,
   WitchCalculatorPage,
 } from './calculator'
 import Inventory from './inventory'
-import { ParametersPage } from './parameters'
-import HeroesPage from './parameters/ui/HeroesPage'
+import { HeroesPage, ParametersPage } from './parameters'
 import { ServerSettingsPage } from './serverSettings'
 import { SpiritInvasionPage } from './spiritInvasionPage'
 
@@ -84,8 +83,8 @@ const router = createBrowserRouter([
             element: <HeroesCalculatorPage />,
           },
           {
-            path: '/calculator/extremePower',
-            element: <ExtremePowerPage />,
+            path: '/calculator/ultimatePower',
+            element: <UltimatePowerPage />,
           },
           {
             path: '/calculator/mightiestKingdom',

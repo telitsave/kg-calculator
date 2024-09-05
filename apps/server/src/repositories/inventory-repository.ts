@@ -1,5 +1,5 @@
 import mysqlAdapter from '../adapters/mysql-adapter'
-import Resources from '../model/resources/Resources'
+import type { ResourceType } from 'kg-calculator-typings'
 import type { ResultSetHeader, RowDataPacket } from 'mysql2'
 
 
@@ -12,13 +12,13 @@ export default class InventoryRepository {
         [profileId],
       )
 
-      return Resources.transformDataFromDB(items as { itemId: string; count: number }[])
+      return items as { itemId: ResourceType; count: number }[]
     } catch (error) {
       throw error
     }
   }
 
-  static async addItems(profileId: number, items: { itemId: string; count: number }[]) {
+  static async addItems(profileId: number, items: { itemId: ResourceType; count: number }[]) {
     try {
       const connection = await mysqlAdapter.getConnection()
       const sqlData = items.map((item) => [profileId, item.itemId, item.count])

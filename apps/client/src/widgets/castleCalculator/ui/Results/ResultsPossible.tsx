@@ -1,52 +1,46 @@
-import { FC, ReactNode, memo } from 'react'
-import { Divider, Title } from '@mantine/core'
-import type { CastleResources } from 'kg-calculator-typings/api/Castle'
-import type { ParametersData } from 'kg-calculator-typings/api/ParametersData'
-import type { ResourcesData } from 'kg-calculator-typings/api/ResourcesData'
+import { FC, memo } from 'react'
+import { Divider, Flex, Title } from '@mantine/core'
+import type { CalculatePossibleCastleResponse, CalculateUltimatePowerResponse } from 'kg-calculator-typings'
 import { ParameterInfo } from 'entities/parameter'
 import { ResourceCount, ResourcesConverts } from 'entities/resource'
-import Flexbox from 'shared/ui/Flexbox'
+import { UltimatePowerStatistics } from 'entities/ultimatePower'
 import css from './styles.module.sass'
 
+
 interface Props {
-  oldParameters: ParametersData
-  parameters: ParametersData
-  sourceResources: ResourcesData
-  leftResources: ResourcesData
-  spentResources: ResourcesData
-  convertedSource: CastleResources
-  convertedTarget: CastleResources
-  spentBoxes: CastleResources
-  extremePowerPossibleNode: ReactNode
+  data: CalculatePossibleCastleResponse
+  ultimatePowerData?: CalculateUltimatePowerResponse
 }
 
 const ResultsPossible: FC<Props> = memo(
   ({
-    oldParameters,
-    parameters,
-    sourceResources,
-    leftResources,
-    spentResources,
-    convertedSource,
-    convertedTarget,
-    spentBoxes,
-    extremePowerPossibleNode,
+    data: {
+      oldParameters,
+      parameters,
+      sourceResources,
+      leftResources,
+      spentResources,
+      convertedSource,
+      convertedTarget,
+      spentBoxesResources,
+    },
+    ultimatePowerData,
   }) => (
     <>
       <Divider size="md" />
-      <Flexbox flexDirection="column" gap={12}>
-        <Flexbox flexDirection="column" gap={8}>
+      <Flex direction="column" gap={12}>
+        <Flex direction="column" gap={8}>
           <Title order={4}>Результаты</Title>
-          <Flexbox alignItems="center" gap={8}>
+          <Flex align="center" gap={8}>
             <ParameterInfo
-              parameterType="castleLevel"
-              value={parameters.castle.level || 0}
-              oldValue={oldParameters.castle.level}
+              parameterType="castleParams_level"
+              value={parameters.castleParams_level || 0}
+              oldValue={oldParameters.castleParams_level}
               viewMode="bigIcon"
             />
-          </Flexbox>
-        </Flexbox>
-        <Flexbox flexDirection="column" gap={8}>
+          </Flex>
+        </Flex>
+        <Flex direction="column" gap={8}>
           <Title order={5}>Потраченные ресурсы</Title>
 
           <ResourceCount
@@ -56,69 +50,71 @@ const ResultsPossible: FC<Props> = memo(
             leftCount={leftResources.gold}
           />
           <ResourceCount
-            resourceType="stone"
-            sourceCount={sourceResources.castle.stone}
-            count={spentResources.castle.stone}
-            leftCount={leftResources.castle.stone}
+            resourceType="castleResources_stone"
+            sourceCount={sourceResources.castleResources_stone}
+            count={spentResources.castleResources_stone}
+            leftCount={leftResources.castleResources_stone}
           />
           <ResourceCount
-            resourceType="wood"
-            sourceCount={sourceResources.castle.wood}
-            count={spentResources.castle.wood}
-            leftCount={leftResources.castle.wood}
+            resourceType="castleResources_wood"
+            sourceCount={sourceResources.castleResources_wood}
+            count={spentResources.castleResources_wood}
+            leftCount={leftResources.castleResources_wood}
           />
           <ResourceCount
-            resourceType="steel"
-            sourceCount={sourceResources.castle.steel}
-            count={spentResources.castle.steel}
-            leftCount={leftResources.castle.steel}
+            resourceType="castleResources_steel"
+            sourceCount={sourceResources.castleResources_steel}
+            count={spentResources.castleResources_steel}
+            leftCount={leftResources.castleResources_steel}
           />
           <ResourceCount
-            resourceType="customConstructionItem"
-            sourceCount={sourceResources.castle.boxes}
-            count={spentResources.castle.boxes}
-            leftCount={leftResources.castle.boxes}
+            resourceType="castleResources_boxes"
+            sourceCount={sourceResources.castleResources_boxes}
+            count={spentResources.castleResources_boxes}
+            leftCount={leftResources.castleResources_boxes}
           />
-        </Flexbox>
-        <Flexbox className={css.convertBlock} flexDirection="column" gap={8}>
+        </Flex>
+        <Flex className={css.convertBlock} direction="column" gap={8}>
           <Title order={5}>Конвертирование ресурсов</Title>
           <ResourcesConverts
-            sourceResourceType="stone"
-            targetResourceType="wood"
-            sourceValue={convertedSource.stone}
-            targetValue={convertedTarget.wood}
+            sourceResourceType="castleResources_stone"
+            targetResourceType="castleResources_wood"
+            sourceValue={convertedSource.castleResources_stone}
+            targetValue={convertedTarget.castleResources_wood}
           />
           <ResourcesConverts
-            sourceResourceType="wood"
-            targetResourceType="steel"
-            sourceValue={convertedSource.wood}
-            targetValue={convertedTarget.steel}
+            sourceResourceType="castleResources_wood"
+            targetResourceType="castleResources_steel"
+            sourceValue={convertedSource.castleResources_wood}
+            targetValue={convertedTarget.castleResources_steel}
           />
-        </Flexbox>
-        <Flexbox className={css.spentBoxesBlock} flexDirection="column" gap={8}>
+        </Flex>
+        <Flex className={css.spentBoxesBlock} direction="column" gap={8}>
           <Title order={5}>Использование коробок</Title>
           <ResourcesConverts
-            sourceResourceType="customConstructionItem"
-            targetResourceType="stone"
-            sourceValue={spentBoxes.stone}
-            targetValue={(spentBoxes.stone || 0) * 20}
+            sourceResourceType="castleResources_boxes"
+            targetResourceType="castleResources_stone"
+            sourceValue={spentBoxesResources.castleResources_stone}
+            targetValue={(spentBoxesResources.castleResources_stone || 0) * 20}
           />
           <ResourcesConverts
-            sourceResourceType="customConstructionItem"
-            targetResourceType="wood"
-            sourceValue={spentBoxes.wood}
-            targetValue={(spentBoxes.wood || 0) * 4}
+            sourceResourceType="castleResources_boxes"
+            targetResourceType="castleResources_wood"
+            sourceValue={spentBoxesResources.castleResources_wood}
+            targetValue={(spentBoxesResources.castleResources_wood || 0) * 4}
           />
           <ResourcesConverts
-            sourceResourceType="customConstructionItem"
-            targetResourceType="steel"
-            sourceValue={spentBoxes.steel}
-            targetValue={spentBoxes.steel || 0}
+            sourceResourceType="castleResources_boxes"
+            targetResourceType="castleResources_steel"
+            sourceValue={spentBoxesResources.castleResources_steel}
+            targetValue={spentBoxesResources.castleResources_steel || 0}
           />
-        </Flexbox>
+        </Flex>
+
         <Divider />
-        {extremePowerPossibleNode}
-      </Flexbox>
+
+        <UltimatePowerStatistics data={ultimatePowerData} />
+      </Flex>
     </>
   ),
 )

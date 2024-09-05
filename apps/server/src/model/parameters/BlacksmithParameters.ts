@@ -1,4 +1,4 @@
-import type { ParametersData } from 'kg-calculator-typings'
+import type { Parameters, ParametersData } from 'kg-calculator-typings'
 
 export default class BlacksmithParameters {
   level: number = 0
@@ -7,17 +7,21 @@ export default class BlacksmithParameters {
     this.level = initData?.level || 0
   }
 
-  static transformDataFromDB(items: { parameterId: string; value: string }[]): BlacksmithParameters {
+  static transformDataFromDB(items: Parameters): BlacksmithParameters {
     const parameters = new BlacksmithParameters()
-    items.forEach((item) => {
-      const [, param] = item.parameterId.split('_')
-      parameters[param] = Number(item.value) || 0
+    Object.entries(items).forEach(([key, value]) => {
+      const [resourceType, param] = key.split('_')
+      if (resourceType !== 'blacksmithParams') return
+
+      parameters[param] = value
     })
 
     return parameters
   }
 
-  getDataForDB() {
-    return [{ parameterId: 'blacksmith_level', value: this.level || null }]
+  getData(): Parameters {
+    return {
+      blacksmithParams_level: this.level,
+    }
   }
 }

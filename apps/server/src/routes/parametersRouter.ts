@@ -8,5 +8,7 @@ const parametersRouter = express.Router()
 
 parametersRouter.get('/', authMiddleware, profileMiddleware, ParametersController.getParameters)
 parametersRouter.put('/', authMiddleware, profileMiddleware, ParametersController.setParameters)
+parametersRouter.put('/gems', authMiddleware, profileMiddleware, ParametersController.setGems)
+parametersRouter.put('/talents', authMiddleware, profileMiddleware, ParametersController.setTalents)
 
 export default parametersRouter

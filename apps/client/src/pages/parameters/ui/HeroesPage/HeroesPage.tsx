@@ -4,6 +4,7 @@ import { ResourceInput } from 'entities/resource'
 import { CardDistributionPanel } from 'widgets/heroesCalculator'
 import { HeroesGrid } from 'widgets/heroesGrid'
 
+
 interface Props {
   className?: string
 }
@@ -19,7 +20,7 @@ const HeroesPage: FC<Props> = memo(({ className }) => (
     </Tabs.Panel>
     <Tabs.Panel value="cards">
       <Flex mt={8} direction="column" gap={8}>
-        <ResourceInput resourceType="heroGoldCards" />
+        <ResourceInput resourceType="heroesResources_ssr" />
         <CardDistributionPanel />
       </Flex>
     </Tabs.Panel>

@@ -68,6 +68,9 @@ export default class HeroHelper {
     }
 
     return {
+      oldStars,
+      oldBars,
+      rank,
       newStars: stars,
       newBars: bars,
       leftCards,

@@ -6,6 +6,7 @@ import { useServerSettings } from 'entities/serverSettings'
 import Flexbox from 'shared/ui/Flexbox'
 import HelpButton from 'shared/ui/HelpButton'
 
+
 interface Props {
   element: ElementsType
 }
@@ -15,11 +16,11 @@ const HelpNode = () => (
     <Text>Для каждого ранга нужно указать количество заполненных атрибутов.</Text>
     <Text>Максимальные значения в каждом ранге:</Text>
     <Flexbox alignItems="center">
-      <ParameterIcon parameterType="talentBooks" />
+      <ParameterIcon parameterType="talentParams_books" />
       <Text>- 48</Text>
     </Flexbox>
     <Flexbox alignItems="center">
-      <ParameterIcon parameterType="talentCrowns" />
+      <ParameterIcon parameterType="talentParams_crowns" />
       <Text>- 6</Text>
     </Flexbox>
   </Flexbox>

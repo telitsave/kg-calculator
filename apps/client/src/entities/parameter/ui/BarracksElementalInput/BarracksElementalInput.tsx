@@ -1,9 +1,10 @@
-import { FC, memo, useCallback } from 'react'
+import { FC, memo, useCallback, useEffect, useState } from 'react'
 import { NumberInput, Progress } from '@mantine/core'
-import type { ElementsType } from 'kg-calculator-typings/api/Elements'
+import type { ElementsType } from 'kg-calculator-typings'
 import { BarracksRankIcon } from 'shared/assets/icons'
 import Flexbox from 'shared/ui/Flexbox'
-import useBarracksParameter from '../../model/hooks/useBarracksParameter'
+import useParameter from '../../model/hooks/useParameter'
+
 
 interface Props {
   className?: string
@@ -11,42 +12,55 @@ interface Props {
 }
 
 const BarracksElementalInput: FC<Props> = memo(({ className, element }) => {
-  const { rank, level } = useBarracksParameter(element)
-  const rankValue = rank[0] || 1
-  const levelValue = level[0]
+  const [level = 0, setLevel] = useParameter(`barracksParams_${element}_level`)
+  const [rank = 1, setRank] = useParameter(`barracksParams_${element}_rank`)
+  const [levelState, setLevelState] = useState(level)
+  const [rankState, setRankState] = useState(rank)
 
   const handleChangeRank = useCallback(
     (value: string | number) => {
-      rank[1](Number(value))
-      level[1](0)
+      setRank(Number(value))
+      setLevel(0)
+      setRankState(Number(value))
+      setLevelState(0)
     },
-    [level, rank],
+    [setRank, setLevel],
   )
 
   const handleChangeLevel = useCallback(
     (value: string | number) => {
-      level[1](Number(value))
+      setLevel(Number(value))
+      setLevelState(Number(value))
     },
-    [level],
+    [setLevel],
   )
+
+  useEffect(() => {
+    if (level) {
+      setLevelState(level)
+    }
+    if (rank) {
+      setRankState(rank)
+    }
+  }, [level, rank])
 
   return (
     <Flexbox className={className} flexDirection="column" gap={8}>
       <Flexbox justifyContent="space-between" gap={8}>
-        <NumberInput min={1} max={9} value={rankValue} label="Ранг" onChange={handleChangeRank} />
+        <NumberInput min={1} max={9} value={rankState} label="Ранг" onChange={handleChangeRank} />
         <NumberInput
           min={0}
-          max={rankValue % 2 === 0 ? 200 : 100}
-          value={levelValue}
+          max={rankState % 2 === 0 ? 200 : 100}
+          value={levelState}
           onChange={handleChangeLevel}
-          disabled={rankValue === 9}
+          disabled={rankState === 9}
           label="Уровень"
         />
       </Flexbox>
       <Flexbox justifyContent="space-between" alignItems="center">
-        <BarracksRankIcon element={element} rank={rankValue} />
-        <Progress w="30%" value={rankValue % 2 === 0 ? levelValue / 2 : levelValue} />
-        <BarracksRankIcon element={element} rank={rankValue + 1} />
+        <BarracksRankIcon element={element} rank={rankState} />
+        <Progress w="30%" value={rankState % 2 === 0 ? levelState / 2 : levelState} />
+        <BarracksRankIcon element={element} rank={rankState + 1} />
       </Flexbox>
     </Flexbox>
   )

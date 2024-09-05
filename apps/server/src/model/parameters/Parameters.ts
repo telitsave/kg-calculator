@@ -5,7 +5,7 @@ import DragonEmblemParameters from './DragonEmblemParameters'
 import GalleryParameters from './GalleryParameters'
 import TalentsParameters from './TalentsParameters'
 import WitchParameters from './WitchParameters'
-import type { ParametersData } from 'kg-calculator-typings'
+import type { ParametersData, Parameters as ParametersLib } from 'kg-calculator-typings'
 
 
 export default class Parameters {
@@ -39,43 +39,36 @@ export default class Parameters {
     return parameters
   }
 
-  getData(): ParametersData {
+  getData() {
+    const { params, gems } = this.witch.getData()
+    const talents = this.talents.getData()
     return {
-      barracks: this.barracks.getData(),
-      castle: this.castle,
-      witch: this.witch,
-      talents: this.talents,
-      gallery: this.gallery,
-      blacksmith: this.blacksmith,
-      dragonEmblems: this.dragonEmblems,
+      params: {
+        ...this.barracks.getData(),
+        ...this.castle.getData(),
+        ...params,
+        ...this.gallery.getData(),
+        ...this.blacksmith.getData(),
+        ...this.dragonEmblems.getData(),
+      },
+      gems,
+      talents,
     }
   }
 
-  getDataForDB() {
-    return [
-      ...this.barracks.getDataForDB(),
-      ...this.castle.getDataForDB(),
-      ...this.witch.getDataForDB(),
-      ...this.talents.getDataForDB(),
-      ...this.gallery.getDataForDB(),
-      ...this.blacksmith.getDataForDB(),
-      ...this.dragonEmblems.getDataForDB(),
-    ].filter((it) => it.value !== null)
-  }
-
-  static transformDataFromDB(data: { parameterId: string; value: string }[]): Parameters {
+  static transformDataFromDB(
+    data: ParametersLib,
+    gems?: Record<string, number>,
+    talents?: Record<string, number>,
+  ): Parameters {
     const params = new Parameters()
-    params.barracks = BarracksParameters.transformDataFromDB(data.filter((it) => it.parameterId.startsWith('barracks')))
-    params.castle = CastleParameters.transformDataFromDB(data.filter((it) => it.parameterId.startsWith('castle')))
-    params.witch = WitchParameters.transformDataFromDB(data.filter((it) => it.parameterId.startsWith('witch')))
-    params.dragonEmblems = DragonEmblemParameters.transformDataFromDB(
-      data.filter((it) => it.parameterId.startsWith('dragonEmblems')),
-    )
-    params.talents = TalentsParameters.transformDataFromDB(data.filter((it) => it.parameterId.startsWith('talents')))
-    params.blacksmith = BlacksmithParameters.transformDataFromDB(
-      data.filter((it) => it.parameterId.startsWith('blacksmith')),
-    )
-    params.gallery = GalleryParameters.transformDataFromDB(data.filter((it) => it.parameterId.startsWith('gallery')))
+    params.barracks = BarracksParameters.transformDataFromDB(data)
+    params.castle = CastleParameters.transformDataFromDB(data)
+    params.witch = WitchParameters.transformDataFromDB(data, gems)
+    params.dragonEmblems = DragonEmblemParameters.transformDataFromDB(data)
+    params.talents = TalentsParameters.transformDataFromDB(talents)
+    params.blacksmith = BlacksmithParameters.transformDataFromDB(data)
+    params.gallery = GalleryParameters.transformDataFromDB(data)
     return params
   }
 }

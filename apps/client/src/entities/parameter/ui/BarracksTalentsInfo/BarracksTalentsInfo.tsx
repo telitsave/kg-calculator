@@ -1,34 +1,34 @@
 import { FC, memo } from 'react'
 import { Text } from '@mantine/core'
-import type { ElementsType } from 'kg-calculator-typings/api/Elements'
-import type { TalentsParameters } from 'kg-calculator-typings/api/Talents'
+import type { ElementsType } from 'kg-calculator-typings'
 import Flexbox from 'shared/ui/Flexbox'
 import BarracksTalentInfo from '../BarracksTalentInfo'
+
 
 interface Props {
   className?: string
   element: ElementsType
-  parameters: TalentsParameters
-  oldParameters: TalentsParameters
+  oldTalentParams: Record<string, number>
+  newTalentParams: Record<string, number>
   maxRank: number
 }
 
-const BarracksTalentsInfo: FC<Props> = memo(({ className, element, parameters, oldParameters, maxRank }) => (
+const BarracksTalentsInfo: FC<Props> = memo(({ className, element, newTalentParams, oldTalentParams, maxRank }) => (
   <Flexbox className={className} flexDirection="column">
     {Array.from({ length: maxRank }).map((_, index) => (
-      <Flexbox alignItems="center" gap={4}>
+      <Flexbox key={index} alignItems="center" gap={4}>
         <Text>Ранг {index + 1}:</Text>
         <BarracksTalentInfo
           key={`talent-${element}-${index + 1}-books`}
           type="books"
-          value={parameters[element].rank[index + 1].booksCells}
-          oldValue={oldParameters[element].rank[index + 1].booksCells}
+          value={newTalentParams[`${element}_${index + 1}_small`]}
+          oldValue={oldTalentParams[`${element}_${index + 1}_small`]}
         />
         <BarracksTalentInfo
           key={`talent-${element}-${index + 1}-crowns`}
           type="crowns"
-          value={parameters[element].rank[index + 1].crownsCells}
-          oldValue={oldParameters[element].rank[index + 1].crownsCells}
+          value={newTalentParams[`${element}_${index + 1}_big`]}
+          oldValue={oldTalentParams[`${element}_${index + 1}_big`]}
         />
       </Flexbox>
     ))}

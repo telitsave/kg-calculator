@@ -1,23 +1,28 @@
 import { FC, memo } from 'react'
 import { Progress } from '@mantine/core'
-import type { WitchParameters } from 'kg-calculator-typings/api/Witch'
+import type { Parameters } from 'kg-calculator-typings'
 import Flexbox from 'shared/ui/Flexbox'
 import ParameterInfo from '../ParameterInfo'
 
+
 interface Props {
   className?: string
-  witchParameters: WitchParameters
-  oldWitchParameters: WitchParameters
+  params: Parameters
+  oldParams: Parameters
 }
 
 const WitchPowerInfo: FC<Props> = memo(
-  ({ className, witchParameters: { darkLevel, lightLevel }, oldWitchParameters }) => {
+  ({
+    className,
+    params: { witchParams_lightLevel: lightLevel = 0, witchParams_darkLevel: darkLevel = 0 },
+    oldParams,
+  }) => {
     return (
       <Flexbox className={className} justifyContent="space-between" alignItems="center">
         <ParameterInfo
-          parameterType="lightPower"
-          value={lightLevel}
-          oldValue={oldWitchParameters.lightLevel}
+          parameterType="witchParams_lightLevel"
+          value={lightLevel || 0}
+          oldValue={oldParams.witchParams_lightLevel}
           viewMode="bigIcon"
         />
         <Progress.Root size="xl" w="100%">
@@ -25,9 +30,9 @@ const WitchPowerInfo: FC<Props> = memo(
           <Progress.Section value={(darkLevel / (lightLevel + darkLevel)) * 100} color="#9C34DE"></Progress.Section>
         </Progress.Root>
         <ParameterInfo
-          parameterType="darkPower"
+          parameterType="witchParams_darkLevel"
           value={darkLevel}
-          oldValue={oldWitchParameters.darkLevel}
+          oldValue={oldParams.witchParams_darkLevel}
           viewMode="bigIcon"
         />
       </Flexbox>

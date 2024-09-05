@@ -1,40 +1,76 @@
-import ServerSettings from '../model/ServerSettings'
 import HeroesCalculatorModel from '../model/calculator/heroes/HeroesCalculatorModel'
 import HeroesModel from '../model/heroes/HeroesModel'
 import Resources from '../model/resources/Resources'
-import Settings from '../model/settings/Settings'
-import { Request, Response } from 'express'
-import type { CalculateHeroesPayload, GetHeroesInCardsPayload } from 'kg-calculator-typings'
+import HeroesService from '../services/heroes-service'
+import InventoryService from '../services/inventory-service'
+import ServerSettingsService from '../services/serverSettings-service'
+import SettingsService from '../services/settings-service'
+import BaseController from './base-controller'
+import { type NextFunction, Request, Response } from 'express'
+import type { SaveHeroesPayload } from 'kg-calculator-typings'
 
 
-export default class HeroesController {
-  static calculateHeroes(request: Request, response: Response) {
-    const payload: CalculateHeroesPayload = request.body.data
+export default class HeroesController extends BaseController {
+  static async calculateHeroes(_: Request, response: Response, next: NextFunction) {
+    try {
+      const profileId = HeroesController.getProfileId(response)
 
-    const resources = new Resources(payload.resources)
-    const settings = new Settings(payload.settings)
+      const resources = Resources.transformDataFromDB(await InventoryService.getInventory(profileId))
+      const settings = await SettingsService.getSettings(profileId)
 
-    const heroesCalculatorModel = new HeroesCalculatorModel(
-      resources,
-      settings,
-      payload.heroesData,
-      payload.heroesDistribution,
-    )
+      const heroesCalculatorModel = new HeroesCalculatorModel(
+        resources,
+        settings,
+        await HeroesService.getHeroes(),
+        await HeroesService.getHeroesParams(profileId),
+      )
 
-    response.json(heroesCalculatorModel.calculateHeroes())
+      response.json(heroesCalculatorModel.calculateHeroes())
+    } catch (err) {
+      next(err)
+    }
   }
 
-  static getAllHeroes(_: Request, response: Response) {
-    const heroesModel = new HeroesModel()
-
-    response.json(heroesModel.getAllHeroes())
+  static async getAllHeroes(_: Request, response: Response, next: NextFunction) {
+    try {
+      const heroes = await HeroesService.getHeroes()
+      response.json(heroes)
+    } catch (err) {
+      next(err)
+    }
   }
 
-  static getHeroesInCards(request: Request, response: Response) {
-    const payload: GetHeroesInCardsPayload = request.body.data
-    const serverSettings = new ServerSettings(payload.customServerSettings)
-    const heroesModel = new HeroesModel()
+  static async getHeroesParams(_: Request, response: Response, next: NextFunction) {
+    try {
+      const profileId = HeroesController.getProfileId(response)
+      const heroesParams = await HeroesService.getHeroesParams(profileId)
+      response.json(heroesParams)
+    } catch (err) {
+      next(err)
+    }
+  }
 
-    response.json(heroesModel.getHeroesInCards(serverSettings))
+  static async setHeroesParams(request: Request, response: Response, next: NextFunction) {
+    try {
+      const profileId = HeroesController.getProfileId(response)
+      const data = (request.body.data as SaveHeroesPayload).heroesParams
+      await HeroesService.setHeroesParams(profileId, data)
+      response.json()
+    } catch (err) {
+      next(err)
+    }
+  }
+
+  static async getHeroesInCards(_: Request, response: Response, next: NextFunction) {
+    try {
+      const profileId = HeroesController.getProfileId(response)
+      const serverSettings = await ServerSettingsService.getServerSettings(profileId)
+      const heroes = await HeroesService.getHeroes()
+      const heroesModel = new HeroesModel()
+
+      response.json(heroesModel.getHeroesInCards(heroes, serverSettings))
+    } catch (err) {
+      next(err)
+    }
   }
 }

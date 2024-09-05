@@ -33,12 +33,12 @@ export default class DragonEmblemsCalculatorModel {
     while (this.tryLevelUp()) {}
 
     return {
-      oldParameters: this._sourceParameters.getData(),
-      newParameters: this._parameters.getData(),
-      sourceResources: this._sourceResources,
-      spentResources: this._spentResources,
-      leftResources: this._leftResources,
-      spentBoxesResources: this._spentBoxesResources,
+      oldParameters: this._sourceParameters.getData().params,
+      newParameters: this._parameters.getData().params,
+      sourceResources: this._sourceResources.getData(),
+      spentResources: this._spentResources.getData(),
+      leftResources: this._leftResources.getData(),
+      spentBoxesResources: this._spentBoxesResources.getData(),
     }
   }
 

@@ -1,63 +1,34 @@
-import type { HeroesDistribution, IHeroData } from './Heroes'
-import type { ParametersData } from './ParametersData'
-import type { ResourcesData } from './ResourcesData'
-import type { CustomServerSettingsData, SettingsData } from './SettingsData'
-
+export type MightiestKingdomTypes = 'dragon' | 'witch' | 'barracks' | 'blacksmith' | 'gallery' | 'heroes'
 
 export interface CalculateMightiestKingdomPayload {
-  resources: ResourcesData
-  customServerSettings?: CustomServerSettingsData
+  types: MightiestKingdomTypes[]
 }
 
 export interface CalculateMightiestKingdomResponse {
-  dragonRunes: {
-    green: number
-    blue: number
-    purple: number
-    gold: number
-    total: number
-  }
-  heroesCards: {
-    n: number
-    r: number
-    sr: number
-    ssr: number
-    total: number
-  }
-  barracksBooks: {
-    rank1: number
-    rank2: number
-    rank3: number
-    rank4: number
-    total: number
-  }
-  barracksTalents: {
-    books: number
-    oraclesCrowns: number
-    total: number
-  }
-  witch: {
-    lightReagents: number
-    greenPotions: number
-    purplePotions: number
-    total: number
-  }
-  blacksmith: {
-    hammers: number
-    total: number
-  }
-  gallery: {
-    shards: number
-    total: number
-  }
+  dragonResources_green: number
+  dragonResources_blue: number
+  dragonResources_purple: number
+  dragonResources_gold: number
+  dragonResources_total: number
+  witchResources_lightReagents: number
+  witchResources_greenWitchPotion: number
+  witchResources_purpleWitchPotion: number
+  witchResources_total: number
+  barracksResources_1: number
+  barracksResources_2: number
+  barracksResources_3: number
+  barracksResources_4: number
+  barracksResources_total: number
+  talentsResources_books: number
+  talentsResources_oraclesCrowns: number
+  blacksmithResources_hammers: number
+  blacksmithResources_total: number
+  galleryResources_shards: number
+  galleryResources_total: number
+  heroesResources_n: number
+  heroesResources_r: number
+  heroesResources_sr: number
+  heroesResources_ssr: number
+  heroesResources_total: number
   total: number
-}
-
-export interface CalculateTotalMightiestKingdomPayload {
-  resources: ResourcesData
-  parameters: ParametersData
-  settings: SettingsData
-  heroesData: IHeroData[]
-  heroesDistribution: HeroesDistribution
-  customServerSettings?: CustomServerSettingsData
 }

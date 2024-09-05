@@ -1,46 +1,40 @@
-import { FC, ReactNode, memo, useCallback } from 'react'
+import { FC, memo, useCallback } from 'react'
 import cx from 'classnames'
-import type { ResourcesData } from 'kg-calculator-typings/api/ResourcesData'
-import { useSettings } from 'entities/calculationSettings'
+import { Flex } from '@mantine/core'
+import { SettingsQueue } from 'entities/calculationSettings'
 import { useCalculateDragon } from 'entities/dragonRunes'
-import { useParameters } from 'entities/parameter'
-import { useResources } from 'entities/resource'
-import Flexbox from 'shared/ui/Flexbox'
+import { useCalculateMightiestKingdom } from 'entities/mightiestKingdom'
+import { ParametersQueue } from 'entities/parameter'
+import { ResourcesQueue } from 'entities/resource'
+import { useCalculateUltimatePower } from 'entities/ultimatePower'
 import Inputs from '../Inputs'
 import Results from '../Results'
 import css from './styles.module.sass'
 
+
 interface Props {
   className?: string
-  getExtremePowerNode: (resources: ResourcesData) => ReactNode
-  getMightiestKingdomNode: (resources: ResourcesData) => ReactNode
 }
 
-const DragonCalculator: FC<Props> = memo(({ className, getExtremePowerNode, getMightiestKingdomNode }) => {
-  const resources = useResources()
-  const parameters = useParameters()
-  const settings = useSettings()
+const DragonCalculator: FC<Props> = memo(({ className }) => {
   const { mutate, data } = useCalculateDragon()
+  const { mutate: calculateUltimatePower, data: ultimatePowerData } = useCalculateUltimatePower()
+  const { mutate: calculateMK, data: mkData } = useCalculateMightiestKingdom()
 
-  const handleSubmitButtonClick = useCallback(() => {
-    mutate({
-      resources,
-      parameters,
-      settings,
-    })
-  }, [mutate, parameters, resources, settings])
+  const handleSubmitButtonClick = useCallback(async () => {
+    await ResourcesQueue.saveData()
+    await ParametersQueue.saveData()
+    await SettingsQueue.saveData()
+    mutate()
+    calculateUltimatePower(['dragon'])
+    calculateMK(['dragon'])
+  }, [mutate, calculateUltimatePower, calculateMK])
 
   return (
-    <Flexbox className={cx(css.root, className)} flexDirection="column" gap={16}>
+    <Flex className={cx(css.root, className)} direction="column" gap={16}>
       <Inputs onSubmitButtonClick={handleSubmitButtonClick} />
-      {data && (
-        <Results
-          data={data}
-          extremePowerNode={getExtremePowerNode(data.spentResources)}
-          mightiestKingdomNode={getMightiestKingdomNode(data.spentResources)}
-        />
-      )}
-    </Flexbox>
+      {data && <Results data={data} ultimatePowerData={ultimatePowerData} mightiestKingdomData={mkData} />}
+    </Flex>
   )
 })
 

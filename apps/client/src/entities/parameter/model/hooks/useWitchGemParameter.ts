@@ -1,14 +1,18 @@
-import { useLocalStorage } from '@mantine/hooks'
-import { Ranks } from '../types'
+import { useCallback } from 'react'
+import useParameters from './useParameters'
 
 
-const useWitchGemParameter = (rank: Ranks, gem: number) =>
-  useLocalStorage<number>({
-    key: `gem-${rank}-${gem}`,
-    defaultValue: 0,
-    getInitialValueInEffect: false,
-    serialize: (value) => value.toString(),
-    deserialize: (value) => parseInt(value || '0', 10),
-  })
+const useWitchGemParameter = (rank: number, gem: string): [number | undefined, (val: number) => void] => {
+  const { gems, saveGem } = useParameters()
+
+  const handleSetGem = useCallback(
+    (value: number) => {
+      saveGem(rank, gem, value)
+    },
+    [saveGem],
+  )
+
+  return [gems !== undefined ? gems[`${rank}_${gem}`] : undefined, handleSetGem]
+}
 
 export default useWitchGemParameter

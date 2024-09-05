@@ -1,7 +1,5 @@
 import heroNeededCardsInfo from './heroNeededCardsInfo.json'
-import heroesData from './heroes.json'
 import type { Hero, IHeroData } from 'kg-calculator-typings'
-
 
 export default class HeroModel {
   heroData: Hero
@@ -9,10 +7,7 @@ export default class HeroModel {
   bars: number
   cards: number
 
-  constructor(heroId: string, heroData: IHeroData) {
-    const hero = heroesData.find((it) => it.heroId === heroId)
-    if (!hero) throw new Error('No Hero')
-
+  constructor(hero: Hero, heroData: IHeroData) {
     this.heroData = hero as Hero
     this.stars = heroData.stars
     this.bars = heroData.bars

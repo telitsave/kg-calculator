@@ -1,35 +1,30 @@
-import type { ParametersData } from './ParametersData'
-import type { ResourcesData } from './ResourcesData'
-import type { CustomServerSettingsData } from './SettingsData'
+import type { Resources } from './Inventory'
+import type { Parameters } from './Parameters'
 
-
-export interface CalculateWitchPayload {
-  parameters: ParametersData
-  resources: ResourcesData
-  customServerSettings?: CustomServerSettingsData
-}
 
 export interface CalculateWitchResponse {
-  oldParameters: ParametersData
-  newParameters: ParametersData
-  sourceResources: ResourcesData
-  spentResources: ResourcesData
-  leftResources: ResourcesData
+  oldParameters: Parameters
+  newParameters: Parameters
+  oldGemsParameters: Record<string, number>
+  newGemsParameters: Record<string, number>
+  sourceResources: Resources
+  spentResources: Resources
+  leftResources: Resources
 }
 
 export interface WitchParameters {
   lightLevel: number
   darkLevel: number
   gems: {
-    rank1: GemsRankParameters
-    rank2: GemsRankParameters
-    rank3: GemsRankParameters
-    rank4: GemsRankParameters
-    rank5: GemsRankParameters
-    rank6: GemsRankParameters
-    rank7: GemsRankParameters
-    rank8: GemsRankParameters
-    rank9: GemsRankParameters
+    1: GemsRankParameters
+    2: GemsRankParameters
+    3: GemsRankParameters
+    4: GemsRankParameters
+    5: GemsRankParameters
+    6: GemsRankParameters
+    7: GemsRankParameters
+    8: GemsRankParameters
+    9: GemsRankParameters
   }
 }
 

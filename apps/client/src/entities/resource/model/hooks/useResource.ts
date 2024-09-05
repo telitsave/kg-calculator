@@ -1,15 +1,19 @@
-import { useLocalStorage } from '@mantine/hooks'
-import { ResourceType } from '../types'
+import { useCallback } from 'react'
+import type { ResourceType } from 'kg-calculator-typings'
+import useResources from './useResources'
 
 
-const useResource = (resourceType: ResourceType) => {
-  return useLocalStorage<number>({
-    key: resourceType,
-    defaultValue: 0,
-    getInitialValueInEffect: false,
-    serialize: (value) => value.toString(),
-    deserialize: (value) => parseInt(value || '0', 10),
-  })
+const useResource = (resourceType: ResourceType): [number | undefined, (val: number) => void] => {
+  const { resources, saveResources } = useResources()
+
+  const handleSetResource = useCallback(
+    (value: number) => {
+      saveResources(resourceType, value)
+    },
+    [saveResources],
+  )
+
+  return [resources !== undefined ? resources[resourceType] : undefined, handleSetResource]
 }
 
 export default useResource

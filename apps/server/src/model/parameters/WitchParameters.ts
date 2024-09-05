@@ -1,61 +1,68 @@
-import type { GemsRankParameters, ParametersData } from 'kg-calculator-typings'
+import type { GemsRankParameters, Parameters, ParametersData } from 'kg-calculator-typings'
 
 export default class WitchParameters {
   lightLevel: number = 0
   darkLevel: number = 0
   gems: {
-    rank1: GemsRankParameters
-    rank2: GemsRankParameters
-    rank3: GemsRankParameters
-    rank4: GemsRankParameters
-    rank5: GemsRankParameters
-    rank6: GemsRankParameters
-    rank7: GemsRankParameters
-    rank8: GemsRankParameters
-    rank9: GemsRankParameters
+    1: GemsRankParameters
+    2: GemsRankParameters
+    3: GemsRankParameters
+    4: GemsRankParameters
+    5: GemsRankParameters
+    6: GemsRankParameters
+    7: GemsRankParameters
+    8: GemsRankParameters
+    9: GemsRankParameters
   }
 
   constructor(initData?: ParametersData['witch']) {
     this.lightLevel = initData?.lightLevel || 0
     this.darkLevel = initData?.darkLevel || 0
     this.gems = {
-      rank1: this.getFilledGemsByRank(initData?.gems?.rank1),
-      rank2: this.getFilledGemsByRank(initData?.gems?.rank2),
-      rank3: this.getFilledGemsByRank(initData?.gems?.rank3),
-      rank4: this.getFilledGemsByRank(initData?.gems?.rank4),
-      rank5: this.getFilledGemsByRank(initData?.gems?.rank5),
-      rank6: this.getFilledGemsByRank(initData?.gems?.rank6),
-      rank7: this.getFilledGemsByRank(initData?.gems?.rank7),
-      rank8: this.getFilledGemsByRank(initData?.gems?.rank8),
-      rank9: this.getFilledGemsByRank(initData?.gems?.rank9),
+      1: this.getFilledGemsByRank(initData?.gems['1']),
+      2: this.getFilledGemsByRank(initData?.gems['2']),
+      3: this.getFilledGemsByRank(initData?.gems['3']),
+      4: this.getFilledGemsByRank(initData?.gems['4']),
+      5: this.getFilledGemsByRank(initData?.gems['5']),
+      6: this.getFilledGemsByRank(initData?.gems['6']),
+      7: this.getFilledGemsByRank(initData?.gems['7']),
+      8: this.getFilledGemsByRank(initData?.gems['8']),
+      9: this.getFilledGemsByRank(initData?.gems['9']),
     }
   }
 
-  static transformDataFromDB(items: { parameterId: string; value: string }[]): WitchParameters {
+  static transformDataFromDB(params: Parameters, items: Record<string, number> = {}): WitchParameters {
     const parameters = new WitchParameters()
-    items.forEach((item) => {
-      const [, param, rank, gem] = item.parameterId.split('_')
-      if (param === 'gems') {
-        parameters[param][rank][gem] = Number(item.value) || 0
-      } else {
-        parameters[param] = Number(item.value) || 0
-      }
+    Object.entries(items).forEach(([key, value]) => {
+      const [rank, gem] = key.split('_')
+
+      parameters.gems[rank][gem] = value
+    })
+    Object.entries(params).forEach(([key, value]) => {
+      const [resourceType, param] = key.split('_')
+      if (resourceType !== 'witchParams') return
+
+      parameters[param] = value
     })
 
     return parameters
   }
 
-  getDataForDB() {
-    return [
-      { parameterId: 'witch_lightLevel', value: this.lightLevel || null },
-      { parameterId: 'witch_darkLevel', value: this.darkLevel || null },
-      ...Object.entries(this.gems).flatMap(([rank, value]) => {
-        return Object.entries(value).flatMap(([gem, count]) => ({
-          parameterId: `witch_gems_${rank}_${gem}`,
-          value: count || null,
-        }))
-      }),
-    ]
+  getData() {
+    const params: Parameters = {
+      witchParams_lightLevel: this.lightLevel,
+      witchParams_darkLevel: this.darkLevel,
+    }
+    const gems: Record<string, number> = {}
+    Object.entries(this.gems).forEach(([rank, value]) => {
+      Object.entries(value).forEach(([gem, count]) => {
+        gems[`${rank}_${gem}`] = count
+      })
+    })
+    return {
+      gems,
+      params,
+    }
   }
 
   private getFilledGemsByRank(rank?: GemsRankParameters) {

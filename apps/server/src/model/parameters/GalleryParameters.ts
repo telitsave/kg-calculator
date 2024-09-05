@@ -1,4 +1,4 @@
-import type { ParametersData } from 'kg-calculator-typings'
+import type { Parameters, ParametersData } from 'kg-calculator-typings'
 
 export default class GalleryParameters {
   level: number = 0
@@ -9,20 +9,22 @@ export default class GalleryParameters {
     this.step = initData?.step || 0
   }
 
-  static transformDataFromDB(items: { parameterId: string; value: string }[]): GalleryParameters {
+  static transformDataFromDB(items: Parameters): GalleryParameters {
     const parameters = new GalleryParameters()
-    items.forEach((item) => {
-      const [, param] = item.parameterId.split('_')
-      parameters[param] = Number(item.value) || 0
+    Object.entries(items).forEach(([key, value]) => {
+      const [resourceType, param] = key.split('_')
+      if (resourceType !== 'galleryParams') return
+
+      parameters[param] = value
     })
 
     return parameters
   }
 
-  getDataForDB() {
-    return [
-      { parameterId: 'gallery_level', value: this.level || null },
-      { parameterId: 'gallery_step', value: this.step || null },
-    ]
+  getData(): Parameters {
+    return {
+      galleryParams_level: this.level,
+      galleryParams_step: this.step,
+    }
   }
 }

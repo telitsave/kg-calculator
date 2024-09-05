@@ -1,4 +1,4 @@
-import type { ElementsType, ParametersData } from 'kg-calculator-typings'
+import type { ElementsType, Parameters, ParametersData } from 'kg-calculator-typings'
 
 export interface ParametersByElement {
   rank: number
@@ -30,11 +30,13 @@ export default class BarracksParameters {
     }
   }
 
-  static transformDataFromDB(items: { parameterId: string; value: string }[]): BarracksParameters {
+  static transformDataFromDB(items: Parameters): BarracksParameters {
     const parameters = new BarracksParameters()
-    items.forEach((item) => {
-      const [, element, param] = item.parameterId.split('_')
-      parameters[element][param] = Number(item.value) || 0
+    Object.entries(items).forEach(([key, value]) => {
+      const [resourceType, element, param] = key.split('_')
+      if (resourceType !== 'barracksParams') return
+
+      parameters[element][param] = value
     })
 
     return parameters
@@ -50,8 +52,21 @@ export default class BarracksParameters {
     return elements
   }
 
-  getData(): ParametersData['barracks'] {
+  getData(): Parameters {
     return {
+      barracksParams_bow_rank: this.bow.rank,
+      barracksParams_bow_level: this.bow.level,
+      barracksParams_fire_rank: this.fire.rank,
+      barracksParams_fire_level: this.fire.level,
+      barracksParams_ice_rank: this.ice.rank,
+      barracksParams_ice_level: this.ice.level,
+      barracksParams_poison_rank: this.poison.rank,
+      barracksParams_poison_level: this.poison.level,
+    }
+  }
+
+  clone() {
+    return new BarracksParameters({
       bowRank: this.bow.rank,
       bowLevel: this.bow.level,
       fireRank: this.fire.rank,
@@ -60,11 +75,7 @@ export default class BarracksParameters {
       iceLevel: this.ice.level,
       poisonRank: this.poison.rank,
       poisonLevel: this.poison.level,
-    }
-  }
-
-  clone() {
-    return new BarracksParameters(this.getData())
+    })
   }
 
   getDataForDB() {

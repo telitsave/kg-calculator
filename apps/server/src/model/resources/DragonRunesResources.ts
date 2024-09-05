@@ -1,5 +1,5 @@
 import { BaseResources } from './BaseResources'
-import type { ResourcesData } from 'kg-calculator-typings'
+import type { Resources, ResourcesData } from 'kg-calculator-typings'
 
 
 export type DragonRuneType = 'green' | 'blue' | 'purple' | 'gold'
@@ -19,11 +19,13 @@ export default class DragonRunesResources implements BaseResources<DragonRunesRe
     this.boxes = initData?.boxes || 0
   }
 
-  static transformDataFromDB(items: { itemId: string; count: number }[]): DragonRunesResources {
+  static transformDataFromDB(items: Resources): DragonRunesResources {
     const resources = new DragonRunesResources()
-    items.forEach((item) => {
-      const [, resource] = item.itemId.split('_')
-      resources[resource] = item.count
+    Object.entries(items).forEach(([key, value]) => {
+      const [resourceType, param] = key.split('_')
+      if (resourceType !== 'dragonResources') return
+
+      resources[param] = value
     })
 
     return resources
@@ -89,13 +91,13 @@ export default class DragonRunesResources implements BaseResources<DragonRunesRe
     if (this.boxes < 0) this.boxes = 0
   }
 
-  getDataForDB() {
-    return [
-      { itemId: 'dragonResources_green', count: this.green },
-      { itemId: 'dragonResources_blue', count: this.blue },
-      { itemId: 'dragonResources_purple', count: this.purple },
-      { itemId: 'dragonResources_gold', count: this.gold },
-      { itemId: 'dragonResources_boxes', count: this.boxes },
-    ]
+  getData(): Resources {
+    return {
+      dragonResources_blue: this.blue,
+      dragonResources_gold: this.gold,
+      dragonResources_green: this.green,
+      dragonResources_purple: this.purple,
+      dragonResources_boxes: this.boxes,
+    }
   }
 }

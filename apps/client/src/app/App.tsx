@@ -4,9 +4,14 @@ import { MantineProvider } from '@mantine/core'
 import { Notifications } from '@mantine/notifications'
 import '@mantine/notifications/styles.css'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
+import { SettingsQueue } from 'entities/calculationSettings'
+import { HeroesQueue } from 'entities/hero'
+import { ParametersQueue } from 'entities/parameter'
+import { ResourcesQueue } from 'entities/resource'
+import { ServerSettingsQueue } from 'entities/serverSettings'
 import router from 'pages/router'
 import AxiosService from 'shared/services/axiosService'
-import './App.sass'
+import './App.sass';
 
 
 const queryClient = new QueryClient({
@@ -19,6 +24,12 @@ const queryClient = new QueryClient({
 
 const App: FC = () => {
   AxiosService.init(process.env.REACT_APP_SERVER_URL as string)
+  ResourcesQueue.queryClient = queryClient
+  ParametersQueue.queryClient = queryClient
+  SettingsQueue.queryClient = queryClient
+  ServerSettingsQueue.queryClient = queryClient
+  HeroesQueue.queryClient = queryClient
+
   return (
     <MantineProvider>
       <Notifications />

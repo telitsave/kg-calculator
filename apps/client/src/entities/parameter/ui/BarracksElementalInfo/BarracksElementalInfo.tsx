@@ -1,22 +1,22 @@
 import { FC, memo } from 'react'
 import { Progress, Text } from '@mantine/core'
-import type { BarracksParameters } from 'kg-calculator-typings/api/Barracks'
-import type { ElementsType } from 'kg-calculator-typings/api/Elements'
+import type { ElementsType, Parameters } from 'kg-calculator-typings'
 import { BarracksRankIcon } from 'shared/assets/icons'
 import Flexbox from 'shared/ui/Flexbox'
+
 
 interface Props {
   className?: string
   element: ElementsType
-  oldBarrackParams: BarracksParameters
-  barrackParams: BarracksParameters
+  oldParams: Parameters
+  newParams: Parameters
 }
 
-const BarracksElementalInfo: FC<Props> = memo(({ className, element, oldBarrackParams, barrackParams }) => {
-  const oldRank = oldBarrackParams[`${element}Rank`]
-  const oldLevel = oldBarrackParams[`${element}Level`]
-  const newRank = barrackParams[`${element}Rank`]
-  const newLevel = barrackParams[`${element}Level`]
+const BarracksElementalInfo: FC<Props> = memo(({ className, element, oldParams, newParams }) => {
+  const oldRank = oldParams[`barracksParams_${element}_rank`] || 0
+  const oldLevel = oldParams[`barracksParams_${element}_level`] || 0
+  const newRank = newParams[`barracksParams_${element}_rank`] || 0
+  const newLevel = newParams[`barracksParams_${element}_level`] || 0
   const totalLevels = newRank % 2 === 0 ? 200 : 100
   const blueValue = (oldRank === newRank ? oldLevel : 0) / totalLevels
   const greenValue = (newLevel - (oldRank === newRank ? oldLevel : 0)) / totalLevels

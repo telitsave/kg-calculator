@@ -1,5 +1,5 @@
 import { BaseResources } from './BaseResources'
-import type { ResourcesData } from 'kg-calculator-typings'
+import type { Resources, ResourcesData } from 'kg-calculator-typings'
 
 
 export default class WitchResources implements BaseResources<WitchResources> {
@@ -15,11 +15,13 @@ export default class WitchResources implements BaseResources<WitchResources> {
     }
   }
 
-  static transformDataFromDB(items: { itemId: string; count: number }[]): WitchResources {
+  static transformDataFromDB(items: Resources): WitchResources {
     const resources = new WitchResources()
-    items.forEach((item) => {
-      const [, resource] = item.itemId.split('_')
-      resources[resource] = item.count
+    Object.entries(items).forEach(([key, value]) => {
+      const [resourceType, param] = key.split('_')
+      if (resourceType !== 'witchResources') return
+
+      resources[param] = value
     })
 
     return resources
@@ -46,11 +48,11 @@ export default class WitchResources implements BaseResources<WitchResources> {
     if (this.purpleWitchPotion < 0) this.purpleWitchPotion = 0
   }
 
-  getDataForDB() {
-    return [
-      { itemId: 'witchResources_lightReagents', count: this.lightReagents },
-      { itemId: 'witchResources_greenWitchPotion', count: this.greenWitchPotion },
-      { itemId: 'witchResources_purpleWitchPotion', count: this.purpleWitchPotion },
-    ]
+  getData(): Resources {
+    return {
+      witchResources_lightReagents: this.lightReagents,
+      witchResources_purpleWitchPotion: this.purpleWitchPotion,
+      witchResources_greenWitchPotion: this.greenWitchPotion,
+    }
   }
 }

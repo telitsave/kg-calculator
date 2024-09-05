@@ -4,24 +4,25 @@ import type { ElementsType, Ranks } from 'kg-calculator-typings'
 import { FaStar, FaStarHalfAlt } from 'react-icons/fa'
 import { Bars, HeroHelper, HeroIcon, Stars } from 'entities/hero'
 import { ResourceIcon } from 'entities/resource'
+import useHeroesDistributionModel from '../../model/hooks/useHeroesDistributionModel'
 import css from './styles.module.sass'
+
 
 interface Props {
   className?: string
-  id: string
-  name: string
+  heroId: string
   stars: number
   bars: number
-  heroCards: number
+  cards: number
+  distributionCards: number
   rank: Ranks
   element: ElementsType
-  cards: number | undefined
-
-  onSetCards: (heroId: string, cardsAmount: number) => void
+  name: string
+  onSetCards: ReturnType<typeof useHeroesDistributionModel>['onSetCards']
 }
 
 const CardDistribution: FC<Props> = memo(
-  ({ className, id, name, element, stars, heroCards, bars, rank, cards = 0, onSetCards }) => {
+  ({ className, heroId, stars, bars, cards, distributionCards, rank, element, name, onSetCards }) => {
     const {
       newStars,
       newBars,
@@ -30,34 +31,50 @@ const CardDistribution: FC<Props> = memo(
       spentCardsForPrevLevel,
       spentCardsForPrevStar,
     } = useMemo(
-      () => HeroHelper.upStarsBars(stars, bars, heroCards + cards, rank),
-      [stars, bars, heroCards, rank, cards],
+      () => HeroHelper.upStarsBars(stars, bars, cards + distributionCards, rank),
+      [stars, bars, distributionCards, rank, cards],
     )
 
     const maxStars = HeroHelper.getMaxStars(rank)
     const maxBars = HeroHelper.getMaxBars(rank, newStars)
 
     const handleAddLevelClick = useCallback(() => {
-      onSetCards(id, cards + neededCardsForNextLevel)
-    }, [neededCardsForNextLevel, onSetCards, cards])
+      onSetCards(heroId, stars, bars, cards, distributionCards, distributionCards + neededCardsForNextLevel)
+    }, [neededCardsForNextLevel, onSetCards, heroId, stars, bars, cards, distributionCards])
 
     const handleRemoveLevelClick = useCallback(() => {
       onSetCards(
-        id,
-        cards < spentCardsForPrevLevel ? 0 : spentCardsForPrevLevel === 0 ? 0 : cards - spentCardsForPrevLevel,
+        heroId,
+        stars,
+        bars,
+        cards,
+        distributionCards,
+        distributionCards < spentCardsForPrevLevel
+          ? 0
+          : spentCardsForPrevLevel === 0
+            ? 0
+            : distributionCards - spentCardsForPrevLevel,
       )
-    }, [spentCardsForPrevLevel, onSetCards, cards])
+    }, [spentCardsForPrevLevel, onSetCards, heroId, stars, bars, cards, distributionCards])
 
     const handleAddStarClick = useCallback(() => {
-      onSetCards(id, cards + neededCardsForNextStar)
-    }, [neededCardsForNextLevel, onSetCards, cards])
+      onSetCards(heroId, stars, bars, cards, distributionCards, distributionCards + neededCardsForNextStar)
+    }, [neededCardsForNextLevel, onSetCards, heroId, stars, bars, cards, distributionCards])
 
     const handleRemoveStarClick = useCallback(() => {
       onSetCards(
-        id,
-        cards < spentCardsForPrevStar ? 0 : spentCardsForPrevStar === 0 ? 0 : cards - spentCardsForPrevStar,
+        heroId,
+        stars,
+        bars,
+        cards,
+        distributionCards,
+        distributionCards < spentCardsForPrevStar
+          ? 0
+          : spentCardsForPrevStar === 0
+            ? 0
+            : distributionCards - spentCardsForPrevStar,
       )
-    }, [spentCardsForPrevLevel, onSetCards, cards])
+    }, [spentCardsForPrevLevel, onSetCards, heroId, stars, bars, cards, distributionCards])
 
     return (
       <Flex className={className} align="center" gap={16}>
@@ -69,7 +86,7 @@ const CardDistribution: FC<Props> = memo(
             sm: 64,
           }}
         >
-          <HeroIcon heroId={id} element={element} small />
+          <HeroIcon heroId={heroId} element={element} small />
           <Text size="sm">{name}</Text>
         </Flex>
         <Flex gap={8} align="center">
@@ -99,7 +116,7 @@ const CardDistribution: FC<Props> = memo(
               gap: 4,
             }}
           >
-            Исп-но <ResourceIcon className={css.icon} resourceType="heroGoldCards" />: {cards}
+            Исп-но <ResourceIcon className={css.icon} resourceType="heroesResources_ssr" />: {distributionCards}
           </Text>
           <Text
             size="sm"

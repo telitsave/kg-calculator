@@ -1,41 +1,44 @@
-import { FC, ReactNode, memo } from 'react'
+import { FC, memo } from 'react'
 import { Accordion, Divider, Title } from '@mantine/core'
-import { BarracksBooksResources, ParametersData, ResourcesData } from 'kg-calculator-typings'
+import {
+  type CalculateBarracksResponse,
+  type CalculateMightiestKingdomResponse,
+  type CalculateUltimatePowerResponse,
+} from 'kg-calculator-typings'
+import { MightiestKingdomStatistics } from 'entities/mightiestKingdom'
 import { ResourceCount } from 'entities/resource'
+import { UltimatePowerStatistics } from 'entities/ultimatePower'
 import { ElementIcon } from 'shared/assets/icons'
 import Flexbox from 'shared/ui/Flexbox'
 import { elements } from '../../model/constants'
 import ResultElement from '../ResultElement'
 
+
 interface Props {
   className?: string
-  oldParams: ParametersData
-  params: ParametersData
-  sourceResources: ResourcesData
-  spentResources: ResourcesData
-  leftResources: ResourcesData
-  randomBooksUsed: BarracksBooksResources
-  convertBooksForBarracks: BarracksBooksResources
-  convertTalentBooks: BarracksBooksResources
-  spentTalentBooks: BarracksBooksResources
-  extremePowerNode: ReactNode
-  mightiestKingdomNode: ReactNode
+  data: CalculateBarracksResponse
+  ultimatePowerData?: CalculateUltimatePowerResponse
+  mightiestKingdomData?: CalculateMightiestKingdomResponse
 }
 
 const Results: FC<Props> = memo(
   ({
     className,
-    oldParams,
-    params,
-    sourceResources,
-    spentResources,
-    leftResources,
-    randomBooksUsed,
-    convertBooksForBarracks,
-    convertTalentBooks,
-    spentTalentBooks,
-    extremePowerNode,
-    mightiestKingdomNode,
+    data: {
+      oldParameters,
+      parameters,
+      oldTalentParameters,
+      newTalentParameters,
+      sourceResources,
+      spentResources,
+      leftResources,
+      randomBooksUsed,
+      convertBooksForBarracks,
+      convertTalentBooks,
+      spentTalentBooks,
+    },
+    ultimatePowerData,
+    mightiestKingdomData,
   }) => (
     <Flexbox className={className} flexDirection="column" gap={8}>
       <Title order={4}>Результаты</Title>
@@ -46,8 +49,10 @@ const Results: FC<Props> = memo(
             <Accordion.Panel>
               <ResultElement
                 element={element.key}
-                oldParams={oldParams}
-                params={params}
+                oldParams={oldParameters}
+                params={parameters}
+                oldTalentParams={oldTalentParameters}
+                talentParams={newTalentParameters}
                 convertBooksForBarracks={convertBooksForBarracks}
                 convertTalentBooks={convertTalentBooks}
                 randomBooksUsed={randomBooksUsed}
@@ -69,29 +74,33 @@ const Results: FC<Props> = memo(
             leftCount={leftResources.gold}
           />
           <ResourceCount
-            resourceType="talentBook"
-            count={spentResources.talents.books}
-            sourceCount={sourceResources.talents.books}
-            leftCount={leftResources.talents.books}
+            resourceType="talentsResources_books"
+            count={spentResources.talentsResources_books}
+            sourceCount={sourceResources.talentsResources_books}
+            leftCount={leftResources.talentsResources_books}
           />
           <ResourceCount
-            resourceType="talentCrown"
-            count={spentResources.talents.oraclesCrowns}
-            sourceCount={sourceResources.talents.oraclesCrowns}
-            leftCount={leftResources.talents.oraclesCrowns}
+            resourceType="talentsResources_oraclesCrowns"
+            count={spentResources.talentsResources_oraclesCrowns}
+            sourceCount={sourceResources.talentsResources_oraclesCrowns}
+            leftCount={leftResources.talentsResources_oraclesCrowns}
           />
           <ResourceCount
-            resourceType="bookRandom"
-            count={spentResources.barracksBooks.random}
-            sourceCount={sourceResources.barracksBooks.random}
-            leftCount={leftResources.barracksBooks.random}
+            resourceType="barracksResources_random"
+            count={spentResources.barracksResources_random}
+            sourceCount={sourceResources.barracksResources_random}
+            leftCount={leftResources.barracksResources_random}
           />
         </Flexbox>
       </Flexbox>
+
       <Divider />
-      {mightiestKingdomNode}
+
+      <MightiestKingdomStatistics data={mightiestKingdomData} />
+
       <Divider />
-      {extremePowerNode}
+
+      <UltimatePowerStatistics data={ultimatePowerData} />
     </Flexbox>
   ),
 )

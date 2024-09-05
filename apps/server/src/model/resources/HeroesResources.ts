@@ -1,5 +1,5 @@
 import { BaseResources } from './BaseResources'
-import type { ResourcesData } from 'kg-calculator-typings'
+import type { Resources, ResourcesData } from 'kg-calculator-typings'
 
 
 export default class HeroesResources implements BaseResources<HeroesResources> {
@@ -15,11 +15,13 @@ export default class HeroesResources implements BaseResources<HeroesResources> {
     this.ssr = initData?.ssr || 0
   }
 
-  static transformDataFromDB(items: { itemId: string; count: number }[]): HeroesResources {
+  static transformDataFromDB(items: Resources): HeroesResources {
     const resources = new HeroesResources()
-    items.forEach((item) => {
-      const [, rank] = item.itemId.split('_')
-      resources[rank] = item.count
+    Object.entries(items).forEach(([key, value]) => {
+      const [resourceType, param] = key.split('_')
+      if (resourceType !== 'heroesResources') return
+
+      resources[param] = value
     })
 
     return resources
@@ -50,12 +52,12 @@ export default class HeroesResources implements BaseResources<HeroesResources> {
     if (this.ssr < 0) this.ssr = 0
   }
 
-  getDataForDB() {
-    return [
-      { itemId: 'heroesCards_n', count: this.n },
-      { itemId: 'heroesCards_r', count: this.r },
-      { itemId: 'heroesCards_sr', count: this.sr },
-      { itemId: 'heroesCards_ssr', count: this.ssr },
-    ]
+  getData(): Resources {
+    return {
+      heroesResources_n: this.n,
+      heroesResources_r: this.r,
+      heroesResources_sr: this.sr,
+      heroesResources_ssr: this.ssr,
+    }
   }
 }

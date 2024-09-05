@@ -22,7 +22,7 @@ export const PAGE_NAMES: Record<string, string> = {
   castle: 'Замок',
   dragon: 'Руны дракона',
   witch: 'Ведьма',
-  extremePower: 'Экстремальная мощь',
+  ultimatePower: 'Экстремальная мощь',
   barracks: 'Казарма',
   mightiestKingdom: 'Сильнейшее королевство',
   blacksmith: 'Кузнец',

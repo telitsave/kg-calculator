@@ -1,8 +1,6 @@
-import type { CalculateGalleryPayload, CalculateGalleryResponse } from 'kg-calculator-typings'
+import type { CalculateGalleryResponse } from 'kg-calculator-typings'
 import AxiosService from '../services/axiosService'
 
-export const calculateGallery = (payload: CalculateGalleryPayload) => {
-  return AxiosService.post<CalculateGalleryResponse>('/calculator/gallery', {
-    data: payload,
-  })
+export const calculateGallery = () => {
+  return AxiosService.post<CalculateGalleryResponse>('/calculator/gallery')
 }

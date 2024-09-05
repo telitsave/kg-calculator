@@ -1,20 +1,22 @@
-import { FC, memo, useCallback, useMemo } from 'react'
+import { FC, memo, useCallback, useEffect, useMemo, useState } from 'react'
 import cx from 'classnames'
 import { Switch, SwitchGroup, Text } from '@mantine/core'
+import type { Settings } from 'kg-calculator-typings'
 import Flexbox from 'shared/ui/Flexbox'
 import HelpButton from 'shared/ui/HelpButton'
 import useSetting from '../../model/hooks/useSetting'
-import { SettingsTypes } from '../../model/types'
 import HelpNode from '../HelpNode'
 import css from './styles.module.sass'
 
+
 interface Props {
   className?: string
-  settingsType: SettingsTypes
+  settingsType: keyof Settings
 }
 
 const SettingsSwitch: FC<Props> = memo(({ className, settingsType }) => {
   const [value, setValue] = useSetting(settingsType)
+  const [stateValue, setStateValue] = useState(value)
 
   const switchLabel = useMemo(() => {
     switch (settingsType) {
@@ -57,12 +59,23 @@ const SettingsSwitch: FC<Props> = memo(({ className, settingsType }) => {
   const handleSwitchChange = useCallback(
     (values: string[]) => {
       setValue(values.includes(settingsType))
+      setStateValue(values.includes(settingsType))
     },
     [setValue, settingsType],
   )
 
+  useEffect(() => {
+    if (value) {
+      setStateValue(value)
+    }
+  }, [value])
+
   return (
-    <SwitchGroup className={cx(css.root, className)} value={value ? [settingsType] : []} onChange={handleSwitchChange}>
+    <SwitchGroup
+      className={cx(css.root, className)}
+      value={stateValue ? [settingsType] : []}
+      onChange={handleSwitchChange}
+    >
       <Switch
         label={switchLabel}
         value={settingsType}

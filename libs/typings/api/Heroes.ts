@@ -1,8 +1,9 @@
 import type { ElementsType } from './Elements'
+import type { Resources } from './Inventory'
 import type { Ranks } from './Ranks'
-import type { ResourcesData } from './ResourcesData'
-import type { CustomServerSettingsData, SettingsData } from './SettingsData'
 
+
+export type HeroesParams = Partial<Record<string, IHeroData>>
 
 export interface HeroesResources {
   n: number
@@ -11,15 +12,8 @@ export interface HeroesResources {
   ssr: number
 }
 
-export interface CalculateHeroesPayload {
-  resources: ResourcesData
-  settings: SettingsData
-  heroesData: IHeroData[]
-  heroesDistribution: HeroesDistribution
-}
-
 export interface CalculateHeroesResponse {
-  spentResources: ResourcesData
+  spentResources: Resources
   heroesUpgrades: HeroUpgrade[]
   heroesExperienceSpent: HeroExperienceSpent[]
   spentDistributionCards?: number
@@ -56,11 +50,14 @@ export interface IHeroData {
   stars: number
   bars: number
   cards: number
+  distributionCards: number
 }
 
-export interface GetHeroesInCardsPayload {
-  customServerSettings?: CustomServerSettingsData
+export interface SaveHeroesPayload {
+  heroesParams: HeroesParams
 }
+
+export type GetHeroesParamsResponse = HeroesParams
 
 export type HeroesResponse = Hero[]
 

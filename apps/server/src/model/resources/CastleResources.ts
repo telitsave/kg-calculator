@@ -1,5 +1,5 @@
 import { BaseResources } from './BaseResources'
-import type { ResourcesData } from 'kg-calculator-typings'
+import type { Resources, ResourcesData } from 'kg-calculator-typings'
 
 
 export default class CastleResources implements BaseResources<CastleResources> {
@@ -15,11 +15,13 @@ export default class CastleResources implements BaseResources<CastleResources> {
     this.boxes = initData?.boxes || 0
   }
 
-  static transformDataFromDB(items: { itemId: string; count: number }[]): CastleResources {
+  static transformDataFromDB(items: Resources): CastleResources {
     const resources = new CastleResources()
-    items.forEach((item) => {
-      const [, resource] = item.itemId.split('_')
-      resources[resource] = item.count
+    Object.entries(items).forEach(([key, value]) => {
+      const [resourceType, param] = key.split('_')
+      if (resourceType !== 'castleResources') return
+
+      resources[param] = value
     })
 
     return resources
@@ -210,12 +212,12 @@ export default class CastleResources implements BaseResources<CastleResources> {
     return new CastleResources(this)
   }
 
-  getDataForDB() {
-    return [
-      { itemId: 'castleResources_stone', count: this.stone },
-      { itemId: 'castleResources_wood', count: this.wood },
-      { itemId: 'castleResources_steel', count: this.steel },
-      { itemId: 'castleResources_boxes', count: this.boxes },
-    ]
+  getData(): Resources {
+    return {
+      castleResources_boxes: this.boxes,
+      castleResources_steel: this.steel,
+      castleResources_stone: this.stone,
+      castleResources_wood: this.wood,
+    }
   }
 }

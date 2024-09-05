@@ -6,19 +6,17 @@ import useHeroes from 'entities/hero/model/hooks/useHeroes'
 const useData = () => {
   const heroesQuery = useGetAllHeroes()
 
-  const { heroes, onSetCards, onAddBar, onRemoveBar, onRemoveStar, onAddStar } = useHeroes()
+  const { heroesParams, onSetCards, onAddBar, onRemoveBar, onRemoveStar, onAddStar } = useHeroes()
 
   const heroesTotal = useMemo(() => {
-    if (!heroesQuery.data) return []
-
-    return heroesQuery.data.map((it) => {
-      const heroData = heroes.find((hero) => hero.id === it.heroId)
+    return (heroesQuery.data || []).map((hero) => {
+      const heroParam = heroesParams[hero.heroId]
       return {
-        ...it,
-        ...heroData,
+        ...hero,
+        ...heroParam,
       }
     })
-  }, [heroesQuery, heroes])
+  }, [heroesParams, heroesQuery.data])
 
   return {
     heroes: heroesTotal,

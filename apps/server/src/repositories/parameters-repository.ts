@@ -1,7 +1,10 @@
 import mysqlAdapter from '../adapters/mysql-adapter'
-import Parameters from '../model/parameters/Parameters'
 import type { ResultSetHeader, RowDataPacket } from 'mysql2'
 
+export interface ParametersData {
+  parameterId: string
+  value: number
+}
 
 export default class ParametersRepository {
   static async getParameters(profileId: number) {
@@ -14,13 +17,13 @@ export default class ParametersRepository {
       `
       const [parameters] = await connection.query<RowDataPacket[]>(sql)
 
-      return Parameters.transformDataFromDB(parameters as { parameterId: string; value: string }[])
+      return parameters as ParametersData[]
     } catch (error) {
       throw error
     }
   }
 
-  static async setParameters(profileId: number, items: { parameterId: string; value: string }[]) {
+  static async setParameters(profileId: number, items: ParametersData[]) {
     try {
       const connection = await mysqlAdapter.getConnection()
       const sqlData = items.map((item) => [profileId, item.parameterId, item.value])

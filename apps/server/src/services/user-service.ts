@@ -96,7 +96,11 @@ export default class UserService {
       throw ApiError.UnauthorizedError()
     }
 
-    const tokens = TokenService.generateTokens(user.getDto())
+    const profiles = await ProfileRepository.getProfilesByUserId(user.id)
+    const tokens = TokenService.generateTokens({
+      ...user.getDto(),
+      profiles: profiles.map((it) => it.id),
+    })
     try {
       await TokenService.setToken(user.id, tokens.refreshToken, tokens.expiresIn, refreshToken)
     } catch (e) {

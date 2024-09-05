@@ -1,92 +1,126 @@
-import { useCallback } from 'react'
-import { useLocalStorage } from '@mantine/hooks'
-import type { Ranks } from 'kg-calculator-typings'
+import { useCallback, useMemo } from 'react'
+import { useQuery } from '@tanstack/react-query'
+import type { IHeroData, Ranks } from 'kg-calculator-typings'
+import api from 'shared/api'
 import HeroData from '../HeroData'
+import heroesQueue from '../HeroesQueue'
 
-
-interface IHeroData {
-  id: string
-  stars: number
-  bars: number
-  cards: number
-}
 
 const useHeroes = () => {
-  const [heroes, setHeroes] = useLocalStorage<IHeroData[]>({
-    key: 'heroesData',
-    defaultValue: [],
-    getInitialValueInEffect: false,
-    serialize: (value: IHeroData[]) => JSON.stringify(value),
-    deserialize: (value: string | undefined) => JSON.parse(value || '[]') as IHeroData[],
+  const { data: heroesParams = {} } = useQuery({
+    queryKey: ['heroesParams'],
+    queryFn: api.heroes.getHeroesParams,
   })
 
-  const handleAddStar = useCallback((heroId: string, rank: Ranks) => {
-    setHeroes((val) => {
-      let heroData = val.find((it) => it.id === heroId)
-      const hero = new HeroData(heroId, rank, heroData?.stars, heroData?.bars, heroData?.cards)
-      hero.addStar()
-      const newArray = val.filter((it) => it !== heroData)
-      newArray.push(hero.getData())
-
-      return newArray
+  const saveHero = useCallback((heroId: string, hero: Partial<IHeroData>) => {
+    heroesQueue.setHero(heroId, {
+      id: heroId,
+      stars: hero.stars || 0,
+      bars: hero.bars || 0,
+      cards: hero.cards || 0,
+      distributionCards: hero.distributionCards || 0,
     })
   }, [])
 
-  const handleRemoveStar = useCallback((heroId: string, rank: Ranks) => {
-    setHeroes((val) => {
-      let heroData = val.find((it) => it.id === heroId)
-      const hero = new HeroData(heroId, rank, heroData?.stars, heroData?.bars, heroData?.cards)
-      hero.removeStar()
-      const newArray = val.filter((it) => it !== heroData)
-      newArray.push(hero.getData())
+  const handleAddStar = useCallback(
+    (heroId: string, rank: Ranks, stars: number, bars: number, cards: number, distributionCards: number) => {
+      const heroData = new HeroData(heroId, rank, stars, bars)
+      heroData.addStar()
+      saveHero(heroData.id, {
+        id: heroData.id,
+        stars: heroData.stars,
+        bars: heroData.bars,
+        cards,
+        distributionCards,
+      })
+    },
+    [saveHero],
+  )
 
-      return newArray
-    })
-  }, [])
+  const handleRemoveStar = useCallback(
+    (heroId: string, rank: Ranks, stars: number, bars: number, cards: number, distributionCards: number) => {
+      const heroData = new HeroData(heroId, rank, stars, bars)
+      heroData.removeStar()
+      saveHero(heroData.id, {
+        id: heroData.id,
+        stars: heroData.stars,
+        bars: heroData.bars,
+        cards,
+        distributionCards,
+      })
+    },
+    [saveHero],
+  )
 
-  const handleAddBar = useCallback((heroId: string, rank: Ranks) => {
-    setHeroes((val) => {
-      let heroData = val.find((it) => it.id === heroId)
-      const hero = new HeroData(heroId, rank, heroData?.stars, heroData?.bars, heroData?.cards)
-      hero.addBar()
-      const newArray = val.filter((it) => it !== heroData)
-      newArray.push(hero.getData())
+  const handleAddBar = useCallback(
+    (heroId: string, rank: Ranks, stars: number, bars: number, cards: number, distributionCards: number) => {
+      const heroData = new HeroData(heroId, rank, stars, bars)
+      heroData.addBar()
+      saveHero(heroData.id, {
+        id: heroData.id,
+        stars: heroData.stars,
+        bars: heroData.bars,
+        cards,
+        distributionCards,
+      })
+    },
+    [saveHero],
+  )
 
-      return newArray
-    })
-  }, [])
+  const handleRemoveBar = useCallback(
+    (heroId: string, rank: Ranks, stars: number, bars: number, cards: number, distributionCards: number) => {
+      const heroData = new HeroData(heroId, rank, stars, bars)
+      heroData.removeBar()
+      saveHero(heroData.id, {
+        id: heroData.id,
+        stars: heroData.stars,
+        bars: heroData.bars,
+        cards,
+        distributionCards,
+      })
+    },
+    [saveHero],
+  )
 
-  const handleRemoveBar = useCallback((heroId: string, rank: Ranks) => {
-    setHeroes((val) => {
-      let heroData = val.find((it) => it.id === heroId)
-      const hero = new HeroData(heroId, rank, heroData?.stars, heroData?.bars, heroData?.cards)
-      hero.removeBar()
-      const newArray = val.filter((it) => it !== heroData)
-      newArray.push(hero.getData())
+  const handleSetCards = useCallback(
+    (heroId: string, stars: number, bars: number, cards: number, distributionCards: number) => {
+      saveHero(heroId, {
+        id: heroId,
+        stars,
+        bars,
+        cards,
+        distributionCards,
+      })
+    },
+    [saveHero],
+  )
 
-      return newArray
-    })
-  }, [])
+  const handleSetDistributionCards = useCallback(
+    (heroId: string, stars: number, bars: number, cards: number, distributionCards: number) => {
+      saveHero(heroId, {
+        id: heroId,
+        stars,
+        bars,
+        cards,
+        distributionCards,
+      })
+    },
+    [saveHero],
+  )
 
-  const handleSetCards = useCallback((cards: number, heroId: string, rank: Ranks) => {
-    setHeroes((val) => {
-      let heroData = val.find((it) => it.id === heroId)
-      const hero = new HeroData(heroId, rank, heroData?.stars, heroData?.bars, heroData?.cards)
-      hero.setCards(cards)
-      const newArray = val.filter((it) => it !== heroData)
-      newArray.push(hero.getData())
-
-      return newArray
-    })
-  }, [])
+  const usedDistributionCards = useMemo(() => {
+    return Object.values(heroesParams).reduce((total, heroParam) => total + heroParam!.distributionCards, 0)
+  }, [heroesParams])
 
   return {
-    heroes,
+    heroesParams,
+    usedDistributionCards,
     onAddStar: handleAddStar,
     onAddBar: handleAddBar,
     onRemoveStar: handleRemoveStar,
     onRemoveBar: handleRemoveBar,
     onSetCards: handleSetCards,
+    onSetDistributionCards: handleSetDistributionCards,
   }
 }
 

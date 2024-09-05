@@ -1,20 +1,14 @@
-import type { ParametersData } from './ParametersData'
-import type { ResourcesData } from './ResourcesData'
-import type { SettingsData } from './SettingsData'
+import type { Resources } from './Inventory'
+import type { Parameters } from './Parameters'
 
-export interface CalculatePossibleDragonPayload {
-  parameters: ParametersData
-  resources: ResourcesData
-  settings: SettingsData
-}
 
 export interface CalculatePossibleDragonResponse {
-  oldParameters: ParametersData
-  newParameters: ParametersData
-  sourceResources: ResourcesData
-  spentResources: ResourcesData
-  leftResources: ResourcesData
-  spentBoxesResources: DragonRunesResources
+  oldParameters: Parameters
+  newParameters: Parameters
+  sourceResources: Resources
+  spentResources: Resources
+  leftResources: Resources
+  spentBoxesResources: Resources
 }
 
 export interface DragonEmblemParameters {

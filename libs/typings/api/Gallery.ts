@@ -1,17 +1,13 @@
-import type { ParametersData } from './ParametersData'
-import type { ResourcesData } from './ResourcesData'
+import type { Resources } from './Inventory'
+import type { Parameters } from './Parameters'
 
-export interface CalculateGalleryPayload {
-  parameters: ParametersData
-  resources: ResourcesData
-}
 
 export interface CalculateGalleryResponse {
-  sourceParameters: ParametersData
-  parameters: ParametersData
-  sourceResources: ResourcesData
-  spentResources: ResourcesData
-  leftResources: ResourcesData
+  sourceParameters: Parameters
+  parameters: Parameters
+  sourceResources: Resources
+  spentResources: Resources
+  leftResources: Resources
 }
 
 export interface GalleryParameters {

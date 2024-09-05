@@ -1,22 +1,28 @@
-import { FC, ReactNode, memo, useMemo } from 'react'
+import { FC, memo, useMemo } from 'react'
 import { Accordion, Divider, Flex, Text, Title } from '@mantine/core'
-import type { CalculateHeroesResponse } from 'kg-calculator-typings'
+import type {
+  CalculateHeroesResponse,
+  CalculateMightiestKingdomResponse,
+  CalculateUltimatePowerResponse,
+} from 'kg-calculator-typings'
 import { orderBy } from 'lodash'
 import { FaStar } from 'react-icons/fa'
+import { MightiestKingdomStatistics } from 'entities/mightiestKingdom'
 import { ResourceIcon } from 'entities/resource'
-import Flexbox from 'shared/ui/Flexbox'
+import { UltimatePowerStatistics } from 'entities/ultimatePower'
 import HeroExperienceResult from '../HeroExperienceResult'
 import HeroResult from '../HeroResult'
 import css from './styles.module.sass'
 
+
 interface Props {
   className?: string
   results: CalculateHeroesResponse
-  extremePowerNode?: ReactNode
-  mightiestKingdomNode?: ReactNode
+  ultimatePowerData?: CalculateUltimatePowerResponse
+  mightiestKingdomData?: CalculateMightiestKingdomResponse
 }
 
-const Results: FC<Props> = memo(({ className, results, extremePowerNode, mightiestKingdomNode }) => {
+const Results: FC<Props> = memo(({ className, results, ultimatePowerData, mightiestKingdomData }) => {
   const sortedHeroes = useMemo(
     () => orderBy(results.heroesUpgrades, ({ spentCards }) => spentCards, 'desc'),
     [results.heroesUpgrades],
@@ -31,7 +37,7 @@ const Results: FC<Props> = memo(({ className, results, extremePowerNode, mightie
     [results.heroesExperienceSpent],
   )
   return (
-    <Flexbox className={className} flexDirection="column" gap={16}>
+    <Flex className={className} direction="column" gap={16}>
       <Title order={4}>Результаты</Title>
 
       {(sortedHeroes.length > 0 || sortedExperienceHeroes.length > 0) && (
@@ -77,25 +83,25 @@ const Results: FC<Props> = memo(({ className, results, extremePowerNode, mightie
       {(sortedHeroes.length > 0 || sortedExperienceHeroes.length > 0) && <Divider />}
       <Flex direction="column" gap={8}>
         <Flex gap={4} align="center">
-          <ResourceIcon resourceType="heroGreenCards" />
-          <Text>Потрачено всего: {results.spentResources.heroesCards.n || 0}</Text>
+          <ResourceIcon resourceType="heroesResources_n" />
+          <Text>Потрачено всего: {results.spentResources.heroesResources_n || 0}</Text>
         </Flex>
         <Flex gap={4} align="center">
-          <ResourceIcon resourceType="heroBlueCards" />
-          <Text>Потрачено всего: {results.spentResources.heroesCards.r || 0}</Text>
+          <ResourceIcon resourceType="heroesResources_r" />
+          <Text>Потрачено всего: {results.spentResources.heroesResources_r || 0}</Text>
         </Flex>
         <Flex gap={4} align="center">
-          <ResourceIcon resourceType="heroPurpleCards" />
-          <Text>Потрачено всего: {results.spentResources.heroesCards.sr || 0}</Text>
+          <ResourceIcon resourceType="heroesResources_sr" />
+          <Text>Потрачено всего: {results.spentResources.heroesResources_sr || 0}</Text>
         </Flex>
         <Flex gap={4} align="center">
-          <ResourceIcon resourceType="heroGoldCards" />
-          <Text>Потрачено всего: {results.spentResources.heroesCards.ssr || 0}</Text>
+          <ResourceIcon resourceType="heroesResources_ssr" />
+          <Text>Потрачено всего: {results.spentResources.heroesResources_ssr || 0}</Text>
         </Flex>
 
         {(results.spentDistributionCards && (
           <Flex gap={4} align="center">
-            <ResourceIcon resourceType="heroGoldCards" />
+            <ResourceIcon resourceType="heroesResources_ssr" />
             <Text>Потрачено самовыбора: {results.spentDistributionCards || 0}</Text>
           </Flex>
         )) ||
@@ -110,12 +116,13 @@ const Results: FC<Props> = memo(({ className, results, extremePowerNode, mightie
           null}
       </Flex>
       <Divider />
-      {mightiestKingdomNode}
+
+      <MightiestKingdomStatistics data={mightiestKingdomData} />
 
       <Divider />
 
-      {extremePowerNode}
-    </Flexbox>
+      <UltimatePowerStatistics data={ultimatePowerData} />
+    </Flex>
   )
 })
 

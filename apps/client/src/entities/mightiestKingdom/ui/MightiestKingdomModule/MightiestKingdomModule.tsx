@@ -1,7 +1,6 @@
 import { FC, ReactNode, memo } from 'react'
-import { Divider, Text, Title } from '@mantine/core'
+import { Divider, Flex, Text, Title } from '@mantine/core'
 import TypeHelper from 'shared/helpers/typeHelper'
-import Flexbox from 'shared/ui/Flexbox'
 
 interface Props {
   className?: string
@@ -12,17 +11,17 @@ interface Props {
 
 const MightiestKingdomModule: FC<Props> = memo(({ className, title, value, elements }) => {
   return (
-    <Flexbox className={className} flexDirection="column" gap={8}>
-      <Flexbox gap={4} alignItems="center" justifyContent="space-between">
+    <Flex className={className} direction="column" gap={8}>
+      <Flex gap={4} align="center" justify="space-between">
         <Title order={5}>{title}</Title>
         <Text>{TypeHelper.isNumber(value) ? value.toLocaleString('ru') : '-'}</Text>
-      </Flexbox>
+      </Flex>
       <Divider />
-      <Flexbox flexDirection="column" gap={4}>
+      <Flex direction="column" gap={4}>
         {elements}
-      </Flexbox>
+      </Flex>
       <Divider size="md" />
-    </Flexbox>
+    </Flex>
   )
 })
 

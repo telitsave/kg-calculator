@@ -1,19 +1,28 @@
-import { FC, memo, useCallback } from 'react'
+import { FC, memo, useCallback, useEffect, useState } from 'react'
 import { SegmentedControl, Text } from '@mantine/core'
 import type { ElementsType } from 'kg-calculator-typings'
 import { ElementIcon } from 'shared/assets/icons'
 import Flexbox from 'shared/ui/Flexbox'
-import usePriorityElementSetting from '../../model/hooks/usePriorityElementSetting'
+import useSetting from '../../model/hooks/useSetting'
+
 
 const SettingPriorityElement: FC = memo(() => {
-  const [value, setValue] = usePriorityElementSetting()
+  const [value, setValue] = useSetting('priorityElement')
+  const [stateValue, setStateValue] = useState(value)
 
   const handleSegmentedChange = useCallback(
     (val: string) => {
       setValue(val as ElementsType)
+      setStateValue(val)
     },
     [setValue],
   )
+
+  useEffect(() => {
+    if (value) {
+      setStateValue(value)
+    }
+  }, [value])
 
   return (
     <Flexbox alignItems="center" gap={8}>
@@ -26,7 +35,7 @@ const SettingPriorityElement: FC = memo(() => {
           { value: 'ice', label: <ElementIcon element="ice" /> },
           { value: 'poison', label: <ElementIcon element="poison" /> },
         ]}
-        value={value}
+        value={stateValue as string}
         onChange={handleSegmentedChange}
       />
     </Flexbox>

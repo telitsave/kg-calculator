@@ -1,56 +1,104 @@
-import { useCallback, useMemo } from 'react'
-import { readLocalStorageValue } from '@mantine/hooks'
-import type { HeroesDistribution } from 'kg-calculator-typings'
-import { useGetHeroesInCards, useHeroes } from 'entities/hero'
-import { useHeroDistribution } from 'entities/parameter'
+import { useCallback, useEffect, useMemo } from 'react'
+import { HeroHelper, useGetAllHeroes, useHeroes } from 'entities/hero'
 import { useResource } from 'entities/resource'
+import { useServerSettings } from 'entities/serverSettings'
 
+
+type IHeroData = ReturnType<typeof HeroHelper.upStarsBars> & { id: string }
 
 const useHeroesDistributionModel = () => {
-  const { data } = useGetHeroesInCards()
-  const { heroes } = useHeroes()
-  const totalCards = useResource('heroGoldCards')[0]
-  const [heroesDistribution, setHeroesDistribution] = useHeroDistribution()
-
-  const getLeftCards = useCallback(
-    (heroesDistr: HeroesDistribution) => {
-      return totalCards - Object.values(heroesDistr).reduce((total, val) => total + (val || 0), 0)
-    },
-    [totalCards],
-  )
-
-  const leftCards = useMemo(() => {
-    return getLeftCards(heroesDistribution)
-  }, [heroesDistribution, getLeftCards])
+  const { data: heroes = [] } = useGetAllHeroes()
+  const { heroesParams, usedDistributionCards, onSetDistributionCards } = useHeroes()
+  const totalCards = useResource('heroesResources_ssr')[0] || 0
+  const {
+    serverSettings: { season = 0 },
+  } = useServerSettings()
 
   const handleSetCards = useCallback(
-    (heroId: string, cardsAmount: number) => {
-      const heroesDistr = readLocalStorageValue<HeroesDistribution>({ key: 'heroesDistribution' })
-      const prevCardsAmount = heroesDistr[heroId] || 0
-      const left = getLeftCards(heroesDistr)
-      if (left + prevCardsAmount >= cardsAmount) {
-        setHeroesDistribution((val) => ({ ...val, [heroId]: cardsAmount }))
+    (
+      heroId: string,
+      stars: number,
+      bars: number,
+      cards: number,
+      distributionCards: number,
+      newDistributionCards: number,
+    ) => {
+      const prevCardsAmount = distributionCards
+      const leftCards = Number(localStorage.getItem('leftCards'))
+      if (leftCards + prevCardsAmount >= newDistributionCards) {
+        onSetDistributionCards(heroId, stars, bars, cards, newDistributionCards)
       }
     },
-    [getLeftCards],
+    [onSetDistributionCards],
   )
+  const handleResetDistributionCards = useCallback(() => {
+    Object.values(heroesParams)
+      .filter((it) => it!.distributionCards > 0)
+      .forEach((heroParam) => {
+        onSetDistributionCards(heroParam!.id, heroParam!.stars, heroParam!.bars, heroParam!.cards, 0)
+      })
+  }, [heroesParams])
 
   const heroesTotal = useMemo(() => {
-    if (!data) return []
-    return data.map((hero) => {
-      const heroData = heroes.find((it) => it.id === hero.heroId)
-      return {
-        ...hero,
-        ...heroData,
-      }
+    return heroes
+      .map((hero) => {
+        const heroParam = heroesParams[hero.heroId]
+        return {
+          ...hero,
+          ...heroParam,
+        }
+      })
+      .filter((it) => it.rank === 'ssr' && it.season !== undefined && it.season <= (season || 0))
+  }, [heroesParams, heroes, season])
+
+  const fillStars = useCallback(() => {
+    const sourceHeroes: Record<string, (typeof heroesTotal)[0]> = {}
+    const heroesMap: Record<string, IHeroData> = {}
+    const upHeroesCards: Record<string, number> = {}
+    heroesTotal
+      .filter((it) => (it.stars || 0) < HeroHelper.getMaxStars(it.rank))
+      .forEach((hero) => {
+        const { stars = 0, bars = 0, cards = 0, distributionCards = 0, rank, heroId } = hero
+        const data = HeroHelper.upStarsBars(stars, bars, cards + distributionCards, rank)
+        heroesMap[heroId] = { ...data, id: heroId }
+        sourceHeroes[heroId] = hero
+      })
+    let left = totalCards - usedDistributionCards
+
+    let minHero = Object.values(heroesMap).reduce((prev: IHeroData | null, current) => {
+      if (prev === null) return current
+      return prev.neededCardsForNextStar < current.neededCardsForNextStar ? prev : current
+    }, null) as IHeroData
+
+    while (left > 0 && minHero.neededCardsForNextStar <= left) {
+      const { id, oldBars, oldStars, rank, leftCards, spentCards, neededCardsForNextStar } = minHero
+      const newData = HeroHelper.upStarsBars(oldStars, oldBars, leftCards + spentCards + neededCardsForNextStar, rank)
+      heroesMap[id] = { ...newData, id }
+      upHeroesCards[id] = newData.spentCards + 1
+      left -= neededCardsForNextStar
+
+      minHero = Object.values(heroesMap).reduce((prev: IHeroData | null, current) => {
+        if (prev === null) return current
+        return prev.neededCardsForNextStar < current.neededCardsForNextStar ? prev : current
+      }, null) as IHeroData
+    }
+
+    Object.entries(upHeroesCards).forEach(([heroId, spentCards]) => {
+      const { stars = 0, bars = 0, cards = 0 } = sourceHeroes[heroId]
+      onSetDistributionCards(heroId, stars, bars, cards, spentCards - cards)
     })
-  }, [data, heroes])
+  }, [heroesTotal, season, onSetDistributionCards, totalCards, usedDistributionCards])
+
+  useEffect(() => {
+    localStorage.setItem('leftCards', (totalCards - usedDistributionCards).toString())
+  }, [totalCards, usedDistributionCards])
 
   return {
     heroes: heroesTotal,
-    heroesDistribution,
-    leftCards,
+    leftCards: totalCards - usedDistributionCards,
+    fillStars,
     onSetCards: handleSetCards,
+    onReset: handleResetDistributionCards,
   }
 }
 

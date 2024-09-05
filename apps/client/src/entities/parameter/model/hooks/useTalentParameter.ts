@@ -1,14 +1,23 @@
-import { useLocalStorage } from '@mantine/hooks'
-import type { ElementsType } from 'kg-calculator-typings/api/Elements'
+import { useCallback } from 'react'
+import type { ElementsType } from 'kg-calculator-typings'
+import useParameters from './useParameters'
 
 
-const useTalentParameter = (element: ElementsType, rank: string, param: 'books' | 'crowns') =>
-  useLocalStorage<number>({
-    key: `talent-${element}-${rank}-${param}`,
-    defaultValue: 0,
-    getInitialValueInEffect: false,
-    serialize: (value) => value.toString(),
-    deserialize: (value) => parseInt(value || '0', 10),
-  })
+const useTalentParameter = (
+  element: ElementsType,
+  rank: number,
+  param: 'small' | 'big',
+): [number | undefined, (val: number) => void] => {
+  const { talents, saveTalent } = useParameters()
+
+  const handleSetTalent = useCallback(
+    (value: number) => {
+      saveTalent(element, rank, param, value)
+    },
+    [saveTalent],
+  )
+
+  return [talents !== undefined ? talents[`${element}_${rank}_${param}`] : undefined, handleSetTalent]
+}
 
 export default useTalentParameter

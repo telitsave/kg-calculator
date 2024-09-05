@@ -1,10 +1,10 @@
-import { FC, Fragment, MouseEvent, memo, useCallback } from 'react'
+import { FC, Fragment, MouseEvent, memo, useCallback, useEffect, useState } from 'react'
 import { Button, Divider, Text } from '@mantine/core'
-import type { ElementsType } from 'kg-calculator-typings/api/Elements'
-import { IntRange } from 'shared/types'
+import type { ElementsType } from 'kg-calculator-typings'
 import Flexbox from 'shared/ui/Flexbox'
-import useTalentsParameters from '../../model/hooks/useTalentsParameters'
+import useParameters from '../../model/hooks/useParameters'
 import BarracksTalentInput from '../BarracksTalentInput'
+
 
 interface Props {
   className?: string
@@ -13,15 +13,38 @@ interface Props {
 }
 
 const BarracksTalentsInput: FC<Props> = memo(({ className, element, maxRank }) => {
-  const { write: talentsParameters } = useTalentsParameters()
+  const { saveTalent, talents = {} } = useParameters()
+  const [talentsState, setTalentsState] = useState(talents)
+
+  useEffect(() => {
+    if (Object.keys(talents).length > 0) {
+      setTalentsState(talents)
+    }
+  }, [talents])
 
   const handleMaxButtonClick = useCallback(
     (e: MouseEvent<HTMLButtonElement>) => {
       const rank = Number(e.currentTarget.dataset.rank)
-      talentsParameters[element].rank[rank as IntRange<1, 10>].booksCells(48)
-      talentsParameters[element].rank[rank as IntRange<1, 10>].crownsCells(6)
+      saveTalent(element, rank, 'small', 48)
+      saveTalent(element, rank, 'big', 6)
+      setTalentsState((val) => ({
+        ...val,
+        [`${element}_${rank}_small`]: 48,
+        [`${element}_${rank}_big`]: 6,
+      }))
     },
-    [element, talentsParameters],
+    [element, saveTalent],
+  )
+
+  const handleInputChange = useCallback(
+    (rank: number, type: 'big' | 'small', value: number) => {
+      saveTalent(element, rank, type, value)
+      setTalentsState((val) => ({
+        ...val,
+        [`${element}_${rank}_${type}`]: value,
+      }))
+    },
+    [saveTalent, element],
   )
 
   return (
@@ -34,14 +57,18 @@ const BarracksTalentsInput: FC<Props> = memo(({ className, element, maxRank }) =
               <BarracksTalentInput
                 key={`talent-${element}-${index + 1}-books`}
                 element={element}
-                rank={`rank${index + 1}`}
-                type="books"
+                rank={index + 1}
+                type="small"
+                value={talentsState[`${element}_${index + 1}_small`] || 0}
+                onChange={handleInputChange}
               />
               <BarracksTalentInput
                 key={`talent-${element}-${index + 1}-crowns`}
                 element={element}
-                rank={`rank${index + 1}`}
-                type="crowns"
+                rank={index + 1}
+                type="big"
+                value={talentsState[`${element}_${index + 1}_big`] || 0}
+                onChange={handleInputChange}
               />
             </Flexbox>
             <Button data-rank={index + 1} onClick={handleMaxButtonClick} flex="0 0 auto">

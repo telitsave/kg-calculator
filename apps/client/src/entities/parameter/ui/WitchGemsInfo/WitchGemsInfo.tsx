@@ -1,22 +1,23 @@
 import { FC, memo, useCallback, useState } from 'react'
-import { ScrollArea, SegmentedControl } from '@mantine/core'
-import type { WitchParameters } from 'kg-calculator-typings/api/Witch'
-import Flexbox from 'shared/ui/Flexbox'
-import { Ranks } from '../../model/types'
+import { Flex, ScrollArea, SegmentedControl } from '@mantine/core'
 import WitchGemInfo from '../WitchGemInfo'
 
 interface Props {
   className?: string
-  witchParameters: WitchParameters
-  oldWitchParameters: WitchParameters
+  gemsParams: Record<string, number>
+  oldGemsParams: Record<string, number>
   maxRank: number
 }
 
-const WitchGemsInfo: FC<Props> = memo(({ className, witchParameters, oldWitchParameters, maxRank }) => {
-  const [value, setValue] = useState<Ranks>('rank1')
+const WitchGemsInfo: FC<Props> = memo(({ className, gemsParams, oldGemsParams, maxRank }) => {
+  const [value, setValue] = useState<string>('1')
 
-  const handleSegmentedControlChange = useCallback((value: string) => {
-    setValue(value as Ranks)
+  const handleSegmentedControlChange = useCallback((value: string | null) => {
+    if (!value) {
+      setValue('1')
+    } else {
+      setValue(value)
+    }
   }, [])
 
   return (
@@ -25,57 +26,57 @@ const WitchGemsInfo: FC<Props> = memo(({ className, witchParameters, oldWitchPar
         <SegmentedControl
           data={Array.from({ length: maxRank }).map((_, index) => ({
             label: `Ранг ${index + 1}`,
-            value: `rank${index + 1}`,
+            value: (index + 1).toString(),
           }))}
           mb={8}
           value={value}
           onChange={handleSegmentedControlChange}
         />
       </ScrollArea>
-      <Flexbox flexWrap="wrap" gap={8}>
+      <Flex wrap="wrap" gap={8}>
         <WitchGemInfo
-          key={`gem-${value}-${1}`}
-          rank={value}
-          gem={1}
-          value={witchParameters.gems[value].sapphire}
-          oldValue={oldWitchParameters.gems[value].sapphire}
+          key={`gem-${value}-sapphire`}
+          rank={Number(value)}
+          gem="sapphire"
+          value={gemsParams[`${value}_sapphire`]}
+          oldValue={oldGemsParams[`${value}_sapphire`]}
         />
         <WitchGemInfo
-          key={`gem-${Number(value) + 1}-${2}`}
-          rank={value}
-          gem={2}
-          value={witchParameters.gems[value].amethyst}
-          oldValue={oldWitchParameters.gems[value].amethyst}
+          key={`gem-${value}-amethyst`}
+          rank={Number(value)}
+          gem="amethyst"
+          value={gemsParams[`${value}_amethyst`]}
+          oldValue={oldGemsParams[`${value}_amethyst`]}
         />
         <WitchGemInfo
-          key={`gem-${Number(value) + 1}-${3}`}
-          rank={value}
-          gem={3}
-          value={witchParameters.gems[value].ruby}
-          oldValue={oldWitchParameters.gems[value].ruby}
+          key={`gem-${value}-ruby`}
+          rank={Number(value)}
+          gem="ruby"
+          value={gemsParams[`${value}_ruby`]}
+          oldValue={oldGemsParams[`${value}_ruby`]}
         />
         <WitchGemInfo
-          key={`gem-${Number(value) + 1}-${4}`}
-          rank={value}
-          gem={4}
-          value={witchParameters.gems[value].amber}
-          oldValue={oldWitchParameters.gems[value].amber}
+          key={`gem-${value}-amber`}
+          rank={Number(value)}
+          gem="amber"
+          value={gemsParams[`${value}_amber`]}
+          oldValue={oldGemsParams[`${value}_amber`]}
         />
         <WitchGemInfo
-          key={`gem-${Number(value) + 1}-${5}`}
-          rank={value}
-          gem={5}
-          value={witchParameters.gems[value].malachite}
-          oldValue={oldWitchParameters.gems[value].malachite}
+          key={`gem-${value}-malachite`}
+          rank={Number(value)}
+          gem="malachite"
+          value={gemsParams[`${value}_malachite`]}
+          oldValue={oldGemsParams[`${value}_malachite`]}
         />
         <WitchGemInfo
-          key={`gem-${Number(value) + 1}-${6}`}
-          rank={value}
-          gem={6}
-          value={witchParameters.gems[value].emerald}
-          oldValue={oldWitchParameters.gems[value].emerald}
+          key={`gem-${value}-emerald`}
+          rank={Number(value)}
+          gem="emerald"
+          value={gemsParams[`${value}_emerald`]}
+          oldValue={oldGemsParams[`${value}_emerald`]}
         />
-      </Flexbox>
+      </Flex>
     </div>
   )
 })

@@ -1,13 +1,22 @@
-import type Resources from '../model/resources/Resources'
 import InventoryRepository from '../repositories/inventory-repository'
+import type { ResourceType, Resources } from 'kg-calculator-typings'
 
 export default class InventoryService {
   static async getInventory(profileId: number) {
-    return InventoryRepository.getInventory(profileId)
+    const data = await InventoryRepository.getInventory(profileId)
+    const result: Resources = {}
+    data.forEach((item) => {
+      result[item.itemId] = item.count
+    })
+    return result
   }
 
   static async addItemsToInventory(profileId: number, resources: Resources) {
-    await InventoryRepository.addItems(profileId, resources.getDataForDB())
+    const data = Object.entries(resources).map(([key, value]) => ({
+      itemId: key as ResourceType,
+      count: value,
+    }))
+    await InventoryRepository.addItems(profileId, data)
   }
 
   static async removeInventory(profileId: number) {

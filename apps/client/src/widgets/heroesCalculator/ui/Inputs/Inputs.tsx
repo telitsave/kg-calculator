@@ -6,6 +6,7 @@ import Flexbox from 'shared/ui/Flexbox'
 import useHeroesDistributionModel from '../../model/hooks/useHeroesDistributionModel'
 import AlertAdvancedMode from '../AlertAdvancedMode'
 
+
 interface Props {
   className?: string
 
@@ -13,16 +14,16 @@ interface Props {
 }
 
 const Inputs: FC<Props> = memo(({ className, onCalculateButtonClick }) => {
-  const [isUsedAdvancedMode] = useSetting('useAdvancedHeroMode')
+  const [isUsedAdvancedMode = false] = useSetting('useAdvancedHeroMode')
   const { leftCards } = useHeroesDistributionModel()
   return (
     <Flexbox className={className} flexDirection="column" gap={8}>
       <Flexbox flexDirection="column" gap={8}>
         <Title order={4}>Мои ресурсы</Title>
-        <ResourceInput resourceType="heroGreenCards" disabled={isUsedAdvancedMode} />
-        <ResourceInput resourceType="heroBlueCards" disabled={isUsedAdvancedMode} />
-        <ResourceInput resourceType="heroPurpleCards" disabled={isUsedAdvancedMode} />
-        <ResourceInput resourceType="heroGoldCards" disabled={isUsedAdvancedMode} />
+        <ResourceInput resourceType="heroesResources_n" disabled={isUsedAdvancedMode as boolean} />
+        <ResourceInput resourceType="heroesResources_r" disabled={isUsedAdvancedMode as boolean} />
+        <ResourceInput resourceType="heroesResources_sr" disabled={isUsedAdvancedMode as boolean} />
+        <ResourceInput resourceType="heroesResources_ssr" disabled={isUsedAdvancedMode as boolean} />
       </Flexbox>
 
       <Divider size="sm" />
