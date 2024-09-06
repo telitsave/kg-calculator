@@ -20,7 +20,7 @@ const ResourceInput: FC<Props> = memo(({ className, resourceType, viewMode = 'de
 
   const handleNumberInputChange = useCallback(
     (value: string | number) => {
-      setValue(parseInt(value.toString(), 10))
+      setValue(parseInt(value.toString(), 10) || 0)
     },
     [setValue],
   )

@@ -66,11 +66,12 @@ const useHeroesDistributionModel = () => {
     let left = totalCards - usedDistributionCards
 
     let minHero = Object.values(heroesMap).reduce((prev: IHeroData | null, current) => {
+      if (current.neededCardsForNextStar === 0) return prev
       if (prev === null) return current
       return prev.neededCardsForNextStar < current.neededCardsForNextStar ? prev : current
     }, null) as IHeroData
 
-    while (left > 0 && minHero.neededCardsForNextStar <= left) {
+    while (left > 0 && minHero && minHero.neededCardsForNextStar <= left) {
       const { id, oldBars, oldStars, rank, leftCards, spentCards, neededCardsForNextStar } = minHero
       const newData = HeroHelper.upStarsBars(oldStars, oldBars, leftCards + spentCards + neededCardsForNextStar, rank)
       heroesMap[id] = { ...newData, id }
@@ -78,6 +79,7 @@ const useHeroesDistributionModel = () => {
       left -= neededCardsForNextStar
 
       minHero = Object.values(heroesMap).reduce((prev: IHeroData | null, current) => {
+        if (current.neededCardsForNextStar === 0) return prev
         if (prev === null) return current
         return prev.neededCardsForNextStar < current.neededCardsForNextStar ? prev : current
       }, null) as IHeroData

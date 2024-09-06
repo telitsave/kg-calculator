@@ -1,4 +1,5 @@
 import type { QueryClient } from '@tanstack/react-query'
+import type { Settings } from 'kg-calculator-typings'
 import api from 'shared/api'
 import NotificationsHelper from 'shared/helpers/notificationsHelper'
 
@@ -13,6 +14,12 @@ class SettingsQueue {
 
   setSetting(setting: string, value: string | boolean | undefined) {
     this.settings[setting] = value
+    this.queryClient?.setQueryData(['settings'], (val: Settings): Settings => {
+      return {
+        ...val,
+        [setting]: value,
+      }
+    })
     this.saveData()
   }
 

@@ -1,5 +1,5 @@
 import type { QueryClient } from '@tanstack/react-query'
-import type { ElementsType, ParameterTypes, Parameters } from 'kg-calculator-typings'
+import type { ElementsType, GetAllParametersResponse, ParameterTypes, Parameters } from 'kg-calculator-typings'
 import { debounce } from 'lodash'
 import api from 'shared/api'
 import NotificationsHelper from 'shared/helpers/notificationsHelper'
@@ -18,7 +18,16 @@ class ParametersQueue {
   }
 
   setParameter(parameterType: ParameterTypes, value: number, force = false) {
-    this.parameters[parameterType] = value
+    this.parameters[parameterType] = value || 0
+    this.queryClient?.setQueryData(['parameters'], (val: GetAllParametersResponse): GetAllParametersResponse => {
+      return {
+        ...val,
+        params: {
+          ...val.params,
+          [parameterType]: value || 0,
+        },
+      }
+    })
 
     if (force) {
       this.saveData()

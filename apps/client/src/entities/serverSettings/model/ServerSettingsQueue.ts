@@ -1,4 +1,5 @@
 import type { QueryClient } from '@tanstack/react-query'
+import type { CustomServerSettingsData } from 'kg-calculator-typings'
 import { debounce } from 'lodash'
 import api from 'shared/api'
 import NotificationsHelper from 'shared/helpers/notificationsHelper'
@@ -13,7 +14,13 @@ class ServerSettingsQueue {
   }
 
   setServerSetting(setting: string, value: number, force = false) {
-    this.serverSettings[setting] = value
+    this.serverSettings[setting] = value || 0
+    this.queryClient?.setQueryData(['serverSettings'], (val: CustomServerSettingsData): CustomServerSettingsData => {
+      return {
+        ...val,
+        [setting]: value || 0,
+      }
+    })
 
     if (force) {
       this.saveData()

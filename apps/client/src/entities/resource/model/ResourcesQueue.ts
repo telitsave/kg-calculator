@@ -15,6 +15,12 @@ class ResourceQueue {
 
   setResource(resourceType: ResourceType, value: number, force = false) {
     this.resources[resourceType] = value
+    this.queryClient?.setQueryData(['resources'], (val: Resources) => {
+      return {
+        ...val,
+        [resourceType]: value,
+      }
+    })
 
     if (force) {
       this.saveData()
