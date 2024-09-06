@@ -23,7 +23,7 @@ export default class SpiritsInvasionModel {
         wave17Power: data[16].wavePower,
         wave20Power: data[19].wavePower,
         wave19Power: data[18].wavePower,
-        scoreByOne: data.reduce((total, it) => total + it.score, 0),
+        scoreByOne: data.filter((it) => ![10, 20].includes(it.wave)).reduce((total, it) => total + it.score, 0),
         totalScore: data.reduce((total, it) => total + it.scoreTotal, 0),
         scoreByCommonWaves: data
           .filter((it) => ![7, 10, 14, 17, 20].includes(it.wave))
@@ -93,7 +93,7 @@ export default class SpiritsInvasionModel {
     const waveScore = this._getWaveScore(wave)
 
     if (wave === 7 || wave === 14 || wave === 17) {
-      return waveScore * 10
+      return waveScore * Math.min(10, this._membersCount)
     }
     if (wave === 10 || wave === 20) {
       return waveScore
