@@ -26,8 +26,6 @@ class AuthController {
       const result = await UserService.login(email, password)
 
       res.cookie('refreshToken', result.refreshToken, {
-        domain: 'localhost',
-        priority: 'high',
         maxAge: 30 * 24 * 60 * 60 * 1000,
         httpOnly: true,
         secure: false,

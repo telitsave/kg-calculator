@@ -16,7 +16,7 @@ const useProfiles = () => {
     (value: string) => {
       if (process.env.NODE_ENV === 'production') {
         setCurrentProfile(value, {
-          domain: `${process.env.COOKIE_DOMAIN}`,
+          domain: `${process.env.REACT_APP_COOKIE_DOMAIN}`,
         })
       } else {
         setCurrentProfile(value)
