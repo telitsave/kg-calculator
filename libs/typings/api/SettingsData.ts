@@ -6,6 +6,8 @@ export interface Settings {
   canConvertBarracksBooksToTalents?: boolean
   canUseTalentsToNonPriorityElements?: boolean
   useAdvancedHeroMode?: boolean
+  useCastleLimit?: boolean
+  usePossibleCastleLimit?: boolean
   priorityElement?: 'bow' | 'fire' | 'ice' | 'poison'
 }
 

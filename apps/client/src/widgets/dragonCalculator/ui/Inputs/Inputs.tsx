@@ -1,6 +1,6 @@
 import { FC, memo } from 'react'
 import { Button, Title } from '@mantine/core'
-import { SettingsSwitch } from 'entities/calculationSettings'
+import { SettingsSwitch, useSetting } from 'entities/calculationSettings'
 import { ParameterInput } from 'entities/parameter'
 import { ResourceInput } from 'entities/resource'
 import Flexbox from 'shared/ui/Flexbox'
@@ -10,7 +10,8 @@ interface Props {
   onSubmitButtonClick: () => void
 }
 
-const Inputs: FC<Props> = memo(({ onSubmitButtonClick }) => {
+const Inputs: FC<Props> = memo(function ({ onSubmitButtonClick }) {
+  const isEnabledCastleLimit = useSetting('useCastleLimit')[0]
   return (
     <>
       <Flexbox flexDirection="column" gap={8}>
@@ -21,6 +22,8 @@ const Inputs: FC<Props> = memo(({ onSubmitButtonClick }) => {
         <ResourceInput resourceType="dragonResources_gold" />
         <ResourceInput resourceType="dragonResources_boxes" />
         <SettingsSwitch settingsType="canUseDragonBoxes" />
+        <SettingsSwitch settingsType="useCastleLimit" />
+        {isEnabledCastleLimit && <SettingsSwitch settingsType="usePossibleCastleLimit" />}
       </Flexbox>
       <Flexbox flexDirection="column" gap={8}>
         <Title order={4}>Мои эмблемы дракона</Title>

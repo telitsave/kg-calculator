@@ -1,5 +1,5 @@
 import { FC, memo } from 'react'
-import { Divider, Flex, Title } from '@mantine/core'
+import { Divider, Flex, Text, Title } from '@mantine/core'
 import type {
   CalculateMightiestKingdomResponse,
   CalculatePossibleDragonResponse,
@@ -7,7 +7,7 @@ import type {
 } from 'kg-calculator-typings'
 import { useSetting } from 'entities/calculationSettings'
 import { MightiestKingdomStatistics } from 'entities/mightiestKingdom'
-import { ParameterInfo } from 'entities/parameter'
+import { ParameterIcon, ParameterInfo } from 'entities/parameter'
 import { ResourceCount, ResourcesConverts } from 'entities/resource'
 import { UltimatePowerStatistics } from 'entities/ultimatePower'
 import css from './styles.module.sass'
@@ -21,7 +21,15 @@ interface Props {
 
 const Results: FC<Props> = memo(
   ({
-    data: { leftResources, spentResources, spentBoxesResources, sourceResources, oldParameters, newParameters },
+    data: {
+      leftResources,
+      spentResources,
+      spentBoxesResources,
+      sourceResources,
+      oldParameters,
+      newParameters,
+      castleLimit,
+    },
     ultimatePowerData,
     mightiestKingdomData,
   }) => {
@@ -62,6 +70,30 @@ const Results: FC<Props> = memo(
             viewMode="bigIcon"
           />
         </Flex>
+
+        {castleLimit && (
+          <Flex direction="column" gap="xs">
+            <Title order={5}>Лимит уровня зеленой руны</Title>
+            <Flex gap="md" align="center">
+              <ParameterIcon parameterType="castleParams_level" />
+              <Text>
+                Уровень замка:{' '}
+                <Text component="span" fw={700}>
+                  {castleLimit}
+                </Text>
+              </Text>
+            </Flex>
+            <Flex gap="md" align="center">
+              <ParameterIcon parameterType="dragonParams_green" />
+              <Text>
+                Максимальный уровень зеленой руны:{' '}
+                <Text component="span" fw={700}>
+                  {Math.max(castleLimit, 3000)}
+                </Text>
+              </Text>
+            </Flex>
+          </Flex>
+        )}
 
         <Flex direction="column" gap={4}>
           <Title order={5}>Потраченные ресурсы</Title>

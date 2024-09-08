@@ -48,6 +48,18 @@ const HelpNode: FC<Props> = memo(({ settingsType }) => {
           </Text>
         </Flexbox>
       )
+    case 'usePossibleCastleLimit':
+      return (
+        <Flexbox flexDirection="column">
+          <Text>
+            На основе ваших ресурсов и параметров будет определен максимальный уровень замка, который можно прокачать.
+          </Text>
+          <Text>
+            Далее, этот максимальный уровень замка будет использоваться как предел при прокачке дракона и расчета очков.
+          </Text>
+          <Text>При выключенной настройке будет учитываться текущий уровень замка, указанный в параметрах.</Text>
+        </Flexbox>
+      )
     default:
       return null
   }

@@ -1,6 +1,7 @@
 import type ServerSettings from '../../model/ServerSettings'
 import BarracksCalculatorModel from '../../model/calculator/barracks/BarracksCalculatorModel'
 import BlacksmithCalculatorModel from '../../model/calculator/blacksmith/BlacksmithCalculatorModel'
+import CastleCalculatorModel from '../../model/calculator/castle/CastleCalculatorModel'
 import DragonEmblemsCalculatorModel from '../../model/calculator/dragonEmblems/DragonEmblemsCalculatorModel'
 import MightiestKingdomEventCalculator from '../../model/calculator/events/mightiestKingdom/MightiestKingdomEventCalculator'
 import GalleryCalculatorModel from '../../model/calculator/gallery/GalleryCalculatorModel'
@@ -39,7 +40,18 @@ export default class MightiestKingdomService {
           totalResources.add(Resources.transformDataFromDB(blacksmithResult.spentResources))
           break
         case 'dragon':
-          const dragonModel = new DragonEmblemsCalculatorModel(resources, parameters, settings)
+          let castleLevel: number | undefined
+          if (settings.useCastleLimit) {
+            castleLevel = parameters.castle.level
+            if (settings.usePossibleCastleLimit) {
+              const castleCalculatorModel = new CastleCalculatorModel(resources, parameters, settings)
+              const {
+                parameters: { castleParams_level },
+              } = castleCalculatorModel.getPossibleCastle()
+              castleLevel = castleParams_level
+            }
+          }
+          const dragonModel = new DragonEmblemsCalculatorModel(resources, parameters, settings, castleLevel)
           const dragonResult = dragonModel.getPossibleDragon()
           totalResources.add(Resources.transformDataFromDB(dragonResult.spentResources))
           break

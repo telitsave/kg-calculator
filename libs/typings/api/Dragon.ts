@@ -9,6 +9,7 @@ export interface CalculatePossibleDragonResponse {
   spentResources: Resources
   leftResources: Resources
   spentBoxesResources: Resources
+  castleLimit?: number
 }
 
 export interface DragonEmblemParameters {

@@ -1,3 +1,4 @@
+import CastleCalculatorModel from '../model/calculator/castle/CastleCalculatorModel'
 import DragonEmblemsCalculatorModel from '../model/calculator/dragonEmblems/DragonEmblemsCalculatorModel'
 import Parameters from '../model/parameters/Parameters'
 import Resources from '../model/resources/Resources'
@@ -17,7 +18,24 @@ export default class DragonRunesController extends BaseController {
       const parameters = Parameters.transformDataFromDB(await ParametersService.getParameters(profileId))
       const settings = await SettingsService.getSettings(profileId)
 
-      const dragonEmblemsCalculatorModel = new DragonEmblemsCalculatorModel(resources, parameters, settings)
+      let castleLevel: number | undefined
+      if (settings.useCastleLimit) {
+        castleLevel = parameters.castle.level
+        if (settings.usePossibleCastleLimit) {
+          const castleCalculatorModel = new CastleCalculatorModel(resources, parameters, settings)
+          const {
+            parameters: { castleParams_level },
+          } = castleCalculatorModel.getPossibleCastle()
+          castleLevel = castleParams_level
+        }
+      }
+
+      const dragonEmblemsCalculatorModel = new DragonEmblemsCalculatorModel(
+        resources,
+        parameters,
+        settings,
+        castleLevel,
+      )
 
       response.json(dragonEmblemsCalculatorModel.getPossibleDragon())
     } catch (err) {

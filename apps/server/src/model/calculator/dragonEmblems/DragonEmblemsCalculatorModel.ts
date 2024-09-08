@@ -13,12 +13,13 @@ export default class DragonEmblemsCalculatorModel {
   private readonly _sourceResources: Resources
   private readonly _sourceParameters: Parameters
   private readonly _settings: Settings
+  private readonly _castleLevel: number
   private _parameters: Parameters
   private _leftResources: Resources
   private _spentResources: Resources
   private _spentBoxesResources: DragonRunesResources
 
-  constructor(resources: Resources, parameters: Parameters, settings: Settings) {
+  constructor(resources: Resources, parameters: Parameters, settings: Settings, castleLevel: number = 999999) {
     this._sourceResources = resources
     this._sourceParameters = parameters
     this._parameters = parameters.clone()
@@ -26,6 +27,7 @@ export default class DragonEmblemsCalculatorModel {
     this._leftResources = resources.clone()
     this._spentResources = new Resources()
     this._spentBoxesResources = new DragonRunesResources()
+    this._castleLevel = castleLevel
   }
 
   getPossibleDragon(): CalculatePossibleDragonResponse {
@@ -39,6 +41,7 @@ export default class DragonEmblemsCalculatorModel {
       spentResources: this._spentResources.getData(),
       leftResources: this._leftResources.getData(),
       spentBoxesResources: this._spentBoxesResources.getData(),
+      castleLimit: this._castleLevel !== 999999 ? this._castleLevel : undefined,
     }
   }
 
@@ -92,7 +95,10 @@ export default class DragonEmblemsCalculatorModel {
   private _isAllowUpEmblem(runeType: DragonRuneType) {
     switch (runeType) {
       case 'green':
-        return this._parameters.dragonEmblems.green < 30000
+        return (
+          this._parameters.dragonEmblems.green < 30000 &&
+          (this._parameters.dragonEmblems.green < 3000 || this._parameters.dragonEmblems.green < this._castleLevel)
+        )
       case 'blue':
         return this._parameters.dragonEmblems.blue < Math.floor(this._parameters.dragonEmblems.green / 5)
       case 'purple':

@@ -2,7 +2,7 @@ import { FC, memo } from 'react'
 import { NavLink } from 'react-router-dom'
 import cx from 'classnames'
 import { Alert, Flex, Space, Text } from '@mantine/core'
-import { SettingPriorityElement, SettingsSwitch } from 'entities/calculationSettings'
+import { SettingPriorityElement, SettingsSwitch, useSetting } from 'entities/calculationSettings'
 import { UltimatePowerStatistics, useCalculateUltimatePowerTotal } from 'entities/ultimatePower'
 import { AlertAdvancedMode } from 'widgets/heroesCalculator'
 import css from './styles.module.sass'
@@ -14,6 +14,7 @@ interface Props {
 
 const UltimatePowerPage: FC<Props> = memo(({ className }) => {
   const { data } = useCalculateUltimatePowerTotal()
+  const isEnabledCastleLimit = useSetting('useCastleLimit')[0]
   return (
     <Flex className={cx(css.root, className)} direction="column" gap={24}>
       <Alert title="Рассчет очков">
@@ -33,6 +34,8 @@ const UltimatePowerPage: FC<Props> = memo(({ className }) => {
         <SettingsSwitch settingsType="canConvertCastleResources" />
         <SettingsSwitch settingsType="canUseCastleBoxes" />
         <SettingsSwitch settingsType="canUseDragonBoxes" />
+        <SettingsSwitch settingsType="useCastleLimit" />
+        {isEnabledCastleLimit && <SettingsSwitch settingsType="usePossibleCastleLimit" />}
         <SettingsSwitch settingsType="canUseRandomBarracksBooks" />
         <SettingsSwitch settingsType="canConvertBarracksBooksToTalents" />
         <SettingsSwitch settingsType="canUseTalentsToNonPriorityElements" />

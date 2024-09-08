@@ -46,7 +46,18 @@ export default class UltimatePowerService {
           totalResources.add(Resources.transformDataFromDB(blacksmithResult.spentResources))
           break
         case 'dragon':
-          const dragonModel = new DragonEmblemsCalculatorModel(resources, parameters, settings)
+          let castleLevel: number | undefined
+          if (settings.useCastleLimit) {
+            castleLevel = parameters.castle.level
+            if (settings.usePossibleCastleLimit) {
+              const castleCalculatorModel = new CastleCalculatorModel(resources, parameters, settings)
+              const {
+                parameters: { castleParams_level },
+              } = castleCalculatorModel.getPossibleCastle()
+              castleLevel = castleParams_level
+            }
+          }
+          const dragonModel = new DragonEmblemsCalculatorModel(resources, parameters, settings, castleLevel)
           const dragonResult = dragonModel.getPossibleDragon()
           totalResources.add(Resources.transformDataFromDB(dragonResult.spentResources))
           break

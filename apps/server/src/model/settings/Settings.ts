@@ -8,6 +8,8 @@ export default class Settings {
   canConvertBarracksBooksToTalents: boolean
   canUseTalentsToNonPriorityElements: boolean
   useAdvancedHeroMode: boolean
+  useCastleLimit: boolean
+  usePossibleCastleLimit: boolean
   priorityElement: 'bow' | 'fire' | 'ice' | 'poison'
 
   constructor(initData?: SettingsData) {
@@ -18,6 +20,8 @@ export default class Settings {
     this.canConvertBarracksBooksToTalents = initData?.canConvertBarracksBooksToTalents || false
     this.canUseTalentsToNonPriorityElements = initData?.canUseTalentsToNonPriorityElements || false
     this.useAdvancedHeroMode = initData?.useAdvancedHeroMode || false
+    this.useCastleLimit = initData?.useCastleLimit || false
+    this.usePossibleCastleLimit = initData?.usePossibleCastleLimit || false
     this.priorityElement = initData?.priorityElement || 'bow'
   }
 }

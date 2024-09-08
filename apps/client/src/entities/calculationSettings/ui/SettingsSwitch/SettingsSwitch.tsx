@@ -51,6 +51,15 @@ const SettingsSwitch: FC<Props> = memo(({ className, settingsType }) => {
         )
       case 'useAdvancedHeroMode':
         return <Text>Продвинутый режим героев</Text>
+      case 'useCastleLimit':
+        return <Text>Учитывать уровень замка при прокачке дракона</Text>
+      case 'usePossibleCastleLimit':
+        return (
+          <Flexbox alignItems="center" gap={4} justifyContent="space-between">
+            <Text>Учитывать возможный уровень замка при прокачке дракона</Text>
+            <HelpButton helpContent={<HelpNode settingsType={settingsType} />} />
+          </Flexbox>
+        )
       default:
         return <Text />
     }
