@@ -25,15 +25,11 @@ const useParameters = () => {
 
   const saveTalent = useCallback(
     (element: ElementsType, rank: number, talentType: 'small' | 'big', value: number) => {
-      console.log(data?.talents)
-      console.log(ParametersQueue.talents)
       ParametersQueue.talents = {
         ...(data?.talents || {}),
         ...ParametersQueue.talents,
       }
-      console.log(ParametersQueue.talents)
       ParametersQueue.setTalent(element, rank, talentType, value)
-      console.log(ParametersQueue.talents)
     },
     [data?.talents],
   )

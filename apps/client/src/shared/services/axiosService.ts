@@ -12,7 +12,17 @@ export default class AxiosService {
         withCredentials: true,
       })
       this.axiosInstance.interceptors.request.use((config) => {
-        config.headers.Authorization = `Bearer ${localStorage.getItem('access-token')}`
+        const accessToken = localStorage.getItem('access-token')
+        const abortController = new AbortController()
+
+        const shouldCheckToken = config.data?.withCredentials === undefined || config.data.withCredentials
+
+        if (shouldCheckToken && !accessToken) {
+          abortController.abort('No access token')
+        }
+
+        config.headers.Authorization = `Bearer ${accessToken}`
+        config.signal = abortController.signal
         return config
       })
       this.axiosInstance.interceptors.response.use(

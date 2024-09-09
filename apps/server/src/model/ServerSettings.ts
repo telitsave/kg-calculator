@@ -2,7 +2,7 @@ import type { CustomServerSettingsData } from 'kg-calculator-typings'
 
 export default class ServerSettings {
   talentsMaxRank = 6
-  witchGemsMaxRank = 5
+  witchGemsMaxRank = 6
   talentBooks_rank1 = 6
   talentBooks_rank2 = 29
   talentBooks_rank3 = 143
@@ -19,8 +19,8 @@ export default class ServerSettings {
   up_dragonRuneBlue = 700
   up_dragonRunePurple = 7000
   up_dragonRuneGold = 14000
-  up_talentsBook = 140
-  up_oracleCrown = 1400
+  up_talentsBook = 70
+  up_oracleCrown = 700
   up_stone = 100
   up_wood = 500
   up_steel = 2000
@@ -41,14 +41,14 @@ export default class ServerSettings {
   mk_dragonRuneBlue = 700
   mk_dragonRunePurple = 7000
   mk_dragonRuneGold = 14000
-  mk_talentsBook = 140
-  mk_oracleCrown = 1400
+  mk_talentsBook = 70
+  mk_oracleCrown = 700
   mk_lightReagent = 70
   mk_greenWitchPotion = 70
   mk_purpleWitchPotion = 700
   mk_blacksmith = 100
   mk_galleryShard = 1000
-  season = 7
+  season = 8
 
   constructor(customServerSettings?: CustomServerSettingsData) {
     if (customServerSettings) {

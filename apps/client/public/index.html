@@ -42,13 +42,19 @@
     })
     (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
+    const userData = localStorage && JSON.parse(localStorage.getItem('user-data') || '{}') || {}
     if ('%NODE_ENV%' === 'production') {
       ym(97931908, "init", {
         clickmap: true,
         trackLinks: true,
         accurateTrackBounce: true,
-        webvisor: true
+        webvisor: true,
+        userParams: {
+          UserID: userData.id
+        }
       });
+    } else {
+      console.log(`userId: ${userData.id}`)
     }
   </script>
   <noscript>
