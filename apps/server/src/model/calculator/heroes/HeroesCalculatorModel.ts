@@ -100,13 +100,13 @@ export default class HeroesCalculatorModel {
         this._heroesUpgrades.push(heroUpgrade)
       }
     }
-    if (hero.cards > 0) {
+    if (hero.cards > 1) {
       if (hero.stars === hero.getMaxStars() || hero.heroData.rank === 'n' || hero.heroData.rank === 'r') {
         this._heroesExperienceSpent.push({
           hero: hero.heroData,
-          spentCards: hero.cards,
+          spentCards: hero.cards - 1,
         })
-        this._spentResources.heroesCards[hero.heroData.rank] += hero.cards
+        this._spentResources.heroesCards[hero.heroData.rank] += hero.cards - 1
       }
     }
     if (hero.heroData.rank === 'sr' || hero.heroData.rank === 'ssr') {
