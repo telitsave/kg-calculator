@@ -1,8 +1,9 @@
 import { FC, memo, useCallback } from 'react'
-import { Button, Flex, PasswordInput, Text, TextInput } from '@mantine/core'
+import { Alert, Button, Flex, PasswordInput, Text, TextInput } from '@mantine/core'
 import { hasLength, isEmail, matchesField, useForm } from '@mantine/form'
 import NotificationsHelper from 'shared/helpers/notificationsHelper'
 import useRegistration from '../../model/useRegistration'
+
 
 interface Props {
   className?: string
@@ -49,6 +50,22 @@ const RegistrationForm: FC<Props> = memo(({ className, onSuccess, onClickLoginLi
 
   return (
     <form className={className} onSubmit={form.onSubmit(handleFormSubmit)}>
+      <Alert color="yellow">
+        <Text size="sm">
+          Есть проблема с отправкой писем на почтовые ящики вне РФ. Особенно часто встречается проблема с почтой{' '}
+          <Text component="span" fw={700}>
+            @icloud.com
+          </Text>
+          .
+        </Text>
+        <Text size="sm">
+          Рекомендуется использовать российские почтовые сервисы или почтовый сервис{' '}
+          <Text component="span" fw={700}>
+            @gmail.com
+          </Text>
+          .
+        </Text>
+      </Alert>
       <TextInput {...form.getInputProps('email')} label="Email" required autoComplete="email" />
       <PasswordInput {...form.getInputProps('password')} label="Пароль" required mt="md" autoComplete="new-password" />
       <PasswordInput

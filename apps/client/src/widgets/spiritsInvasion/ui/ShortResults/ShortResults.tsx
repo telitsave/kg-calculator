@@ -1,7 +1,8 @@
 import { FC, memo } from 'react'
-import { Flex, Grid, GridCol, NumberFormatter, Text, Title } from '@mantine/core'
+import { Alert, Flex, Grid, GridCol, NumberFormatter, Text, Title } from '@mantine/core'
 import type { SpiritsInvasionShortData } from 'kg-calculator-typings'
 import StringHelper from 'shared/helpers/stringHelper'
+
 
 interface Props {
   data: SpiritsInvasionShortData
@@ -11,6 +12,14 @@ const ShortResults: FC<Props> = memo(({ data }) => (
   <Grid>
     <GridCol span={12}>
       <Title order={4}>Уровень {data.level}</Title>
+    </GridCol>
+    <GridCol span={12}>
+      <Alert color="yellow">
+        <Text>
+          В некоторых случаях были замечены погрешности в мощи 19й волны. В игре мощь 19й волны может быть немного
+          больше/меньше, нежели указано в калькуляторе.
+        </Text>
+      </Alert>
     </GridCol>
     <GridCol span={{ md: 6, xs: 12 }}>
       <Title order={5}>Мощь волн</Title>

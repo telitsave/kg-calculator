@@ -4,5 +4,6 @@ import AxiosService from '../services/axiosService'
 export const getSpiritsInvasionData = (payload: GetSpiritsInvasionPayload) => {
   return AxiosService.post<GetSpiritsInvasionResponse>('/spiritsInvasion', {
     data: payload,
+    withCredentials: false,
   })
 }

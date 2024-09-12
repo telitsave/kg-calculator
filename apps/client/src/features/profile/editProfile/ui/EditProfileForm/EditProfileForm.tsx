@@ -53,7 +53,13 @@ const EditProfileForm: FC<Props> = memo(({ className, profile, onEditProfileSucc
         required
         autoComplete="off"
       />
-      <NumberInput {...form.getInputProps('serverId')} label="ID сервера" mt="md" autoComplete="off" />
+      <NumberInput
+        {...form.getInputProps('serverId')}
+        label="Номер королевства (сервера)"
+        description="Номер королевства, на котором вы играете. Например: 1150, 1570, 2020"
+        mt="md"
+        autoComplete="off"
+      />
 
       {error && (
         <Text c="red" size="sm">
