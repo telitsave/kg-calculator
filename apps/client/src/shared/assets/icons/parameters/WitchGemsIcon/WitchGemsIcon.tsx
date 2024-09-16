@@ -21,7 +21,7 @@ const WitchGemsIcon: FC<Props> = memo(
       ref={ref}
     >
       <div className={cx(css.icon, css[`gem-${gem}`])} />
-      {faded && <Overlay color="#000" backgroundOpacity={0.5} />}
+      {faded && <Overlay color="#000" backgroundOpacity={0.5} zIndex={90} />}
     </Flexbox>
   )),
 )

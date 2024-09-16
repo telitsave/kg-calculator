@@ -1,4 +1,5 @@
 import { FC, memo, useCallback } from 'react'
+import cx from 'classnames'
 import { Button, Flex, NumberInput, Paper, Text } from '@mantine/core'
 import type { ElementsType, Ranks } from 'kg-calculator-typings'
 import { FaStar, FaStarHalfAlt } from 'react-icons/fa'
@@ -73,7 +74,7 @@ const HeroCard: FC<Props> = memo(
 
     return (
       <Paper shadow="sm" p="md" withBorder>
-        <Flex className={className} align="center" gap={20}>
+        <Flex className={cx(css.root, className)} align="center" gap={20}>
           <Flex direction="column" align="center" w={110}>
             <HeroIcon heroId={heroId} element={element} />
             <Text size="sm" ta="center">

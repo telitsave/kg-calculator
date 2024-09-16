@@ -18,11 +18,12 @@ interface Props {
   rank: Ranks
   element: ElementsType
   name: string
+  disabled?: boolean
   onSetCards: ReturnType<typeof useHeroesDistributionModel>['onSetCards']
 }
 
 const CardDistribution: FC<Props> = memo(
-  ({ className, heroId, stars, bars, cards, distributionCards, rank, element, name, onSetCards }) => {
+  ({ className, heroId, stars, bars, cards, distributionCards, rank, element, name, disabled = false, onSetCards }) => {
     const {
       newStars,
       newBars,
@@ -86,7 +87,7 @@ const CardDistribution: FC<Props> = memo(
             sm: 64,
           }}
         >
-          <HeroIcon heroId={heroId} element={element} small />
+          <HeroIcon heroId={heroId} element={element} small disabled={disabled} />
           <Text size="sm">{name}</Text>
         </Flex>
         <Flex gap={8} align="center">

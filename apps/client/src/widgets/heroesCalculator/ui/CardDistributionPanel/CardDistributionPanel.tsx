@@ -1,5 +1,5 @@
 import { FC, memo, useMemo, useState } from 'react'
-import { ActionIcon, Button, Flex, Text } from '@mantine/core'
+import { Accordion, Alert, Button, Flex, Text } from '@mantine/core'
 import type { Hero } from 'kg-calculator-typings'
 import { orderBy } from 'lodash'
 import { FaStar } from 'react-icons/fa'
@@ -14,7 +14,7 @@ interface Props {
 
 const CardDistributionPanel: FC<Props> = memo(({ className }) => {
   const [sortField] = useState<keyof Hero>('rank')
-  const { heroes, leftCards, fillStars, onSetCards, onReset } = useHeroesDistributionModel()
+  const { heroes, leftCards, fillStars, fillMaxScores, onSetCards, onReset } = useHeroesDistributionModel()
   const {
     serverSettings: { season },
   } = useServerSettings()
@@ -28,13 +28,71 @@ const CardDistributionPanel: FC<Props> = memo(({ className }) => {
 
   return (
     <Flex className={className} direction="column" gap={8}>
+      <Accordion variant="contained">
+        <Accordion.Item key="alert" value="alert">
+          <Accordion.Control>Как это работает?</Accordion.Control>
+          <Accordion.Panel>
+            <Alert>
+              <Text>На данной странице вы можете распределить карты самовыбора между героями.</Text>
+              <Text>Для удобства, есть три кнопки: MAX очки, MAX звезды и Сбросить</Text>
+              <br />
+              <Text>
+                Кнопка{' '}
+                <Text component="span" fw={700}>
+                  MAX очки
+                </Text>{' '}
+                автоматически распределит карты самовыбора так, чтобы "выжать" из ваших героев максимум, и набрать
+                наиболее возможное количество очков на событиях Сильнейшее королевство/Экстремальная мощь. Проще говоря
+                - использует максимально возможное количество карт.
+              </Text>
+              <Text>
+                Если у вас много карт самовыбора, эта кнопка потратит их не все. Она распределит карты там, где нужно,
+                для "максимальной выжимки", а оставшиеся карты вы можете распределить сами на своё усмотрение. Разницы в
+                очках уже не будет.
+              </Text>
+              <br />
+              <Text>
+                Кнопка{' '}
+                <Text component="span" fw={700}>
+                  MAX звезды
+                </Text>{' '}
+                автоматически распределит карты самовыбора так, чтобы прокачать как можно больше звезд вашим героям.
+                Кнопка остановится, когда больше нельзя будет поднять никому новую звезду с оставшимся количеством карт
+                самовыбора.
+              </Text>
+              <br />
+              <Text>
+                Кнопка{' '}
+                <Text component="span" fw={700}>
+                  Сбросить
+                </Text>{' '}
+                произведет полный сброс распределения карт самовыбора.
+              </Text>
+              <br />
+              <Text>
+                Вы можете "комбинировать" эти кнопки, нажимая сначала одну, потом вторую, в любом порядке. А можно
+                использовать только одну из, и оставшиеся карты самовыбора распределять самостоятельно, на ваше
+                усмотрение.
+              </Text>
+            </Alert>
+          </Accordion.Panel>
+        </Accordion.Item>
+      </Accordion>
       <Flex justify="space-between" align="center">
-        <Text>Оставшиеся карты: {leftCards}</Text>
-        <Flex align="center" gap="md">
-          <ActionIcon variant="default" onClick={fillStars}>
-            <FaStar color="var(--mantine-color-yellow-filled)" />
-          </ActionIcon>
-          <Button variant="default" onClick={onReset}>
+        <Text>Карт осталось: {leftCards}</Text>
+        <Flex align="center" gap="xs">
+          <Button variant="default" onClick={fillMaxScores} size="xs">
+            MAX очки
+          </Button>
+          <Button
+            variant="default"
+            onClick={fillStars}
+            rightSection={<FaStar color="var(--mantine-color-yellow-filled)" />}
+            size="xs"
+          >
+            MAX
+          </Button>
+          <Button variant="default" onClick={onReset} size="xs">
             Сбросить
           </Button>
         </Flex>
