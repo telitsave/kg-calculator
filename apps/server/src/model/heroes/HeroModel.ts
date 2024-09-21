@@ -21,7 +21,7 @@ export default class HeroModel {
 
     const neededCardsForNextLevel = barsArray[this.bars]
 
-    if (neededCardsForNextLevel > this.cards) return false
+    if (neededCardsForNextLevel > this.cards - 1) return false
 
     this.bars += 1
     this.cards -= neededCardsForNextLevel
