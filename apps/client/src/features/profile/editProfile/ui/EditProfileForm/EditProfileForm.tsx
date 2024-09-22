@@ -59,6 +59,9 @@ const EditProfileForm: FC<Props> = memo(({ className, profile, onEditProfileSucc
         description="Номер королевства, на котором вы играете. Например: 1150, 1570, 2020"
         mt="md"
         autoComplete="off"
+        min={1}
+        max={99999}
+        clampBehavior="strict"
       />
 
       {error && (

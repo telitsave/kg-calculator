@@ -40,6 +40,7 @@ const ServerSettingInput: FC<Props> = memo(({ className, settingKey, maxValue, m
       onChange={handleChangeInput}
       label={settingsNames[settingKey]}
       thousandSeparator=" "
+      clampBehavior="strict"
     />
   )
 })

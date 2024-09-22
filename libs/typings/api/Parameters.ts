@@ -26,7 +26,7 @@ export type ParameterTypes =
 export type GetAllParametersResponse = {
   params: Parameters
   gems: Record<string, number>
-  talents: Record<string, number>
+  talents: Record<string, number | undefined>
 }
 
 export interface SaveParametersPayload {
@@ -38,5 +38,5 @@ export interface SaveGemsPayload {
 }
 
 export interface SaveTalentsPayload {
-  talents: Record<string, number>
+  talents: Record<string, number | undefined>
 }

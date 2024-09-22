@@ -30,7 +30,9 @@ export const activate = (payload: ActivationPayload) => {
 }
 
 export const logout = () => {
-  return AxiosService.get('/auth/logout')
+  return AxiosService.get('/auth/logout', {
+    withCredentials: false,
+  })
 }
 
 export const forgotPassword = (payload: ForgotPasswordPayload) => {

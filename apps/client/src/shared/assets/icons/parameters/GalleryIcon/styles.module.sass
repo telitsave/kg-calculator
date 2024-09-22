@@ -6,6 +6,10 @@
   height: 200px
   flex-wrap: wrap
 
+  @media (max-width: 768px)
+    width: 150px
+    height: 150px
+
   @for $level from 1 through 30
     &.level-#{$level}
       background-image: url("icons/level_#{$level}.png")

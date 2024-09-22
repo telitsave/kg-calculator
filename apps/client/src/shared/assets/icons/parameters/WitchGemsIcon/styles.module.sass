@@ -8,6 +8,9 @@
   width: 48px
   height: 48px
   position: relative
+  @media (max-width: 768px)
+    width: 32px
+    height: 32px
 
   @each $rank in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
     &.rank#{$rank}

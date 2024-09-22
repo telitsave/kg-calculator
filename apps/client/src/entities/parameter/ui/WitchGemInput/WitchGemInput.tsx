@@ -48,6 +48,7 @@ const WitchGemInput: FC<Props> = memo(({ rank, gem }) => {
         max={20}
         value={stateValue}
         onChange={handleNumberInputChange}
+        clampBehavior="strict"
       />
       <Flex gap={8}>
         <Button onClick={handleMinButtonClick} size="xs">

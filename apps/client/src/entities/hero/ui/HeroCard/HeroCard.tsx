@@ -15,8 +15,8 @@ interface Props {
   heroId: string
   stars: number
   bars: number
-  cards: number
-  distributionCards: number
+  cards: number | undefined
+  distributionCards: number | undefined
   rank: Ranks
   element: ElementsType
   name: string
@@ -50,24 +50,24 @@ const HeroCard: FC<Props> = memo(
     onRemoveStar,
   }) => {
     const handleAddStarClick = useCallback(() => {
-      onAddStar(heroId, rank, stars, bars, cards, distributionCards)
+      onAddStar(heroId, rank, stars, bars, cards || 0, distributionCards || 0)
     }, [onAddStar, heroId, rank, stars, bars, cards, distributionCards])
 
     const handleAddBarClick = useCallback(() => {
-      onAddBar(heroId, rank, stars, bars, cards, distributionCards)
+      onAddBar(heroId, rank, stars, bars, cards || 0, distributionCards || 0)
     }, [onAddBar, heroId, rank, stars, bars, cards, distributionCards])
 
     const handleRemoveStarClick = useCallback(() => {
-      onRemoveStar(heroId, rank, stars, bars, cards, distributionCards)
+      onRemoveStar(heroId, rank, stars, bars, cards || 0, distributionCards || 0)
     }, [onRemoveStar, heroId, rank, stars, bars, cards, distributionCards])
 
     const handleRemoveBarClick = useCallback(() => {
-      onRemoveBar(heroId, rank, stars, bars, cards, distributionCards)
+      onRemoveBar(heroId, rank, stars, bars, cards || 0, distributionCards || 0)
     }, [onRemoveBar, heroId, rank, stars, bars, cards, distributionCards])
 
     const handleSetCards = useCallback(
       (value: string | number) => {
-        onSetCards(heroId, stars, bars, Number(value), distributionCards)
+        onSetCards(heroId, stars, bars, value as number, distributionCards || 0)
       },
       [onSetCards, heroId, stars, bars, cards, distributionCards],
     )
@@ -130,6 +130,7 @@ const HeroCard: FC<Props> = memo(
                   <HelpButton helpContent="Количество карт берем в игре с экрана со списком всех героев (там количество указано с +1 обязательной картой). Если героя нет в наличии, выставляем 0 карт." />
                 </Flex>
               }
+              clampBehavior="strict"
               hideControls
             />
           </Flex>

@@ -6,7 +6,7 @@ interface Props {
 }
 
 const HeroCardDistributionInput: FC<Props> = memo(({ className }) => (
-  <NumberInput className={className} size="xs" hideControls w={75} min={0} />
+  <NumberInput className={className} size="xs" hideControls w={75} min={0} clampBehavior="strict" />
 ))
 
 export default HeroCardDistributionInput

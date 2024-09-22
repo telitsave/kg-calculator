@@ -1,5 +1,6 @@
 import { FC, memo, useMemo, useState } from 'react'
 import { Accordion, Alert, Button, Flex, Text } from '@mantine/core'
+import { useMediaQuery } from '@mantine/hooks'
 import type { Hero } from 'kg-calculator-typings'
 import { orderBy } from 'lodash'
 import { FaStar } from 'react-icons/fa'
@@ -13,6 +14,7 @@ interface Props {
 }
 
 const CardDistributionPanel: FC<Props> = memo(({ className }) => {
+  const isMobile = useMediaQuery('(max-width: 50em)')
   const [sortField] = useState<keyof Hero>('rank')
   const { heroes, leftCards, fillStars, fillMaxScores, onSetCards, onReset } = useHeroesDistributionModel()
   const {
@@ -78,8 +80,24 @@ const CardDistributionPanel: FC<Props> = memo(({ className }) => {
           </Accordion.Panel>
         </Accordion.Item>
       </Accordion>
-      <Flex justify="space-between" align="center">
-        <Text>Карт осталось: {leftCards}</Text>
+      <Flex
+        justify="space-between"
+        align="center"
+        pos="sticky"
+        top={isMobile ? 45 : 60}
+        bg="white"
+        pt="sm"
+        pb="sm"
+        style={{
+          zIndex: 5,
+        }}
+      >
+        <Text>
+          Карт осталось:{' '}
+          <Text component={isMobile ? 'p' : 'span'} fw={700}>
+            {leftCards}
+          </Text>
+        </Text>
         <Flex align="center" gap="xs">
           <Button variant="default" onClick={fillMaxScores} size="xs">
             MAX очки

@@ -4,6 +4,7 @@ import type { Hero } from 'kg-calculator-typings'
 import { HeroIcon } from 'entities/hero'
 import { KeysHelper, ResourceIcon } from 'entities/resource'
 
+
 interface Props {
   className?: string
   hero: Hero

@@ -11,7 +11,7 @@ const useResources = () => {
     queryFn: api.inventory.getInventory,
   })
 
-  const saveResources = useCallback((resourceType: ResourceType, count: number) => {
+  const saveResources = useCallback((resourceType: ResourceType, count: number | string) => {
     resourcesQueue.setResource(resourceType, count)
   }, [])
 

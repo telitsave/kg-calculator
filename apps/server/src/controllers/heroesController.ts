@@ -1,9 +1,7 @@
 import HeroesCalculatorModel from '../model/calculator/heroes/HeroesCalculatorModel'
-import HeroesModel from '../model/heroes/HeroesModel'
 import Resources from '../model/resources/Resources'
 import HeroesService from '../services/heroes-service'
 import InventoryService from '../services/inventory-service'
-import ServerSettingsService from '../services/serverSettings-service'
 import SettingsService from '../services/settings-service'
 import BaseController from './base-controller'
 import { type NextFunction, Request, Response } from 'express'
@@ -56,19 +54,6 @@ export default class HeroesController extends BaseController {
       const data = (request.body.data as SaveHeroesPayload).heroesParams
       await HeroesService.setHeroesParams(profileId, data)
       response.json()
-    } catch (err) {
-      next(err)
-    }
-  }
-
-  static async getHeroesInCards(_: Request, response: Response, next: NextFunction) {
-    try {
-      const profileId = HeroesController.getProfileId(response)
-      const serverSettings = await ServerSettingsService.getServerSettings(profileId)
-      const heroes = await HeroesService.getHeroes()
-      const heroesModel = new HeroesModel()
-
-      response.json(heroesModel.getHeroesInCards(heroes, serverSettings))
     } catch (err) {
       next(err)
     }

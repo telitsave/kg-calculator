@@ -15,10 +15,10 @@ const useHeroes = () => {
   const saveHero = useCallback((heroId: string, hero: Partial<IHeroData>) => {
     heroesQueue.setHero(heroId, {
       id: heroId,
-      stars: hero.stars || 0,
-      bars: hero.bars || 0,
-      cards: hero.cards || 0,
-      distributionCards: hero.distributionCards || 0,
+      stars: hero.stars,
+      bars: hero.bars,
+      cards: hero.cards,
+      distributionCards: hero.distributionCards,
     })
   }, [])
 

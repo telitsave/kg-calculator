@@ -20,7 +20,7 @@ const ResourceInput: FC<Props> = memo(({ className, resourceType, viewMode = 'de
 
   const handleNumberInputChange = useCallback(
     (value: string | number) => {
-      setValue(parseInt(value.toString(), 10) || 0)
+      setValue(value)
     },
     [setValue],
   )
@@ -36,10 +36,9 @@ const ResourceInput: FC<Props> = memo(({ className, resourceType, viewMode = 'de
           onChange={handleNumberInputChange}
           thousandSeparator=" "
           disabled={disabled}
-          allowLeadingZeros={false}
           allowDecimal={false}
           allowNegative={false}
-          trimLeadingZeroesOnBlur
+          clampBehavior="strict"
         />
       </Flexbox>
     )
@@ -55,10 +54,9 @@ const ResourceInput: FC<Props> = memo(({ className, resourceType, viewMode = 'de
       value={value}
       onChange={handleNumberInputChange}
       thousandSeparator=" "
-      allowLeadingZeros={false}
       allowDecimal={false}
       allowNegative={false}
-      trimLeadingZeroesOnBlur
+      clampBehavior="strict"
     />
   )
 })

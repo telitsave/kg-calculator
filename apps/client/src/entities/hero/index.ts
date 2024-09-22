@@ -1,5 +1,4 @@
 export { default as HeroIcon } from './ui/HeroIcon'
-export { default as HeroInput } from './ui/HeroInput'
 export { default as HeroCard } from './ui/HeroCard'
 export { default as Bars } from './ui/Bars'
 export { default as Stars } from './ui/Stars'

@@ -3,11 +3,11 @@ import type { ParameterTypes } from 'kg-calculator-typings'
 import useParameters from './useParameters'
 
 
-const useParameter = (paramType: ParameterTypes): [number | undefined, (val: number) => void] => {
+const useParameter = (paramType: ParameterTypes): [number | undefined, (val: number | string) => void] => {
   const { params, saveParameter } = useParameters()
 
   const handleSetResource = useCallback(
-    (value: number) => {
+    (value: number | string) => {
       saveParameter(paramType, value)
     },
     [saveParameter],

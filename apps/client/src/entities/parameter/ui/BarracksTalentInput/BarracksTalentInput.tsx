@@ -9,14 +9,14 @@ interface Props {
   element: ElementsType
   rank: number
   type: 'big' | 'small'
-  value: number
-  onChange: (rank: number, type: 'big' | 'small', value: number) => void
+  value: number | undefined
+  onChange: (rank: number, type: 'big' | 'small', value: string | number) => void
 }
 
 const BarracksTalentInput: FC<Props> = memo(({ element, rank, type, value, onChange }) => {
   const handleNumberInputChange = useCallback(
     (val: string | number) => {
-      onChange(rank, type, Number(val) || 0)
+      onChange(rank, type, val)
     },
     [rank, type, onChange],
   )
@@ -29,8 +29,10 @@ const BarracksTalentInput: FC<Props> = memo(({ element, rank, type, value, onCha
         min={0}
         max={type === 'small' ? 48 : 6}
         leftSection={<ParameterIcon parameterType={type === 'small' ? 'talentParams_books' : 'talentParams_crowns'} />}
+        defaultValue={0}
         value={value}
         onChange={handleNumberInputChange}
+        clampBehavior="strict"
       />
     </Flexbox>
   )

@@ -8,9 +8,9 @@ import { ResourceInput } from 'entities/resource'
 
 interface Props {
   className?: string
-  goalCastleLevel: number | undefined
+  goalCastleLevel: number | string | undefined
 
-  setGoalCastleLevel: Dispatch<number>
+  setGoalCastleLevel: Dispatch<number | string>
 
   onCalculateButtonClick: () => void
 }

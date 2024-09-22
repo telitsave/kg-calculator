@@ -37,9 +37,6 @@ class SettingsQueue {
           queryFn: () => api.settings.setSettings(dataForSave),
         })
         this.queryClient.invalidateQueries({
-          queryKey: ['settings'],
-        })
-        this.queryClient.invalidateQueries({
           queryKey: ['mightiestKingdomTotal'],
         })
         this.queryClient.invalidateQueries({

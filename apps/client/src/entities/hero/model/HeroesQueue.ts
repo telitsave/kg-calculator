@@ -13,8 +13,14 @@ class HeroesQueue {
     this.heroesParams = {}
   }
 
-  setHero(heroId: string, value: IHeroData, force = false) {
-    this.heroesParams[heroId] = value
+  setHero(heroId: string, value: Partial<IHeroData> & { id: string }, force = false) {
+    this.heroesParams[heroId] = {
+      id: value.id,
+      stars: value.stars || 0,
+      bars: value.bars || 0,
+      cards: value.cards || 0,
+      distributionCards: value.distributionCards || 0,
+    }
     this.queryClient?.setQueryData(['heroesParams'], (val: HeroesParams) => {
       return {
         ...val,
@@ -47,7 +53,10 @@ class HeroesQueue {
             }),
         })
         this.queryClient.invalidateQueries({
-          queryKey: ['heroesParams'],
+          queryKey: ['mightiestKingdomTotal'],
+        })
+        this.queryClient.invalidateQueries({
+          queryKey: ['ultimatePowerTotal'],
         })
         NotificationsHelper.showSavedNotification()
       } catch (e) {

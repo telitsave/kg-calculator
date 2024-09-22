@@ -11,12 +11,12 @@ const useParameters = () => {
     queryFn: api.parameters.getParameters,
   })
 
-  const saveParameter = useCallback((parameterType: ParameterTypes, value: number) => {
+  const saveParameter = useCallback((parameterType: ParameterTypes, value: number | string) => {
     ParametersQueue.setParameter(parameterType, value)
   }, [])
 
   const saveGem = useCallback(
-    (rank: number, gem: string, value: number) => {
+    (rank: number, gem: string, value: number | string) => {
       ParametersQueue.gems = data?.gems || {}
       ParametersQueue.setGem(rank, gem, value)
     },
@@ -24,7 +24,7 @@ const useParameters = () => {
   )
 
   const saveTalent = useCallback(
-    (element: ElementsType, rank: number, talentType: 'small' | 'big', value: number) => {
+    (element: ElementsType, rank: number, talentType: 'small' | 'big', value: string | number) => {
       ParametersQueue.talents = {
         ...(data?.talents || {}),
         ...ParametersQueue.talents,

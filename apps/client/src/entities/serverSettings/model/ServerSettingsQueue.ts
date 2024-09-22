@@ -44,10 +44,10 @@ class ServerSettingsQueue {
           queryFn: () => api.serverSettings.setServerSettings(dataForSave),
         })
         this.queryClient.invalidateQueries({
-          queryKey: ['serverSettings'],
+          queryKey: ['mightiestKingdomTotal'],
         })
         this.queryClient.invalidateQueries({
-          queryKey: ['heroesInCards'],
+          queryKey: ['ultimatePowerTotal'],
         })
         NotificationsHelper.showSavedNotification()
       } catch (e) {

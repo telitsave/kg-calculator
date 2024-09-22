@@ -1,4 +1,4 @@
-import { FC, Fragment, MouseEvent, memo, useCallback, useEffect, useState } from 'react'
+import { FC, Fragment, MouseEvent, memo, useCallback } from 'react'
 import { Button, Divider, Text } from '@mantine/core'
 import type { ElementsType } from 'kg-calculator-typings'
 import Flexbox from 'shared/ui/Flexbox'
@@ -14,35 +14,19 @@ interface Props {
 
 const BarracksTalentsInput: FC<Props> = memo(({ className, element, maxRank }) => {
   const { saveTalent, talents = {} } = useParameters()
-  const [talentsState, setTalentsState] = useState(talents)
-
-  useEffect(() => {
-    if (Object.keys(talents).length > 0) {
-      setTalentsState(talents)
-    }
-  }, [talents])
 
   const handleMaxButtonClick = useCallback(
     (e: MouseEvent<HTMLButtonElement>) => {
       const rank = Number(e.currentTarget.dataset.rank)
       saveTalent(element, rank, 'small', 48)
       saveTalent(element, rank, 'big', 6)
-      setTalentsState((val) => ({
-        ...val,
-        [`${element}_${rank}_small`]: 48,
-        [`${element}_${rank}_big`]: 6,
-      }))
     },
     [element, saveTalent],
   )
 
   const handleInputChange = useCallback(
-    (rank: number, type: 'big' | 'small', value: number) => {
+    (rank: number, type: 'big' | 'small', value: string | number) => {
       saveTalent(element, rank, type, value)
-      setTalentsState((val) => ({
-        ...val,
-        [`${element}_${rank}_${type}`]: value,
-      }))
     },
     [saveTalent, element],
   )
@@ -59,7 +43,7 @@ const BarracksTalentsInput: FC<Props> = memo(({ className, element, maxRank }) =
                 element={element}
                 rank={index + 1}
                 type="small"
-                value={talentsState[`${element}_${index + 1}_small`] || 0}
+                value={talents[`${element}_${index + 1}_small`]}
                 onChange={handleInputChange}
               />
               <BarracksTalentInput
@@ -67,7 +51,7 @@ const BarracksTalentsInput: FC<Props> = memo(({ className, element, maxRank }) =
                 element={element}
                 rank={index + 1}
                 type="big"
-                value={talentsState[`${element}_${index + 1}_big`] || 0}
+                value={talents[`${element}_${index + 1}_big`]}
                 onChange={handleInputChange}
               />
             </Flexbox>

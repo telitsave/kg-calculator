@@ -21,6 +21,7 @@ const useProfiles = () => {
       } else {
         setCurrentProfile(value)
       }
+      window.location.reload()
     },
     [setCurrentProfile],
   )
@@ -47,7 +48,7 @@ const useProfiles = () => {
 
   useEffect(() => {
     if (isFetched && (!selectedProfile || selectedProfile.id === -1) && data && data.length > 0) {
-      if (!currentProfile) {
+      if (!currentProfile || selectedProfile.id === -1) {
         setCookie(data[0].id.toString())
         window.location.reload()
       }

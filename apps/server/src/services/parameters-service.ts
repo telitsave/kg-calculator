@@ -79,7 +79,7 @@ export default class ParametersService {
     await GemsRepository.addGems(profileId, data)
   }
 
-  static async setTalents(profileId: number, talents: Record<string, number>) {
+  static async setTalents(profileId: number, talents: Record<string, number | undefined>) {
     const data: TalentsData[] = []
     Object.entries(talents).forEach(([key, value]) => {
       const [element, rank, type] = key.split('_')
@@ -92,7 +92,7 @@ export default class ParametersService {
           small: 0,
         }
       }
-      talentData[type] = value
+      talentData[type] = value || 0
       data.push(talentData)
     })
 

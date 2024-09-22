@@ -8,7 +8,7 @@ import NotificationsHelper from 'shared/helpers/notificationsHelper'
 class ParametersQueue {
   parameters: Parameters = {}
   gems: Record<string, number> = {}
-  talents: Record<string, number> = {}
+  talents: Record<string, number | undefined> = {}
   queryClient?: QueryClient
 
   reset() {
@@ -17,14 +17,14 @@ class ParametersQueue {
     this.talents = {}
   }
 
-  setParameter(parameterType: ParameterTypes, value: number, force = false) {
-    this.parameters[parameterType] = value || 0
+  setParameter(parameterType: ParameterTypes, value: number | string, force = false) {
+    this.parameters[parameterType] = Number(value) || 0
     this.queryClient?.setQueryData(['parameters'], (val: GetAllParametersResponse): GetAllParametersResponse => {
       return {
         ...val,
         params: {
           ...val.params,
-          [parameterType]: value || 0,
+          [parameterType]: value as number,
         },
       }
     })
@@ -36,8 +36,17 @@ class ParametersQueue {
     }
   }
 
-  setGem(rank: number, gem: string, value: number, force = false) {
-    this.gems[`${rank}_${gem}`] = value
+  setGem(rank: number, gem: string, value: number | string, force = false) {
+    this.gems[`${rank}_${gem}`] = Number(value) || 0
+    this.queryClient?.setQueryData(['parameters'], (val: GetAllParametersResponse): GetAllParametersResponse => {
+      return {
+        ...val,
+        gems: {
+          ...val.gems,
+          [`${rank}_${gem}`]: value as number,
+        },
+      }
+    })
 
     if (force) {
       this.saveData()
@@ -46,8 +55,17 @@ class ParametersQueue {
     }
   }
 
-  setTalent(element: ElementsType, rank: number, talentType: 'small' | 'big', value: number, force = false) {
-    this.talents[`${element}_${rank}_${talentType}`] = value
+  setTalent(element: ElementsType, rank: number, talentType: 'small' | 'big', value: string | number, force = false) {
+    this.talents[`${element}_${rank}_${talentType}`] = Number(value) || 0
+    this.queryClient?.setQueryData(['parameters'], (val: GetAllParametersResponse): GetAllParametersResponse => {
+      return {
+        ...val,
+        talents: {
+          ...val.talents,
+          [`${element}_${rank}_${talentType}`]: value as number,
+        },
+      }
+    })
 
     if (force) {
       this.saveData()
@@ -101,7 +119,10 @@ class ParametersQueue {
           })
         }
         this.queryClient.invalidateQueries({
-          queryKey: ['parameters'],
+          queryKey: ['mightiestKingdomTotal'],
+        })
+        this.queryClient.invalidateQueries({
+          queryKey: ['ultimatePowerTotal'],
         })
         NotificationsHelper.showSavedNotification()
       } catch (e) {

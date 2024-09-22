@@ -13,8 +13,8 @@ class ResourceQueue {
     this.resources = {}
   }
 
-  setResource(resourceType: ResourceType, value: number, force = false) {
-    this.resources[resourceType] = value
+  setResource(resourceType: ResourceType, value: number | string, force = false) {
+    this.resources[resourceType] = Number(value) || 0
     this.queryClient?.setQueryData(['resources'], (val: Resources) => {
       return {
         ...val,
@@ -47,7 +47,10 @@ class ResourceQueue {
             }),
         })
         this.queryClient.invalidateQueries({
-          queryKey: ['resources'],
+          queryKey: ['mightiestKingdomTotal'],
+        })
+        this.queryClient.invalidateQueries({
+          queryKey: ['ultimatePowerTotal'],
         })
         NotificationsHelper.showSavedNotification()
       } catch (e) {

@@ -44,6 +44,7 @@ const ParameterInput: FC<Props> = memo(({ className, parameterType, viewMode = '
           value={value}
           onChange={handleNumberInputChange}
           thousandSeparator=" "
+          clampBehavior="strict"
         />
       </Flexbox>
     )
@@ -58,6 +59,7 @@ const ParameterInput: FC<Props> = memo(({ className, parameterType, viewMode = '
       value={value}
       onChange={handleNumberInputChange}
       thousandSeparator=" "
+      clampBehavior="strict"
     />
   )
 })

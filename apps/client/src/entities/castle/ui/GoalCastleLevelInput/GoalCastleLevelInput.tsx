@@ -6,17 +6,17 @@ import css from './styles.module.sass'
 
 interface Props {
   className?: string
-  value: number | undefined
+  value: number | string | undefined
   disabled?: boolean
   icon: ReactNode
 
-  onChange: (value: number) => void
+  onChange: (value: number | string) => void
 }
 
 const GoalCastleLevelInput: FC<Props> = memo(({ className, value: propValue, disabled = false, onChange, icon }) => {
   const handleNumberInputChange = useCallback(
     (value: string | number) => {
-      onChange(parseInt(value.toString(), 10))
+      onChange(value)
     },
     [onChange],
   )
@@ -25,12 +25,15 @@ const GoalCastleLevelInput: FC<Props> = memo(({ className, value: propValue, dis
     <NumberInput
       className={cx(css.root, className)}
       min={0}
+      max={9999}
       leftSection={icon}
-      value={propValue || 0}
+      defaultValue={0}
+      value={propValue}
       onChange={handleNumberInputChange}
       thousandSeparator=" "
       disabled={disabled}
       label="Желаемый уровень замка"
+      clampBehavior="strict"
     />
   )
 })

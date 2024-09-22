@@ -35,8 +35,8 @@ const HeroesGrid: FC<Props> = memo(({ className }) => {
               heroId={hero.heroId}
               stars={hero.stars || 0}
               bars={hero.bars || 0}
-              cards={hero.cards || 0}
-              distributionCards={hero.distributionCards || 0}
+              cards={hero.cards}
+              distributionCards={hero.distributionCards}
               rank={hero.rank}
               name={hero.name}
               element={hero.element}

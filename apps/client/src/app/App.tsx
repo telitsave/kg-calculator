@@ -1,6 +1,6 @@
 import { FC } from 'react'
 import { RouterProvider } from 'react-router-dom'
-import { MantineProvider } from '@mantine/core'
+import { Input, MantineProvider, TextInput, createTheme } from '@mantine/core'
 import { Notifications } from '@mantine/notifications'
 import '@mantine/notifications/styles.css'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
@@ -24,6 +24,31 @@ const queryClient = new QueryClient({
   },
 })
 
+const theme = createTheme({
+  components: {
+    Input: Input.extend({
+      vars: () => ({
+        wrapper: {
+          '--input-fz': '16px',
+        },
+      }),
+      defaultProps: {
+        size: 'md',
+      },
+    }),
+    TextInput: TextInput.extend({
+      vars: () => ({
+        wrapper: {
+          '--input-fz': '16px',
+        },
+      }),
+      defaultProps: {
+        size: 'md',
+      },
+    }),
+  },
+})
+
 const App: FC = () => {
   AxiosService.init(process.env.REACT_APP_SERVER_URL as string)
   ResourcesQueue.queryClient = queryClient
@@ -33,7 +58,7 @@ const App: FC = () => {
   HeroesQueue.queryClient = queryClient
 
   return (
-    <MantineProvider>
+    <MantineProvider theme={theme}>
       <Notifications />
       <QueryClientProvider client={queryClient}>
         <RouterProvider router={router} />

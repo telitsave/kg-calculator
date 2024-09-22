@@ -2,6 +2,7 @@ import { FC, memo, useCallback } from 'react'
 import { Button, Fieldset, NumberInput } from '@mantine/core'
 import { useInputState } from '@mantine/hooks'
 
+
 interface Props {
   className?: string
 
@@ -18,7 +19,15 @@ const Inputs: FC<Props> = memo(({ className, onClickShow }) => {
 
   return (
     <Fieldset className={className} legend="Параметры злых духов" miw={300}>
-      <NumberInput label="Уровень" placeholder="От 1 до 300" min={1} max={300} value={level} onChange={setLevel} />
+      <NumberInput
+        label="Уровень"
+        placeholder="От 1 до 300"
+        min={1}
+        max={300}
+        value={level}
+        onChange={setLevel}
+        clampBehavior="strict"
+      />
       <NumberInput
         label="Количество игроков в альянсе"
         placeholder="От 1 до 130"
@@ -27,6 +36,7 @@ const Inputs: FC<Props> = memo(({ className, onClickShow }) => {
         mt="md"
         value={membersCount}
         onChange={setMembersCount}
+        clampBehavior="strict"
       />
       <Button mt="md" onClick={handleButtonClick}>
         Показать

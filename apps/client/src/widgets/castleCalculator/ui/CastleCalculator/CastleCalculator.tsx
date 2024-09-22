@@ -17,7 +17,7 @@ interface Props {
 }
 
 const CastleCalculator: FC<Props> = memo(({ className }) => {
-  const [goalCastleLevel, setGoalCastleLevel] = useState<number | undefined>()
+  const [goalCastleLevel, setGoalCastleLevel] = useState<number | string | undefined>(0)
 
   const [castleLevel = 0] = useParameter('castleParams_level')
   const { mutate: calculatePossibleCastle, data: possibleData } = useCalculatePossibleCastle()
@@ -29,7 +29,9 @@ const CastleCalculator: FC<Props> = memo(({ className }) => {
     reset: resetCalculateGoalCastle,
   } = useCalculateGoalCastle()
   const { mutate: calculateUltimatePower, data: ultimatePowerData } = useCalculateUltimatePower()
-  const { mutate: calculateUltimatePowerGoal, data: ultimatePowerDataGoal } = useCalculateUltimatePower(goalCastleLevel)
+  const { mutate: calculateUltimatePowerGoal, data: ultimatePowerDataGoal } = useCalculateUltimatePower(
+    Number(goalCastleLevel) || 0,
+  )
 
   const handleCalculateButtonClick = useCallback(async () => {
     await ResourcesQueue.saveData()
@@ -37,11 +39,12 @@ const CastleCalculator: FC<Props> = memo(({ className }) => {
     await SettingsQueue.saveData()
     calculatePossibleCastle()
 
-    const shouldCalculateGoalCastle = goalCastleLevel && !isNaN(goalCastleLevel) && goalCastleLevel > castleLevel
+    const shouldCalculateGoalCastle =
+      goalCastleLevel && !isNaN(Number(goalCastleLevel)) && Number(goalCastleLevel) > castleLevel
 
     if (shouldCalculateGoalCastle) {
       calculateGoalCastle({
-        goalLevel: goalCastleLevel,
+        goalLevel: Number(goalCastleLevel),
       })
       calculateUltimatePowerGoal(['castle'])
     } else {

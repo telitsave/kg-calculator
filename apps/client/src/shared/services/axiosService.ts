@@ -1,5 +1,6 @@
 import axios, { AxiosInstance, AxiosRequestConfig } from 'axios'
 import type { LoginResponse } from 'kg-calculator-typings'
+import CookieHelper from '../helpers/cookieHelper'
 
 
 export default class AxiosService {
@@ -15,7 +16,12 @@ export default class AxiosService {
         const accessToken = localStorage.getItem('access-token')
         const abortController = new AbortController()
 
-        const shouldCheckToken = config.data?.withCredentials === undefined || config.data.withCredentials
+        let shouldCheckToken = false
+        if (config.method?.toLowerCase() === 'get') {
+          shouldCheckToken = config.withCredentials === undefined || config.withCredentials
+        } else {
+          shouldCheckToken = config.data?.withCredentials === undefined || config.data.withCredentials
+        }
 
         if (shouldCheckToken && !accessToken) {
           abortController.abort('No access token')
@@ -36,6 +42,8 @@ export default class AxiosService {
               localStorage.setItem('access-token', response.data.accessToken)
               return this.axiosInstance?.request(originalRequest)
             } catch (error) {
+              CookieHelper.deleteCookie('profileId')
+              window.location.reload()
               console.log('Не авторизован')
             }
           }
