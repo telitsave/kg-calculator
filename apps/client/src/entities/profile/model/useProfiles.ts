@@ -21,7 +21,6 @@ const useProfiles = () => {
       } else {
         setCurrentProfile(value)
       }
-      window.location.reload()
     },
     [setCurrentProfile],
   )

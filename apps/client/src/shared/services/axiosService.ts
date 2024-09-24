@@ -43,7 +43,6 @@ export default class AxiosService {
               return this.axiosInstance?.request(originalRequest)
             } catch (error) {
               CookieHelper.deleteCookie('profileId')
-              window.location.reload()
               console.log('Не авторизован')
             }
           }
