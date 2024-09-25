@@ -43,6 +43,23 @@ export interface Hero {
   element: ElementsType
   name: string
   season?: number
+  skill1?: {
+    id: number
+    value: number
+  }
+  skill2?: {
+    id: number
+    value: number
+  }
+  skill3?: {
+    id: number
+    value: number
+  }
+  skill4?: {
+    id: number
+    value: number
+  }
+  placesIds: number[]
 }
 
 export interface IHeroData {
@@ -57,7 +74,11 @@ export interface SaveHeroesPayload {
   heroesParams: HeroesParams
 }
 
+export interface HeroTableData extends Hero, IHeroData {}
+
 export type GetHeroesParamsResponse = HeroesParams
+
+export type GetHeroesTableResponse = HeroTableData[]
 
 export type HeroesResponse = Hero[]
 

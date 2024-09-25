@@ -9,6 +9,11 @@ export interface HeroData {
   rank: Ranks
   name: string
   season: number | null
+  skill1: string | null
+  skill2: string | null
+  skill3: string | null
+  skill4: string | null
+  placesIds: string
 }
 
 export interface HeroParameter {

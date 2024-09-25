@@ -15,49 +15,52 @@ interface Props {
   isAuth: boolean
 }
 
-const Layout: FC<Props> = memo(({className, rightHeaderSlot, isAuth}) => {
-  const [opened, {toggle, close}] = useDisclosure()
+const Layout: FC<Props> = memo(({ className, rightHeaderSlot, isAuth }) => {
+  const [opened, { toggle, close }] = useDisclosure()
   const location = useLocation()
 
-  const handleLinkClick = useCallback((event: React.MouseEvent<HTMLAnchorElement>) => {
-    if (event.currentTarget.dataset.secure === 'true') {
-      if (!isAuth) {
-        event.preventDefault()
+  const handleLinkClick = useCallback(
+    (event: React.MouseEvent<HTMLAnchorElement>) => {
+      if (event.currentTarget.dataset.secure === 'true') {
+        if (!isAuth) {
+          event.preventDefault()
+        }
       }
-    }
-    close()
-  }, [close, isAuth])
+      close()
+    },
+    [close, isAuth],
+  )
 
   const menuNode = useMemo(
     () => (
       <AppShell.Section grow>
         <RouterNavLink className={css.link} to="/about" onClick={handleLinkClick}>
-          {({isActive}) => <NavLink component="span" label={getPageName('about')} active={isActive}/>}
+          {({ isActive }) => <NavLink component="span" label={getPageName('about')} active={isActive} />}
         </RouterNavLink>
         <Tooltip disabled={isAuth} label="Вы не авторизованы или не выбран профиль">
           <RouterNavLink className={css.link} to="/inventory" data-secure={true} onClick={handleLinkClick}>
-            {({isActive}) => (
-              <NavLink component="span" label={getPageName('inventory')} active={isActive} disabled={!isAuth}/>
+            {({ isActive }) => (
+              <NavLink component="span" label={getPageName('inventory')} active={isActive} disabled={!isAuth} />
             )}
           </RouterNavLink>
         </Tooltip>
         <Tooltip disabled={isAuth} label="Вы не авторизованы или не выбран профиль">
           <RouterNavLink className={css.link} to="/parameters" data-secure={true} onClick={handleLinkClick}>
-            {({isActive}) => (
-              <NavLink component="span" label={getPageName('parameters')} active={isActive} disabled={!isAuth}/>
+            {({ isActive }) => (
+              <NavLink component="span" label={getPageName('parameters')} active={isActive} disabled={!isAuth} />
             )}
           </RouterNavLink>
         </Tooltip>
         <Tooltip disabled={isAuth} label="Вы не авторизованы или не выбран профиль">
           <RouterNavLink className={css.link} to="/heroes" data-secure={true} onClick={handleLinkClick}>
-            {({isActive}) => (
-              <NavLink component="span" label={getPageName('heroes')} active={isActive} disabled={!isAuth}/>
+            {({ isActive }) => (
+              <NavLink component="span" label={getPageName('heroes')} active={isActive} disabled={!isAuth} />
             )}
           </RouterNavLink>
         </Tooltip>
 
         <RouterNavLink className={css.link} to="/calculator">
-          {({isActive}) => (
+          {({ isActive }) => (
             <NavLink component="span" label={getPageName('calculator')} active={isActive} defaultOpened={isActive}>
               <Tooltip disabled={isAuth} label="Вы не авторизованы или не выбран профиль">
                 <RouterNavLink
@@ -66,7 +69,7 @@ const Layout: FC<Props> = memo(({className, rightHeaderSlot, isAuth}) => {
                   data-secure={true}
                   onClick={handleLinkClick}
                 >
-                  {({isActive}) => (
+                  {({ isActive }) => (
                     <NavLink
                       component="span"
                       label={getPageName('/calculator/castle')}
@@ -83,7 +86,7 @@ const Layout: FC<Props> = memo(({className, rightHeaderSlot, isAuth}) => {
                   data-secure={true}
                   onClick={handleLinkClick}
                 >
-                  {({isActive}) => (
+                  {({ isActive }) => (
                     <NavLink
                       component="span"
                       label={getPageName('/calculator/dragon')}
@@ -95,7 +98,7 @@ const Layout: FC<Props> = memo(({className, rightHeaderSlot, isAuth}) => {
               </Tooltip>
               <Tooltip disabled={isAuth} label="Вы не авторизованы или не выбран профиль">
                 <RouterNavLink className={css.link} to="/calculator/witch" data-secure={true} onClick={handleLinkClick}>
-                  {({isActive}) => (
+                  {({ isActive }) => (
                     <NavLink
                       component="span"
                       label={getPageName('/calculator/witch')}
@@ -112,7 +115,7 @@ const Layout: FC<Props> = memo(({className, rightHeaderSlot, isAuth}) => {
                   data-secure={true}
                   onClick={handleLinkClick}
                 >
-                  {({isActive}) => (
+                  {({ isActive }) => (
                     <NavLink
                       component="span"
                       label={getPageName('/calculator/barracks')}
@@ -129,7 +132,7 @@ const Layout: FC<Props> = memo(({className, rightHeaderSlot, isAuth}) => {
                   data-secure={true}
                   onClick={handleLinkClick}
                 >
-                  {({isActive}) => (
+                  {({ isActive }) => (
                     <NavLink
                       component="span"
                       label={getPageName('/calculator/blacksmith')}
@@ -146,7 +149,7 @@ const Layout: FC<Props> = memo(({className, rightHeaderSlot, isAuth}) => {
                   data-secure={true}
                   onClick={handleLinkClick}
                 >
-                  {({isActive}) => (
+                  {({ isActive }) => (
                     <NavLink
                       component="span"
                       label={getPageName('/calculator/gallery')}
@@ -163,7 +166,7 @@ const Layout: FC<Props> = memo(({className, rightHeaderSlot, isAuth}) => {
                   data-secure={true}
                   onClick={handleLinkClick}
                 >
-                  {({isActive}) => (
+                  {({ isActive }) => (
                     <NavLink
                       component="span"
                       label={getPageName('/calculator/heroes')}
@@ -180,7 +183,7 @@ const Layout: FC<Props> = memo(({className, rightHeaderSlot, isAuth}) => {
                   data-secure={true}
                   onClick={handleLinkClick}
                 >
-                  {({isActive}) => (
+                  {({ isActive }) => (
                     <NavLink
                       component="span"
                       label={getPageName('/calculator/ultimatePower')}
@@ -197,7 +200,7 @@ const Layout: FC<Props> = memo(({className, rightHeaderSlot, isAuth}) => {
                   data-secure={true}
                   onClick={handleLinkClick}
                 >
-                  {({isActive}) => (
+                  {({ isActive }) => (
                     <NavLink
                       label={getPageName('/calculator/mightiestKingdom')}
                       active={isActive}
@@ -211,14 +214,14 @@ const Layout: FC<Props> = memo(({className, rightHeaderSlot, isAuth}) => {
           )}
         </RouterNavLink>
         <RouterNavLink className={css.link} to="/other/spiritInvasion" onClick={handleLinkClick}>
-          {({isActive}) => (
-            <NavLink component="span" label={getPageName('/other/spiritInvasion')} active={isActive}/>
+          {({ isActive }) => (
+            <NavLink component="span" label={getPageName('/other/spiritInvasion')} active={isActive} />
           )}
         </RouterNavLink>
         <Tooltip disabled={isAuth} label="Вы не авторизованы или не выбран профиль">
           <RouterNavLink className={css.link} to="/serverSettings" data-secure={true} onClick={handleLinkClick}>
-            {({isActive}) => (
-              <NavLink component="span" label={getPageName('serverSettings')} active={isActive} disabled={!isAuth}/>
+            {({ isActive }) => (
+              <NavLink component="span" label={getPageName('serverSettings')} active={isActive} disabled={!isAuth} />
             )}
           </RouterNavLink>
         </Tooltip>
@@ -231,18 +234,20 @@ const Layout: FC<Props> = memo(({className, rightHeaderSlot, isAuth}) => {
     <AppShell
       layout="alt"
       className={cx(css.root, className)}
-      header={{height: 60}}
+      header={{ height: 60 }}
       navbar={{
         width: 300,
         breakpoint: 'sm',
-        collapsed: {mobile: !opened},
+        collapsed: { mobile: !opened },
       }}
+      maw="100%"
+      mah="100%"
       padding="md"
     >
       <AppShell.Header>
         <Flex h="100%" ml="md" mr="md" align="center" gap="sm" justify="space-between">
           <Flex align="center" gap="sm">
-            <Burger opened={opened} onClick={toggle} hiddenFrom="sm" size="sm"/>
+            <Burger opened={opened} onClick={toggle} hiddenFrom="sm" size="sm" />
             <Text fw={700} size="sm">
               {getPageName(location.pathname, true)}
             </Text>
@@ -254,7 +259,7 @@ const Layout: FC<Props> = memo(({className, rightHeaderSlot, isAuth}) => {
       <AppShell.Navbar p="md">
         <AppShell.Section>
           <Group>
-            <Burger opened={opened} onClick={toggle} hiddenFrom="sm" size="sm"/>
+            <Burger opened={opened} onClick={toggle} hiddenFrom="sm" size="sm" />
             <Text>Меню</Text>
           </Group>
         </AppShell.Section>
@@ -266,7 +271,7 @@ const Layout: FC<Props> = memo(({className, rightHeaderSlot, isAuth}) => {
                 Created by: [KMZ] DonLi, S1574
               </Text>
               <a href="https://t.me/DonLi_V" target="_blank" rel="noreferrer">
-                <FaTelegram color="#29B6F6" size={24}/>
+                <FaTelegram color="#29B6F6" size={24} />
               </a>
             </Flex>
             <Flex align="flex-end" direction="column">
@@ -293,8 +298,10 @@ const Layout: FC<Props> = memo(({className, rightHeaderSlot, isAuth}) => {
         </AppShell.Section>
       </AppShell.Navbar>
 
-      <AppShell.Main>
-        <Outlet/>
+      <AppShell.Main h="100dvh" style={{ overflow: 'hidden' }}>
+        <ScrollArea h="100%">
+          <Outlet />
+        </ScrollArea>
       </AppShell.Main>
     </AppShell>
   )

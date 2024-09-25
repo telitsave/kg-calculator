@@ -1,0 +1,23 @@
+@import "shared/assets/icons/baseIcon"
+
+.background
+  @include baseBackground
+  width: 48px
+  height: 48px
+  position: relative
+
+  @media (max-width: 768px)
+    width: 24px
+    height: 24px
+
+  @each $bgId in 1, 2, 3, 4, 5
+    &.id_#{$bgId}
+      background-image: url("./icons/skill_bg_#{$bgId}.png")
+
+  .icon
+    @include baseIcon
+    background-position: bottom right
+    background-size: 50%
+    @each $cornerId in 1, 2, 3, 4, 5
+      &.corner_#{$cornerId}
+        background-image: url("./icons/skill_corner_#{$cornerId}.png")

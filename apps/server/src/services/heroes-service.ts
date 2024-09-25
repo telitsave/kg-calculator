@@ -11,6 +11,11 @@ export default class HeroesService {
       name: it.name,
       element: it.element,
       season: it.season !== null ? it.season : undefined,
+      skill1: this.parseSkill(it.skill1) || undefined,
+      skill2: this.parseSkill(it.skill2) || undefined,
+      skill3: this.parseSkill(it.skill3) || undefined,
+      skill4: this.parseSkill(it.skill4) || undefined,
+      placesIds: it.placesIds.split(',').map(Number),
     }))
 
     return heroes
@@ -46,5 +51,15 @@ export default class HeroesService {
 
   static async removeHeroesParams(profileId) {
     await HeroesRepository.removeHeroesParams(profileId)
+  }
+
+  private static parseSkill(skill: string | null): { id: number; value: number } | null {
+    if (!skill) return null
+
+    const [skillId, value] = skill.split('-').map(Number)
+    return {
+      id: skillId,
+      value,
+    }
   }
 }

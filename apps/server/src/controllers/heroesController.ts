@@ -5,7 +5,7 @@ import InventoryService from '../services/inventory-service'
 import SettingsService from '../services/settings-service'
 import BaseController from './base-controller'
 import { type NextFunction, Request, Response } from 'express'
-import type { SaveHeroesPayload } from 'kg-calculator-typings'
+import type { HeroTableData, SaveHeroesPayload } from 'kg-calculator-typings'
 
 
 export default class HeroesController extends BaseController {
@@ -54,6 +54,31 @@ export default class HeroesController extends BaseController {
       const data = (request.body.data as SaveHeroesPayload).heroesParams
       await HeroesService.setHeroesParams(profileId, data)
       response.json()
+    } catch (err) {
+      next(err)
+    }
+  }
+
+  static async getHeroesTable(_: Request, response: Response, next: NextFunction) {
+    try {
+      const profileId = HeroesController.getProfileId(response)
+      const heroes = await HeroesService.getHeroes()
+      const heroesParams = await HeroesService.getHeroesParams(profileId)
+      const data: HeroTableData[] = []
+      heroes.forEach((hero) => {
+        const params = heroesParams[hero.heroId]
+
+        data.push({
+          ...hero,
+          ...params,
+          id: hero.heroId,
+          stars: params?.stars || 0,
+          bars: params?.bars || 0,
+          cards: params?.cards || 0,
+          distributionCards: params?.distributionCards || 0,
+        })
+      })
+      response.json(data)
     } catch (err) {
       next(err)
     }

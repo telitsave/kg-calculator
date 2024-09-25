@@ -1,6 +1,7 @@
 import type {
   CalculateHeroesResponse,
   GetHeroesParamsResponse,
+  GetHeroesTableResponse,
   HeroesResponse,
   SaveHeroesPayload,
 } from 'kg-calculator-typings'
@@ -22,4 +23,8 @@ export const setHeroesParams = (payload: SaveHeroesPayload) => {
 
 export const getAllHeroes = () => {
   return AxiosService.get<HeroesResponse>('/heroes/all')
+}
+
+export const getHeroesTable = () => {
+  return AxiosService.get<GetHeroesTableResponse>('/heroes/table')
 }
