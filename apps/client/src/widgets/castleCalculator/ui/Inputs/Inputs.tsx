@@ -18,7 +18,7 @@ interface Props {
 const Inputs: FC<Props> = memo(({ className, goalCastleLevel, setGoalCastleLevel, onCalculateButtonClick }) => (
   <Flex className={className} direction="column" gap={12}>
     <Flex direction="column" gap={8}>
-      <Title order={3}>Мой замок сейчас</Title>
+      <Title order={4}>Мой замок сейчас</Title>
       <ParameterInput parameterType="castleParams_level" />
     </Flex>
     <Flex direction="column" gap={8}>

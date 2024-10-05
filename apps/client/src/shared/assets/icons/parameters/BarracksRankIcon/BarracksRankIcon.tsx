@@ -17,6 +17,7 @@ const BarracksRankIcon: FC<Props> = memo(
       alignItems="center"
       ref={ref}
     >
+      <div className={css.dummy} />
       <div className={cx(css.icon, css[`rank-${rank}`])} />
     </Flexbox>
   )),

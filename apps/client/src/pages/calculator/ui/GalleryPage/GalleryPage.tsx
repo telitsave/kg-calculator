@@ -1,15 +1,18 @@
 import { FC, memo } from 'react'
-import cx from 'classnames'
+import { Stack } from '@mantine/core'
+import { NoAuthNavigate } from 'entities/user'
+import PageTitle from 'shared/ui/PageTitle'
 import { GalleryCalculator } from 'widgets/galleryCalculator'
-import css from './styles.module.sass'
 
 
-interface Props {
-  className?: string
-}
-
-const GalleryPage: FC<Props> = memo(({ className }) => {
-  return <GalleryCalculator className={cx(css.root, className)} />
+const GalleryPage: FC = memo(() => {
+  return (
+    <Stack>
+      <NoAuthNavigate to="/calculators" />
+      <PageTitle />
+      <GalleryCalculator />
+    </Stack>
+  )
 })
 
 export default GalleryPage

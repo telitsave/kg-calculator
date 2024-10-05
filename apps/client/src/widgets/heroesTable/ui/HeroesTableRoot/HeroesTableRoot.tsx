@@ -8,7 +8,7 @@ import HeroesTable from '../HTable'
 const HeroesTableRoot: FC = memo(() => {
   const { data = [] } = useGetHeroesTable()
   return (
-    <Stack mah="100%">
+    <Stack mah="100%" maw="100%">
       <Flex>
         <HeroSorterButton />
       </Flex>

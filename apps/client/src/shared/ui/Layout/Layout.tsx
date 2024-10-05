@@ -1,9 +1,10 @@
-import { FC, type ReactNode, memo, useCallback, useMemo } from 'react'
+import { FC, type ReactNode, memo, useEffect, useRef } from 'react'
 import { Outlet, NavLink as RouterNavLink, useLocation } from 'react-router-dom'
 import cx from 'classnames'
-import { AppShell, Burger, Flex, Group, NavLink, ScrollArea, Text, Tooltip } from '@mantine/core'
-import { useDisclosure } from '@mantine/hooks'
+import { ActionIcon, AppShell, Flex, Group, NavLink, ScrollArea, Text } from '@mantine/core'
+import { useMediaQuery } from '@mantine/hooks'
 import { FaTelegram } from 'react-icons/fa'
+import { InventoryIcon } from '../../assets/icons'
 import Flexbox from '../Flexbox'
 import { getPageName } from './pageNames'
 import css from './styles.module.sass'
@@ -12,223 +13,21 @@ import css from './styles.module.sass'
 interface Props {
   className?: string
   rightHeaderSlot?: ReactNode
-  isAuth: boolean
 }
 
-const Layout: FC<Props> = memo(({ className, rightHeaderSlot, isAuth }) => {
-  const [opened, { toggle, close }] = useDisclosure()
+const Layout: FC<Props> = memo(({ className, rightHeaderSlot }) => {
   const location = useLocation()
+  const isMobile = useMediaQuery('(max-width: 36em)')
+  const viewPort = useRef<HTMLDivElement>(null)
 
-  const handleLinkClick = useCallback(
-    (event: React.MouseEvent<HTMLAnchorElement>) => {
-      if (event.currentTarget.dataset.secure === 'true') {
-        if (!isAuth) {
-          event.preventDefault()
-        }
-      }
-      close()
-    },
-    [close, isAuth],
-  )
-
-  const menuNode = useMemo(
-    () => (
-      <AppShell.Section grow>
-        <RouterNavLink className={css.link} to="/about" onClick={handleLinkClick}>
-          {({ isActive }) => <NavLink component="span" label={getPageName('about')} active={isActive} />}
-        </RouterNavLink>
-        <Tooltip disabled={isAuth} label="Вы не авторизованы или не выбран профиль">
-          <RouterNavLink className={css.link} to="/inventory" data-secure={true} onClick={handleLinkClick}>
-            {({ isActive }) => (
-              <NavLink component="span" label={getPageName('inventory')} active={isActive} disabled={!isAuth} />
-            )}
-          </RouterNavLink>
-        </Tooltip>
-        <Tooltip disabled={isAuth} label="Вы не авторизованы или не выбран профиль">
-          <RouterNavLink className={css.link} to="/parameters" data-secure={true} onClick={handleLinkClick}>
-            {({ isActive }) => (
-              <NavLink component="span" label={getPageName('parameters')} active={isActive} disabled={!isAuth} />
-            )}
-          </RouterNavLink>
-        </Tooltip>
-        <Tooltip disabled={isAuth} label="Вы не авторизованы или не выбран профиль">
-          <RouterNavLink className={css.link} to="/heroes" data-secure={true} onClick={handleLinkClick}>
-            {({ isActive }) => (
-              <NavLink component="span" label={getPageName('heroes')} active={isActive} disabled={!isAuth} />
-            )}
-          </RouterNavLink>
-        </Tooltip>
-
-        <RouterNavLink className={css.link} to="/calculator">
-          {({ isActive }) => (
-            <NavLink component="span" label={getPageName('calculator')} active={isActive} defaultOpened={isActive}>
-              <Tooltip disabled={isAuth} label="Вы не авторизованы или не выбран профиль">
-                <RouterNavLink
-                  className={css.link}
-                  to="/calculator/castle"
-                  data-secure={true}
-                  onClick={handleLinkClick}
-                >
-                  {({ isActive }) => (
-                    <NavLink
-                      component="span"
-                      label={getPageName('/calculator/castle')}
-                      active={isActive}
-                      disabled={!isAuth}
-                    />
-                  )}
-                </RouterNavLink>
-              </Tooltip>
-              <Tooltip disabled={isAuth} label="Вы не авторизованы или не выбран профиль">
-                <RouterNavLink
-                  className={css.link}
-                  to="/calculator/dragon"
-                  data-secure={true}
-                  onClick={handleLinkClick}
-                >
-                  {({ isActive }) => (
-                    <NavLink
-                      component="span"
-                      label={getPageName('/calculator/dragon')}
-                      active={isActive}
-                      disabled={!isAuth}
-                    />
-                  )}
-                </RouterNavLink>
-              </Tooltip>
-              <Tooltip disabled={isAuth} label="Вы не авторизованы или не выбран профиль">
-                <RouterNavLink className={css.link} to="/calculator/witch" data-secure={true} onClick={handleLinkClick}>
-                  {({ isActive }) => (
-                    <NavLink
-                      component="span"
-                      label={getPageName('/calculator/witch')}
-                      active={isActive}
-                      disabled={!isAuth}
-                    />
-                  )}
-                </RouterNavLink>
-              </Tooltip>
-              <Tooltip disabled={isAuth} label="Вы не авторизованы или не выбран профиль">
-                <RouterNavLink
-                  className={css.link}
-                  to="/calculator/barracks"
-                  data-secure={true}
-                  onClick={handleLinkClick}
-                >
-                  {({ isActive }) => (
-                    <NavLink
-                      component="span"
-                      label={getPageName('/calculator/barracks')}
-                      active={isActive}
-                      disabled={!isAuth}
-                    />
-                  )}
-                </RouterNavLink>
-              </Tooltip>
-              <Tooltip disabled={isAuth} label="Вы не авторизованы или не выбран профиль">
-                <RouterNavLink
-                  className={css.link}
-                  to="/calculator/blacksmith"
-                  data-secure={true}
-                  onClick={handleLinkClick}
-                >
-                  {({ isActive }) => (
-                    <NavLink
-                      component="span"
-                      label={getPageName('/calculator/blacksmith')}
-                      active={isActive}
-                      disabled={!isAuth}
-                    />
-                  )}
-                </RouterNavLink>
-              </Tooltip>
-              <Tooltip disabled={isAuth} label="Вы не авторизованы или не выбран профиль">
-                <RouterNavLink
-                  className={css.link}
-                  to="/calculator/gallery"
-                  data-secure={true}
-                  onClick={handleLinkClick}
-                >
-                  {({ isActive }) => (
-                    <NavLink
-                      component="span"
-                      label={getPageName('/calculator/gallery')}
-                      active={isActive}
-                      disabled={!isAuth}
-                    />
-                  )}
-                </RouterNavLink>
-              </Tooltip>
-              <Tooltip disabled={isAuth} label="Вы не авторизованы или не выбран профиль">
-                <RouterNavLink
-                  className={css.link}
-                  to="/calculator/heroes"
-                  data-secure={true}
-                  onClick={handleLinkClick}
-                >
-                  {({ isActive }) => (
-                    <NavLink
-                      component="span"
-                      label={getPageName('/calculator/heroes')}
-                      active={isActive}
-                      disabled={!isAuth}
-                    />
-                  )}
-                </RouterNavLink>
-              </Tooltip>
-              <Tooltip disabled={isAuth} label="Вы не авторизованы или не выбран профиль">
-                <RouterNavLink
-                  className={css.link}
-                  to="/calculator/ultimatePower"
-                  data-secure={true}
-                  onClick={handleLinkClick}
-                >
-                  {({ isActive }) => (
-                    <NavLink
-                      component="span"
-                      label={getPageName('/calculator/ultimatePower')}
-                      active={isActive}
-                      disabled={!isAuth}
-                    />
-                  )}
-                </RouterNavLink>
-              </Tooltip>
-              <Tooltip disabled={isAuth} label="Вы не авторизованы или не выбран профиль">
-                <RouterNavLink
-                  className={css.link}
-                  to="/calculator/mightiestKingdom"
-                  data-secure={true}
-                  onClick={handleLinkClick}
-                >
-                  {({ isActive }) => (
-                    <NavLink
-                      label={getPageName('/calculator/mightiestKingdom')}
-                      active={isActive}
-                      disabled={!isAuth}
-                      component="span"
-                    />
-                  )}
-                </RouterNavLink>
-              </Tooltip>
-            </NavLink>
-          )}
-        </RouterNavLink>
-        <RouterNavLink className={css.link} to="/other/spiritInvasion" onClick={handleLinkClick}>
-          {({ isActive }) => (
-            <NavLink component="span" label={getPageName('/other/spiritInvasion')} active={isActive} />
-          )}
-        </RouterNavLink>
-        <Tooltip disabled={isAuth} label="Вы не авторизованы или не выбран профиль">
-          <RouterNavLink className={css.link} to="/serverSettings" data-secure={true} onClick={handleLinkClick}>
-            {({ isActive }) => (
-              <NavLink component="span" label={getPageName('serverSettings')} active={isActive} disabled={!isAuth} />
-            )}
-          </RouterNavLink>
-        </Tooltip>
-      </AppShell.Section>
-    ),
-    [handleLinkClick, isAuth],
-  )
+  useEffect(() => {
+    if (viewPort.current) {
+      viewPort.current.scrollTo({
+        top: 0,
+        behavior: 'instant',
+      })
+    }
+  }, [viewPort, location.pathname])
 
   return (
     <AppShell
@@ -238,7 +37,7 @@ const Layout: FC<Props> = memo(({ className, rightHeaderSlot, isAuth }) => {
       navbar={{
         width: 300,
         breakpoint: 'sm',
-        collapsed: { mobile: !opened },
+        collapsed: { mobile: true },
       }}
       maw="100%"
       mah="100%"
@@ -247,10 +46,11 @@ const Layout: FC<Props> = memo(({ className, rightHeaderSlot, isAuth }) => {
       <AppShell.Header>
         <Flex h="100%" ml="md" mr="md" align="center" gap="sm" justify="space-between">
           <Flex align="center" gap="sm">
-            <Burger opened={opened} onClick={toggle} hiddenFrom="sm" size="sm" />
-            <Text fw={700} size="sm">
-              {getPageName(location.pathname, true)}
-            </Text>
+            {!isMobile && (
+              <Text fw={700} size="sm">
+                {getPageName(location.pathname)}
+              </Text>
+            )}
           </Flex>
           {rightHeaderSlot}
         </Flex>
@@ -259,11 +59,29 @@ const Layout: FC<Props> = memo(({ className, rightHeaderSlot, isAuth }) => {
       <AppShell.Navbar p="md">
         <AppShell.Section>
           <Group>
-            <Burger opened={opened} onClick={toggle} hiddenFrom="sm" size="sm" />
             <Text>Меню</Text>
           </Group>
         </AppShell.Section>
-        <ScrollArea flex="1 1 auto">{menuNode}</ScrollArea>
+        <ScrollArea flex="1 1 auto">
+          <AppShell.Section grow>
+            <RouterNavLink className={css.link} to="/about">
+              {({ isActive }) => <NavLink component="span" label={getPageName('about')} active={isActive} />}
+            </RouterNavLink>
+            <RouterNavLink className={css.link} to="/myData">
+              {({ isActive }) => <NavLink component="span" label={getPageName('myData')} active={isActive} />}
+            </RouterNavLink>
+            <RouterNavLink className={css.link} to="/calculators">
+              {({ isActive }) => <NavLink component="span" label={getPageName('calculators')} active={isActive} />}
+            </RouterNavLink>
+            <RouterNavLink className={css.link} to="/tables">
+              {({ isActive }) => <NavLink component="span" label={getPageName('tables')} active={isActive} />}
+            </RouterNavLink>
+            <RouterNavLink className={css.link} to="/settings">
+              {({ isActive }) => <NavLink component="span" label={getPageName('settings')} active={isActive} />}
+            </RouterNavLink>
+          </AppShell.Section>
+        </ScrollArea>
+
         <AppShell.Section>
           <Flexbox justifyContent="flex-end" flexDirection="column">
             <Flex align="center" justify="flex-end" gap={4}>
@@ -298,11 +116,51 @@ const Layout: FC<Props> = memo(({ className, rightHeaderSlot, isAuth }) => {
         </AppShell.Section>
       </AppShell.Navbar>
 
-      <AppShell.Main h="100dvh" style={{ overflow: 'hidden' }}>
-        <ScrollArea h="100%">
+      <AppShell.Main h="100dvh" style={{ overflow: 'hidden' }} pb={isMobile ? 64 : 0}>
+        <ScrollArea h="100%" offsetScrollbars viewportRef={viewPort}>
           <Outlet />
         </ScrollArea>
       </AppShell.Main>
+
+      <AppShell.Footer hiddenFrom="xs">
+        <Flex align="center" justify="center" gap="md">
+          <RouterNavLink to="/about">
+            {({ isActive }) => (
+              <ActionIcon variant={isActive ? 'filled' : 'white'} size="xl" color="yellow" w={56} h={56}>
+                <InventoryIcon />
+              </ActionIcon>
+            )}
+          </RouterNavLink>
+          <RouterNavLink to="/myData">
+            {({ isActive }) => (
+              <ActionIcon variant={isActive ? 'filled' : 'white'} size="xl" color="yellow" w={56} h={56}>
+                <InventoryIcon />
+              </ActionIcon>
+            )}
+          </RouterNavLink>
+          <RouterNavLink to="/calculators">
+            {({ isActive }) => (
+              <ActionIcon variant={isActive ? 'filled' : 'white'} size="xl" color="yellow" w={56} h={56}>
+                <InventoryIcon />
+              </ActionIcon>
+            )}
+          </RouterNavLink>
+          <RouterNavLink to="/tables">
+            {({ isActive }) => (
+              <ActionIcon variant={isActive ? 'filled' : 'white'} size="xl" color="yellow" w={56} h={56}>
+                <InventoryIcon />
+              </ActionIcon>
+            )}
+          </RouterNavLink>
+          <RouterNavLink to="/settings">
+            {({ isActive }) => (
+              <ActionIcon variant={isActive ? 'filled' : 'white'} size="xl" color="yellow" w={56} h={56}>
+                <InventoryIcon />
+              </ActionIcon>
+            )}
+          </RouterNavLink>
+        </Flex>
+      </AppShell.Footer>
     </AppShell>
   )
 })

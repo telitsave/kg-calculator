@@ -1,34 +1,36 @@
-export const getPageName = (pathname: string, withParents = false) => {
+export const getPageName = (pathname: string) => {
   const paths = pathname.split('/')
-  let pathsNames: string[] = []
+  let pathName: string = ''
   paths.forEach((path) => {
     if (!path) return
 
-    if (withParents) {
-      pathsNames.push(PAGE_NAMES[path])
-    } else {
-      pathsNames = [PAGE_NAMES[path]]
-    }
+    pathName = PAGE_NAMES[path]
   })
 
-  return pathsNames.join(' - ')
+  return pathName
 }
 
 export const PAGE_NAMES: Record<string, string> = {
   about: 'О калькуляторе',
-  inventory: 'Инвентарь',
-  parameters: 'Параметры персонажа',
-  calculator: 'Калькуляторы',
-  castle: 'Замок',
-  dragon: 'Руны дракона',
-  witch: 'Ведьма',
-  ultimatePower: 'Экстремальная мощь',
-  barracks: 'Казарма',
-  mightiestKingdom: 'Сильнейшее королевство',
-  blacksmith: 'Кузнец',
-  gallery: 'Галерея',
-  heroes: 'Герои',
-  spiritInvasion: 'Вторжение злых духов',
+  myData: 'Мои ресурсы и параметры',
+  inventory: 'Мои ресурсы',
+  parameters: 'Мои параметры',
+  heroesData: 'Мои герои',
+  heroesDistribution: 'Распределение карт самовыбора',
+  heroesTable: 'Таблица героев',
+  calculators: 'Калькуляторы',
+  castle: 'Калькулятор замка',
+  dragon: 'Калькулятор дракона',
+  witch: 'Калькулятор ведьмы',
+  ultimatePower: 'Калькулятор экстремальной мощи',
+  barracks: 'Калькулятор казармы',
+  mightiestKingdom: 'Калькулятор сильнейшего королевства',
+  blacksmith: 'Калькулятор кузнеца',
+  gallery: 'Калькулятор галереи',
+  heroes: 'Калькулятор героев',
+  spiritInvasion: 'Калькулятор вторжения злых духов',
   other: 'Прочее',
+  settings: 'Настройки',
   serverSettings: 'Серверные настройки',
+  tables: 'Таблицы',
 }

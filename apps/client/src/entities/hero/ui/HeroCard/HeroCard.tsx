@@ -1,6 +1,6 @@
 import { FC, memo, useCallback } from 'react'
 import cx from 'classnames'
-import { Button, Flex, NumberInput, Paper, Text } from '@mantine/core'
+import { Button, Flex, NumberInput, Paper, Text, useMatches } from '@mantine/core'
 import type { ElementsType, Ranks } from 'kg-calculator-typings'
 import { FaStar, FaStarHalfAlt } from 'react-icons/fa'
 import HelpButton from 'shared/ui/HelpButton'
@@ -72,9 +72,14 @@ const HeroCard: FC<Props> = memo(
       [onSetCards, heroId, stars, bars, cards, distributionCards],
     )
 
+    const sizeBlocks = useMatches({
+      xs: 'md',
+      base: 'xs',
+    })
+
     return (
-      <Paper shadow="sm" p="md" withBorder>
-        <Flex className={cx(css.root, className)} align="center" gap={20}>
+      <Paper shadow="sm" p={sizeBlocks} withBorder>
+        <Flex className={cx(css.root, className)} align="center" gap={sizeBlocks}>
           <Flex direction="column" align="center" w={110}>
             <HeroIcon heroId={heroId} element={element} />
             <Text size="sm" ta="center">
@@ -91,22 +96,23 @@ const HeroCard: FC<Props> = memo(
               xs: 'center',
               base: 'flex-start',
             }}
+            flex="1 1 auto"
           >
-            <Flex align="center" gap={8}>
-              <Button variant="outline" size="md" p={8} onClick={handleRemoveStarClick} tabIndex={-1}>
+            <Flex align="center" gap={7} flex="1 1 auto" w="100%">
+              <Button variant="outline" size={sizeBlocks} p={8} onClick={handleRemoveStarClick} tabIndex={-1}>
                 <FaStarHalfAlt color="var(--mantine-color-yellow-filled)" />
               </Button>
-              <Button variant="outline" size="md" p={8} onClick={handleRemoveBarClick} tabIndex={-1}>
+              <Button variant="outline" size={sizeBlocks} p={8} onClick={handleRemoveBarClick} tabIndex={-1}>
                 -1
               </Button>
-              <Flex direction="column" w={80}>
+              <Flex direction="column">
                 <Stars classNameStar={css.star} starsCount={maxStars} oldValue={stars} />
                 <Bars barsCount={maxBars} oldValue={bars} />
               </Flex>
-              <Button variant="outline" size="md" p={8} onClick={handleAddBarClick} tabIndex={-1}>
+              <Button variant="outline" size={sizeBlocks} p={8} onClick={handleAddBarClick} tabIndex={-1}>
                 +1
               </Button>
-              <Button variant="outline" size="md" p={8} onClick={handleAddStarClick} tabIndex={-1}>
+              <Button variant="outline" size={sizeBlocks} p={8} onClick={handleAddStarClick} tabIndex={-1}>
                 <FaStar color="var(--mantine-color-yellow-filled)" />
               </Button>
             </Flex>

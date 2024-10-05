@@ -96,7 +96,7 @@ const CardDistribution: FC<Props> = memo(
               <HeroIcon heroId={heroId} element={element} disabled={disabled} />
               <Text size="sm">{name}</Text>
             </Flex>
-            <Flex gap={8} align="center">
+            <Flex gap={7} align="center">
               <Button variant="outline" size="md" p={8} onClick={handleRemoveStarClick}>
                 <FaStarHalfAlt color="var(--mantine-color-yellow-filled)" />
               </Button>

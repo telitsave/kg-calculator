@@ -5,12 +5,14 @@
 
 .background
   @include baseBackground
-  width: 195px
-  height: 175px
+  width: auto
+  height: auto
+  flex-grow: 1
+  position: relative
 
   @media (max-width: 768px)
-    width: 195px
-    height: 175px
+    width: auto
+    height: auto
 
   @each $element in 'fire', 'ice', 'bow', 'poison'
     &.element-#{$element}
@@ -18,5 +20,12 @@
         .icon.rank-#{$rank}
           @include getRankIcon($element, $rank)
 
+  .dummy
+    margin-top: 137%
+
   .icon
     @include baseIcon
+    position: absolute
+    top: 0
+    left: 0
+    background-size: 80%

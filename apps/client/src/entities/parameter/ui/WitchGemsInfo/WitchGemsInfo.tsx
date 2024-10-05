@@ -1,5 +1,5 @@
 import { FC, memo, useCallback, useState } from 'react'
-import { Flex, ScrollArea, SegmentedControl } from '@mantine/core'
+import { Flex, SegmentedControl } from '@mantine/core'
 import WitchGemInfo from '../WitchGemInfo'
 
 interface Props {
@@ -21,18 +21,18 @@ const WitchGemsInfo: FC<Props> = memo(({ className, gemsParams, oldGemsParams, m
   }, [])
 
   return (
-    <div className={className}>
-      <ScrollArea>
-        <SegmentedControl
-          data={Array.from({ length: maxRank }).map((_, index) => ({
-            label: `Ранг ${index + 1}`,
-            value: (index + 1).toString(),
-          }))}
-          mb={8}
-          value={value}
-          onChange={handleSegmentedControlChange}
-        />
-      </ScrollArea>
+    <Flex className={className}>
+      <SegmentedControl
+        data={Array.from({ length: maxRank }).map((_, index) => ({
+          label: `Ранг ${index + 1}`,
+          value: (index + 1).toString(),
+        }))}
+        mb={8}
+        value={value}
+        onChange={handleSegmentedControlChange}
+        orientation="vertical"
+        flex="1 0 auto"
+      />
       <Flex wrap="wrap" gap={8}>
         <WitchGemInfo
           key={`gem-${value}-sapphire`}
@@ -77,7 +77,7 @@ const WitchGemsInfo: FC<Props> = memo(({ className, gemsParams, oldGemsParams, m
           oldValue={oldGemsParams[`${value}_emerald`]}
         />
       </Flex>
-    </div>
+    </Flex>
   )
 })
 

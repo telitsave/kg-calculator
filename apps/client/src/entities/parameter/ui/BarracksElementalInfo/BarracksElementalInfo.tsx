@@ -3,6 +3,7 @@ import { Progress, Text } from '@mantine/core'
 import type { ElementsType, Parameters } from 'kg-calculator-typings'
 import { BarracksRankIcon } from 'shared/assets/icons'
 import Flexbox from 'shared/ui/Flexbox'
+import css from './styles.module.sass'
 
 
 interface Props {
@@ -22,7 +23,7 @@ const BarracksElementalInfo: FC<Props> = memo(({ className, element, oldParams, 
   const greenValue = (newLevel - (oldRank === newRank ? oldLevel : 0)) / totalLevels
   return (
     <Flexbox className={className} flexDirection="column" alignItems="center" gap={8}>
-      <BarracksRankIcon element={element} rank={newRank} />
+      <BarracksRankIcon className={css.iconRank} element={element} rank={newRank} />
 
       <Flexbox justifyContent="center" alignItems="center" flexDirection="column">
         {oldRank !== newRank ? (

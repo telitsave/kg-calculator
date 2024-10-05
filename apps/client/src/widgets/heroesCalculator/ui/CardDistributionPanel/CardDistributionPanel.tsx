@@ -84,7 +84,7 @@ const CardDistributionPanel: FC<Props> = memo(({ className }) => {
         justify="space-between"
         align="center"
         pos="sticky"
-        top={isMobile ? 45 : 60}
+        top={0}
         bg="white"
         pt="sm"
         pb="sm"

@@ -1,5 +1,5 @@
 import { FC, memo, useCallback, useState } from 'react'
-import { ScrollArea, SegmentedControl } from '@mantine/core'
+import { Flex, SegmentedControl } from '@mantine/core'
 import Flexbox from 'shared/ui/Flexbox'
 import WitchGemInput from '../WitchGemInput'
 
@@ -20,18 +20,23 @@ const WitchGemsInputs: FC<Props> = memo(({ className, maxRank }) => {
   )
 
   return (
-    <div className={className}>
-      <ScrollArea>
-        <SegmentedControl
-          data={Array.from({ length: maxRank }).map((_, index) => ({
-            label: `Ранг ${index + 1}`,
-            value: (index + 1).toString(),
-          }))}
-          mb={8}
-          value={value}
-          onChange={handleSegmentedControlChange}
-        />
-      </ScrollArea>
+    <Flex className={className}>
+      <SegmentedControl
+        data={Array.from({ length: maxRank }).map((_, index) => ({
+          label: `Ранг ${index + 1}`,
+          value: (index + 1).toString(),
+        }))}
+        mb={8}
+        value={value}
+        onChange={handleSegmentedControlChange}
+        orientation="vertical"
+        flex="1 0 auto"
+        styles={{
+          control: {
+            flex: '0 0 auto',
+          },
+        }}
+      />
       <Flexbox flexWrap="wrap" gap={8}>
         <WitchGemInput key={`gem-${value}-sapphire`} rank={Number(value)} gem="sapphire" />
         <WitchGemInput key={`gem-${value}-amethyst`} rank={Number(value)} gem="amethyst" />
@@ -40,7 +45,7 @@ const WitchGemsInputs: FC<Props> = memo(({ className, maxRank }) => {
         <WitchGemInput key={`gem-${value}-malachite`} rank={Number(value)} gem="malachite" />
         <WitchGemInput key={`gem-${value}-emerald`} rank={Number(value)} gem="emerald" />
       </Flexbox>
-    </div>
+    </Flex>
   )
 })
 

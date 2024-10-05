@@ -62,7 +62,7 @@ const HTable: FC<Props> = memo(({ rows }) => {
   }, [rows])
 
   return (
-    <Table.ScrollContainer minWidth={500}>
+    <Table.ScrollContainer minWidth={500} mah="100%">
       <Table border={1}>
         <Table.Thead>
           <Table.Tr>

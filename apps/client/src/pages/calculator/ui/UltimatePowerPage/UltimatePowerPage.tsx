@@ -4,6 +4,8 @@ import cx from 'classnames'
 import { Alert, Flex, Space, Text } from '@mantine/core'
 import { SettingPriorityElement, SettingsSwitch, useSetting } from 'entities/calculationSettings'
 import { UltimatePowerStatistics, useCalculateUltimatePowerTotal } from 'entities/ultimatePower'
+import { NoAuthNavigate } from 'entities/user'
+import PageTitle from 'shared/ui/PageTitle'
 import { AlertAdvancedMode } from 'widgets/heroesCalculator'
 import css from './styles.module.sass'
 
@@ -17,6 +19,8 @@ const UltimatePowerPage: FC<Props> = memo(({ className }) => {
   const isEnabledCastleLimit = useSetting('useCastleLimit')[0]
   return (
     <Flex className={cx(css.root, className)} direction="column" gap={24}>
+      <NoAuthNavigate to="/calculators" />
+      <PageTitle />
       <Alert title="Рассчет очков">
         <Text>
           Рассчет очков на данной странице производится в автоматическом режиме, на основе ваших ресурсов (страница{' '}

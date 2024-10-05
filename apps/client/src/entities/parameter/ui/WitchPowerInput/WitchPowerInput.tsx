@@ -15,7 +15,7 @@ const WitchPowerInput: FC<Props> = memo(({ className }) => {
   return (
     <Flexbox className={className} justifyContent="space-between" alignItems="center">
       <ParameterInput parameterType="witchParams_lightLevel" viewMode="bigIcon" />
-      <Progress.Root size="xl" w="100%">
+      <Progress.Root size="xl" w="60%">
         <Progress.Section value={(lightLevel / (lightLevel + darkLevel)) * 100} color="#FFAE29"></Progress.Section>
         <Progress.Section value={(darkLevel / (lightLevel + darkLevel)) * 100} color="#9C34DE"></Progress.Section>
       </Progress.Root>
