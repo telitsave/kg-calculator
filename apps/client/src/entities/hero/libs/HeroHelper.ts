@@ -1,4 +1,4 @@
-import type { Ranks } from 'kg-calculator-typings'
+import type { HeroTableData, Ranks } from 'kg-calculator-typings'
 import heroNeededCardsInfo from '../model/heroNeededCardsInfo'
 
 export default class HeroHelper {
@@ -80,5 +80,15 @@ export default class HeroHelper {
       spentCardsForPrevLevel,
       spentCardsForPrevStar,
     }
+  }
+
+  static getSkillsTotalValue(hero: HeroTableData, skillId: number) {
+    let total = 0
+    if (hero.skill1?.id === skillId) total += hero.skill1.value
+    if (hero.skill2?.id === skillId) total += hero.skill2.value
+    if (hero.skill3?.id === skillId) total += hero.skill3.value
+    if (hero.skill4?.id === skillId) total += hero.skill4.value
+
+    return total
   }
 }

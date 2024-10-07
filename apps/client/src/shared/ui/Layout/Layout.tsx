@@ -39,6 +39,11 @@ const Layout: FC<Props> = memo(({ className, rightHeaderSlot }) => {
         breakpoint: 'sm',
         collapsed: { mobile: true },
       }}
+      footer={{
+        height: 64,
+        offset: true,
+        collapsed: !isMobile,
+      }}
       maw="100%"
       mah="100%"
       padding="md"
@@ -116,13 +121,13 @@ const Layout: FC<Props> = memo(({ className, rightHeaderSlot }) => {
         </AppShell.Section>
       </AppShell.Navbar>
 
-      <AppShell.Main h="100dvh" style={{ overflow: 'hidden' }} pb={isMobile ? 64 : 0}>
+      <AppShell.Main h="100dvh" style={{ overflow: 'hidden' }}>
         <ScrollArea h="100%" offsetScrollbars viewportRef={viewPort}>
           <Outlet />
         </ScrollArea>
       </AppShell.Main>
 
-      <AppShell.Footer hiddenFrom="xs">
+      <AppShell.Footer>
         <Flex align="center" justify="center" gap="md">
           <RouterNavLink to="/about">
             {({ isActive }) => (
