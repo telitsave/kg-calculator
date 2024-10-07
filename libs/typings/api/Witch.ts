@@ -25,6 +25,7 @@ export interface WitchParameters {
     7: GemsRankParameters
     8: GemsRankParameters
     9: GemsRankParameters
+    10: GemsRankParameters
   }
 }
 
