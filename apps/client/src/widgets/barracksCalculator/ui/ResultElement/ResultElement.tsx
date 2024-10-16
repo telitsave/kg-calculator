@@ -36,6 +36,12 @@ const ResultElement: FC<Props> = memo(
     spentTalentBooks,
   }) => {
     const { serverSettings } = useServerSettings()
+    const {
+      talentBooks_rank1 = 3,
+      talentBooks_rank2 = 15,
+      talentBooks_rank3 = 72,
+      talentBooks_rank4 = 358,
+    } = serverSettings
 
     return (
       <Flexbox flexDirection="column" gap={16}>
@@ -88,7 +94,7 @@ const ResultElement: FC<Props> = memo(
               sourceResourceType={KeysHelper.getBaracksKey(element, 1)}
               targetResourceType="talentsResources_books"
               sourceValue={convertTalentBooks[KeysHelper.getBaracksKey(element, 1)]}
-              targetValue={(convertTalentBooks[KeysHelper.getBaracksKey(element, 1)] || 0) * 3}
+              targetValue={(convertTalentBooks[KeysHelper.getBaracksKey(element, 1)] || 0) * talentBooks_rank1}
             />
           )}
           {(convertTalentBooks[KeysHelper.getBaracksKey(element, 2)] || 0) > 0 && (
@@ -96,7 +102,7 @@ const ResultElement: FC<Props> = memo(
               sourceResourceType={KeysHelper.getBaracksKey(element, 2)}
               targetResourceType="talentsResources_books"
               sourceValue={convertTalentBooks[KeysHelper.getBaracksKey(element, 2)]}
-              targetValue={(convertTalentBooks[KeysHelper.getBaracksKey(element, 2)] || 0) * 15}
+              targetValue={(convertTalentBooks[KeysHelper.getBaracksKey(element, 2)] || 0) * talentBooks_rank2}
             />
           )}
           {(convertTalentBooks[KeysHelper.getBaracksKey(element, 3)] || 0) > 0 && (
@@ -104,7 +110,7 @@ const ResultElement: FC<Props> = memo(
               sourceResourceType={KeysHelper.getBaracksKey(element, 3)}
               targetResourceType="talentsResources_books"
               sourceValue={convertTalentBooks[KeysHelper.getBaracksKey(element, 3)]}
-              targetValue={(convertTalentBooks[KeysHelper.getBaracksKey(element, 3)] || 0) * 72}
+              targetValue={(convertTalentBooks[KeysHelper.getBaracksKey(element, 3)] || 0) * talentBooks_rank3}
             />
           )}
           {(convertTalentBooks[KeysHelper.getBaracksKey(element, 4)] || 0) > 0 && (
@@ -112,7 +118,7 @@ const ResultElement: FC<Props> = memo(
               sourceResourceType={KeysHelper.getBaracksKey(element, 4)}
               targetResourceType="talentsResources_books"
               sourceValue={convertTalentBooks[KeysHelper.getBaracksKey(element, 4)]}
-              targetValue={(convertTalentBooks[KeysHelper.getBaracksKey(element, 4)] || 0) * 358}
+              targetValue={(convertTalentBooks[KeysHelper.getBaracksKey(element, 4)] || 0) * talentBooks_rank4}
             />
           )}
         </Flexbox>

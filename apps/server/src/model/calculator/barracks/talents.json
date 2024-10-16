@@ -70,5 +70,21 @@
     "crownsBooksCost": 3125000,
     "crownsCost": 1562500,
     "crownsPowerBoost": 97
+  },
+  {
+    "rank": 10,
+    "booksCost": 7812500,
+    "booksPowerBoost": 11.7,
+    "crownsBooksCost": 15625000,
+    "crownsCost": 7812500,
+    "crownsPowerBoost": 140.7
+  },
+  {
+    "rank": 11,
+    "booksCost": 39062500,
+    "booksPowerBoost": 17,
+    "crownsBooksCost": 78125000,
+    "crownsCost": 39062500,
+    "crownsPowerBoost": 204
   }
 ]
