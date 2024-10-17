@@ -1,6 +1,6 @@
 import { FC, memo } from 'react'
 import { SimpleGrid, Stack } from '@mantine/core'
-import { InventoryIcon } from 'shared/assets/icons'
+import { navigation } from 'shared/assets/icons'
 import MenuButtonBig from 'shared/ui/MenuButtonBig'
 import PageTitle from 'shared/ui/PageTitle'
 
@@ -19,7 +19,7 @@ const TablesPage: FC = memo(() => (
         justifyItems: 'center',
       }}
     >
-      <MenuButtonBig icon={<InventoryIcon />} text="Герои" href="/tables/heroes" />
+      <MenuButtonBig icon={<navigation.HeroesTableIcon />} text="Герои" href="/tables/heroesTable" />
     </SimpleGrid>
   </Stack>
 ))

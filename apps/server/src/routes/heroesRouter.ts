@@ -10,5 +10,6 @@ heroesRouter.get('/', authMiddleware, profileMiddleware, HeroesController.getHer
 heroesRouter.put('/', authMiddleware, profileMiddleware, HeroesController.setHeroesParams)
 heroesRouter.get('/all', authMiddleware, HeroesController.getAllHeroes)
 heroesRouter.get('/table', authMiddleware, profileMiddleware, HeroesController.getHeroesTable)
+heroesRouter.get('/tableSimple', HeroesController.getHeroesTableSimple)
 
 export default heroesRouter

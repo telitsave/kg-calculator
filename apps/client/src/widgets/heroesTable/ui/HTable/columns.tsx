@@ -250,7 +250,7 @@ const columns = [
     cell: (props) => (
       <Flex direction="column" align="flex-start">
         {props.getValue().map((placeId) => (
-          <Flex>
+          <Flex align="center">
             <PlacesIcon placeId={placeId} />
             {(placeId !== 4 || props.row.original.common.season === undefined) && (
               <Text truncate>{PLACE_LABELS[placeId]}</Text>

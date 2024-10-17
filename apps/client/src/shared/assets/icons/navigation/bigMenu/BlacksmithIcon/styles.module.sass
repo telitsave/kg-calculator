@@ -1,0 +1,15 @@
+@import "shared/assets/icons/baseIcon"
+
+.background
+  @include baseBackground
+  width: 60px
+  height: 64px
+
+  @media (max-width: 768px)
+    width: 44px
+    height: 48px
+
+  .icon
+    @include baseIcon
+    background-image: url("icon.png")
+    background-size: 100%

@@ -1,10 +1,10 @@
 import { FC, type ReactNode, memo, useEffect, useRef } from 'react'
 import { Outlet, NavLink as RouterNavLink, useLocation } from 'react-router-dom'
 import cx from 'classnames'
-import { ActionIcon, AppShell, Flex, Group, NavLink, ScrollArea, Text } from '@mantine/core'
+import { ActionIcon, AppShell, Divider, Flex, NavLink, ScrollArea, Text } from '@mantine/core'
 import { useMediaQuery } from '@mantine/hooks'
 import { FaTelegram } from 'react-icons/fa'
-import { InventoryIcon } from '../../assets/icons'
+import { LogoIcon, navigation } from '../../assets/icons'
 import Flexbox from '../Flexbox'
 import { getPageName } from './pageNames'
 import css from './styles.module.sass'
@@ -56,6 +56,12 @@ const Layout: FC<Props> = memo(({ className, rightHeaderSlot }) => {
                 {getPageName(location.pathname)}
               </Text>
             )}
+            {isMobile && (
+              <Flex align="center" gap={16} p={4}>
+                <LogoIcon />
+                <Text>Калькулятор Kingdom&nbsp;Guard</Text>
+              </Flex>
+            )}
           </Flex>
           {rightHeaderSlot}
         </Flex>
@@ -63,26 +69,63 @@ const Layout: FC<Props> = memo(({ className, rightHeaderSlot }) => {
 
       <AppShell.Navbar p="md">
         <AppShell.Section>
-          <Group>
-            <Text>Меню</Text>
-          </Group>
+          <Flex align="center" gap={16} p={4}>
+            <LogoIcon />
+            <Text>Калькулятор Kingdom&nbsp;Guard</Text>
+          </Flex>
+          <Divider mt="md" mb="md" />
         </AppShell.Section>
         <ScrollArea flex="1 1 auto">
           <AppShell.Section grow>
             <RouterNavLink className={css.link} to="/about">
-              {({ isActive }) => <NavLink component="span" label={getPageName('about')} active={isActive} />}
+              {({ isActive }) => (
+                <NavLink
+                  component="span"
+                  label={getPageName('about')}
+                  active={isActive}
+                  leftSection={<navigation.AboutIcon className={css.navIcon} />}
+                />
+              )}
             </RouterNavLink>
             <RouterNavLink className={css.link} to="/myData">
-              {({ isActive }) => <NavLink component="span" label={getPageName('myData')} active={isActive} />}
+              {({ isActive }) => (
+                <NavLink
+                  component="span"
+                  label={getPageName('myData')}
+                  active={isActive}
+                  leftSection={<navigation.ResourcesParametersIcon className={css.navIcon} />}
+                />
+              )}
             </RouterNavLink>
             <RouterNavLink className={css.link} to="/calculators">
-              {({ isActive }) => <NavLink component="span" label={getPageName('calculators')} active={isActive} />}
+              {({ isActive }) => (
+                <NavLink
+                  component="span"
+                  label={getPageName('calculators')}
+                  active={isActive}
+                  leftSection={<navigation.CalculatorsIcon className={css.navIcon} />}
+                />
+              )}
             </RouterNavLink>
             <RouterNavLink className={css.link} to="/tables">
-              {({ isActive }) => <NavLink component="span" label={getPageName('tables')} active={isActive} />}
+              {({ isActive }) => (
+                <NavLink
+                  component="span"
+                  label={getPageName('tables')}
+                  active={isActive}
+                  leftSection={<navigation.TablesIcon className={css.navIcon} />}
+                />
+              )}
             </RouterNavLink>
             <RouterNavLink className={css.link} to="/settings">
-              {({ isActive }) => <NavLink component="span" label={getPageName('settings')} active={isActive} />}
+              {({ isActive }) => (
+                <NavLink
+                  component="span"
+                  label={getPageName('settings')}
+                  active={isActive}
+                  leftSection={<navigation.SettingsIcon className={css.navIcon} />}
+                />
+              )}
             </RouterNavLink>
           </AppShell.Section>
         </ScrollArea>
@@ -131,36 +174,36 @@ const Layout: FC<Props> = memo(({ className, rightHeaderSlot }) => {
         <Flex align="center" justify="center" gap="md">
           <RouterNavLink to="/about">
             {({ isActive }) => (
-              <ActionIcon variant={isActive ? 'filled' : 'white'} size="xl" color="yellow" w={56} h={56}>
-                <InventoryIcon />
+              <ActionIcon variant={isActive ? 'filled' : 'white'} size="xl" color="yellow" w={64} h={64}>
+                <navigation.AboutIcon />
               </ActionIcon>
             )}
           </RouterNavLink>
           <RouterNavLink to="/myData">
             {({ isActive }) => (
-              <ActionIcon variant={isActive ? 'filled' : 'white'} size="xl" color="yellow" w={56} h={56}>
-                <InventoryIcon />
+              <ActionIcon variant={isActive ? 'filled' : 'white'} size="xl" color="yellow" w={64} h={64}>
+                <navigation.ResourcesParametersIcon />
               </ActionIcon>
             )}
           </RouterNavLink>
           <RouterNavLink to="/calculators">
             {({ isActive }) => (
-              <ActionIcon variant={isActive ? 'filled' : 'white'} size="xl" color="yellow" w={56} h={56}>
-                <InventoryIcon />
+              <ActionIcon variant={isActive ? 'filled' : 'white'} size="xl" color="yellow" w={64} h={64}>
+                <navigation.CalculatorsIcon />
               </ActionIcon>
             )}
           </RouterNavLink>
           <RouterNavLink to="/tables">
             {({ isActive }) => (
-              <ActionIcon variant={isActive ? 'filled' : 'white'} size="xl" color="yellow" w={56} h={56}>
-                <InventoryIcon />
+              <ActionIcon variant={isActive ? 'filled' : 'white'} size="xl" color="yellow" w={64} h={64}>
+                <navigation.TablesIcon />
               </ActionIcon>
             )}
           </RouterNavLink>
           <RouterNavLink to="/settings">
             {({ isActive }) => (
-              <ActionIcon variant={isActive ? 'filled' : 'white'} size="xl" color="yellow" w={56} h={56}>
-                <InventoryIcon />
+              <ActionIcon variant={isActive ? 'filled' : 'white'} size="xl" color="yellow" w={64} h={64}>
+                <navigation.SettingsIcon />
               </ActionIcon>
             )}
           </RouterNavLink>

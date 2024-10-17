@@ -1,7 +1,7 @@
 import { FC, memo } from 'react'
 import { SimpleGrid, Stack } from '@mantine/core'
 import { AuthAlert, isAuth } from 'entities/user'
-import { InventoryIcon } from 'shared/assets/icons'
+import { navigation } from 'shared/assets/icons'
 import MenuButtonBig from 'shared/ui/MenuButtonBig'
 import PageTitle from 'shared/ui/PageTitle'
 
@@ -27,17 +27,27 @@ const MyDataPage: FC<Props> = memo(() => {
           justifyItems: 'center',
         }}
       >
-        <MenuButtonBig icon={<InventoryIcon />} text="Ресурсы" href="/myData/inventory" disabled={!isHaveAuth} />
-        <MenuButtonBig icon={<InventoryIcon />} text="Параметры" href="/myData/parameters" disabled={!isHaveAuth} />
-        <MenuButtonBig icon={<InventoryIcon />} text="Герои" href="/myData/heroesData" disabled={!isHaveAuth} />
         <MenuButtonBig
-          icon={<InventoryIcon />}
+          icon={<navigation.InventoryIcon />}
+          text="Ресурсы"
+          href="/myData/inventory"
+          disabled={!isHaveAuth}
+        />
+        <MenuButtonBig
+          icon={<navigation.ParametersIcon />}
+          text="Параметры"
+          href="/myData/parameters"
+          disabled={!isHaveAuth}
+        />
+        <MenuButtonBig icon={<navigation.HeroesIcon />} text="Герои" href="/myData/heroesData" disabled={!isHaveAuth} />
+        <MenuButtonBig
+          icon={<navigation.DistributionCardsIcon />}
           text="Карты самовыбора"
           href="/myData/heroesDistribution"
           disabled={!isHaveAuth}
         />
         <MenuButtonBig
-          icon={<InventoryIcon />}
+          icon={<navigation.HeroesTableIcon />}
           text="Таблица героев"
           href="/myData/heroesTable"
           disabled={!isHaveAuth}

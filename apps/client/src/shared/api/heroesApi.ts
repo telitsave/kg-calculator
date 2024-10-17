@@ -28,3 +28,9 @@ export const getAllHeroes = () => {
 export const getHeroesTable = () => {
   return AxiosService.get<GetHeroesTableResponse>('/heroes/table')
 }
+
+export const getHeroesTableSimple = () => {
+  return AxiosService.get<GetHeroesTableResponse>('/heroes/tableSimple', {
+    withCredentials: false,
+  })
+}

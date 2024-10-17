@@ -32,5 +32,5 @@ export const PAGE_NAMES: Record<string, string> = {
   other: 'Прочее',
   settings: 'Настройки',
   serverSettings: 'Серверные настройки',
-  tables: 'Таблицы',
+  tables: 'Таблицы и гайды',
 }

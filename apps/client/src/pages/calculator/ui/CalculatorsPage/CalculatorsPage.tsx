@@ -1,7 +1,7 @@
 import { FC, memo } from 'react'
 import { SimpleGrid, Stack } from '@mantine/core'
 import { AuthAlert, isAuth } from 'entities/user'
-import { InventoryIcon, MightiestKingdomIcon, UltimatePowerIcon } from 'shared/assets/icons'
+import { navigation } from 'shared/assets/icons'
 import MenuButtonBig from 'shared/ui/MenuButtonBig'
 import PageTitle from 'shared/ui/PageTitle'
 
@@ -23,26 +23,56 @@ const CalculatorsPage: FC = memo(() => {
           justifyItems: 'center',
         }}
       >
-        <MenuButtonBig icon={<InventoryIcon />} text="Замок" href="/calculators/castle" disabled={!isHaveAuth} />
-        <MenuButtonBig icon={<InventoryIcon />} text="Казарма" href="/calculators/barracks" disabled={!isHaveAuth} />
-        <MenuButtonBig icon={<InventoryIcon />} text="Дракон" href="/calculators/dragon" disabled={!isHaveAuth} />
-        <MenuButtonBig icon={<InventoryIcon />} text="Ведьма" href="/calculators/witch" disabled={!isHaveAuth} />
-        <MenuButtonBig icon={<InventoryIcon />} text="Кузнец" href="/calculators/blacksmith" disabled={!isHaveAuth} />
-        <MenuButtonBig icon={<InventoryIcon />} text="Галерея" href="/calculators/gallery" disabled={!isHaveAuth} />
-        <MenuButtonBig icon={<InventoryIcon />} text="Герои" href="/calculators/heroes" disabled={!isHaveAuth} />
         <MenuButtonBig
-          icon={<UltimatePowerIcon />}
+          icon={<navigation.CastleIcon />}
+          text="Замок"
+          href="/calculators/castle"
+          disabled={!isHaveAuth}
+        />
+        <MenuButtonBig
+          icon={<navigation.BarracksIcon />}
+          text="Казарма"
+          href="/calculators/barracks"
+          disabled={!isHaveAuth}
+        />
+        <MenuButtonBig
+          icon={<navigation.DragonIcon />}
+          text="Дракон"
+          href="/calculators/dragon"
+          disabled={!isHaveAuth}
+        />
+        <MenuButtonBig icon={<navigation.WitchIcon />} text="Ведьма" href="/calculators/witch" disabled={!isHaveAuth} />
+        <MenuButtonBig
+          icon={<navigation.BlacksmithIcon />}
+          text="Кузнец"
+          href="/calculators/blacksmith"
+          disabled={!isHaveAuth}
+        />
+        <MenuButtonBig
+          icon={<navigation.GalleryIcon />}
+          text="Галерея"
+          href="/calculators/gallery"
+          disabled={!isHaveAuth}
+        />
+        <MenuButtonBig
+          icon={<navigation.HeroesCalculatorIcon />}
+          text="Герои"
+          href="/calculators/heroes"
+          disabled={!isHaveAuth}
+        />
+        <MenuButtonBig
+          icon={<navigation.UltimatePowerIcon />}
           text="Экстремальная мощь"
           href="/calculators/ultimatePower"
           disabled={!isHaveAuth}
         />
         <MenuButtonBig
-          icon={<MightiestKingdomIcon />}
+          icon={<navigation.MightiestKingdomIcon />}
           text="Сильнейшее королевство"
           href="/calculators/mightiestKingdom"
           disabled={!isHaveAuth}
         />
-        <MenuButtonBig icon={<InventoryIcon />} text="Злые духи" href="/calculators/spiritInvasion" />
+        <MenuButtonBig icon={<navigation.EvilSpiritsIcon />} text="Злые духи" href="/calculators/spiritInvasion" />
       </SimpleGrid>
     </Stack>
   )

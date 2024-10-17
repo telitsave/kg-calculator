@@ -112,7 +112,7 @@ const router = createBrowserRouter([
         element: <TablesPage />,
       },
       {
-        path: '/tables/heroes',
+        path: '/tables/heroesTable',
         element: <CommonHeroesTablePage />,
       },
       {

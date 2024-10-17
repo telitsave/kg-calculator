@@ -13,12 +13,13 @@ import {
 interface Props {
   className?: string
   opened: boolean
+  simple?: boolean
 
   onClose: () => void
   onApply: (selectedCheckboxes: ColumnFiltersState) => void
 }
 
-const HeroFilterModal: FC<Props> = memo(({ opened, onClose, onApply }) => {
+const HeroFilterModal: FC<Props> = memo(({ opened, simple, onClose, onApply }) => {
   const form = useForm<{ element: string[]; skills: string[]; rank: string[]; stars: string[]; places: string[] }>({
     mode: 'controlled',
     initialValues: {
@@ -73,7 +74,7 @@ const HeroFilterModal: FC<Props> = memo(({ opened, onClose, onApply }) => {
           <MultiSelect {...form.getInputProps('element')} label="По стихии" data={filterElementsElement} />
           <MultiSelect {...form.getInputProps('rank')} label="По рангу" data={filterElementsRank} />
           <MultiSelect {...form.getInputProps('skills')} label="По навыкам" data={filterElementsSkills} />
-          <MultiSelect {...form.getInputProps('stars')} label="По звездам" data={filterElementsStars} />
+          {!simple && <MultiSelect {...form.getInputProps('stars')} label="По звездам" data={filterElementsStars} />}
           <MultiSelect {...form.getInputProps('places')} label="По месту получения" data={filterElementsPlaces} />
 
           <Flex justify="flex-end" gap="md">

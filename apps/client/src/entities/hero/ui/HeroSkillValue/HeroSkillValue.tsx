@@ -11,7 +11,7 @@ interface Props {
 
 const HeroSkillValue: FC<Props> = memo(({ skillId, value }) => (
   <Stack gap={4} align="center">
-    <Text component="span" lh="14px">
+    <Text component="span" lh="14px" ta="center">
       {SKILL_VALUE_LABELS[skillId]}:
     </Text>
 

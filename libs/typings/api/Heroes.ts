@@ -89,6 +89,8 @@ export interface SaveHeroesPayload {
 
 export interface HeroTableData extends Hero, IHeroData, HeroDataUpgrades {}
 
+export interface HeroTableDataSimple extends Hero {}
+
 export type GetHeroesParamsResponse = HeroesParams
 
 export type GetHeroesTableResponse = HeroTableData[]

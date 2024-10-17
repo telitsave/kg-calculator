@@ -1,7 +1,13 @@
-import type { ElementsType, HeroDataUpgrade, HeroTableData, IHeroData, Ranks } from 'kg-calculator-typings'
-import { HeroHelper, skillsMap } from 'entities/hero'
+import type {
+  ElementsType,
+  HeroDataUpgrade,
+  HeroTableData,
+  HeroTableDataSimple,
+  IHeroData,
+  Ranks,
+} from 'kg-calculator-typings'
+import { HeroHelper, TableDataHelper, skillsMap } from 'entities/hero'
 import type { TableRow } from './types'
-
 
 export default class TableRowModel {
   id: string
@@ -36,7 +42,7 @@ export default class TableRowModel {
     after: HeroDataUpgrade
   }
 
-  constructor(data: HeroTableData) {
+  constructor(data: HeroTableData | HeroTableDataSimple) {
     this.id = data.heroId
     this.common = {
       name: data.name,
@@ -51,15 +57,41 @@ export default class TableRowModel {
       skill3: data.skill3,
       skill4: data.skill4,
     }
-    this.params = {
-      stars: data.stars,
-      bars: data.bars,
-      cards: data.cards,
-      distributionCards: data.distributionCards,
-    }
-    this.upgradeParams = {
-      before: data.before,
-      after: data.after,
+
+    if (TableDataHelper.isTableDataRow(data)) {
+      this.params = {
+        stars: data.stars,
+        bars: data.bars,
+        cards: data.cards,
+        distributionCards: data.distributionCards,
+      }
+      this.upgradeParams = {
+        before: data.before,
+        after: data.after,
+      }
+    } else {
+      this.params = {
+        stars: 0,
+        bars: 0,
+        distributionCards: 0,
+        cards: 0,
+      }
+      this.upgradeParams = {
+        before: {
+          cardsForStar: 0,
+          upgradeBars: 0,
+          upgradeStars: 0,
+          cardsForBar: 0,
+          leftCards: 0,
+        },
+        after: {
+          cardsForStar: 0,
+          upgradeBars: 0,
+          upgradeStars: 0,
+          cardsForBar: 0,
+          leftCards: 0,
+        },
+      }
     }
   }
 

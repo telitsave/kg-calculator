@@ -19,10 +19,11 @@ import css from './styles.module.sass'
 interface Props {
   className?: string
   rows: TableRow[]
-  sortings: SortingState
-  filters: ColumnFiltersState
-  withUpgrades: boolean
-  withAfterUpgrades: boolean
+  sortings?: SortingState
+  filters?: ColumnFiltersState
+  withUpgrades?: boolean
+  withAfterUpgrades?: boolean
+  simple?: boolean
 }
 
 const getCommonPinningStyles = (column: Column<TableRow>): CSSProperties => {
@@ -44,7 +45,7 @@ const getCommonPinningStyles = (column: Column<TableRow>): CSSProperties => {
   }
 }
 
-const HTable: FC<Props> = memo(({ rows, sortings, filters, withUpgrades, withAfterUpgrades }) => {
+const HTable: FC<Props> = memo(({ rows, sortings, filters, withUpgrades, withAfterUpgrades, simple }) => {
   const getRowId = useCallback((row: TableRow) => row.id, [])
   const tableState = useMemo<Partial<TableState>>(
     () => ({
@@ -75,6 +76,8 @@ const HTable: FC<Props> = memo(({ rows, sortings, filters, withUpgrades, withAft
         stars: false,
         bars: false,
         cards: false,
+        upgradeParams: !simple,
+        params: !simple,
         upgradeBars: false,
         upgradeStars: false,
         skill_speed: false,

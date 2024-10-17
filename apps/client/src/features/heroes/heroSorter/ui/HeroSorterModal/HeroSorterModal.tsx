@@ -6,12 +6,13 @@ import type { SortingState } from '@tanstack/react-table'
 interface Props {
   className?: string
   opened: boolean
+  simple?: boolean
 
   onClose: () => void
   onApply: (selectedCheckboxes: SortingState) => void
 }
 
-const HeroSorterModal: FC<Props> = memo(({ opened, onClose, onApply }) => {
+const HeroSorterModal: FC<Props> = memo(({ opened, simple = false, onClose, onApply }) => {
   const [checkboxesValues, setCheckboxesValues] = useState<string[]>([])
 
   const handleApplyButtonClick = useCallback(() => {
@@ -78,15 +79,17 @@ const HeroSorterModal: FC<Props> = memo(({ opened, onClose, onApply }) => {
                 />
               </Stack>
             </Fieldset>
-            <Fieldset legend="Прокачка">
-              <Stack gap={4}>
-                <Checkbox value="stars" label={`По количеству звезд${getSortIndexOfCheckbox('stars')}`} />
-                <Checkbox value="bars" label={`По количеству полос${getSortIndexOfCheckbox('bars')}`} />
-                <Checkbox value="cards" label={`По количеству карт${getSortIndexOfCheckbox('cards')}`} />
-                <Checkbox value="upgradeBars" label={`До полоски${getSortIndexOfCheckbox('upgradeBars')}`} />
-                <Checkbox value="upgradeStars" label={`До звезды${getSortIndexOfCheckbox('upgradeStars')}`} />
-              </Stack>
-            </Fieldset>
+            {!simple && (
+              <Fieldset legend="Прокачка">
+                <Stack gap={4}>
+                  <Checkbox value="stars" label={`По количеству звезд${getSortIndexOfCheckbox('stars')}`} />
+                  <Checkbox value="bars" label={`По количеству полос${getSortIndexOfCheckbox('bars')}`} />
+                  <Checkbox value="cards" label={`По количеству карт${getSortIndexOfCheckbox('cards')}`} />
+                  <Checkbox value="upgradeBars" label={`До полоски${getSortIndexOfCheckbox('upgradeBars')}`} />
+                  <Checkbox value="upgradeStars" label={`До звезды${getSortIndexOfCheckbox('upgradeStars')}`} />
+                </Stack>
+              </Fieldset>
+            )}
           </Stack>
         </Checkbox.Group>
         <Flex justify="flex-end" gap="md">
