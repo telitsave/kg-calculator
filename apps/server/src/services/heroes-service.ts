@@ -1,5 +1,6 @@
+import HeroModel from '../model/heroes/HeroModel'
 import HeroesRepository, { type HeroParameter } from '../repositories/heroes-repository'
-import type { Hero, HeroesParams } from 'kg-calculator-typings'
+import type { Hero, HeroesParams, IHeroData } from 'kg-calculator-typings'
 
 
 export default class HeroesService {
@@ -35,6 +36,15 @@ export default class HeroesService {
     })
 
     return heroes
+  }
+
+  static getHeroUpgradeParams(hero: Hero, heroData: IHeroData, afterUpgrage = false) {
+    const heroModel = new HeroModel(hero, {
+      ...heroData,
+      cards: heroData.cards + (afterUpgrage ? heroData.distributionCards : 0),
+    })
+
+    return heroModel.getUpgradeParams(afterUpgrage)
   }
 
   static async setHeroesParams(profileId: number, heroesParams: HeroesParams) {

@@ -14,6 +14,12 @@
     &.id_#{$bgId}
       background-image: url("./icons/skill_bg_#{$bgId}.png")
 
+  &.disabled
+    filter: grayscale(100)
+
+    .icon
+      filter: grayscale(100)
+
   .icon
     @include baseIcon
     background-position: bottom right

@@ -82,12 +82,12 @@ export default class HeroHelper {
     }
   }
 
-  static getSkillsTotalValue(hero: HeroTableData, skillId: number) {
+  static getSkillsTotalValue(hero: HeroTableData, skillId: number, stars: number = 5) {
     let total = 0
-    if (hero.skill1?.id === skillId) total += hero.skill1.value
-    if (hero.skill2?.id === skillId) total += hero.skill2.value
-    if (hero.skill3?.id === skillId) total += hero.skill3.value
-    if (hero.skill4?.id === skillId) total += hero.skill4.value
+    if (stars >= 1 && hero.skill1?.id === skillId) total += hero.skill1.value
+    if (stars >= 2 && hero.skill2?.id === skillId) total += hero.skill2.value
+    if (stars >= 4 && hero.skill3?.id === skillId) total += hero.skill3.value
+    if (stars >= 5 && hero.skill4?.id === skillId) total += hero.skill4.value
 
     return total
   }

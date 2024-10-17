@@ -1,0 +1,17 @@
+@import "shared/assets/icons/baseIcon"
+
+.background
+  @include baseBackground
+  width: 32px
+  height: 32px
+  flex-shrink: 0
+
+  @each $place in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11
+    &.place#{$place}
+      .icon
+        background-image: url("./icons/place_#{$place}.png")
+
+  .icon
+    @include baseIcon
+
+

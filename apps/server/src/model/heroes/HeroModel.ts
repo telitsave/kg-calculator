@@ -1,5 +1,5 @@
 import heroNeededCardsInfo from './heroNeededCardsInfo.json'
-import type { Hero, IHeroData } from 'kg-calculator-typings'
+import type { Hero, HeroDataUpgrade, IHeroData } from 'kg-calculator-typings'
 
 export default class HeroModel {
   heroData: Hero
@@ -17,7 +17,7 @@ export default class HeroModel {
   upHero() {
     let barsArray = heroNeededCardsInfo[this.stars]
 
-    if (!barsArray) return false
+    if (!barsArray || this.stars === this.getMaxStars()) return false
 
     const neededCardsForNextLevel = barsArray[this.bars]
 
@@ -58,6 +58,37 @@ export default class HeroModel {
         return 4
       default:
         return 5
+    }
+  }
+
+  getUpgradeParams(afterUpgrage = false): HeroDataUpgrade {
+    if (afterUpgrage) {
+      while (this.upHero()) {}
+    }
+
+    let barsArray = heroNeededCardsInfo[this.stars]
+
+    if (!barsArray || this.stars === this.getMaxStars()) {
+      return {
+        cardsForStar: 0,
+        cardsForBar: 0,
+        upgradeStars: this.stars,
+        upgradeBars: 0,
+        leftCards: this.cards,
+      }
+    }
+
+    const neededCardsForNextLevel = barsArray[this.bars]
+    const neededCardsForNextStar =
+      this.bars === this.getMaxBars() - 1
+        ? neededCardsForNextLevel
+        : barsArray.slice(this.bars).reduce((total, value) => total + value, 0)
+    return {
+      cardsForBar: Math.max(neededCardsForNextLevel - (this.cards - 1), 0),
+      cardsForStar: Math.max(neededCardsForNextStar - (this.cards - 1), 0),
+      upgradeStars: this.stars,
+      upgradeBars: this.bars,
+      leftCards: this.cards,
     }
   }
 }

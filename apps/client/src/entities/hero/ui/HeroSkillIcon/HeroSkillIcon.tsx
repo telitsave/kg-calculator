@@ -7,11 +7,12 @@ import { SKILL_NAMES } from '../../model/locales'
 interface Props {
   className?: string
   skillId: number
+  disabled?: boolean
 }
 
-const HeroSkillIcon: FC<Props> = memo(({ skillId }) => (
+const HeroSkillIcon: FC<Props> = memo(({ skillId, disabled = false }) => (
   <Tooltip label={SKILL_NAMES[skillId]}>
-    <HeroSkillIconAsset skillId={skillId} />
+    <HeroSkillIconAsset skillId={skillId} disabled={disabled} />
   </Tooltip>
 ))
 

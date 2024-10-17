@@ -70,11 +70,24 @@ export interface IHeroData {
   distributionCards: number
 }
 
+export interface HeroDataUpgrades {
+  before: HeroDataUpgrade
+  after: HeroDataUpgrade
+}
+
+export interface HeroDataUpgrade {
+  cardsForStar: number
+  cardsForBar: number
+  leftCards: number
+  upgradeStars: number
+  upgradeBars: number
+}
+
 export interface SaveHeroesPayload {
   heroesParams: HeroesParams
 }
 
-export interface HeroTableData extends Hero, IHeroData {}
+export interface HeroTableData extends Hero, IHeroData, HeroDataUpgrades {}
 
 export type GetHeroesParamsResponse = HeroesParams
 

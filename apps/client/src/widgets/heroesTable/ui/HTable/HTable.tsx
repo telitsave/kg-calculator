@@ -1,4 +1,4 @@
-import { type CSSProperties, FC, memo, useCallback, useMemo } from 'react'
+import { type CSSProperties, FC, memo, useCallback, useMemo, useRef } from 'react'
 import cx from 'classnames'
 import { Table } from '@mantine/core'
 import {
@@ -12,29 +12,31 @@ import {
   getSortedRowModel,
   useReactTable,
 } from '@tanstack/react-table'
-import type { HeroTableData } from 'kg-calculator-typings'
+import type { TableRow } from '../../model/types'
 import columns from './columns'
 import css from './styles.module.sass'
 
 interface Props {
   className?: string
-  rows: HeroTableData[]
+  rows: TableRow[]
   sortings: SortingState
   filters: ColumnFiltersState
+  withUpgrades: boolean
+  withAfterUpgrades: boolean
 }
 
-const getCommonPinningStyles = (column: Column<HeroTableData>): CSSProperties => {
+const getCommonPinningStyles = (column: Column<TableRow>): CSSProperties => {
   const isPinned = column.getIsPinned()
   const isLastLeftPinnedColumn = isPinned === 'left' && column.getIsLastColumn('left')
   const isFirstRightPinnedColumn = isPinned === 'right' && column.getIsFirstColumn('right')
 
   return {
     boxShadow: isLastLeftPinnedColumn
-      ? '-4px 0 4px -4px gray inset'
+      ? '-4px 0 4px -4px gray inset, 4px 0 4px -4px gray inset'
       : isFirstRightPinnedColumn
         ? '4px 0 4px -4px gray inset'
         : undefined,
-    left: isPinned === 'left' ? `${column.getStart('left')}px` : undefined,
+    left: isPinned === 'left' ? `${column.getStart('left') - 1}px` : undefined,
     right: isPinned === 'right' ? `${column.getAfter('right')}px` : undefined,
     position: isPinned ? 'sticky' : 'relative',
     width: column.getSize(),
@@ -42,8 +44,8 @@ const getCommonPinningStyles = (column: Column<HeroTableData>): CSSProperties =>
   }
 }
 
-const HTable: FC<Props> = memo(({ rows, sortings, filters }) => {
-  const getRowId = useCallback((row: HeroTableData) => row.heroId, [])
+const HTable: FC<Props> = memo(({ rows, sortings, filters, withUpgrades, withAfterUpgrades }) => {
+  const getRowId = useCallback((row: TableRow) => row.id, [])
   const tableState = useMemo<Partial<TableState>>(
     () => ({
       sorting: sortings,
@@ -51,6 +53,10 @@ const HTable: FC<Props> = memo(({ rows, sortings, filters }) => {
     }),
     [sortings, filters],
   )
+
+  //The virtualizer needs to know the scrollable container element
+  const tableContainerRef = useRef<HTMLDivElement>(null)
+
   const table = useReactTable({
     data: rows,
     columns,
@@ -58,9 +64,19 @@ const HTable: FC<Props> = memo(({ rows, sortings, filters }) => {
     getCoreRowModel: getCoreRowModel(),
     getSortedRowModel: getSortedRowModel(),
     getFilteredRowModel: getFilteredRowModel(),
+    meta: {
+      withUpgrades,
+      withAfterUpgrades,
+    },
     initialState: {
       columnVisibility: {
         element: false,
+        season: false,
+        stars: false,
+        bars: false,
+        cards: false,
+        upgradeBars: false,
+        upgradeStars: false,
         skill_speed: false,
         skill_power: false,
         skill_heal: false,
@@ -77,9 +93,22 @@ const HTable: FC<Props> = memo(({ rows, sortings, filters }) => {
     state: tableState,
   })
 
+  const tableRows = table.getRowModel().rows
+
   return (
-    <Table.ScrollContainer className={css.table} minWidth={500}>
+    <Table.ScrollContainer className={css.table} minWidth={500} ref={tableContainerRef}>
       <Table border={1} stickyHeader stickyHeaderOffset={-1}>
+        <colgroup>
+          <col />
+          <col style={{ minWidth: 70 }} />
+          <col />
+          <col />
+          <col />
+          <col />
+          <col />
+          <col style={{ minWidth: 175 }} />
+          <col style={{ minWidth: 200 }} />
+        </colgroup>
         <Table.Thead
           style={{
             zIndex: 2,
@@ -88,7 +117,12 @@ const HTable: FC<Props> = memo(({ rows, sortings, filters }) => {
           {table.getHeaderGroups().map((headerGroup) => (
             <Table.Tr key={headerGroup.id}>
               {headerGroup.headers.map((header) => (
-                <Table.Th key={header.id} style={{ ...getCommonPinningStyles(header.column) }}>
+                <Table.Th
+                  key={header.id}
+                  style={{
+                    ...getCommonPinningStyles(header.column),
+                  }}
+                >
                   {flexRender(header.column.columnDef.header, header.getContext())}
                 </Table.Th>
               ))}
@@ -96,8 +130,8 @@ const HTable: FC<Props> = memo(({ rows, sortings, filters }) => {
           ))}
         </Table.Thead>
         <Table.Tbody>
-          {table.getRowModel().rows.map((row) => (
-            <Table.Tr key={row.id} className={cx(css.row, css[row.original.element])}>
+          {tableRows.map((row) => (
+            <Table.Tr key={row.id} className={cx(css.row, css[row.original.common.element])}>
               {row.getVisibleCells().map((cell) => (
                 <Table.Td key={cell.id} style={{ ...getCommonPinningStyles(cell.column) }}>
                   {flexRender(cell.column.columnDef.cell, cell.getContext())}

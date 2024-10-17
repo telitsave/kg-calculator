@@ -6,10 +6,11 @@ import css from './styles.module.sass'
 interface Props {
   className?: string
   skillId: number
+  disabled?: boolean
 }
 
 const HeroSkillIcon: FC<Props> = memo(
-  forwardRef<HTMLDivElement, Props>(({ className, skillId }, ref) => {
+  forwardRef<HTMLDivElement, Props>(({ className, skillId, disabled = false }, ref) => {
     let bgId = 0
     switch (skillId) {
       case 1:
@@ -57,7 +58,7 @@ const HeroSkillIcon: FC<Props> = memo(
     }
     return (
       <Flexbox
-        className={cx(css.background, className, css[`id_${bgId}`])}
+        className={cx(css.background, className, css[`id_${bgId}`], { [css.disabled]: disabled })}
         justifyContent="center"
         alignItems="center"
         ref={ref}

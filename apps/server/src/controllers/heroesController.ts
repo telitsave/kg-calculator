@@ -66,16 +66,24 @@ export default class HeroesController extends BaseController {
       const heroesParams = await HeroesService.getHeroesParams(profileId)
       const data: HeroTableData[] = []
       heroes.forEach((hero) => {
-        const params = heroesParams[hero.heroId]
+        const params = heroesParams[hero.heroId] || {
+          id: hero.heroId,
+          stars: 0,
+          bars: 0,
+          cards: 0,
+          distributionCards: 0,
+        }
 
         data.push({
           ...hero,
           ...params,
           id: hero.heroId,
-          stars: params?.stars || 0,
-          bars: params?.bars || 0,
-          cards: params?.cards || 0,
-          distributionCards: params?.distributionCards || 0,
+          stars: params.stars,
+          bars: params.bars,
+          cards: params.cards,
+          distributionCards: params.distributionCards,
+          before: HeroesService.getHeroUpgradeParams(hero, params),
+          after: HeroesService.getHeroUpgradeParams(hero, params, true),
         })
       })
       response.json(data)
