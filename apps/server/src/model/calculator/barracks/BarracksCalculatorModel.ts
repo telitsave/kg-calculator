@@ -183,9 +183,7 @@ export default class BarracksCalculatorModel {
     }
 
     // Если мы здесь, значит книг талантов хватает, чтобы сделать прокачку
-    this._useTalentBooks(element, rank, booksCost)
-
-    return true
+    return this._useTalentBooks(element, rank, booksCost)
   }
 
   private tryLevelUpCrownTalentByElementRank(element: ElementsType, rank: number): boolean {
@@ -216,9 +214,7 @@ export default class BarracksCalculatorModel {
       }
     }
     // Если мы здесь, значит книг талантов хватает, чтобы сделать прокачку
-    this._useTalentCrowns(element, rank, crownsBooksCost, crownsCost)
-
-    return true
+    return this._useTalentCrowns(element, rank, crownsBooksCost, crownsCost)
   }
 
   private isEnoughBooksForTalents(targetCount: number) {
