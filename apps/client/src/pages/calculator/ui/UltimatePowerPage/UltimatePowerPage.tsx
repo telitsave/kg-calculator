@@ -24,8 +24,8 @@ const UltimatePowerPage: FC<Props> = memo(({ className }) => {
       <Alert title="Рассчет очков">
         <Text>
           Рассчет очков на данной странице производится в автоматическом режиме, на основе ваших ресурсов (страница{' '}
-          <NavLink to="/inventory">Инвентарь</NavLink>) и на основе ваших параметров (страница{' '}
-          <NavLink to="/parameters">Параметры персонажа</NavLink>).
+          <NavLink to="/myData/inventory">Инвентарь</NavLink>) и на основе ваших параметров (страница{' '}
+          <NavLink to="/myData/parameters">Параметры персонажа</NavLink>).
         </Text>
         <Space h="md" />
         <Text>
