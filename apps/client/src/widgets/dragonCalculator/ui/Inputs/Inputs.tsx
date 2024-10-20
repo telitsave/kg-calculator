@@ -24,6 +24,7 @@ const Inputs: FC<Props> = memo(function ({ onSubmitButtonClick }) {
         <SettingsSwitch settingsType="canUseDragonBoxes" />
         <SettingsSwitch settingsType="useCastleLimit" />
         {isEnabledCastleLimit && <SettingsSwitch settingsType="usePossibleCastleLimit" />}
+        <SettingsSwitch settingsType="spentToArtifactDragon" />
       </Flexbox>
       <Flexbox flexDirection="column" gap={8}>
         <Title order={4}>Мои эмблемы дракона</Title>

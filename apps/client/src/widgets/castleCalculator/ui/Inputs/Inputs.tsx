@@ -32,6 +32,7 @@ const Inputs: FC<Props> = memo(({ className, goalCastleLevel, setGoalCastleLevel
     <Flex direction="column" gap={8}>
       <SettingsSwitch settingsType="canUseCastleBoxes" />
       <SettingsSwitch settingsType="canConvertCastleResources" />
+      <SettingsSwitch settingsType="spentToArtifactCastle" />
     </Flex>
     <GoalCastleLevelInput
       icon={<ParameterIcon parameterType="castleParams_level" />}

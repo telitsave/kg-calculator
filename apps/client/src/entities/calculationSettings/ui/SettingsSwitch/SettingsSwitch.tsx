@@ -60,6 +60,41 @@ const SettingsSwitch: FC<Props> = memo(({ className, settingsType }) => {
             <HelpButton helpContent={<HelpNode settingsType={settingsType} />} />
           </Flexbox>
         )
+      case 'spentToArtifactBarracks':
+        return (
+          <Flexbox alignItems="center" gap={4} justifyContent="space-between">
+            <Text>Потратить остатки книг казармы в артефакт</Text>
+            <HelpButton helpContent={<HelpNode settingsType={settingsType} />} />
+          </Flexbox>
+        )
+      case 'spentToArtifactCastle':
+        return (
+          <Flexbox alignItems="center" gap={4} justifyContent="space-between">
+            <Text>Потратить все ресурсы в артефакт вместо прокачки замка</Text>
+            <HelpButton helpContent={<HelpNode settingsType={settingsType} />} />
+          </Flexbox>
+        )
+      case 'spentToArtifactDragon':
+        return (
+          <Flexbox alignItems="center" gap={4} justifyContent="space-between">
+            <Text>Потратить ресурсы дракона в артефакт</Text>
+            <HelpButton helpContent={<HelpNode settingsType={settingsType} />} />
+          </Flexbox>
+        )
+      case 'spentToArtifactLightReagents':
+        return (
+          <Flexbox alignItems="center" gap={4} justifyContent="space-between">
+            <Text>Потратить излишки светлых реагентов в артефакт</Text>
+            <HelpButton helpContent={<HelpNode settingsType={settingsType} />} />
+          </Flexbox>
+        )
+      case 'spentToArtifactHammers':
+        return (
+          <Flexbox alignItems="center" gap={4} justifyContent="space-between">
+            <Text>Потратить излишки кузнечных молотов в артефакт</Text>
+            <HelpButton helpContent={<HelpNode settingsType={settingsType} />} />
+          </Flexbox>
+        )
       default:
         return <Text />
     }

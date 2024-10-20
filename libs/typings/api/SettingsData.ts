@@ -9,6 +9,11 @@ export interface Settings {
   useCastleLimit?: boolean
   usePossibleCastleLimit?: boolean
   priorityElement?: 'bow' | 'fire' | 'ice' | 'poison'
+  spentToArtifactLightReagents?: boolean
+  spentToArtifactHammers?: boolean
+  spentToArtifactDragon?: boolean
+  spentToArtifactBarracks?: boolean
+  spentToArtifactCastle?: boolean
 }
 
 export interface CustomServerSettingsData {

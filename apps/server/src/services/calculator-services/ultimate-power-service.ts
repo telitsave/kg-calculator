@@ -41,7 +41,7 @@ export default class UltimatePowerService {
           totalResources.add(Resources.transformDataFromDB(barracksResult.spentResources))
           break
         case 'blacksmith':
-          const blacksmithModel = new BlacksmithCalculatorModel(resources, parameters)
+          const blacksmithModel = new BlacksmithCalculatorModel(resources, parameters, settings)
           const blacksmithResult = blacksmithModel.calculateBlacksmith()
           totalResources.add(Resources.transformDataFromDB(blacksmithResult.spentResources))
           break
@@ -72,7 +72,7 @@ export default class UltimatePowerService {
           totalResources.add(Resources.transformDataFromDB(heroesResult.spentResources))
           break
         case 'witch':
-          const witchModel = new WitchCalculatorModel(resources, parameters, serverSettings)
+          const witchModel = new WitchCalculatorModel(resources, parameters, settings, serverSettings)
           const witchResult = witchModel.calculateWitch()
           totalResources.add(Resources.transformDataFromDB(witchResult.spentResources))
           break

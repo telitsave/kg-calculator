@@ -38,10 +38,14 @@ const MightiestKingdomPage: FC<Props> = memo(({ className }) => {
         <SettingsSwitch settingsType="canUseDragonBoxes" />
         <SettingsSwitch settingsType="useCastleLimit" />
         {isEnabledCastleLimit && <SettingsSwitch settingsType="usePossibleCastleLimit" />}
+        <SettingsSwitch settingsType="spentToArtifactDragon" />
         <SettingsSwitch settingsType="canUseRandomBarracksBooks" />
         <SettingsSwitch settingsType="canConvertBarracksBooksToTalents" />
         <SettingsSwitch settingsType="canUseTalentsToNonPriorityElements" />
+        <SettingsSwitch settingsType="spentToArtifactBarracks" />
         <SettingsSwitch settingsType="useAdvancedHeroMode" />
+        <SettingsSwitch settingsType="spentToArtifactHammers" />
+        <SettingsSwitch settingsType="spentToArtifactLightReagents" />
         <SettingPriorityElement />
         <AlertAdvancedMode />
       </Flex>

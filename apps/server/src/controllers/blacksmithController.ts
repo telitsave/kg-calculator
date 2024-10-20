@@ -3,6 +3,7 @@ import Parameters from '../model/parameters/Parameters'
 import Resources from '../model/resources/Resources'
 import InventoryService from '../services/inventory-service'
 import ParametersService from '../services/parameters-service'
+import SettingsService from '../services/settings-service'
 import BaseController from './base-controller'
 import { type NextFunction, Request, Response } from 'express'
 
@@ -14,8 +15,9 @@ export default class BlacksmithController extends BaseController {
 
       const resources = Resources.transformDataFromDB(await InventoryService.getInventory(profileId))
       const parameters = Parameters.transformDataFromDB(await ParametersService.getParameters(profileId))
+      const settings = await SettingsService.getSettings(profileId)
 
-      const blacksmithCalculatorModel = new BlacksmithCalculatorModel(resources, parameters)
+      const blacksmithCalculatorModel = new BlacksmithCalculatorModel(resources, parameters, settings)
 
       response.json(blacksmithCalculatorModel.calculateBlacksmith())
     } catch (err) {

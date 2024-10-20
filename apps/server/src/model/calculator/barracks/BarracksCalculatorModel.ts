@@ -33,6 +33,9 @@ export default class BarracksCalculatorModel {
   calculateBarracks() {
     while (this.tryCalculateBarracksBooks()) {}
     while (this.tryCalculateTalents()) {}
+    if (this._settings.spentToArtifactBarracks) {
+      this._spentToArtifact()
+    }
   }
 
   getData(): CalculateBarracksResponse {
@@ -280,6 +283,19 @@ export default class BarracksCalculatorModel {
     }
   }
 
+  private _spentToArtifact() {
+    if (this._parameters.barracks.bow.rank !== 9) return
+    if (this._parameters.barracks.fire.rank !== 9) return
+    if (this._parameters.barracks.ice.rank !== 9) return
+    if (this._parameters.barracks.poison.rank !== 9) return
+
+    this._useRandomBooks('bow', this._leftResources.barracksBooks.random)
+    this._spentBookToArtifact('bow')
+    this._spentBookToArtifact('fire')
+    this._spentBookToArtifact('ice')
+    this._spentBookToArtifact('poison')
+  }
+
   private _spentBookToBarracks(element: ElementsType, rankBook: number, gold: number) {
     if (this._leftResources.gold < gold) return false
     if (this._leftResources.barracksBooks[element][`rank${rankBook}`] === 0) return false
@@ -291,6 +307,17 @@ export default class BarracksCalculatorModel {
     this._parameters.barracks[element].level += 1
 
     return true
+  }
+
+  private _spentBookToArtifact(element: ElementsType) {
+    this._spentResources.barracksBooks[element].rank1 += this._leftResources.barracksBooks[element].rank1
+    this._leftResources.barracksBooks[element].rank1 = 0
+    this._spentResources.barracksBooks[element].rank2 += this._leftResources.barracksBooks[element].rank2
+    this._leftResources.barracksBooks[element].rank2 = 0
+    this._spentResources.barracksBooks[element].rank3 += this._leftResources.barracksBooks[element].rank3
+    this._leftResources.barracksBooks[element].rank3 = 0
+    this._spentResources.barracksBooks[element].rank4 += this._leftResources.barracksBooks[element].rank4
+    this._leftResources.barracksBooks[element].rank4 = 0
   }
 
   private _convertBookToNewRank(element: ElementsType, sourceRankBook: number) {

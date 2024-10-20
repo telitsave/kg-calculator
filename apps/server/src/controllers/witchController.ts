@@ -4,6 +4,7 @@ import Resources from '../model/resources/Resources'
 import InventoryService from '../services/inventory-service'
 import ParametersService from '../services/parameters-service'
 import ServerSettingsService from '../services/serverSettings-service'
+import SettingsService from '../services/settings-service'
 import BaseController from './base-controller'
 import { type NextFunction, Request, Response } from 'express'
 
@@ -17,9 +18,10 @@ export default class WitchController extends BaseController {
       const params = await ParametersService.getParameters(profileId)
       const parameters = Parameters.transformDataFromDB(params, gems)
       const resources = Resources.transformDataFromDB(await InventoryService.getInventory(profileId))
+      const settings = await SettingsService.getSettings(profileId)
       const serverSettings = await ServerSettingsService.getServerSettings(profileId)
 
-      const witchCalculatorModel = new WitchCalculatorModel(resources, parameters, serverSettings)
+      const witchCalculatorModel = new WitchCalculatorModel(resources, parameters, settings, serverSettings)
 
       response.json(witchCalculatorModel.calculateWitch())
     } catch (err) {

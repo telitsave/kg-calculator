@@ -34,6 +34,10 @@ export default class DragonEmblemsCalculatorModel {
     this._spentResourcesWithoutBoxes()
     while (this.tryLevelUp()) {}
 
+    if (this._settings.spentToArtifactDragon && this._parameters.dragonEmblems.gold >= 27) {
+      this._spentResourcesToArtifact()
+    }
+
     return {
       oldParameters: this._sourceParameters.getData().params,
       newParameters: this._parameters.getData().params,
@@ -93,6 +97,13 @@ export default class DragonEmblemsCalculatorModel {
   }
 
   private _isAllowUpEmblem(runeType: DragonRuneType) {
+    if (this._settings.spentToArtifactDragon) {
+      if (this._parameters.dragonEmblems.gold >= 27) {
+        if (!this._settings.useCastleLimit) {
+          return false
+        }
+      }
+    }
     switch (runeType) {
       case 'green':
         return (
@@ -123,5 +134,22 @@ export default class DragonEmblemsCalculatorModel {
     this._parameters.dragonEmblems[runeType] += 1
 
     return true
+  }
+
+  private _spentResourcesToArtifact() {
+    if (this._settings.canUseDragonBoxes) {
+      this._spentBoxesResources.green += this._leftResources.dragonsRunes.boxes
+      this._spentResources.dragonsRunes.boxes += this._leftResources.dragonsRunes.boxes
+      this._leftResources.dragonsRunes.spentBoxes(this._leftResources.dragonsRunes.boxes, 'gold')
+    }
+    this._spentResources.dragonsRunes.green += this._leftResources.dragonsRunes.green
+    this._spentResources.dragonsRunes.blue += this._leftResources.dragonsRunes.blue
+    this._spentResources.dragonsRunes.purple += this._leftResources.dragonsRunes.purple
+    this._spentResources.dragonsRunes.gold += this._leftResources.dragonsRunes.gold
+
+    this._leftResources.dragonsRunes.green = 0
+    this._leftResources.dragonsRunes.blue = 0
+    this._leftResources.dragonsRunes.purple = 0
+    this._leftResources.dragonsRunes.gold = 0
   }
 }

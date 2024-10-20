@@ -1,6 +1,7 @@
 import type ServerSettings from '../../ServerSettings'
 import Parameters from '../../parameters/Parameters'
 import Resources from '../../resources/Resources'
+import type Settings from '../../settings/Settings'
 import gemsInfo from './gemsInfo.json'
 import witchInfo from './witchInfo.json'
 import type { CalculateWitchResponse } from 'kg-calculator-typings'
@@ -9,14 +10,16 @@ import type { CalculateWitchResponse } from 'kg-calculator-typings'
 export default class WitchCalculatorModel {
   private readonly _sourceResources: Resources
   private readonly _sourceParameters: Parameters
+  private readonly _settings: Settings
   private readonly _serverSettings: ServerSettings
   private _parameters: Parameters
   private _leftResources: Resources
   private _spentResources: Resources
 
-  constructor(resources: Resources, parameters: Parameters, serverSettings: ServerSettings) {
+  constructor(resources: Resources, parameters: Parameters, settings: Settings, serverSettings: ServerSettings) {
     this._sourceResources = resources
     this._sourceParameters = parameters
+    this._settings = settings
     this._serverSettings = serverSettings
     this._parameters = parameters.clone()
     this._leftResources = resources.clone()
@@ -26,6 +29,8 @@ export default class WitchCalculatorModel {
   calculateWitch(): CalculateWitchResponse {
     while (this.tryLevelUpWitch()) {}
     while (this.tryLevelUpGem()) {}
+
+    this._spentToArtifact()
 
     const oldParams = this._sourceParameters.getData()
     const newParams = this._parameters.getData()
@@ -85,5 +90,12 @@ export default class WitchCalculatorModel {
     }
 
     return false
+  }
+
+  private _spentToArtifact() {
+    if (this._settings.spentToArtifactLightReagents && this._parameters.witch.lightLevel === 2000) {
+      this._spentResources.witch.lightReagents += this._leftResources.witch.lightReagents
+      this._leftResources.witch.lightReagents = 0
+    }
   }
 }

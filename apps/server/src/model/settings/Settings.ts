@@ -10,6 +10,11 @@ export default class Settings {
   useAdvancedHeroMode: boolean
   useCastleLimit: boolean
   usePossibleCastleLimit: boolean
+  spentToArtifactLightReagents: boolean
+  spentToArtifactHammers: boolean
+  spentToArtifactDragon: boolean
+  spentToArtifactBarracks: boolean
+  spentToArtifactCastle: boolean
   priorityElement: 'bow' | 'fire' | 'ice' | 'poison'
 
   constructor(initData?: SettingsData) {
@@ -22,6 +27,11 @@ export default class Settings {
     this.useAdvancedHeroMode = initData?.useAdvancedHeroMode || false
     this.useCastleLimit = initData?.useCastleLimit || false
     this.usePossibleCastleLimit = initData?.usePossibleCastleLimit || false
+    this.spentToArtifactLightReagents = initData?.spentToArtifactLightReagents || false
+    this.spentToArtifactHammers = initData?.spentToArtifactHammers || false
+    this.spentToArtifactDragon = initData?.spentToArtifactDragon || false
+    this.spentToArtifactBarracks = initData?.spentToArtifactBarracks || false
+    this.spentToArtifactCastle = initData?.spentToArtifactCastle || false
     this.priorityElement = initData?.priorityElement || 'bow'
   }
 }

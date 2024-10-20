@@ -1,5 +1,6 @@
 import { FC, memo } from 'react'
 import { Button, Divider, Title } from '@mantine/core'
+import { SettingsSwitch } from 'entities/calculationSettings'
 import { ParameterInput } from 'entities/parameter'
 import { ResourceInput } from 'entities/resource'
 import Flexbox from 'shared/ui/Flexbox'
@@ -23,6 +24,7 @@ const Inputs: FC<Props> = memo(({ className, onCalculateButtonClick }) => (
     <Flexbox flexDirection="column" gap={8}>
       <Title order={4}>Мои параметры</Title>
       <ParameterInput parameterType="blacksmithParams_level" />
+      <SettingsSwitch settingsType="spentToArtifactHammers" />
     </Flexbox>
 
     <Button onClick={onCalculateButtonClick}>Посчитать</Button>

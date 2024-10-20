@@ -42,7 +42,7 @@ export default class CastleCalculatorModel {
       },
     })
 
-    while (this.tryAddCastleLevel(neededResources) && this._parameters.castle.level <= MAX_CASTLE_LEVEL) {
+    while (this.tryAddCastleLevel(neededResources) && this._canUpgradeCastle()) {
       this._parameters.castle.level++
       neededResources = new Resources({
         gold: castleInfo[this._parameters.castle.level].gold,
@@ -53,6 +53,10 @@ export default class CastleCalculatorModel {
           boxes: 0,
         },
       })
+    }
+
+    if (this._settings.spentToArtifactCastle && this._parameters.castle.level >= 2000) {
+      this._spentResourcesToArtifact()
     }
 
     return {
@@ -115,5 +119,29 @@ export default class CastleCalculatorModel {
       parameters: this._parameters.getData().params,
       goalLevel,
     }
+  }
+
+  private _spentResourcesToArtifact() {
+    if (this._settings.canUseCastleBoxes) {
+      this._spentBoxesResources.stone += this._leftResources.castle.boxes
+      this._spentResources.castle.boxes += this._leftResources.castle.boxes
+      this._leftResources.castle.spentBoxes(this._leftResources.castle.boxes, 'stone')
+    }
+    this._spentResources.castle.add(
+      new CastleResources({
+        stone: this._leftResources.castle.stone,
+        wood: this._leftResources.castle.wood,
+        steel: this._leftResources.castle.steel,
+        boxes: 0,
+      }),
+    )
+    this._leftResources.castle = new CastleResources()
+  }
+
+  private _canUpgradeCastle() {
+    return (
+      this._parameters.castle.level <= MAX_CASTLE_LEVEL &&
+      (!this._settings.spentToArtifactCastle || this._parameters.castle.level < 2000)
+    )
   }
 }

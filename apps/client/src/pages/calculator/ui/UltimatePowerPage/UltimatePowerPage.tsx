@@ -37,13 +37,18 @@ const UltimatePowerPage: FC<Props> = memo(({ className }) => {
       <Flex direction="column" gap={8}>
         <SettingsSwitch settingsType="canConvertCastleResources" />
         <SettingsSwitch settingsType="canUseCastleBoxes" />
+        <SettingsSwitch settingsType="spentToArtifactCastle" />
         <SettingsSwitch settingsType="canUseDragonBoxes" />
         <SettingsSwitch settingsType="useCastleLimit" />
         {isEnabledCastleLimit && <SettingsSwitch settingsType="usePossibleCastleLimit" />}
+        <SettingsSwitch settingsType="spentToArtifactDragon" />
         <SettingsSwitch settingsType="canUseRandomBarracksBooks" />
         <SettingsSwitch settingsType="canConvertBarracksBooksToTalents" />
         <SettingsSwitch settingsType="canUseTalentsToNonPriorityElements" />
+        <SettingsSwitch settingsType="spentToArtifactBarracks" />
         <SettingsSwitch settingsType="useAdvancedHeroMode" />
+        <SettingsSwitch settingsType="spentToArtifactHammers" />
+        <SettingsSwitch settingsType="spentToArtifactLightReagents" />
         <SettingPriorityElement />
         <AlertAdvancedMode />
       </Flex>
