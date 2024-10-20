@@ -19,7 +19,7 @@ const AlertAdvancedMode: FC = memo(() => {
         </Text>
         <Text>
           Для настройки героев и распредления карт самовыбора, пожалуйста, перейдите на страницу{' '}
-          <NavLink to="/myData/heroes">Герои</NavLink>.
+          <NavLink to="/myData/heroesData">Герои</NavLink>.
         </Text>
       </Flex>
     </Alert>
