@@ -1,7 +1,7 @@
 import { FC, type ReactNode, memo, useEffect, useRef } from 'react'
 import { Outlet, NavLink as RouterNavLink, useLocation } from 'react-router-dom'
 import cx from 'classnames'
-import { ActionIcon, AppShell, Divider, Flex, NavLink, ScrollArea, Text } from '@mantine/core'
+import { ActionIcon, AppShell, Divider, Flex, NavLink, ScrollArea, Text, em } from '@mantine/core'
 import { useMediaQuery } from '@mantine/hooks'
 import { FaTelegram } from 'react-icons/fa'
 import { LogoIcon, navigation } from '../../assets/icons'
@@ -17,7 +17,7 @@ interface Props {
 
 const Layout: FC<Props> = memo(({ className, rightHeaderSlot }) => {
   const location = useLocation()
-  const isMobile = useMediaQuery('(max-width: 36em)')
+  const isMobile = useMediaQuery(`(max-width: ${em(767)})`)
   const viewPort = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
