@@ -156,7 +156,7 @@ const Layout: FC<Props> = memo(({ className, rightHeaderSlot }) => {
               <Text size="sm" ta="end">
                 Никнейм:{' '}
                 <Text component="span" fw={700}>
-                  DonLi
+                  Тучка
                 </Text>
               </Text>
             </Flex>
