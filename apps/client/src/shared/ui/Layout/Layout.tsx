@@ -132,14 +132,11 @@ const Layout: FC<Props> = memo(({ className, rightHeaderSlot }) => {
 
         <AppShell.Section>
           <Flexbox justifyContent="flex-end" flexDirection="column">
-            <Flex align="center" justify="flex-end" gap={4}>
-              <Text size="sm" ta="end">
-                Created by: [KMZ] DonLi, S1574
-              </Text>
-              <a href="https://t.me/DonLi_V" target="_blank" rel="noreferrer">
-                <FaTelegram color="#29B6F6" size={24} />
-              </a>
-            </Flex>
+            <a href="https://t.me/kg_calculator" target="_blank" rel="noreferrer">
+              <Flex align="center" justify="flex-end" gap={4}>
+                Группа в Telegram <FaTelegram color="#29B6F6" size={24} />
+              </Flex>
+            </a>
             <Flex align="flex-end" direction="column">
               <Text size="sm" ta="end">
                 Поблагодарить разработчика можно{' '}

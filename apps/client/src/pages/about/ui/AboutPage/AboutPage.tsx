@@ -2,6 +2,7 @@ import { FC, memo } from 'react'
 import { Flex, Stack, Text, Title } from '@mantine/core'
 import { FaTelegram } from 'react-icons/fa'
 
+
 interface Props {
   className?: string
 }
@@ -108,14 +109,11 @@ const AboutPage: FC<Props> = memo(({ className }) => (
       по моему желанию.
     </Text>
     <Text>Буду рад вашим отзывам, предложениям, вопросам и замечаниям по калькулятору.</Text>
-    <Flex gap={8} align="center">
-      <Text size="sm" ta="end">
-        [KMZ] DonLi, S1574
-      </Text>
-      <a href="https://t.me/DonLi_V" target="_blank" rel="noreferrer">
-        <FaTelegram color="#29B6F6" size={24} />
-      </a>
-    </Flex>
+    <a href="https://t.me/kg_calculator" target="_blank" rel="noreferrer">
+      <Flex align="center" justify="flex-end" gap={4}>
+        Группа в Telegram <FaTelegram color="#29B6F6" size={24} />
+      </Flex>
+    </a>
   </Stack>
 ))
 
