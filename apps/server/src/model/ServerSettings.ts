@@ -19,8 +19,8 @@ export default class ServerSettings {
   up_dragonRuneBlue = 700
   up_dragonRunePurple = 7000
   up_dragonRuneGold = 14000
-  up_talentsBook = 70
-  up_oracleCrown = 700
+  up_talentsBook = 28
+  up_oracleCrown = 280
   up_stone = 100
   up_wood = 500
   up_steel = 2000
@@ -41,8 +41,8 @@ export default class ServerSettings {
   mk_dragonRuneBlue = 700
   mk_dragonRunePurple = 7000
   mk_dragonRuneGold = 14000
-  mk_talentsBook = 70
-  mk_oracleCrown = 700
+  mk_talentsBook = 28
+  mk_oracleCrown = 280
   mk_lightReagent = 70
   mk_greenWitchPotion = 35
   mk_purpleWitchPotion = 350
