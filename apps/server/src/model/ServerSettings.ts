@@ -25,8 +25,8 @@ export default class ServerSettings {
   up_wood = 500
   up_steel = 2000
   up_lightReagent = 70
-  up_greenWitchPotion = 35
-  up_purpleWitchPotion = 350
+  up_greenWitchPotion = 14
+  up_purpleWitchPotion = 140
   up_blacksmith = 100
   up_galleryShard = 1000
   mk_nHeroCard = 100
@@ -44,11 +44,11 @@ export default class ServerSettings {
   mk_talentsBook = 28
   mk_oracleCrown = 280
   mk_lightReagent = 70
-  mk_greenWitchPotion = 35
-  mk_purpleWitchPotion = 350
+  mk_greenWitchPotion = 14
+  mk_purpleWitchPotion = 140
   mk_blacksmith = 100
   mk_galleryShard = 1000
-  season = 11
+  season = 12
 
   constructor(customServerSettings?: CustomServerSettingsData) {
     if (customServerSettings) {
