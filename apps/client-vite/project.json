@@ -1,0 +1,16 @@
+{
+  "name": "client-vite",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/client-vite/src",
+  "projectType": "application",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project client-vite --web",
+  "targets": {
+    "extractMessages": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "formatjs extract \"apps/client-vite/src/**/*.ts*\" --ignore=\"**/*.d.ts\" --out-file \"apps/client-vite/src/app/lang/ru.json\" --format \"lang/formatter.js\""
+      }
+    }
+  }
+}

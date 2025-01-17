@@ -1,0 +1,16 @@
+.link
+  text-decoration: none
+  cursor: default
+
+.buttonCard
+  height: 100%
+  transition: box-shadow 0.1s
+  box-shadow: 0 0 12px -4px rgba(0, 0, 0, 0.26)
+  cursor: pointer
+
+  &:not(.disabled):hover
+    box-shadow: 0 0 12px 5px rgba(0, 0, 0, 0.26)
+
+  &.disabled
+    filter: grayscale(1)
+    cursor: default

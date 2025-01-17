@@ -1,0 +1,14 @@
+@use "@shared/assets/icons/baseIcon" as bi
+
+.background
+  @include bi.baseBackground
+  width: 48px
+  height: 48px
+
+  @media (max-width: 768px)
+    width: 32px
+    height: 32px
+
+  .icon
+    @include bi.baseIcon
+    background-image: url("./icon.png")

@@ -8,6 +8,7 @@ export interface HeroData {
   element: ElementsType
   rank: Ranks
   name: string
+  nameEn: string
   season: number | null
   skill1: string | null
   skill2: string | null

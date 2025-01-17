@@ -10,6 +10,7 @@ export default class HeroesService {
       heroId: it.id,
       rank: it.rank,
       name: it.name,
+      nameEn: it.nameEn,
       element: it.element,
       season: it.season !== null ? it.season : undefined,
       skill1: this.parseSkill(it.skill1) || undefined,

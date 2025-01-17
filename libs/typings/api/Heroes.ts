@@ -42,6 +42,7 @@ export interface Hero {
   rank: Ranks
   element: ElementsType
   name: string
+  nameEn: string
   season?: number
   skill1?: {
     id: number

@@ -1,0 +1,31 @@
+@use "@shared/assets/icons/baseIcon" as bi
+
+$heroes: 'allen', 'alucard', 'angelina', 'anko', 'anton', 'aodenggerile', 'aoyue', 'apollo', 'ariza', 'arthur', 'arwin', 'arwyn', 'bella', 'benjamin', 'blackwell', 'boudica', 'brie', 'catherine', 'chiyoko', 'christie', 'clarence', 'claudia', 'colin', 'cosette', 'dain', 'daniel', 'daria', 'dean', 'doris', 'dovlar', 'dylan', 'enzo', 'erika', 'etley', 'fatima', 'filius', 'gabriel', 'giselle', 'gro', 'gruen', 'hadi', 'hana', 'harold', 'issac', 'ivy', 'jennifer', 'jessica', 'johannes', 'judy', 'kadir', 'keith', 'kenshiro', 'kris', 'lilani', 'lilith', 'livia', 'lomax', 'lovelace', 'luvia', 'maud', 'maya', 'meg', 'meniere', 'merlin', 'miku', 'montag', 'nathaniel', 'nicole', 'oneil', 'ophelia', 'padme', 'pan', 'parr', 'paul', 'paula', 'pedra', 'penny', 'peter', 'ptolemy', 'pythia', 'ralph', 'rebecca', 'richard', 'rila', 'rogers', 'rosamond', 'rudolph', 'sahar', 'samar', 'sebastian', 'simon', 'sindra', 'suad', 'torvi', 'tracy', 'trishy', 'trist', 'tumnus', 'vanessa', 'vera', 'wallis', 'wendy', 'daisy', 'mycelia', 'edmund', 'layla', 'catrina', 'nina', 'ryan', 'olaf', 'webster', 'viola', 'eleanora', 'green', 'kirona', 'alex'
+
+.background
+  @include bi.baseBackground
+  width: 64px
+  height: 64px
+
+  @media (max-width: 768px)
+    width: 64px
+    height: 64px
+    &.small
+      width: 32px
+      height: 32px
+
+  &.disabled
+    filter: grayscale(1)
+
+  .icon
+    @include bi.baseIcon
+    background-image: url("./icon.png")
+    background-size: 100%
+
+
+  @each $hero in $heroes
+    &.#{$hero}
+      .icon
+        background-image: url("./icons/#{$hero}.png")
+
+

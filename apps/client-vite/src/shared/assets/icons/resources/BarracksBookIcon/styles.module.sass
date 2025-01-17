@@ -1,0 +1,34 @@
+@use "@shared/assets/icons/baseIcon" as bi
+
+@mixin getBookIcon($element, $rank)
+  background-image: url("./icons/#{$element}#{$rank}.png")
+
+.background
+  @include bi.baseBackground
+  width: 32px
+  height: 32px
+  position: relative
+
+  @each $rank in 1, 2, 3, 4
+    &.rank#{$rank}
+      @if $rank == 1
+        @include bi.backgroundGreen
+      @else if $rank == 2
+        @include bi.backgroundBlue
+      @else if $rank == 3
+        @include bi.backgroundPurple
+      @else
+        @include bi.backgroundGold
+
+      @each $element in 'fire', 'ice', 'bow', 'poison'
+        .icon.element-#{$element}
+          @include getBookIcon($element, $rank)
+
+    &.random
+      @include bi.backgroundGreen
+
+      .icon
+        background-image: url("./icons/random.png")
+
+  .icon
+    @include bi.baseIcon

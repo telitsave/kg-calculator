@@ -1,0 +1,31 @@
+@use "@shared/assets/icons/baseIcon" as bi
+
+@mixin getRankIcon($element, $rank)
+  background-image: url("./icons/#{$element}#{$rank}.png")
+
+.background
+  @include bi.baseBackground
+  width: auto
+  height: auto
+  flex-grow: 1
+  position: relative
+
+  @media (max-width: 768px)
+    width: auto
+    height: auto
+
+  @each $element in 'fire', 'ice', 'bow', 'poison'
+    &.element-#{$element}
+      @each $rank in 1, 2, 3, 4, 5, 6, 7, 8, 9
+        .icon.rank-#{$rank}
+          @include getRankIcon($element, $rank)
+
+  .dummy
+    margin-top: 137%
+
+  .icon
+    @include bi.baseIcon
+    position: absolute
+    top: 0
+    left: 0
+    background-size: 80%
