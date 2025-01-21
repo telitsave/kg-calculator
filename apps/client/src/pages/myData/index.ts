@@ -1,6 +1,0 @@
-export { default as MyDataPage } from './ui/MyDataPage'
-export { default as InventoryPage } from './ui/Inventory'
-export { default as HeroesPage } from './ui/HeroesPage'
-export { default as ParametersPage } from './ui/ParametersPage'
-export { default as HeroesTablePage } from './ui/HeroesTablePage'
-export { default as HeroesDistributionPage } from './ui/HeroesDistributionPage'
