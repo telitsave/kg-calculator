@@ -1,3 +1,6 @@
+import { Navigate, createBrowserRouter } from 'react-router-dom'
+import { Flex } from '@mantine/core'
+import Layout from '@shared/ui/Layout'
 import SetLocaleButton from '../features/setLocale/ui/SetLocaleButton'
 import { UserInfo } from '../widgets/userInfo'
 import { AboutPage } from './about'
@@ -24,9 +27,6 @@ import {
 } from './myData'
 import { ServerSettingsPage, SettingsPage } from './settings'
 import { HeroesTablePage as CommonHeroesTablePage, TablesPage } from './tables'
-import { Flex } from '@mantine/core'
-import Layout from '@shared/ui/Layout'
-import { Navigate, createBrowserRouter } from 'react-router-dom'
 
 const router = createBrowserRouter([
   {
@@ -34,7 +34,7 @@ const router = createBrowserRouter([
     element: (
       <Layout
         rightHeaderSlot={
-          <Flex justify="flex-end" align="center" gap="md">
+          <Flex justify="flex-end" align="center" gap="md" flex="1 0 auto">
             <SetLocaleButton />
             <UserInfo />
           </Flex>

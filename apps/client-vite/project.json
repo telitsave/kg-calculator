@@ -6,11 +6,23 @@
   "tags": [],
   "// targets": "to see all targets run: nx show project client-vite --web",
   "targets": {
+    "build": {
+      "cache": false
+    },
     "extractMessages": {
       "executor": "nx:run-commands",
       "options": {
         "command": "formatjs extract \"apps/client-vite/src/**/*.ts*\" --ignore=\"**/*.d.ts\" --out-file \"apps/client-vite/src/app/lang/ru.json\" --format \"lang/formatter.js\""
       }
+    },
+    "deploy": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "node scripts/deployClient.js"
+      },
+      "dependsOn": [
+        "build"
+      ]
     }
   }
 }

@@ -1,8 +1,9 @@
-import { useProfiles } from '@entities/profile'
-import api from '@shared/api'
 import { useMutation } from '@tanstack/react-query'
 import axios, { type AxiosError } from 'axios'
 import type { ApiDefaultError, CreateProfilePayload, CreateProfileResponse, LoginResponse } from 'kg-calculator-typings'
+import { useProfiles } from '@entities/profile'
+import api from '@shared/api'
+
 
 const useAddProfile = () => {
   const { setCookie } = useProfiles()
@@ -10,7 +11,7 @@ const useAddProfile = () => {
     mutationKey: ['addProfile'],
     mutationFn: (payload: CreateProfilePayload) => api.profiles.addProfile(payload),
     async onSuccess(data) {
-      const response = await axios.get<LoginResponse>(`${process.env.REACT_APP_SERVER_URL}/auth/refresh`, {
+      const response = await axios.get<LoginResponse>(`${import.meta.env.VITE_SERVER_URL}/auth/refresh`, {
         withCredentials: true,
       })
       localStorage.setItem('access-token', response.data.accessToken)

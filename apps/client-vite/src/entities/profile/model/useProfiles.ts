@@ -16,9 +16,9 @@ const useProfiles = () => {
 
   const setCookie = useCallback(
     (value: string) => {
-      if (process.env.NODE_ENV === 'production') {
+      if (import.meta.env.PROD) {
         setCurrentProfile(value, {
-          domain: `${process.env.REACT_APP_COOKIE_DOMAIN}`,
+          domain: `${import.meta.env.VITE_COOKIE_DOMAIN}`,
         })
       } else {
         setCurrentProfile(value)

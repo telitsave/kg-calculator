@@ -1,16 +1,56 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>AppsClientVite</title>
-    <base href="/" />
+<html lang="ru">
+<head>
+  <meta charset="utf-8"/>
+  <meta charset='utf-8'/>
+  <meta name='viewport' content='width=device-width, initial-scale=1'/>
+  <meta name='theme-color' content='#000000'/>
+  <link rel='apple-touch-icon' href='/logo192.png'/>
+  <link rel='manifest' href='/manifest.json'/>
+  <title>Kingdom Guard - Calculator</title>
+  <base href="/"/>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <link rel="stylesheet" href="/src/styles.scss" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () {
+        (m[i].a = m[i].a || []).push(arguments)
+      };
+      m[i].l = 1 * new Date();
+      for (var j = 0; j < document.scripts.length; j++) {
+        if (document.scripts[j].src === r) {
+          return;
+        }
+      }
+      k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    const userData = localStorage && JSON.parse(localStorage.getItem('user-data') || '{}') || {}
+    if ('%MODE%' === 'production') {
+      ym(97931908, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true,
+        userParams: {
+          UserID: userData.id
+        }
+      });
+    } else {
+      console.log(`userId: ${userData.id}`)
+    }
+  </script>
+  <!-- /Yandex.Metrika counter -->
+</head>
+<body>
+<div id="root"></div>
+<script type="module" src="/src/app/Root.tsx"></script>
+
+<noscript>
+  <div><img src="https://mc.yandex.ru/watch/97931908" style="position:absolute; left:-9999px;" alt=""/></div>
+</noscript>
+</body>
 </html>

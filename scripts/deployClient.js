@@ -7,7 +7,7 @@ const config = {
   password: process.env.FTP_PASSWORD,
   host: 'ftp79.hostland.ru',
   port: 21,
-  localRoot: __dirname + '/../dist/client',
+  localRoot: __dirname + '/../dist/apps/client-vite',
   remoteRoot: '/telitsave.ru/htdocs/www',
   // include: ["*", "**/*"],      // this would upload everything except dot files
   include: ['*', '**/*'],
