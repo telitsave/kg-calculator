@@ -16823,12 +16823,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"kg-calculator-client@workspace:apps/client":
-  version: 0.0.0-use.local
-  resolution: "kg-calculator-client@workspace:apps/client"
-  languageName: unknown
-  linkType: soft
-
 "kg-calculator-typings@workspace:*, kg-calculator-typings@workspace:libs/typings":
   version: 0.0.0-use.local
   resolution: "kg-calculator-typings@workspace:libs/typings"

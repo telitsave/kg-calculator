@@ -1,20 +1,22 @@
-import css from './styles.module.sass'
+import { FC, forwardRef, memo } from 'react'
+import cx from 'classnames'
 import { Overlay } from '@mantine/core'
 import Flexbox from '@shared/ui/Flexbox'
-import cx from 'classnames'
-import { FC, forwardRef, memo } from 'react'
+import css from './styles.module.sass'
+
 
 interface Props {
   className?: string
   rank: number
   gem: string
   faded?: boolean
+  small?: boolean
 }
 
 const WitchGemsIcon: FC<Props> = memo(
-  forwardRef<HTMLDivElement, Props>(({ className, rank, gem, faded = false }, ref) => (
+  forwardRef<HTMLDivElement, Props>(({ className, rank, gem, faded = false, small = false }, ref) => (
     <Flexbox
-      className={cx(css.background, className, css[`rank${rank}`])}
+      className={cx(css.background, className, css[`rank${rank}`], { [css.small]: small })}
       justifyContent="center"
       alignItems="center"
       ref={ref}

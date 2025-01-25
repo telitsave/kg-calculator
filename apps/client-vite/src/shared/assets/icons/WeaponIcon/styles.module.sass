@@ -1,0 +1,28 @@
+@use "@shared/assets/icons/baseIcon" as bi
+
+.background
+  @include bi.baseBackground
+  width: 32px
+  height: 32px
+
+  @media (max-width: 768px)
+    width: 24px
+    height: 24px
+
+  @each $rank in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
+    &.t#{$rank}
+      @if ($rank == 1)
+        @include bi.backgroundGreen
+      @else if ($rank == 2)
+        @include bi.backgroundBlue
+      @else if ($rank == 3)
+        @include bi.backgroundPurple
+      @else
+        @include bi.backgroundGold
+
+      .icon
+        background-image: url("./icons/t#{$rank}.png")
+
+  .icon
+    @include bi.baseIcon
+    background-size: 80%

@@ -3,9 +3,13 @@ import { Tooltip } from '@mantine/core'
 import type { ResourceType } from 'kg-calculator-typings'
 import { FormattedMessage } from 'react-intl'
 import {
+  AdvancedSummoningSpellIcon,
   BarracksBookIcon,
+  BloodTitanIcon,
   BlueRuneIcon,
   CastleBoxIcon,
+  DeluxeDragonSoulStoneIcon,
+  ElementalVialIcon,
   GalleryShardIcon,
   GoldIcon,
   GoldRuneIcon,
@@ -17,6 +21,7 @@ import {
   HummerIcon,
   LightReagentIcon,
   LuckPotionIcon,
+  PerfectSummoningSpellIcon,
   PurpleRuneIcon,
   RunesBoxIcon,
   SteelIcon,
@@ -26,6 +31,7 @@ import {
   TalentCrownIcon,
   WoodIcon,
 } from '@shared/assets/icons'
+import DragonSoulStoneIcon from '@shared/assets/icons/resources/DragonSoulStoneIcon'
 
 interface Props {
   className?: string
@@ -260,6 +266,42 @@ const ResourceIcon: FC<Props> = memo(({ className, resourceType }) => {
       return (
         <Tooltip label={<FormattedMessage defaultMessage="Карты героев SSR-ранга" />}>
           <HeroCardGoldIcon className={className} />
+        </Tooltip>
+      )
+    case 'beastsResources_advancedSummoningSpell':
+      return (
+        <Tooltip label={<FormattedMessage defaultMessage="Продвинутое заклинание призыва" />}>
+          <AdvancedSummoningSpellIcon className={className} />
+        </Tooltip>
+      )
+    case 'beastsResources_perfectSummoningSpell':
+      return (
+        <Tooltip label={<FormattedMessage defaultMessage="Идеальное заклинание призыва" />}>
+          <PerfectSummoningSpellIcon className={className} />
+        </Tooltip>
+      )
+    case 'dragonResources_soulStone':
+      return (
+        <Tooltip label={<FormattedMessage defaultMessage="Камень души дракона" />}>
+          <DragonSoulStoneIcon className={className} />
+        </Tooltip>
+      )
+    case 'dragonResources_deluxeSoulStone':
+      return (
+        <Tooltip label={<FormattedMessage defaultMessage="Элитный камень души дракона" />}>
+          <DeluxeDragonSoulStoneIcon className={className} />
+        </Tooltip>
+      )
+    case 'blacksmithResources_bloodTitan':
+      return (
+        <Tooltip label={<FormattedMessage defaultMessage="Кровь титана" />}>
+          <BloodTitanIcon className={className} />
+        </Tooltip>
+      )
+    case 'blacksmithResources_elementalVial':
+      return (
+        <Tooltip label={<FormattedMessage defaultMessage="Флакон стихий" />}>
+          <ElementalVialIcon className={className} />
         </Tooltip>
       )
   }

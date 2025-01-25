@@ -25,6 +25,11 @@ const TablesPage: FC = memo(() => (
         text={<FormattedMessage defaultMessage="Герои" />}
         href="/tables/heroesTable"
       />
+      <MenuButtonBig
+        icon={<navigation.SeasonsTableIcon />}
+        text={<FormattedMessage defaultMessage="Сезоны" />}
+        href="/tables/seasons"
+      />
     </SimpleGrid>
   </Stack>
 ))

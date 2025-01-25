@@ -12,6 +12,14 @@
     width: 32px
     height: 32px
 
+  &.small
+    width: 32px
+    height: 32px
+
+    @media (max-width: 768px)
+      width: 24px
+      height: 24px
+
   @each $rank in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
     &.rank#{$rank}
       @if $rank == 1

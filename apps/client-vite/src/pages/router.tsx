@@ -26,7 +26,7 @@ import {
   ParametersPage,
 } from './myData'
 import { ServerSettingsPage, SettingsPage } from './settings'
-import { HeroesTablePage as CommonHeroesTablePage, TablesPage } from './tables'
+import { HeroesTablePage as CommonHeroesTablePage, SeasonsPage, TablesPage } from './tables'
 
 const router = createBrowserRouter([
   {
@@ -125,6 +125,10 @@ const router = createBrowserRouter([
       {
         path: '/tables/heroesTable',
         element: <CommonHeroesTablePage />,
+      },
+      {
+        path: '/tables/seasons',
+        element: <SeasonsPage />,
       },
       {
         path: '/settings',

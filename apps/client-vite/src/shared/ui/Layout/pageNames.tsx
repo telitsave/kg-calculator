@@ -23,6 +23,7 @@ export type PagesType =
   | 'settings'
   | 'serverSettings'
   | 'tables'
+  | 'seasons'
 
 export const getPageKey = (pathname: string) => {
   const paths = pathname.split('/')
@@ -82,6 +83,8 @@ export const getPageName = (pathname: string) => {
       return <FormattedMessage defaultMessage="Серверные настройки" />
     case 'tables':
       return <FormattedMessage defaultMessage="Таблицы и гайды" />
+    case 'seasons':
+      return <FormattedMessage defaultMessage="Сезоны" />
     default:
       return ''
   }
