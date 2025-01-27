@@ -43,3 +43,4 @@ export type ItemTypes =
   | 'beast_t7'
   | 'beast_t8'
   | 'beast_t9'
+  | 'beast_t10'

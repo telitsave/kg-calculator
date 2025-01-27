@@ -47,4 +47,5 @@ export const getItemLabels = (intl: IntlShape): Record<ItemTypes, string> => ({
   beast_t7: intl.formatMessage({ defaultMessage: 'Тыквенная катапульта' }),
   beast_t8: intl.formatMessage({ defaultMessage: 'Бессмертный дракон' }),
   beast_t9: intl.formatMessage({ defaultMessage: 'Доспехи духа отваги' }),
+  beast_t10: intl.formatMessage({ defaultMessage: 'Жнец песчаной бури' }),
 })

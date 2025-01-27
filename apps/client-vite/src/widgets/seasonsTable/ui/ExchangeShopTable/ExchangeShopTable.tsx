@@ -2,6 +2,7 @@ import { FC, memo, useMemo } from 'react'
 import { Flex, Table, type TableData, Text } from '@mantine/core'
 import { useIntl } from 'react-intl'
 import { ResourceIcon } from '@entities/resource'
+import { seasonsData } from '../../model/seasonsData'
 import css from './styles.module.sass'
 
 
@@ -10,7 +11,7 @@ const ExchangeShopTable: FC = memo(() => {
   const tableData: TableData = useMemo(
     () => ({
       head: [
-        <Flex justify="center">{intl.formatMessage({ defaultMessage: 'Сезон' })}</Flex>,
+        <Flex justify="center">{intl.formatMessage({ defaultMessage: 'Сезон ОЭ (сезон фактический)' })}</Flex>,
         <Flex justify="center" align="center" gap="xs">
           <ResourceIcon resourceType="barracksResources_bow_1" />
           <Text size="xl">&#8594;</Text>
@@ -62,178 +63,55 @@ const ExchangeShopTable: FC = memo(() => {
           <ResourceIcon resourceType="witchResources_greenWitchPotion" />
         </Flex>,
       ],
-      body: [
-        [
-          37,
-          <Text bg="#ffec99">x17858</Text>,
-          <Text bg="#ffec99">x89286</Text>,
-          <Text bg="#ffec99">x446429</Text>,
-          <Text bg="#ffec99">x2232143</Text>,
-          <Text bg="#ffec99">x313</Text>,
-          <Text bg="#ffec99">x3125</Text>,
-          <Text bg="#ffec99">x31250</Text>,
-          <Text bg="#ffec99">x62500</Text>,
-          <Text bg="#ffec99">x1117</Text>,
-          <Text>x1563</Text>,
-        ],
-        [
-          36,
-          <Text>x8929</Text>,
-          <Text>x44643</Text>,
-          <Text>x223215</Text>,
-          <Text>x1116072</Text>,
-          <Text>x157</Text>,
-          <Text>x1563</Text>,
-          <Text>x15625</Text>,
-          <Text>x31250</Text>,
-          <Text>x447</Text>,
-          <Text bg="#ffec99">x1563</Text>,
-        ],
-        ['-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-'],
-        [
-          14,
-          <Text>x29</Text>,
-          <Text>-</Text>,
-          <Text>-</Text>,
-          <Text>-</Text>,
-          <Text bg="#ffec99">x3</Text>,
-          <Text bg="#ffec99">x25</Text>,
-          <Text bg="#ffec99">x250</Text>,
-          <Text bg="#ffec99">x500</Text>,
-          <Text>-</Text>,
-          <Text>x3</Text>,
-        ],
-        [
-          13,
-          <Text bg="#ffec99">x29</Text>,
-          <Text bg="#ffec99">x143</Text>,
-          <Text bg="#ffec99">x715</Text>,
-          <Text bg="#ffec99">x3572</Text>,
-          <Text>x2</Text>,
-          <Text>x13</Text>,
-          <Text>x125</Text>,
-          <Text>x250</Text>,
-          <Text>-</Text>,
-          <Text>x3</Text>,
-        ],
-        [
-          12,
-          <Text>x15</Text>,
-          <Text>x72</Text>,
-          <Text>x358</Text>,
-          <Text>x1786</Text>,
-          <Text>x2</Text>,
-          <Text>x13</Text>,
-          <Text>x125</Text>,
-          <Text>x250</Text>,
-          <Text>-</Text>,
-          <Text bg="#ffec99">x3</Text>,
-        ],
-        [
-          11,
-          <Text>x15</Text>,
-          <Text>x72</Text>,
-          <Text>x358</Text>,
-          <Text>x1786</Text>,
-          <Text>x2</Text>,
-          <Text>x13</Text>,
-          <Text>x125</Text>,
-          <Text>x250</Text>,
-          <Text>-</Text>,
-          <Text>x1</Text>,
-        ],
-        [
-          10,
-          <Text>x15</Text>,
-          <Text>x72</Text>,
-          <Text>x358</Text>,
-          <Text>x1786</Text>,
-          <Text bg="#ffec99">x2</Text>,
-          <Text bg="#ffec99">x13</Text>,
-          <Text bg="#ffec99">x125</Text>,
-          <Text bg="#ffec99">x250</Text>,
-          <Text>-</Text>,
-          <Text>x1</Text>,
-        ],
-        [
-          9,
-          <Text bg="#ffec99">x15</Text>,
-          <Text bg="#ffec99">x72</Text>,
-          <Text bg="#ffec99">x358</Text>,
-          <Text bg="#ffec99">x1786</Text>,
-          <Text>x1</Text>,
-          <Text>x5</Text>,
-          <Text>x50</Text>,
-          <Text>x100</Text>,
-          <Text>-</Text>,
-          <Text>x1</Text>,
-        ],
-        [
-          8,
-          <Text>x6</Text>,
-          <Text>x29</Text>,
-          <Text>x146</Text>,
-          <Text>x715</Text>,
-          <Text>x1</Text>,
-          <Text bg="#ffec99">x5</Text>,
-          <Text bg="#ffec99">x50</Text>,
-          <Text bg="#ffec99">x100</Text>,
-          <Text>-</Text>,
-          <Text>x1</Text>,
-        ],
-        [
-          7,
-          <Text bg="#ffec99">x6</Text>,
-          <Text bg="#ffec99">x29</Text>,
-          <Text bg="#ffec99">x146</Text>,
-          <Text bg="#ffec99">x715</Text>,
-          <Text>x1</Text>,
-          <Text>x3</Text>,
-          <Text>x25</Text>,
-          <Text>x50</Text>,
-          <Text>-</Text>,
-          <Text>x1</Text>,
-        ],
-        [
-          6,
-          <Text>x3</Text>,
-          <Text>x15</Text>,
-          <Text>x72</Text>,
-          <Text>x358</Text>,
-          <Text>x1</Text>,
-          <Text>x3</Text>,
-          <Text>x25</Text>,
-          <Text>x50</Text>,
-          <Text>-</Text>,
-          <Text bg="#ffec99">x1</Text>,
-        ],
-        [
-          5,
-          <Text>x3</Text>,
-          <Text>x15</Text>,
-          <Text>x72</Text>,
-          <Text>x358</Text>,
-          <Text>x1</Text>,
-          <Text>x3</Text>,
-          <Text>x25</Text>,
-          <Text>x50</Text>,
-          <Text>-</Text>,
-          <Text>-</Text>,
-        ],
-        [
-          4,
-          <Text bg="#ffec99">x3</Text>,
-          <Text bg="#ffec99">x15</Text>,
-          <Text bg="#ffec99">x72</Text>,
-          <Text bg="#ffec99">x358</Text>,
-          <Text bg="#ffec99">x1</Text>,
-          <Text bg="#ffec99">x3</Text>,
-          <Text bg="#ffec99">x25</Text>,
-          <Text bg="#ffec99">x50</Text>,
-          <Text>-</Text>,
-          <Text>-</Text>,
-        ],
-      ],
+      body: seasonsData
+        .filter((it) => it.season >= 4)
+        .map((s, i, arr) => {
+          if (s.season === -1) {
+            return ['-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-']
+          }
+
+          let prevS = i < arr.length - 1 ? arr[i + 1] : undefined
+          if (prevS?.season === -1) {
+            prevS = undefined
+          }
+
+          const data = s.coefficientsExchangeShop
+          const prevData = prevS?.coefficientsExchangeShop || undefined
+
+          return [
+            `${s.season} (${s.season + 1})`,
+            <Text bg={!prevData || prevData.t1Barracks !== data.t1Barracks ? '#ffec99' : undefined}>
+              {(data.t1Barracks && `x${data.t1Barracks}`) || '-'}
+            </Text>,
+            <Text bg={!prevData || prevData.t2Barracks !== data.t2Barracks ? '#ffec99' : undefined}>
+              {(data.t2Barracks && `x${data.t2Barracks}`) || '-'}
+            </Text>,
+            <Text bg={!prevData || prevData.t3Barracks !== data.t3Barracks ? '#ffec99' : undefined}>
+              {(data.t3Barracks && `x${data.t3Barracks}`) || '-'}
+            </Text>,
+            <Text bg={!prevData || prevData.t4Barracks !== data.t4Barracks ? '#ffec99' : undefined}>
+              {(data.t4Barracks && `x${data.t4Barracks}`) || '-'}
+            </Text>,
+            <Text bg={!prevData || prevData.greenRune !== data.greenRune ? '#ffec99' : undefined}>
+              {(data.greenRune && `x${data.greenRune}`) || '-'}
+            </Text>,
+            <Text bg={!prevData || prevData.blueRune !== data.blueRune ? '#ffec99' : undefined}>
+              {(data.blueRune && `x${data.blueRune}`) || '-'}
+            </Text>,
+            <Text bg={!prevData || prevData.purpleRune !== data.purpleRune ? '#ffec99' : undefined}>
+              {(data.purpleRune && `x${data.purpleRune}`) || '-'}
+            </Text>,
+            <Text bg={!prevData || prevData.goldRune !== data.goldRune ? '#ffec99' : undefined}>
+              {(data.goldRune && `x${data.goldRune}`) || '-'}
+            </Text>,
+            <Text bg={!prevData || prevData.hammers !== data.hammers ? '#ffec99' : undefined}>
+              {(data.hammers && `x${data.hammers}`) || '-'}
+            </Text>,
+            <Text bg={!prevData || prevData.lightReagent !== data.lightReagent ? '#ffec99' : undefined}>
+              {(data.lightReagent && `x${data.lightReagent}`) || '-'}
+            </Text>,
+          ]
+        }),
     }),
     [intl],
   )

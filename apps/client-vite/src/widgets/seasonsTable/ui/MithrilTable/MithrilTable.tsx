@@ -2,6 +2,7 @@ import { FC, memo, useMemo } from 'react'
 import { Flex, Table, type TableData, Text } from '@mantine/core'
 import { useIntl } from 'react-intl'
 import { ResourceIcon } from '@entities/resource'
+import { seasonsData } from '../../model/seasonsData'
 import css from './styles.module.sass'
 
 
@@ -10,7 +11,7 @@ const MithrilTable: FC = memo(() => {
   const tableData: TableData = useMemo(
     () => ({
       head: [
-        <Flex justify="center">{intl.formatMessage({ defaultMessage: 'Сезон' })}</Flex>,
+        <Flex justify="center">{intl.formatMessage({ defaultMessage: 'Сезон ОЭ (сезон фактический)' })}</Flex>,
         <Flex justify="center">
           <ResourceIcon resourceType="talentsResources_oraclesCrowns" />
         </Flex>,
@@ -42,217 +43,53 @@ const MithrilTable: FC = memo(() => {
           <ResourceIcon resourceType="witchResources_greenWitchPotion" />
         </Flex>,
       ],
-      body: [
-        [
-          37,
-          <Text bg="#ffec99">x31250</Text>,
-          <Text bg="#ffec99">x31250</Text>,
-          <Text bg="#ffec99">x6250</Text>,
-          <Text bg="#ffec99">x6250</Text>,
-          <Text bg="#ffec99">x15625</Text>,
-          <Text bg="#ffec99">x15625</Text>,
-          <Text>x625</Text>,
-          <Text>x625</Text>,
-          <Text>x15625</Text>,
-          <Text>x17858</Text>,
-        ],
-        [
-          36,
-          <Text>x15625</Text>,
-          <Text>x15625</Text>,
-          <Text>x3125</Text>,
-          <Text>x3125</Text>,
-          <Text>x6250</Text>,
-          <Text>x6250</Text>,
-          <Text bg="#ffec99">x625</Text>,
-          <Text bg="#ffec99">x625</Text>,
-          <Text bg="#ffec99">x15625</Text>,
-          <Text bg="#ffec99">x17858</Text>,
-        ],
-        ['-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-'],
-        [
-          14,
-          <Text bg="#ffec99">x50</Text>,
-          <Text>x50</Text>,
-          <Text bg="#ffec99">x50</Text>,
-          <Text bg="#ffec99">x50</Text>,
-          <Text>x25</Text>,
-          <Text>x25</Text>,
-          <Text bg="#ffec99">x25</Text>,
-          <Text bg="#ffec99">x25</Text>,
-          <Text>x25</Text>,
-          <Text>x29</Text>,
-        ],
-        [
-          13,
-          <Text bg="#ffec99">x50</Text>,
-          <Text bg="#ffec99">x50</Text>,
-          <Text>x25</Text>,
-          <Text>x25</Text>,
-          <Text bg="#ffec99">x25</Text>,
-          <Text bg="#ffec99">x25</Text>,
-          <Text>x10</Text>,
-          <Text>x10</Text>,
-          <Text>x25</Text>,
-          <Text>x29</Text>,
-        ],
-        [
-          12,
-          <Text>x25</Text>,
-          <Text>x25</Text>,
-          <Text>x25</Text>,
-          <Text>x25</Text>,
-          <Text>x10</Text>,
-          <Text>x10</Text>,
-          <Text bg="#ffec99">x10</Text>,
-          <Text bg="#ffec99">x10</Text>,
-          <Text bg="#ffec99">x25</Text>,
-          <Text bg="#ffec99">x29</Text>,
-        ],
-        [
-          11,
-          <Text>x25</Text>,
-          <Text>x25</Text>,
-          <Text>x25</Text>,
-          <Text>x25</Text>,
-          <Text bg="#ffec99">x10</Text>,
-          <Text bg="#ffec99">x10</Text>,
-          <Text>x5</Text>,
-          <Text>x5</Text>,
-          <Text>x10</Text>,
-          <Text>x12</Text>,
-        ],
-        [
-          10,
-          <Text>x25</Text>,
-          <Text>x25</Text>,
-          <Text bg="#ffec99">x25</Text>,
-          <Text bg="#ffec99">x25</Text>,
-          <Text>x5</Text>,
-          <Text>x5</Text>,
-          <Text>x5</Text>,
-          <Text>x5</Text>,
-          <Text bg="#ffec99">x10</Text>,
-          <Text bg="#ffec99">x12</Text>,
-        ],
-        [
-          9,
-          <Text bg="#ffec99">x25</Text>,
-          <Text bg="#ffec99">x25</Text>,
-          <Text>x10</Text>,
-          <Text>x10</Text>,
-          <Text>x5</Text>,
-          <Text>x5</Text>,
-          <Text>x5</Text>,
-          <Text>x5</Text>,
-          <Text>x5</Text>,
-          <Text>x6</Text>,
-        ],
-        [
-          8,
-          <Text>x10</Text>,
-          <Text>x10</Text>,
-          <Text bg="#ffec99">x10</Text>,
-          <Text bg="#ffec99">x10</Text>,
-          <Text>x5</Text>,
-          <Text>x5</Text>,
-          <Text bg="#ffec99">x5</Text>,
-          <Text bg="#ffec99">x5</Text>,
-          <Text>x5</Text>,
-          <Text>x6</Text>,
-        ],
-        [
-          7,
-          <Text bg="#ffec99">x10</Text>,
-          <Text bg="#ffec99">x10</Text>,
-          <Text>x5</Text>,
-          <Text>x5</Text>,
-          <Text bg="#ffec99">x5</Text>,
-          <Text bg="#ffec99">x5</Text>,
-          <Text>x2</Text>,
-          <Text>x2</Text>,
-          <Text>x5</Text>,
-          <Text>x6</Text>,
-        ],
-        [
-          6,
-          <Text>x5</Text>,
-          <Text>x5</Text>,
-          <Text>x5</Text>,
-          <Text>x5</Text>,
-          <Text>x2</Text>,
-          <Text>x2</Text>,
-          <Text bg="#ffec99">x2</Text>,
-          <Text bg="#ffec99">x2</Text>,
-          <Text bg="#ffec99">x5</Text>,
-          <Text bg="#ffec99">x6</Text>,
-        ],
-        [
-          5,
-          <Text>x5</Text>,
-          <Text>x5</Text>,
-          <Text>x5</Text>,
-          <Text>x5</Text>,
-          <Text bg="#ffec99">x2</Text>,
-          <Text bg="#ffec99">x2</Text>,
-          <Text>0</Text>,
-          <Text>0</Text>,
-          <Text>x2</Text>,
-          <Text>x3</Text>,
-        ],
-        [
-          4,
-          <Text>x5</Text>,
-          <Text>x5</Text>,
-          <Text bg="#ffec99">x5</Text>,
-          <Text bg="#ffec99">x5</Text>,
-          <Text>0</Text>,
-          <Text>0</Text>,
-          <Text>0</Text>,
-          <Text>0</Text>,
-          <Text bg="#ffec99">x2</Text>,
-          <Text bg="#ffec99">x3</Text>,
-        ],
-        [
-          3,
-          <Text bg="#ffec99">x5</Text>,
-          <Text bg="#ffec99">x5</Text>,
-          <Text>x2</Text>,
-          <Text>x2</Text>,
-          <Text>0</Text>,
-          <Text>0</Text>,
-          <Text>0</Text>,
-          <Text>0</Text>,
-          <Text>0</Text>,
-          <Text>x2</Text>,
-        ],
-        [
-          2,
-          <Text>x2</Text>,
-          <Text>x2</Text>,
-          <Text bg="#ffec99">x2</Text>,
-          <Text bg="#ffec99">x2</Text>,
-          <Text>0</Text>,
-          <Text>0</Text>,
-          <Text>0</Text>,
-          <Text>0</Text>,
-          <Text>0</Text>,
-          <Text>x2</Text>,
-        ],
-        [
-          1,
-          <Text bg="#ffec99">x2</Text>,
-          <Text bg="#ffec99">x2</Text>,
-          <Text>0</Text>,
-          <Text>0</Text>,
-          <Text>0</Text>,
-          <Text>0</Text>,
-          <Text>0</Text>,
-          <Text>0</Text>,
-          <Text>0</Text>,
-          <Text bg="#ffec99">x2</Text>,
-        ],
-      ],
+      body: seasonsData.map((s, i) => {
+        if (s.season === -1) {
+          return ['-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-']
+        }
+
+        let prevS = i < seasonsData.length - 1 ? seasonsData[i + 1] : undefined
+        if (prevS?.season === -1) {
+          prevS = undefined
+        }
+
+        const data = s.coefficientsMithril
+        const prevData = prevS?.coefficientsMithril || undefined
+
+        return [
+          `${s.season} (${s.season + 1})`,
+          <Text bg={!prevData || prevData.oracleCrowns !== data.oracleCrowns ? '#ffec99' : undefined}>
+            {(data.oracleCrowns && `x${data.oracleCrowns}`) || '-'}
+          </Text>,
+          <Text bg={!prevData || prevData.talentsBooks !== data.talentsBooks ? '#ffec99' : undefined}>
+            {(data.talentsBooks && `x${data.talentsBooks}`) || '-'}
+          </Text>,
+          <Text bg={!prevData || prevData.deluxeDragonSoul !== data.deluxeDragonSoul ? '#ffec99' : undefined}>
+            {(data.deluxeDragonSoul && `x${data.deluxeDragonSoul}`) || '-'}
+          </Text>,
+          <Text bg={!prevData || prevData.dragonSoul !== data.dragonSoul ? '#ffec99' : undefined}>
+            {(data.dragonSoul && `x${data.dragonSoul}`) || '-'}
+          </Text>,
+          <Text bg={!prevData || prevData.titansBlood !== data.titansBlood ? '#ffec99' : undefined}>
+            {(data.titansBlood && `x${data.titansBlood}`) || '-'}
+          </Text>,
+          <Text bg={!prevData || prevData.elementalVial !== data.elementalVial ? '#ffec99' : undefined}>
+            {(data.elementalVial && `x${data.elementalVial}`) || '-'}
+          </Text>,
+          <Text bg={!prevData || prevData.perfectSummonSpell !== data.perfectSummonSpell ? '#ffec99' : undefined}>
+            {(data.perfectSummonSpell && `x${data.perfectSummonSpell}`) || '-'}
+          </Text>,
+          <Text bg={!prevData || prevData.advancedSummonSpell !== data.advancedSummonSpell ? '#ffec99' : undefined}>
+            {(data.advancedSummonSpell && `x${data.advancedSummonSpell}`) || '-'}
+          </Text>,
+          <Text bg={!prevData || prevData.fortunePotion !== data.fortunePotion ? '#ffec99' : undefined}>
+            {(data.fortunePotion && `x${data.fortunePotion}`) || '-'}
+          </Text>,
+          <Text bg={!prevData || prevData.strengthPotion !== data.strengthPotion ? '#ffec99' : undefined}>
+            {(data.strengthPotion && `x${data.strengthPotion}`) || '-'}
+          </Text>,
+        ]
+      }),
     }),
     [intl],
   )

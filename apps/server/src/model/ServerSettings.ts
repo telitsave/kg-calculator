@@ -19,8 +19,8 @@ export default class ServerSettings {
   up_dragonRuneBlue = 700
   up_dragonRunePurple = 7000
   up_dragonRuneGold = 14000
-  up_talentsBook = 28
-  up_oracleCrown = 280
+  up_talentsBook = 14
+  up_oracleCrown = 140
   up_stone = 100
   up_wood = 500
   up_steel = 2000
@@ -41,14 +41,14 @@ export default class ServerSettings {
   mk_dragonRuneBlue = 700
   mk_dragonRunePurple = 7000
   mk_dragonRuneGold = 14000
-  mk_talentsBook = 28
-  mk_oracleCrown = 280
+  mk_talentsBook = 14
+  mk_oracleCrown = 140
   mk_lightReagent = 70
   mk_greenWitchPotion = 14
   mk_purpleWitchPotion = 140
   mk_blacksmith = 100
   mk_galleryShard = 1000
-  season = 12
+  season = 13
 
   constructor(customServerSettings?: CustomServerSettingsData) {
     if (customServerSettings) {
