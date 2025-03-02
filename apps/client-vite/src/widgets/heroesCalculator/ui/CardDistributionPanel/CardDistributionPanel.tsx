@@ -1,10 +1,10 @@
-import { FC, memo, useMemo, useState } from 'react'
-import { Accordion, Alert, Button, Flex, Text } from '@mantine/core'
-import { useMediaQuery } from '@mantine/hooks'
-import type { Hero } from 'kg-calculator-typings'
+import { FC, memo, useMemo } from 'react'
+import { Accordion, Alert, Button, Flex, Switch, Text } from '@mantine/core'
+import { useMediaQuery, useToggle } from '@mantine/hooks'
 import { orderBy } from 'lodash'
 import { FaStar } from 'react-icons/fa'
 import { FormattedMessage } from 'react-intl'
+import { HeroHelper } from '@entities/hero'
 import { useLocaleContext } from '@features/setLocale'
 import useHeroesDistributionModel from '../../model/hooks/useHeroesDistributionModel'
 import CardDistribution from '../CardDistribution'
@@ -17,13 +17,21 @@ interface Props {
 const CardDistributionPanel: FC<Props> = memo(({ className }) => {
   const { locale } = useLocaleContext()
   const isMobile = useMediaQuery('(max-width: 50em)')
-  const [sortField] = useState<keyof Hero>('rank')
+  const [hideMaxHeroes, toggleHideMaxHeroes] = useToggle([false, true])
+  const [sortByStars, toggleSortByStars] = useToggle([false, true])
   const { heroes, leftCards, fillStars, fillMaxScores, onSetCards, onReset } = useHeroesDistributionModel()
 
   const sortedHeroes = useMemo(() => {
     if (!heroes) return []
-    return orderBy(heroes, [(hero) => hero[sortField], (hero) => hero.season], ['desc', 'asc'])
-  }, [heroes, sortField])
+    let newHeroes = hideMaxHeroes ? heroes.filter((it) => (it.stars || 0) < HeroHelper.getMaxStars(it.rank)) : heroes
+    newHeroes = orderBy(
+      newHeroes,
+      [(hero) => (sortByStars ? hero.stars : hero.rank), (hero) => hero.season],
+      ['desc', 'asc'],
+    )
+
+    return newHeroes
+  }, [heroes, hideMaxHeroes, sortByStars])
 
   if (!heroes) return null
 
@@ -138,6 +146,53 @@ const CardDistributionPanel: FC<Props> = memo(({ className }) => {
             <FormattedMessage defaultMessage="Сбросить" />
           </Button>
         </Flex>
+      </Flex>
+      <Flex
+        justify="center"
+        align="flex-end"
+        direction="column"
+        pos="sticky"
+        top={54}
+        bg="white"
+        pt="sm"
+        pb="sm"
+        gap="xs"
+        style={{
+          zIndex: 5,
+        }}
+      >
+        <Switch
+          label={<FormattedMessage defaultMessage="Скрывать героев с 5 звездами" />}
+          checked={hideMaxHeroes}
+          onChange={() => toggleHideMaxHeroes()}
+          styles={{
+            body: {
+              alignItems: 'center',
+            },
+            labelWrapper: {
+              flex: '1 1 auto',
+            },
+            track: {
+              flexShrink: 0,
+            },
+          }}
+        />
+        <Switch
+          label={<FormattedMessage defaultMessage="Сортировать героев по звездам" />}
+          checked={sortByStars}
+          onChange={() => toggleSortByStars()}
+          styles={{
+            body: {
+              alignItems: 'center',
+            },
+            labelWrapper: {
+              flex: '1 1 auto',
+            },
+            track: {
+              flexShrink: 0,
+            },
+          }}
+        />
       </Flex>
       {sortedHeroes.map((hero) => (
         <CardDistribution

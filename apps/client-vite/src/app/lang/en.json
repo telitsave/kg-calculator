@@ -413,7 +413,7 @@
   "wuAhKM": "Archer Power",
   "wz06gZ": "While it is quite convenient to fill in Excel tables on a PC, it is not so pleasant to do this on mobile devices. The web version of the calculator is more convenient both when working with a PC and from mobile devices",
   "xFvNzW": "Telegram group",
-  "xKt1IP": "Level",
+  "xKt1IP": "Level ",
   "xTTDVC": "Wave",
   "xXW9Ul": "Custom Construction Item",
   "xks80s": "For every 1 Light Reagent spent",
@@ -499,5 +499,12 @@
   "rZ3c9p": "Deluxe Dragon Soul Stone",
   "jc92+a": "Rewards by Seasons",
   "vvD6qL": "Exchange Shop Coefficients",
-  "xjfugZ": "Mithril Shop Coefficients"
+  "xjfugZ": "Mithril Shop Coefficients",
+  "3t5PTo": "Sandstorm Reaper",
+  "C5LzJf": "<Text>The new calculation method will upgrade 1 large attribute (with crowns) every 8 small attributes (books only).</Text> <Text>The old calculation method (if you turn this option off) will upgrade all small attributes first, and only then large ones.</Text>",
+  "Eu30o0": "There is no information on the wave power for this level.",
+  "abo1C5": "Sort heroes by stars",
+  "dpqdFL": "Hide 5 star heroes",
+  "nDQFCf": "Count talents and crowns \"1 through 8\"",
+  "rg/IBx": "BL season (actual season)"
 }

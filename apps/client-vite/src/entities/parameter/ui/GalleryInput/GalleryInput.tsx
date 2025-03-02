@@ -44,7 +44,7 @@ const GalleryInput: FC<Props> = memo(({ className }) => {
       <NumberInput
         label={<FormattedMessage defaultMessage="Открыто осколков" />}
         min={0}
-        max={stepsCount}
+        max={level === 30 ? stepsCount : stepsCount - 1}
         value={step}
         onChange={handleStepsInputChange}
         clampBehavior="strict"

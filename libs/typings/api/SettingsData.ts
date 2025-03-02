@@ -8,6 +8,7 @@ export interface Settings {
   useAdvancedHeroMode?: boolean
   useCastleLimit?: boolean
   usePossibleCastleLimit?: boolean
+  useNewCalculatingTalents?: boolean
   priorityElement?: 'bow' | 'fire' | 'ice' | 'poison'
   spentToArtifactLightReagents?: boolean
   spentToArtifactHammers?: boolean

@@ -52,6 +52,7 @@ const Inputs: FC<Props> = memo(({ className, onCalculateButtonClick }) => (
       <SettingsSwitch settingsType="canConvertBarracksBooksToTalents" />
       <SettingsSwitch settingsType="canUseTalentsToNonPriorityElements" />
       <SettingsSwitch settingsType="spentToArtifactBarracks" />
+      <SettingsSwitch settingsType="useNewCalculatingTalents" />
       <SettingPriorityElement />
     </Flex>
     <Button onClick={onCalculateButtonClick}>

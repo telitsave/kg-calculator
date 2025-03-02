@@ -63,6 +63,9 @@ class HeroesQueue {
         this.queryClient.invalidateQueries({
           queryKey: ['ultimatePowerTotal'],
         })
+        this.queryClient.invalidateQueries({
+          queryKey: ['heroesTable'],
+        })
         NotificationsHelper.showSavedNotification(this.intl)
       } catch (e) {
         NotificationsHelper.showSaveErrorNotification(this.intl)

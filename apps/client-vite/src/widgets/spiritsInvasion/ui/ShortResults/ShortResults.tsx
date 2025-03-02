@@ -14,12 +14,6 @@ const ShortResults: FC<Props> = memo(({ data }) => {
   return (
     <Grid>
       <GridCol span={12}>
-        <Title order={4}>
-          <FormattedMessage defaultMessage="Уровень " />
-          {data.level}
-        </Title>
-      </GridCol>
-      <GridCol span={12}>
         <Alert color="yellow">
           <Text>
             <FormattedMessage
@@ -29,6 +23,21 @@ const ShortResults: FC<Props> = memo(({ data }) => {
           </Text>
         </Alert>
       </GridCol>
+      <GridCol span={12}>
+        <Title order={4}>
+          <FormattedMessage defaultMessage="Уровень " />
+          {data.level}
+        </Title>
+      </GridCol>
+      {data.wave1Power === -1 && (
+        <GridCol span={12}>
+          <Alert color="red">
+            <Text>
+              <FormattedMessage defaultMessage="Информация по мощи волн для данного уровня отсутствует." />
+            </Text>
+          </Alert>
+        </GridCol>
+      )}
       <GridCol span={{ md: 6, xs: 12 }}>
         <Title order={5}>
           <FormattedMessage defaultMessage="Мощь волн" />

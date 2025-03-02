@@ -151,13 +151,23 @@ export default class BarracksCalculatorModel {
   }
 
   private tryCalculateTalentsByElementRank(element: ElementsType, rank: number): boolean {
-    // Сначала пробуем прокачать малый атрибут (только книги талантов)
-    if (this.tryLevelUpBookTalentByElementRank(element, rank)) {
-      return true
+    if (this._settings.useNewCalculatingTalents) {
+      const { booksCells, crownsCells } = this._parameters.talents[element].rank[rank]
+      if (crownsCells < 6 && (crownsCells + 1) * 8 <= booksCells) {
+        if (this.tryLevelUpCrownTalentByElementRank(element, rank)) {
+          return true
+        }
+      }
+      return this.tryLevelUpBookTalentByElementRank(element, rank)
+    } else {
+      // Сначала пробуем прокачать малый атрибут (только книги талантов)
+      if (this.tryLevelUpBookTalentByElementRank(element, rank)) {
+        return true
+      }
+      // Если по каким-то причинам прокачать малый атрибут не удалось (например все прокачаны, или нехватило ресурсов)
+      // Пробуем уже прокачать большой атрибут
+      return this.tryLevelUpCrownTalentByElementRank(element, rank)
     }
-    // Если по каким-то причинам прокачать малый атрибут не удалось (например все прокачаны, или нехватило ресурсов)
-    // Пробуем уже прокачать большой атрибут
-    return this.tryLevelUpCrownTalentByElementRank(element, rank)
   }
 
   private tryLevelUpBookTalentByElementRank(element: ElementsType, rank: number): boolean {

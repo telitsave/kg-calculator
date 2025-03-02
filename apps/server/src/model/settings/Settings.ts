@@ -10,6 +10,7 @@ export default class Settings {
   useAdvancedHeroMode: boolean
   useCastleLimit: boolean
   usePossibleCastleLimit: boolean
+  useNewCalculatingTalents?: boolean
   spentToArtifactLightReagents: boolean
   spentToArtifactHammers: boolean
   spentToArtifactDragon: boolean
@@ -27,6 +28,7 @@ export default class Settings {
     this.useAdvancedHeroMode = initData?.useAdvancedHeroMode || false
     this.useCastleLimit = initData?.useCastleLimit || false
     this.usePossibleCastleLimit = initData?.usePossibleCastleLimit || false
+    this.useNewCalculatingTalents = initData?.useNewCalculatingTalents || false
     this.spentToArtifactLightReagents = initData?.spentToArtifactLightReagents || false
     this.spentToArtifactHammers = initData?.spentToArtifactHammers || false
     this.spentToArtifactDragon = initData?.spentToArtifactDragon || false

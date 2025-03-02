@@ -137,6 +137,15 @@ const SettingsSwitch: FC<Props> = memo(({ className, settingsType }) => {
             <HelpButton helpContent={<HelpNode settingsType={settingsType} />} />
           </Flexbox>
         )
+      case 'useNewCalculatingTalents':
+        return (
+          <Flexbox alignItems="center" gap={4} justifyContent="space-between">
+            <Text>
+              <FormattedMessage defaultMessage={`Считать таланты и короны "1 через 8"`} />
+            </Text>
+            <HelpButton helpContent={<HelpNode settingsType={settingsType} />} />
+          </Flexbox>
+        )
       default:
         return <Text />
     }

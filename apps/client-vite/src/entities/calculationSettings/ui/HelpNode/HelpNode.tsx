@@ -149,6 +149,20 @@ const HelpNode: FC<Props> = memo(({ settingsType }) => {
           />
         </Flexbox>
       )
+    case 'useNewCalculatingTalents':
+      return (
+        <Flexbox flexDirection="column">
+          <FormattedMessage
+            defaultMessage={`
+              <Text>Новая методика расчета будет прокачивать 1 большой атрибут (с коронами) через каждые 8 маленьких атрибутов (только книги).</Text>
+              <Text>Старая методика расчета (если эту опцию выключить) будет сначала прокачивать все маленькие атрибуты, и только потом большие.</Text>
+              `}
+            values={{
+              Text: (chunks) => <Text>{chunks}</Text>,
+            }}
+          />
+        </Flexbox>
+      )
     default:
       return null
   }

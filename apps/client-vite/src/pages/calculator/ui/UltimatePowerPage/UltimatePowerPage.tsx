@@ -62,6 +62,7 @@ const UltimatePowerPage: FC<Props> = memo(({ className }) => {
         <SettingsSwitch settingsType="canConvertBarracksBooksToTalents" />
         <SettingsSwitch settingsType="canUseTalentsToNonPriorityElements" />
         <SettingsSwitch settingsType="spentToArtifactBarracks" />
+        <SettingsSwitch settingsType="useNewCalculatingTalents" />
         <SettingsSwitch settingsType="useAdvancedHeroMode" />
         <SettingsSwitch settingsType="spentToArtifactHammers" />
         <SettingsSwitch settingsType="spentToArtifactLightReagents" />
