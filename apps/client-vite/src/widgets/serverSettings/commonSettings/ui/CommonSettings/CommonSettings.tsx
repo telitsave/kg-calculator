@@ -11,8 +11,8 @@ interface Props {
 const CommonSettings: FC<Props> = memo(({ className }) => (
   <Stack className={className} gap={16}>
     <ServerSettingInput settingKey="season" minValue={0} />
-    <ServerSettingInput settingKey="talentsMaxRank" minValue={1} maxValue={11} />
-    <ServerSettingInput settingKey="witchGemsMaxRank" minValue={1} maxValue={10} />
+    <ServerSettingInput settingKey="talentsMaxRank" minValue={1} maxValue={12} />
+    <ServerSettingInput settingKey="witchGemsMaxRank" minValue={1} maxValue={11} />
 
     <Fieldset
       legend={<FormattedMessage defaultMessage="Курс обмена книг бойцов казармы на книги талантов в магазине обмена" />}

@@ -1,12 +1,12 @@
 import mysql from 'mysql2/promise'
 
 class MysqlAdapter {
-  private _connection: mysql.Connection | null = null
+  private _connection: mysql.Pool | null = null
 
   async init() {
     if (this._connection) return
 
-    this._connection = await mysql.createConnection({
+    this._connection = mysql.createPool({
       host: process.env.MYSQL_HOST as string,
       port: Number(process.env.MYSQL_PORT),
       user: process.env.MYSQL_LOGIN as string,
@@ -20,7 +20,7 @@ class MysqlAdapter {
       await this.init()
     }
 
-    return this._connection as mysql.Connection
+    return this._connection as mysql.Pool
   }
 }
 

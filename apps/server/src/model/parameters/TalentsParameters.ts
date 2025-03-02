@@ -76,6 +76,7 @@ export default class TalentsParameters {
         9: this.getFilledTalentsByElementRank(element?.rank[9]),
         10: this.getFilledTalentsByElementRank(element?.rank[10]),
         11: this.getFilledTalentsByElementRank(element?.rank[11]),
+        12: this.getFilledTalentsByElementRank(element?.rank[12]),
       },
     }
   }

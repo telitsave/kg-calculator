@@ -2,11 +2,11 @@ import type { CustomServerSettingsData } from 'kg-calculator-typings'
 
 export default class ServerSettings {
   talentsMaxRank = 7
-  witchGemsMaxRank = 6
-  talentBooks_rank1 = 15
-  talentBooks_rank2 = 72
-  talentBooks_rank3 = 358
-  talentBooks_rank4 = 1786
+  witchGemsMaxRank = 7
+  talentBooks_rank1 = 29
+  talentBooks_rank2 = 143
+  talentBooks_rank3 = 715
+  talentBooks_rank4 = 3572
   up_nHeroCard = 100
   up_rHeroCard = 700
   up_srHeroCard = 3500
@@ -48,7 +48,7 @@ export default class ServerSettings {
   mk_purpleWitchPotion = 140
   mk_blacksmith = 100
   mk_galleryShard = 1000
-  season = 13
+  season = 14
 
   constructor(customServerSettings?: CustomServerSettingsData) {
     if (customServerSettings) {

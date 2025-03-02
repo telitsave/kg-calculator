@@ -12,7 +12,7 @@ function errorMiddleware(err: Error, _: Request, res: Response, __: NextFunction
     } as ApiDefaultError)
   }
 
-  console.log(`${dayjs().format('DD.MM.YYYY HH:mm:ss')}: OTHER - ${err.message}`)
+  console.log(`${dayjs().format('DD.MM.YYYY HH:mm:ss')}: OTHER - ${err.message}: ${err.stack}`)
   return res.status(500).json()
 }
 

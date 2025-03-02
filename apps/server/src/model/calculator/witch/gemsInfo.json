@@ -1218,5 +1218,127 @@
       "strengthPotions": 32894750,
       "luckPotions": 6250000
     }
+  ],
+  "rank11": [
+    {
+      "level": "1",
+      "power": "86%",
+      "strengthPotions": 0,
+      "luckPotions": 0
+    },
+    {
+      "level": "2",
+      "power": "93.7%",
+      "strengthPotions": 164473690,
+      "luckPotions": 0
+    },
+    {
+      "level": "3",
+      "power": "101.4%",
+      "strengthPotions": 164473690,
+      "luckPotions": 0
+    },
+    {
+      "level": "4",
+      "power": "109.1%",
+      "strengthPotions": 164473690,
+      "luckPotions": 0
+    },
+    {
+      "level": "5",
+      "power": "116.8%",
+      "strengthPotions": 164473690,
+      "luckPotions": 0
+    },
+    {
+      "level": "6",
+      "power": "124.5%",
+      "strengthPotions": 164473690,
+      "luckPotions": 0
+    },
+    {
+      "level": "7",
+      "power": "132.2%",
+      "strengthPotions": 164473690,
+      "luckPotions": 0
+    },
+    {
+      "level": "8",
+      "power": "139.9%",
+      "strengthPotions": 164473690,
+      "luckPotions": 0
+    },
+    {
+      "level": "9",
+      "power": "147.6%",
+      "strengthPotions": 164473690,
+      "luckPotions": 0
+    },
+    {
+      "level": "10",
+      "power": "155.3%",
+      "strengthPotions": 164473690,
+      "luckPotions": 0
+    },
+    {
+      "level": "11",
+      "power": "163.0%",
+      "strengthPotions": 164473690,
+      "luckPotions": 31250000
+    },
+    {
+      "level": "12",
+      "power": "170.7%",
+      "strengthPotions": 164473690,
+      "luckPotions": 31250000
+    },
+    {
+      "level": "13",
+      "power": "178.4%",
+      "strengthPotions": 164473690,
+      "luckPotions": 31250000
+    },
+    {
+      "level": "14",
+      "power": "186.1%",
+      "strengthPotions": 164473690,
+      "luckPotions": 31250000
+    },
+    {
+      "level": "15",
+      "power": "193.8%",
+      "strengthPotions": 164473690,
+      "luckPotions": 31250000
+    },
+    {
+      "level": "16",
+      "power": "201.5%",
+      "strengthPotions": 164473690,
+      "luckPotions": 31250000
+    },
+    {
+      "level": "17",
+      "power": "209.2%",
+      "strengthPotions": 164473690,
+      "luckPotions": 31250000
+    },
+    {
+      "level": "18",
+      "power": "216.9%",
+      "strengthPotions": 164473690,
+      "luckPotions": 31250000
+    },
+    {
+      "level": "19",
+      "power": "224.6%",
+      "strengthPotions": 164473690,
+      "luckPotions": 31250000
+    },
+    {
+      "level": "20",
+      "power": "232.3%",
+      "strengthPotions": 164473690,
+      "luckPotions": 31250000
+    }
   ]
 }
