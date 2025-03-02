@@ -23,14 +23,26 @@ const CardDistributionPanel: FC<Props> = memo(({ className }) => {
 
   const sortedHeroes = useMemo(() => {
     if (!heroes) return []
-    let newHeroes = hideMaxHeroes ? heroes.filter((it) => (it.stars || 0) < HeroHelper.getMaxStars(it.rank)) : heroes
-    newHeroes = orderBy(
-      newHeroes,
-      [(hero) => (sortByStars ? hero.stars : hero.rank), (hero) => hero.season],
-      ['desc', 'asc'],
+    let transformedHeroes = heroes.map((hero) => {
+      const { newStars, newBars } = HeroHelper.upStarsBars(hero.stars || 0, hero.bars || 0, hero.cards || 0, hero.rank)
+      return {
+        ...hero,
+        newStars,
+        newBars,
+      }
+    })
+    transformedHeroes = hideMaxHeroes
+      ? transformedHeroes.filter((it) => (it.newStars || 0) < HeroHelper.getMaxStars(it.rank))
+      : transformedHeroes
+
+    transformedHeroes = orderBy(
+      transformedHeroes,
+      sortByStars ? ['newStars', 'newBars'] : ['rank', 'season'],
+      sortByStars ? ['desc', 'desc'] : ['desc', 'asc'],
     )
 
-    return newHeroes
+    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+    return transformedHeroes.map((it) => heroes.find((hero) => hero.heroId === it.heroId)!)
   }, [heroes, hideMaxHeroes, sortByStars])
 
   if (!heroes) return null
