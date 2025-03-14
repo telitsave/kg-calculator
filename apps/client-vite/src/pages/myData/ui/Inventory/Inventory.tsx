@@ -16,6 +16,9 @@ interface Props {
 
 const itemsLikeInGame: ResourceType[] = [
   'gold',
+  'barracksResources_random',
+  'dragonResources_boxes',
+  'castleResources_boxes',
   'witchResources_purpleWitchPotion',
   'witchResources_greenWitchPotion',
   'castleResources_stone',
@@ -38,7 +41,6 @@ const itemsLikeInGame: ResourceType[] = [
   'barracksResources_poison_3',
   'barracksResources_poison_2',
   'barracksResources_poison_1',
-  'dragonResources_boxes',
   'dragonResources_gold',
   'dragonResources_purple',
   'dragonResources_blue',
@@ -46,9 +48,7 @@ const itemsLikeInGame: ResourceType[] = [
   'talentsResources_books',
   'talentsResources_oraclesCrowns',
   'galleryResources_shards',
-  'barracksResources_random',
   'witchResources_lightReagents',
-  'castleResources_boxes',
   'heroesResources_n',
   'heroesResources_r',
   'heroesResources_sr',
