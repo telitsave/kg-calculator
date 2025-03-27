@@ -23,7 +23,10 @@ export default class SpiritsInvasionModel {
         wave17Power: data[16].wavePower,
         wave20Power: data[19].wavePower,
         wave19Power: data[18].wavePower,
-        scoreByOne: data.filter((it) => ![10, 20].includes(it.wave)).reduce((total, it) => total + it.score, 0),
+        scoreByOneCommon: data
+          .filter((it) => ![7, 10, 14, 17, 20].includes(it.wave))
+          .reduce((total, it) => total + it.score, 0),
+        scoreByOneElite: data.filter((it) => [7, 14, 17].includes(it.wave)).reduce((total, it) => total + it.score, 0),
         totalScore: data.reduce((total, it) => total + it.scoreTotal, 0),
         scoreByCommonWaves: data
           .filter((it) => ![7, 10, 14, 17, 20].includes(it.wave))

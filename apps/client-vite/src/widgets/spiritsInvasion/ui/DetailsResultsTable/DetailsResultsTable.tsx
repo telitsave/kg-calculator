@@ -35,7 +35,7 @@ const DetailsResultsTable: FC<Props> = memo(({ className, data }) => {
     [data, intl],
   )
   return (
-    <Table className={className} border={1}>
+    <Table className={className} border={1} maw={600}>
       <Table.Thead>
         <Table.Tr>
           <Table.Th>

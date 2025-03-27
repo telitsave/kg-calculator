@@ -16,6 +16,7 @@ interface Props {
 
 const itemsLikeInGame: ResourceType[] = [
   'gold',
+  'heroesResources_ssr',
   'barracksResources_random',
   'dragonResources_boxes',
   'castleResources_boxes',
@@ -52,7 +53,6 @@ const itemsLikeInGame: ResourceType[] = [
   'heroesResources_n',
   'heroesResources_r',
   'heroesResources_sr',
-  'heroesResources_ssr',
 ]
 
 const Inventory: FC<Props> = memo(({ className }) => {

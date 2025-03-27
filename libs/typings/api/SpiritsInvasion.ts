@@ -15,7 +15,8 @@ export interface SpiritsInvasionShortData {
   wave10Power: number
   wave20Power: number
   totalScore: number
-  scoreByOne: number
+  scoreByOneCommon: number
+  scoreByOneElite: number
   scoreByCommonWaves: number
   scoreByEliteWaves: number
   scoreByBossWaves: number
