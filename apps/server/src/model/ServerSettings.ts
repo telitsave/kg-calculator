@@ -48,7 +48,7 @@ export default class ServerSettings {
   mk_purpleWitchPotion = 140
   mk_blacksmith = 100
   mk_galleryShard = 1000
-  season = 15
+  season = 14
 
   constructor(customServerSettings?: CustomServerSettingsData) {
     if (customServerSettings) {

@@ -11,7 +11,7 @@ const SeasonsTable: FC = memo(() => {
   const tableData: TableData = useMemo(
     () => ({
       head: [
-        intl.formatMessage({ defaultMessage: 'Сезон ОЭ (сезон фактический)' }),
+        intl.formatMessage({ defaultMessage: 'Сезон ОЭ' }),
         intl.formatMessage({ defaultMessage: 'Диапазон серверов' }),
         intl.formatMessage({ defaultMessage: 'Награды в СК' }),
         intl.formatMessage({ defaultMessage: 'Питомцы в магазине мифрила' }),
@@ -21,7 +21,7 @@ const SeasonsTable: FC = memo(() => {
         if (season.season === -1) return ['-', '-', '-', '-', '-']
 
         return [
-          `${season.season} (${season.season + 1})`,
+          `${season.season}`,
           season.servers,
           <Stack gap="xs">
             {season.rewardsMK.map((it) => (

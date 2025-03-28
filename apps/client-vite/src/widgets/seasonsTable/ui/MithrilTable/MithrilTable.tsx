@@ -11,7 +11,7 @@ const MithrilTable: FC = memo(() => {
   const tableData: TableData = useMemo(
     () => ({
       head: [
-        <Flex justify="center">{intl.formatMessage({ defaultMessage: 'Сезон ОЭ (сезон фактический)' })}</Flex>,
+        <Flex justify="center">{intl.formatMessage({ defaultMessage: 'Сезон ОЭ' })}</Flex>,
         <Flex justify="center">
           <ResourceIcon resourceType="talentsResources_oraclesCrowns" />
         </Flex>,
@@ -57,7 +57,7 @@ const MithrilTable: FC = memo(() => {
         const prevData = prevS?.coefficientsMithril || undefined
 
         return [
-          `${s.season} (${s.season + 1})`,
+          `${s.season}`,
           <Text bg={!prevData || prevData.oracleCrowns !== data.oracleCrowns ? '#ffec99' : undefined}>
             {(data.oracleCrowns && `x${data.oracleCrowns}`) || '-'}
           </Text>,

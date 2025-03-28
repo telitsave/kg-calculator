@@ -14,7 +14,6 @@
   "15ueKs": "Resource",
   "18bpL8": "Steel",
   "1KWTkA": "Offline Gold",
-  "1PXgLR": "Points per person:",
   "1PaPOJ": "N rank",
   "1aq+pW": "Free-pick heroes cards:",
   "1f6tXA": "By load{index}",
@@ -506,5 +505,7 @@
   "abo1C5": "Sort heroes by stars",
   "dpqdFL": "Hide 5 star heroes",
   "nDQFCf": "Count talents and crowns \"1 through 8\"",
-  "rg/IBx": "BL season (actual season)"
+  "F9gY0I": "Points per person (simple waves):",
+  "wslGWI": "BL Season",
+  "yChBli": "Points per person (elite waves):"
 }

@@ -11,7 +11,7 @@ const ExchangeShopTable: FC = memo(() => {
   const tableData: TableData = useMemo(
     () => ({
       head: [
-        <Flex justify="center">{intl.formatMessage({ defaultMessage: 'Сезон ОЭ (сезон фактический)' })}</Flex>,
+        <Flex justify="center">{intl.formatMessage({ defaultMessage: 'Сезон ОЭ' })}</Flex>,
         <Flex justify="center" align="center" gap="xs">
           <ResourceIcon resourceType="barracksResources_bow_1" />
           <Text size="xl">&#8594;</Text>
@@ -79,7 +79,7 @@ const ExchangeShopTable: FC = memo(() => {
           const prevData = prevS?.coefficientsExchangeShop || undefined
 
           return [
-            `${s.season} (${s.season + 1})`,
+            `${s.season}`,
             <Text bg={!prevData || prevData.t1Barracks !== data.t1Barracks ? '#ffec99' : undefined}>
               {(data.t1Barracks && `x${data.t1Barracks}`) || '-'}
             </Text>,
