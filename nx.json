@@ -17,6 +17,11 @@
   "targetDefaults": {
     "start": {
       "cache": false
+    },
+    "@nx/esbuild:esbuild": {
+      "cache": true,
+      "dependsOn": ["^build"],
+      "inputs": ["production", "^production"]
     }
   },
   "nxCloudAccessToken": "ZTEyN2I3Y2MtMjFjOC00NjJmLWJmMGYtZDUzOTVjYTNlMzZlfHJlYWQtd3JpdGU=",

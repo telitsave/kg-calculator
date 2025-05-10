@@ -1,0 +1,79 @@
+{
+  "name": "tg-bot-cave",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/tg-bot-cave/src",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/esbuild:esbuild",
+      "outputs": [
+        "{options.outputPath}"
+      ],
+      "defaultConfiguration": "production",
+      "options": {
+        "platform": "node",
+        "outputPath": "dist/apps/tg-bot-cave",
+        "format": [
+          "cjs"
+        ],
+        "bundle": false,
+        "main": "apps/tg-bot-cave/src/server.ts",
+        "tsConfig": "apps/tg-bot-cave/tsconfig.app.json",
+        "assets": [
+          {
+            "glob": "*.png",
+            "input": "apps/tg-bot-cave/src/assets",
+            "output": "apps/tg-bot-cave/src/assets"
+          }
+        ],
+        "generatePackageJson": true,
+        "esbuildOptions": {
+          "sourcemap": true,
+          "outExtension": {
+            ".js": ".js"
+          }
+        }
+      },
+      "configurations": {
+        "development": {},
+        "production": {
+          "esbuildOptions": {
+            "sourcemap": false,
+            "outExtension": {
+              ".js": ".js"
+            }
+          }
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "dependsOn": [
+        "build"
+      ],
+      "options": {
+        "buildTarget": "tg-bot-cave:build",
+        "runBuildTargetDependencies": false
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "tg-bot-cave:build:development"
+        },
+        "production": {
+          "buildTarget": "tg-bot-cave:build:production"
+        }
+      }
+    },
+    "deploy": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "node scripts/deployTgBot.js"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    }
+  }
+}
