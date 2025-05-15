@@ -37,29 +37,39 @@ export default class CalculationResults {
   }
 
   constructor(resources: Resources, serverSettings: ServerSettings) {
-    this.heroesCards.n = resources.heroesCards.n * serverSettings.mk_nHeroCard
-    this.heroesCards.r = resources.heroesCards.r * serverSettings.mk_rHeroCard
-    this.heroesCards.sr = resources.heroesCards.sr * serverSettings.mk_srHeroCard
-    this.heroesCards.ssr = resources.heroesCards.ssr * serverSettings.mk_ssrHeroCard
+    this.heroesCards.n = resources.heroesCards.n * serverSettings.nHeroCard
+    this.heroesCards.r = resources.heroesCards.r * serverSettings.rHeroCard
+    this.heroesCards.sr = resources.heroesCards.sr * serverSettings.srHeroCard
+    this.heroesCards.ssr = resources.heroesCards.ssr * serverSettings.ssrHeroCard
 
-    this.dragonRunes.green = resources.dragonsRunes.green * serverSettings.mk_dragonRuneGreen
-    this.dragonRunes.blue = resources.dragonsRunes.blue * serverSettings.mk_dragonRuneBlue
-    this.dragonRunes.purple = resources.dragonsRunes.purple * serverSettings.mk_dragonRunePurple
-    this.dragonRunes.gold = resources.dragonsRunes.gold * serverSettings.mk_dragonRuneGold
+    this.dragonRunes.green = resources.dragonsRunes.green * serverSettings.dragonRuneGreen
+    this.dragonRunes.blue = resources.dragonsRunes.blue * serverSettings.dragonRuneBlue
+    this.dragonRunes.purple = resources.dragonsRunes.purple * serverSettings.dragonRunePurple
+    this.dragonRunes.gold = resources.dragonsRunes.gold * serverSettings.dragonRuneGold
 
-    this.barracksBooks.rank1 = resources.barracksBooks.getAllBooksByRank('rank1') * serverSettings.mk_barrackBook1
-    this.barracksBooks.rank2 = resources.barracksBooks.getAllBooksByRank('rank2') * serverSettings.mk_barrackBook2
-    this.barracksBooks.rank3 = resources.barracksBooks.getAllBooksByRank('rank3') * serverSettings.mk_barrackBook3
-    this.barracksBooks.rank4 = resources.barracksBooks.getAllBooksByRank('rank4') * serverSettings.mk_barrackBook4
+    this.barracksBooks.rank1 = resources.barracksBooks.getAllBooksByRank('rank1') * serverSettings.barrackBook1
+    this.barracksBooks.rank2 = resources.barracksBooks.getAllBooksByRank('rank2') * serverSettings.barrackBook2
+    this.barracksBooks.rank3 = resources.barracksBooks.getAllBooksByRank('rank3') * serverSettings.barrackBook3
+    this.barracksBooks.rank4 = resources.barracksBooks.getAllBooksByRank('rank4') * serverSettings.barrackBook4
 
-    this.barracksTalents.books = resources.talents.books * serverSettings.mk_talentsBook
-    this.barracksTalents.oraclesCrowns = resources.talents.oraclesCrowns * serverSettings.mk_oracleCrown
+    this.barracksTalents.books = Math.round(
+      resources.talents.books * (serverSettings.talentsBookCost / serverSettings.talentsBookCount),
+    )
+    this.barracksTalents.oraclesCrowns = Math.round(
+      resources.talents.oraclesCrowns * Math.round(serverSettings.oracleCrownCost / serverSettings.oracleCrownCount),
+    )
+    
+    this.witch.lightReagents = resources.witch.lightReagents * serverSettings.lightReagent
+    this.witch.greenPotions = Math.round(
+      resources.witch.greenWitchPotion *
+        Math.round(serverSettings.greenWitchPotionCost / serverSettings.greenWitchPotionCount),
+    )
+    this.witch.purplePotions = Math.round(
+      resources.witch.purpleWitchPotion *
+        Math.round(serverSettings.purpleWitchPotionCost / serverSettings.purpleWitchPotionCount),
+    )
 
-    this.witch.lightReagents = resources.witch.lightReagents * serverSettings.mk_lightReagent
-    this.witch.greenPotions = resources.witch.greenWitchPotion * serverSettings.mk_greenWitchPotion
-    this.witch.purplePotions = resources.witch.purpleWitchPotion * serverSettings.mk_purpleWitchPotion
-
-    this.blacksmith.hammers = resources.blacksmith.hammers * serverSettings.mk_blacksmith
-    this.gallery.shards = resources.galleryShards * serverSettings.mk_galleryShard
+    this.blacksmith.hammers = resources.blacksmith.hammers * serverSettings.blacksmith
+    this.gallery.shards = resources.galleryShards * serverSettings.galleryShard
   }
 }

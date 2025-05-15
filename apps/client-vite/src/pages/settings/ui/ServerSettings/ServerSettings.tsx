@@ -1,12 +1,10 @@
 import { FC, memo, useCallback, useEffect, useState } from 'react'
-import { Alert, Stack, Switch, SwitchGroup, Tabs, Text } from '@mantine/core'
+import { Alert, Stack, Switch, SwitchGroup, Text } from '@mantine/core'
 import { FormattedMessage } from 'react-intl'
 import { settingsNames, useServerSettings } from '@entities/serverSettings'
 import { NoAuthNavigate } from '@entities/user'
 import PageTitle from '@shared/ui/PageTitle'
 import { CommonSettings } from '@widgets/serverSettings/commonSettings'
-import { MightiestKingdomSettings } from '@widgets/serverSettings/mightiestKingdomSettings'
-import { UltimatePowerSettings } from '@widgets/serverSettings/ultimatePowerSettings'
 
 
 interface Props {
@@ -67,28 +65,8 @@ const ServerSettings: FC<Props> = memo(({ className }) => {
       <SwitchGroup value={enabled ? ['enabledCustomServerSettings'] : []} onChange={handleSwitchChange}>
         <Switch label={settingsNames.enabledCustomServerSettings} value="enabledCustomServerSettings" />
       </SwitchGroup>
-      <Tabs defaultValue="common">
-        <Tabs.List>
-          <Tabs.Tab value="common">
-            <FormattedMessage defaultMessage="Общие настройки" />
-          </Tabs.Tab>
-          <Tabs.Tab value="ultimatePower">
-            <FormattedMessage defaultMessage="Экстремальная мощь" />
-          </Tabs.Tab>
-          <Tabs.Tab value="mightiestKingdom">
-            <FormattedMessage defaultMessage="Сильнейшее королевство" />
-          </Tabs.Tab>
-        </Tabs.List>
-        <Tabs.Panel value="common">
-          <CommonSettings />
-        </Tabs.Panel>
-        <Tabs.Panel value="ultimatePower">
-          <UltimatePowerSettings />
-        </Tabs.Panel>
-        <Tabs.Panel value="mightiestKingdom">
-          <MightiestKingdomSettings />
-        </Tabs.Panel>
-      </Tabs>
+
+      <CommonSettings />
     </Stack>
   )
 })

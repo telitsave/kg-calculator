@@ -42,33 +42,43 @@ export default class CalculationResults {
   }
 
   constructor(resources: Resources, serverSettings: ServerSettings) {
-    this.heroesCards.n = resources.heroesCards.n * serverSettings.up_nHeroCard
-    this.heroesCards.r = resources.heroesCards.r * serverSettings.up_rHeroCard
-    this.heroesCards.sr = resources.heroesCards.sr * serverSettings.up_srHeroCard
-    this.heroesCards.ssr = resources.heroesCards.ssr * serverSettings.up_ssrHeroCard
+    this.heroesCards.n = resources.heroesCards.n * serverSettings.nHeroCard
+    this.heroesCards.r = resources.heroesCards.r * serverSettings.rHeroCard
+    this.heroesCards.sr = resources.heroesCards.sr * serverSettings.srHeroCard
+    this.heroesCards.ssr = resources.heroesCards.ssr * serverSettings.ssrHeroCard
 
-    this.dragonRunes.green = resources.dragonsRunes.green * serverSettings.up_dragonRuneGreen
-    this.dragonRunes.blue = resources.dragonsRunes.blue * serverSettings.up_dragonRuneBlue
-    this.dragonRunes.purple = resources.dragonsRunes.purple * serverSettings.up_dragonRunePurple
-    this.dragonRunes.gold = resources.dragonsRunes.gold * serverSettings.up_dragonRuneGold
+    this.dragonRunes.green = resources.dragonsRunes.green * serverSettings.dragonRuneGreen
+    this.dragonRunes.blue = resources.dragonsRunes.blue * serverSettings.dragonRuneBlue
+    this.dragonRunes.purple = resources.dragonsRunes.purple * serverSettings.dragonRunePurple
+    this.dragonRunes.gold = resources.dragonsRunes.gold * serverSettings.dragonRuneGold
 
-    this.barracksBooks.rank1 = resources.barracksBooks.getAllBooksByRank('rank1') * serverSettings.up_barrackBook1
-    this.barracksBooks.rank2 = resources.barracksBooks.getAllBooksByRank('rank2') * serverSettings.up_barrackBook2
-    this.barracksBooks.rank3 = resources.barracksBooks.getAllBooksByRank('rank3') * serverSettings.up_barrackBook3
-    this.barracksBooks.rank4 = resources.barracksBooks.getAllBooksByRank('rank4') * serverSettings.up_barrackBook4
+    this.barracksBooks.rank1 = resources.barracksBooks.getAllBooksByRank('rank1') * serverSettings.barrackBook1
+    this.barracksBooks.rank2 = resources.barracksBooks.getAllBooksByRank('rank2') * serverSettings.barrackBook2
+    this.barracksBooks.rank3 = resources.barracksBooks.getAllBooksByRank('rank3') * serverSettings.barrackBook3
+    this.barracksBooks.rank4 = resources.barracksBooks.getAllBooksByRank('rank4') * serverSettings.barrackBook4
 
-    this.barracksTalents.books = resources.talents.books * serverSettings.up_talentsBook
-    this.barracksTalents.oraclesCrowns = resources.talents.oraclesCrowns * serverSettings.up_oracleCrown
+    this.barracksTalents.books = Math.round(
+      resources.talents.books * (serverSettings.talentsBookCost / serverSettings.talentsBookCount),
+    )
+    this.barracksTalents.oraclesCrowns = Math.round(
+      resources.talents.oraclesCrowns * Math.round(serverSettings.oracleCrownCost / serverSettings.oracleCrownCount),
+    )
 
-    this.witch.lightReagents = resources.witch.lightReagents * serverSettings.up_lightReagent
-    this.witch.greenPotions = resources.witch.greenWitchPotion * serverSettings.up_greenWitchPotion
-    this.witch.purplePotions = resources.witch.purpleWitchPotion * serverSettings.up_purpleWitchPotion
+    this.witch.lightReagents = resources.witch.lightReagents * serverSettings.lightReagent
+    this.witch.greenPotions = Math.round(
+      resources.witch.greenWitchPotion *
+        Math.round(serverSettings.greenWitchPotionCost / serverSettings.greenWitchPotionCount),
+    )
+    this.witch.purplePotions = Math.round(
+      resources.witch.purpleWitchPotion *
+        Math.round(serverSettings.purpleWitchPotionCost / serverSettings.purpleWitchPotionCount),
+    )
 
-    this.castle.stone = resources.castle.stone * serverSettings.up_stone
-    this.castle.wood = resources.castle.wood * serverSettings.up_wood
-    this.castle.steel = resources.castle.steel * serverSettings.up_steel
+    this.blacksmith.hammers = resources.blacksmith.hammers * serverSettings.blacksmith
+    this.gallery.shards = resources.galleryShards * serverSettings.galleryShard
 
-    this.blacksmith.hammers = resources.blacksmith.hammers * serverSettings.up_blacksmith
-    this.gallery.shards = resources.galleryShards * serverSettings.up_galleryShard
+    this.castle.stone = resources.castle.stone * serverSettings.stone
+    this.castle.wood = resources.castle.wood * serverSettings.wood
+    this.castle.steel = resources.castle.steel * serverSettings.steel
   }
 }

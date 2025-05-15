@@ -10,7 +10,7 @@ export default class ServerSettingsService {
     const isEnabled = !!data.find((it) => it.settingId === 'enabledCustomServerSettings')?.value
     if (isEnabled) {
       data.forEach((item) => {
-        settings[item.settingId] = item.value
+        settings[item.settingId] = Number(item.value)
       })
     }
 

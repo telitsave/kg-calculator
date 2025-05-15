@@ -1,54 +1,41 @@
 import type { CustomServerSettingsData } from 'kg-calculator-typings'
 
 export default class ServerSettings {
+  readonly nHeroCard = 100
+  readonly rHeroCard = 700
+  readonly srHeroCard = 3500
+  readonly ssrHeroCard = 14000
+  readonly barrackBook1 = 800
+  readonly barrackBook2 = 4000
+  readonly barrackBook3 = 20000
+  readonly barrackBook4 = 100000
+  readonly dragonRuneGreen = 70
+  readonly dragonRuneBlue = 700
+  readonly dragonRunePurple = 7000
+  readonly dragonRuneGold = 14000
+  readonly stone = 100
+  readonly wood = 500
+  readonly steel = 2000
+  readonly lightReagent = 70
+  readonly blacksmith = 100
+  readonly galleryShard = 1000
+
+  enabledCustomServerSettings = 0
+  season = 15
   talentsMaxRank = 7
   witchGemsMaxRank = 7
   talentBooks_rank1 = 72
   talentBooks_rank2 = 358
   talentBooks_rank3 = 1786
   talentBooks_rank4 = 8929
-  up_nHeroCard = 100
-  up_rHeroCard = 700
-  up_srHeroCard = 3500
-  up_ssrHeroCard = 14000
-  up_barrackBook1 = 800
-  up_barrackBook2 = 4000
-  up_barrackBook3 = 20000
-  up_barrackBook4 = 100000
-  up_dragonRuneGreen = 70
-  up_dragonRuneBlue = 700
-  up_dragonRunePurple = 7000
-  up_dragonRuneGold = 14000
-  up_talentsBook = 5.6
-  up_oracleCrown = 56
-  up_stone = 100
-  up_wood = 500
-  up_steel = 2000
-  up_lightReagent = 70
-  up_greenWitchPotion = 7
-  up_purpleWitchPotion = 70
-  up_blacksmith = 100
-  up_galleryShard = 1000
-  mk_nHeroCard = 100
-  mk_rHeroCard = 700
-  mk_srHeroCard = 3500
-  mk_ssrHeroCard = 14000
-  mk_barrackBook1 = 800
-  mk_barrackBook2 = 4000
-  mk_barrackBook3 = 20000
-  mk_barrackBook4 = 100000
-  mk_dragonRuneGreen = 70
-  mk_dragonRuneBlue = 700
-  mk_dragonRunePurple = 7000
-  mk_dragonRuneGold = 14000
-  mk_talentsBook = 5.6
-  mk_oracleCrown = 56
-  mk_lightReagent = 70
-  mk_greenWitchPotion = 7
-  mk_purpleWitchPotion = 70
-  mk_blacksmith = 100
-  mk_galleryShard = 1000
-  season = 15
+  greenWitchPotionCount = 10
+  greenWitchPotionCost = 70
+  purpleWitchPotionCount = 1
+  purpleWitchPotionCost = 70
+  talentsBookCount = 25
+  talentsBookCost = 140
+  oracleCrownCount = 5
+  oracleCrownCost = 280
 
   constructor(customServerSettings?: CustomServerSettingsData) {
     if (customServerSettings) {
