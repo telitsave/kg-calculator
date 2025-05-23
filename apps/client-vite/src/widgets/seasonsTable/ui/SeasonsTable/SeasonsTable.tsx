@@ -12,17 +12,15 @@ const SeasonsTable: FC = memo(() => {
     () => ({
       head: [
         intl.formatMessage({ defaultMessage: 'Сезон ОЭ' }),
-        intl.formatMessage({ defaultMessage: 'Диапазон серверов' }),
         intl.formatMessage({ defaultMessage: 'Награды в СК' }),
         intl.formatMessage({ defaultMessage: 'Питомцы в магазине мифрила' }),
         intl.formatMessage({ defaultMessage: 'Награда за трон ОЭ/БЛ' }),
       ],
       body: seasonsData.map((season) => {
-        if (season.season === -1) return ['-', '-', '-', '-', '-']
+        if (season.season === -1) return ['-', '-', '-', '-']
 
         return [
           `${season.season}`,
-          season.servers,
           <Stack gap="xs">
             {season.rewardsMK.map((it) => (
               <ItemWithLabel key={it} itemType={it} />

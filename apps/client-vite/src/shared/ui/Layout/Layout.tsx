@@ -136,12 +136,18 @@ const Layout: FC<Props> = memo(({ className, rightHeaderSlot }) => {
         </ScrollArea>
 
         <AppShell.Section>
-          <Flexbox justifyContent="flex-end" flexDirection="column">
+          <Flexbox justifyContent="flex-end" flexDirection="column" alignItems="flex-end">
             <a href="https://t.me/kg_calculator" target="_blank" rel="noreferrer">
               <Flex align="center" justify="flex-end" gap={4}>
                 <FormattedMessage defaultMessage="Группа в Telegram" /> <FaTelegram color="#29B6F6" size={24} />
               </Flex>
             </a>
+            <Text>
+              Created by:{' '}
+              <Text fw="bold" span>
+                DonLi
+              </Text>
+            </Text>
           </Flexbox>
         </AppShell.Section>
       </AppShell.Navbar>

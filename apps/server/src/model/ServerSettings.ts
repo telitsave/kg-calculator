@@ -21,8 +21,8 @@ export default class ServerSettings {
   readonly galleryShard = 1000
 
   enabledCustomServerSettings = 0
-  season = 15
-  talentsMaxRank = 7
+  season = 17
+  talentsMaxRank = 8
   witchGemsMaxRank = 7
   talentBooks_rank1 = 72
   talentBooks_rank2 = 358
